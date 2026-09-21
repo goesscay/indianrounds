@@ -23,6 +23,10 @@ use Illuminate\Support\Carbon;
  * @property float $gst_rate
  * @property int $gst_amount
  * @property int $total_amount
+ * @property int $credit_applied
+ * @property int|null $cancellation_deduction
+ * @property string|null $cancellation_outcome
+ * @property Carbon|null $cancelled_at
  * @property string $gst_state
  * @property string $contact_name
  * @property string $contact_phone
@@ -45,6 +49,7 @@ class Booking extends Model
         return [
             'gst_rate' => 'float',
             'reserved_until' => 'datetime',
+            'cancelled_at' => 'datetime',
             'confirmed_at' => 'datetime',
         ];
     }
@@ -87,6 +92,6 @@ class Booking extends Model
 
     public function getPaidAmountAttribute(): int
     {
-        return (int) $this->milestones->where('status', 'paid')->sum('amount');
+        return (int) $this->milestones->where('status', 'paid')->sum('amount') + $this->credit_applied;
     }
 }

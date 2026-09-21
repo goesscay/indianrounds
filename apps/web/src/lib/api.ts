@@ -125,6 +125,10 @@ export type Booking = {
   gst_amount: number;
   total_amount: number;
   paid_amount: number;
+  credit_applied: number;
+  cancelled_at: string | null;
+  cancellation_deduction: number | null;
+  cancellation_outcome: "credit_note" | "refund" | "none" | null;
   gst_state: string;
   reserved_until: string | null;
   created_at: string;
@@ -145,6 +149,49 @@ export type Invoice = {
   line: { description: string; departure: string; quantity: number; unit_price: number; amount: number };
   tax: { rate_percent: number; type: "CGST+SGST" | "IGST"; cgst: number; sgst: number; igst: number; total: number };
   total: number;
+  credit_applied: number;
   paid: number;
   balance: number;
+};
+
+export type CreditNote = {
+  id: number;
+  code: string;
+  amount: number;
+  currency: string;
+  issued_on: string;
+  expires_on: string;
+  status: "active" | "redeemed" | "expired";
+  source: string;
+  source_tour: string;
+};
+
+export type Grievance = {
+  reference: string;
+  subject: string;
+  description: string;
+  booking_reference: string | null;
+  stage: 1 | 2 | 3;
+  status: "open" | "resolved";
+  officer_name: string | null;
+  created_at: string;
+  acknowledged_at: string | null;
+  ack_due_at: string;
+  resolve_by: string;
+  statutory_deadline: string;
+  resolved_at: string | null;
+};
+
+export type CancellationPreview = {
+  reference: string;
+  can_cancel: boolean;
+  reason: string | null;
+  days_before_departure: number;
+  total: number;
+  paid: number;
+  tier_percent: number;
+  advance?: number;
+  deduction: number;
+  returnable: number;
+  outcome: "credit_note" | "refund";
 };

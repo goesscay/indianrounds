@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\BookingController;
+use App\Http\Controllers\Api\CreditNoteController;
 use App\Http\Controllers\Api\DestinationController;
 use App\Http\Controllers\Api\GoogleAuthController;
+use App\Http\Controllers\Api\GrievanceController;
 use App\Http\Controllers\Api\LeadController;
 use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\RazorpayWebhookController;
@@ -52,11 +54,18 @@ Route::prefix('v1')->group(function () {
     Route::middleware('auth:sanctum')->group(function () {
         Route::get('/me', [AuthController::class, 'me']);
         Route::patch('/me', [AuthController::class, 'updateProfile']);
+        Route::post('/me/password', [AuthController::class, 'changePassword'])->middleware('throttle:5,1');
+        Route::get('/me/credit-notes', [CreditNoteController::class, 'index']);
+        Route::get('/grievances', [GrievanceController::class, 'index']);
+        Route::post('/grievances', [GrievanceController::class, 'store'])->middleware('throttle:5,1');
+        Route::get('/grievances/{reference}', [GrievanceController::class, 'show']);
 
         Route::get('/bookings', [BookingController::class, 'index']);
         Route::post('/bookings', [BookingController::class, 'store'])->middleware('throttle:20,1');
         Route::get('/bookings/{reference}', [BookingController::class, 'show']);
         Route::get('/bookings/{reference}/invoice', [BookingController::class, 'invoice']);
+        Route::get('/bookings/{reference}/cancellation', [BookingController::class, 'cancellationPreview']);
+        Route::post('/bookings/{reference}/cancel', [BookingController::class, 'cancel'])->middleware('throttle:10,1');
 
         Route::post('/bookings/{reference}/milestones/{milestone}/order', [PaymentController::class, 'order'])->middleware('throttle:20,1');
         Route::post('/bookings/{reference}/milestones/{milestone}/verify', [PaymentController::class, 'verify'])->middleware('throttle:20,1');

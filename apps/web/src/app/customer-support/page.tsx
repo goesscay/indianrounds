@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { site } from "@/lib/site";
 import { PageShell } from "@/components/PageShell";
 
@@ -9,6 +10,7 @@ export default function CustomerSupportPage() {
     <PageShell title="Customer" accent="Support" draft intro="If something goes wrong with your trip or booking, here is how to reach us and how we escalate.">
       <h2>How to raise a complaint</h2>
       <p>Email <a className="text-brand-red underline" href={`mailto:${site.email}`}>{site.email}</a> or call <a className="text-brand-red underline" href={site.phoneHref}>{site.phone}</a> ({site.hours}). Please include your booking reference.</p>
+      <p>Signed in? <Link className="text-brand-red underline" href="/account/support">Raise and track a ticket in your account</Link>.</p>
       <h2>Escalation stages</h2>
       <ul>
         <li><strong>Stage 1 — Support team:</strong> acknowledgement and first response. Officer names, contacts and timelines to be confirmed.</li>

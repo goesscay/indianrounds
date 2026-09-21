@@ -27,6 +27,8 @@ pnpm dev                        # http://localhost:3000 (style guide at /style-g
 - `PAYMENT_DRIVER=fake` (default in dev) simulates payments; the checkout shows a "Simulate payment" button. It is refused in production.
 - For Razorpay set `PAYMENT_DRIVER=razorpay`, `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`, `RAZORPAY_WEBHOOK_SECRET`, and add a webhook to `<api>/api/v1/webhooks/razorpay` for `payment.captured`.
 - Unpaid bookings release their seats after 15 minutes via `bookings:release-expired`. Run `php artisan schedule:work` locally, or a cron entry `* * * * * php artisan schedule:run` in production.
+- `CANCELLATION_MODE=credit_note` (default) issues a credit note for the returnable amount; `refund` records a pending refund for staff. Deduction tiers live in `config/booking.php`. This is a policy decision for the business to confirm.
+- `payments:send-reminders` runs daily and emails instalments due within 3 days.
 - Set `COMPANY_GST_STATE` to the state the company is registered in; it decides CGST+SGST vs IGST on invoices.
 
 ## Tests use their own database

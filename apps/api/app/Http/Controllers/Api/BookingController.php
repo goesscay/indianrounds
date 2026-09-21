@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\BookingResource;
 use App\Models\Booking;
 use App\Services\BookingService;
+use App\Services\CancellationService;
 use App\Services\InvoiceBuilder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -22,6 +23,7 @@ class BookingController extends Controller
             'tour_slug' => 'required|string|exists:tours,slug',
             'batch_id' => 'required|integer',
             'variant_id' => 'nullable|integer',
+            'credit_note_id' => 'nullable|integer',
             'gst_state' => ['required', Rule::in(config('booking.states'))],
             'contact.name' => 'required|string|max:120',
             'contact.phone' => 'required|string|regex:/^\d{10,15}$/',
@@ -49,6 +51,18 @@ class BookingController extends Controller
     public function show(Request $request, string $reference): BookingResource
     {
         return new BookingResource($this->owned($request, $reference));
+    }
+
+    public function cancellationPreview(Request $request, string $reference, CancellationService $cancellation): JsonResponse
+    {
+        return response()->json(['data' => $cancellation->preview($this->owned($request, $reference))]);
+    }
+
+    public function cancel(Request $request, string $reference, CancellationService $cancellation): BookingResource
+    {
+        $request->validate(['confirm' => 'accepted']);
+
+        return new BookingResource($cancellation->cancel($this->owned($request, $reference)));
     }
 
     public function invoice(Request $request, string $reference, InvoiceBuilder $invoices): JsonResponse

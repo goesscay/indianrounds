@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Booking } from "@/lib/api";
-import { apiFetch } from "@/lib/client-api";
 import { formatDate, formatINR } from "@/lib/format";
+import { useApi } from "@/lib/use-api";
+import { AccountLayout } from "./AccountNav";
+import { CancelBookingDialog } from "./CancelBookingDialog";
 import { MilestoneList } from "./MilestoneList";
-import { RequireAuth } from "./RequireAuth";
 
 const statusStyle: Record<string, string> = {
   confirmed: "bg-green-100 text-green-800",
@@ -17,32 +18,20 @@ const statusStyle: Record<string, string> = {
 const statusLabel: Record<string, string> = { confirmed: "Confirmed", pending_payment: "Awaiting payment", expired: "Expired", cancelled: "Cancelled" };
 
 export function BookingsList() {
-  return (
-    <RequireAuth>
-      <ListInner />
-    </RequireAuth>
-  );
-}
-
-function ListInner() {
-  const [items, setItems] = useState<Booking[] | null>(null);
-
-  useEffect(() => {
-    apiFetch<{ data: Booking[] }>("bookings").then((r) => setItems(r.data)).catch(() => setItems([]));
-  }, []);
+  const { data, loading } = useApi<{ data: Booking[] }>("bookings");
+  const items = data?.data ?? [];
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
-      <h1 className="text-3xl font-extrabold sm:text-4xl">My <span className="text-brand-red">bookings</span></h1>
-      {items === null && <p className="mt-6 text-muted">Loading…</p>}
-      {items?.length === 0 && (
-        <div className="mt-6 rounded-card bg-surface-alt p-8 text-center">
+    <AccountLayout title="My" accent="bookings">
+      {loading && <p className="text-muted">Loading…</p>}
+      {!loading && items.length === 0 && (
+        <div className="rounded-card bg-surface-alt p-8 text-center">
           <p className="font-semibold">No bookings yet.</p>
           <Link href="/tours" className="mt-2 inline-block text-brand-red underline">Browse tours</Link>
         </div>
       )}
-      <ul className="mt-6 space-y-4">
-        {items?.map((b) => (
+      <ul className="space-y-4">
+        {items.map((b) => (
           <li key={b.reference}>
             <Link href={`/bookings/${b.reference}`} className="flex flex-wrap items-center justify-between gap-3 rounded-card border border-black/10 p-5 hover:border-brand-red">
               <div>
@@ -57,64 +46,86 @@ function ListInner() {
           </li>
         ))}
       </ul>
-    </div>
+    </AccountLayout>
   );
 }
 
 export function BookingDetail({ reference }: { reference: string }) {
-  return (
-    <RequireAuth>
-      <DetailInner reference={reference} />
-    </RequireAuth>
-  );
-}
-
-function DetailInner({ reference }: { reference: string }) {
-  const [b, setB] = useState<Booking | null>(null);
-  const [missing, setMissing] = useState(false);
-
-  useEffect(() => {
-    apiFetch<{ data: Booking }>(`bookings/${reference}`).then((r) => setB(r.data)).catch(() => setMissing(true));
-  }, [reference]);
-
-  if (missing) return <p className="p-16 text-center text-muted">Booking not found.</p>;
-  if (!b) return <p className="p-16 text-center text-muted">Loading…</p>;
+  const { data, loading, error } = useApi<{ data: Booking }>(`bookings/${reference}`);
+  const [override, setOverride] = useState<Booking | null>(null);
+  const [cancelling, setCancelling] = useState(false);
+  const b = override ?? data?.data ?? null;
 
   return (
-    <div className="mx-auto max-w-4xl space-y-8 px-4 py-10 sm:px-6">
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <Link href="/bookings" className="text-sm font-semibold text-brand-red">← All bookings</Link>
-          <h1 className="mt-1 text-3xl font-extrabold">{b.tour.title}</h1>
-          <p className="text-muted">Reference {b.reference}</p>
+    <AccountLayout title="Booking" accent="details">
+      {loading && <p className="text-muted">Loading…</p>}
+      {error && <p className="text-muted">Booking not found.</p>}
+      {b && (
+        <div className="space-y-8">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <Link href="/bookings" className="text-sm font-semibold text-brand-red">← All bookings</Link>
+              <h2 className="mt-1 text-2xl font-extrabold">{b.tour.title}</h2>
+              <p className="text-muted">Reference {b.reference}</p>
+            </div>
+            <span className={`rounded-full px-4 py-1.5 text-sm font-semibold ${statusStyle[b.status]}`}>{statusLabel[b.status]}</span>
+          </div>
+
+          {b.status === "cancelled" && (
+            <div className="rounded-card border border-black/10 bg-surface-alt p-5 text-sm">
+              <p className="font-semibold">Cancelled{b.cancelled_at ? ` on ${formatDate(b.cancelled_at.slice(0, 10))}` : ""}</p>
+              <p className="text-muted">
+                Cancellation charges {formatINR(b.cancellation_deduction ?? 0)}.{" "}
+                {b.cancellation_outcome === "credit_note" && <>The remaining {formatINR(b.paid_amount - (b.cancellation_deduction ?? 0))} was issued as a <Link href="/account/credit-notes" className="text-brand-red underline">credit note</Link>.</>}
+                {b.cancellation_outcome === "refund" && <>A refund of {formatINR(b.paid_amount - (b.cancellation_deduction ?? 0))} has been requested.</>}
+                {b.cancellation_outcome === "none" && <>Nothing was returnable.</>}
+              </p>
+            </div>
+          )}
+
+          <dl className="grid gap-4 rounded-card bg-surface-alt p-5 text-sm sm:grid-cols-3">
+            <div><dt className="text-muted">Departure</dt><dd className="font-semibold">{formatDate(b.departure.starts_on)} – {formatDate(b.departure.ends_on)}</dd></div>
+            <div><dt className="text-muted">Travellers</dt><dd className="font-semibold">{b.traveller_count}{b.variant ? ` · ${b.variant}` : ""}</dd></div>
+            <div><dt className="text-muted">Total (incl. GST)</dt><dd className="font-semibold">{formatINR(b.total_amount)} · paid {formatINR(b.paid_amount)}</dd></div>
+          </dl>
+          {b.credit_applied > 0 && <p className="-mt-4 text-sm text-green-700">Includes {formatINR(b.credit_applied)} paid with a credit note.</p>}
+
+          <section>
+            <h3 className="mb-3 text-xl font-extrabold">Payments</h3>
+            {b.milestones.length === 0 ? <p className="text-sm text-muted">Fully paid with your credit note.</p> : <MilestoneList booking={b} onPaid={setOverride} />}
+          </section>
+
+          <section>
+            <h3 className="mb-3 text-xl font-extrabold">Travellers</h3>
+            <ul className="list-inside list-disc text-sm text-muted">
+              {b.travellers.map((t, i) => (
+                <li key={i}>{t.name}{t.age ? `, ${t.age}` : ""}</li>
+              ))}
+            </ul>
+          </section>
+
+          <div className="flex flex-wrap gap-3">
+            <Link href={`/bookings/${b.reference}/itinerary`} className="rounded-full bg-brand-red px-6 py-2.5 font-semibold text-white hover:bg-brand-red-dark">Itinerary</Link>
+            <Link href={`/bookings/${b.reference}/invoice`} className="rounded-full border border-brand-red px-6 py-2.5 font-semibold text-brand-red">Invoice</Link>
+            <Link href={`/tours/${b.tour.slug}`} className="rounded-full border border-black/20 px-6 py-2.5 font-semibold">Tour page</Link>
+            <Link href={`/account/support`} className="rounded-full border border-black/20 px-6 py-2.5 font-semibold">Get help</Link>
+            {(b.status === "confirmed" || b.status === "pending_payment") && (
+              <button onClick={() => setCancelling(true)} className="rounded-full border border-black/20 px-6 py-2.5 font-semibold text-muted hover:border-brand-red hover:text-brand-red">Cancel booking</button>
+            )}
+          </div>
+
+          {cancelling && (
+            <CancelBookingDialog
+              booking={b}
+              onClose={() => setCancelling(false)}
+              onCancelled={(nb) => {
+                setOverride(nb);
+                setCancelling(false);
+              }}
+            />
+          )}
         </div>
-        <span className={`rounded-full px-4 py-1.5 text-sm font-semibold ${statusStyle[b.status]}`}>{statusLabel[b.status]}</span>
-      </div>
-
-      <dl className="grid gap-4 rounded-card bg-surface-alt p-5 text-sm sm:grid-cols-3">
-        <div><dt className="text-muted">Departure</dt><dd className="font-semibold">{formatDate(b.departure.starts_on)} – {formatDate(b.departure.ends_on)}</dd></div>
-        <div><dt className="text-muted">Travellers</dt><dd className="font-semibold">{b.traveller_count}{b.variant ? ` · ${b.variant}` : ""}</dd></div>
-        <div><dt className="text-muted">Total (incl. GST)</dt><dd className="font-semibold">{formatINR(b.total_amount)} · paid {formatINR(b.paid_amount)}</dd></div>
-      </dl>
-
-      <section>
-        <h2 className="mb-3 text-xl font-extrabold">Payments</h2>
-        <MilestoneList booking={b} onPaid={setB} />
-      </section>
-
-      <section>
-        <h2 className="mb-3 text-xl font-extrabold">Travellers</h2>
-        <ul className="list-inside list-disc text-sm text-muted">
-          {b.travellers.map((t, i) => (
-            <li key={i}>{t.name}{t.age ? `, ${t.age}` : ""}</li>
-          ))}
-        </ul>
-      </section>
-
-      <div className="flex flex-wrap gap-3">
-        <Link href={`/bookings/${b.reference}/invoice`} className="rounded-full border border-brand-red px-6 py-2.5 font-semibold text-brand-red">View invoice</Link>
-        <Link href={`/tours/${b.tour.slug}`} className="rounded-full border border-black/20 px-6 py-2.5 font-semibold">Tour details</Link>
-      </div>
-    </div>
+      )}
+    </AccountLayout>
   );
 }

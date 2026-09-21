@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { CheckCircle2, Minus, Plus } from "lucide-react";
-import type { Booking, Tour } from "@/lib/api";
+import type { Booking, CreditNote, Tour } from "@/lib/api";
 import { ApiError, apiFetch } from "@/lib/client-api";
 import { useAuth } from "@/lib/auth";
 import { durationLabel, formatDate, formatINR } from "@/lib/format";
@@ -83,9 +83,13 @@ function CheckoutInner() {
   const [message, setMessage] = useState<string | null>(null);
   const [busy, setBusy] = useState(resume && !ref && !!draft);
   const autoStarted = useRef(false);
+  const [notes, setNotes] = useState<CreditNote[] | null>(null);
+  const [creditId, setCreditId] = useState<number | null>(null);
+  const [continued, setContinued] = useState(false);
   const [now, setNow] = useState(() => Date.now());
   const stuckResume = resume && !authLoading && !user;
-  const isBusy = busy && !stuckResume;
+  const holdForCredit = resume && !continued && notes !== null && notes.length > 0;
+  const isBusy = busy && !stuckResume && !holdForCredit;
 
   // Load tour + states
   useEffect(() => {
@@ -106,6 +110,18 @@ function CheckoutInner() {
   };
   const gstState = gstEdit ?? user?.gst_state ?? "";
   const travellers = travellerEdits.map((t, i) => ({ ...t, name: t.name ?? (i === 0 ? (user?.name ?? "") : "") }));
+
+  // Usable credit notes for this customer
+  useEffect(() => {
+    if (!user) return;
+    let alive = true;
+    apiFetch<{ data: CreditNote[] }>("me/credit-notes")
+      .then((r) => alive && setNotes(r.data.filter((n) => n.status === "active")))
+      .catch(() => alive && setNotes([]));
+    return () => {
+      alive = false;
+    };
+  }, [user]);
 
   // Resume an existing booking (page refresh, or return from Pay later)
   useEffect(() => {
@@ -128,12 +144,13 @@ function CheckoutInner() {
   const gst = Math.round(subtotal * GST);
 
   const createBooking = useCallback(
-    (t: { name: string; age: string; gender: string }[], c: Required<Contact>, state: string) =>
+    (t: { name: string; age: string; gender: string }[], c: Required<Contact>, state: string, credit: number | null) =>
       apiFetch<{ data: Booking }>("bookings", {
         body: {
           tour_slug: slug,
           batch_id: batchId,
           variant_id: variantId ?? undefined,
+          credit_note_id: credit ?? undefined,
           gst_state: state,
           contact: c,
           travellers: t.map((x) => ({ name: x.name, age: x.age ? Number(x.age) : undefined, gender: x.gender || undefined })),
@@ -142,13 +159,13 @@ function CheckoutInner() {
         .then((res) => {
           sessionStorage.removeItem(DRAFT);
           setBooking(res.data);
-          setStep("payment");
+          setStep(res.data.status === "confirmed" ? "done" : "payment");
           router.replace(`/checkout?tour=${slug}&batch=${batchId}${variantId ? `&variant=${variantId}` : ""}&pax=${t.length}&ref=${res.data.reference}`);
         })
         .catch((e) => {
           if (e instanceof ApiError) {
             setErrors(e.errors);
-            setMessage(e.first("batch_id") ?? e.first("variant_id") ?? e.message);
+            setMessage(e.first("batch_id") ?? e.first("variant_id") ?? e.first("credit_note_id") ?? e.message);
           } else setMessage("Could not create the booking. Please try again.");
           setStep("details");
         })
@@ -158,10 +175,10 @@ function CheckoutInner() {
 
   // After the login redirect: continue straight to payment with the saved details
   useEffect(() => {
-    if (!resume || autoStarted.current || authLoading || !user || ref || !draft) return;
+    if (!resume || autoStarted.current || authLoading || !user || ref || !draft || notes === null || notes.length > 0) return;
     autoStarted.current = true;
-    void createBooking(draft.travellers, draft.contact, draft.gst_state);
-  }, [resume, authLoading, user, ref, draft, createBooking]);
+    void createBooking(draft.travellers, draft.contact, draft.gst_state, null);
+  }, [resume, authLoading, user, ref, draft, notes, createBooking]);
 
   function setTraveller(i: number, patch: Partial<Traveller>) {
     setTravellerEdits((t) => t.map((x, j) => (j === i ? { ...x, ...patch } : x)));
@@ -186,10 +203,11 @@ function CheckoutInner() {
       router.push(`/login?next=${encodeURIComponent(back)}`);
       return;
     }
+    setContinued(true);
     setBusy(true);
     setErrors({});
     setMessage(null);
-    await createBooking(travellers, contact, gstState);
+    await createBooking(travellers, contact, gstState, creditId);
   }
 
   const onPaid = (b: Booking) => {
@@ -272,6 +290,25 @@ function CheckoutInner() {
                 ))}
               </section>
 
+              {notes && notes.length > 0 && (
+                <section className="space-y-3">
+                  <h2 className="text-xl font-extrabold">Use a credit note</h2>
+                  <p className="text-xs text-muted">A credit note is used in full on one booking and must not exceed the booking total.</p>
+                  <label className="flex items-center gap-3 rounded-card border border-black/10 p-3 text-sm">
+                    <input type="radio" name="credit" checked={creditId === null} onChange={() => setCreditId(null)} className="accent-brand-red" /> Don&apos;t use a credit note
+                  </label>
+                  {notes.map((n) => (
+                    <label key={n.id} className="flex items-center justify-between gap-3 rounded-card border border-black/10 p-3 text-sm">
+                      <span className="flex items-center gap-3">
+                        <input type="radio" name="credit" checked={creditId === n.id} onChange={() => setCreditId(n.id)} className="accent-brand-red" />
+                        <span><span className="font-mono font-bold">{n.code}</span><span className="block text-xs text-muted">expires {formatDate(n.expires_on)}</span></span>
+                      </span>
+                      <strong>{formatINR(n.amount)}</strong>
+                    </label>
+                  ))}
+                </section>
+              )}
+
               {message && <p role="alert" className="rounded-lg bg-brand-red/10 p-3 text-sm text-brand-red">{message}</p>}
 
               <div>
@@ -330,6 +367,8 @@ function CheckoutInner() {
           <dl className="mt-4 space-y-2 border-t border-black/10 pt-4 text-sm">
             <div className="flex justify-between"><dt>{formatINR(booking?.unit_price ?? unit)} × {booking?.traveller_count ?? travellers.length}</dt><dd>{formatINR(booking?.subtotal ?? subtotal)}</dd></div>
             <div className="flex justify-between"><dt>GST (5%)</dt><dd>{formatINR(booking?.gst_amount ?? gst)}</dd></div>
+            {!booking && creditId !== null && <div className="flex justify-between text-green-700"><dt>Credit note</dt><dd>− {formatINR(notes?.find((n) => n.id === creditId)?.amount ?? 0)}</dd></div>}
+            {booking && booking.credit_applied > 0 && <div className="flex justify-between text-green-700"><dt>Credit note</dt><dd>− {formatINR(booking.credit_applied)}</dd></div>}
             <div className="flex justify-between border-t border-black/10 pt-2 text-base font-extrabold"><dt>Total</dt><dd className="text-brand-red">{formatINR(booking?.total_amount ?? subtotal + gst)}</dd></div>
             {booking && <div className="flex justify-between text-green-700"><dt>Paid</dt><dd>{formatINR(booking.paid_amount)}</dd></div>}
           </dl>

@@ -10,3 +10,4 @@ Artisan::command('inspire', function () {
 use Illuminate\Support\Facades\Schedule;
 
 Schedule::command('bookings:release-expired')->everyMinute()->withoutOverlapping();
+Schedule::command('payments:send-reminders')->dailyAt('09:00')->withoutOverlapping();

@@ -17,6 +17,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $gateway_order_id
  * @property string|null $gateway_payment_id
  * @property Carbon|null $paid_at
+ * @property Carbon|null $reminded_at
  * @property Booking $booking
  */
 class PaymentMilestone extends Model
@@ -25,7 +26,7 @@ class PaymentMilestone extends Model
 
     protected function casts(): array
     {
-        return ['due_on' => 'date', 'paid_at' => 'datetime'];
+        return ['due_on' => 'date', 'paid_at' => 'datetime', 'reminded_at' => 'datetime'];
     }
 
     /** @return BelongsTo<Booking, $this> */

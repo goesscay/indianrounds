@@ -84,7 +84,8 @@ function Inner({ reference }: { reference: string }) {
             <div className="flex justify-between"><dt>IGST ({inv.tax.rate_percent}%)</dt><dd>{formatINR(inv.tax.igst)}</dd></div>
           )}
           <div className="flex justify-between border-t border-black/20 pt-2 text-base font-extrabold"><dt>Total</dt><dd>{formatINR(inv.total)}</dd></div>
-          <div className="flex justify-between text-green-700"><dt>Paid</dt><dd>{formatINR(inv.paid)}</dd></div>
+          {inv.credit_applied > 0 && <div className="flex justify-between text-green-700"><dt>Paid by credit note</dt><dd>{formatINR(inv.credit_applied)}</dd></div>}
+          <div className="flex justify-between text-green-700"><dt>Total paid</dt><dd>{formatINR(inv.paid)}</dd></div>
           <div className="flex justify-between font-semibold"><dt>Balance due</dt><dd>{formatINR(inv.balance)}</dd></div>
         </dl>
       </article>

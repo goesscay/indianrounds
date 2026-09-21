@@ -8,7 +8,7 @@ import { NextResponse, type NextRequest } from "next/server";
  */
 const API_URL = process.env.API_URL ?? "http://localhost:8000/api/v1";
 const COOKIE = "ir_token";
-const ALLOWED = ["auth/", "me", "bookings", "tours/", "meta/", "leads/"];
+const ALLOWED = ["auth/", "me", "bookings", "grievances", "tours/", "meta/", "leads/"];
 const TOKEN_ENDPOINTS = new Set(["auth/login", "auth/register", "auth/google/exchange"]);
 
 async function handle(req: NextRequest, ctx: { params: Promise<{ path: string[] }> }) {

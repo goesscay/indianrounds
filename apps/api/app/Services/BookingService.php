@@ -2,11 +2,14 @@
 
 namespace App\Services;
 
+use App\Mail\BookingConfirmed;
 use App\Models\Batch;
 use App\Models\Booking;
+use App\Models\CreditNote;
 use App\Models\Tour;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
 
@@ -15,7 +18,7 @@ class BookingService
     public function __construct(private readonly PaymentSchedule $schedule) {}
 
     /**
-     * @param  array{tour_slug:string,batch_id:int,variant_id?:int|null,gst_state:string,contact:array{name:string,phone:string,email:string},travellers:list<array{name:string,age?:int|null,gender?:string|null}>}  $data
+     * @param  array{tour_slug:string,batch_id:int,variant_id?:int|null,credit_note_id?:int|null,gst_state:string,contact:array{name:string,phone:string,email:string},travellers:list<array{name:string,age?:int|null,gender?:string|null}>}  $data
      */
     public function create(User $user, array $data): Booking
     {
@@ -41,7 +44,7 @@ class BookingService
         $gst = (int) round($subtotal * $rate);
         $total = $subtotal + $gst;
 
-        return DB::transaction(function () use ($user, $data, $tour, $batch, $variant, $count, $unit, $subtotal, $rate, $gst, $total) {
+        $booking = DB::transaction(function () use ($user, $data, $tour, $batch, $variant, $count, $unit, $subtotal, $rate, $gst, $total) {
             // Atomic seat grab: only succeeds while seats remain, safe under concurrent buyers.
             $updated = Batch::query()
                 ->whereKey($batch->id)
@@ -89,8 +92,70 @@ class BookingService
                 'amount' => $m['amount'],
             ], $this->schedule->build($tour->haul_class, $total, $count, $batch->starts_on, now())));
 
+            if (! empty($data['credit_note_id'])) {
+                $this->applyCredit($booking, $user, (int) $data['credit_note_id']);
+            }
+
             return $booking->load(['tour.destination', 'batch', 'variant', 'milestones', 'travellers']);
         });
+
+        if ($booking->status === 'confirmed') {
+            Mail::to($booking->contact_email)->send(new BookingConfirmed($booking));
+        }
+
+        return $booking;
+    }
+
+    /**
+     * Spend a whole credit note against a new booking. Credit clears milestones from the
+     * front of the schedule; a credit larger than the total is refused (no partial use).
+     */
+    private function applyCredit(Booking $booking, User $user, int $creditNoteId): void
+    {
+        $note = CreditNote::query()->where('user_id', $user->id)->whereKey($creditNoteId)->lockForUpdate()->first();
+
+        if (! $note || ! $note->isUsable()) {
+            throw ValidationException::withMessages(['credit_note_id' => 'This credit note is not available.']);
+        }
+        if ($note->amount > $booking->total_amount) {
+            throw ValidationException::withMessages(['credit_note_id' => 'This credit note is worth more than the booking total. Choose a higher-value trip.']);
+        }
+
+        $remaining = $note->amount;
+        $firstCleared = false;
+        foreach ($booking->milestones()->get() as $m) {
+            if ($remaining <= 0) {
+                break;
+            }
+            if ($remaining >= $m->amount) {
+                $remaining -= $m->amount;
+                $firstCleared = $firstCleared || $m->sequence === 1;
+                $m->delete();
+            } else {
+                $m->update(['amount' => $m->amount - $remaining]);
+                $remaining = 0;
+            }
+        }
+
+        foreach ($booking->milestones()->get() as $i => $m) {
+            $m->update(['sequence' => $i + 1]);
+        }
+
+        $note->update(['status' => 'redeemed', 'redeemed_booking_id' => $booking->id, 'redeemed_at' => now()]);
+        $booking->update(['credit_applied' => $note->amount]);
+
+        if ($firstCleared) {
+            $booking->update(['status' => 'confirmed', 'confirmed_at' => now(), 'reserved_until' => null]);
+        }
+    }
+
+    /** Give a booking's seats back to its departure. */
+    public function releaseSeats(Booking $booking): void
+    {
+        Batch::query()->whereKey($booking->batch_id)->where('seats_booked', '>=', $booking->traveller_count)
+            ->decrement('seats_booked', $booking->traveller_count);
+        Batch::query()->whereKey($booking->batch_id)->whereColumn('seats_booked', '<', 'capacity')->where('status', 'sold_out')
+            ->update(['status' => 'open']);
     }
 
     /** Release seats held by an unpaid booking whose reservation window has passed. */
@@ -105,10 +170,7 @@ class BookingService
             $fresh->update(['status' => 'expired', 'reserved_until' => null]);
             $fresh->milestones()->update(['status' => 'cancelled']);
 
-            Batch::query()->whereKey($fresh->batch_id)->where('seats_booked', '>=', $fresh->traveller_count)
-                ->decrement('seats_booked', $fresh->traveller_count);
-            Batch::query()->whereKey($fresh->batch_id)->whereColumn('seats_booked', '<', 'capacity')->where('status', 'sold_out')
-                ->update(['status' => 'open']);
+            $this->releaseSeats($fresh);
 
             return true;
         });

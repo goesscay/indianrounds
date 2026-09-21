@@ -39,8 +39,9 @@ class InvoiceBuilder
                 'total' => $booking->gst_amount,
             ],
             'total' => $booking->total_amount,
+            'credit_applied' => $booking->credit_applied,
             'paid' => $booking->paid_amount,
-            'balance' => $booking->total_amount - $booking->paid_amount,
+            'balance' => in_array($booking->status, ['cancelled', 'expired'], true) ? 0 : $booking->total_amount - $booking->paid_amount,
         ];
     }
 }
