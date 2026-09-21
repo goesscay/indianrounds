@@ -38,6 +38,7 @@ export function AuthMenu() {
       </button>
       {open && (
         <div className="absolute right-0 mt-2 w-48 overflow-hidden rounded-card border border-black/10 bg-white shadow-float">
+          {user.staff && <Link href="/admin" onClick={() => setOpen(false)} className="block px-4 py-3 text-sm font-semibold text-brand-red hover:bg-surface-alt">Admin</Link>}
           <Link href="/account" onClick={() => setOpen(false)} className="block px-4 py-3 text-sm hover:bg-surface-alt">My account</Link>
           <Link href="/bookings" onClick={() => setOpen(false)} className="block px-4 py-3 text-sm hover:bg-surface-alt">My bookings</Link>
           <button

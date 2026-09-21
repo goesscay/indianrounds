@@ -40,6 +40,10 @@ class AuthController extends Controller
             throw ValidationException::withMessages(['email' => 'These credentials do not match our records.']);
         }
 
+        if (! $user->is_active) {
+            throw ValidationException::withMessages(['email' => 'This account has been disabled. Please contact support.']);
+        }
+
         return $this->issue($user);
     }
 
@@ -119,7 +123,7 @@ class AuthController extends Controller
     private function issue(User $user, int $status = 200): JsonResponse
     {
         return response()->json([
-            'token' => $user->createToken('web', ['customer'])->plainTextToken,
+            'token' => $user->createToken('web', $user->isStaff() ? ['staff', 'customer'] : ['customer'])->plainTextToken,
             'data' => $this->present($user),
         ], $status);
     }
@@ -133,6 +137,7 @@ class AuthController extends Controller
             'email' => $user->email,
             'phone' => $user->phone,
             'gst_state' => $user->gst_state,
+            'staff' => $user->staffProfile(),
         ];
     }
 }

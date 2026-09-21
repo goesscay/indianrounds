@@ -3,7 +3,10 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { apiFetch, ApiError } from "./client-api";
 
-export type User = { id: number; name: string; email: string; phone: string | null; gst_state: string | null };
+export type StaffProfile = { tier: "admin" | "staff"; department: string | null; department_label: string | null; permissions: string[] };
+export type User = { id: number; name: string; email: string; phone: string | null; gst_state: string | null; staff?: StaffProfile | null };
+
+export const can = (user: User | null, permission: string) => Boolean(user?.staff?.permissions.includes(permission));
 
 type AuthState = {
   user: User | null;

@@ -27,6 +27,7 @@ export function MobileNav() {
             ))}
             {user ? (
               <>
+                {user.staff && <Link href="/admin" onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold text-brand-red">Admin</Link>}
                 <Link href="/account" onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">My account</Link>
                 <Link href="/bookings" onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">My bookings</Link>
                 <button onClick={async () => { setOpen(false); await logout(); }} className="border-b border-black/5 py-3 text-left font-semibold">Log out ({user.name.split(" ")[0]})</button>

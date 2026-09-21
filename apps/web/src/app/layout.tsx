@@ -5,6 +5,7 @@ import { getDestinations } from "@/lib/api";
 import { site } from "@/lib/site";
 import { AuthProvider } from "@/lib/auth";
 import { LeadModalProvider } from "@/components/LeadModal";
+import { SiteChrome } from "@/components/SiteChrome";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -38,10 +39,9 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-full flex-col">
         <AuthProvider>
           <LeadModalProvider>
-            <SiteHeader />
-            <div className="flex-1">{children}</div>
-            <SiteFooter destinations={destinations} />
-            <WhatsAppButton />
+            <SiteChrome header={<SiteHeader />} footer={<SiteFooter destinations={destinations} />} floating={<WhatsAppButton />}>
+              {children}
+            </SiteChrome>
           </LeadModalProvider>
         </AuthProvider>
       </body>

@@ -8,8 +8,10 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
+        $this->call(RbacSeeder::class);
+
         if (! app()->isProduction()) {
-            $this->call(CatalogueSeeder::class);
+            $this->call([CatalogueSeeder::class, DemoStaffSeeder::class]);
         }
     }
 }

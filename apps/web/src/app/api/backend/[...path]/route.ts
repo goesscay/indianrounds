@@ -8,7 +8,7 @@ import { NextResponse, type NextRequest } from "next/server";
  */
 const API_URL = process.env.API_URL ?? "http://localhost:8000/api/v1";
 const COOKIE = "ir_token";
-const ALLOWED = ["auth/", "me", "bookings", "grievances", "tours/", "meta/", "leads/"];
+const ALLOWED = ["auth/", "me", "bookings", "grievances", "tours/", "meta/", "leads/", "admin/"];
 const TOKEN_ENDPOINTS = new Set(["auth/login", "auth/register", "auth/google/exchange"]);
 
 async function handle(req: NextRequest, ctx: { params: Promise<{ path: string[] }> }) {
@@ -64,4 +64,4 @@ function stripToken(body: Record<string, unknown>) {
   return rest;
 }
 
-export { handle as GET, handle as POST, handle as PATCH, handle as DELETE };
+export { handle as GET, handle as POST, handle as PUT, handle as PATCH, handle as DELETE };
