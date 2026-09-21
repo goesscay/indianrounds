@@ -7,7 +7,6 @@ use App\Models\PaymentMilestone;
 use App\Models\WebhookEvent;
 use App\Services\Payments\PaymentGateway;
 use App\Services\PaymentService;
-use Illuminate\Database\UniqueConstraintViolationException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -26,9 +25,16 @@ class RazorpayWebhookController extends Controller
         $event = json_decode($payload, true) ?: [];
 
         if ($eventId !== '') {
-            try {
-                WebhookEvent::create(['provider' => 'razorpay', 'event_id' => $eventId, 'type' => $event['event'] ?? null]);
-            } catch (UniqueConstraintViolationException) {
+            // INSERT ... ON CONFLICT DO NOTHING: unlike a caught unique violation, it never aborts a Postgres transaction.
+            $inserted = WebhookEvent::query()->insertOrIgnore([
+                'provider' => 'razorpay',
+                'event_id' => $eventId,
+                'type' => $event['event'] ?? null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+
+            if ($inserted === 0) {
                 return response()->json(['message' => 'Already processed.']);
             }
         }
