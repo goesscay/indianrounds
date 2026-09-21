@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { NextResponse, type NextRequest } from "next/server";
+import { sameOrigin } from "@/lib/same-origin";
 
 /**
  * Same-origin proxy to the Laravel API.
@@ -19,13 +20,22 @@ async function handle(req: NextRequest, ctx: { params: Promise<{ path: string[] 
     return NextResponse.json({ message: "Not found." }, { status: 404 });
   }
 
+  // Defence in depth on top of SameSite=Lax: state-changing calls must come from this site.
+  const hasBody = !["GET", "HEAD"].includes(req.method);
+  if (hasBody && !sameOrigin(req)) {
+    return NextResponse.json({ message: "Cross-site requests are not allowed." }, { status: 403 });
+  }
+
   const jar = await cookies();
   const token = jar.get(COOKIE)?.value;
 
   const headers: Record<string, string> = { Accept: "application/json" };
   if (token) headers.Authorization = `Bearer ${token}`;
-  const hasBody = !["GET", "HEAD"].includes(req.method);
   if (hasBody) headers["Content-Type"] = "application/json";
+  // Pass the visitor's address on: the API's login and form throttles are per client, and would
+  // otherwise count every visitor as this one server. The API trusts this header only from TRUSTED_PROXIES.
+  const forwarded = req.headers.get("x-forwarded-for") ?? req.headers.get("x-real-ip");
+  if (forwarded) headers["X-Forwarded-For"] = forwarded;
 
   let upstream: Response;
   try {

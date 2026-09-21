@@ -66,11 +66,11 @@ export function ResetPasswordForm() {
   return (
     <AuthShell title="Reset" accent="password">
       <form onSubmit={onSubmit} className="space-y-4">
-        <Field label="New password (min 8 characters)" id="password" error={errors.password?.[0] ?? errors.email?.[0] ?? errors.token?.[0]}>
-          <input id="password" name="password" type="password" minLength={8} required autoComplete="new-password" className={inputClass} />
+        <Field label="New password (10+ characters, letters and numbers)" id="password" error={errors.password?.[0] ?? errors.email?.[0] ?? errors.token?.[0]}>
+          <input id="password" name="password" type="password" minLength={10} required autoComplete="new-password" className={inputClass} />
         </Field>
         <Field label="Confirm new password" id="password_confirmation">
-          <input id="password_confirmation" name="password_confirmation" type="password" minLength={8} required autoComplete="new-password" className={inputClass} />
+          <input id="password_confirmation" name="password_confirmation" type="password" minLength={10} required autoComplete="new-password" className={inputClass} />
         </Field>
         <button disabled={busy} className="w-full rounded-full bg-brand-red px-6 py-3 font-semibold text-white hover:bg-brand-red-dark disabled:opacity-60">Reset password</button>
       </form>

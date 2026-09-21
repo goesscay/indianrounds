@@ -29,6 +29,7 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => true,
+    // Auth is a bearer token held server-side by the Next.js proxy, never a cross-site cookie.
+    'supports_credentials' => false,
 
 ];

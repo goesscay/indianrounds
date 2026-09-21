@@ -25,6 +25,8 @@ jobs:
       - run: pnpm lint
       - run: pnpm exec next typegen
       - run: pnpm exec tsc --noEmit
+      - run: pnpm test
+      - run: pnpm audit --prod
       - run: pnpm build
 
   api:
@@ -55,6 +57,7 @@ jobs:
           coverage: none
       - run: composer install --no-interaction --prefer-dist
       - run: cp .env.example .env && php artisan key:generate
+      - run: composer audit
       - run: vendor/bin/pint --test
       - run: vendor/bin/phpstan analyse --memory-limit=1G
       - run: php artisan test
@@ -68,3 +71,101 @@ jobs:
           CACHE_STORE: array
           SESSION_DRIVER: array
           QUEUE_CONNECTION: sync
+
+  # Full stack on Postgres: booking concurrency, browser end-to-end, accessibility and Lighthouse.
+  e2e:
+    runs-on: ubuntu-latest
+    needs: [web, api]
+    timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_DB: indianrounds
+          POSTGRES_USER: indianrounds
+          POSTGRES_PASSWORD: secret
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U indianrounds"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+    env:
+      APP_ENV: local
+      DB_CONNECTION: pgsql
+      DB_HOST: 127.0.0.1
+      DB_PORT: 5432
+      DB_DATABASE: indianrounds
+      DB_USERNAME: indianrounds
+      DB_PASSWORD: secret
+      REDIS_HOST: 127.0.0.1
+      QUEUE_CONNECTION: sync
+      MAIL_MAILER: log
+      PAYMENT_DRIVER: fake
+      FRONTEND_URL: http://localhost:3000
+      API_URL: http://127.0.0.1:8000/api/v1
+      NEXT_PUBLIC_API_URL: http://127.0.0.1:8000/api/v1
+      NEXT_PUBLIC_SITE_URL: http://localhost:3000
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          extensions: pdo_pgsql, mbstring, intl, zip
+          coverage: none
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 12
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: apps/web/pnpm-lock.yaml
+
+      - name: Start the API
+        working-directory: apps/api
+        run: |
+          composer install --no-interaction --prefer-dist
+          cp .env.example .env && php artisan key:generate
+          php artisan migrate:fresh --seed --force
+          PHP_CLI_SERVER_WORKERS=4 nohup php artisan serve --host=127.0.0.1 --port=8000 > ../../api.log 2>&1 &
+          for i in $(seq 1 30); do curl -fs http://127.0.0.1:8000/api/v1/health && break; sleep 1; done
+
+      - name: Booking concurrency and load test (Postgres)
+        working-directory: apps/api
+        run: |
+          php artisan loadtest:prepare --users=60 --seats=10
+          node ../../load/booking-load.mjs --api http://127.0.0.1:8000/api/v1 --read-seconds 10
+          php artisan loadtest:prepare --cleanup
+
+      - name: Build and start the web app
+        working-directory: apps/web
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm build
+          nohup pnpm start > ../../web.log 2>&1 &
+          for i in $(seq 1 30); do curl -fs http://localhost:3000 > /dev/null && break; sleep 1; done
+
+      - name: Browser end-to-end and accessibility
+        working-directory: apps/web
+        run: |
+          pnpm exec playwright install --with-deps chromium
+          pnpm e2e
+
+      - name: Lighthouse (SEO and accessibility gates)
+        working-directory: apps/web
+        run: npx --yes @lhci/cli@0.15.x autorun
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: e2e-diagnostics
+          path: |
+            apps/web/playwright-report
+            apps/web/test-results
+            apps/web/.lighthouseci
+            api.log
+            web.log
+          if-no-files-found: ignore
+

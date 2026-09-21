@@ -2,6 +2,10 @@ import type { MetadataRoute } from "next";
 import { getCollections, getDestinations, getPosts, getTours } from "@/lib/api";
 import { site } from "@/lib/site";
 
+// Rendered per request (the underlying API fetches are cached for 60 s): a build made while the API is
+// unreachable must not freeze an empty sitemap into the static output.
+export const dynamic = "force-dynamic";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [destinations, tours, posts, collections] = await Promise.all([
     getDestinations(),

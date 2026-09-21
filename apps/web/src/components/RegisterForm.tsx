@@ -63,11 +63,11 @@ export function RegisterForm() {
             ))}
           </select>
         </Field>
-        <Field label="Password (min 8 characters)" id="password" error={e1("password")}>
-          <input id="password" name="password" type="password" minLength={8} required autoComplete="new-password" className={inputClass} />
+        <Field label="Password (10+ characters, letters and numbers)" id="password" error={e1("password")}>
+          <input id="password" name="password" type="password" minLength={10} required autoComplete="new-password" className={inputClass} />
         </Field>
         <Field label="Confirm password" id="password_confirmation">
-          <input id="password_confirmation" name="password_confirmation" type="password" minLength={8} required autoComplete="new-password" className={inputClass} />
+          <input id="password_confirmation" name="password_confirmation" type="password" minLength={10} required autoComplete="new-password" className={inputClass} />
         </Field>
         {message && <p role="alert" className="text-sm text-brand-red">{message}</p>}
         <button disabled={busy} className="w-full rounded-full bg-brand-red px-6 py-3 font-semibold text-white hover:bg-brand-red-dark disabled:opacity-60">

@@ -42,12 +42,12 @@ export function Markdown({ source }: { source: string }) {
     const block = raw.trim();
     if (!block) return;
     const key = `b${i}`;
-    const heading = /^(#{2,3})\s+(.+)$/.exec(block);
-    if (heading && !block.includes("\n")) {
+    const lines = block.split("\n");
+    const heading = /^(#{2,3})\s+(.+)$/.exec(lines[0]);
+    if (heading && lines.length === 1) {
       out.push(heading[1] === "##" ? <h2 key={key}>{renderInline(heading[2], key)}</h2> : <h3 key={key}>{renderInline(heading[2], key)}</h3>);
       return;
     }
-    const lines = block.split("\n");
     if (lines.every((l) => /^[-*]\s+/.test(l))) {
       out.push(<ul key={key}>{lines.map((l, n) => <li key={n}>{renderInline(l.replace(/^[-*]\s+/, ""), `${key}-${n}`)}</li>)}</ul>);
       return;

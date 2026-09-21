@@ -118,7 +118,7 @@ class CancellationTest extends TestCase
         $this->assertTrue($note->expires_on->isSameDay(now()->addMonths(12)));
         $this->assertSame(0, $b->batch->fresh()->seats_booked);
         $this->assertSame(0, $b->milestones()->where('status', 'due')->count());
-        Mail::assertSent(BookingCancelled::class, 1);
+        Mail::assertQueued(BookingCancelled::class, 1);
     }
 
     public function test_cancel_requires_confirmation_and_ownership_and_cannot_repeat(): void

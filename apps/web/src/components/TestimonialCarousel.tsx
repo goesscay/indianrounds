@@ -20,16 +20,17 @@ export function TestimonialCarousel({ items }: { items: Testimonial[] }) {
           <ChevronRight size={18} />
         </button>
       </div>
-      <ul ref={track} className="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 [scrollbar-width:none]">
+      <ul ref={track} tabIndex={0} aria-label="Traveller testimonials" className="relative flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 [scrollbar-width:none]">
         {items.map((t) => (
           <li key={t.id} className="w-[85%] shrink-0 snap-start rounded-card bg-white p-5 shadow-float sm:w-80">
             <div className="mb-3 flex items-center gap-3">
               <span className="grid size-12 place-items-center rounded-full bg-brand-red/10 font-bold text-brand-red">{t.name[0]}</span>
               <div>
                 <p className="font-semibold leading-tight">{t.name}</p>
-                <p className="flex gap-0.5 text-amber-500" aria-label={`${t.rating} out of 5 stars`}>
+                <p className="flex gap-0.5 text-amber-500">
+                  <span className="sr-only">{t.rating} out of 5 stars</span>
                   {Array.from({ length: t.rating }).map((_, i) => (
-                    <Star key={i} size={14} fill="currentColor" />
+                    <Star key={i} size={14} fill="currentColor" aria-hidden />
                   ))}
                 </p>
               </div>

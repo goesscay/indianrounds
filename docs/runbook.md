@@ -1,0 +1,100 @@
+# Operations runbook
+
+For whoever is on call. Assumes the layout in the README: a Laravel API, a Next.js web app, PostgreSQL, Redis.
+
+## 1. What runs where
+
+| Process | Purpose | If it stops |
+| --- | --- | --- |
+| PHP-FPM / API web server | REST API | Site cannot load data or take bookings |
+| Next.js (`pnpm start`) | Website and same-origin proxy (`/api/backend/*`) | Site is down; pages already cached at the CDN may still serve |
+| PostgreSQL | System of record | Everything stops; `/health` returns 503 |
+| Redis | Cache, queue, sessions, rate limits | `/health` returns 503 (cache probe fails) |
+| **Scheduler** (`php artisan schedule:run` every minute) | Releases expired seat reservations, sends payment reminders, heartbeat, prunes tokens | Seats stay held past 15 min; reminders stop; `/health` becomes `degraded` after 5 min |
+| **Queue worker** (`php artisan queue:work redis --tries=5`) | Sends booking/cancellation/reminder emails | Emails pile up; **payments and bookings are unaffected** |
+
+Cron entry: `* * * * * cd /srv/indianrounds/apps/api && php artisan schedule:run >> /dev/null 2>&1`
+Worker under a supervisor (systemd/Supervisor) with auto-restart, and restart it on every deploy: `php artisan queue:restart`.
+
+## 2. Health and monitoring
+
+`GET /api/v1/health` (never cached):
+
+```json
+{"status":"ok","app":"Indian Rounds","checks":{"database":"ok","cache":"ok","scheduler":"ok"}}
+```
+
+- `503 down`: database or cache unreachable. Page immediately.
+- `200 degraded`: scheduler heartbeat older than 5 minutes. Page during business hours; if it persists, reservations are not being released.
+- `scheduler: unknown`: no heartbeat yet (fresh deploy, cache flushed). Wait two minutes.
+
+Alert on: non-200/`degraded` health, home page 5xx, `php artisan queue:failed` count > 0, Postgres disk > 80%, Redis memory > 80%, certificate expiry < 14 days.
+
+Logs: `apps/api/storage/logs/laravel-*.log` (daily). Every admin change and money movement is also in the append-only **audit log** (Admin > Audit log).
+
+## 3. Deploy
+
+1. `scripts/backup.sh` (manual backup).
+2. API: pull, `composer install --no-dev --optimize-autoloader`, `php artisan migrate --force`, `php artisan config:cache route:cache event:cache`, reload PHP-FPM, `php artisan queue:restart`.
+3. Web: `pnpm install --frozen-lockfile && pnpm build`, restart the Node process. Public pages revalidate every 60 s (sitemap hourly) so no manual cache purge is needed.
+4. `php artisan launch:check` and the smoke test in `docs/launch-checklist.md` section 8.
+
+Migrations must be backward compatible with the previous release for one deploy, so a rollback of code does not need a rollback of schema.
+
+### Rollback
+Redeploy the previous artefacts and `php artisan queue:restart`. Only run `php artisan migrate:rollback --step=1` if the release added a migration that the old code cannot tolerate, and only after a backup.
+
+## 4. Backups and restore
+
+- Nightly: `scripts/backup.sh` (Postgres custom-format dump + private uploads, checksums, off-site copy, 30-day local retention).
+- Point-in-time recovery (recommended for production): enable WAL archiving / the managed provider's PITR with >= 7 days.
+- **Restore drill** (before launch, then quarterly): `scripts/restore-drill.sh <dump>` restores into a scratch database and asserts no confirmed booking lacks a payment and no batch is oversold.
+- Real restore: stop the API, restore into a fresh database with `pg_restore --no-owner --dbname=<new> <dump>`, point `DB_DATABASE` at it, `php artisan migrate --force`, start the API, run the smoke test. Restore uploads by extracting the tarball into `apps/api/storage/app/private`.
+
+## 5. Incident playbooks
+
+### A customer paid but the booking is still "pending payment"
+1. Find the booking in Admin > Bookings and the payment in the Razorpay dashboard (search by order id).
+2. If Razorpay shows **captured**: the webhook did not arrive or failed. Razorpay dashboard > Webhooks > deliveries: redeliver the `payment.captured` event. The handler is idempotent, so redelivery is safe. Then check the booking turned *confirmed*.
+3. If Razorpay shows **failed/authorized only**: do not confirm. Ask the customer to retry; the reservation may have expired (15 minutes).
+4. If the webhook keeps failing: check `RAZORPAY_WEBHOOK_SECRET` matches the dashboard exactly and that `TRUSTED_PROXIES`/TLS are not altering the body.
+
+### "Seats are wrong" or suspected oversell
+Seat grabs are atomic in SQL (`seats_booked + n <= capacity`) and covered by a concurrency test on Postgres. To audit:
+```sql
+select id, capacity, seats_booked from batches where seats_booked > capacity;   -- must be empty
+select b.id, b.seats_booked, coalesce(sum(k.traveller_count),0) as booked
+  from batches b left join bookings k on k.batch_id=b.id and k.status in ('pending_payment','confirmed')
+  group by b.id having b.seats_booked <> coalesce(sum(k.traveller_count),0);      -- drift
+```
+Drift means the scheduler stopped (expired holds not released): fix the scheduler, then run `php artisan bookings:release-expired`.
+
+### Emails are not arriving
+Check the worker is running (`queue:work`), `php artisan queue:failed`, and the provider dashboard. After fixing: `php artisan queue:retry all`. Customers can always see status and invoices in their account, so this is not a payments incident.
+
+### Login problems / lockouts
+Five wrong passwords for one email from one client lock that pair for 5 minutes (per account, not per IP alone). A locked customer can wait or use *Forgot password*. Staff who forgot their password use the same flow; a Super Admin can disable/re-enable accounts in Admin > Team.
+
+### A staff member leaves or a device is lost
+Admin > Team > disable the account (this ends access on the next request), and change their password if it may be reused elsewhere. Staff tokens expire after 12 hours regardless.
+
+### Site slow
+`/health` first. Then Postgres (slow query log, missing index: `pg_stat_statements`), Redis memory, and PHP-FPM worker saturation. The public catalogue is cached for 30 s at the HTTP layer and revalidated every 60 s by Next.js; a CDN in front of both multiplies this.
+
+### Suspected data exposure
+Rotate `APP_KEY` only with a plan (it invalidates encrypted data and sessions). Revoke all tokens: `php artisan tinker` -> `\Laravel\Sanctum\PersonalAccessToken::query()->delete();`. Preserve logs, export the audit log, and follow the legal notification duties for the business.
+
+## 6. Routine tasks
+
+| When | Task |
+| --- | --- |
+| Daily | Failed jobs, 5xx count, leads inbox, grievance SLA (Admin > Grievances) |
+| Weekly | Reconcile Razorpay settlements with Admin > Payments; review pending refund/credit approvals |
+| Monthly | `composer audit`, `pnpm audit --prod`; apply security updates; review staff accounts and roles |
+| Quarterly | Restore drill; review rate limits and CSP; rotate the Razorpay webhook secret |
+
+## 7. Secrets and rotation
+
+- `RAZORPAY_KEY_SECRET` / `RAZORPAY_WEBHOOK_SECRET`: rotate in the Razorpay dashboard, update the environment, restart. Use a maintenance window: in-flight payments verified with the old secret will fail.
+- `APP_KEY`: see above.
+- Database and Redis passwords: rotate at the provider, update the environment, restart API and worker.

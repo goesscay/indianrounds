@@ -100,7 +100,7 @@ class CreditNoteAndAccountTest extends TestCase
         $this->assertSame('confirmed', $b->status);
         $this->assertSame(3, $b->milestones()->count());
         $this->assertSame($advance, $b->paid_amount);
-        Mail::assertSent(BookingConfirmed::class);
+        Mail::assertQueued(BookingConfirmed::class);
     }
 
     public function test_credit_note_worth_more_than_the_booking_is_refused(): void
@@ -209,6 +209,6 @@ class CreditNoteAndAccountTest extends TestCase
         $this->artisan('payments:send-reminders')->assertSuccessful();
         $this->artisan('payments:send-reminders')->assertSuccessful();
 
-        Mail::assertSent(PaymentDue::class, 1);
+        Mail::assertQueued(PaymentDue::class, 1);
     }
 }

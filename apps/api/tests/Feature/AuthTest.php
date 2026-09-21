@@ -104,10 +104,10 @@ class AuthTest extends TestCase
 
         $this->postJson('/api/v1/auth/reset-password', [
             'token' => $token, 'email' => 'known@example.com',
-            'password' => 'brand-new-pass', 'password_confirmation' => 'brand-new-pass',
+            'password' => 'brand-new-pass-2', 'password_confirmation' => 'brand-new-pass-2',
         ])->assertOk();
 
-        $this->postJson('/api/v1/auth/login', ['email' => 'known@example.com', 'password' => 'brand-new-pass'])->assertOk();
+        $this->postJson('/api/v1/auth/login', ['email' => 'known@example.com', 'password' => 'brand-new-pass-2'])->assertOk();
     }
 
     public function test_google_callback_creates_user_and_exchange_returns_token_once(): void

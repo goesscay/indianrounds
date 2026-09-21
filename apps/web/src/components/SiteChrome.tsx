@@ -11,8 +11,11 @@ export function SiteChrome({ header, footer, floating, children }: { header: Rea
 
   return (
     <>
+      <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand-red focus:px-5 focus:py-2.5 focus:font-semibold focus:text-white">
+        Skip to main content
+      </a>
       {header}
-      <div className="flex-1">{children}</div>
+      <main id="main" tabIndex={-1} className="flex-1 outline-none">{children}</main>
       {footer}
       {floating}
     </>

@@ -13,7 +13,7 @@ const colors = [
 
 export default function StyleGuide() {
   return (
-    <main className="mx-auto w-full max-w-5xl space-y-12 p-8">
+    <div className="mx-auto w-full max-w-5xl space-y-12 p-8">
       <h1 className="text-4xl font-extrabold">
         Style <span className="text-brand-red">guide</span>
       </h1>
@@ -55,6 +55,6 @@ export default function StyleGuide() {
           <p className="mt-2 text-xl font-bold text-brand-red">₹24,999</p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

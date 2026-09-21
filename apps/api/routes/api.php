@@ -10,6 +10,7 @@ use App\Http\Controllers\Api\CreditNoteController;
 use App\Http\Controllers\Api\DestinationController;
 use App\Http\Controllers\Api\GoogleAuthController;
 use App\Http\Controllers\Api\GrievanceController;
+use App\Http\Controllers\Api\HealthController;
 use App\Http\Controllers\Api\LeadController;
 use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\PostController;
@@ -19,27 +20,25 @@ use App\Http\Controllers\Api\TourController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
-    Route::get('/health', fn () => response()->json([
-        'status' => 'ok',
-        'app' => config('app.name'),
-    ]));
+    Route::get('/health', HealthController::class);
 
-    Route::get('/meta/states', fn () => response()->json(['data' => config('booking.states')]));
-
-    // Catalogue
-    Route::get('/destinations', [DestinationController::class, 'index'])->name('destinations.index');
-    Route::get('/destinations/{slug}', [DestinationController::class, 'show'])->name('destinations.show');
-    Route::get('/tours', [TourController::class, 'index'])->name('tours.index');
-    Route::get('/tours/{slug}', [TourController::class, 'show'])->name('tours.show');
-    Route::get('/tours/{slug}/batches', [TourController::class, 'batches'])->name('tours.batches');
-    Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
-    Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-    Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
-    Route::get('/collections', [CollectionController::class, 'index'])->name('collections.index');
-    Route::get('/collections/{slug}', [CollectionController::class, 'show'])->name('collections.show');
-    Route::get('/case-studies', [CaseStudyController::class, 'index']);
-    Route::get('/careers/openings', [CareersController::class, 'openings']);
+    // Public read-only content. Short shared-cache lifetimes; seat counts (batches) stay very short.
+    Route::middleware('cache.headers:public;max_age=30;stale_while_revalidate=60;etag')->group(function () {
+        Route::get('/meta/states', fn () => response()->json(['data' => config('booking.states')]));
+        Route::get('/destinations', [DestinationController::class, 'index'])->name('destinations.index');
+        Route::get('/destinations/{slug}', [DestinationController::class, 'show'])->name('destinations.show');
+        Route::get('/tours', [TourController::class, 'index'])->name('tours.index');
+        Route::get('/tours/{slug}', [TourController::class, 'show'])->name('tours.show');
+        Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
+        Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+        Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
+        Route::get('/collections', [CollectionController::class, 'index'])->name('collections.index');
+        Route::get('/collections/{slug}', [CollectionController::class, 'show'])->name('collections.show');
+        Route::get('/case-studies', [CaseStudyController::class, 'index']);
+        Route::get('/careers/openings', [CareersController::class, 'openings']);
+    });
     Route::post('/careers/apply', [CareersController::class, 'apply'])->middleware('throttle:5,1');
+    Route::get('/tours/{slug}/batches', [TourController::class, 'batches'])->name('tours.batches')->middleware('cache.headers:public;max_age=10;etag');
 
     // Leads
     Route::middleware('throttle:10,1')->prefix('leads')->group(function () {

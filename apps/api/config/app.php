@@ -17,6 +17,9 @@ return [
 
     'frontend_url' => env('FRONTEND_URL', 'http://localhost:3000'),
 
+    // Comma-separated proxy IPs/CIDRs (or *) whose X-Forwarded-* headers are trusted. Read in bootstrap/app.php.
+    'trusted_proxies' => env('TRUSTED_PROXIES'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

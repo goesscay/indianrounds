@@ -322,11 +322,11 @@ export function ProfileView() {
         <Field label="Current password" id="pw-current" error={pwErrors.current_password?.[0]}>
           <input id="pw-current" name="current_password" type="password" autoComplete="current-password" className={inputClass} />
         </Field>
-        <Field label="New password (min 8 characters)" id="pw-new" error={pwErrors.password?.[0]}>
-          <input id="pw-new" name="password" type="password" minLength={8} required autoComplete="new-password" className={inputClass} />
+        <Field label="New password (10+ characters, letters and numbers)" id="pw-new" error={pwErrors.password?.[0]}>
+          <input id="pw-new" name="password" type="password" minLength={10} required autoComplete="new-password" className={inputClass} />
         </Field>
         <Field label="Confirm new password" id="pw-confirm">
-          <input id="pw-confirm" name="password_confirmation" type="password" minLength={8} required autoComplete="new-password" className={inputClass} />
+          <input id="pw-confirm" name="password_confirmation" type="password" minLength={10} required autoComplete="new-password" className={inputClass} />
         </Field>
         {pwMsg && <p className="text-sm text-green-700">{pwMsg}</p>}
         <button className="rounded-full border border-brand-red px-6 py-2.5 font-semibold text-brand-red hover:bg-brand-red/5">Update password</button>

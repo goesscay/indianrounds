@@ -16,11 +16,22 @@ function pick(seed: string) {
 }
 
 /** Photo when `src` is set, otherwise a deterministic gradient placeholder. */
-export function CoverImage({ src, alt, seed, className = "" }: { src?: string | null; alt: string; seed: string; className?: string }) {
+const optimisedHosts = (process.env.NEXT_PUBLIC_IMAGE_HOSTS ?? "").split(",").map((h) => h.trim()).filter(Boolean);
+
+/** Only hosts we have allow-listed go through the Next.js optimiser (resizing, AVIF/WebP); other URLs are shown as-is. */
+function canOptimise(src: string) {
+  try {
+    return optimisedHosts.includes(new URL(src).hostname);
+  } catch {
+    return false;
+  }
+}
+
+export function CoverImage({ src, alt, seed, className = "", sizes = "(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" }: { src?: string | null; alt: string; seed: string; className?: string; sizes?: string }) {
   if (src) {
     return (
       <div className={`relative overflow-hidden ${className}`}>
-        <Image src={src} alt={alt} fill unoptimized className="object-cover" />
+        <Image src={src} alt={alt} fill sizes={sizes} unoptimized={!canOptimise(src)} className="object-cover" />
       </div>
     );
   }

@@ -45,11 +45,21 @@ pnpm dev                        # http://localhost:3000 (style guide at /style-g
 - **Careers** (`/careers`): HR manages openings and applications. Résumés (PDF/DOC/DOCX, 5 MB) are stored on the private disk and only downloadable by HR through an audited endpoint.
 - The seeded posts, tours, case studies and jobs (`GrowthSeeder`, non-production only) are placeholders: replace them through the admin before launch.
 
+## Hardening and launch
+- `php artisan launch:check` (add `--strict` to fail on warnings) verifies a production environment: debug off, https URLs, live Razorpay keys, the real gateway, real mail, Redis, no demo accounts, a Super Admin exists. Run it before switching traffic.
+- `php artisan openapi:generate` rewrites `docs/openapi.yaml` from the routes. A test fails if the committed file is stale, if an admin route lacks a permission, or if an unthrottled public write endpoint appears.
+- Emails are queued: run a worker (`php artisan queue:work redis`) and the scheduler (`schedule:run` every minute). `GET /api/v1/health` reports database, cache and scheduler status (503 when down, `degraded` when the scheduler stalls).
+- Behind a load balancer set `TRUSTED_PROXIES`; the Next.js proxy forwards the visitor's IP so login and form limits are per visitor.
+- Load test: `cd apps/api && php artisan loadtest:prepare`, then `node load/booking-load.mjs`, then `php artisan loadtest:prepare --cleanup` (non-production only, needs `PAYMENT_DRIVER=fake`). It races many users for the last seats and checks nothing oversells.
+- Browser tests: with the API and web running, `cd apps/web && pnpm exec playwright install chromium && pnpm e2e` (purchase flow, axe accessibility, security headers, redirects, responsive overflow). Unit tests: `pnpm test`.
+- Backups and restore drill: `scripts/backup.sh`, `scripts/restore-drill.sh`.
+- Docs: [launch checklist](docs/launch-checklist.md), [runbook](docs/runbook.md), [UAT script](docs/uat-script.md), [security review](docs/security-review.md).
+
 ## Tests use their own database
 Create `apps/api/.env.testing` (git-ignored) with `APP_ENV=testing`, `APP_KEY`, `DB_CONNECTION=sqlite`, `DB_DATABASE=:memory:`, `CACHE_STORE=array`, `SESSION_DRIVER=array`, `QUEUE_CONNECTION=sync` so `php artisan test` never touches your dev database.
 
 ## Checks
-- Web: `pnpm lint`, `pnpm exec tsc --noEmit`, `pnpm build`
+- Web: `pnpm lint`, `pnpm exec next typegen && pnpm exec tsc --noEmit`, `pnpm test`, `pnpm build`
 - API: `vendor/bin/pint --test`, `vendor/bin/phpstan analyse`, `php artisan test`
 
 ## Layout

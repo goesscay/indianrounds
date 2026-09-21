@@ -162,7 +162,7 @@ class BookingPaymentTest extends TestCase
             ->assertJsonPath('data.status', 'confirmed')
             ->assertJsonPath('data.milestones.0.status', 'paid');
 
-        Mail::assertSent(BookingConfirmed::class, 1);
+        Mail::assertQueued(BookingConfirmed::class, 1);
     }
 
     public function test_invalid_signature_does_not_mark_paid(): void
@@ -195,7 +195,7 @@ class BookingPaymentTest extends TestCase
         $this->actingAs($this->user, 'sanctum')->postJson($url, $body)->assertOk();
         $this->actingAs($this->user, 'sanctum')->postJson($url, $body)->assertOk();
 
-        Mail::assertSent(BookingConfirmed::class, 1);
+        Mail::assertQueued(BookingConfirmed::class, 1);
     }
 
     public function test_webhook_marks_paid_once_and_rejects_bad_signature(): void
@@ -216,7 +216,7 @@ class BookingPaymentTest extends TestCase
 
         $this->assertSame('confirmed', Booking::first()->status);
         $this->assertDatabaseCount('webhook_events', 1);
-        Mail::assertSent(BookingConfirmed::class, 1);
+        Mail::assertQueued(BookingConfirmed::class, 1);
     }
 
     public function test_dev_simulate_endpoint_completes_payment_on_fake_driver(): void
