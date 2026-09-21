@@ -58,3 +58,13 @@ jobs:
       - run: vendor/bin/pint --test
       - run: vendor/bin/phpstan analyse --memory-limit=1G
       - run: php artisan test
+        env:
+          DB_CONNECTION: pgsql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 5432
+          DB_DATABASE: indianrounds_test
+          DB_USERNAME: indianrounds
+          DB_PASSWORD: secret
+          CACHE_STORE: array
+          SESSION_DRIVER: array
+          QUEUE_CONNECTION: sync
