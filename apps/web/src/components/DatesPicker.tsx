@@ -1,14 +1,17 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import type { Batch, Variant } from "@/lib/api";
 import { formatDate, formatINR, formatMonth } from "@/lib/format";
 import { useLeadModal } from "./LeadModal";
 
-type Props = { tourTitle: string; destination?: string; batches: Batch[]; variants: Variant[]; basePrice: number };
+type Props = { slug: string; tourTitle: string; destination?: string; batches: Batch[]; variants: Variant[]; basePrice: number };
 
-export function DatesPicker({ tourTitle, destination, batches, variants, basePrice }: Props) {
+export function DatesPicker({ slug, tourTitle, destination, batches, variants, basePrice }: Props) {
   const { open } = useLeadModal();
+  const router = useRouter();
+  const [pax, setPax] = useState(2);
   const [batchId, setBatchId] = useState<number | null>(null);
   const [variantId, setVariantId] = useState<number | null>(variants[0]?.id ?? null);
 
@@ -24,6 +27,9 @@ export function DatesPicker({ tourTitle, destination, batches, variants, basePri
   const batch = batches.find((b) => b.id === batchId);
   const variant = variants.find((v) => v.id === variantId);
   const price = variant?.price ?? basePrice;
+  const seatsLeft = batch?.seats_left ?? 10;
+  const maxPax = Math.min(10, seatsLeft);
+  const travellers = Math.min(pax, maxPax);
 
   return (
     <div className="grid gap-8 lg:grid-cols-2">
@@ -104,21 +110,31 @@ export function DatesPicker({ tourTitle, destination, batches, variants, basePri
           <p className="text-xs text-muted">Starting price</p>
           <p className="text-3xl font-extrabold text-brand-red">{formatINR(price)}<span className="ml-1 text-sm font-medium text-muted">per person</span></p>
           {batch && <p className="mt-1 text-sm text-muted">Selected: {formatDate(batch.starts_on)} – {formatDate(batch.ends_on)}</p>}
+          <div className="mt-4 flex items-center justify-between gap-3">
+            <label htmlFor="pax" className="text-sm font-semibold">Travellers</label>
+            <select id="pax" value={travellers} onChange={(e) => setPax(Number(e.target.value))} className="rounded-lg border border-black/15 bg-white px-3 py-2 text-sm">
+              {Array.from({ length: maxPax }, (_, i) => i + 1).map((n) => (
+                <option key={n} value={n}>{n}</option>
+              ))}
+            </select>
+          </div>
+          {batch && <p className="mt-2 text-sm font-semibold">Total for {travellers}: {formatINR(price * travellers)} <span className="text-xs font-normal text-muted">+ 5% GST</span></p>}
           <button
             type="button"
             disabled={!batch}
-            onClick={() =>
-              open({
-                destination,
-                title: "Reserve this departure",
-                message: `I'd like to book ${tourTitle} departing ${batch ? formatDate(batch.starts_on) : ""}${variant ? ` (${variant.label})` : ""}.`,
-              })
-            }
+            onClick={() => router.push(`/checkout?tour=${encodeURIComponent(slug)}&batch=${batch!.id}${variant ? `&variant=${variant.id}` : ""}&pax=${travellers}`)}
             className="mt-4 w-full rounded-full bg-brand-red px-6 py-3 font-semibold text-white hover:bg-brand-red-dark disabled:cursor-not-allowed disabled:opacity-50"
           >
-            {batch ? "Continue" : "Select a date to continue"}
+            {batch ? "Continue to booking" : "Select a date to continue"}
           </button>
-          <p className="mt-2 text-xs text-muted">Online checkout with secure payment opens soon; until then our team will confirm your booking.</p>
+          <button
+            type="button"
+            onClick={() => open({ destination, title: "Enquire about this tour", message: `I have a question about ${tourTitle}.` })}
+            className="mt-2 w-full rounded-full border border-brand-red px-6 py-2.5 text-sm font-semibold text-brand-red hover:bg-brand-red/5"
+          >
+            Have questions? Get a free quote
+          </button>
+          <p className="mt-2 text-xs text-muted">You will log in (or create an account) before payment. Seats are held for 15 minutes.</p>
         </div>
       </section>
     </div>

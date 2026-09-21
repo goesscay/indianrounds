@@ -3,6 +3,7 @@ import { Caveat, Poppins } from "next/font/google";
 import "./globals.css";
 import { getDestinations } from "@/lib/api";
 import { site } from "@/lib/site";
+import { AuthProvider } from "@/lib/auth";
 import { LeadModalProvider } from "@/components/LeadModal";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -35,12 +36,14 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${poppins.variable} ${caveat.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
-        <LeadModalProvider>
-          <SiteHeader />
-          <div className="flex-1">{children}</div>
-          <SiteFooter destinations={destinations} />
-          <WhatsAppButton />
-        </LeadModalProvider>
+        <AuthProvider>
+          <LeadModalProvider>
+            <SiteHeader />
+            <div className="flex-1">{children}</div>
+            <SiteFooter destinations={destinations} />
+            <WhatsAppButton />
+          </LeadModalProvider>
+        </AuthProvider>
       </body>
     </html>
   );

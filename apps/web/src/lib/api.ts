@@ -104,3 +104,47 @@ export async function getTour(slug: string) {
 export async function getTestimonials() {
   return (await get<{ data: Testimonial[] }>("/testimonials"))?.data ?? [];
 }
+
+export type Milestone = {
+  id: number;
+  sequence: number;
+  label: string;
+  due_on: string;
+  amount: number;
+  status: "due" | "paid" | "cancelled";
+  paid_at: string | null;
+};
+
+export type Booking = {
+  reference: string;
+  status: "pending_payment" | "confirmed" | "cancelled" | "expired";
+  traveller_count: number;
+  unit_price: number;
+  subtotal: number;
+  gst_rate: number;
+  gst_amount: number;
+  total_amount: number;
+  paid_amount: number;
+  gst_state: string;
+  reserved_until: string | null;
+  created_at: string;
+  contact: { name: string; phone: string; email: string };
+  tour: { title: string; slug: string; duration_nights: number };
+  variant: string | null;
+  departure: { starts_on: string; ends_on: string };
+  travellers: { name: string; age: number | null; gender: string | null }[];
+  milestones: Milestone[];
+};
+
+export type Invoice = {
+  invoice_number: string;
+  issued_on: string;
+  reference: string;
+  status: string;
+  bill_to: { name: string; email: string; phone: string; state: string };
+  line: { description: string; departure: string; quantity: number; unit_price: number; amount: number };
+  tax: { rate_percent: number; type: "CGST+SGST" | "IGST"; cgst: number; sgst: number; igst: number; total: number };
+  total: number;
+  paid: number;
+  balance: number;
+};

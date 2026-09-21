@@ -23,6 +23,12 @@ pnpm install
 pnpm dev                        # http://localhost:3000 (style guide at /style-guide)
 ```
 
+## Payments and scheduler
+- `PAYMENT_DRIVER=fake` (default in dev) simulates payments; the checkout shows a "Simulate payment" button. It is refused in production.
+- For Razorpay set `PAYMENT_DRIVER=razorpay`, `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`, `RAZORPAY_WEBHOOK_SECRET`, and add a webhook to `<api>/api/v1/webhooks/razorpay` for `payment.captured`.
+- Unpaid bookings release their seats after 15 minutes via `bookings:release-expired`. Run `php artisan schedule:work` locally, or a cron entry `* * * * * php artisan schedule:run` in production.
+- Set `COMPANY_GST_STATE` to the state the company is registered in; it decides CGST+SGST vs IGST on invoices.
+
 ## Tests use their own database
 Create `apps/api/.env.testing` (git-ignored) with `APP_ENV=testing`, `APP_KEY`, `DB_CONNECTION=sqlite`, `DB_DATABASE=:memory:`, `CACHE_STORE=array`, `SESSION_DRIVER=array`, `QUEUE_CONNECTION=sync` so `php artisan test` never touches your dev database.
 

@@ -4,11 +4,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navLinks, site } from "@/lib/site";
+import { useAuth } from "@/lib/auth";
 import { useLeadModal } from "./LeadModal";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
   const { open: openQuote } = useLeadModal();
+  const { user, logout } = useAuth();
 
   return (
     <div className="lg:hidden">
@@ -23,6 +25,17 @@ export function MobileNav() {
                 {l.label}
               </Link>
             ))}
+            {user ? (
+              <>
+                <Link href="/bookings" onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">My bookings</Link>
+                <button onClick={async () => { setOpen(false); await logout(); }} className="border-b border-black/5 py-3 text-left font-semibold">Log out ({user.name.split(" ")[0]})</button>
+              </>
+            ) : (
+              <>
+                <Link href="/login" onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">Login</Link>
+                <Link href="/register" onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">Sign up</Link>
+              </>
+            )}
             <a href={site.phoneHref} className="py-3 font-semibold text-brand-red">
               Call {site.phone}
             </a>

@@ -28,7 +28,7 @@ export default async function DatesPage({ params }: Props) {
       <h1 className="text-3xl font-extrabold sm:text-4xl">Dates &amp; Costing</h1>
       <p className="mt-1 inline-block rounded-full bg-brand-red px-4 py-1 text-sm font-semibold text-white">{t.title}</p>
       <div className="mt-8">
-        <DatesPicker tourTitle={t.title} destination={t.destination?.name} batches={t.batches ?? []} variants={t.variants ?? []} basePrice={t.price} />
+        <DatesPicker slug={t.slug} tourTitle={t.title} destination={t.destination?.name} batches={t.batches ?? []} variants={t.variants ?? []} basePrice={t.price} />
       </div>
     </div>
   );

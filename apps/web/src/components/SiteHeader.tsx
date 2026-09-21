@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Headset, Search } from "lucide-react";
 import { navLinks, site } from "@/lib/site";
+import { AuthMenu } from "./AuthMenu";
 import { OpenQuoteButton } from "./LeadModal";
 import { MobileNav } from "./MobileNav";
 
@@ -32,6 +33,7 @@ export function SiteHeader() {
           <Link href="/tours" aria-label="Search tours" className="hidden rounded-full p-2 hover:bg-surface-alt sm:block">
             <Search size={20} />
           </Link>
+          <AuthMenu />
           <OpenQuoteButton className="hidden rounded-full bg-brand-red px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-red-dark sm:block">
             Plan Your Trip
           </OpenQuoteButton>
