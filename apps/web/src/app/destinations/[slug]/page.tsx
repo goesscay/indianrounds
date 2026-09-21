@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getDestination } from "@/lib/api";
+import { getDestination, getPosts } from "@/lib/api";
 import { formatINR } from "@/lib/format";
 import { OpenQuoteButton } from "@/components/LeadModal";
+import { PostCard } from "@/components/PostCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TourCard } from "@/components/TourCard";
 
@@ -32,7 +33,7 @@ const sorts = [
 export default async function DestinationPage({ params, searchParams }: Props) {
   const { slug } = await params;
   const { sort = "popular" } = await searchParams;
-  const d = await getDestination(slug);
+  const [d, posts] = await Promise.all([getDestination(slug), getPosts({ destination: slug, per_page: "3" })]);
   if (!d) notFound();
 
   const tours = [...(d.tours ?? [])];
@@ -79,6 +80,15 @@ export default async function DestinationPage({ params, searchParams }: Props) {
             <h2 className="text-2xl font-extrabold">About {d.name} tours</h2>
             <p className="text-muted">{d.seo_content.overview}</p>
             {d.best_time && <p className="text-muted"><strong className="text-ink">Best time to visit:</strong> {d.best_time}</p>}
+          </section>
+        )}
+
+        {posts.data.length > 0 && (
+          <section className="mt-14">
+            <SectionHeading lead={`${d.name}`} accent="Travel Guides" href={`/blog?destination=${d.slug}`} cta="More guides" />
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {posts.data.map((p) => <PostCard key={p.slug} post={p} />)}
+            </div>
           </section>
         )}
       </div>

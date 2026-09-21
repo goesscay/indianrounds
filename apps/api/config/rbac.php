@@ -17,6 +17,9 @@ return [
         'refunds.view', 'refunds.process',
         'credit_notes.view', 'credit_notes.issue',
         'grievances.view', 'grievances.handle', 'grievances.escalate',
+        'posts.view', 'posts.manage', 'posts.publish', 'posts.delete',
+        'case_studies.manage', 'case_studies.delete',
+        'careers.view', 'careers.manage', 'careers.delete',
         'approvals.decide', 'users.manage', 'audit.view', 'settings.manage',
     ],
 
@@ -38,8 +41,8 @@ return [
         ],
         'corporate' => [
             'label' => 'Corporate Tours / MICE',
-            'staff' => ['leads.view', 'leads.manage', 'testimonials.view', 'testimonials.manage'],
-            'admin' => ['leads.delete', 'testimonials.delete', 'approvals.decide', 'users.manage'],
+            'staff' => ['leads.view', 'leads.manage', 'testimonials.view', 'testimonials.manage', 'case_studies.manage'],
+            'admin' => ['leads.delete', 'testimonials.delete', 'case_studies.delete', 'approvals.decide', 'users.manage'],
         ],
         'finance' => [
             'label' => 'Finance & Payments',
@@ -48,8 +51,8 @@ return [
         ],
         'content' => [
             'label' => 'Content & Marketing',
-            'staff' => ['destinations.view', 'destinations.manage', 'testimonials.view', 'testimonials.manage', 'tours.view'],
-            'admin' => ['destinations.delete', 'testimonials.delete', 'approvals.decide', 'users.manage'],
+            'staff' => ['destinations.view', 'destinations.manage', 'testimonials.view', 'testimonials.manage', 'tours.view', 'posts.view', 'posts.manage', 'case_studies.manage'],
+            'admin' => ['destinations.delete', 'testimonials.delete', 'posts.publish', 'posts.delete', 'case_studies.delete', 'approvals.decide', 'users.manage'],
         ],
         'customer_success' => [
             'label' => 'Customer Success & Grievance',
@@ -58,8 +61,8 @@ return [
         ],
         'hr' => [
             'label' => 'HR / Careers',
-            'staff' => [],
-            'admin' => ['users.manage'],
+            'staff' => ['careers.view', 'careers.manage'],
+            'admin' => ['careers.delete', 'users.manage'],
         ],
     ],
 

@@ -114,7 +114,11 @@ class AdminRbacTest extends TestCase
     public function test_role_matrix_is_consistent(): void
     {
         $this->assertSame(count(config('rbac.permissions')), Role::findByName('super_admin')->permissions()->count());
-        $this->assertSame(0, Role::findByName('hr.staff')->permissions()->count());
+        $hr = Role::findByName('hr.staff')->permissions->pluck('name')->all();
+        $this->assertNotEmpty($hr);
+        foreach ($hr as $perm) {
+            $this->assertStringStartsWith('careers.', $perm);
+        }
 
         foreach (config('rbac.departments') as $key => $dept) {
             $staff = Role::findByName("{$key}.staff")->permissions->pluck('name')->all();

@@ -247,6 +247,8 @@ class TourController extends Controller
             'base_price' => "{$req}|integer|min:1",
             'original_price' => 'nullable|integer|min:0',
             'featured' => 'sometimes|boolean',
+            'tags' => 'nullable|array|max:12',
+            'tags.*' => ['string', Rule::in(collect(config('collections'))->pluck('tag')->all())],
             'status' => 'sometimes|in:draft,published',
         ]);
     }

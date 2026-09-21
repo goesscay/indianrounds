@@ -8,7 +8,7 @@ import { NextResponse, type NextRequest } from "next/server";
  */
 const API_URL = process.env.API_URL ?? "http://localhost:8000/api/v1";
 const COOKIE = "ir_token";
-const ALLOWED = ["auth/", "me", "bookings", "grievances", "tours/", "meta/", "leads/", "admin/"];
+const ALLOWED = ["auth/", "me", "bookings", "grievances", "tours/", "meta/", "leads/", "admin/", "collections"];
 const TOKEN_ENDPOINTS = new Set(["auth/login", "auth/register", "auth/google/exchange"]);
 
 async function handle(req: NextRequest, ctx: { params: Promise<{ path: string[] }> }) {
@@ -37,6 +37,15 @@ async function handle(req: NextRequest, ctx: { params: Promise<{ path: string[] 
     });
   } catch {
     return NextResponse.json({ message: "The service is unavailable. Please try again." }, { status: 502 });
+  }
+
+  // Authorised file downloads (e.g. résumés) are streamed through unchanged.
+  const type = upstream.headers.get("content-type") ?? "";
+  if (upstream.ok && !type.includes("json")) {
+    const headers = new Headers({ "Content-Type": type || "application/octet-stream", "Cache-Control": "no-store" });
+    const disposition = upstream.headers.get("content-disposition");
+    if (disposition) headers.set("Content-Disposition", disposition);
+    return new NextResponse(upstream.body, { status: upstream.status, headers });
   }
 
   const body = await upstream.json().catch(() => ({}));

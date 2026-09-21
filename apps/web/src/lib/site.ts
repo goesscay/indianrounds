@@ -25,3 +25,13 @@ export const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ] as const;
+
+/** Secondary navigation: under "More" in the header, and in the mobile menu and footer. */
+export const moreLinks = [
+  { href: "/collections/weekend-getaways", label: "Weekend Getaways" },
+  { href: "/collections/events-festivals", label: "Events & Festivals" },
+  { href: "/custom-trips", label: "Custom Trips" },
+  { href: "/corporate", label: "Corporate & MICE" },
+  { href: "/blog", label: "Blog" },
+  { href: "/careers", label: "Careers" },
+] as const;

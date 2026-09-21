@@ -20,6 +20,8 @@ use Illuminate\Support\Carbon;
  * @property string $status
  * @property string|null $notes
  * @property int|null $assigned_to
+ * @property string|null $company
+ * @property array<string, mixed>|null $details
  * @property Carbon|null $created_at
  */
 class Lead extends Model
@@ -28,6 +30,6 @@ class Lead extends Model
 
     protected function casts(): array
     {
-        return ['travel_date' => 'date'];
+        return ['travel_date' => 'date', 'details' => 'array'];
     }
 }

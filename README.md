@@ -38,6 +38,13 @@ pnpm dev                        # http://localhost:3000 (style guide at /style-g
 - Staff tokens carry the `staff` ability; customer tokens never do, so a customer session cannot reach `/api/v1/admin/*`.
 - Refunds and manual credit notes above the Staff limit (Admin > Settings) wait for an Admin's approval. Every admin change is written to an append-only audit log.
 
+## Content and growth
+- **Blog** (`/blog`): posts have a content type (places to visit, things to do, places to eat, places to shop, travel journal, stories, news, general) and an optional destination. Bodies are plain text with light formatting (`##`, `-`, `**bold**`, links) and are rendered without raw HTML. Staff in Content save drafts; only an Admin publishes (`posts.publish`).
+- **Landing pages** (`/collections/<slug>`): Weekend Getaways, Events & Festivals, Luxury, Christmas & New Year, Family, Couples. They are defined in `apps/api/config/collections.php`; a tour appears on a page when it carries that page's tag, set on the tour in the admin.
+- **Corporate** (`/corporate`) and **Custom trips** (`/custom-trips`) store enquiries as leads (`corporate` / `custom`). Corporate staff only see corporate leads, Personalised staff only see custom ones, Sales staff see callback/quote/contact; Admins and Super Admins see all.
+- **Careers** (`/careers`): HR manages openings and applications. Résumés (PDF/DOC/DOCX, 5 MB) are stored on the private disk and only downloadable by HR through an audited endpoint.
+- The seeded posts, tours, case studies and jobs (`GrowthSeeder`, non-production only) are placeholders: replace them through the admin before launch.
+
 ## Tests use their own database
 Create `apps/api/.env.testing` (git-ignored) with `APP_ENV=testing`, `APP_KEY`, `DB_CONNECTION=sqlite`, `DB_DATABASE=:memory:`, `CACHE_STORE=array`, `SESSION_DRIVER=array`, `QUEUE_CONNECTION=sync` so `php artisan test` never touches your dev database.
 

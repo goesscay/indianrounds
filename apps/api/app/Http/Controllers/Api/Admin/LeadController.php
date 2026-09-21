@@ -17,9 +17,33 @@ class LeadController extends Controller
 
     public const STATUSES = ['new', 'contacted', 'qualified', 'won', 'lost'];
 
+    /** Sources a user may see: null means all. Corporate and Personalised teams only see their own enquiries. */
+    private function visibleSources(User $user): ?array
+    {
+        if ($user->hasRole('super_admin')) {
+            return null;
+        }
+
+        return match ($user->department) {
+            'corporate' => ['corporate'],
+            'personalised' => ['custom'],
+            'sales' => $user->staff_tier === 'admin' ? null : ['callback', 'quote', 'contact'],
+            default => null,
+        };
+    }
+
+    private function assertVisible(User $user, Lead $lead): void
+    {
+        $sources = $this->visibleSources($user);
+        abort_if($sources !== null && ! in_array($lead->source, $sources, true), 404);
+    }
+
     public function index(Request $request): JsonResponse
     {
         $q = Lead::query()->latest('id');
+        if (($sources = $this->visibleSources($request->user())) !== null) {
+            $q->whereIn('source', $sources);
+        }
         foreach (['status', 'source'] as $f) {
             if ($request->filled($f)) {
                 $q->where($f, $request->string($f));
@@ -35,6 +59,7 @@ class LeadController extends Controller
 
     public function update(Request $request, Lead $lead): JsonResponse
     {
+        $this->assertVisible($request->user(), $lead);
         $data = $request->validate([
             'status' => ['sometimes', Rule::in(self::STATUSES)],
             'notes' => 'sometimes|nullable|string|max:5000',
@@ -52,8 +77,9 @@ class LeadController extends Controller
         return response()->json(['data' => $this->present($lead->fresh() ?? $lead)]);
     }
 
-    public function destroy(Lead $lead): JsonResponse
+    public function destroy(Request $request, Lead $lead): JsonResponse
     {
+        $this->assertVisible($request->user(), $lead);
         AuditLog::record('lead.deleted', $lead, $lead->only(['name', 'source']));
         $lead->delete();
 
@@ -73,6 +99,8 @@ class LeadController extends Controller
             'travel_date' => $l->travel_date?->toDateString(),
             'message' => $l->message,
             'source' => $l->source,
+            'company' => $l->company,
+            'details' => $l->details,
             'page' => $l->page,
             'status' => $l->status,
             'notes' => $l->notes,

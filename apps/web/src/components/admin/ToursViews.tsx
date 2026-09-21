@@ -53,7 +53,7 @@ type TourFull = {
   id: number; destination_id: number; title: string; slug: string; summary: string | null; tour_type: string; haul_class: string; duration_nights: number;
   pickup: string | null; drop_point: string | null; overview: string | null; highlights: string[] | null; itinerary: { day: number; title: string; description: string }[] | null;
   inclusions: string[] | null; exclusions: string[] | null; notes: string[] | null; must_carry: string[] | null; image_url: string | null;
-  base_price: number; original_price: number | null; featured: boolean; status: string; variants?: Variant[]; batches?: BatchRow[];
+  tags?: string[] | null; base_price: number; original_price: number | null; featured: boolean; status: string; variants?: Variant[]; batches?: BatchRow[];
 };
 
 export function TourEditor({ id }: { id: string }) {
@@ -63,6 +63,8 @@ export function TourEditor({ id }: { id: string }) {
 
   if (!isNew && tour.loading) return <p className="text-muted">Loading…</p>;
   if (!isNew && tour.error) return <p className="text-muted">Tour not found.</p>;
+  // The destination <select> only honours defaultValue if its options exist when the form mounts.
+  if (!dests.data) return <p className="text-muted">Loading…</p>;
 
   return (
     <>
@@ -83,6 +85,8 @@ function TourForm({ initial, destinations, onSaved }: { initial: TourFull | null
   const [errors, setErrors] = useState<Record<string, string[]>>({});
   const [msg, setMsg] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const collections = useApi<{ data: { title: string; tag: string }[] }>("collections");
+  const [tags, setTags] = useState<string[]>(initial?.tags ?? []);
   const [itinerary, setItinerary] = useState(initial?.itinerary?.length ? initial.itinerary : [{ day: 1, title: "", description: "" }]);
 
   async function save(e: FormEvent<HTMLFormElement>) {
@@ -97,7 +101,7 @@ function TourForm({ initial, destinations, onSaved }: { initial: TourFull | null
       highlights: lines(f.highlights ?? ""), inclusions: lines(f.inclusions ?? ""), exclusions: lines(f.exclusions ?? ""), notes: lines(f.notes ?? ""), must_carry: lines(f.must_carry ?? ""),
       itinerary: itinerary.filter((d) => d.title.trim()).map((d, i) => ({ day: i + 1, title: d.title, description: d.description || d.title })),
       image_url: f.image_url || null, base_price: Number(f.base_price), original_price: f.original_price ? Number(f.original_price) : null,
-      featured: f.featured === "on", ...(canPublish || !initial ? { status: f.status } : {}),
+      tags, featured: f.featured === "on", ...(canPublish || !initial ? { status: f.status } : {}),
     };
     try {
       const res = await apiFetch<{ data: { id: number } }>(initial ? `admin/tours/${initial.id}` : "admin/tours", { method: initial ? "PUT" : "POST", body });
@@ -177,6 +181,18 @@ function TourForm({ initial, destinations, onSaved }: { initial: TourFull | null
 
       <div className="flex flex-wrap items-center gap-6">
         <label className="flex items-center gap-2 text-sm font-semibold"><input type="checkbox" name="featured" defaultChecked={initial?.featured} className="accent-brand-red" /> Featured on homepage</label>
+        {(collections.data?.data.length ?? 0) > 0 && (
+          <fieldset>
+            <legend className="mb-1 text-xs font-semibold">Show on landing pages</legend>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+              {collections.data?.data.map((c) => (
+                <label key={c.tag} className="flex items-center gap-2">
+                  <input type="checkbox" checked={tags.includes(c.tag)} onChange={(e) => setTags(e.target.checked ? [...tags, c.tag] : tags.filter((t) => t !== c.tag))} className="accent-brand-red" /> {c.title}
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        )}
         <Labeled label={canPublish ? "Status" : "Status (only an Admin can publish)"} id="t-status" error={e1("status")}>
           <select id="t-status" name="status" defaultValue={initial?.status ?? "draft"} disabled={!canPublish} className={field}>
             <option value="draft">Draft</option>

@@ -3,12 +3,16 @@
 use App\Http\Controllers\Api\Admin;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\BookingController;
+use App\Http\Controllers\Api\CareersController;
+use App\Http\Controllers\Api\CaseStudyController;
+use App\Http\Controllers\Api\CollectionController;
 use App\Http\Controllers\Api\CreditNoteController;
 use App\Http\Controllers\Api\DestinationController;
 use App\Http\Controllers\Api\GoogleAuthController;
 use App\Http\Controllers\Api\GrievanceController;
 use App\Http\Controllers\Api\LeadController;
 use App\Http\Controllers\Api\PaymentController;
+use App\Http\Controllers\Api\PostController;
 use App\Http\Controllers\Api\RazorpayWebhookController;
 use App\Http\Controllers\Api\TestimonialController;
 use App\Http\Controllers\Api\TourController;
@@ -29,12 +33,21 @@ Route::prefix('v1')->group(function () {
     Route::get('/tours/{slug}', [TourController::class, 'show'])->name('tours.show');
     Route::get('/tours/{slug}/batches', [TourController::class, 'batches'])->name('tours.batches');
     Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
+    Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+    Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
+    Route::get('/collections', [CollectionController::class, 'index'])->name('collections.index');
+    Route::get('/collections/{slug}', [CollectionController::class, 'show'])->name('collections.show');
+    Route::get('/case-studies', [CaseStudyController::class, 'index']);
+    Route::get('/careers/openings', [CareersController::class, 'openings']);
+    Route::post('/careers/apply', [CareersController::class, 'apply'])->middleware('throttle:5,1');
 
     // Leads
     Route::middleware('throttle:10,1')->prefix('leads')->group(function () {
         Route::post('/callback', [LeadController::class, 'callback']);
         Route::post('/quote', [LeadController::class, 'quote']);
         Route::post('/contact', [LeadController::class, 'contact']);
+        Route::post('/corporate', [LeadController::class, 'corporate']);
+        Route::post('/custom', [LeadController::class, 'custom']);
     });
 
     // Auth
@@ -111,6 +124,23 @@ Route::prefix('v1')->group(function () {
         Route::post('/grievances/{grievance}/acknowledge', [Admin\GrievanceController::class, 'acknowledge'])->middleware('permission:grievances.handle|grievances.escalate');
         Route::post('/grievances/{grievance}/escalate', [Admin\GrievanceController::class, 'escalate'])->middleware('permission:grievances.handle|grievances.escalate');
         Route::post('/grievances/{grievance}/resolve', [Admin\GrievanceController::class, 'resolve'])->middleware('permission:grievances.handle|grievances.escalate');
+        Route::get('/posts', [Admin\PostController::class, 'index'])->middleware('permission:posts.view');
+        Route::get('/posts/{post}', [Admin\PostController::class, 'show'])->middleware('permission:posts.view');
+        Route::post('/posts', [Admin\PostController::class, 'store'])->middleware('permission:posts.manage');
+        Route::put('/posts/{post}', [Admin\PostController::class, 'update'])->middleware('permission:posts.manage');
+        Route::delete('/posts/{post}', [Admin\PostController::class, 'destroy'])->middleware('permission:posts.delete');
+        Route::get('/case-studies', [Admin\CaseStudyController::class, 'index'])->middleware('permission:case_studies.manage');
+        Route::post('/case-studies', [Admin\CaseStudyController::class, 'store'])->middleware('permission:case_studies.manage');
+        Route::put('/case-studies/{caseStudy}', [Admin\CaseStudyController::class, 'update'])->middleware('permission:case_studies.manage');
+        Route::delete('/case-studies/{caseStudy}', [Admin\CaseStudyController::class, 'destroy'])->middleware('permission:case_studies.delete');
+        Route::get('/careers/openings', [Admin\CareersController::class, 'openings'])->middleware('permission:careers.view');
+        Route::post('/careers/openings', [Admin\CareersController::class, 'storeOpening'])->middleware('permission:careers.manage');
+        Route::put('/careers/openings/{opening}', [Admin\CareersController::class, 'updateOpening'])->middleware('permission:careers.manage');
+        Route::delete('/careers/openings/{opening}', [Admin\CareersController::class, 'destroyOpening'])->middleware('permission:careers.delete');
+        Route::get('/careers/applications', [Admin\CareersController::class, 'applications'])->middleware('permission:careers.view');
+        Route::put('/careers/applications/{application}', [Admin\CareersController::class, 'updateApplication'])->middleware('permission:careers.manage');
+        Route::get('/careers/applications/{application}/resume', [Admin\CareersController::class, 'resume'])->middleware('permission:careers.view');
+
         Route::get('/customers', [Admin\MiscController::class, 'customers'])->middleware('permission:customers.view');
         Route::get('/users', [Admin\UserController::class, 'index'])->middleware('permission:users.manage');
         Route::post('/users', [Admin\UserController::class, 'store'])->middleware('permission:users.manage');

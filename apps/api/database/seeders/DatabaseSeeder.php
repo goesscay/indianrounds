@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RbacSeeder::class);
 
         if (! app()->isProduction()) {
-            $this->call([CatalogueSeeder::class, DemoStaffSeeder::class]);
+            $this->call([CatalogueSeeder::class, GrowthSeeder::class, DemoStaffSeeder::class]);
         }
     }
 }

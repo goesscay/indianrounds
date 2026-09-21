@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { navLinks, site } from "@/lib/site";
+import { moreLinks, navLinks, site } from "@/lib/site";
 import { useAuth } from "@/lib/auth";
 import { useLeadModal } from "./LeadModal";
 
@@ -22,6 +22,11 @@ export function MobileNav() {
           <nav aria-label="Mobile" className="mx-auto flex max-w-7xl flex-col p-4">
             {navLinks.map((l) => (
               <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">
+                {l.label}
+              </Link>
+            ))}
+            {moreLinks.map((l) => (
+              <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="border-b border-black/5 py-3 pl-4 text-sm font-medium text-ink/80">
                 {l.label}
               </Link>
             ))}

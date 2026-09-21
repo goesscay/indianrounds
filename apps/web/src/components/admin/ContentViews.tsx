@@ -158,7 +158,7 @@ function TestimonialForm({ initial, canDelete, onClose, onSaved }: { initial: Te
   );
 }
 
-type Lead = { id: number; name: string; phone: string; email: string | null; destination: string | null; travellers: number | null; travel_date: string | null; message: string | null; source: string; page: string | null; status: string; notes: string | null; assigned_to: number | null; created_at: string };
+type Lead = { id: number; name: string; phone: string; email: string | null; destination: string | null; travellers: number | null; travel_date: string | null; message: string | null; source: string; company: string | null; details: Record<string, unknown> | null; page: string | null; status: string; notes: string | null; assigned_to: number | null; created_at: string };
 
 export function LeadsView() {
   const { user } = useAuth();
@@ -179,7 +179,7 @@ export function LeadsView() {
         </select>
         <select aria-label="Source" value={source} onChange={(e) => { setSource(e.target.value); list.setPage(1); }} className={`${field} max-w-[10rem]`}>
           <option value="">All sources</option>
-          {["callback", "quote", "contact"].map((s) => <option key={s}>{s}</option>)}
+          {["callback", "quote", "contact", "corporate", "custom"].map((s) => <option key={s}>{s}</option>)}
         </select>
       </div>
       <Table
@@ -187,7 +187,7 @@ export function LeadsView() {
         rows={list.rows}
         onRow={setOpen}
         cols={[
-          { header: "Name", render: (r) => <span className="font-semibold">{r.name}</span> },
+          { header: "Name", render: (r) => <><span className="font-semibold">{r.name}</span>{r.company && <><br /><span className="text-xs text-muted">{r.company}</span></>}</> },
           { header: "Contact", render: (r) => <>{r.phone}<br /><span className="text-xs text-muted">{r.email}</span></> },
           { header: "Interest", render: (r) => r.destination ?? "—" },
           { header: "Source", render: (r) => r.source },
@@ -225,6 +225,10 @@ function LeadModal({ lead, meId, canManage, canDelete, onClose, onSaved }: { lea
         <div><dt className="text-muted">Email</dt><dd>{lead.email ?? "—"}</dd></div>
         <div><dt className="text-muted">Destination</dt><dd>{lead.destination ?? "—"}</dd></div>
         <div><dt className="text-muted">Travellers / date</dt><dd>{lead.travellers ?? "—"} / {lead.travel_date ?? "—"}</dd></div>
+        {lead.company && <div><dt className="text-muted">Company</dt><dd>{lead.company}</dd></div>}
+        {lead.details && Object.entries(lead.details).filter(([, v]) => v !== null && v !== "" && v !== false).map(([k, v]) => (
+          <div key={k}><dt className="text-muted">{k.replace(/_/g, " ")}</dt><dd>{v === true ? "Yes" : String(v)}</dd></div>
+        ))}
         <div className="sm:col-span-2"><dt className="text-muted">Message</dt><dd className="whitespace-pre-wrap">{lead.message ?? "—"}</dd></div>
         <div className="sm:col-span-2"><dt className="text-muted">Came from</dt><dd>{lead.source} · {lead.page ?? "—"}</dd></div>
       </dl>

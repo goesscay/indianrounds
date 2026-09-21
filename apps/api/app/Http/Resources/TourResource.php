@@ -24,6 +24,7 @@ class TourResource extends JsonResource
             'original_price' => $this->original_price,
             'image_url' => $this->image_url,
             'featured' => $this->featured,
+            'tags' => $this->tags ?? [],
             'destination' => $this->whenLoaded('destination', fn () => [
                 'name' => $this->destination->name,
                 'slug' => $this->destination->slug,

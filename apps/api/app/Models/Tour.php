@@ -32,6 +32,7 @@ class Tour extends Model
             'notes' => 'array',
             'must_carry' => 'array',
             'gallery' => 'array',
+            'tags' => 'array',
             'featured' => 'boolean',
         ];
     }

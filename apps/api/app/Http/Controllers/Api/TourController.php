@@ -24,6 +24,7 @@ class TourController extends Controller
             'month' => 'nullable|date_format:Y-m',
             'q' => 'nullable|string|max:100',
             'featured' => 'nullable|boolean',
+            'tag' => 'nullable|string|max:60',
             'sort' => 'nullable|in:popular,price_asc,price_desc,duration_asc,duration_desc',
             'per_page' => 'nullable|integer|min:1|max:24',
         ]);
@@ -71,6 +72,9 @@ class TourController extends Controller
                 ->where('title', 'like', $term)
                 ->orWhere('summary', 'like', $term)
                 ->orWhereHas('destination', fn ($d) => $d->where('name', 'like', $term)));
+        }
+        if (! empty($validated['tag'])) {
+            $query->whereJsonContains('tags', $validated['tag']);
         }
         if ($request->boolean('featured')) {
             $query->where('featured', true);

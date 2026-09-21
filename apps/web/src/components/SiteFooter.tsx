@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { navLinks, site } from "@/lib/site";
+import { moreLinks, navLinks, site } from "@/lib/site";
 import type { Destination } from "@/lib/api";
 
 export function SiteFooter({ destinations }: { destinations: Destination[] }) {
@@ -26,6 +26,11 @@ export function SiteFooter({ destinations }: { destinations: Destination[] }) {
           <h3 className="mb-4 font-bold text-white">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             {navLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="hover:text-white">{l.label}</Link>
+              </li>
+            ))}
+            {moreLinks.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="hover:text-white">{l.label}</Link>
               </li>

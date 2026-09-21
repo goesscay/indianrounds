@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { ArrowRight, Headphones, ShieldCheck, Plane, BadgeCheck, Sparkles, Compass, Handshake } from "lucide-react";
-import { getDestinations, getTestimonials, getTours } from "@/lib/api";
+import { getCollections, getDestinations, getPosts, getTestimonials, getTours } from "@/lib/api";
 import { DestinationCard } from "@/components/DestinationCard";
 import { OpenQuoteButton } from "@/components/LeadModal";
+import { PostCard } from "@/components/PostCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { TourCard } from "@/components/TourCard";
@@ -18,11 +19,14 @@ const trust = [
 ];
 
 export default async function Home() {
-  const [destinations, tours, testimonials] = await Promise.all([
+  const [destinations, tours, testimonials, collections, posts] = await Promise.all([
     getDestinations({ featured: "1" }),
     getTours({ featured: "1", per_page: "4" }),
     getTestimonials(),
+    getCollections(),
+    getPosts({ per_page: "3" }),
   ]);
+  const themes = collections.filter((c) => c.tours_count > 0).slice(0, 4);
 
   return (
     <>
@@ -104,11 +108,37 @@ export default async function Home() {
         {tours.data.length === 0 && <p className="text-muted">Tours will appear here once the catalogue is loaded.</p>}
       </section>
 
+      {themes.length > 0 && (
+        <section className="mx-auto max-w-7xl px-4 pb-14 sm:px-6 lg:px-8">
+          <SectionHeading lead="Explore by" accent="Theme" sub="Weekend breaks, festivals, luxury escapes and more" />
+          <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            {themes.map((c) => (
+              <li key={c.slug}>
+                <Link href={`/collections/${c.slug}`} className="group block h-full rounded-card border border-black/10 bg-white p-5 transition hover:border-brand-red hover:shadow-float">
+                  <h3 className="font-bold group-hover:text-brand-red">{c.title}</h3>
+                  <p className="mt-1 line-clamp-2 text-sm text-muted">{c.intro}</p>
+                  <p className="mt-3 text-xs font-semibold text-brand-red">{c.tours_count} tour{c.tours_count === 1 ? "" : "s"} →</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {testimonials.length > 0 && (
         <section className="bg-surface-alt">
           <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
             <SectionHeading lead="What Our" accent="Travellers Say" sub="Real experiences. Real stories." />
             <TestimonialCarousel items={testimonials} />
+          </div>
+        </section>
+      )}
+
+      {posts.data.length > 0 && (
+        <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+          <SectionHeading lead="From the" accent="Blog" sub="Guides and stories to plan your next trip" href="/blog" cta="Read the Blog" />
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {posts.data.map((p) => <PostCard key={p.slug} post={p} />)}
           </div>
         </section>
       )}
