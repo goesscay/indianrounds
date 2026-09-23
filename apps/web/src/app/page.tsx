@@ -42,24 +42,24 @@ export default async function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/55 to-ink/15" aria-hidden />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-ink/10" aria-hidden />
-        <div className="relative mx-auto max-w-7xl px-4 pb-32 pt-14 sm:px-6 sm:pt-20 lg:px-8 lg:pb-40">
+        <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-8 sm:px-6 sm:pt-10 lg:px-8 lg:pb-20 lg:pt-12">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-white/80">Explore · Experience · Belong</p>
-          <h1 className="mt-4 text-5xl font-extrabold leading-[1.05] text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-3 text-4xl font-extrabold leading-[1.05] text-white sm:text-5xl lg:text-6xl">
             JOURNEYS
             <br />
             THAT STAY
             <br />
             <span className="text-brand-red">FOREVER</span>
           </h1>
-          <p className="mt-5 max-w-md text-base text-white/85">Discover handpicked destinations, seamless booking and unforgettable travel experiences with Indian Rounds.</p>
-          <Link href="/destinations" className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-red px-7 py-3.5 font-semibold text-white transition hover:bg-brand-red-dark">
+          <p className="mt-3 max-w-md text-base text-white/85">Discover handpicked destinations, seamless booking and unforgettable travel experiences with Indian Rounds.</p>
+          <Link href="/destinations" className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-red px-7 py-3.5 font-semibold text-white transition hover:bg-brand-red-dark">
             Explore Destinations <ArrowRight size={18} />
           </Link>
-          <p className="absolute right-6 top-10 hidden -rotate-6 font-script text-4xl text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)] lg:block xl:right-24 xl:text-5xl">Travel<br />Beyond<br />Borders</p>
+          <p className="absolute right-6 top-8 hidden -rotate-6 font-script text-3xl text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)] lg:block xl:right-24 xl:text-4xl">Travel<br />Beyond<br />Borders</p>
         </div>
       </section>
 
-      <div className="relative z-10 mx-auto -mt-20 max-w-6xl px-4 sm:px-6 lg:-mt-24 lg:px-8">
+      <div className="relative z-10 mx-auto -mt-10 max-w-6xl px-4 sm:px-6 lg:-mt-14 lg:px-8">
         <TourSearchBar destinations={destinations} />
         <ul className="mt-6 grid grid-cols-2 gap-4 py-4 lg:grid-cols-4">
           {trust.map(({ icon: Icon, title, sub }) => (

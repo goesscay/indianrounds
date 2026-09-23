@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { getDestinations } from "@/lib/api";
-import { categoryNavLinks, moreLinks, site, topNavLinks } from "@/lib/site";
+import { categoryNavLinks, site, topNavLinks } from "@/lib/site";
 import { AuthMenu } from "./AuthMenu";
 import { DestinationsMegaMenu } from "./DestinationsMegaMenu";
 import { MobileNav } from "./MobileNav";
+import { MoreMenu } from "./MoreMenu";
 
 export async function SiteHeader() {
   const destinations = await getDestinations();
@@ -49,18 +50,7 @@ export async function SiteHeader() {
               {l.label}
             </Link>
           ))}
-          <div className="group relative">
-            <button type="button" aria-haspopup="true" className="flex items-center gap-1 text-sm font-semibold text-white/90 transition hover:text-white">
-              More <ChevronDown size={14} />
-            </button>
-            <ul className="invisible absolute right-0 top-full z-50 w-56 rounded-xl border border-black/5 bg-white py-2 opacity-0 shadow-float transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-              {moreLinks.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} className="block px-4 py-2 text-sm font-medium text-ink hover:bg-surface-alt hover:text-brand-red">{l.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <MoreMenu />
         </nav>
       </div>
     </header>
