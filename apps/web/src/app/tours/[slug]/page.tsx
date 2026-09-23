@@ -67,7 +67,7 @@ export default async function TourPage({ params }: Props) {
         </div>
       </section>
 
-      <nav aria-label="Tour sections" className="sticky top-16 z-30 border-b border-black/10 bg-white sm:top-[72px]">
+      <nav aria-label="Tour sections" className="sticky top-16 z-30 border-b border-black/10 bg-white sm:top-[72px] lg:top-[109px]">
         <ul className="mx-auto flex max-w-7xl gap-6 overflow-x-auto px-4 text-sm font-semibold sm:px-6 lg:px-8">
           {tabs.map(([id, label]) => (
             <li key={id}>
@@ -93,7 +93,7 @@ export default async function TourPage({ params }: Props) {
             ))}
           </div>
 
-          <section id="overview" className="scroll-mt-32 space-y-4">
+          <section id="overview" className="scroll-mt-32 lg:scroll-mt-[156px] space-y-4">
             <h2 className="text-2xl font-extrabold">Overview &amp; Highlights</h2>
             <p className="text-muted">{t.overview}</p>
             <ul className="flex flex-wrap gap-2">
@@ -103,7 +103,7 @@ export default async function TourPage({ params }: Props) {
             </ul>
           </section>
 
-          <section id="itinerary" className="scroll-mt-32">
+          <section id="itinerary" className="scroll-mt-32 lg:scroll-mt-[156px]">
             <h2 className="mb-4 text-2xl font-extrabold">Itinerary</h2>
             <div className="space-y-3">
               {(t.itinerary ?? []).map((d, i) => (
@@ -119,7 +119,7 @@ export default async function TourPage({ params }: Props) {
             <p className="mt-3 text-xs text-muted">Weather, road conditions and safety may require changes to the itinerary.</p>
           </section>
 
-          <section id="inclusions" className="scroll-mt-32">
+          <section id="inclusions" className="scroll-mt-32 lg:scroll-mt-[156px]">
             <h2 className="mb-4 text-2xl font-extrabold">Inclusions</h2>
             <ul className="grid gap-2 sm:grid-cols-2">
               {(t.inclusions ?? []).map((x) => (
@@ -128,7 +128,7 @@ export default async function TourPage({ params }: Props) {
             </ul>
           </section>
 
-          <section id="exclusions" className="scroll-mt-32">
+          <section id="exclusions" className="scroll-mt-32 lg:scroll-mt-[156px]">
             <h2 className="mb-4 text-2xl font-extrabold">Exclusions</h2>
             <ul className="grid gap-2 sm:grid-cols-2">
               {(t.exclusions ?? []).map((x) => (
@@ -137,7 +137,7 @@ export default async function TourPage({ params }: Props) {
             </ul>
           </section>
 
-          <section id="other-info" className="scroll-mt-32 space-y-6">
+          <section id="other-info" className="scroll-mt-32 lg:scroll-mt-[156px] space-y-6">
             <h2 className="text-2xl font-extrabold">Other Info</h2>
             {(t.must_carry?.length ?? 0) > 0 && (
               <div>
@@ -159,7 +159,7 @@ export default async function TourPage({ params }: Props) {
           </section>
         </div>
 
-        <aside className="lg:sticky lg:top-36 lg:self-start">
+        <aside className="lg:sticky lg:top-[156px] lg:self-start">
           <div className="rounded-card border border-black/10 bg-white p-5 shadow-float">
             <p className="text-xs text-muted">Starting from</p>
             <p className="flex items-baseline gap-2">
