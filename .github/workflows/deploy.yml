@@ -1,0 +1,88 @@
+name: Deploy
+
+# Deploys to production when a release is published or a v* tag is pushed.
+# The commit must already have a green CI run (CI runs on every push to main).
+on:
+  release:
+    types: [published]
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Tag or commit to deploy (must have passed CI)
+        required: true
+      force:
+        description: Redeploy even if this commit is already live
+        type: boolean
+        default: false
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+      DEPLOY_USER: deploy
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref || github.ref }}
+
+      - name: Resolve version
+        id: v
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "version=${{ github.event.inputs.ref || github.ref_name }}" >> "$GITHUB_OUTPUT"
+
+      - name: Require a green CI run for this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ steps.v.outputs.sha }}
+        run: |
+          for i in $(seq 1 60); do
+            read -r status conclusion < <(gh run list -R "$GITHUB_REPOSITORY" --workflow ci.yml --commit "$SHA" --limit 1 --json status,conclusion --jq '.[0] | "\(.status // "none") \(.conclusion // "none")"' || echo "none none")
+            echo "CI for $SHA: status=$status conclusion=$conclusion"
+            if [ "$status" = "completed" ]; then
+              [ "$conclusion" = "success" ] && exit 0
+              echo "::error::CI did not pass for $SHA"; exit 1
+            fi
+            sleep 30
+          done
+          echo "::error::No finished CI run found for $SHA (deploy only tagged commits that went through CI)"; exit 1
+
+      - name: Build source archive
+        run: git archive --format=tar.gz -o release.tgz HEAD
+
+      - name: Configure SSH
+        env:
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Deploy
+        env:
+          VERSION: ${{ steps.v.outputs.version }}
+          SHA: ${{ steps.v.outputs.sha }}
+          FORCE: ${{ github.event.inputs.force == 'true' && '1' || '0' }}
+        run: |
+          SSH="ssh -i ~/.ssh/id_deploy -o BatchMode=yes"
+          REMOTE="$DEPLOY_USER@$DEPLOY_HOST"
+          scp -i ~/.ssh/id_deploy -o BatchMode=yes release.tgz scripts/deploy.sh "$REMOTE:/tmp/"
+          $SSH "$REMOTE" "FORCE=$FORCE bash /tmp/deploy.sh /tmp/release.tgz '$VERSION' '$SHA'; rc=\$?; rm -f /tmp/release.tgz /tmp/deploy.sh; exit \$rc"
+
+      - name: Smoke test
+        run: |
+          curl -fsS https://indianrounds.in/api/v1/health | tee /dev/stderr | grep -q '"status":"ok"'
+          curl -fsS -o /dev/null https://indianrounds.in/
