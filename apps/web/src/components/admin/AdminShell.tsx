@@ -56,7 +56,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
   const sidebar = (
     <nav aria-label="Admin" className="flex h-full flex-col">
       <Link href="/admin" className="mb-6 block bg-brand-red p-4">
-        <Image src="/brand/logo.jpeg" alt="Indian Rounds" width={160} height={47} className="h-9 w-auto" />
+        <Image src="/brand/logo-footer.png" alt="Indian Rounds" width={160} height={33} className="h-8 w-auto" />
       </Link>
       <ul className="flex-1 space-y-1 px-3">
         {items.map((n) => {

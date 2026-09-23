@@ -20,7 +20,7 @@ export function SiteFooter({ destinations }: { destinations: Destination[] }) {
     <footer className="bg-footer text-white/85">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.4fr] lg:px-8">
         <div className="space-y-4">
-          <Image src="/brand/logo.jpeg" alt="Indian Rounds" width={200} height={59} className="h-12 w-auto rounded" />
+          <Image src="/brand/logo-footer.png" alt="Indian Rounds" width={200} height={41} className="h-10 w-auto" />
           <p className="max-w-xs text-sm text-white/70">Your trusted travel partner for unforgettable journeys. Explore India and the world with Indian Rounds.</p>
           <ul className="flex gap-3">
             {site.socials.map((s) => (

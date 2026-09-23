@@ -18,9 +18,8 @@ export const site = {
   ],
 } as const;
 
-/** Top bar (white): account/utility links. The logo itself is the "Home" link. */
+/** Top bar (white): compact utility links. The logo itself is the "Home" link. */
 export const topNavLinks = [
-  { href: "/destinations", label: "Explore" },
   { href: "/bookings", label: "My Bookings" },
   { href: "/blog", label: "Travel Stories" },
   { href: "/about", label: "About Us" },

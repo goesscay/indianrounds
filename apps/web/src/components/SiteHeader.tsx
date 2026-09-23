@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Headset, Search } from "lucide-react";
+import { ChevronDown, Phone } from "lucide-react";
 import { getDestinations } from "@/lib/api";
 import { categoryNavLinks, moreLinks, site, topNavLinks } from "@/lib/site";
-import { AuthMenu } from "./AuthMenu";
 import { DestinationsMegaMenu } from "./DestinationsMegaMenu";
-import { OpenQuoteButton } from "./LeadModal";
 import { MobileNav } from "./MobileNav";
 
 export async function SiteHeader() {
@@ -13,38 +11,29 @@ export async function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Top bar: utility links, contact and account. */}
-      <div className="border-b border-black/5 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex h-16 max-w-7xl items-stretch justify-between gap-4 pr-4 sm:h-[72px] sm:pr-6 lg:pr-8">
-          <Link href="/" aria-label="Indian Rounds home" className="flex items-center bg-brand-red pl-4 pr-10 [clip-path:polygon(0_0,100%_0,calc(100%-28px)_100%,0_100%)] sm:pl-6">
-            <Image src="/brand/logo.jpeg" alt="Indian Rounds — Travel Beyond Borders" width={170} height={50} priority className="h-10 w-auto sm:h-12" />
+      {/* Top bar: compact, right-aligned utility navigation. */}
+      <div className="border-b border-black/5 bg-white">
+        <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-6 px-4 sm:h-16 sm:px-6 lg:px-8">
+          <Link href="/" aria-label="Indian Rounds home" className="flex items-center">
+            <Image src="/brand/logo-header.png" alt="Indian Rounds — Travel Beyond Borders" width={172} height={35} priority className="h-8 w-auto sm:h-9" />
           </Link>
 
-          <nav aria-label="Account" className="hidden items-center gap-6 lg:flex">
-            {topNavLinks.map((l) => (
-              <Link key={l.label} href={l.href} className="text-sm font-semibold transition hover:text-brand-red">
-                {l.label}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="flex items-center gap-3 sm:gap-5">
-            <a href={site.phoneHref} className="hidden items-center gap-2 xl:flex">
-              <Headset className="text-brand-red" size={24} />
-              <span className="leading-tight">
-                <span className="block text-sm font-bold">{site.phone}</span>
-                <span className="block text-[11px] text-muted">Talk to our Travel Expert</span>
-              </span>
+          <div className="hidden items-center gap-5 lg:flex">
+            <nav aria-label="Utility" className="flex items-center gap-5">
+              {topNavLinks.map((l) => (
+                <Link key={l.label} href={l.href} className="text-[13px] font-semibold text-ink/75 transition hover:text-brand-red">
+                  {l.label}
+                </Link>
+              ))}
+            </nav>
+            <span className="h-4 w-px bg-black/10" aria-hidden />
+            <a href={site.phoneHref} className="flex items-center gap-1.5 text-[13px] font-semibold text-ink/75 transition hover:text-brand-red">
+              <Phone size={14} className="text-brand-red" />
+              {site.phone}
             </a>
-            <Link href="/tours" aria-label="Search tours" className="hidden rounded-full p-2 hover:bg-surface-alt sm:block">
-              <Search size={20} />
-            </Link>
-            <AuthMenu />
-            <OpenQuoteButton className="hidden rounded-full bg-brand-red px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-red-dark sm:block">
-              Plan My Trip
-            </OpenQuoteButton>
-            <MobileNav />
           </div>
+
+          <MobileNav />
         </div>
       </div>
 

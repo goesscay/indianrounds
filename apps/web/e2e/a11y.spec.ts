@@ -40,7 +40,7 @@ test("a tour page and a blog post have no serious violations", async ({ page }) 
 
 test("the quote dialog is keyboard-operable and labelled", async ({ page }) => {
   await page.goto("/");
-  await page.getByRole("button", { name: /plan my trip/i }).first().click();
+  await page.getByRole("button", { name: /get a free quote/i }).first().click();
   const dialog = page.getByRole("dialog");
   await expect(dialog).toBeVisible();
   await page.keyboard.press("Escape");
