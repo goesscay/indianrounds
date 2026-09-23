@@ -1185,6 +1185,82 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '422':
           $ref: '#/components/responses/ValidationError'
+  /admin/reports/bookings:
+    get:
+      summary: 'Report: Bookings'
+      tags:
+        - 'Admin: reports'
+      operationId: getAdminReportsBookings
+      security:
+        -
+          bearer: {  }
+      x-staff-only: true
+      x-permission:
+        - bookings.view
+      responses:
+        '200':
+          description: OK
+        '401':
+          $ref: '#/components/responses/Unauthenticated'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  /admin/reports/customers:
+    get:
+      summary: 'Report: Customers'
+      tags:
+        - 'Admin: reports'
+      operationId: getAdminReportsCustomers
+      security:
+        -
+          bearer: {  }
+      x-staff-only: true
+      x-permission:
+        - customers.view
+      responses:
+        '200':
+          description: OK
+        '401':
+          $ref: '#/components/responses/Unauthenticated'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  /admin/reports/payments:
+    get:
+      summary: 'Report: Payments'
+      tags:
+        - 'Admin: reports'
+      operationId: getAdminReportsPayments
+      security:
+        -
+          bearer: {  }
+      x-staff-only: true
+      x-permission:
+        - payments.view
+      responses:
+        '200':
+          description: OK
+        '401':
+          $ref: '#/components/responses/Unauthenticated'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  /admin/reports/sales:
+    get:
+      summary: 'Report: Sales'
+      tags:
+        - 'Admin: reports'
+      operationId: getAdminReportsSales
+      security:
+        -
+          bearer: {  }
+      x-staff-only: true
+      x-permission:
+        - leads.view
+      responses:
+        '200':
+          description: OK
+        '401':
+          $ref: '#/components/responses/Unauthenticated'
+        '403':
+          $ref: '#/components/responses/Forbidden'
   /admin/roles:
     get:
       summary: 'Misc: Roles'
@@ -1359,6 +1435,25 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '422':
           $ref: '#/components/responses/ValidationError'
+  /admin/tour-categories:
+    get:
+      summary: 'Tour Category: Index'
+      tags:
+        - 'Admin: tour-categories'
+      operationId: getAdminTourCategories
+      security:
+        -
+          bearer: {  }
+      x-staff-only: true
+      x-permission:
+        - tours.view
+      responses:
+        '200':
+          description: OK
+        '401':
+          $ref: '#/components/responses/Unauthenticated'
+        '403':
+          $ref: '#/components/responses/Forbidden'
   /admin/tours:
     get:
       summary: 'Tour: Index'

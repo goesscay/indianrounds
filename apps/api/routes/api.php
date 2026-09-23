@@ -103,6 +103,7 @@ Route::prefix('v1')->group(function () {
         Route::post('/tours/{tour}/batches', [Admin\TourController::class, 'storeBatch'])->middleware('permission:tours.manage');
         Route::put('/batches/{batch}', [Admin\TourController::class, 'updateBatch'])->middleware('permission:tours.manage');
         Route::delete('/batches/{batch}', [Admin\TourController::class, 'destroyBatch'])->middleware('permission:tours.manage');
+        Route::get('/tour-categories', [Admin\TourCategoryController::class, 'index'])->middleware('permission:tours.view');
         Route::get('/testimonials', [Admin\TestimonialController::class, 'index'])->middleware('permission:testimonials.view');
         Route::post('/testimonials', [Admin\TestimonialController::class, 'store'])->middleware('permission:testimonials.manage');
         Route::put('/testimonials/{testimonial}', [Admin\TestimonialController::class, 'update'])->middleware('permission:testimonials.manage');
@@ -150,6 +151,11 @@ Route::prefix('v1')->group(function () {
         Route::get('/audit', [Admin\MiscController::class, 'audit'])->middleware('permission:audit.view');
         Route::get('/settings', [Admin\MiscController::class, 'settings'])->middleware('permission:settings.manage');
         Route::put('/settings', [Admin\MiscController::class, 'updateSettings'])->middleware('permission:settings.manage');
+
+        Route::get('/reports/bookings', [Admin\ReportController::class, 'bookings'])->middleware('permission:bookings.view');
+        Route::get('/reports/sales', [Admin\ReportController::class, 'sales'])->middleware('permission:leads.view');
+        Route::get('/reports/payments', [Admin\ReportController::class, 'payments'])->middleware('permission:payments.view');
+        Route::get('/reports/customers', [Admin\ReportController::class, 'customers'])->middleware('permission:customers.view');
     });
 
     // Payment provider callbacks (signature-verified, no user session)

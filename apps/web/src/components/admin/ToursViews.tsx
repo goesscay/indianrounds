@@ -7,7 +7,7 @@ import { ApiError, apiFetch } from "@/lib/client-api";
 import { can, useAuth } from "@/lib/auth";
 import { formatDate, formatINR } from "@/lib/format";
 import { useApi } from "@/lib/use-api";
-import { field, ghostBtn, Labeled, Pager, primaryBtn, Status, Table, Title, useList } from "./ui";
+import { Badge, field, ghostBtn, Labeled, Pager, primaryBtn, Status, Table, Title, useList } from "./ui";
 
 type TourRow = { id: number; slug: string; title: string; status: string; featured: boolean; destination: string; duration_nights: number; price: number; haul_class: string; batches_count: number };
 
@@ -285,5 +285,52 @@ function VariantsAndBatches({ tour, reload }: { tour: TourFull; reload: () => vo
         )}
       </section>
     </div>
+  );
+}
+
+type TourCategory = {
+  slug: string; title: string; tag: string; intro: string; tours_count: number; published_count: number;
+  tours: { id: number; title: string; slug: string; status: string; destination: string }[];
+};
+
+/** Read-only overview of the tag-driven landing pages (config/collections.php on the API). To move a tour in or out of a category, edit its tags on the tour itself. */
+export function TourCategoriesView() {
+  const { data, loading } = useApi<{ data: TourCategory[] }>("admin/tour-categories");
+
+  return (
+    <>
+      <Title title="Tour categories" sub="What's live on each collections landing page — edit a tour's tags to change its categories" />
+      {loading && <p className="text-muted">Loading…</p>}
+      <div className="space-y-4">
+        {(data?.data ?? []).map((c) => (
+          <section key={c.slug} className="rounded-card bg-white p-5 shadow-sm">
+            <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <h2 className="text-lg font-extrabold">{c.title}</h2>
+                <p className="text-sm text-muted">{c.intro}</p>
+              </div>
+              <div className="flex shrink-0 items-center gap-2 text-xs">
+                <Badge tone="blue">{c.published_count} published</Badge>
+                {c.tours_count > c.published_count && <Badge tone="amber">{c.tours_count - c.published_count} draft</Badge>}
+              </div>
+            </div>
+            {c.tours.length === 0 ? (
+              <p className="text-sm text-muted">No tours tagged &ldquo;{c.tag}&rdquo; yet.</p>
+            ) : (
+              <ul className="divide-y divide-black/5 text-sm">
+                {c.tours.map((t) => (
+                  <li key={t.id}>
+                    <Link href={`/admin/tours/${t.id}`} className="flex items-center justify-between gap-3 py-2 hover:text-brand-red">
+                      <span><span className="font-semibold">{t.title}</span> <span className="text-muted">· {t.destination}</span></span>
+                      <Status value={t.status} />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+        ))}
+      </div>
+    </>
   );
 }
