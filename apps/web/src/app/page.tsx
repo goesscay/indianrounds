@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Headphones, ShieldCheck, Plane, BadgeCheck, Sparkles, Compass, Handshake } from "lucide-react";
 import { getCollections, getDestinations, getPosts, getTestimonials, getTours } from "@/lib/api";
@@ -30,24 +31,31 @@ export default async function Home() {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-b from-sky-200 via-sky-50 to-white">
-        <svg viewBox="0 0 1200 300" preserveAspectRatio="none" className="absolute inset-x-0 bottom-0 h-2/3 w-full text-slate-300/70" aria-hidden>
-          <path d="M0 300 L0 210 L150 90 L260 190 L420 40 L580 200 L720 110 L900 230 L1040 80 L1200 220 L1200 300 Z" fill="currentColor" />
-        </svg>
+      <section className="relative overflow-hidden bg-ink">
+        <Image
+          src="/photos/hero-maldives.jpg"
+          alt="Overwater villas on a turquoise lagoon, one of Indian Rounds' island destinations"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/55 to-ink/15" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-ink/10" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-4 pb-32 pt-14 sm:px-6 sm:pt-20 lg:px-8 lg:pb-40">
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-ink/70">Explore · Experience · Belong</p>
-          <h1 className="mt-4 text-5xl font-extrabold leading-[1.05] sm:text-6xl lg:text-7xl">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-white/80">Explore · Experience · Belong</p>
+          <h1 className="mt-4 text-5xl font-extrabold leading-[1.05] text-white sm:text-6xl lg:text-7xl">
             JOURNEYS
             <br />
             THAT STAY
             <br />
             <span className="text-brand-red">FOREVER</span>
           </h1>
-          <p className="mt-5 max-w-md text-base text-ink/80">Discover handpicked destinations, seamless booking and unforgettable travel experiences with Indian Rounds.</p>
+          <p className="mt-5 max-w-md text-base text-white/85">Discover handpicked destinations, seamless booking and unforgettable travel experiences with Indian Rounds.</p>
           <Link href="/destinations" className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-red px-7 py-3.5 font-semibold text-white transition hover:bg-brand-red-dark">
             Explore Destinations <ArrowRight size={18} />
           </Link>
-          <p className="absolute right-6 top-10 hidden -rotate-6 font-script text-4xl text-brand-red lg:block xl:right-24 xl:text-5xl">Travel<br />Beyond<br />Borders</p>
+          <p className="absolute right-6 top-10 hidden -rotate-6 font-script text-4xl text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)] lg:block xl:right-24 xl:text-5xl">Travel<br />Beyond<br />Borders</p>
         </div>
       </section>
 
