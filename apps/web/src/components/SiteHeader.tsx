@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ChevronDown, Phone } from "lucide-react";
 import { getDestinations } from "@/lib/api";
 import { categoryNavLinks, moreLinks, site, topNavLinks } from "@/lib/site";
+import { AuthMenu } from "./AuthMenu";
 import { DestinationsMegaMenu } from "./DestinationsMegaMenu";
 import { MobileNav } from "./MobileNav";
 
@@ -31,6 +32,8 @@ export async function SiteHeader() {
               <Phone size={14} className="text-brand-red" />
               {site.phone}
             </a>
+            <span className="h-4 w-px bg-black/10" aria-hidden />
+            <AuthMenu />
           </div>
 
           <MobileNav />

@@ -38,7 +38,7 @@ test("a visitor can book a tour: login is required before payment", async ({ pag
   await page.getByLabel("Mobile number").fill("9876543210");
   await page.getByLabel(/^Password/).fill(password);
   await page.getByLabel("Confirm password").fill(password);
-  await page.getByRole("button", { name: /create account|sign up|register/i }).click();
+  await page.getByRole("button", { name: /create account/i }).click();
 
   // Back at checkout with a session: the details entered before logging in are kept and the booking advances to payment.
   await expect(page.getByRole("heading", { name: "Payment" })).toBeVisible();
