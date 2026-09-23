@@ -42,7 +42,7 @@ export default async function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/55 to-ink/15" aria-hidden />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-ink/10" aria-hidden />
-        <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-8 sm:px-6 sm:pt-10 lg:px-8 lg:pb-20 lg:pt-12">
+        <div className="relative mx-auto max-w-7xl px-4 pb-8 pt-8 sm:px-6 sm:pb-16 sm:pt-10 lg:px-8 lg:pb-20 lg:pt-12">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-white/80">Explore · Experience · Belong</p>
           <h1 className="mt-3 text-4xl font-extrabold leading-[1.05] text-white sm:text-5xl lg:text-6xl">
             JOURNEYS
@@ -51,7 +51,7 @@ export default async function Home() {
             <br />
             <span className="text-brand-red">FOREVER</span>
           </h1>
-          <p className="mt-3 max-w-md text-base text-white/85">Discover handpicked destinations, seamless booking and unforgettable travel experiences with Indian Rounds.</p>
+          <p className="mt-3 hidden max-w-md text-base text-white/85 sm:block">Discover handpicked destinations, seamless booking and unforgettable travel experiences with Indian Rounds.</p>
           <Link href="/destinations" className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-red px-7 py-3.5 font-semibold text-white transition hover:bg-brand-red-dark">
             Explore Destinations <ArrowRight size={18} />
           </Link>
