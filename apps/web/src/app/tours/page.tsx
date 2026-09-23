@@ -26,6 +26,12 @@ const durations: Record<string, { label: string; min?: string; max?: string }> =
   long: { label: "6+ nights", min: "6" },
 };
 
+const types: Record<string, string> = {
+  "": "All trip types",
+  group: "Group departures",
+  custom: "Custom itineraries",
+};
+
 const sorts: Record<string, string> = {
   popular: "Popular",
   price_asc: "Price: Low to High",
@@ -49,6 +55,7 @@ export default async function ToursPage({ searchParams }: { searchParams: Promis
       sort: sp.sort,
       q: sp.q,
       page: sp.page,
+      type: sp.type,
       min_price: b.min,
       max_price: b.max,
       min_nights: d.min,
@@ -103,6 +110,14 @@ export default async function ToursPage({ searchParams }: { searchParams: Promis
             <select id="f-dur" name="duration" defaultValue={sp.duration ?? ""} className={control}>
               {Object.entries(durations).map(([k, v]) => (
                 <option key={k} value={k}>{v.label}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label htmlFor="f-type" className="mb-1 block text-xs font-semibold">Trip type</label>
+            <select id="f-type" name="type" defaultValue={sp.type ?? ""} className={control}>
+              {Object.entries(types).map(([k, v]) => (
+                <option key={k} value={k}>{v}</option>
               ))}
             </select>
           </div>

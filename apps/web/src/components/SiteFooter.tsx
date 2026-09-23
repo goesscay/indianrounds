@@ -1,8 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { moreLinks, navLinks, site } from "@/lib/site";
+import { site } from "@/lib/site";
 import type { Destination } from "@/lib/api";
+
+const quickLinks = [
+  { href: "/", label: "Home" },
+  { href: "/destinations", label: "Destinations" },
+  { href: "/tours", label: "Tours" },
+  { href: "/offers", label: "Special Offers" },
+  { href: "/blog", label: "Travel Stories" },
+  { href: "/about", label: "About Us" },
+  { href: "/careers", label: "Careers" },
+  { href: "/contact", label: "Contact" },
+] as const;
 
 export function SiteFooter({ destinations }: { destinations: Destination[] }) {
   return (
@@ -25,12 +36,7 @@ export function SiteFooter({ destinations }: { destinations: Destination[] }) {
         <div>
           <h3 className="mb-4 font-bold text-white">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            {navLinks.map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className="hover:text-white">{l.label}</Link>
-              </li>
-            ))}
-            {moreLinks.map((l) => (
+            {quickLinks.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="hover:text-white">{l.label}</Link>
               </li>

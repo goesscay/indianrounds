@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { moreLinks, navLinks, site } from "@/lib/site";
+import { categoryNavLinks, moreLinks, site, topNavLinks } from "@/lib/site";
 import { useAuth } from "@/lib/auth";
 import { useLeadModal } from "./LeadModal";
 
@@ -20,8 +20,13 @@ export function MobileNav() {
       {open && (
         <div className="absolute inset-x-0 top-full border-b border-black/10 bg-white shadow-float">
           <nav aria-label="Mobile" className="mx-auto flex max-w-7xl flex-col p-4">
-            {navLinks.map((l) => (
-              <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">
+            {categoryNavLinks.map((l) => (
+              <Link key={l.label} href={l.href} onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">
+                {l.label}
+              </Link>
+            ))}
+            {topNavLinks.map((l) => (
+              <Link key={l.label} href={l.href} onClick={() => setOpen(false)} className="border-b border-black/5 py-3 pl-4 text-sm font-medium text-ink/80">
                 {l.label}
               </Link>
             ))}
@@ -34,7 +39,6 @@ export function MobileNav() {
               <>
                 {user.staff && <Link href="/admin" onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold text-brand-red">Admin</Link>}
                 <Link href="/account" onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">My account</Link>
-                <Link href="/bookings" onClick={() => setOpen(false)} className="border-b border-black/5 py-3 font-semibold">My bookings</Link>
                 <button onClick={async () => { setOpen(false); await logout(); }} className="border-b border-black/5 py-3 text-left font-semibold">Log out ({user.name.split(" ")[0]})</button>
               </>
             ) : (
@@ -53,7 +57,7 @@ export function MobileNav() {
               }}
               className="mt-2 rounded-full bg-brand-red px-5 py-3 font-semibold text-white"
             >
-              Plan Your Trip
+              Plan My Trip
             </button>
           </nav>
         </div>
