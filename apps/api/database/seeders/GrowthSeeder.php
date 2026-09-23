@@ -57,16 +57,16 @@ class GrowthSeeder extends Seeder
 
         $tours = [
             ['pondicherry-weekend', 'Pondicherry Weekend', 1, 6999, 7999, ['weekend'], 'Friday-night departure to French-quarter cafes, beaches and Auroville, back by Sunday night.',
-                [['Friday night', 'Overnight drive from Chennai.'], ['Saturday', 'French Quarter walk, promenade and beach sunset.'], ['Sunday', 'Auroville and Matrimandir, then return.']], 'weekly'],
+                [['Friday night', 'Overnight drive from Chennai.'], ['Saturday', 'French Quarter walk, promenade and beach sunset.'], ['Sunday', 'Auroville and Matrimandir, then return.']], 'weekly', '/photos/tours/pondicherry-weekend.jpg'],
             ['coorg-weekend', 'Coorg Coffee Weekend', 2, 9499, 10999, ['weekend', 'family'], 'Coffee estates, waterfalls and misty viewpoints in three easy days.',
-                [['Day 1', 'Depart and reach Coorg for a plantation walk.'], ['Day 2', 'Abbey Falls, Raja Seat and Namdroling Monastery.'], ['Day 3', 'Sunrise viewpoint and return.']], 'weekly'],
+                [['Day 1', 'Depart and reach Coorg for a plantation walk.'], ['Day 2', 'Abbey Falls, Raja Seat and Namdroling Monastery.'], ['Day 3', 'Sunrise viewpoint and return.']], 'weekly', '/photos/tours/coorg-weekend.jpg'],
             ['pushkar-fair-escape', 'Pushkar Fair Escape', 3, 17999, 19999, ['festival'], 'Camel fair, desert camps and ghats in Rajasthan during fair week.',
-                [['Arrive Jaipur', 'Transfer to Pushkar.'], ['Fair day', 'Camel fair, cultural evening.'], ['Ghats and temples', 'Morning aarti and market.'], ['Return', 'Drive back to Jaipur.']], 'fair'],
+                [['Arrive Jaipur', 'Transfer to Pushkar.'], ['Fair day', 'Camel fair, cultural evening.'], ['Ghats and temples', 'Morning aarti and market.'], ['Return', 'Drive back to Jaipur.']], 'fair', '/photos/tours/pushkar-fair-escape.jpg'],
             ['kerala-christmas-new-year', 'Kerala Christmas & New Year', 4, 28999, 32999, ['seasonal-christmas', 'family'], 'Backwaters, hill stations and a New Year evening on a houseboat.',
-                [['Arrive Kochi', 'Drive to Munnar.'], ['Munnar', 'Tea gardens and viewpoints.'], ['Thekkady', 'Spice walk and boat ride.'], ['Alleppey', 'Houseboat cruise, New Year dinner.'], ['Depart', 'Transfer to Kochi.']], 'xmas'],
+                [['Arrive Kochi', 'Drive to Munnar.'], ['Munnar', 'Tea gardens and viewpoints.'], ['Thekkady', 'Spice walk and boat ride.'], ['Alleppey', 'Houseboat cruise, New Year dinner.'], ['Depart', 'Transfer to Kochi.']], 'xmas', '/photos/tours/kerala-christmas-new-year.jpg'],
         ];
 
-        foreach ($tours as $i => [$slug, $title, $nights, $price, $orig, $tags, $summary, $days, $pattern]) {
+        foreach ($tours as $i => [$slug, $title, $nights, $price, $orig, $tags, $summary, $days, $pattern, $image]) {
             $tour = Tour::query()->updateOrCreate(['slug' => $slug], [
                 'destination_id' => $india->id,
                 'title' => $title,
@@ -86,6 +86,7 @@ class GrowthSeeder extends Seeder
                 'base_price' => $price,
                 'original_price' => $orig,
                 'tags' => $tags,
+                'image_url' => $image,
                 'featured' => false,
                 'status' => 'published',
             ]);

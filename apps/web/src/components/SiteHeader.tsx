@@ -1,12 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Headset, Search } from "lucide-react";
+import { getDestinations } from "@/lib/api";
 import { categoryNavLinks, moreLinks, site, topNavLinks } from "@/lib/site";
 import { AuthMenu } from "./AuthMenu";
+import { DestinationsMegaMenu } from "./DestinationsMegaMenu";
 import { OpenQuoteButton } from "./LeadModal";
 import { MobileNav } from "./MobileNav";
 
-export function SiteHeader() {
+export async function SiteHeader() {
+  const destinations = await getDestinations();
+
   return (
     <header className="sticky top-0 z-50">
       {/* Top bar: utility links, contact and account. */}
@@ -47,7 +51,8 @@ export function SiteHeader() {
       {/* Second bar: the catalogue / category navigation. */}
       <div className="hidden bg-brand-red lg:block">
         <nav aria-label="Categories" className="mx-auto flex max-w-7xl items-center justify-center gap-8 px-4 py-3 sm:px-6 lg:px-8">
-          {categoryNavLinks.map((l) => (
+          <DestinationsMegaMenu destinations={destinations} />
+          {categoryNavLinks.filter((l) => l.label !== "Destinations").map((l) => (
             <Link key={l.label} href={l.href} className="text-sm font-semibold text-white/90 transition hover:text-white">
               {l.label}
             </Link>
