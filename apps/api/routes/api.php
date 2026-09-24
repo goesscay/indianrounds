@@ -12,6 +12,7 @@ use App\Http\Controllers\Api\GoogleAuthController;
 use App\Http\Controllers\Api\GrievanceController;
 use App\Http\Controllers\Api\HealthController;
 use App\Http\Controllers\Api\LeadController;
+use App\Http\Controllers\Api\MaintenanceController;
 use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\PostController;
 use App\Http\Controllers\Api\RazorpayWebhookController;
@@ -21,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
     Route::get('/health', HealthController::class);
+    Route::get('/meta/maintenance', [MaintenanceController::class, 'show']);
 
     // Public read-only content. Short shared-cache lifetimes; seat counts (batches) stay very short.
     Route::middleware('cache.headers:public;max_age=30;stale_while_revalidate=60;etag')->group(function () {
@@ -151,6 +153,7 @@ Route::prefix('v1')->group(function () {
         Route::get('/audit', [Admin\MiscController::class, 'audit'])->middleware('permission:audit.view');
         Route::get('/settings', [Admin\MiscController::class, 'settings'])->middleware('permission:settings.manage');
         Route::put('/settings', [Admin\MiscController::class, 'updateSettings'])->middleware('permission:settings.manage');
+        Route::put('/maintenance', [MaintenanceController::class, 'update'])->middleware('permission:settings.manage');
 
         Route::get('/reports/bookings', [Admin\ReportController::class, 'bookings'])->middleware('permission:bookings.view');
         Route::get('/reports/sales', [Admin\ReportController::class, 'sales'])->middleware('permission:leads.view');

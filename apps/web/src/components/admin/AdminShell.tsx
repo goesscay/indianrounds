@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
-import { LogOut, Menu, PanelLeftClose, PanelLeftOpen, X } from "lucide-react";
+import { LogOut, PanelLeftClose, PanelLeftOpen, X } from "lucide-react";
 import { useAuth } from "@/lib/auth";
 import { AdminNav } from "./AdminNav";
+import { AdminTopBar } from "./AdminTopBar";
 
 const COLLAPSE_KEY = "ir-admin-sidebar-collapsed";
 
@@ -58,8 +59,8 @@ export function AdminShell({ children }: { children: ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen bg-surface-alt lg:grid" style={{ gridTemplateColumns: "auto 1fr" }}>
-      <aside className={`sticky top-0 hidden h-screen shrink-0 flex-col border-r border-black/10 bg-white transition-[width] duration-150 lg:flex ${collapsed ? "w-[4.25rem]" : "w-64"}`}>
+    <div className="min-h-screen bg-surface-alt lg:flex">
+      <aside className={`sticky top-0 hidden h-screen shrink-0 self-start flex-col border-r border-black/10 bg-white transition-[width] duration-150 lg:flex ${collapsed ? "w-[4.25rem]" : "w-64"}`}>
         <Link href="/admin" className={`flex items-center bg-brand-red ${collapsed ? "justify-center p-3" : "p-4"}`}>
           <Image
             src={collapsed ? "/brand/icon-white-master.png" : "/brand/logo-footer.png"}
@@ -107,11 +108,6 @@ export function AdminShell({ children }: { children: ReactNode }) {
         </div>
       </aside>
 
-      <div className="flex items-center justify-between border-b border-black/10 bg-white px-4 py-3 lg:hidden">
-        <span className="font-extrabold text-brand-red">Indian Rounds Admin</span>
-        <button onClick={() => setMobileOpen(true)} aria-label="Open menu" className="rounded-full p-2 hover:bg-surface-alt"><Menu size={22} /></button>
-      </div>
-
       {mobileOpen && (
         <div className="fixed inset-0 z-[70] lg:hidden" onClick={() => setMobileOpen(false)}>
           <div className="absolute inset-0 bg-black/40" />
@@ -133,7 +129,10 @@ export function AdminShell({ children }: { children: ReactNode }) {
         </div>
       )}
 
-      <main className="min-w-0 p-4 sm:p-8">{children}</main>
+      <div className="flex min-h-screen min-w-0 flex-1 flex-col">
+        <AdminTopBar user={user} onMenu={() => setMobileOpen(true)} />
+        <main className="min-w-0 flex-1 p-4 sm:p-8">{children}</main>
+      </div>
     </div>
   );
 }
