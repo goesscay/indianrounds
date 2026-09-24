@@ -12,6 +12,7 @@ TARBALL=${1:?source tarball}
 VERSION=${2:?version}
 SHA=${3:?commit sha}
 TS=$(date +%Y%m%d-%H%M%S)
+umask 077   # backups contain customer data: owner-only
 
 log() { echo "[deploy $VERSION] $*"; }
 
@@ -44,7 +45,7 @@ healthy() {
   return 1
 }
 
-mkdir -p "$BACKUPS"
+mkdir -p "$BACKUPS" && chmod 700 "$BACKUPS"
 
 log "backing up database"
 PGPASSWORD="$(env_get DB_PASSWORD)" pg_dump -h "$(env_get DB_HOST)" -p "$(env_get DB_PORT)" -U "$(env_get DB_USERNAME)" -Fc "$(env_get DB_DATABASE)" -f "$BACKUPS/db-$TS.dump"
@@ -55,6 +56,7 @@ tar -czf "$PREV_CODE" -C "$APP" \
   --exclude=node_modules --exclude=vendor --exclude=.next --exclude=storage \
   --exclude=bootstrap/cache --exclude=.env --exclude=.env.local .
 
+umask 022
 log "shipping new code"
 STAGE=$(mktemp -d)
 trap 'rm -rf "$STAGE"' EXIT

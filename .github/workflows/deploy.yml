@@ -39,9 +39,13 @@ jobs:
 
       - name: Resolve version
         id: v
+        env:
+          REF_NAME: ${{ github.event.inputs.ref || github.ref_name }}
         run: |
+          # Ref names are user-controlled: validate before they reach any shell or the server.
+          [[ "$REF_NAME" =~ ^[A-Za-z0-9._/-]{1,100}$ ]] || { echo "::error::Unsafe ref name"; exit 1; }
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-          echo "version=${{ github.event.inputs.ref || github.ref_name }}" >> "$GITHUB_OUTPUT"
+          echo "version=$REF_NAME" >> "$GITHUB_OUTPUT"
 
       - name: Require a green CI run for this commit
         env:

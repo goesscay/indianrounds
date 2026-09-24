@@ -98,3 +98,14 @@ Rotate `APP_KEY` only with a plan (it invalidates encrypted data and sessions). 
 - `RAZORPAY_KEY_SECRET` / `RAZORPAY_WEBHOOK_SECRET`: rotate in the Razorpay dashboard, update the environment, restart. Use a maintenance window: in-flight payments verified with the old secret will fail.
 - `APP_KEY`: see above.
 - Database and Redis passwords: rotate at the provider, update the environment, restart API and worker.
+
+## 7. Production server hardening (indianrounds.in)
+
+State of the single-server, non-Docker install, so it can be rebuilt or audited:
+
+- **SSH**: key-only (`/etc/ssh/sshd_config.d/00-hardening.conf`: no passwords, root by key only, 3 tries). The GitHub Actions key is authorised for the `deploy` user with `restrict` (no pty/forwarding), and `deploy` can only `sudo` restart the app's own services (`/etc/sudoers.d/indianrounds-deploy`).
+- **Network**: `ufw` allows 22/80/443 only; PostgreSQL, Redis and Next.js (`127.0.0.1:3000`) listen on loopback. fail2ban guards sshd.
+- **nginx**: TLS via certbot (auto-renew), `server_tokens off`, 20 req/min per IP (burst 10) on `/api/v1/auth/*` and `/api/backend/auth/*` (`/etc/nginx/conf.d/ir-ratelimit.conf`) on top of the app's per-account lockout. Security headers (CSP, HSTS, nosniff, frame-deny) come from the Next.js app.
+- **Secrets**: `apps/api/.env` is `640 deploy:www-data`; the DB password lives only there and in `/root/.ir_dbpw`. Backups in `/srv/backups` are `700`/owner-only (they contain customer data) and are **not off-site**: copy them elsewhere.
+- **Patching**: `unattended-upgrades` is on. Kernel updates need a reboot (`/var/run/reboot-required` exists when one is pending); all services are enabled at boot.
+- **Deploys**: GitHub Actions only, from a tag/release whose commit passed CI (see `.github/workflows/deploy.yml`, `scripts/deploy.sh`).

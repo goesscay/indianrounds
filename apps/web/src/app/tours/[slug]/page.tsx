@@ -50,7 +50,7 @@ export default async function TourPage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
 
       <section className="relative">
         <CoverImage src={t.image_url} alt={t.title} seed={t.slug} className="h-64 sm:h-80" />
