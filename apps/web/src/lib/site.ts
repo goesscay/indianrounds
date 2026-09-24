@@ -1,14 +1,12 @@
-// Placeholder business details taken from the design mockup.
-// Replace with real values (see development plan, section 8) before launch.
 export const site = {
   name: "Indian Rounds",
   tagline: "Travel Beyond Borders",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  phone: "+91 98765 43210",
-  phoneHref: "tel:+919876543210",
-  whatsapp: "919876543210",
-  email: "info@indianrounds.com",
-  address: "123, Travel Street, Chennai, Tamil Nadu, India",
+  phone: "+91 87789 55009",
+  phoneHref: "tel:+918778955009",
+  whatsapp: "918778955009",
+  email: "enquiry@indianrounds.in",
+  address: "13/8 EKR Avenue, Yathavar Street, Kovur, Irandam Kattalai, Chennai, Tamil Nadu 600128",
   hours: "Mon - Sat: 9:00 AM - 7:00 PM",
   socials: [
     { label: "Facebook", href: "https://facebook.com" },
