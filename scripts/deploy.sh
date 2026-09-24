@@ -59,7 +59,7 @@ log "shipping new code"
 STAGE=$(mktemp -d)
 trap 'rm -rf "$STAGE"' EXIT
 tar -xzf "$TARBALL" -C "$STAGE"
-rsync -a --delete \
+rsync -rlt --chmod=D755,Fu=rwX,Fog=rX --delete \
   --exclude=node_modules --exclude=vendor --exclude=.next --exclude=storage \
   --exclude=bootstrap/cache --exclude=.env --exclude=.env.local --exclude=VERSION \
   "$STAGE"/ "$APP"/
@@ -68,7 +68,7 @@ rollback() {
   log "FAILED: rolling code back to the previous release (database is not rolled back; restore $BACKUPS/db-$TS.dump only if a migration broke it)"
   local R; R=$(mktemp -d)
   tar -xzf "$PREV_CODE" -C "$R"
-  rsync -a --delete \
+  rsync -rlt --chmod=D755,Fu=rwX,Fog=rX --delete \
     --exclude=node_modules --exclude=vendor --exclude=.next --exclude=storage \
     --exclude=bootstrap/cache --exclude=.env --exclude=.env.local --exclude=VERSION \
     "$R"/ "$APP"/
