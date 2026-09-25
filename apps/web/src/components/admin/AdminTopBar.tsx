@@ -1,10 +1,10 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { useState, type FormEvent } from "react";
-import { ExternalLink, Menu, TriangleAlert } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState, type FormEvent } from "react";
+import { ExternalLink, LogOut, Menu, PanelLeftClose, PanelLeftOpen, TriangleAlert } from "lucide-react";
 import { ApiError, apiFetch } from "@/lib/client-api";
-import { can, type User } from "@/lib/auth";
+import { can, useAuth, type User } from "@/lib/auth";
 import { useApi } from "@/lib/use-api";
 import type { Maintenance } from "@/lib/maintenance";
 import { dashboardItem, navGroups } from "./nav";
@@ -19,8 +19,19 @@ function whereAmI(path: string) {
   return best ?? { group: null, title: "Back office" };
 }
 
-export function AdminTopBar({ user, onMenu }: { user: User; onMenu: () => void }) {
+export function AdminTopBar({ user, onMenu, collapsed, onToggleSidebar }: { user: User; onMenu: () => void; collapsed: boolean; onToggleSidebar: () => void }) {
   const path = usePathname();
+  const router = useRouter();
+  const { logout } = useAuth();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setMenuOpen(false);
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [menuOpen]);
+
   const here = whereAmI(path);
   const canToggle = can(user, "settings.manage");
   const { data, reload } = useApi<{ data: Maintenance }>("meta/maintenance");
@@ -52,6 +63,15 @@ export function AdminTopBar({ user, onMenu }: { user: User; onMenu: () => void }
     <>
       <header className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-black/10 bg-white px-4 sm:px-6">
         <button onClick={onMenu} aria-label="Open menu" className="-ml-1 rounded-md p-2 text-ink/70 hover:bg-surface-alt lg:hidden"><Menu size={20} /></button>
+        <button
+          type="button"
+          onClick={onToggleSidebar}
+          aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+          title={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+          className="-ml-2 hidden rounded-md p-2 text-ink/60 transition hover:bg-surface-alt hover:text-ink lg:block"
+        >
+          {collapsed ? <PanelLeftOpen size={19} /> : <PanelLeftClose size={19} />}
+        </button>
         <div className="min-w-0 leading-tight">
           {here.group && <p className="hidden truncate text-[11px] font-semibold uppercase tracking-wide text-muted sm:block">{here.group}</p>}
           <p className="truncate text-sm font-bold text-ink">{here.title}</p>
@@ -77,7 +97,40 @@ export function AdminTopBar({ user, onMenu }: { user: User; onMenu: () => void }
           <a href="/" target="_blank" rel="noreferrer" className="hidden items-center gap-1.5 text-xs font-semibold text-ink/70 hover:text-brand-red sm:flex">
             View site <ExternalLink size={13} />
           </a>
-          <span className="grid size-8 place-items-center rounded-full bg-brand-red/10 text-xs font-bold text-brand-red" title={user.name} aria-label={user.name}>{user.name.slice(0, 1).toUpperCase()}</span>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setMenuOpen((o) => !o)}
+              aria-haspopup="menu"
+              aria-expanded={menuOpen}
+              aria-label={`Account menu for ${user.name}`}
+              className="grid size-8 place-items-center rounded-full bg-brand-red/10 text-xs font-bold text-brand-red transition hover:bg-brand-red/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red"
+            >
+              {user.name.slice(0, 1).toUpperCase()}
+            </button>
+            {menuOpen && (
+              <>
+                <div className="fixed inset-0 z-40" onClick={() => setMenuOpen(false)} aria-hidden />
+                <div role="menu" className="absolute right-0 top-full z-50 mt-2 w-64 rounded-xl border border-black/10 bg-white py-2 shadow-float">
+                  <div className="border-b border-black/5 px-4 pb-3 pt-1">
+                    <p className="truncate text-sm font-bold text-ink">{user.name}</p>
+                    <p className="truncate text-xs text-muted">{user.email}</p>
+                    <p className="mt-1 text-[11px] font-semibold uppercase tracking-wide text-brand-red">{user.staff?.department_label ?? "Super Admin"}{user.staff?.department ? ` · ${user.staff.tier}` : ""}</p>
+                  </div>
+                  <a role="menuitem" href="/" target="_blank" rel="noreferrer" className="flex items-center gap-2.5 px-4 py-2 text-sm font-medium text-ink hover:bg-surface-alt sm:hidden">
+                    <ExternalLink size={15} className="text-ink/50" /> View site
+                  </a>
+                  <button
+                    role="menuitem"
+                    onClick={async () => { setMenuOpen(false); await logout(); router.push("/login"); }}
+                    className="flex w-full items-center gap-2.5 px-4 py-2 text-left text-sm font-medium text-ink hover:bg-surface-alt hover:text-brand-red"
+                  >
+                    <LogOut size={15} className="text-ink/50" /> Log out
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </header>
 

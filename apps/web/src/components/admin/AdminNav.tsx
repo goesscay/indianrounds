@@ -53,7 +53,7 @@ export function AdminNav({ user, collapsed, onNavigate }: { user: User; collapse
 
   if (collapsed) {
     return (
-      <nav aria-label="Admin" className="flex flex-1 flex-col items-center gap-1 overflow-y-auto px-2 py-3">
+      <nav aria-label="Admin" className="flex flex-1 flex-col items-center gap-1 px-2 py-3">
         <CollapsedLink item={dashboardItem} active={dashboardActive} onNavigate={onNavigate} />
         <div className="my-1.5 h-px w-8 bg-black/10" aria-hidden />
         {visibleGroups.map((g) =>
@@ -68,7 +68,7 @@ export function AdminNav({ user, collapsed, onNavigate }: { user: User; collapse
   }
 
   return (
-    <nav aria-label="Admin" className="flex-1 space-y-0.5 overflow-y-auto px-3 py-3">
+    <nav aria-label="Admin" className="flex-1 space-y-0.5 overflow-y-auto px-3 py-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <Link
         href={dashboardItem.href}
         onClick={onNavigate}
