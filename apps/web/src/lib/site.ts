@@ -21,15 +21,14 @@ export const topNavLinks = [
   { href: "/bookings", label: "My Bookings" },
   { href: "/blog", label: "Travel Stories" },
   { href: "/about", label: "About Us" },
+  { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ] as const;
 
 /** Second bar (brand red): the main catalogue/category navigation. */
 export const categoryNavLinks = [
   { href: "/destinations", label: "Destinations" },
-  { href: "/tours", label: "Tours" },
-  { href: "/tours", label: "Holiday Packages" },
-  { href: "/tours?type=group", label: "Group Journeys" },
+  { href: "/tours?type=group", label: "Group Tours" },
   { href: "/collections/weekend-getaways", label: "Weekend Escapes" },
   { href: "/collections/couples-honeymoon", label: "Honeymoon" },
   { href: "/offers", label: "Special Offers" },
@@ -37,8 +36,5 @@ export const categoryNavLinks = [
 
 /** Extra links shown in the mobile menu and the footer, not already covered above. */
 export const moreLinks = [
-  { href: "/collections/events-festivals", label: "Events & Festivals" },
   { href: "/custom-trips", label: "Custom Trips" },
-  { href: "/corporate", label: "Corporate & MICE" },
-  { href: "/careers", label: "Careers" },
 ] as const;

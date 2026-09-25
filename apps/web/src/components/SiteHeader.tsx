@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import { getDestinations } from "@/lib/api";
-import { categoryNavLinks, site, topNavLinks } from "@/lib/site";
+import { categoryNavLinks, moreLinks, site, topNavLinks } from "@/lib/site";
 import { AuthMenu } from "./AuthMenu";
 import { DestinationsMegaMenu } from "./DestinationsMegaMenu";
 import { MobileNav } from "./MobileNav";
-import { MoreMenu } from "./MoreMenu";
 
 export async function SiteHeader() {
   const destinations = await getDestinations();
@@ -45,12 +44,11 @@ export async function SiteHeader() {
       <div className="hidden bg-brand-red lg:block">
         <nav aria-label="Categories" className="mx-auto flex max-w-7xl items-center justify-center gap-8 px-4 py-3 sm:px-6 lg:px-8">
           <DestinationsMegaMenu destinations={destinations} />
-          {categoryNavLinks.filter((l) => l.label !== "Destinations").map((l) => (
+          {[...categoryNavLinks.filter((l) => l.label !== "Destinations"), ...moreLinks].map((l) => (
             <Link key={l.label} href={l.href} className="text-sm font-semibold text-white/90 transition hover:text-white">
               {l.label}
             </Link>
           ))}
-          <MoreMenu />
         </nav>
       </div>
     </header>
