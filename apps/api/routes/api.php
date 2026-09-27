@@ -13,6 +13,7 @@ use App\Http\Controllers\Api\GrievanceController;
 use App\Http\Controllers\Api\HealthController;
 use App\Http\Controllers\Api\LeadController;
 use App\Http\Controllers\Api\MaintenanceController;
+use App\Http\Controllers\Api\MenuController;
 use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\PostController;
 use App\Http\Controllers\Api\RazorpayWebhookController;
@@ -34,6 +35,9 @@ Route::prefix('v1')->group(function () {
         Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
         Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
         Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
+        Route::get('/menus/{menu}', [MenuController::class, 'countries'])->name('menus.countries');
+        Route::get('/menus/{menu}/{country}', [MenuController::class, 'country'])->name('menus.country');
+        Route::get('/menus/{menu}/{country}/{category}', [MenuController::class, 'category'])->name('menus.category');
         Route::get('/collections', [CollectionController::class, 'index'])->name('collections.index');
         Route::get('/collections/{slug}', [CollectionController::class, 'show'])->name('collections.show');
         Route::get('/case-studies', [CaseStudyController::class, 'index']);

@@ -98,6 +98,26 @@ export async function getTours(params: Record<string, string | undefined> = {}) 
   return (await get<Paginated<Tour>>(`/tours${qs ? `?${qs}` : ""}`)) ?? { data: [] };
 }
 
+/** The four browse menus: country > category > packages. */
+export type MenuSlug = "destinations" | "group-tours" | "weekend-escapes" | "honeymoon";
+export type MenuCountry = Destination & { tours_count: number; categories_count: number; menu_starting_price: number };
+export type CategorySummary = { name: string; slug: string; description: string | null; tours_count: number; image_url: string | null };
+type MenuInfo = { slug: MenuSlug; title: string };
+
+export async function getMenuCountries(menu: MenuSlug) {
+  return (await get<{ menu: MenuInfo; data: MenuCountry[] }>(`/menus/${menu}`))?.data ?? [];
+}
+
+export async function getMenuCountry(menu: MenuSlug, country: string) {
+  return get<{ menu: MenuInfo; destination: Destination & { best_time: string | null; about: string | null }; data: CategorySummary[] }>(`/menus/${menu}/${encodeURIComponent(country)}`);
+}
+
+export async function getMenuCategory(menu: MenuSlug, country: string, category: string) {
+  return get<{ menu: MenuInfo; destination: Destination; category: { name: string; slug: string; description: string | null; image_url: string | null }; data: Tour[] }>(
+    `/menus/${menu}/${encodeURIComponent(country)}/${encodeURIComponent(category)}`,
+  );
+}
+
 export async function getTour(slug: string) {
   return (await get<{ data: Tour }>(`/tours/${encodeURIComponent(slug)}`))?.data ?? null;
 }

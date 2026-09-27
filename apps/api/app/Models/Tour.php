@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
@@ -13,6 +14,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string $slug
  * @property string $title
  * @property int $duration_nights
+ * @property list<string>|null $tags
  * @property-read int $duration_days
  * @property Destination $destination
  * @property Collection<int, TourVariant> $variants
@@ -41,6 +43,12 @@ class Tour extends Model
     public function destination(): BelongsTo
     {
         return $this->belongsTo(Destination::class);
+    }
+
+    /** @return BelongsToMany<Category, $this> */
+    public function categories(): BelongsToMany
+    {
+        return $this->belongsToMany(Category::class);
     }
 
     /** @return HasMany<TourVariant, $this> */

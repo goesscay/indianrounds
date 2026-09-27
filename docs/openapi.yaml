@@ -2562,6 +2562,72 @@ paths:
           $ref: '#/components/responses/ValidationError'
         '429':
           $ref: '#/components/responses/TooManyRequests'
+  '/menus/{menu}':
+    get:
+      summary: 'Menu: Countries'
+      tags:
+        - Menus
+      operationId: getMenusMenu
+      parameters:
+        -
+          name: menu
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  '/menus/{menu}/{country}':
+    get:
+      summary: 'Menu: Country'
+      tags:
+        - Menus
+      operationId: getMenusMenuCountry
+      parameters:
+        -
+          name: menu
+          in: path
+          required: true
+          schema:
+            type: string
+        -
+          name: country
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  '/menus/{menu}/{country}/{category}':
+    get:
+      summary: 'Menu: Category'
+      tags:
+        - Menus
+      operationId: getMenusMenuCountryCategory
+      parameters:
+        -
+          name: menu
+          in: path
+          required: true
+          schema:
+            type: string
+        -
+          name: country
+          in: path
+          required: true
+          schema:
+            type: string
+        -
+          name: category
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
   /meta/maintenance:
     get:
       summary: 'Maintenance: Show'

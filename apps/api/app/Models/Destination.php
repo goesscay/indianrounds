@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string $name
  * @property string $slug
  * @property string $region
+ * @property array<string, mixed>|null $seo_content
  */
 class Destination extends Model
 {
@@ -18,6 +19,12 @@ class Destination extends Model
     protected function casts(): array
     {
         return ['seo_content' => 'array', 'featured' => 'boolean'];
+    }
+
+    /** @return HasMany<Category, $this> */
+    public function categories(): HasMany
+    {
+        return $this->hasMany(Category::class);
     }
 
     /** @return HasMany<Tour, $this> */

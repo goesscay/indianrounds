@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getDestination, getPosts } from "@/lib/api";
+import { getDestination, getMenuCountry, getPosts } from "@/lib/api";
 import { formatINR } from "@/lib/format";
 import { OpenQuoteButton } from "@/components/LeadModal";
+import { CategoryCard } from "@/components/MenuViews";
 import { PostCard } from "@/components/PostCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TourCard } from "@/components/TourCard";
@@ -33,7 +34,7 @@ const sorts = [
 export default async function DestinationPage({ params, searchParams }: Props) {
   const { slug } = await params;
   const { sort = "popular" } = await searchParams;
-  const [d, posts] = await Promise.all([getDestination(slug), getPosts({ destination: slug, per_page: "3" })]);
+  const [d, posts, menu] = await Promise.all([getDestination(slug), getPosts({ destination: slug, per_page: "3" }), getMenuCountry("destinations", slug)]);
   if (!d) notFound();
 
   const tours = [...(d.tours ?? [])];
@@ -56,6 +57,16 @@ export default async function DestinationPage({ params, searchParams }: Props) {
       </section>
 
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        {menu && menu.data.length > 0 && (
+          <section className="mb-14">
+            <SectionHeading lead="Browse by" accent="Category" sub={`${menu.data.length} categor${menu.data.length === 1 ? "y" : "ies"} in ${d.name}`} />
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {menu.data.map((c) => (
+                <CategoryCard key={c.slug} href={`/destinations/${d.slug}/${c.slug}`} category={c} />
+              ))}
+            </div>
+          </section>
+        )}
         <SectionHeading lead={`${d.name}`} accent="Tours" sub={`${tours.length} tour${tours.length === 1 ? "" : "s"} available`} />
         <nav aria-label="Sort tours" className="mb-6 flex flex-wrap gap-2">
           {sorts.map((s) => (

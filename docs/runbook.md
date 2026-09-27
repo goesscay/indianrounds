@@ -109,3 +109,29 @@ State of the single-server, non-Docker install, so it can be rebuilt or audited:
 - **Secrets**: `apps/api/.env` is `640 deploy:www-data`; the DB password lives only there and in `/root/.ir_dbpw`. Backups in `/srv/backups` are `700`/owner-only (they contain customer data) and are **not off-site**: copy them elsewhere.
 - **Patching**: `unattended-upgrades` is on. Kernel updates need a reboot (`/var/run/reboot-required` exists when one is pending); all services are enabled at boot.
 - **Deploys**: GitHub Actions only, from a tag/release whose commit passed CI (see `.github/workflows/deploy.yml`, `scripts/deploy.sh`).
+
+## 6. Importing the client's catalogue (packages workbook)
+
+The client fills `docs/client-data/IndianRounds_Package_Data_Template.xlsx` (built by `scripts/build_client_template.py`; the sheet/column layout is the contract with `App\Services\CatalogueImporter`, so change both together). One command imports everything: destinations, categories per menu and country, packages, placements, itinerary, price options and departures.
+
+**One-time server setup** (photos live outside the deployed code so a deploy never deletes them):
+```bash
+sudo install -d -o deploy -g deploy /srv/uploads/catalogue
+# nginx, inside the HTTPS server block:   location /uploads/ { alias /srv/uploads/; expires 30d; access_log off; }
+# apps/api/.env:                          CATALOGUE_IMAGES_PATH=/srv/uploads/catalogue     (then: php artisan config:cache)
+```
+
+**Each import**
+1. Copy the completed workbook and the client's photos (unzipped into one folder) to the server, e.g. `/srv/import/`.
+2. Take a backup first: `scripts/backup.sh`.
+3. Dry run. Prints every problem with its sheet and row, and writes nothing:
+   `cd /srv/indianrounds/apps/api && php artisan catalogue:import /srv/import/data.xlsx --images=/srv/import/photos --dry-run`
+4. Fix the workbook with the client until the dry run says "Dry run OK", then run it without `--dry-run`. The whole workbook is validated first; nothing is written unless it is completely clean, and the write is a single transaction.
+
+**Behaviour to know**
+- Re-running is safe: destinations and categories are matched by name, packages by Package ID (`tours.code`), departures by start date. It updates; it never duplicates.
+- It never removes anything: a package, departure or price option missing from a later workbook stays on the site (remove it in the admin). A departure with seats already booked never has its capacity lowered below the booked seats; price options that bookings point at are kept.
+- Rows marked `EXAMPLE` / `EX-` are ignored.
+- Menu placement drives site behaviour: a package placed under **Group Tours** becomes a group tour (needs departures), **Weekend Escapes** adds the `weekend` tag, **Honeymoon** adds the `couples` tag; the Family / Luxury / Festival / Christmas columns add their tags. Special Offers fills itself from packages whose original price is higher than the price.
+- A menu with no categories yet falls back to the old listing (`/group-tours` redirects to `/tours?type=group`, etc.), so the header links never dead-end.
+

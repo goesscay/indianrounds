@@ -28,9 +28,9 @@ export const topNavLinks = [
 /** Second bar (brand red): the main catalogue/category navigation. */
 export const categoryNavLinks = [
   { href: "/destinations", label: "Destinations" },
-  { href: "/tours?type=group", label: "Group Tours" },
-  { href: "/collections/weekend-getaways", label: "Weekend Escapes" },
-  { href: "/collections/couples-honeymoon", label: "Honeymoon" },
+  { href: "/group-tours", label: "Group Tours" },
+  { href: "/weekend-escapes", label: "Weekend Escapes" },
+  { href: "/honeymoon", label: "Honeymoon" },
   { href: "/offers", label: "Special Offers" },
 ] as const;
 
