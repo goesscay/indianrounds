@@ -154,6 +154,22 @@ class CatalogueImportTest extends TestCase
         $this->assertSame(12, Batch::query()->orderBy('starts_on')->firstOrFail()->capacity, 'capacity must not drop below seats already booked');
     }
 
+    public function test_the_sample_workbook_shown_to_the_client_imports_cleanly(): void
+    {
+        $r = $this->import(base_path('../../docs/client-data/IndianRounds_Package_Data_SAMPLE.xlsx'));
+
+        $this->assertSame([], $r['errors']);
+        $this->assertSame(8, Destination::query()->count());
+        $this->assertSame(22, Category::query()->count());
+        $this->assertSame(13, Tour::query()->count());
+        $this->assertSame(14, Batch::query()->count());
+        $this->assertSame(5, Tour::query()->where('tour_type', 'group')->count());
+        $this->assertSame(['KER-002', 'KER-003', 'RAJ-002'], Tour::query()->whereJsonContains('tags', 'weekend')->orderBy('code')->pluck('code')->all());
+        $this->assertSame(4, Tour::query()->whereJsonContains('tags', 'couples')->count());
+        $this->assertSame(9499, (int) Destination::query()->where('slug', 'kerala')->value('starting_price'));
+        $this->assertSame(7, count(Tour::query()->where('code', 'KER-001')->firstOrFail()->itinerary));
+    }
+
     public function test_a_dry_run_validates_but_changes_nothing(): void
     {
         $r = $this->import($this->workbook(), null, true);
