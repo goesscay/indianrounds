@@ -25,6 +25,7 @@ class Category extends Model
         'group-tours' => 'Group Tours',
         'weekend-escapes' => 'Weekend Escapes',
         'honeymoon' => 'Honeymoon',
+        'christmas-new-year' => 'Christmas & New Year',
     ];
 
     protected $guarded = [];

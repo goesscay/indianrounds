@@ -9,7 +9,7 @@ import { OpenQuoteButton } from "./LeadModal";
 import { SectionHeading } from "./SectionHeading";
 import { TourCard } from "./TourCard";
 
-const menuTitles: Record<MenuSlug, string> = { destinations: "Destinations", "group-tours": "Group Tours", "weekend-escapes": "Weekend Escapes", honeymoon: "Honeymoon" };
+const menuTitles: Record<MenuSlug, string> = { destinations: "Destinations", "group-tours": "Group Tours", "weekend-escapes": "Weekend Escapes", honeymoon: "Honeymoon", "christmas-new-year": "Christmas & New Year" };
 
 export type Crumb = { label: string; href?: string };
 

@@ -99,7 +99,7 @@ export async function getTours(params: Record<string, string | undefined> = {}) 
 }
 
 /** The four browse menus: country > category > packages. */
-export type MenuSlug = "destinations" | "group-tours" | "weekend-escapes" | "honeymoon";
+export type MenuSlug = "destinations" | "group-tours" | "weekend-escapes" | "honeymoon" | "christmas-new-year";
 export type MenuCountry = Destination & { tours_count: number; categories_count: number; menu_starting_price: number };
 export type CategorySummary = { name: string; slug: string; description: string | null; tours_count: number; image_url: string | null };
 type MenuInfo = { slug: MenuSlug; title: string };

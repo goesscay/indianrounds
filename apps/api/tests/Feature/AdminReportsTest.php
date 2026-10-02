@@ -128,7 +128,7 @@ class AdminReportsTest extends TestCase
     public function test_payment_report_collected_due_and_overdue(): void
     {
         $b = $this->booking();
-        PaymentMilestone::create(['booking_id' => $b->id, 'sequence' => 1, 'label' => 'Advance', 'due_on' => now()->subDays(10), 'amount' => 13125, 'status' => 'paid', 'paid_at' => now()->subDays(9)]);
+        PaymentMilestone::create(['booking_id' => $b->id, 'sequence' => 1, 'label' => 'Advance', 'due_on' => now()->subDays(10), 'amount' => 13125, 'status' => 'paid', 'paid_at' => now()]);
         PaymentMilestone::create(['booking_id' => $b->id, 'sequence' => 2, 'label' => 'Instalment', 'due_on' => now()->subDays(1), 'amount' => 13124, 'status' => 'due']);
         PaymentMilestone::create(['booking_id' => $b->id, 'sequence' => 3, 'label' => 'Final', 'due_on' => now()->addDays(20), 'amount' => 13125, 'status' => 'due']);
 
