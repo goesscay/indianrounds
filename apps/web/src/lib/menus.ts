@@ -17,12 +17,6 @@ export const MENUS: Record<Exclude<MenuSlug, "destinations">, MenuMeta> = {
     description: "Short weekend getaways of one to three nights, planned around a Friday departure.",
     legacy: "/collections/weekend-getaways",
   },
-  "christmas-new-year": {
-    title: "Christmas & New Year",
-    intro: "Ring in the season somewhere special. Book early, these departures fill first.",
-    description: "Christmas and New Year holiday packages with festive stays and special experiences.",
-    legacy: "/collections/christmas-new-year",
-  },
   honeymoon: {
     title: "Honeymoon",
     intro: "Romantic stays and moments for two, planned from the first day to the last.",

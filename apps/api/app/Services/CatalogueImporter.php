@@ -334,9 +334,6 @@ class CatalogueImporter
             if ($menu === 'honeymoon') {
                 $plan['packages'][$code]['tags'][] = 'couples';
             }
-            if ($menu === 'christmas-new-year') {
-                $plan['packages'][$code]['tags'][] = 'seasonal-christmas';
-            }
         }
 
         foreach ($data['Itinerary'] as $r) {
@@ -453,10 +450,9 @@ class CatalogueImporter
         }
         $files = array_values(array_unique(array_filter($files)));
 
-        $plan['with_images'] = $dir !== null;
         if ($dir === null) {
             if ($files !== []) {
-                $this->warnings[] = count($files).' image file names are referenced but no --images folder was given: photo links were left unchanged (new items show a placeholder). Re-run with --images to attach the photos.';
+                $this->warnings[] = count($files).' image file names are referenced but no --images folder was given: links are set, the files must be copied to the site separately.';
             }
             $plan['images'] = [];
 
@@ -502,7 +498,6 @@ class CatalogueImporter
     /** @param array<string, mixed> $plan */
     private function apply(array $plan): void
     {
-        $withImages = (bool) ($plan['with_images'] ?? false);
         foreach ($plan['images'] as [$src, $dst]) {
             copy($src, $dst);
         }
@@ -516,8 +511,8 @@ class CatalogueImporter
             }
             $model->fill([
                 'name' => $d['name'], 'region' => $d['region'], 'tagline' => $d['tagline'], 'best_time' => $d['best_time'],
-                'featured' => $d['featured'], 'sort' => $d['sort'], 'seo_content' => $seo,
-            ] + ($withImages ? ['image_url' => $this->url($d['image'])] : []))->save();
+                'image_url' => $this->url($d['image']), 'featured' => $d['featured'], 'sort' => $d['sort'], 'seo_content' => $seo,
+            ])->save();
             $destIds[$slug] = $model->id;
         }
         $destId = fn (string $slug): int => $destIds[$slug] ?? (int) Destination::query()->where('slug', $slug)->value('id');
@@ -525,7 +520,7 @@ class CatalogueImporter
         $catIds = [];
         foreach ($plan['categories'] as $key => $c) {
             $model = Category::query()->firstOrNew(['menu' => $c['menu'], 'destination_id' => $destId($c['country']), 'slug' => $c['slug']]);
-            $model->fill(['name' => $c['name'], 'description' => $c['description'], 'sort' => $c['sort']] + ($withImages ? ['image_url' => $this->url($c['image'])] : []))->save();
+            $model->fill(['name' => $c['name'], 'description' => $c['description'], 'image_url' => $this->url($c['image']), 'sort' => $c['sort']])->save();
             $catIds[$key] = $model->id;
         }
 
@@ -543,9 +538,10 @@ class CatalogueImporter
                 'pickup' => $p['pickup'], 'drop_point' => $p['drop'], 'overview' => $p['overview'],
                 'highlights' => $p['highlights'], 'itinerary' => array_values($this->sorted($p['itinerary'])), 'inclusions' => $p['inclusions'],
                 'exclusions' => $p['exclusions'], 'notes' => $p['notes'], 'must_carry' => $p['must_carry'],
+                'image_url' => $this->url($p['image']), 'gallery' => array_map(fn (string $g) => $this->url($g), $p['gallery']),
                 'base_price' => $p['price'], 'original_price' => $p['original'], 'featured' => $p['featured'], 'status' => $p['status'],
                 'tags' => array_values(array_unique([...$kept, ...$p['tags']])),
-            ] + ($withImages ? ['image_url' => $this->url($p['image']), 'gallery' => array_map(fn (string $g) => $this->url($g), $p['gallery'])] : []))->save();
+            ])->save();
 
             $tour->categories()->sync(array_map(fn (string $k) => $catIds[$k], $p['placements']));
 

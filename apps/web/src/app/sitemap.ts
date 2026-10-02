@@ -17,7 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
   // Country and category pages of each menu (only those that actually have packages are listed by the API).
-  const menus: MenuSlug[] = ["destinations", "group-tours", "weekend-escapes", "honeymoon", "christmas-new-year"];
+  const menus: MenuSlug[] = ["destinations", "group-tours", "weekend-escapes", "honeymoon"];
   const menuPaths = (
     await Promise.all(
       menus.map(async (menu) => {

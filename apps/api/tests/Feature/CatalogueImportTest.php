@@ -122,7 +122,8 @@ class CatalogueImportTest extends TestCase
         $this->assertCount(5, $t->itinerary);
         $this->assertSame(['day' => 1, 'title' => 'Day 1 title', 'description' => 'What happens on day 1.'], $t->itinerary[0]);
         $this->assertEqualsCanonicalizing(['family', 'couples'], $t->tags);
-        $this->assertNull($t->image_url, 'without a photo folder no photo links are written');
+        $this->assertSame('/uploads/catalogue/TH-001-cover.jpg', $t->image_url);
+        $this->assertSame(['/uploads/catalogue/TH-001-2.jpg', '/uploads/catalogue/TH-001-3.jpg'], $t->gallery);
         $this->assertSame(['Single room', 'Twin sharing'], $t->variants()->orderBy('label')->pluck('label')->all());
 
         $this->assertSame(3, Category::query()->count());
@@ -167,37 +168,6 @@ class CatalogueImportTest extends TestCase
         $this->assertSame(4, Tour::query()->whereJsonContains('tags', 'couples')->count());
         $this->assertSame(9499, (int) Destination::query()->where('slug', 'kerala')->value('starting_price'));
         $this->assertSame(7, count(Tour::query()->where('code', 'KER-001')->firstOrFail()->itinerary));
-    }
-
-    public function test_the_christmas_and_new_year_menu_is_supported_and_tags_the_package(): void
-    {
-        $r = $this->import($this->workbook(function ($book, $set) {
-            $set('Categories', 10, [1 => 'Christmas & New Year', 2 => 'Thailand', 3 => 'Festive Holidays']);
-            $set('Placements', 10, [1 => 'TH-001', 2 => 'Christmas & New Year | Thailand | Festive Holidays']);
-        }));
-
-        $this->assertSame([], $r['errors']);
-        $tour = Tour::query()->where('code', 'TH-001')->firstOrFail();
-        $this->assertContains('seasonal-christmas', $tour->tags);
-        $this->assertContains('christmas-new-year', $tour->categories()->pluck('menu')->all());
-        $this->getJson('/api/v1/menus/christmas-new-year/thailand/festive-holidays')->assertOk()->assertJsonPath('data.0.slug', Tour::query()->value('slug'));
-    }
-
-    public function test_importing_without_a_photo_folder_never_wipes_photos_already_set(): void
-    {
-        $first = $this->import($this->workbook());
-        $this->assertSame([], $first['errors']);
-        $this->assertNull(Tour::query()->firstOrFail()->image_url, 'no photo folder: new items get no photo link');
-
-        Tour::query()->update(['image_url' => '/uploads/catalogue/real.jpg']);
-        Destination::query()->update(['image_url' => '/uploads/catalogue/country.jpg']);
-        Category::query()->update(['image_url' => '/uploads/catalogue/cat.jpg']);
-
-        $this->import($this->workbook());
-
-        $this->assertSame('/uploads/catalogue/real.jpg', Tour::query()->firstOrFail()->image_url);
-        $this->assertSame('/uploads/catalogue/country.jpg', Destination::query()->firstOrFail()->image_url);
-        $this->assertSame(['/uploads/catalogue/cat.jpg'], Category::query()->pluck('image_url')->unique()->values()->all());
     }
 
     public function test_a_dry_run_validates_but_changes_nothing(): void
