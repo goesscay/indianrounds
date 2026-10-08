@@ -5,6 +5,7 @@ import { CalendarDays, Check, MapPin, X } from "lucide-react";
 import { getTour } from "@/lib/api";
 import { durationLabel, formatDate, formatINR } from "@/lib/format";
 import { site } from "@/lib/site";
+import { hasFixedDepartures } from "@/lib/tour-kind";
 import { CoverImage } from "@/components/CoverImage";
 import { OpenQuoteButton } from "@/components/LeadModal";
 
@@ -36,6 +37,7 @@ export default async function TourPage({ params }: Props) {
   const t = await getTour(slug);
   if (!t) notFound();
 
+  const fixedDates = hasFixedDepartures(t);
   const upcoming = (t.batches ?? []).filter((b) => b.status === "open").slice(0, 4);
 
   const jsonLd = {
@@ -168,7 +170,7 @@ export default async function TourPage({ params }: Props) {
             </p>
             <p className="text-xs text-muted">per person · 5% GST extra</p>
 
-            {upcoming.length > 0 ? (
+            {fixedDates && (upcoming.length > 0 ? (
               <ul className="mt-4 space-y-2 text-sm">
                 {upcoming.map((b) => (
                   <li key={b.id} className="flex items-center justify-between gap-2 rounded-lg bg-surface-alt px-3 py-2">
@@ -179,11 +181,17 @@ export default async function TourPage({ params }: Props) {
               </ul>
             ) : (
               <p className="mt-4 rounded-lg bg-surface-alt p-3 text-sm text-muted">No open departures right now — request a custom date.</p>
-            )}
+            ))}
 
-            <Link href={`/tours/${t.slug}/dates`} className="mt-5 block rounded-full bg-brand-red px-6 py-3 text-center font-semibold text-white hover:bg-brand-red-dark">
-              Check Dates &amp; Costing
-            </Link>
+            {fixedDates ? (
+              <Link href={`/tours/${t.slug}/dates`} className="mt-5 block rounded-full bg-brand-red px-6 py-3 text-center font-semibold text-white hover:bg-brand-red-dark">
+                Check Dates &amp; Costing
+              </Link>
+            ) : (
+              <OpenQuoteButton options={{ destination: t.destination?.name, message: `I'd like to check dates and costing for: ${t.title}`, title: "Check dates & costing" }} className="mt-5 w-full rounded-full bg-brand-red px-6 py-3 font-semibold text-white hover:bg-brand-red-dark">
+                Check Dates &amp; Costing
+              </OpenQuoteButton>
+            )}
             <OpenQuoteButton options={{ destination: t.destination?.name, message: `I'm interested in: ${t.title}`, title: "Enquire about this tour" }} className="mt-3 w-full rounded-full border border-brand-red px-6 py-3 font-semibold text-brand-red hover:bg-brand-red/5">
               Get a Free Quote
             </OpenQuoteButton>

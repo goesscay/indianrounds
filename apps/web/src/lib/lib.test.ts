@@ -3,6 +3,17 @@ import { safeNext } from "./client-api";
 import { durationLabel, formatDate, formatINR, formatMonth } from "./format";
 import { legacyRedirects } from "./redirects";
 import { sameOrigin } from "./same-origin";
+import { hasFixedDepartures } from "./tour-kind";
+
+describe("tour kind", () => {
+  it("only group tours and weekend escapes use fixed departure dates", () => {
+    expect(hasFixedDepartures({ tour_type: "group", tags: [] })).toBe(true);
+    expect(hasFixedDepartures({ tour_type: "group" })).toBe(true);
+    expect(hasFixedDepartures({ tour_type: "custom", tags: ["weekend", "family"] })).toBe(true);
+    expect(hasFixedDepartures({ tour_type: "custom", tags: ["couples"] })).toBe(false);
+    expect(hasFixedDepartures({ tour_type: "custom" })).toBe(false);
+  });
+});
 
 describe("format", () => {
   it("formats rupees with Indian digit grouping", () => {

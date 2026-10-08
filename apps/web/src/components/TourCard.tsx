@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Tour } from "@/lib/api";
 import { durationLabel, formatDate, formatINR } from "@/lib/format";
+import { hasFixedDepartures } from "@/lib/tour-kind";
 import { CoverImage } from "./CoverImage";
 
 export function TourCard({ tour }: { tour: Tour }) {
@@ -15,11 +16,12 @@ export function TourCard({ tour }: { tour: Tour }) {
         {tour.destination && <p className="text-xs font-semibold uppercase tracking-wide text-brand-red">{tour.destination.name}</p>}
         <h3 className="font-bold leading-snug">{tour.title}</h3>
         <p className="text-sm text-muted">{durationLabel(tour.duration_nights, tour.duration_days)}</p>
-        {tour.next_batch ? (
-          <p className="text-xs text-muted">Next departure: {formatDate(tour.next_batch.starts_on)}</p>
-        ) : (
-          <p className="text-xs text-muted">No upcoming departures</p>
-        )}
+        {hasFixedDepartures(tour) &&
+          (tour.next_batch ? (
+            <p className="text-xs text-muted">Next departure: {formatDate(tour.next_batch.starts_on)}</p>
+          ) : (
+            <p className="text-xs text-muted">No upcoming departures</p>
+          ))}
         <div className="mt-auto flex items-end justify-between pt-3">
           <div>
             {tour.original_price && <p className="text-xs text-muted line-through">{formatINR(tour.original_price)}</p>}
