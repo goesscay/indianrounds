@@ -144,3 +144,9 @@ sudo install -d -o deploy -g deploy /srv/uploads/catalogue
 - Menu placement drives site behaviour: a package placed under **Group Tours** becomes a group tour (needs departures), **Weekend Escapes** adds the `weekend` tag, **Honeymoon** adds the `couples` tag; the Family / Luxury / Festival / Christmas columns add their tags. Special Offers fills itself from packages whose original price is higher than the price.
 - A menu with no categories yet falls back to the old listing (`/group-tours` redirects to `/tours?type=group`, etc.), so the header links never dead-end.
 
+### Replacing all destinations from a destinations workbook
+`php artisan catalogue:replace-destinations /srv/import/destinations.xlsx --dry-run` previews; without `--dry-run` it **removes every destination together with its packages, departures, price options and categories**, then adds the workbook's rows (Country | Destination Name | Tagline | On Season | Off Season | Mid Season, where each season reads `Oct–Mar | places | Peak activities: ...`). It refuses to run if a booking exists on a package it would remove. Take a backup first (`pg_dump -Fc`). Photos: a country reuses `web/public/photos/destinations/<slug>.jpg` when that file exists, otherwise it shows a placeholder until a photo is set in Admin > Destinations.
+
+**After deleting content, clear the website's page cache.** The Next.js server keeps serving its last good copy of a page when the API now answers 404 (a refresh that fails does not replace the cached copy), so deleted destinations and tours stay visible, and survive a restart. Fix:
+`systemctl stop indianrounds-web && rm -rf /srv/indianrounds/apps/web/.next/cache/fetch-cache && systemctl start indianrounds-web`
+Adding or editing content needs no action; it appears within about a minute.
