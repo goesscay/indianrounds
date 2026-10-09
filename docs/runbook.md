@@ -41,6 +41,15 @@ Logs: `apps/api/storage/logs/laravel-*.log` (daily). Every admin change and mone
 
 Migrations must be backward compatible with the previous release for one deploy, so a rollback of code does not need a rollback of schema.
 
+### Manual deploy (when GitHub Actions cannot run, e.g. a billing block)
+The pipeline only wraps `scripts/deploy.sh`; the same script can be run from any machine that has the root SSH key. Run the usual checks locally first (the pipeline normally gates on CI): `pnpm lint && pnpm exec tsc --noEmit && pnpm test && pnpm build` in `apps/web`, and `vendor/bin/pint --test && vendor/bin/phpstan analyse && php artisan test` in `apps/api`.
+```bash
+SHA=$(git rev-parse HEAD); VERSION=v0.1.6   # the tag you are releasing
+git archive --format=tar.gz HEAD | ssh -i ~/.ssh/indianrounds_deploy root@200.97.163.126 'cat > /tmp/release.tgz'
+tr -d '' < scripts/deploy.sh | ssh -i ~/.ssh/indianrounds_deploy root@200.97.163.126   "cat > /tmp/deploy.sh; chmod 644 /tmp/release.tgz /tmp/deploy.sh; sudo -u deploy env FORCE=1 bash /tmp/deploy.sh /tmp/release.tgz $VERSION $SHA; rm -f /tmp/release.tgz /tmp/deploy.sh"
+```
+It takes the same database and code backups, migrates, builds, restarts and health-checks, and rolls the code back automatically if the health check fails. Afterwards `head -2 /srv/indianrounds/VERSION` on the server shows the version and commit.
+
 ### Rollback
 Redeploy the previous artefacts and `php artisan queue:restart`. Only run `php artisan migrate:rollback --step=1` if the release added a migration that the old code cannot tolerate, and only after a backup.
 
