@@ -32,12 +32,31 @@ const tabs = [
   ["other-info", "Other Info"],
 ] as const;
 
+/** One itinerary day: several bullet lines render as a list, a single line as a paragraph. */
+function DayBody({ text }: { text: string }) {
+  const lines = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  if (lines.length < 2) return <p className="border-t border-black/5 px-4 pb-4 pt-3 text-sm text-muted">{text}</p>;
+  return (
+    <ul className="list-disc space-y-1.5 border-t border-black/5 px-4 pb-4 pl-9 pt-3 text-sm text-muted">
+      {lines.map((l) => <li key={l}>{l}</li>)}
+    </ul>
+  );
+}
+
 export default async function TourPage({ params }: Props) {
   const { slug } = await params;
   const t = await getTour(slug);
   if (!t) notFound();
 
   const price = t.price;
+  // Sections with nothing to show (e.g. a package imported without inclusions yet) are left out, along with their tab.
+  const has = {
+    overview: Boolean(t.overview) || (t.highlights?.length ?? 0) > 0,
+    itinerary: (t.itinerary?.length ?? 0) > 0,
+    inclusions: (t.inclusions?.length ?? 0) > 0,
+    exclusions: (t.exclusions?.length ?? 0) > 0,
+    "other-info": true,
+  };
   const fixedDates = hasFixedDepartures(t);
   const upcoming = (t.batches ?? []).filter((b) => b.status === "open").slice(0, 4);
 
@@ -72,7 +91,7 @@ export default async function TourPage({ params }: Props) {
 
       <nav aria-label="Tour sections" className="sticky top-16 z-30 border-b border-black/10 bg-white sm:top-[72px] lg:top-[109px]">
         <ul className="mx-auto flex max-w-7xl gap-6 overflow-x-auto px-4 text-sm font-semibold sm:px-6 lg:px-8">
-          {tabs.map(([id, label]) => (
+          {tabs.filter(([id]) => has[id]).map(([id, label]) => (
             <li key={id}>
               <a href={`#${id}`} className="block whitespace-nowrap border-b-2 border-transparent py-3 hover:border-brand-red hover:text-brand-red">{label}</a>
             </li>
@@ -85,10 +104,10 @@ export default async function TourPage({ params }: Props) {
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[
               ["Duration", durationLabel(t.duration_nights, t.duration_days)],
-              ["Pickup", t.pickup ?? "—"],
-              ["Drop", t.drop_point ?? "—"],
+              ["Pickup", t.pickup],
+              ["Drop", t.drop_point],
               ["Type", t.haul_class === "long" ? "International (long-haul)" : "Short-haul"],
-            ].map(([k, v]) => (
+            ].filter((x): x is [string, string] => Boolean(x[1])).map(([k, v]) => (
               <div key={k} className="rounded-card bg-surface-alt p-4">
                 <p className="text-xs text-muted">{k}</p>
                 <p className="font-semibold">{v}</p>
@@ -96,17 +115,17 @@ export default async function TourPage({ params }: Props) {
             ))}
           </div>
 
-          <section id="overview" className="scroll-mt-32 lg:scroll-mt-[156px] space-y-4">
+          {has.overview && <section id="overview" className="scroll-mt-32 lg:scroll-mt-[156px] space-y-4">
             <h2 className="text-2xl font-extrabold">Overview &amp; Highlights</h2>
-            <p className="text-muted">{t.overview}</p>
+            {t.overview && <p className="text-muted">{t.overview}</p>}
             <ul className="flex flex-wrap gap-2">
               {(t.highlights ?? []).map((h) => (
                 <li key={h} className="rounded-full border border-brand-red/30 bg-brand-red/5 px-3 py-1 text-sm font-medium text-brand-red">{h}</li>
               ))}
             </ul>
-          </section>
+          </section>}
 
-          <section id="itinerary" className="scroll-mt-32 lg:scroll-mt-[156px]">
+          {has.itinerary && <section id="itinerary" className="scroll-mt-32 lg:scroll-mt-[156px]">
             <h2 className="mb-4 text-2xl font-extrabold">Itinerary</h2>
             <div className="space-y-3">
               {(t.itinerary ?? []).map((d, i) => (
@@ -115,30 +134,30 @@ export default async function TourPage({ params }: Props) {
                     <span className="grid size-8 shrink-0 place-items-center rounded-full bg-brand-red text-sm text-white">{d.day}</span>
                     Day {d.day}: {d.title}
                   </summary>
-                  <p className="border-t border-black/5 px-4 pb-4 pt-3 text-sm text-muted">{d.description}</p>
+                  <DayBody text={d.description} />
                 </details>
               ))}
             </div>
             <p className="mt-3 text-xs text-muted">Weather, road conditions and safety may require changes to the itinerary.</p>
-          </section>
+          </section>}
 
-          <section id="inclusions" className="scroll-mt-32 lg:scroll-mt-[156px]">
+          {has.inclusions && <section id="inclusions" className="scroll-mt-32 lg:scroll-mt-[156px]">
             <h2 className="mb-4 text-2xl font-extrabold">Inclusions</h2>
             <ul className="grid gap-2 sm:grid-cols-2">
               {(t.inclusions ?? []).map((x) => (
                 <li key={x} className="flex gap-2 text-sm"><Check size={18} className="mt-0.5 shrink-0 text-green-600" />{x}</li>
               ))}
             </ul>
-          </section>
+          </section>}
 
-          <section id="exclusions" className="scroll-mt-32 lg:scroll-mt-[156px]">
+          {has.exclusions && <section id="exclusions" className="scroll-mt-32 lg:scroll-mt-[156px]">
             <h2 className="mb-4 text-2xl font-extrabold">Exclusions</h2>
             <ul className="grid gap-2 sm:grid-cols-2">
               {(t.exclusions ?? []).map((x) => (
                 <li key={x} className="flex gap-2 text-sm"><X size={18} className="mt-0.5 shrink-0 text-brand-red" />{x}</li>
               ))}
             </ul>
-          </section>
+          </section>}
 
           <section id="other-info" className="scroll-mt-32 lg:scroll-mt-[156px] space-y-6">
             <h2 className="text-2xl font-extrabold">Other Info</h2>
@@ -170,7 +189,7 @@ export default async function TourPage({ params }: Props) {
               <OpenQuoteButton options={{ destination: t.destination?.name, message: `I'm interested in: ${t.title}`, title: "Enquire about this tour" }} className="mt-5 w-full rounded-full bg-brand-red px-6 py-3 font-semibold text-white hover:bg-brand-red-dark">
                 Get a Free Quote
               </OpenQuoteButton>
-              <p className="mt-4 flex items-center gap-2 text-xs text-muted"><MapPin size={14} /> Pickup: {t.pickup ?? "—"}</p>
+              {t.pickup && <p className="mt-4 flex items-center gap-2 text-xs text-muted"><MapPin size={14} /> Pickup: {t.pickup}</p>}
             </div>
           ) : (
           <div className="rounded-card border border-black/10 bg-white p-5 shadow-float">
@@ -206,7 +225,7 @@ export default async function TourPage({ params }: Props) {
             <OpenQuoteButton options={{ destination: t.destination?.name, message: `I'm interested in: ${t.title}`, title: "Enquire about this tour" }} className="mt-3 w-full rounded-full border border-brand-red px-6 py-3 font-semibold text-brand-red hover:bg-brand-red/5">
               Get a Free Quote
             </OpenQuoteButton>
-            <p className="mt-4 flex items-center gap-2 text-xs text-muted"><MapPin size={14} /> Pickup: {t.pickup ?? "—"}</p>
+            {t.pickup && <p className="mt-4 flex items-center gap-2 text-xs text-muted"><MapPin size={14} /> Pickup: {t.pickup}</p>}
           </div>
           )}
         </aside>
