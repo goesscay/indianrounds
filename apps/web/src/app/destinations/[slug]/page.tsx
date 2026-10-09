@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getDestination, getMenuCountry, getPosts } from "@/lib/api";
 import { formatINR } from "@/lib/format";
 import { OpenQuoteButton } from "@/components/LeadModal";
+import { SeasonGuide } from "@/components/SeasonGuide";
 import { CategoryCard } from "@/components/MenuViews";
 import { PostCard } from "@/components/PostCard";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -57,6 +58,7 @@ export default async function DestinationPage({ params, searchParams }: Props) {
       </section>
 
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <SeasonGuide destination={d} />
         {menu && menu.data.length > 0 && (
           <section className="mb-14">
             <SectionHeading lead="Browse by" accent="Category" sub={`${menu.data.length} categor${menu.data.length === 1 ? "y" : "ies"} in ${d.name}`} />

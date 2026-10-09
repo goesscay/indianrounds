@@ -7,9 +7,6 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import type { Destination } from "@/lib/api";
 import { CoverImage } from "./CoverImage";
 
-/** Order requested for the mega menu; anything else stays reachable only from "View all". */
-const featured = ["Europe", "Vietnam", "Bali", "Thailand", "Japan", "Georgia", "Sri Lanka", "Bhutan", "Philippines", "Singapore", "New Zealand", "Spain", "Malaysia"];
-
 export function DestinationsMegaMenu({ destinations }: { destinations: Destination[] }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -23,8 +20,8 @@ export function DestinationsMegaMenu({ destinations }: { destinations: Destinati
     setOpen(false);
   }
 
-  const byName = new Map(destinations.map((d) => [d.name, d]));
-  const items = featured.map((name) => byName.get(name)).filter((d): d is Destination => Boolean(d));
+  // Every destination, in the order set in the admin (the API already sorts by it).
+  const items = destinations;
 
   function closeOnBlur(e: FocusEvent<HTMLDivElement>) {
     if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOpen(false);

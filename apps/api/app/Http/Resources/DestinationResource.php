@@ -17,6 +17,7 @@ class DestinationResource extends JsonResource
             'slug' => $this->slug,
             'region' => $this->region,
             'tagline' => $this->tagline,
+            'best_time' => $this->best_time,
             'starting_price' => $this->starting_price,
             'image_url' => $this->image_url,
             'featured' => $this->featured,
@@ -25,7 +26,6 @@ class DestinationResource extends JsonResource
 
         if ($request->routeIs('destinations.show')) {
             $data += [
-                'best_time' => $this->best_time,
                 'seo_content' => $this->seo_content ?? [],
                 'tours' => TourResource::collection($this->whenLoaded('tours')),
             ];

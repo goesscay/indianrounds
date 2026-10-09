@@ -33,6 +33,17 @@ class DestinationController extends Controller
     public function update(Request $request, Destination $destination): JsonResponse
     {
         $data = $this->validated($request, $destination);
+        if (array_key_exists('seo_content', $data)) {
+            // Fields the client did not send (e.g. the seasons, from a form that only edits the overview) are kept.
+            $incoming = $data['seo_content'] ?? [];
+            if (isset($incoming['seasons']) && is_array($incoming['seasons'])) {
+                $incoming['seasons'] = array_filter($incoming['seasons'], fn ($v) => $v !== null && $v !== []);
+            }
+            $data['seo_content'] = array_filter(
+                array_replace(is_array($destination->seo_content) ? $destination->seo_content : [], $incoming),
+                fn ($v) => $v !== null && $v !== [],
+            );
+        }
         $before = $destination->only(array_keys($data));
         $destination->update($data);
         AuditLog::record('destination.updated', $destination, $before, $destination->only(array_keys($data)));
@@ -60,11 +71,19 @@ class DestinationController extends Controller
             'region' => 'sometimes|in:india,international',
             'tagline' => 'nullable|string|max:255',
             'starting_price' => 'nullable|integer|min:0',
-            'image_url' => 'nullable|url|max:500',
+            'image_url' => ['nullable', 'string', 'max:500', 'regex:#^(https?://|/)\S+$#'], // full link or a site path like /photos/x.jpg
             'best_time' => 'nullable|string|max:120',
             'seo_content' => 'nullable|array',
             'seo_content.overview' => 'nullable|string|max:5000',
             'seo_content.best_time' => 'nullable|string|max:500',
+            'seo_content.places' => 'nullable|string|max:500',
+            'seo_content.seasons' => 'nullable|array',
+            'seo_content.seasons.on' => 'nullable|array',
+            'seo_content.seasons.mid' => 'nullable|array',
+            'seo_content.seasons.off' => 'nullable|array',
+            'seo_content.seasons.*.months' => 'required_with:seo_content.seasons.*|string|max:60',
+            'seo_content.seasons.*.places' => 'nullable|string|max:600',
+            'seo_content.seasons.*.activities' => 'nullable|string|max:1200',
             'featured' => 'sometimes|boolean',
             'sort' => 'sometimes|integer|min:0|max:65535',
         ]);

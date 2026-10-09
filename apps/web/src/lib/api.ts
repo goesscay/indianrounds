@@ -11,7 +11,12 @@ export type Destination = {
   featured: boolean;
   tours_count?: number;
   best_time?: string | null;
-  seo_content?: { overview?: string; best_time?: string };
+  seo_content?: {
+    overview?: string;
+    best_time?: string;
+    places?: string;
+    seasons?: Partial<Record<"on" | "mid" | "off", { months: string; places: string; activities: string }>>;
+  };
   tours?: Tour[];
 };
 

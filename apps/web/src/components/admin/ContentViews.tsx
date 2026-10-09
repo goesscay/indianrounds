@@ -7,7 +7,7 @@ import { formatINR } from "@/lib/format";
 import { useApi } from "@/lib/use-api";
 import { field, ghostBtn, Labeled, Modal, Pager, primaryBtn, Status, Table, Title, useList, type Meta } from "./ui";
 
-type Dest = { id: number; name: string; slug: string; region: string; tagline: string | null; starting_price: number | null; best_time: string | null; featured: boolean; sort: number; tours_count: number; image_url: string | null; seo_content: { overview?: string } | null };
+type Dest = { id: number; name: string; slug: string; region: string; tagline: string | null; starting_price: number | null; best_time: string | null; featured: boolean; sort: number; tours_count: number; image_url: string | null; seo_content: { overview?: string; places?: string; seasons?: Partial<Record<"on" | "mid" | "off", { months: string; places: string; activities: string }>> } | null };
 
 export function DestinationsView() {
   const { user } = useAuth();
@@ -46,10 +46,15 @@ function DestinationForm({ initial, canDelete, onClose, onSaved }: { initial: De
     setBusy(true);
     setErrors({});
     const f = Object.fromEntries(new FormData(e.currentTarget).entries()) as Record<string, string>;
+    const seasons: Record<string, { months: string; places: string; activities: string } | null> = {};
+    for (const k of ["on", "off", "mid"] as const) {
+      // A season with no months is removed; the API requires months whenever a season is present.
+      seasons[k] = f[`${k}_months`]?.trim() ? { months: f[`${k}_months`].trim(), places: f[`${k}_places`] ?? "", activities: f[`${k}_activities`] ?? "" } : null;
+    }
     const body = {
       name: f.name, region: f.region, tagline: f.tagline || null, starting_price: f.starting_price ? Number(f.starting_price) : null,
       best_time: f.best_time || null, image_url: f.image_url || null, featured: f.featured === "on", sort: Number(f.sort || 0),
-      seo_content: { overview: f.overview || undefined },
+      seo_content: { overview: f.overview || undefined, places: f.places || null, seasons },
     };
     try {
       await apiFetch(initial ? `admin/destinations/${initial.id}` : "admin/destinations", { method: initial ? "PUT" : "POST", body });
@@ -81,8 +86,26 @@ function DestinationForm({ initial, canDelete, onClose, onSaved }: { initial: De
           <Labeled label="Best time to visit" id="d-best"><input id="d-best" name="best_time" defaultValue={initial?.best_time ?? ""} className={field} /></Labeled>
           <Labeled label="Sort order" id="d-sort"><input id="d-sort" name="sort" type="number" min={0} defaultValue={initial?.sort ?? 0} className={field} /></Labeled>
         </div>
-        <Labeled label="Image URL" id="d-img" error={errors.image_url?.[0]}><input id="d-img" name="image_url" type="url" defaultValue={initial?.image_url ?? ""} className={field} /></Labeled>
+        <Labeled label="Image URL" id="d-img" error={errors.image_url?.[0]}><input id="d-img" name="image_url" placeholder="https://… or /photos/…" defaultValue={initial?.image_url ?? ""} className={field} /></Labeled>
         <Labeled label="Overview (shown on the destination page)" id="d-over"><textarea id="d-over" name="overview" rows={4} defaultValue={initial?.seo_content?.overview ?? ""} className={field} /></Labeled>
+        <Labeled label="Places covered (e.g. Dubai, Abu Dhabi, Sharjah)" id="d-places"><input id="d-places" name="places" defaultValue={initial?.seo_content?.places ?? ""} className={field} /></Labeled>
+        <fieldset className="space-y-3 rounded-lg border border-black/10 p-4">
+          <legend className="px-1 text-sm font-bold">Seasons</legend>
+          <p className="text-xs text-muted">Shown prominently on the destination page. Months look like “Oct–Mar”. Leave the months empty to remove a season.</p>
+          {([["on", "On season"], ["off", "Off season"], ["mid", "Mid season"]] as const).map(([k, label]) => (
+            <div key={k} className="grid gap-3 sm:grid-cols-[8rem_1fr] sm:items-start">
+              <div>
+                <p className="mb-1 text-xs font-semibold">{label}</p>
+                <input aria-label={`${label} months`} name={`${k}_months`} placeholder="Oct–Mar" defaultValue={initial?.seo_content?.seasons?.[k]?.months ?? ""} className={field} />
+              </div>
+              <div className="space-y-2">
+                <input aria-label={`${label} top places`} name={`${k}_places`} placeholder="Top places, comma separated" defaultValue={initial?.seo_content?.seasons?.[k]?.places ?? ""} className={field} />
+                <textarea aria-label={`${label} peak activities`} name={`${k}_activities`} rows={2} placeholder="Peak activities" defaultValue={initial?.seo_content?.seasons?.[k]?.activities ?? ""} className={field} />
+              </div>
+            </div>
+          ))}
+          {errors["seo_content.seasons.on.months"] && <p className="text-xs text-brand-red">Enter the months for the on season.</p>}
+        </fieldset>
         <label className="flex items-center gap-2 text-sm font-semibold"><input type="checkbox" name="featured" defaultChecked={initial?.featured} className="accent-brand-red" /> Featured on homepage</label>
         {msg && <p role="alert" className="text-sm text-brand-red">{msg}</p>}
         <div className="flex gap-3">

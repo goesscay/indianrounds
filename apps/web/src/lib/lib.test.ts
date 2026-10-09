@@ -3,7 +3,26 @@ import { safeNext } from "./client-api";
 import { durationLabel, formatDate, formatINR, formatMonth } from "./format";
 import { legacyRedirects } from "./redirects";
 import { sameOrigin } from "./same-origin";
+import { monthsInRange, seasonByMonth } from "./seasons";
 import { hasFixedDepartures } from "./tour-kind";
+
+describe("seasons", () => {
+  it("reads month ranges, including ones that wrap the year", () => {
+    expect(monthsInRange("Oct–Mar")).toEqual([9, 10, 11, 0, 1, 2]);
+    expect(monthsInRange("Apr-Jun")).toEqual([3, 4, 5]);
+    expect(monthsInRange("June to August")).toEqual([5, 6, 7]);
+    expect(monthsInRange("Dec")).toEqual([11]);
+    expect(monthsInRange("whenever")).toBeNull();
+    expect(monthsInRange("Foo–Bar")).toBeNull();
+  });
+
+  it("maps every month to its season and gives up if any range is unreadable", () => {
+    const s = (months: string) => ({ months, places: "", activities: "" });
+    expect(seasonByMonth({ on: s("Oct–Mar"), off: s("Jun–Sep"), mid: s("Apr–May") })).toEqual(["on", "on", "on", "mid", "mid", "off", "off", "off", "off", "on", "on", "on"]);
+    expect(seasonByMonth({ on: s("May–Jul") })).toEqual([null, null, null, null, "on", "on", "on", null, null, null, null, null]);
+    expect(seasonByMonth({ on: s("Oct–Mar"), off: s("soon") })).toBeNull();
+  });
+});
 
 describe("tour kind", () => {
   it("only group tours and weekend escapes use fixed departure dates", () => {
