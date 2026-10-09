@@ -20,8 +20,9 @@ class TourResource extends JsonResource
             'haul_class' => $this->haul_class,
             'duration_nights' => $this->duration_nights,
             'duration_days' => $this->duration_days,
-            'price' => $this->base_price,
-            'original_price' => $this->original_price,
+            // Null means "price on request": no price set, or staff chose not to show it. A hidden price never leaves the server.
+            'price' => $this->priceVisible() ? $this->base_price : null,
+            'original_price' => $this->priceVisible() ? $this->original_price : null,
             'image_url' => $this->image_url,
             'featured' => $this->featured,
             'tags' => $this->tags ?? [],
@@ -52,7 +53,7 @@ class TourResource extends JsonResource
                 'notes' => $this->notes ?? [],
                 'must_carry' => $this->must_carry ?? [],
                 'gallery' => $this->gallery ?? [],
-                'variants' => $this->variants->map(fn ($v) => [
+                'variants' => ($this->priceVisible() ? $this->variants : collect())->map(fn ($v) => [
                     'id' => $v->id,
                     'label' => $v->label,
                     'price' => $v->price,

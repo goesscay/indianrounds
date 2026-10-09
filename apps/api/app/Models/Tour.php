@@ -15,6 +15,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string $title
  * @property int $duration_nights
  * @property list<string>|null $tags
+ * @property int|null $base_price
+ * @property int|null $original_price
+ * @property bool $show_price
  * @property-read int $duration_days
  * @property Destination $destination
  * @property Collection<int, TourVariant> $variants
@@ -36,6 +39,7 @@ class Tour extends Model
             'gallery' => 'array',
             'tags' => 'array',
             'featured' => 'boolean',
+            'show_price' => 'boolean',
         ];
     }
 
@@ -70,6 +74,24 @@ class Tour extends Model
     public function scopePublished(Builder $query): Builder
     {
         return $query->where('status', 'published');
+    }
+
+    /** The price is shown publicly only when one is set and staff have not hidden it. */
+    public function priceVisible(): bool
+    {
+        return $this->base_price !== null && $this->show_price;
+    }
+
+    /**
+     * Packages with a visible price first (cheapest or dearest first); the rest, which are enquiry-only, last.
+     *
+     * @param  Builder<Tour>  $query
+     * @return Builder<Tour>
+     */
+    public function scopeOrderByVisiblePrice(Builder $query, string $direction = 'asc'): Builder
+    {
+        return $query->orderByRaw('case when base_price is null or show_price = false then 1 else 0 end')
+            ->orderBy('base_price', $direction === 'desc' ? 'desc' : 'asc');
     }
 
     public function getDurationDaysAttribute(): int

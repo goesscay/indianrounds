@@ -9,7 +9,7 @@ import { formatDate, formatINR } from "@/lib/format";
 import { useApi } from "@/lib/use-api";
 import { Badge, field, ghostBtn, Labeled, Pager, primaryBtn, Status, Table, Title, useList } from "./ui";
 
-type TourRow = { id: number; slug: string; title: string; status: string; featured: boolean; destination: string; duration_nights: number; price: number; haul_class: string; batches_count: number };
+type TourRow = { id: number; slug: string; title: string; status: string; featured: boolean; destination: string; duration_nights: number; price: number | null; show_price: boolean; haul_class: string; batches_count: number };
 
 export function ToursList() {
   const { user } = useAuth();
@@ -37,7 +37,7 @@ export function ToursList() {
           { header: "Tour", render: (r) => <span className="font-semibold">{r.title}</span> },
           { header: "Destination", render: (r) => r.destination },
           { header: "Nights", render: (r) => r.duration_nights },
-          { header: "From", render: (r) => formatINR(r.price) },
+          { header: "From", render: (r) => (r.price === null ? <span className="text-muted">On request</span> : <>{formatINR(r.price)}{!r.show_price && <span className="ml-1.5 rounded bg-surface-alt px-1.5 py-0.5 text-[10px] font-semibold text-muted">hidden</span>}</>) },
           { header: "Departures", render: (r) => r.batches_count },
           { header: "Status", render: (r) => <Status value={r.status} /> },
         ]}
@@ -53,7 +53,7 @@ type TourFull = {
   id: number; destination_id: number; title: string; slug: string; summary: string | null; tour_type: string; haul_class: string; duration_nights: number;
   pickup: string | null; drop_point: string | null; overview: string | null; highlights: string[] | null; itinerary: { day: number; title: string; description: string }[] | null;
   inclusions: string[] | null; exclusions: string[] | null; notes: string[] | null; must_carry: string[] | null; image_url: string | null;
-  tags?: string[] | null; base_price: number; original_price: number | null; featured: boolean; status: string; variants?: Variant[]; batches?: BatchRow[];
+  tags?: string[] | null; base_price: number | null; original_price: number | null; show_price?: boolean; featured: boolean; status: string; variants?: Variant[]; batches?: BatchRow[];
 };
 
 export function TourEditor({ id }: { id: string }) {
@@ -100,7 +100,7 @@ function TourForm({ initial, destinations, onSaved }: { initial: TourFull | null
       duration_nights: Number(f.duration_nights), pickup: f.pickup || null, drop_point: f.drop_point || null, overview: f.overview || null,
       highlights: lines(f.highlights ?? ""), inclusions: lines(f.inclusions ?? ""), exclusions: lines(f.exclusions ?? ""), notes: lines(f.notes ?? ""), must_carry: lines(f.must_carry ?? ""),
       itinerary: itinerary.filter((d) => d.title.trim()).map((d, i) => ({ day: i + 1, title: d.title, description: d.description || d.title })),
-      image_url: f.image_url || null, base_price: Number(f.base_price), original_price: f.original_price ? Number(f.original_price) : null,
+      image_url: f.image_url || null, base_price: f.base_price ? Number(f.base_price) : null, original_price: f.original_price ? Number(f.original_price) : null, show_price: f.show_price === "on",
       tags, featured: f.featured === "on", ...(canPublish || !initial ? { status: f.status } : {}),
     };
     try {
@@ -144,9 +144,9 @@ function TourForm({ initial, destinations, onSaved }: { initial: TourFull | null
         <Labeled label="Nights *" id="t-nights" error={e1("duration_nights")}><input id="t-nights" name="duration_nights" type="number" min={0} required defaultValue={initial?.duration_nights} className={field} /></Labeled>
         <Labeled label="Type" id="t-type"><select id="t-type" name="tour_type" defaultValue={initial?.tour_type ?? "group"} className={field}><option value="group">Group departure</option><option value="custom">Custom</option></select></Labeled>
         <Labeled label="Haul class (drives payment & cancellation rules)" id="t-haul"><select id="t-haul" name="haul_class" defaultValue={initial?.haul_class ?? "short"} className={field}><option value="short">Short-haul</option><option value="long">Long-haul</option></select></Labeled>
-        <Labeled label="Starting price (₹ per person) *" id="t-price" error={e1("base_price")}><input id="t-price" name="base_price" type="number" min={1} required defaultValue={initial?.base_price} className={field} /></Labeled>
+        <Labeled label="Starting price (₹ per person), optional" id="t-price" error={e1("base_price")}><input id="t-price" name="base_price" type="number" min={1} defaultValue={initial?.base_price ?? ""} className={field} /></Labeled>
         <Labeled label="Original price (₹, strike-through)" id="t-orig"><input id="t-orig" name="original_price" type="number" min={0} defaultValue={initial?.original_price ?? ""} className={field} /></Labeled>
-        <Labeled label="Image URL" id="t-img" error={e1("image_url")}><input id="t-img" name="image_url" type="url" defaultValue={initial?.image_url ?? ""} className={field} /></Labeled>
+        <Labeled label="Image URL" id="t-img" error={e1("image_url")}><input id="t-img" name="image_url" placeholder="https://… or /uploads/…" defaultValue={initial?.image_url ?? ""} className={field} /></Labeled>
         <Labeled label="Pickup" id="t-pick"><input id="t-pick" name="pickup" defaultValue={initial?.pickup ?? ""} className={field} /></Labeled>
         <Labeled label="Drop" id="t-drop"><input id="t-drop" name="drop_point" defaultValue={initial?.drop_point ?? ""} className={field} /></Labeled>
       </div>
@@ -180,6 +180,10 @@ function TourForm({ initial, destinations, onSaved }: { initial: TourFull | null
       </div>
 
       <div className="flex flex-wrap items-center gap-6">
+        <div className="rounded-lg border border-black/10 p-3">
+          <label className="flex items-center gap-2 text-sm font-semibold"><input type="checkbox" name="show_price" defaultChecked={initial ? initial.show_price !== false : true} className="accent-brand-red" /> Show the price on the website</label>
+          <p className="mt-1 text-xs text-muted">With no price, or with this switched off, visitors see only “Get a Free Quote” (no price, no dates, no online booking). A hidden price is never sent to the public site.</p>
+        </div>
         <label className="flex items-center gap-2 text-sm font-semibold"><input type="checkbox" name="featured" defaultChecked={initial?.featured} className="accent-brand-red" /> Featured on homepage</label>
         {(collections.data?.data.length ?? 0) > 0 && (
           <fieldset>

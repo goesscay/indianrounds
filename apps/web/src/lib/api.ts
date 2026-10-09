@@ -39,7 +39,8 @@ export type Tour = {
   haul_class: "short" | "long";
   duration_nights: number;
   duration_days: number;
-  price: number;
+  /** Null = price on request (not set, or hidden by staff): show a quote button instead of a price. */
+  price: number | null;
   original_price: number | null;
   image_url: string | null;
   featured: boolean;
@@ -105,7 +106,7 @@ export async function getTours(params: Record<string, string | undefined> = {}) 
 
 /** The four browse menus: country > category > packages. */
 export type MenuSlug = "destinations" | "group-tours" | "weekend-escapes" | "honeymoon";
-export type MenuCountry = Destination & { tours_count: number; categories_count: number; menu_starting_price: number };
+export type MenuCountry = Destination & { tours_count: number; categories_count: number; menu_starting_price: number | null };
 export type CategorySummary = { name: string; slug: string; description: string | null; tours_count: number; image_url: string | null };
 type MenuInfo = { slug: MenuSlug; title: string };
 

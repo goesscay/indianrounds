@@ -565,7 +565,7 @@ class CatalogueImporter
         }
 
         foreach ($plan['destinations'] as $slug => $_) {
-            $min = Tour::query()->published()->where('destination_id', $destIds[$slug])->min('base_price');
+            $min = Tour::query()->published()->where('destination_id', $destIds[$slug])->where('show_price', true)->min('base_price');
             Destination::query()->whereKey($destIds[$slug])->update(['starting_price' => $min]);
         }
     }

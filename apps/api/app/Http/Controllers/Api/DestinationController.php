@@ -32,7 +32,7 @@ class DestinationController extends Controller
     {
         $destination = Destination::query()
             ->where('slug', $slug)
-            ->with(['tours' => fn ($q) => $q->published()->with(['destination', 'batches' => fn ($b) => $b->where('starts_on', '>=', now()->toDateString())->orderBy('starts_on')])->orderByDesc('featured')->orderBy('base_price')])
+            ->with(['tours' => fn ($q) => $q->published()->with(['destination', 'batches' => fn ($b) => $b->where('starts_on', '>=', now()->toDateString())->orderBy('starts_on')])->orderByDesc('featured')->orderByVisiblePrice()])
             ->firstOrFail();
 
         return new DestinationResource($destination);

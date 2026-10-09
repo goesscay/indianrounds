@@ -29,6 +29,11 @@ class BookingService
             throw ValidationException::withMessages(['batch_id' => 'This departure is not available for booking.']);
         }
 
+        if (! $tour->priceVisible()) {
+            // Enquiry-only package: there is no price to charge, so it cannot be booked online.
+            throw ValidationException::withMessages(['tour_slug' => 'This package is available on request. Please send an enquiry for a quote.']);
+        }
+
         $variant = null;
         if (! empty($data['variant_id'])) {
             $variant = $tour->variants()->whereKey($data['variant_id'])->first();
@@ -38,7 +43,7 @@ class BookingService
         }
 
         $count = count($data['travellers']);
-        $unit = $variant ? $variant->price : $tour->base_price;
+        $unit = (int) ($variant ? $variant->price : $tour->base_price);
         $subtotal = $unit * $count;
         $rate = (float) config('booking.gst_rate');
         $gst = (int) round($subtotal * $rate);

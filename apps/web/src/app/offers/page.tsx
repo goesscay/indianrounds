@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 export default async function OffersPage() {
   const tours = await getTours({ per_page: "24", sort: "price_asc" });
   const offers = tours.data
-    .filter((t) => t.original_price && t.original_price > t.price)
-    .sort((a, b) => (b.original_price! - b.price) / b.original_price! - (a.original_price! - a.price) / a.original_price!);
+        .filter((t): t is typeof t & { price: number; original_price: number } => t.price !== null && t.original_price !== null && t.original_price > t.price)
+    .sort((a, b) => (b.original_price - b.price) / b.original_price - (a.original_price - a.price) / a.original_price);
 
   return (
     <>

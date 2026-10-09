@@ -32,7 +32,7 @@ class TourController extends Controller
 
         return $this->page($q->paginate(20), fn (Tour $t) => [
             'id' => $t->id, 'slug' => $t->slug, 'title' => $t->title, 'status' => $t->status, 'featured' => $t->featured,
-            'destination' => $t->destination->name, 'duration_nights' => $t->duration_nights, 'price' => $t->base_price,
+            'destination' => $t->destination->name, 'duration_nights' => $t->duration_nights, 'price' => $t->base_price, 'show_price' => $t->show_price,
             'haul_class' => $t->haul_class, 'batches_count' => $t->batches_count,
         ]);
     }
@@ -243,8 +243,9 @@ class TourController extends Controller
             'notes.*' => 'string|max:400',
             'must_carry' => 'nullable|array|max:40',
             'must_carry.*' => 'string|max:160',
-            'image_url' => 'nullable|url|max:500',
-            'base_price' => "{$req}|integer|min:1",
+            'image_url' => ['nullable', 'string', 'max:500', 'regex:#^(https?://|/)\S+$#'], // full link or a site path like /uploads/x.jpg
+            'base_price' => 'nullable|integer|min:1',
+            'show_price' => 'sometimes|boolean',
             'original_price' => 'nullable|integer|min:0',
             'featured' => 'sometimes|boolean',
             'tags' => 'nullable|array|max:12',

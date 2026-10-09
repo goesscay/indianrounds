@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!t) return { title: "Tour not found" };
   return {
     title: t.title,
-    description: t.summary ?? `${t.title} — ${durationLabel(t.duration_nights, t.duration_days)} from ${formatINR(t.price)} per person.`,
+    description: t.summary ?? `${t.title} — ${durationLabel(t.duration_nights, t.duration_days)}${t.price !== null ? ` from ${formatINR(t.price)} per person` : ""}.`,
     alternates: { canonical: `/tours/${t.slug}` },
   };
 }
@@ -37,6 +37,7 @@ export default async function TourPage({ params }: Props) {
   const t = await getTour(slug);
   if (!t) notFound();
 
+  const price = t.price;
   const fixedDates = hasFixedDepartures(t);
   const upcoming = (t.batches ?? []).filter((b) => b.status === "open").slice(0, 4);
 
@@ -47,7 +48,7 @@ export default async function TourPage({ params }: Props) {
     description: t.summary,
     touristType: t.tour_type === "group" ? "Group" : "Custom",
     itinerary: (t.itinerary ?? []).map((d) => ({ "@type": "TouristAttraction", name: d.title, description: d.description })),
-    offers: { "@type": "Offer", price: t.price, priceCurrency: "INR", url: `${site.url}/tours/${t.slug}`, availability: upcoming.length ? "https://schema.org/InStock" : "https://schema.org/SoldOut" },
+    ...(price !== null && { offers: { "@type": "Offer", price, priceCurrency: "INR", url: `${site.url}/tours/${t.slug}`, availability: upcoming.length ? "https://schema.org/InStock" : "https://schema.org/SoldOut" } }),
   };
 
   return (
@@ -162,10 +163,20 @@ export default async function TourPage({ params }: Props) {
         </div>
 
         <aside className="lg:sticky lg:top-[156px] lg:self-start">
+          {price === null ? (
+            <div className="rounded-card border border-black/10 bg-white p-5 shadow-float">
+              <p className="text-lg font-extrabold">Interested in this package?</p>
+              <p className="mt-1 text-sm text-muted">Tell us your travel dates and group size and our travel expert will send you the best price.</p>
+              <OpenQuoteButton options={{ destination: t.destination?.name, message: `I'm interested in: ${t.title}`, title: "Enquire about this tour" }} className="mt-5 w-full rounded-full bg-brand-red px-6 py-3 font-semibold text-white hover:bg-brand-red-dark">
+                Get a Free Quote
+              </OpenQuoteButton>
+              <p className="mt-4 flex items-center gap-2 text-xs text-muted"><MapPin size={14} /> Pickup: {t.pickup ?? "—"}</p>
+            </div>
+          ) : (
           <div className="rounded-card border border-black/10 bg-white p-5 shadow-float">
             <p className="text-xs text-muted">Starting from</p>
             <p className="flex items-baseline gap-2">
-              <span className="text-3xl font-extrabold text-brand-red">{formatINR(t.price)}</span>
+              <span className="text-3xl font-extrabold text-brand-red">{formatINR(price)}</span>
               {t.original_price && <span className="text-sm text-muted line-through">{formatINR(t.original_price)}</span>}
             </p>
             <p className="text-xs text-muted">per person · 5% GST extra</p>
@@ -197,6 +208,7 @@ export default async function TourPage({ params }: Props) {
             </OpenQuoteButton>
             <p className="mt-4 flex items-center gap-2 text-xs text-muted"><MapPin size={14} /> Pickup: {t.pickup ?? "—"}</p>
           </div>
+          )}
         </aside>
       </div>
     </>

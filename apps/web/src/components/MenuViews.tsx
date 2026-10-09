@@ -64,7 +64,7 @@ export function MenuCountriesView({ menu, title, intro, countries }: { menu: Men
         <SectionHeading lead="Choose a" accent="Country" sub={`${countries.length} destination${countries.length === 1 ? "" : "s"} with ${title.toLowerCase()}`} />
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
           {countries.map((d) => (
-            <DestinationCard key={d.slug} destination={d} href={`/${menu}/${d.slug}`} note={`${d.tours_count} package${d.tours_count === 1 ? "" : "s"} from ${formatINR(d.menu_starting_price)}`} />
+            <DestinationCard key={d.slug} destination={d} href={`/${menu}/${d.slug}`} note={`${d.tours_count} package${d.tours_count === 1 ? "" : "s"}${d.menu_starting_price !== null ? ` from ${formatINR(d.menu_starting_price)}` : ""}`} />
           ))}
         </div>
       </div>

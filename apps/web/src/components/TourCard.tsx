@@ -16,18 +16,22 @@ export function TourCard({ tour }: { tour: Tour }) {
         {tour.destination && <p className="text-xs font-semibold uppercase tracking-wide text-brand-red">{tour.destination.name}</p>}
         <h3 className="font-bold leading-snug">{tour.title}</h3>
         <p className="text-sm text-muted">{durationLabel(tour.duration_nights, tour.duration_days)}</p>
-        {hasFixedDepartures(tour) &&
+        {tour.price !== null && hasFixedDepartures(tour) &&
           (tour.next_batch ? (
             <p className="text-xs text-muted">Next departure: {formatDate(tour.next_batch.starts_on)}</p>
           ) : (
             <p className="text-xs text-muted">No upcoming departures</p>
           ))}
         <div className="mt-auto flex items-end justify-between pt-3">
-          <div>
-            {tour.original_price && <p className="text-xs text-muted line-through">{formatINR(tour.original_price)}</p>}
-            <p className="text-xl font-extrabold text-brand-red">{formatINR(tour.price)}</p>
-            <p className="text-xs text-muted">per person</p>
-          </div>
+          {tour.price !== null ? (
+            <div>
+              {tour.original_price && <p className="text-xs text-muted line-through">{formatINR(tour.original_price)}</p>}
+              <p className="text-xl font-extrabold text-brand-red">{formatINR(tour.price)}</p>
+              <p className="text-xs text-muted">per person</p>
+            </div>
+          ) : (
+            <p className="text-sm font-semibold text-brand-red">Get a free quote</p>
+          )}
           <span className="grid size-9 place-items-center rounded-full bg-brand-red text-white transition group-hover:bg-brand-red-dark">
             <ArrowRight size={18} />
           </span>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { getTour } from "@/lib/api";
 import { DatesPicker } from "@/components/DatesPicker";
@@ -19,6 +19,8 @@ export default async function DatesPage({ params }: Props) {
   const { slug } = await params;
   const t = await getTour(slug);
   if (!t) notFound();
+  // Enquiry-only package: there is nothing to price or book online, so send the visitor back to the quote button.
+  if (t.price === null) redirect(`/tours/${t.slug}`);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">

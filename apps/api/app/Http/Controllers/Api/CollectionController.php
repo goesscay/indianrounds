@@ -30,7 +30,7 @@ class CollectionController extends Controller
 
         $tours = $this->tagged($c['tag'])
             ->with(['destination', 'batches' => fn ($b) => $b->where('starts_on', '>=', now()->toDateString())->orderBy('starts_on')])
-            ->orderByDesc('featured')->orderBy('base_price')->get();
+            ->orderByDesc('featured')->orderByVisiblePrice()->get();
 
         return response()->json(['data' => [
             'slug' => $slug,

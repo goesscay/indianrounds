@@ -36,7 +36,7 @@ class MenuController extends Controller
         $menu = $this->menu($menu);
 
         $tours = Tour::query()->published()->whereHas('categories', fn ($q) => $q->where('menu', $menu))
-            ->selectRaw('destination_id, count(*) as n, min(base_price) as from_price')->groupBy('destination_id')->get()->keyBy('destination_id');
+            ->selectRaw('destination_id, count(*) as n, min(case when show_price = true then base_price end) as from_price')->groupBy('destination_id')->get()->keyBy('destination_id');
 
         $categoryCounts = Category::query()->where('menu', $menu)->whereHas('tours', fn ($q) => $q->published())
             ->selectRaw('destination_id, count(*) as n')->groupBy('destination_id')->pluck('n', 'destination_id');
@@ -45,7 +45,7 @@ class MenuController extends Controller
             ->map(fn (Destination $d) => $this->destination($d) + [
                 'tours_count' => (int) $tours[$d->id]->getAttribute('n'),
                 'categories_count' => (int) ($categoryCounts[$d->id] ?? 0),
-                'menu_starting_price' => (int) $tours[$d->id]->getAttribute('from_price'),
+                'menu_starting_price' => $tours[$d->id]->getAttribute('from_price') === null ? null : (int) $tours[$d->id]->getAttribute('from_price'),
             ])->values();
 
         return response()->json(['menu' => ['slug' => $menu, 'title' => Category::MENUS[$menu]], 'data' => $data]);
@@ -81,7 +81,7 @@ class MenuController extends Controller
 
         $tours = $cat->tours()->published()
             ->with(['destination', 'batches' => fn ($b) => $b->where('starts_on', '>=', now()->toDateString())->orderBy('starts_on')])
-            ->orderByDesc('featured')->orderBy('base_price')->get();
+            ->orderByDesc('featured')->orderByVisiblePrice()->get();
         abort_if($tours->isEmpty(), 404);
 
         return response()->json([

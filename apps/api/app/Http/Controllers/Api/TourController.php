@@ -48,10 +48,10 @@ class TourController extends Controller
             $query->where('tour_type', $validated['type']);
         }
         if (isset($validated['min_price'])) {
-            $query->where('base_price', '>=', $validated['min_price']);
+            $query->where('show_price', true)->where('base_price', '>=', $validated['min_price']);
         }
         if (isset($validated['max_price'])) {
-            $query->where('base_price', '<=', $validated['max_price']);
+            $query->where('show_price', true)->where('base_price', '<=', $validated['max_price']);
         }
         if (isset($validated['min_nights'])) {
             $query->where('duration_nights', '>=', $validated['min_nights']);
@@ -81,8 +81,8 @@ class TourController extends Controller
         }
 
         match ($validated['sort'] ?? 'popular') {
-            'price_asc' => $query->orderBy('base_price'),
-            'price_desc' => $query->orderByDesc('base_price'),
+            'price_asc' => $query->orderByVisiblePrice(),
+            'price_desc' => $query->orderByVisiblePrice('desc'),
             'duration_asc' => $query->orderBy('duration_nights'),
             'duration_desc' => $query->orderByDesc('duration_nights'),
             default => $query->orderByDesc('featured')->orderBy('id'),

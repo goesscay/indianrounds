@@ -39,8 +39,10 @@ export default async function DestinationPage({ params, searchParams }: Props) {
   if (!d) notFound();
 
   const tours = [...(d.tours ?? [])];
-  if (sort === "price_asc") tours.sort((a, b) => a.price - b.price);
-  if (sort === "price_desc") tours.sort((a, b) => b.price - a.price);
+  // Packages without a visible price (quote only) always sort last.
+  const byPrice = (dir: 1 | -1) => (a: (typeof tours)[number], b: (typeof tours)[number]) => (a.price === null ? 1 : b.price === null ? -1 : dir * (a.price - b.price));
+  if (sort === "price_asc") tours.sort(byPrice(1));
+  if (sort === "price_desc") tours.sort(byPrice(-1));
   if (sort === "duration_asc") tours.sort((a, b) => a.duration_nights - b.duration_nights);
 
   return (
