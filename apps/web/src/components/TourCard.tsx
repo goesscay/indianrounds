@@ -5,7 +5,7 @@ import { durationLabel, formatDate, formatINR } from "@/lib/format";
 import { hasFixedDepartures } from "@/lib/tour-kind";
 import { CoverImage } from "./CoverImage";
 
-export function TourCard({ tour }: { tour: Tour }) {
+export function TourCard({ tour, showSaving = false }: { tour: Tour; showSaving?: boolean }) {
   return (
     <Link
       href={`/tours/${tour.slug}`}
@@ -13,6 +13,9 @@ export function TourCard({ tour }: { tour: Tour }) {
     >
       <div className="relative">
         <CoverImage src={tour.image_url} alt={tour.title} seed={tour.slug} className="aspect-[4/3]" />
+        {showSaving && tour.price !== null && tour.original_price !== null && tour.original_price > tour.price && (
+          <span className="absolute right-3 top-3 rounded-full bg-amber-300 px-3 py-1 text-xs font-extrabold text-ink shadow">Save {Math.round(((tour.original_price - tour.price) / tour.original_price) * 100)}%</span>
+        )}
         {hasFixedDepartures(tour) && <span className="absolute left-3 top-3 rounded-full bg-brand-red px-3 py-1 text-xs font-bold text-white shadow">{(tour.tags ?? []).includes("weekend") ? "Weekend Escape" : "Group Trip"}</span>}
       </div>
       <div className="flex flex-1 flex-col gap-1 p-4">

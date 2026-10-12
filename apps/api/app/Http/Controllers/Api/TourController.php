@@ -26,7 +26,8 @@ class TourController extends Controller
             'q' => 'nullable|string|max:100',
             'featured' => 'nullable|boolean',
             'tag' => 'nullable|string|max:60',
-            'sort' => 'nullable|in:popular,price_asc,price_desc,duration_asc,duration_desc',
+            'sort' => 'nullable|in:popular,price_asc,price_desc,duration_asc,duration_desc,saving',
+            'offers' => 'nullable|boolean',
             'per_page' => 'nullable|integer|min:1|max:24',
         ]);
 
@@ -80,12 +81,17 @@ class TourController extends Controller
         if ($request->boolean('featured')) {
             $query->where('featured', true);
         }
+        if ($request->boolean('offers')) {
+            // Only packages whose price is shown and below the price it used to be.
+            $query->where('show_price', true)->whereNotNull('base_price')->whereNotNull('original_price')->whereColumn('original_price', '>', 'base_price');
+        }
 
         match ($validated['sort'] ?? 'popular') {
             'price_asc' => $query->orderByVisiblePrice(),
             'price_desc' => $query->orderByVisiblePrice('desc'),
             'duration_asc' => $query->orderBy('duration_nights'),
             'duration_desc' => $query->orderByDesc('duration_nights'),
+            'saving' => $query->orderByRaw('(original_price - base_price) * 1.0 / original_price desc'),
             default => $query->orderByDesc('featured')->orderBy('id'),
         };
 

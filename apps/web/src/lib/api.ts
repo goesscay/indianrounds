@@ -298,3 +298,14 @@ export async function getJobOpenings() {
 export async function getDepartures(kind: "group" | "weekend" | "all" = "all") {
   return (await get<{ data: DepartureTrip[] }>(`/departures?kind=${kind}`))?.data ?? [];
 }
+
+/** Walks every page of /tours (the API caps a page at 24) so a page can filter the whole list itself. */
+export async function getAllTours(params: Record<string, string | undefined> = {}, maxPages = 10) {
+  const out: Tour[] = [];
+  for (let page = 1; page <= maxPages; page++) {
+    const res = await getTours({ ...params, per_page: "24", page: String(page) });
+    out.push(...res.data);
+    if (!res.meta || page >= res.meta.last_page) break;
+  }
+  return out;
+}
