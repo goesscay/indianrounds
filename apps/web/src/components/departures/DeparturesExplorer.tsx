@@ -1,13 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { CalendarDays, ChevronLeft, ChevronRight, MapPin, SlidersHorizontal, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, SlidersHorizontal, X } from "lucide-react";
 import { activeFilterCount, applyFilters, boundsOf, defaultFilters, parseFilters, serializeFilters, type DepartureTrip, type Filters, type SortKey } from "@/lib/departures";
-import { formatDate, formatINR } from "@/lib/format";
-import { CoverImage } from "../CoverImage";
+import { formatINR } from "@/lib/format";
 import { OpenQuoteButton } from "../LeadModal";
 import { RangeSlider } from "./RangeSlider";
+import { TripCard } from "./TripCard";
 
 const sorts: { key: SortKey; label: string }[] = [
   { key: "date", label: "Earliest departure" },
@@ -166,50 +165,5 @@ function MonthStrip({ months, value, onChange }: { months: string[]; value: stri
       </ul>
       <button type="button" onClick={() => scroll(1)} aria-label="Later months" className="hidden size-9 shrink-0 place-items-center rounded-full border border-black/15 bg-white hover:border-brand-red hover:text-brand-red sm:grid"><ChevronRight size={18} /></button>
     </div>
-  );
-}
-
-function TripCard({ trip: t }: { trip: DepartureTrip & { shown: DepartureTrip["departures"] } }) {
-  const dates = t.shown.slice(0, 3);
-  // With no month chosen, the count covers every open departure; with one, only the dates in that month.
-  const more = (t.shown.length === t.departures.length ? t.departure_count : t.shown.length) - dates.length;
-  const low = t.shown.find((d) => d.seats_left <= 4);
-  return (
-    <li>
-      <Link href={`/tours/${t.slug}`} className="group flex h-full flex-col overflow-hidden rounded-card bg-white shadow-float transition hover:-translate-y-1">
-        <div className="relative">
-          <CoverImage src={t.image_url} alt={t.title} seed={t.slug} sizes="(min-width: 1280px) 22vw, (min-width: 640px) 45vw, 100vw" className="aspect-[4/3] transition duration-500 group-hover:scale-105" />
-          <span className="absolute left-3 top-3 rounded-full bg-brand-red px-3 py-1 text-xs font-bold text-white shadow">{t.kind === "weekend" ? "Weekend Escape" : "Group Trip"}</span>
-          <span className="absolute bottom-3 left-3 rounded-full bg-black/60 px-3 py-1 text-xs font-semibold text-white backdrop-blur">{t.destination.name}</span>
-        </div>
-        <div className="flex flex-1 flex-col gap-2 p-4">
-          <h3 className="line-clamp-2 font-bold leading-snug group-hover:text-brand-red">{t.title}</h3>
-          <p className="text-sm font-semibold">{t.duration_nights}N / {t.duration_days}D</p>
-          {(t.pickup || t.drop_point) && (
-            <p className="flex items-start gap-1.5 text-xs text-muted">
-              <MapPin size={14} className="mt-0.5 shrink-0 text-brand-red" aria-hidden />
-              <span className="line-clamp-2">{t.pickup === t.drop_point || !t.drop_point ? t.pickup : `${t.pickup} to ${t.drop_point}`}</span>
-            </p>
-          )}
-          <p className="flex flex-wrap items-center gap-1.5 text-xs">
-            <CalendarDays size={14} className="text-brand-red" aria-hidden />
-            {dates.map((d) => <span key={d.starts_on} className="rounded bg-surface-alt px-2 py-0.5 font-semibold">{formatDate(d.starts_on, { day: "numeric", month: "short" })}</span>)}
-            {more > 0 && <span className="text-muted">+{more} more</span>}
-          </p>
-          {low && <p className="text-xs font-semibold text-brand-red">Only {low.seats_left} seat{low.seats_left === 1 ? "" : "s"} left on {formatDate(low.starts_on, { day: "numeric", month: "short" })}</p>}
-          <div className="mt-auto flex items-end justify-between pt-3">
-            {t.price !== null ? (
-              <div>
-                {t.original_price && <p className="text-xs text-muted line-through">{formatINR(t.original_price)}</p>}
-                <p className="text-xl font-extrabold text-brand-red">{formatINR(t.price)} <span className="text-xs font-medium text-muted">onwards</span></p>
-              </div>
-            ) : (
-              <p className="text-sm font-semibold text-brand-red">Get a free quote</p>
-            )}
-            <span className="text-sm font-semibold text-brand-red">View dates →</span>
-          </div>
-        </div>
-      </Link>
-    </li>
   );
 }
