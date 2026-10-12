@@ -1,18 +1,66 @@
 {
   "destination": "vietnam",
   "photos": [
-    {"slot": "ha-long-bay", "query": "Ha Long Bay limestone karsts Vietnam", "caption": "Ha Long Bay"},
-    {"slot": "hanoi-old-quarter", "query": "Hanoi Old Quarter Vietnam street", "caption": "Hanoi Old Quarter"},
-    {"slot": "ninh-binh-tam-coc", "query": "Tam Coc Ninh Binh boat Vietnam", "caption": "Tam Coc, Ninh Binh"},
-    {"slot": "hoi-an-ancient-town", "query": "Hoi An Ancient Town lanterns Vietnam", "caption": "Hoi An Ancient Town"},
-    {"slot": "golden-bridge-ba-na-hills", "query": "Golden Bridge Ba Na Hills Da Nang Vietnam", "caption": "Golden Bridge, Ba Na Hills"},
-    {"slot": "saigon-notre-dame", "query": "Notre-Dame Cathedral Ho Chi Minh City Vietnam", "caption": "Notre-Dame Cathedral, Ho Chi Minh City"},
-    {"slot": "mekong-delta", "query": "Mekong Delta boat Vietnam", "caption": "Mekong Delta"},
-    {"slot": "phu-quoc-beach", "query": "Phu Quoc island beach Vietnam", "caption": "Phu Quoc beach"},
-    {"slot": "hon-thom-cable-car", "query": "Hon Thom cable car Phu Quoc Vietnam", "caption": "Hon Thom cable car, Phu Quoc"},
-    {"slot": "phu-quoc-sunset", "query": "Phu Quoc sunset Vietnam", "caption": "Sunset on Phu Quoc"},
-    {"slot": "angkor-wat", "query": "Angkor Wat Siem Reap Cambodia", "caption": "Angkor Wat, Cambodia"},
-    {"slot": "bangkok-grand-palace", "query": "Grand Palace Bangkok Thailand", "caption": "Grand Palace, Bangkok"}
+    {
+      "slot": "ha-long-bay",
+      "query": "Ha Long Bay limestone karsts Vietnam",
+      "caption": "Ha Long Bay"
+    },
+    {
+      "slot": "hanoi-old-quarter",
+      "query": "Hanoi Old Quarter Vietnam street",
+      "caption": "Hanoi Old Quarter"
+    },
+    {
+      "slot": "ninh-binh-tam-coc",
+      "query": "Tam Coc Ninh Binh boat Vietnam",
+      "caption": "Tam Coc, Ninh Binh"
+    },
+    {
+      "slot": "hoi-an-ancient-town",
+      "query": "Hoi An Ancient Town lanterns Vietnam",
+      "caption": "Hoi An Ancient Town"
+    },
+    {
+      "slot": "golden-bridge-ba-na-hills",
+      "query": "Golden Bridge Ba Na Hills Da Nang Vietnam",
+      "caption": "Golden Bridge, Ba Na Hills"
+    },
+    {
+      "slot": "saigon-notre-dame",
+      "query": "Notre-Dame Cathedral Ho Chi Minh City Vietnam",
+      "caption": "Notre-Dame Cathedral, Ho Chi Minh City"
+    },
+    {
+      "slot": "mekong-delta",
+      "query": "Mekong Delta boat Vietnam",
+      "caption": "Mekong Delta"
+    },
+    {
+      "slot": "phu-quoc-beach",
+      "query": "Phu Quoc island beach Vietnam",
+      "caption": "Phu Quoc beach"
+    },
+    {
+      "slot": "hon-thom-cable-car",
+      "query": "Hon Thom cable car Phu Quoc Vietnam",
+      "caption": "Hon Thom cable car, Phu Quoc"
+    },
+    {
+      "slot": "phu-quoc-sunset",
+      "query": "Phu Quoc sunset Vietnam",
+      "caption": "Sunset on Phu Quoc"
+    },
+    {
+      "slot": "angkor-wat",
+      "query": "Angkor Wat Siem Reap Cambodia",
+      "caption": "Angkor Wat, Cambodia"
+    },
+    {
+      "slot": "bangkok-grand-palace",
+      "query": "Grand Palace Bangkok Thailand",
+      "caption": "Grand Palace, Bangkok"
+    }
   ],
   "hero": "ha-long-bay",
   "categories": [
@@ -22,7 +70,11 @@
       "name": "Classic Vietnam Packages",
       "description": "Limestone bays, old quarters and lantern-lit towns, from the north of Vietnam to the central coast. A good first Vietnam holiday for families and friends.",
       "photo": "ha-long-bay",
-      "packages": ["vietnam-buy-1-get-1-free", "vietnam-hanoi-halong-hoi-an-group-trip"]
+      "packages": [
+        "vietnam-buy-1-get-1-free",
+        "vietnam-hanoi-halong-hoi-an-group-trip",
+        "vietnam-da-nang-hoi-an-weekend-escape"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +82,12 @@
       "name": "Phu Quoc Beach Escapes",
       "description": "Island holidays on Phu Quoc, with beaches, speedboat island hopping, the Hon Thom cable car and resort time. Easy to combine with Ho Chi Minh City or Bangkok.",
       "photo": "phu-quoc-beach",
-      "packages": ["phu-quoc-buy-1-get-1-free", "winter-phu-quoc-vin-resort-spa-5n", "wonders-of-phu-quoc-with-bangkok-winter", "vietnam-saigon-mekong-phu-quoc-group-trip"]
+      "packages": [
+        "phu-quoc-buy-1-get-1-free",
+        "winter-phu-quoc-vin-resort-spa-5n",
+        "wonders-of-phu-quoc-with-bangkok-winter",
+        "vietnam-saigon-mekong-phu-quoc-group-trip"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +95,10 @@
       "name": "Multi-Country Combos",
       "description": "Pair Vietnam with its neighbours: Phu Quoc with Bangkok, or Vietnam with the temples of Angkor in Cambodia. Two cultures on one itinerary.",
       "photo": "angkor-wat",
-      "packages": ["wonders-of-phu-quoc-with-bangkok-winter", "wonders-of-vietnam-with-cambodia-winter"]
+      "packages": [
+        "wonders-of-phu-quoc-with-bangkok-winter",
+        "wonders-of-vietnam-with-cambodia-winter"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +106,11 @@
       "name": "Winter Specials",
       "description": "Packages planned for the cooler, drier months, when island beaches and sightseeing are at their most comfortable.",
       "photo": "phu-quoc-sunset",
-      "packages": ["winter-phu-quoc-vin-resort-spa-5n", "wonders-of-phu-quoc-with-bangkok-winter", "wonders-of-vietnam-with-cambodia-winter"]
+      "packages": [
+        "winter-phu-quoc-vin-resort-spa-5n",
+        "wonders-of-phu-quoc-with-bangkok-winter",
+        "wonders-of-vietnam-with-cambodia-winter"
+      ]
     },
     {
       "menu": "destinations",
@@ -54,7 +118,10 @@
       "name": "Buy 1 Get 1 Free Offers",
       "description": "Our Buy 1 Get 1 Free Vietnam and Phu Quoc offers, subject to the offer terms and travel dates confirmed at booking.",
       "photo": "hon-thom-cable-car",
-      "packages": ["vietnam-buy-1-get-1-free", "phu-quoc-buy-1-get-1-free"]
+      "packages": [
+        "vietnam-buy-1-get-1-free",
+        "phu-quoc-buy-1-get-1-free"
+      ]
     },
     {
       "menu": "group-tours",
@@ -62,7 +129,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Travel with a trip captain and a friendly group on fixed dates. Flights within Vietnam, hotels, sightseeing and daily breakfast are taken care of.",
       "photo": "hoi-an-ancient-town",
-      "packages": ["vietnam-hanoi-halong-hoi-an-group-trip", "vietnam-saigon-mekong-phu-quoc-group-trip"]
+      "packages": [
+        "vietnam-hanoi-halong-hoi-an-group-trip",
+        "vietnam-saigon-mekong-phu-quoc-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -70,7 +140,21 @@
       "name": "Romantic Escapes",
       "description": "Island sunsets, resort time and unhurried days for couples, in Phu Quoc and beyond.",
       "photo": "phu-quoc-sunset",
-      "packages": ["winter-phu-quoc-vin-resort-spa-5n", "phu-quoc-buy-1-get-1-free", "wonders-of-phu-quoc-with-bangkok-winter"]
+      "packages": [
+        "winter-phu-quoc-vin-resort-spa-5n",
+        "phu-quoc-buy-1-get-1-free",
+        "wonders-of-phu-quoc-with-bangkok-winter"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "Short, well-paced breaks in Vietnam for a long weekend, with fixed Friday departures and a trip captain. Fly out after work on Thursday night or early on Friday and be back by Monday.",
+      "photo": "golden-bridge-ba-na-hills",
+      "packages": [
+        "vietnam-da-nang-hoi-an-weekend-escape"
+      ]
     }
   ],
   "packages": [
@@ -131,7 +215,10 @@
       "pickup": "Hanoi (Noi Bai International Airport)",
       "drop_point": "Hanoi (Noi Bai International Airport)",
       "photo": "ha-long-bay",
-      "gallery": ["hanoi-old-quarter", "ninh-binh-tam-coc"]
+      "gallery": [
+        "hanoi-old-quarter",
+        "ninh-binh-tam-coc"
+      ]
     },
     {
       "slug": "phu-quoc-buy-1-get-1-free",
@@ -190,7 +277,10 @@
       "pickup": "Phu Quoc International Airport",
       "drop_point": "Phu Quoc International Airport",
       "photo": "hon-thom-cable-car",
-      "gallery": ["phu-quoc-beach", "phu-quoc-sunset"]
+      "gallery": [
+        "phu-quoc-beach",
+        "phu-quoc-sunset"
+      ]
     },
     {
       "slug": "wonders-of-phu-quoc-with-bangkok-winter",
@@ -246,8 +336,13 @@
       "pickup": "Phu Quoc International Airport",
       "drop_point": "Bangkok airport",
       "photo": "bangkok-grand-palace",
-      "gallery": ["phu-quoc-beach", "hon-thom-cable-car"],
-      "price": {"from": 58000}
+      "gallery": [
+        "phu-quoc-beach",
+        "hon-thom-cable-car"
+      ],
+      "price": {
+        "from": 58000
+      }
     },
     {
       "slug": "wonders-of-vietnam-with-cambodia-winter",
@@ -305,8 +400,13 @@
       "pickup": "Phnom Penh International Airport",
       "drop_point": "Departure airport in Vietnam, as per the final itinerary",
       "photo": "angkor-wat",
-      "gallery": ["ha-long-bay", "hoi-an-ancient-town"],
-      "price": {"from": 74000}
+      "gallery": [
+        "ha-long-bay",
+        "hoi-an-ancient-town"
+      ],
+      "price": {
+        "from": 74000
+      }
     },
     {
       "slug": "winter-phu-quoc-vin-resort-spa-5n",
@@ -359,8 +459,13 @@
       "pickup": "Phu Quoc International Airport",
       "drop_point": "Phu Quoc International Airport",
       "photo": "phu-quoc-sunset",
-      "gallery": ["phu-quoc-beach", "hon-thom-cable-car"],
-      "price": {"from": 46000}
+      "gallery": [
+        "phu-quoc-beach",
+        "hon-thom-cable-car"
+      ],
+      "price": {
+        "from": 46000
+      }
     }
   ],
   "group_trips": [
@@ -472,10 +577,20 @@
       "pickup": "Hanoi (Noi Bai International Airport)",
       "drop_point": "Da Nang International Airport",
       "photo": "hoi-an-ancient-town",
-      "gallery": ["ha-long-bay", "golden-bridge-ba-na-hills", "hanoi-old-quarter", "ninh-binh-tam-coc"],
+      "gallery": [
+        "ha-long-bay",
+        "golden-bridge-ba-na-hills",
+        "hanoi-old-quarter",
+        "ninh-binh-tam-coc"
+      ],
       "price": 68000,
       "original_price": 74000,
-      "departures": {"weekday": 6, "count": 6, "every_weeks": 2, "capacity": 24}
+      "departures": {
+        "weekday": 6,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 24
+      }
     },
     {
       "slug": "vietnam-saigon-mekong-phu-quoc-group-trip",
@@ -579,10 +694,117 @@
       "pickup": "Ho Chi Minh City (Tan Son Nhat International Airport)",
       "drop_point": "Phu Quoc International Airport",
       "photo": "mekong-delta",
-      "gallery": ["saigon-notre-dame", "hon-thom-cable-car", "phu-quoc-beach", "phu-quoc-sunset"],
+      "gallery": [
+        "saigon-notre-dame",
+        "hon-thom-cable-car",
+        "phu-quoc-beach",
+        "phu-quoc-sunset"
+      ],
       "price": 62000,
       "original_price": 66000,
-      "departures": {"weekday": 5, "count": 5, "every_weeks": 3, "capacity": 20}
+      "departures": {
+        "weekday": 5,
+        "count": 5,
+        "every_weeks": 3,
+        "capacity": 20
+      }
+    },
+    {
+      "slug": "vietnam-da-nang-hoi-an-weekend-escape",
+      "title": "Vietnam Weekend Escape: Da Nang, Ba Na Hills and Hoi An",
+      "nights": 3,
+      "summary": "A long weekend in central Vietnam with the Golden Bridge at Ba Na Hills, lantern-lit Hoi An and Da Nang's beach and Lady Buddha, with a trip captain.",
+      "overview": "This long-weekend escape is built around Da Nang, a relaxed beach city on Vietnam's central coast, with the best of its surroundings within easy reach. You stay in one hotel for all three nights, so there is no packing and unpacking, and each day has one or two headline sights.\n\nYou ride the cable car up to Ba Na Hills for the Golden Bridge and the French Village, visit the Lady Buddha at Linh Ung Pagoda, and spend an afternoon and evening in Hoi An Ancient Town as the lanterns come on. Time on My Khe beach and a relaxed last morning keep the pace gentle.\n\nA trip captain accompanies the group, and Indian meal options can be arranged on request. Fixed departures run on most weekends, so you can fly out on a Friday and be back at work on Monday.",
+      "highlights": [
+        "Ba Na Hills cable car, the Golden Bridge and the French Village",
+        "Hoi An Ancient Town, the Japanese Covered Bridge and the evening lanterns",
+        "Lady Buddha at Linh Ung Pagoda with wide views over the Son Tra Peninsula",
+        "Marble Mountains with their caves and hilltop pagodas",
+        "My Khe beach time and an evening at the Dragon Bridge",
+        "Trip captain throughout and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Da Nang | Lady Buddha and Han River Evening",
+          "description": "Arrive early at Da Nang International Airport, where your trip captain meets the group.\nTransfer to your 4-star hotel; early check-in is subject to availability, and luggage can be stored if the room is not ready.\nAfter a rest, drive up the Son Tra Peninsula to Linh Ung Pagoda and its tall Lady Buddha statue, with views over the coast.\nTake a relaxed evening stroll along the Han River and across the city's bridges; dinner is at leisure, and Indian meal options can be arranged on request.\nOvernight stay in Da Nang."
+        },
+        {
+          "day": 2,
+          "title": "Ba Na Hills | Golden Bridge and French Village",
+          "description": "After breakfast, drive to Ba Na Hills and ride the cable car up the mountain.\nWalk across the Golden Bridge, held up by two giant stone hands, and explore the French Village and the hilltop gardens.\nLunch is at leisure in the hill resort, and you return to Da Nang in the afternoon.\nEnjoy free time at My Khe beach, then see the Dragon Bridge lit up in the evening; it breathes fire and water on weekend nights, subject to schedule.\nOvernight stay in Da Nang."
+        },
+        {
+          "day": 3,
+          "title": "Marble Mountains | Hoi An Ancient Town",
+          "description": "After breakfast, visit the Marble Mountains, limestone hills with caves, shrines and pagodas.\nContinue to Hoi An, about 45 minutes away, and walk through the Ancient Town, including the Japanese Covered Bridge and old merchants' houses.\nUse the afternoon for the riverside cafes, tailors and craft shops, with lunch at leisure.\nStay on as the lanterns light up in the evening; an optional lantern boat ride on the river can be arranged.\nReturn to Da Nang for an overnight stay."
+        },
+        {
+          "day": 4,
+          "title": "Beach Morning | Departure from Da Nang",
+          "description": "After breakfast, enjoy a free morning at the beach or the hotel pool, or pick up last-minute souvenirs.\nCheck out at around noon; luggage can be stored until your transfer.\nTransfer to Da Nang International Airport for your onward flight, timed to your departure.\nDepart Vietnam with the lanterns of Hoi An still in your photographs."
+        }
+      ],
+      "inclusions": [
+        "3 nights in a 4-star hotel in Da Nang on twin sharing",
+        "Daily breakfast",
+        "Airport transfers and sightseeing as per the itinerary, by air-conditioned vehicle",
+        "Ba Na Hills entry with the cable car ride",
+        "Lady Buddha and Linh Ung Pagoda visit",
+        "Marble Mountains visit",
+        "Hoi An Ancient Town visit with the entry ticket",
+        "A trip captain accompanying the group throughout",
+        "Indian meal options on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as the lantern boat ride and tailoring",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights are not included and are not booked by us unless you ask us to.",
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon; early check-in is subject to availability.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group trip with a typical group of 12 to 24 travellers; the departure runs on minimum numbers, and a trip captain accompanies the group.",
+        "Ba Na Hills can be misty or rainy, and the cable car may pause in strong wind; the day may be re-ordered to suit conditions.",
+        "Dress modestly at temples and pagodas, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter",
+        "Light layers or a rain jacket for Ba Na Hills, which is cooler than the coast",
+        "Comfortable walking shoes",
+        "Sunscreen, hat and swimwear"
+      ],
+      "pickup": "Da Nang International Airport",
+      "drop_point": "Da Nang International Airport",
+      "photo": "golden-bridge-ba-na-hills",
+      "gallery": [
+        "hoi-an-ancient-town",
+        "golden-bridge-ba-na-hills"
+      ],
+      "price": 24500,
+      "original_price": 26500,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
     }
   ]
 }

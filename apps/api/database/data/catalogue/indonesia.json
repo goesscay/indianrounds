@@ -1,18 +1,66 @@
 {
   "destination": "indonesia",
   "photos": [
-    {"slot": "tanah-lot-temple", "query": "Tanah Lot Temple Bali Indonesia", "caption": "Tanah Lot Temple, Bali"},
-    {"slot": "uluwatu-temple", "query": "Uluwatu Temple cliff Bali Indonesia", "caption": "Uluwatu Temple on the clifftop"},
-    {"slot": "tegalalang-rice-terraces", "query": "Tegalalang rice terraces Ubud Bali", "caption": "Tegalalang rice terraces near Ubud"},
-    {"slot": "kuta-beach", "query": "Kuta Beach Bali Indonesia", "caption": "Kuta Beach at sunset"},
-    {"slot": "seminyak-beach-sunset", "query": "Seminyak Beach sunset Bali Indonesia", "caption": "Seminyak Beach"},
-    {"slot": "tanjung-benoa-water-sports", "query": "Tanjung Benoa water sports banana boat Bali", "caption": "Water sports at Tanjung Benoa"},
-    {"slot": "mount-batur-kintamani", "query": "Mount Batur Kintamani Bali Indonesia", "caption": "Mount Batur and Lake Batur, Kintamani"},
-    {"slot": "kelingking-beach-nusa-penida", "query": "Kelingking Beach Nusa Penida Indonesia", "caption": "Kelingking Beach, Nusa Penida"},
-    {"slot": "gili-trawangan", "query": "Gili Trawangan beach Lombok Indonesia", "caption": "Gili Trawangan"},
-    {"slot": "tirta-empul-temple", "query": "Tirta Empul temple Tampaksiring Bali", "caption": "Tirta Empul holy spring temple"},
-    {"slot": "bali-swing-ubud", "query": "Bali swing Ubud jungle rice terrace", "caption": "A swing over the jungle near Ubud"},
-    {"slot": "mas-wood-carving-village", "query": "Mas village wood carving Bali Indonesia", "caption": "Woodcarving at Mas village"}
+    {
+      "slot": "tanah-lot-temple",
+      "query": "Tanah Lot Temple Bali Indonesia",
+      "caption": "Tanah Lot Temple, Bali"
+    },
+    {
+      "slot": "uluwatu-temple",
+      "query": "Uluwatu Temple cliff Bali Indonesia",
+      "caption": "Uluwatu Temple on the clifftop"
+    },
+    {
+      "slot": "tegalalang-rice-terraces",
+      "query": "Tegalalang rice terraces Ubud Bali",
+      "caption": "Tegalalang rice terraces near Ubud"
+    },
+    {
+      "slot": "kuta-beach",
+      "query": "Kuta Beach Bali Indonesia",
+      "caption": "Kuta Beach at sunset"
+    },
+    {
+      "slot": "seminyak-beach-sunset",
+      "query": "Seminyak Beach sunset Bali Indonesia",
+      "caption": "Seminyak Beach"
+    },
+    {
+      "slot": "tanjung-benoa-water-sports",
+      "query": "Tanjung Benoa water sports banana boat Bali",
+      "caption": "Water sports at Tanjung Benoa"
+    },
+    {
+      "slot": "mount-batur-kintamani",
+      "query": "Mount Batur Kintamani Bali Indonesia",
+      "caption": "Mount Batur and Lake Batur, Kintamani"
+    },
+    {
+      "slot": "kelingking-beach-nusa-penida",
+      "query": "Kelingking Beach Nusa Penida Indonesia",
+      "caption": "Kelingking Beach, Nusa Penida"
+    },
+    {
+      "slot": "gili-trawangan",
+      "query": "Gili Trawangan beach Lombok Indonesia",
+      "caption": "Gili Trawangan"
+    },
+    {
+      "slot": "tirta-empul-temple",
+      "query": "Tirta Empul temple Tampaksiring Bali",
+      "caption": "Tirta Empul holy spring temple"
+    },
+    {
+      "slot": "bali-swing-ubud",
+      "query": "Bali swing Ubud jungle rice terrace",
+      "caption": "A swing over the jungle near Ubud"
+    },
+    {
+      "slot": "mas-wood-carving-village",
+      "query": "Mas village wood carving Bali Indonesia",
+      "caption": "Woodcarving at Mas village"
+    }
   ],
   "hero": "tanah-lot-temple",
   "categories": [
@@ -22,7 +70,12 @@
       "name": "Classic Bali Packages",
       "description": "Easy, well-paced Bali holidays with beach stays, temples, rice terraces and a free day or two to relax. A good first Bali trip for families and friends.",
       "photo": "kuta-beach",
-      "packages": ["simply-bali-fully-loaded", "simply-bali-split-stay-with-villa", "indonesia-bali-culture-and-coast-group-trip"]
+      "packages": [
+        "simply-bali-fully-loaded",
+        "simply-bali-split-stay-with-villa",
+        "indonesia-bali-culture-and-coast-group-trip",
+        "indonesia-bali-south-coast-ubud-weekend-escape"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +83,10 @@
       "name": "Honeymoon and Couples",
       "description": "Bali for two, with private tours, a Balinese massage, sunset temples and beach time built into the days.",
       "photo": "uluwatu-temple",
-      "packages": ["wonderful-bali-honeymoon-special", "memorable-bali-honeymoon-special"]
+      "packages": [
+        "wonderful-bali-honeymoon-special",
+        "memorable-bali-honeymoon-special"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +94,10 @@
       "name": "Budget Saver and Offers",
       "description": "Bali holidays that stretch your budget, including our Buy 1 Get 1 Free offer and a fully loaded six-night stay.",
       "photo": "seminyak-beach-sunset",
-      "packages": ["bali-buy-1-get-1-free", "simply-bali-fully-loaded"]
+      "packages": [
+        "bali-buy-1-get-1-free",
+        "simply-bali-fully-loaded"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +105,11 @@
       "name": "Islands and Adventure",
       "description": "Fast boats to Nusa Penida and the Gili Islands, volcano views, water sports and snorkelling for travellers who like to be active.",
       "photo": "kelingking-beach-nusa-penida",
-      "packages": ["memorable-bali-honeymoon-special", "indonesia-bali-culture-and-coast-group-trip", "indonesia-bali-and-gili-islands-group-trip"]
+      "packages": [
+        "memorable-bali-honeymoon-special",
+        "indonesia-bali-culture-and-coast-group-trip",
+        "indonesia-bali-and-gili-islands-group-trip"
+      ]
     },
     {
       "menu": "group-tours",
@@ -54,7 +117,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Escorted Bali group trips on fixed dates, with a trip captain, shared sightseeing and Indian meal options on request.",
       "photo": "tegalalang-rice-terraces",
-      "packages": ["indonesia-bali-culture-and-coast-group-trip", "indonesia-bali-and-gili-islands-group-trip"]
+      "packages": [
+        "indonesia-bali-culture-and-coast-group-trip",
+        "indonesia-bali-and-gili-islands-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -62,7 +128,20 @@
       "name": "Romantic Escapes",
       "description": "Bali honeymoon packages with private sightseeing, sunset temples, beach time and a Balinese massage for two.",
       "photo": "uluwatu-temple",
-      "packages": ["wonderful-bali-honeymoon-special", "memorable-bali-honeymoon-special"]
+      "packages": [
+        "wonderful-bali-honeymoon-special",
+        "memorable-bali-honeymoon-special"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "Short three-night Bali breaks on fixed Friday departures, built for a long weekend with the south coast and Ubud in one easy trip.",
+      "photo": "seminyak-beach-sunset",
+      "packages": [
+        "indonesia-bali-south-coast-ubud-weekend-escape"
+      ]
     }
   ],
   "packages": [
@@ -118,8 +197,14 @@
       "pickup": "Ngurah Rai International Airport (DPS), Bali",
       "drop_point": "Ngurah Rai International Airport (DPS), Bali",
       "photo": "kuta-beach",
-      "gallery": ["seminyak-beach-sunset", "tegalalang-rice-terraces", "tanah-lot-temple"],
-      "price": {"from": 42000}
+      "gallery": [
+        "seminyak-beach-sunset",
+        "tegalalang-rice-terraces",
+        "tanah-lot-temple"
+      ],
+      "price": {
+        "from": 42000
+      }
     },
     {
       "slug": "wonderful-bali-honeymoon-special",
@@ -177,8 +262,14 @@
       "pickup": "Ngurah Rai International Airport (DPS), Bali",
       "drop_point": "Ngurah Rai International Airport (DPS), Bali",
       "photo": "uluwatu-temple",
-      "gallery": ["tanah-lot-temple", "mount-batur-kintamani", "tanjung-benoa-water-sports"],
-      "price": {"from": 36500}
+      "gallery": [
+        "tanah-lot-temple",
+        "mount-batur-kintamani",
+        "tanjung-benoa-water-sports"
+      ],
+      "price": {
+        "from": 36500
+      }
     },
     {
       "slug": "simply-bali-split-stay-with-villa",
@@ -237,8 +328,14 @@
       "pickup": "Ngurah Rai International Airport (DPS), Bali",
       "drop_point": "Ngurah Rai International Airport (DPS), Bali",
       "photo": "mount-batur-kintamani",
-      "gallery": ["mas-wood-carving-village", "tanah-lot-temple", "tanjung-benoa-water-sports"],
-      "price": {"from": 54000}
+      "gallery": [
+        "mas-wood-carving-village",
+        "tanah-lot-temple",
+        "tanjung-benoa-water-sports"
+      ],
+      "price": {
+        "from": 54000
+      }
     },
     {
       "slug": "memorable-bali-honeymoon-special",
@@ -298,7 +395,11 @@
       "pickup": "Ngurah Rai International Airport (DPS), Bali",
       "drop_point": "Ngurah Rai International Airport (DPS), Bali",
       "photo": "kelingking-beach-nusa-penida",
-      "gallery": ["bali-swing-ubud", "tanjung-benoa-water-sports", "kuta-beach"]
+      "gallery": [
+        "bali-swing-ubud",
+        "tanjung-benoa-water-sports",
+        "kuta-beach"
+      ]
     },
     {
       "slug": "bali-buy-1-get-1-free",
@@ -356,7 +457,11 @@
       "pickup": "Ngurah Rai International Airport (DPS), Bali",
       "drop_point": "Ngurah Rai International Airport (DPS), Bali",
       "photo": "tanah-lot-temple",
-      "gallery": ["mount-batur-kintamani", "tanjung-benoa-water-sports", "kuta-beach"]
+      "gallery": [
+        "mount-batur-kintamani",
+        "tanjung-benoa-water-sports",
+        "kuta-beach"
+      ]
     }
   ],
   "group_trips": [
@@ -462,10 +567,21 @@
       "pickup": "Ngurah Rai International Airport (DPS), Bali",
       "drop_point": "Ngurah Rai International Airport (DPS), Bali",
       "photo": "tegalalang-rice-terraces",
-      "gallery": ["kelingking-beach-nusa-penida", "uluwatu-temple", "tanah-lot-temple", "tirta-empul-temple", "seminyak-beach-sunset"],
+      "gallery": [
+        "kelingking-beach-nusa-penida",
+        "uluwatu-temple",
+        "tanah-lot-temple",
+        "tirta-empul-temple",
+        "seminyak-beach-sunset"
+      ],
       "price": 52500,
       "original_price": 57000,
-      "departures": {"weekday": 5, "count": 5, "every_weeks": 2, "capacity": 20}
+      "departures": {
+        "weekday": 5,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 20
+      }
     },
     {
       "slug": "indonesia-bali-and-gili-islands-group-trip",
@@ -576,10 +692,117 @@
       "pickup": "Ngurah Rai International Airport (DPS), Bali",
       "drop_point": "Ngurah Rai International Airport (DPS), Bali",
       "photo": "gili-trawangan",
-      "gallery": ["tegalalang-rice-terraces", "tirta-empul-temple", "mount-batur-kintamani", "uluwatu-temple"],
+      "gallery": [
+        "tegalalang-rice-terraces",
+        "tirta-empul-temple",
+        "mount-batur-kintamani",
+        "uluwatu-temple"
+      ],
       "price": 68500,
       "original_price": 74000,
-      "departures": {"weekday": 3, "count": 4, "every_weeks": 3, "capacity": 16}
+      "departures": {
+        "weekday": 3,
+        "count": 4,
+        "every_weeks": 3,
+        "capacity": 16
+      }
+    },
+    {
+      "slug": "indonesia-bali-south-coast-ubud-weekend-escape",
+      "title": "Bali Weekend Escape: Uluwatu Sunset, Rice Terraces and Ubud",
+      "nights": 3,
+      "summary": "A three-night long-weekend trip to Bali with a Seminyak beach sunset, Uluwatu Temple and Kecak dance, Tegalalang rice terraces, Tirta Empul and a night in Ubud.",
+      "overview": "Bali in a long weekend, with a trip captain and a relaxed pace. You start on the south coast in Seminyak with a beach sunset, then spend a day at the Bukit peninsula for the cliff-top temple at Uluwatu and a Kecak fire dance at dusk.\n\nOn day three you drive inland to Ubud for craft villages, the Tegalalang rice terraces and the holy spring at Tirta Empul, and stay the night in the town. A slow last morning leaves time to wander before your afternoon transfer to the airport. Indian meal options are available on request.",
+      "highlights": [
+        "Sunset on Seminyak Beach on your first evening",
+        "Uluwatu Temple on its sea cliff, with a Kecak fire dance performance",
+        "Padang Padang Beach on the Bukit peninsula",
+        "Celuk and Mas craft villages and the Tegalalang rice terraces",
+        "Tirta Empul, a temple known for its holy spring",
+        "Two nights on the south coast, one night in Ubud, and a trip captain throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bali | Seminyak Sunset",
+          "description": "Arrive at Ngurah Rai International Airport, where you are met and transferred to your hotel in Seminyak.\nCheck in and freshen up, then meet your trip captain and fellow travellers for a short briefing.\nWalk to Seminyak Beach to watch the sun go down.\nEnjoy a relaxed evening at leisure.\nOvernight stay in Seminyak."
+        },
+        {
+          "day": 2,
+          "title": "Padang Padang | Uluwatu Temple | Kecak Dance",
+          "description": "After breakfast, drive south to the Bukit peninsula and spend some time at Padang Padang Beach.\nVisit Uluwatu Temple, set on a cliff high above the Indian Ocean.\nWatch a Kecak fire dance performance at sunset.\nDrive back to Seminyak.\nOvernight stay in Seminyak."
+        },
+        {
+          "day": 3,
+          "title": "Craft Villages | Tegalalang | Tirta Empul | Ubud",
+          "description": "After breakfast, check out and drive towards Ubud.\nStop at Celuk for silver jewellery and Mas for Balinese woodcarving.\nVisit the Tegalalang rice terraces and enjoy the view over the green slopes.\nContinue to Tirta Empul, a temple known for its holy spring, then check in at your hotel in Ubud.\nSpend the evening at leisure in the town.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 4,
+          "title": "Ubud Morning | Departure from Bali",
+          "description": "Enjoy a relaxed breakfast and a slow morning in Ubud for a stroll, a coffee or some shopping at your own cost.\nCheck out of the hotel and meet your group.\nTransfer to Ngurah Rai International Airport for your flight home, with a late-day departure recommended."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel stay on twin sharing: 2 nights in Seminyak and 1 night in Ubud",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Air-conditioned vehicle for transfers and sightseeing as per itinerary",
+        "Kecak fire dance performance ticket at Uluwatu",
+        "Entry tickets for the sights listed in the itinerary",
+        "Trip captain accompanying the group",
+        "Indian meal options on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Lunches, dinners and other meals not mentioned",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities such as spa treatments",
+        "Bali tourism levy or local taxes payable where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights are not included and are not booked by us unless asked.",
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered",
+        "Rates and availability are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions",
+        "This is a group departure that runs on minimum numbers, and a trip captain accompanies the group",
+        "Cover shoulders and knees at temples; a sarong may be required",
+        "Monkeys live around Uluwatu Temple; keep sunglasses, phones and bags secure"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Power adapter (Type C or F, 230V)",
+        "Sunscreen, hat and sunglasses",
+        "Modest clothing for temple visits",
+        "Sturdy walking shoes or sandals with grip"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "uluwatu-temple",
+      "gallery": [
+        "tegalalang-rice-terraces",
+        "seminyak-beach-sunset",
+        "tirta-empul-temple",
+        "mas-wood-carving-village"
+      ],
+      "price": 27500,
+      "original_price": 29700,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
     }
   ]
 }

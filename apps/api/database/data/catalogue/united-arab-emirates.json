@@ -1,18 +1,66 @@
 {
   "destination": "united-arab-emirates",
   "photos": [
-    {"slot": "burj-khalifa", "query": "Burj Khalifa Dubai skyline", "caption": "Burj Khalifa, Dubai"},
-    {"slot": "dubai-marina", "query": "Dubai Marina skyline dhow cruise", "caption": "Dubai Marina at dusk"},
-    {"slot": "desert-safari", "query": "Dubai desert safari dunes sunset", "caption": "Desert dunes outside Dubai"},
-    {"slot": "sheikh-zayed-mosque", "query": "Sheikh Zayed Grand Mosque Abu Dhabi", "caption": "Sheikh Zayed Grand Mosque, Abu Dhabi"},
-    {"slot": "louvre-abu-dhabi", "query": "Louvre Abu Dhabi dome Saadiyat Island", "caption": "Louvre Abu Dhabi"},
-    {"slot": "dubai-creek-souk", "query": "Dubai Creek abra old Dubai Gold Souk", "caption": "Dubai Creek and the old souks"},
-    {"slot": "palm-jumeirah", "query": "Palm Jumeirah Dubai aerial view", "caption": "Palm Jumeirah, Dubai"},
-    {"slot": "burj-al-arab", "query": "Burj Al Arab Jumeirah Beach Dubai", "caption": "Burj Al Arab and Jumeirah Beach"},
-    {"slot": "dubai-frame", "query": "Dubai Frame Zabeel Park", "caption": "Dubai Frame"},
-    {"slot": "jebel-jais", "query": "Jebel Jais mountain Ras Al Khaimah", "caption": "Jebel Jais, Ras Al Khaimah"},
-    {"slot": "sharjah-al-noor-mosque", "query": "Al Noor Mosque Sharjah Khalid Lagoon", "caption": "Al Noor Mosque, Sharjah"},
-    {"slot": "yas-island", "query": "Yas Island Abu Dhabi Ferrari World", "caption": "Yas Island, Abu Dhabi"}
+    {
+      "slot": "burj-khalifa",
+      "query": "Burj Khalifa Dubai skyline",
+      "caption": "Burj Khalifa, Dubai"
+    },
+    {
+      "slot": "dubai-marina",
+      "query": "Dubai Marina skyline dhow cruise",
+      "caption": "Dubai Marina at dusk"
+    },
+    {
+      "slot": "desert-safari",
+      "query": "Dubai desert safari dunes sunset",
+      "caption": "Desert dunes outside Dubai"
+    },
+    {
+      "slot": "sheikh-zayed-mosque",
+      "query": "Sheikh Zayed Grand Mosque Abu Dhabi",
+      "caption": "Sheikh Zayed Grand Mosque, Abu Dhabi"
+    },
+    {
+      "slot": "louvre-abu-dhabi",
+      "query": "Louvre Abu Dhabi dome Saadiyat Island",
+      "caption": "Louvre Abu Dhabi"
+    },
+    {
+      "slot": "dubai-creek-souk",
+      "query": "Dubai Creek abra old Dubai Gold Souk",
+      "caption": "Dubai Creek and the old souks"
+    },
+    {
+      "slot": "palm-jumeirah",
+      "query": "Palm Jumeirah Dubai aerial view",
+      "caption": "Palm Jumeirah, Dubai"
+    },
+    {
+      "slot": "burj-al-arab",
+      "query": "Burj Al Arab Jumeirah Beach Dubai",
+      "caption": "Burj Al Arab and Jumeirah Beach"
+    },
+    {
+      "slot": "dubai-frame",
+      "query": "Dubai Frame Zabeel Park",
+      "caption": "Dubai Frame"
+    },
+    {
+      "slot": "jebel-jais",
+      "query": "Jebel Jais mountain Ras Al Khaimah",
+      "caption": "Jebel Jais, Ras Al Khaimah"
+    },
+    {
+      "slot": "sharjah-al-noor-mosque",
+      "query": "Al Noor Mosque Sharjah Khalid Lagoon",
+      "caption": "Al Noor Mosque, Sharjah"
+    },
+    {
+      "slot": "yas-island",
+      "query": "Yas Island Abu Dhabi Ferrari World",
+      "caption": "Yas Island, Abu Dhabi"
+    }
   ],
   "hero": "burj-khalifa",
   "categories": [
@@ -22,7 +70,11 @@
       "name": "Classic Dubai Holidays",
       "description": "Tried-and-tested Dubai breaks of four to six nights, built around the city tour, a desert safari and a Marina dhow cruise, with free time to shop and explore at your own pace.",
       "photo": "burj-khalifa",
-      "packages": ["classic-dubai", "simply-dubai", "wonders-of-dubai"]
+      "packages": [
+        "classic-dubai",
+        "simply-dubai",
+        "wonders-of-dubai"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +82,11 @@
       "name": "Dubai and Abu Dhabi",
       "description": "Pair the glass towers of Dubai with the grand mosque, museums and theme parks of Abu Dhabi in one smooth holiday, with hotel-to-hotel transfers between the two emirates.",
       "photo": "sheikh-zayed-mosque",
-      "packages": ["exciting-dubai-with-abu-dhabi", "dubai-desert-skyline-and-abu-dhabi-group-trip"]
+      "packages": [
+        "exciting-dubai-with-abu-dhabi",
+        "dubai-desert-skyline-and-abu-dhabi-group-trip",
+        "dubai-weekend-escape"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +94,11 @@
       "name": "Family Holidays",
       "description": "Easy-paced UAE holidays with an aquarium, dolphin show, desert safari and theme-park options that work for children and grandparents alike. Indian meal options can be arranged on request.",
       "photo": "desert-safari",
-      "packages": ["dubai-buy-1-get-1-free", "wonders-of-dubai", "exciting-dubai-with-abu-dhabi"]
+      "packages": [
+        "dubai-buy-1-get-1-free",
+        "wonders-of-dubai",
+        "exciting-dubai-with-abu-dhabi"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +106,11 @@
       "name": "Offers and Value Deals",
       "description": "Value-focused Dubai packages, including our Buy 1 Get 1 Free offer, for travellers who want the big sights without a big bill. Terms and travel dates are confirmed at the time of booking.",
       "photo": "dubai-marina",
-      "packages": ["dubai-buy-1-get-1-free", "classic-dubai", "simply-dubai"]
+      "packages": [
+        "dubai-buy-1-get-1-free",
+        "classic-dubai",
+        "simply-dubai"
+      ]
     },
     {
       "menu": "destinations",
@@ -54,7 +118,9 @@
       "name": "Multi-Emirate Explorer",
       "description": "Go beyond Dubai to see the mountains of Ras Al Khaimah and the museums and mosques of Sharjah, with the skyline and the dunes of Dubai at either end.",
       "photo": "jebel-jais",
-      "packages": ["dubai-sharjah-and-ras-al-khaimah-group-trip"]
+      "packages": [
+        "dubai-sharjah-and-ras-al-khaimah-group-trip"
+      ]
     },
     {
       "menu": "group-tours",
@@ -62,7 +128,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Scheduled small-group departures with a trip captain, fixed dates and a fixed price, so you can plan leave and book flights with confidence. Indian meal options are available on request.",
       "photo": "dubai-marina",
-      "packages": ["dubai-desert-skyline-and-abu-dhabi-group-trip", "dubai-sharjah-and-ras-al-khaimah-group-trip"]
+      "packages": [
+        "dubai-desert-skyline-and-abu-dhabi-group-trip",
+        "dubai-sharjah-and-ras-al-khaimah-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -70,7 +139,21 @@
       "name": "Romantic Escapes",
       "description": "Dhow cruises over the Marina, a limousine ride, a yacht cruise and a high view of the skyline make these Dubai packages a good fit for couples and newlyweds.",
       "photo": "palm-jumeirah",
-      "packages": ["wonders-of-dubai", "exciting-dubai-with-abu-dhabi", "simply-dubai"]
+      "packages": [
+        "wonders-of-dubai",
+        "exciting-dubai-with-abu-dhabi",
+        "simply-dubai"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "Short 3-night breaks that leave on Fridays and are back in time for Monday, with early arrivals and a relaxed pace.",
+      "photo": "dubai-marina",
+      "packages": [
+        "dubai-weekend-escape"
+      ]
     }
   ],
   "packages": [
@@ -127,13 +210,19 @@
       "pickup": "Dubai International Airport (DXB)",
       "drop_point": "Dubai International Airport (DXB)",
       "photo": "desert-safari",
-      "gallery": ["dubai-marina", "burj-al-arab", "dubai-creek-souk"]
+      "gallery": [
+        "dubai-marina",
+        "burj-al-arab",
+        "dubai-creek-souk"
+      ]
     },
     {
       "slug": "wonders-of-dubai",
       "summary": "Six days in Dubai covering Burj Khalifa, a guided city tour of the main landmarks and souks, a desert safari, a limousine ride, The View at Palm Jumeirah and a Marina yacht cruise.",
       "overview": "Wonders of Dubai is a five-night holiday that packs in the city's best-known sights. You visit Burj Khalifa and the Dubai Mall fountain show, take a guided city tour through Dubai Frame, the Museum of the Future, Jumeirah Beach, Jumeirah Mosque, Zabeel Palace and the Gold and Spice Souks, and spend an evening on a desert safari. A limousine ride, The View at Palm Jumeirah and a Marina yacht cruise add a touch of indulgence, and one day is kept free.",
-      "price": {"from": 48000},
+      "price": {
+        "from": 48000
+      },
       "highlights": [
         "Burj Khalifa visit and the Dubai Mall fountain show",
         "Guided city tour covering Dubai Frame, the Museum of the Future and Jumeirah Beach",
@@ -185,7 +274,12 @@
       "pickup": "Dubai, Sharjah or Abu Dhabi airport, as per your flight",
       "drop_point": "Dubai International Airport (DXB)",
       "photo": "burj-khalifa",
-      "gallery": ["dubai-frame", "palm-jumeirah", "desert-safari", "dubai-creek-souk"]
+      "gallery": [
+        "dubai-frame",
+        "palm-jumeirah",
+        "desert-safari",
+        "dubai-creek-souk"
+      ]
     },
     {
       "slug": "exciting-dubai-with-abu-dhabi",
@@ -242,13 +336,20 @@
       "pickup": "Dubai International Airport (DXB)",
       "drop_point": "Abu Dhabi International Airport (AUH)",
       "photo": "sheikh-zayed-mosque",
-      "gallery": ["yas-island", "burj-khalifa", "dubai-marina", "desert-safari"]
+      "gallery": [
+        "yas-island",
+        "burj-khalifa",
+        "dubai-marina",
+        "desert-safari"
+      ]
     },
     {
       "slug": "classic-dubai",
       "summary": "A four-night Dubai break with a comfortable hotel, airport transfers and the city's best-known sights close at hand, with the programme finalised when you book.",
       "overview": "Classic Dubai is a short, easy four-night stay in one of the world's most visited cities. It suits first-time visitors who want a comfortable hotel base and a well-paced introduction to Dubai. The sightseeing programme is confirmed at the time of booking, so you can shape the trip around your dates and interests.",
-      "price": {"from": 36000},
+      "price": {
+        "from": 36000
+      },
       "highlights": [
         "Four nights in Dubai on twin sharing",
         "Daily breakfast at the hotel",
@@ -296,13 +397,19 @@
       "pickup": "Dubai International Airport (DXB)",
       "drop_point": "Dubai International Airport (DXB)",
       "photo": "dubai-creek-souk",
-      "gallery": ["burj-khalifa", "palm-jumeirah", "burj-al-arab"]
+      "gallery": [
+        "burj-khalifa",
+        "palm-jumeirah",
+        "burj-al-arab"
+      ]
     },
     {
       "slug": "simply-dubai",
       "summary": "A relaxed six-night Dubai stay with a Marina dhow cruise, a city tour, the Burj Khalifa observation deck, a desert safari and plenty of free time to shop and explore.",
       "overview": "Simply Dubai gives you six unhurried nights in the city. A Marina dhow cruise with buffet dinner sets the tone, followed by a half-day city tour covering Burj Al Arab, the Palm Islands, Dubai Creek and the Blue Mosque, and a visit to the Burj Khalifa observation deck from Dubai Mall. A desert safari adds the adventure, and two full days at leisure leave room for shopping and independent exploring.",
-      "price": {"from": 54000},
+      "price": {
+        "from": 54000
+      },
       "highlights": [
         "Marina dhow cruise with buffet dinner, cityscape views and Tanoura dance",
         "Half-day city tour covering Burj Al Arab, the Palm Islands, Dubai Creek and the Blue Mosque",
@@ -354,7 +461,11 @@
       "pickup": "Dubai or Sharjah airport, as per your flight",
       "drop_point": "Dubai or Sharjah airport, as per your flight",
       "photo": "dubai-marina",
-      "gallery": ["burj-khalifa", "desert-safari", "dubai-creek-souk"]
+      "gallery": [
+        "burj-khalifa",
+        "desert-safari",
+        "dubai-creek-souk"
+      ]
     }
   ],
   "group_trips": [
@@ -450,10 +561,20 @@
       "pickup": "Dubai International Airport (DXB)",
       "drop_point": "Dubai International Airport (DXB)",
       "photo": "louvre-abu-dhabi",
-      "gallery": ["sheikh-zayed-mosque", "burj-khalifa", "desert-safari", "dubai-marina"],
+      "gallery": [
+        "sheikh-zayed-mosque",
+        "burj-khalifa",
+        "desert-safari",
+        "dubai-marina"
+      ],
       "price": 45500,
       "original_price": 49500,
-      "departures": {"weekday": 5, "count": 5, "every_weeks": 2, "capacity": 20}
+      "departures": {
+        "weekday": 5,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 20
+      }
     },
     {
       "slug": "dubai-sharjah-and-ras-al-khaimah-group-trip",
@@ -548,10 +669,120 @@
       "pickup": "Dubai International Airport (DXB)",
       "drop_point": "Dubai International Airport (DXB)",
       "photo": "jebel-jais",
-      "gallery": ["sharjah-al-noor-mosque", "dubai-frame", "burj-khalifa", "dubai-creek-souk"],
+      "gallery": [
+        "sharjah-al-noor-mosque",
+        "dubai-frame",
+        "burj-khalifa",
+        "dubai-creek-souk"
+      ],
       "price": 49000,
       "original_price": null,
-      "departures": {"weekday": 6, "count": 4, "every_weeks": 3, "capacity": 18}
+      "departures": {
+        "weekday": 6,
+        "count": 4,
+        "every_weeks": 3,
+        "capacity": 18
+      }
+    },
+    {
+      "slug": "dubai-weekend-escape",
+      "title": "Dubai Weekend Escape: Skyline, Desert and Abu Dhabi",
+      "nights": 3,
+      "summary": "A relaxed Friday-to-Monday break in Dubai with the Burj Khalifa, old Dubai, a desert safari and a day in Abu Dhabi, led by a trip captain.",
+      "overview": "Dubai is one of the easiest places in the world to enjoy over a long weekend, and this fixed-departure escape is planned around exactly that. You land early on Friday, settle into a 4-star hotel and are out seeing the city the same afternoon, with one or two headline sights each day and plenty of room to breathe.\n\nThe programme brings together Dubai's modern skyline at the Burj Khalifa, the old creek-side souks and Dubai Frame, the coast at Jumeirah Beach and Palm Jumeirah, and an evening in the dunes with a camp dinner. A full day is set aside for Abu Dhabi, where you visit the Sheikh Zayed Grand Mosque and the Louvre Abu Dhabi before returning to Dubai.\n\nYou travel with a trip captain and a small group, with Indian meal options on request. Because the trip is short, we suggest flights that arrive early on day 1 and leave late on the last day.",
+      "highlights": [
+        "Burj Khalifa observation deck and the Dubai Mall fountain area",
+        "Dubai Frame and the old Creek-side Gold and Spice Souks",
+        "Photo stops at Jumeirah Beach, Burj Al Arab and Palm Jumeirah",
+        "Evening desert safari with dune bashing and a camp BBQ dinner",
+        "Full-day Abu Dhabi visit: Sheikh Zayed Grand Mosque and Louvre Abu Dhabi",
+        "Small fixed-departure group with a trip captain throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Dubai | Old Dubai and Burj Khalifa",
+          "description": "Arrive at Dubai airport early in the day, where you are met and transferred to your hotel.\nCheck in and freshen up after your journey.\nIn the afternoon, visit Dubai Frame for views across old and new Dubai.\nIn the evening, go up the Burj Khalifa observation deck and spend time at Dubai Mall.\nOvernight stay in Dubai."
+        },
+        {
+          "day": 2,
+          "title": "Dubai City Drive | Evening Desert Safari",
+          "description": "After breakfast, set out on a guided city drive with photo stops at Jumeirah Beach and Burj Al Arab.\nSee Palm Jumeirah from the viewing points, then cross Dubai Creek to wander through the Gold and Spice Souks.\nRest at the hotel through the afternoon.\nLate in the afternoon, drive into the desert for dune bashing and sunset views.\nSettle into a desert camp for Arabic coffee, traditional entertainment and a BBQ dinner.\nReturn to your hotel for an overnight stay in Dubai."
+        },
+        {
+          "day": 3,
+          "title": "Abu Dhabi Day Trip | Grand Mosque and Louvre",
+          "description": "After breakfast, drive to Abu Dhabi, around 90 minutes each way.\nVisit the Sheikh Zayed Grand Mosque, one of the largest mosques in the world.\nIn the afternoon, explore the Louvre Abu Dhabi and take a short walk along the Corniche.\nReturn to Dubai in the evening for a relaxed walk around Dubai Marina.\nOvernight stay in Dubai."
+        },
+        {
+          "day": 4,
+          "title": "Leisure Morning | Departure",
+          "description": "Enjoy a relaxed breakfast and a free morning for last-minute shopping or a swim.\nCheck out of the hotel by around 12 noon and store your luggage if your flight is later.\nTransfer to Dubai airport in time for your departure flight.\nEnd of the trip."
+        }
+      ],
+      "inclusions": [
+        "3 nights in a 4-star hotel in Dubai on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport transfers on arrival and departure",
+        "Sightseeing and transfers as per the itinerary",
+        "Burj Khalifa observation deck entry as per the itinerary",
+        "Evening desert safari with dune bashing and BBQ dinner",
+        "Full-day Abu Dhabi tour with Sheikh Zayed Grand Mosque and Louvre Abu Dhabi",
+        "Trip captain accompanying the group",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "UAE visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and upgrades",
+        "Tourism dirham fee payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights are not included and are not booked by us unless asked.",
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking; cancellation and refund are as per our Terms and Conditions.",
+        "This is a fixed-departure group trip that runs on minimum numbers, and a trip captain accompanies the group.",
+        "Dress modestly at the Sheikh Zayed Grand Mosque: shoulders and knees covered, and women need a head covering.",
+        "Dune bashing may not suit those with back or neck problems, heart conditions or during pregnancy."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "UK-type three-pin (Type G) power adapter",
+        "Sunscreen, sunglasses and a hat",
+        "Modest clothing for mosque visits",
+        "Comfortable walking shoes",
+        "Light jacket for air-conditioned venues"
+      ],
+      "pickup": "Dubai International Airport (DXB)",
+      "drop_point": "Dubai International Airport (DXB)",
+      "photo": "burj-khalifa",
+      "gallery": [
+        "desert-safari",
+        "sheikh-zayed-mosque",
+        "dubai-frame",
+        "palm-jumeirah",
+        "dubai-marina"
+      ],
+      "price": 28500,
+      "original_price": 30800,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
     }
   ]
 }

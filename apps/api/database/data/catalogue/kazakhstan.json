@@ -1,18 +1,66 @@
 {
   "destination": "kazakhstan",
   "photos": [
-    {"slot": "big-almaty-lake", "query": "Big Almaty Lake Kazakhstan", "caption": "Big Almaty Lake"},
-    {"slot": "charyn-canyon", "query": "Charyn Canyon Valley of Castles Kazakhstan", "caption": "Charyn Canyon"},
-    {"slot": "kolsai-lakes", "query": "Kolsai Lakes Kazakhstan", "caption": "Kolsai Lakes"},
-    {"slot": "kaindy-lake", "query": "Lake Kaindy sunken forest Kazakhstan", "caption": "Lake Kaindy"},
-    {"slot": "shymbulak-resort", "query": "Shymbulak mountain resort Almaty Kazakhstan", "caption": "Shymbulak"},
-    {"slot": "kok-tobe", "query": "Kok Tobe hill Almaty Kazakhstan", "caption": "Kok Tobe, Almaty"},
-    {"slot": "green-bazaar", "query": "Green Bazaar market Almaty Kazakhstan", "caption": "Green Bazaar, Almaty"},
-    {"slot": "medeu-rink", "query": "Medeu skating rink Almaty Kazakhstan", "caption": "Medeu"},
-    {"slot": "astana-baiterek", "query": "Baiterek Tower Astana Kazakhstan", "caption": "Baiterek Tower, Astana"},
-    {"slot": "astana-mosque", "query": "Hazrat Sultan Mosque Astana Kazakhstan", "caption": "Hazrat Sultan Mosque, Astana"},
-    {"slot": "turgen-gorge", "query": "Turgen Gorge waterfalls Kazakhstan", "caption": "Turgen Gorge"},
-    {"slot": "issyk-lake", "query": "Issyk Lake Zailiyskiy Alatau Kazakhstan", "caption": "Lake Issyk"}
+    {
+      "slot": "big-almaty-lake",
+      "query": "Big Almaty Lake Kazakhstan",
+      "caption": "Big Almaty Lake"
+    },
+    {
+      "slot": "charyn-canyon",
+      "query": "Charyn Canyon Valley of Castles Kazakhstan",
+      "caption": "Charyn Canyon"
+    },
+    {
+      "slot": "kolsai-lakes",
+      "query": "Kolsai Lakes Kazakhstan",
+      "caption": "Kolsai Lakes"
+    },
+    {
+      "slot": "kaindy-lake",
+      "query": "Lake Kaindy sunken forest Kazakhstan",
+      "caption": "Lake Kaindy"
+    },
+    {
+      "slot": "shymbulak-resort",
+      "query": "Shymbulak mountain resort Almaty Kazakhstan",
+      "caption": "Shymbulak"
+    },
+    {
+      "slot": "kok-tobe",
+      "query": "Kok Tobe hill Almaty Kazakhstan",
+      "caption": "Kok Tobe, Almaty"
+    },
+    {
+      "slot": "green-bazaar",
+      "query": "Green Bazaar market Almaty Kazakhstan",
+      "caption": "Green Bazaar, Almaty"
+    },
+    {
+      "slot": "medeu-rink",
+      "query": "Medeu skating rink Almaty Kazakhstan",
+      "caption": "Medeu"
+    },
+    {
+      "slot": "astana-baiterek",
+      "query": "Baiterek Tower Astana Kazakhstan",
+      "caption": "Baiterek Tower, Astana"
+    },
+    {
+      "slot": "astana-mosque",
+      "query": "Hazrat Sultan Mosque Astana Kazakhstan",
+      "caption": "Hazrat Sultan Mosque, Astana"
+    },
+    {
+      "slot": "turgen-gorge",
+      "query": "Turgen Gorge waterfalls Kazakhstan",
+      "caption": "Turgen Gorge"
+    },
+    {
+      "slot": "issyk-lake",
+      "query": "Issyk Lake Zailiyskiy Alatau Kazakhstan",
+      "caption": "Lake Issyk"
+    }
   ],
   "hero": "big-almaty-lake",
   "categories": [
@@ -22,7 +70,11 @@
       "name": "Classic Almaty Packages",
       "description": "Easy city-based holidays in Almaty, with the cable cars, bazaars and mountain views that first-time visitors to Kazakhstan love.",
       "photo": "shymbulak-resort",
-      "packages": ["simply-almaty", "kazakhstan-van-tours"]
+      "packages": [
+        "simply-almaty",
+        "kazakhstan-van-tours",
+        "kazakhstan-almaty-big-almaty-lake-weekend-escape"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +82,10 @@
       "name": "Lakes, Canyons and Mountains",
       "description": "For travellers who want the landscapes of the Tian Shan: alpine lakes, the Charyn Canyon and mountain gorges within reach of Almaty.",
       "photo": "charyn-canyon",
-      "packages": ["kazakhstan-van-tours", "kazakhstan-almaty-lakes-canyon-group-trip"]
+      "packages": [
+        "kazakhstan-van-tours",
+        "kazakhstan-almaty-lakes-canyon-group-trip"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +93,10 @@
       "name": "Seasonal Specials",
       "description": "Short Kazakhstan holidays timed for autumn colours or the winter season, sent as a quote tailored to your travel dates.",
       "photo": "kolsai-lakes",
-      "packages": ["autumn-kazakhstan", "winter-kazakhstan"]
+      "packages": [
+        "autumn-kazakhstan",
+        "winter-kazakhstan"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +104,9 @@
       "name": "Almaty and Astana Combos",
       "description": "Pair the mountain-fringed charm of Almaty with the futuristic skyline of Kazakhstan's capital, Astana, in a single trip.",
       "photo": "astana-baiterek",
-      "packages": ["kazakhstan-almaty-astana-group-trip"]
+      "packages": [
+        "kazakhstan-almaty-astana-group-trip"
+      ]
     },
     {
       "menu": "group-tours",
@@ -54,7 +114,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Join a small group on a fixed date, with a trip captain and Indian meal options on request. Book a seat and we handle the rest.",
       "photo": "kaindy-lake",
-      "packages": ["kazakhstan-almaty-lakes-canyon-group-trip", "kazakhstan-almaty-astana-group-trip"]
+      "packages": [
+        "kazakhstan-almaty-lakes-canyon-group-trip",
+        "kazakhstan-almaty-astana-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -62,7 +125,21 @@
       "name": "Romantic Escapes",
       "description": "Cool mountain air, cable car views and unhurried evenings make Kazakhstan a quiet, memorable choice for couples.",
       "photo": "big-almaty-lake",
-      "packages": ["simply-almaty", "autumn-kazakhstan", "winter-kazakhstan"]
+      "packages": [
+        "simply-almaty",
+        "autumn-kazakhstan",
+        "winter-kazakhstan"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "Short trips from Almaty for a long weekend, with mountain lakes, cable cars and city sights packed into three nights. Fixed Friday departures with a trip captain.",
+      "photo": "big-almaty-lake",
+      "packages": [
+        "kazakhstan-almaty-big-almaty-lake-weekend-escape"
+      ]
     }
   ],
   "packages": [
@@ -121,8 +198,14 @@
       "pickup": "Almaty International Airport",
       "drop_point": "Almaty International Airport",
       "photo": "shymbulak-resort",
-      "gallery": ["kok-tobe", "green-bazaar", "medeu-rink"],
-      "price": {"from": 46000}
+      "gallery": [
+        "kok-tobe",
+        "green-bazaar",
+        "medeu-rink"
+      ],
+      "price": {
+        "from": 46000
+      }
     },
     {
       "slug": "kazakhstan-van-tours",
@@ -181,8 +264,16 @@
       "pickup": "Almaty International Airport",
       "drop_point": "Almaty International Airport",
       "photo": "charyn-canyon",
-      "gallery": ["kolsai-lakes", "shymbulak-resort", "turgen-gorge", "issyk-lake", "medeu-rink"],
-      "price": {"from": 66000}
+      "gallery": [
+        "kolsai-lakes",
+        "shymbulak-resort",
+        "turgen-gorge",
+        "issyk-lake",
+        "medeu-rink"
+      ],
+      "price": {
+        "from": 66000
+      }
     },
     {
       "slug": "autumn-kazakhstan",
@@ -235,7 +326,11 @@
       "pickup": "Arrival airport in Kazakhstan, as per final itinerary",
       "drop_point": "Departure airport in Kazakhstan, as per final itinerary",
       "photo": "kolsai-lakes",
-      "gallery": ["big-almaty-lake", "kaindy-lake", "turgen-gorge"]
+      "gallery": [
+        "big-almaty-lake",
+        "kaindy-lake",
+        "turgen-gorge"
+      ]
     },
     {
       "slug": "winter-kazakhstan",
@@ -290,7 +385,11 @@
       "pickup": "Arrival airport in Kazakhstan, as per final itinerary",
       "drop_point": "Departure airport in Kazakhstan, as per final itinerary",
       "photo": "shymbulak-resort",
-      "gallery": ["medeu-rink", "kok-tobe", "astana-baiterek"]
+      "gallery": [
+        "medeu-rink",
+        "kok-tobe",
+        "astana-baiterek"
+      ]
     }
   ],
   "group_trips": [
@@ -393,10 +492,21 @@
       "pickup": "Almaty International Airport",
       "drop_point": "Almaty International Airport",
       "photo": "kolsai-lakes",
-      "gallery": ["charyn-canyon", "big-almaty-lake", "kaindy-lake", "shymbulak-resort", "medeu-rink"],
+      "gallery": [
+        "charyn-canyon",
+        "big-almaty-lake",
+        "kaindy-lake",
+        "shymbulak-resort",
+        "medeu-rink"
+      ],
       "price": 64000,
       "original_price": 70000,
-      "departures": {"weekday": 6, "count": 5, "every_weeks": 2, "capacity": 20}
+      "departures": {
+        "weekday": 6,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 20
+      }
     },
     {
       "slug": "kazakhstan-almaty-astana-group-trip",
@@ -492,10 +602,117 @@
       "pickup": "Almaty International Airport",
       "drop_point": "Astana International Airport",
       "photo": "astana-baiterek",
-      "gallery": ["astana-mosque", "big-almaty-lake", "shymbulak-resort", "kok-tobe"],
+      "gallery": [
+        "astana-mosque",
+        "big-almaty-lake",
+        "shymbulak-resort",
+        "kok-tobe"
+      ],
       "price": 68000,
       "original_price": 74000,
-      "departures": {"weekday": 5, "count": 4, "every_weeks": 3, "capacity": 16}
+      "departures": {
+        "weekday": 5,
+        "count": 4,
+        "every_weeks": 3,
+        "capacity": 16
+      }
+    },
+    {
+      "slug": "kazakhstan-almaty-big-almaty-lake-weekend-escape",
+      "title": "Almaty Weekend Escape: Big Almaty Lake, Shymbulak and Kok Tobe",
+      "nights": 3,
+      "summary": "A fixed-departure long weekend in Almaty with Kok Tobe, Shymbulak, Medeu and the turquoise water of Big Almaty Lake, led by a trip captain.",
+      "overview": "Almaty sits at the foot of the Tian Shan mountains, which makes it one of the easiest places to enjoy real mountain scenery on a long weekend. This trip keeps a relaxed pace, with one or two headline sights each day and plenty of time to walk, shop and sit over a cup of tea.\n\nYou ride the cable car up Kok Tobe Hill, visit Green Bazaar, go up to Shymbulak via Medeu and spend a morning at Big Almaty Lake. A trip captain travels with the group, and Indian meal options are available on request. If you would rather see Charyn Canyon, ask us about swapping it in for the lake day; it is a long drive, so it suits a full day.",
+      "highlights": [
+        "Almaty city tour with Kok Tobe Hill by cable car",
+        "Green Bazaar for spices, dried fruits and local sweets",
+        "Medeu, the high-altitude skating rink, and Shymbulak by cable car",
+        "Big Almaty Lake in the Trans-Ili Alatau mountains",
+        "Panfilov Park, Zenkov Cathedral and an evening stroll on Arbat Street",
+        "Trip captain and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Almaty | Kok Tobe",
+          "description": "Arrive at Almaty airport early in the day and meet your trip captain.\nTransfer to your hotel and check in, with time to freshen up.\nVisit Panfilov Park and Zenkov Cathedral on a short city tour.\nTake the cable car up Kok Tobe Hill for views over the city and the mountains.\nOvernight stay in Almaty."
+        },
+        {
+          "day": 2,
+          "title": "Medeu and Shymbulak",
+          "description": "After breakfast, drive into the mountains to Medeu, the high-altitude skating rink.\nContinue to Shymbulak and ride the cable car up for panoramic views.\nSpend free time at the resort for photographs and a warm drink.\nReturn to the city and explore Green Bazaar for spices, dried fruits and local sweets.\nOvernight stay in Almaty."
+        },
+        {
+          "day": 3,
+          "title": "Big Almaty Lake | Free Evening",
+          "description": "After breakfast, drive up to Big Almaty Lake, set among the peaks of the Trans-Ili Alatau.\nSpend time by the water for photographs and a short walk, as conditions allow.\nReturn to Almaty for a free afternoon of shopping or rest.\nStroll along Arbat Street in the evening.\nOvernight stay in Almaty."
+        },
+        {
+          "day": 4,
+          "title": "Departure from Almaty",
+          "description": "After breakfast, check out of the hotel.\nEnjoy some free time for last-minute shopping, depending on your flight.\nTransfer to Almaty airport for your late flight back to India."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 3 nights in Almaty",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Sightseeing and transfers as per the itinerary",
+        "Kok Tobe and Shymbulak cable car rides as per the itinerary",
+        "Entry tickets and activities listed in the itinerary",
+        "A trip captain accompanying the group throughout",
+        "Indian meal options on request",
+        "Assistance from our travel experts before and during your trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Optional activities",
+        "Personal expenses, laundry, tips and porterage",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Weekend trips are short, so flights should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights are not included and are not booked by us unless asked.",
+        "This is a small group trip, and each departure runs on minimum numbers; a trip captain accompanies the group.",
+        "Cable cars and mountain roads depend on the weather, and it is much colder at Shymbulak and Big Almaty Lake than in the city, so carry warm layers."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or an international card",
+        "Power adapter for Type C or F sockets (230 V)",
+        "Warm jacket and layers for the mountains",
+        "Comfortable walking shoes with good grip",
+        "Sunglasses and sunscreen"
+      ],
+      "pickup": "Almaty International Airport",
+      "drop_point": "Almaty International Airport",
+      "photo": "big-almaty-lake",
+      "gallery": [
+        "shymbulak-resort",
+        "kok-tobe",
+        "medeu-rink",
+        "green-bazaar"
+      ],
+      "price": 36000,
+      "original_price": 39000,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 20
+      }
     }
   ]
 }

@@ -1,18 +1,66 @@
 {
   "destination": "azerbaijan",
   "photos": [
-    {"slot": "flame-towers-baku", "query": "Flame Towers Baku Azerbaijan skyline", "caption": "The Flame Towers above Baku"},
-    {"slot": "heydar-aliyev-center", "query": "Heydar Aliyev Center Baku Azerbaijan", "caption": "Heydar Aliyev Center, Baku"},
-    {"slot": "baku-old-city", "query": "Icheri Sheher Old City Baku Maiden Tower", "caption": "The walled Old City of Baku"},
-    {"slot": "baku-boulevard", "query": "Baku Boulevard seaside promenade Caspian Sea", "caption": "Baku Boulevard on the Caspian shore"},
-    {"slot": "gobustan-rock-art", "query": "Gobustan petroglyphs rock art Azerbaijan", "caption": "Ancient rock carvings at Gobustan"},
-    {"slot": "ateshgah-fire-temple", "query": "Ateshgah Fire Temple Surakhani Baku", "caption": "Ateshgah Fire Temple near Baku"},
-    {"slot": "yanar-dag", "query": "Yanar Dag burning mountain Absheron Azerbaijan", "caption": "Yanardag, the burning hillside"},
-    {"slot": "nohur-lake-gabala", "query": "Nohur Lake Gabala Azerbaijan mountains", "caption": "Nohur Lake, Gabala"},
-    {"slot": "sheki-khan-palace", "query": "Sheki Khan's Palace Azerbaijan", "caption": "Palace of the Sheki Khans"},
-    {"slot": "tbilisi-old-town", "query": "Tbilisi Old Town Narikala Fortress Georgia", "caption": "Old Tbilisi below Narikala Fortress"},
-    {"slot": "gergeti-trinity-kazbegi", "query": "Gergeti Trinity Church Kazbegi Georgia", "caption": "Gergeti Trinity Church, Kazbegi"},
-    {"slot": "sighnaghi-kakheti", "query": "Sighnaghi Kakheti Georgia vineyards", "caption": "Sighnaghi in Georgia's wine country"}
+    {
+      "slot": "flame-towers-baku",
+      "query": "Flame Towers Baku Azerbaijan skyline",
+      "caption": "The Flame Towers above Baku"
+    },
+    {
+      "slot": "heydar-aliyev-center",
+      "query": "Heydar Aliyev Center Baku Azerbaijan",
+      "caption": "Heydar Aliyev Center, Baku"
+    },
+    {
+      "slot": "baku-old-city",
+      "query": "Icheri Sheher Old City Baku Maiden Tower",
+      "caption": "The walled Old City of Baku"
+    },
+    {
+      "slot": "baku-boulevard",
+      "query": "Baku Boulevard seaside promenade Caspian Sea",
+      "caption": "Baku Boulevard on the Caspian shore"
+    },
+    {
+      "slot": "gobustan-rock-art",
+      "query": "Gobustan petroglyphs rock art Azerbaijan",
+      "caption": "Ancient rock carvings at Gobustan"
+    },
+    {
+      "slot": "ateshgah-fire-temple",
+      "query": "Ateshgah Fire Temple Surakhani Baku",
+      "caption": "Ateshgah Fire Temple near Baku"
+    },
+    {
+      "slot": "yanar-dag",
+      "query": "Yanar Dag burning mountain Absheron Azerbaijan",
+      "caption": "Yanardag, the burning hillside"
+    },
+    {
+      "slot": "nohur-lake-gabala",
+      "query": "Nohur Lake Gabala Azerbaijan mountains",
+      "caption": "Nohur Lake, Gabala"
+    },
+    {
+      "slot": "sheki-khan-palace",
+      "query": "Sheki Khan's Palace Azerbaijan",
+      "caption": "Palace of the Sheki Khans"
+    },
+    {
+      "slot": "tbilisi-old-town",
+      "query": "Tbilisi Old Town Narikala Fortress Georgia",
+      "caption": "Old Tbilisi below Narikala Fortress"
+    },
+    {
+      "slot": "gergeti-trinity-kazbegi",
+      "query": "Gergeti Trinity Church Kazbegi Georgia",
+      "caption": "Gergeti Trinity Church, Kazbegi"
+    },
+    {
+      "slot": "sighnaghi-kakheti",
+      "query": "Sighnaghi Kakheti Georgia vineyards",
+      "caption": "Sighnaghi in Georgia's wine country"
+    }
   ],
   "hero": "flame-towers-baku",
   "categories": [
@@ -22,7 +70,12 @@
       "name": "Classic Azerbaijan Packages",
       "description": "Baku-based holidays covering the Old City, the Flame Towers, Heydar Aliyev Center and the fire sites of Absheron, plus a fixed-departure circuit to Gabala and Sheki.",
       "photo": "baku-old-city",
-      "packages": ["classic-azerbaijan", "azerbaijan-buy-1-get-1-free", "azerbaijan-baku-gabala-sheki-group-trip"]
+      "packages": [
+        "classic-azerbaijan",
+        "azerbaijan-buy-1-get-1-free",
+        "azerbaijan-baku-gabala-sheki-group-trip",
+        "azerbaijan-baku-gobustan-weekend-escape"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +83,12 @@
       "name": "Azerbaijan and Georgia Combos",
       "description": "Two countries on one holiday, with Baku and the Caucasus foothills on one side and Tbilisi on the other, linked by a road journey across the border.",
       "photo": "tbilisi-old-town",
-      "packages": ["azerbaijan-and-georgia-van-tours", "autumn-azerbaijan-georgia", "best-of-azerbaijan-with-georgia-winter", "azerbaijan-georgia-baku-sheki-tbilisi-group-trip"]
+      "packages": [
+        "azerbaijan-and-georgia-van-tours",
+        "autumn-azerbaijan-georgia",
+        "best-of-azerbaijan-with-georgia-winter",
+        "azerbaijan-georgia-baku-sheki-tbilisi-group-trip"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +96,10 @@
       "name": "Seasonal Specials",
       "description": "Autumn and winter departures for Azerbaijan and Georgia, timed for golden Caucasus colour or a snowy mountain backdrop.",
       "photo": "gergeti-trinity-kazbegi",
-      "packages": ["autumn-azerbaijan-georgia", "best-of-azerbaijan-with-georgia-winter"]
+      "packages": [
+        "autumn-azerbaijan-georgia",
+        "best-of-azerbaijan-with-georgia-winter"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +107,9 @@
       "name": "Budget Saver and Offers",
       "description": "A short, easy Baku holiday that is offered as a special deal, a good fit for first-time visitors to Azerbaijan.",
       "photo": "baku-boulevard",
-      "packages": ["azerbaijan-buy-1-get-1-free"]
+      "packages": [
+        "azerbaijan-buy-1-get-1-free"
+      ]
     },
     {
       "menu": "group-tours",
@@ -54,7 +117,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Scheduled small-group departures to Azerbaijan and Georgia with a trip captain, fixed dates and a set price, so you can plan and book with confidence.",
       "photo": "sheki-khan-palace",
-      "packages": ["azerbaijan-baku-gabala-sheki-group-trip", "azerbaijan-georgia-baku-sheki-tbilisi-group-trip"]
+      "packages": [
+        "azerbaijan-baku-gabala-sheki-group-trip",
+        "azerbaijan-georgia-baku-sheki-tbilisi-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -62,7 +128,21 @@
       "name": "Romantic Escapes",
       "description": "Seaside walks on the Baku Boulevard, evenings under the Flame Towers and, on the longer trips, the old streets of Tbilisi for couples.",
       "photo": "flame-towers-baku",
-      "packages": ["classic-azerbaijan", "autumn-azerbaijan-georgia", "best-of-azerbaijan-with-georgia-winter"]
+      "packages": [
+        "classic-azerbaijan",
+        "autumn-azerbaijan-georgia",
+        "best-of-azerbaijan-with-georgia-winter"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short, relaxed escape to Baku on fixed Friday departures, with the Old City, Gobustan and the fire sites of Absheron. Ideal for a long weekend away.",
+      "photo": "baku-old-city",
+      "packages": [
+        "azerbaijan-baku-gobustan-weekend-escape"
+      ]
     }
   ],
   "packages": [
@@ -119,7 +199,12 @@
       "pickup": "Baku Heydar Aliyev International Airport",
       "drop_point": "Airport as confirmed at booking",
       "photo": "tbilisi-old-town",
-      "gallery": ["baku-old-city", "flame-towers-baku", "heydar-aliyev-center", "ateshgah-fire-temple"]
+      "gallery": [
+        "baku-old-city",
+        "flame-towers-baku",
+        "heydar-aliyev-center",
+        "ateshgah-fire-temple"
+      ]
     },
     {
       "slug": "azerbaijan-buy-1-get-1-free",
@@ -174,7 +259,11 @@
       "pickup": "Baku Heydar Aliyev International Airport",
       "drop_point": "Baku Heydar Aliyev International Airport",
       "photo": "ateshgah-fire-temple",
-      "gallery": ["flame-towers-baku", "baku-old-city", "yanar-dag"]
+      "gallery": [
+        "flame-towers-baku",
+        "baku-old-city",
+        "yanar-dag"
+      ]
     },
     {
       "slug": "autumn-azerbaijan-georgia",
@@ -231,8 +320,16 @@
       "pickup": "Baku Heydar Aliyev International Airport",
       "drop_point": "Tbilisi Airport or as confirmed at booking",
       "photo": "nohur-lake-gabala",
-      "gallery": ["baku-boulevard", "flame-towers-baku", "tbilisi-old-town", "gergeti-trinity-kazbegi", "sighnaghi-kakheti"],
-      "price": {"from": 72000}
+      "gallery": [
+        "baku-boulevard",
+        "flame-towers-baku",
+        "tbilisi-old-town",
+        "gergeti-trinity-kazbegi",
+        "sighnaghi-kakheti"
+      ],
+      "price": {
+        "from": 72000
+      }
     },
     {
       "slug": "classic-azerbaijan",
@@ -286,8 +383,15 @@
       "pickup": "Baku Heydar Aliyev International Airport",
       "drop_point": "Baku Heydar Aliyev International Airport",
       "photo": "heydar-aliyev-center",
-      "gallery": ["baku-old-city", "flame-towers-baku", "ateshgah-fire-temple", "baku-boulevard"],
-      "price": {"from": 39500}
+      "gallery": [
+        "baku-old-city",
+        "flame-towers-baku",
+        "ateshgah-fire-temple",
+        "baku-boulevard"
+      ],
+      "price": {
+        "from": 39500
+      }
     },
     {
       "slug": "best-of-azerbaijan-with-georgia-winter",
@@ -338,7 +442,11 @@
       "pickup": "Airport as confirmed at booking",
       "drop_point": "Airport as confirmed at booking",
       "photo": "tbilisi-old-town",
-      "gallery": ["flame-towers-baku", "gergeti-trinity-kazbegi", "baku-old-city"]
+      "gallery": [
+        "flame-towers-baku",
+        "gergeti-trinity-kazbegi",
+        "baku-old-city"
+      ]
     }
   ],
   "group_trips": [
@@ -358,13 +466,41 @@
         "Travel with a trip captain and a small group"
       ],
       "itinerary": [
-        {"day": 1, "title": "Arrival in Baku | Evening on the Boulevard", "description": "Arrive at Baku airport and meet your trip captain.\nTransfer to the hotel and check in.\nIn the evening take a relaxed walk along Baku Boulevard on the Caspian shore.\nOvernight stay in Baku."},
-        {"day": 2, "title": "Baku Old City and Modern Baku", "description": "After breakfast, explore the walled Old City, Icheri Sheher, including the Palace of the Shirvanshahs and the Maiden Tower area.\nDrive past the Flame Towers and make a photo stop at the Heydar Aliyev Center.\nEnjoy free time on Nizami Street in the evening.\nOvernight stay in Baku."},
-        {"day": 3, "title": "Gobustan and the Fire Sites of Absheron", "description": "After breakfast, drive south to Gobustan to see its ancient rock carvings.\nReturn towards Baku and visit the Ateshgah Fire Temple and Yanardag, the burning hillside.\nOvernight stay in Baku."},
-        {"day": 4, "title": "Baku to Gabala | Nohur Lake", "description": "After breakfast, check out and drive towards Gabala with a comfort stop along the way.\nOn arrival, visit Nohur Lake and enjoy the mountain scenery.\nUse the remaining time to relax or walk around the hotel.\nOvernight stay in Gabala."},
-        {"day": 5, "title": "Gabala to Sheki | Khan's Palace", "description": "After breakfast, drive to Sheki, set among the Caucasus foothills.\nVisit the Palace of the Sheki Khans and the old caravanserai.\nTry Sheki's famous sweets in the old town.\nOvernight stay in Sheki."},
-        {"day": 6, "title": "Sheki to Baku | Free Evening", "description": "After breakfast, check out and take the long scenic drive back to Baku.\nArrive in the evening and check in to the hotel.\nUse the free time for last-minute shopping or a farewell dinner.\nOvernight stay in Baku."},
-        {"day": 7, "title": "Departure from Baku", "description": "After breakfast, check out from the hotel.\nTransfer to Baku airport for your onward flight."}
+        {
+          "day": 1,
+          "title": "Arrival in Baku | Evening on the Boulevard",
+          "description": "Arrive at Baku airport and meet your trip captain.\nTransfer to the hotel and check in.\nIn the evening take a relaxed walk along Baku Boulevard on the Caspian shore.\nOvernight stay in Baku."
+        },
+        {
+          "day": 2,
+          "title": "Baku Old City and Modern Baku",
+          "description": "After breakfast, explore the walled Old City, Icheri Sheher, including the Palace of the Shirvanshahs and the Maiden Tower area.\nDrive past the Flame Towers and make a photo stop at the Heydar Aliyev Center.\nEnjoy free time on Nizami Street in the evening.\nOvernight stay in Baku."
+        },
+        {
+          "day": 3,
+          "title": "Gobustan and the Fire Sites of Absheron",
+          "description": "After breakfast, drive south to Gobustan to see its ancient rock carvings.\nReturn towards Baku and visit the Ateshgah Fire Temple and Yanardag, the burning hillside.\nOvernight stay in Baku."
+        },
+        {
+          "day": 4,
+          "title": "Baku to Gabala | Nohur Lake",
+          "description": "After breakfast, check out and drive towards Gabala with a comfort stop along the way.\nOn arrival, visit Nohur Lake and enjoy the mountain scenery.\nUse the remaining time to relax or walk around the hotel.\nOvernight stay in Gabala."
+        },
+        {
+          "day": 5,
+          "title": "Gabala to Sheki | Khan's Palace",
+          "description": "After breakfast, drive to Sheki, set among the Caucasus foothills.\nVisit the Palace of the Sheki Khans and the old caravanserai.\nTry Sheki's famous sweets in the old town.\nOvernight stay in Sheki."
+        },
+        {
+          "day": 6,
+          "title": "Sheki to Baku | Free Evening",
+          "description": "After breakfast, check out and take the long scenic drive back to Baku.\nArrive in the evening and check in to the hotel.\nUse the free time for last-minute shopping or a farewell dinner.\nOvernight stay in Baku."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Baku",
+          "description": "After breakfast, check out from the hotel.\nTransfer to Baku airport for your onward flight."
+        }
       ],
       "inclusions": [
         "Six nights' hotel stay on twin sharing in Baku, Gabala and Sheki",
@@ -409,10 +545,21 @@
       "pickup": "Baku Heydar Aliyev International Airport",
       "drop_point": "Baku Heydar Aliyev International Airport",
       "photo": "sheki-khan-palace",
-      "gallery": ["flame-towers-baku", "gobustan-rock-art", "nohur-lake-gabala", "baku-old-city", "yanar-dag"],
+      "gallery": [
+        "flame-towers-baku",
+        "gobustan-rock-art",
+        "nohur-lake-gabala",
+        "baku-old-city",
+        "yanar-dag"
+      ],
       "price": 52000,
       "original_price": 57500,
-      "departures": {"weekday": 5, "count": 5, "every_weeks": 2, "capacity": 20}
+      "departures": {
+        "weekday": 5,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 20
+      }
     },
     {
       "slug": "azerbaijan-georgia-baku-sheki-tbilisi-group-trip",
@@ -431,15 +578,51 @@
         "Kakheti wine country and the hilltop town of Sighnaghi"
       ],
       "itinerary": [
-        {"day": 1, "title": "Arrival in Baku | Evening on the Boulevard", "description": "Arrive at Baku airport and meet your trip captain.\nTransfer to the hotel and check in.\nIn the evening take a relaxed walk along Baku Boulevard on the Caspian shore.\nOvernight stay in Baku."},
-        {"day": 2, "title": "Baku Old City and Modern Baku", "description": "After breakfast, explore the walled Old City, Icheri Sheher, including the Palace of the Shirvanshahs.\nDrive past the Flame Towers and make a photo stop at the Heydar Aliyev Center.\nEnjoy free time on Nizami Street in the evening.\nOvernight stay in Baku."},
-        {"day": 3, "title": "Gobustan and the Fire Sites of Absheron", "description": "After breakfast, drive south to Gobustan to see its ancient rock carvings.\nReturn towards Baku and visit the Ateshgah Fire Temple and Yanardag, the burning hillside.\nOvernight stay in Baku."},
-        {"day": 4, "title": "Baku to Sheki", "description": "After breakfast, check out and begin the long scenic drive to Sheki.\nStop along the way for comfort breaks and views of the countryside.\nArrive in the evening and check in to the hotel.\nOvernight stay in Sheki."},
-        {"day": 5, "title": "Sheki to Tbilisi | Border Crossing", "description": "After breakfast, visit the Palace of the Sheki Khans and the old caravanserai.\nDrive to the Georgian border and complete immigration formalities.\nContinue by road to Tbilisi and check in to the hotel.\nOvernight stay in Tbilisi."},
-        {"day": 6, "title": "Tbilisi Old Town and Mtskheta", "description": "After breakfast, explore Tbilisi's old town and see the city from Narikala Fortress.\nDrive to Mtskheta, Georgia's ancient capital, for a walk through its historic centre.\nReturn to Tbilisi and enjoy the evening at leisure.\nOvernight stay in Tbilisi."},
-        {"day": 7, "title": "Kazbegi Day Trip", "description": "After breakfast, drive north along the Georgian Military Road.\nStop at Ananuri and at the Gudauri viewpoint.\nReach Kazbegi for views of Gergeti Trinity Church beneath the mountains.\nReturn to Tbilisi in the evening.\nOvernight stay in Tbilisi."},
-        {"day": 8, "title": "Kakheti Wine Country", "description": "After breakfast, drive east to Kakheti, Georgia's main wine region.\nVisit the hilltop town of Sighnaghi and a local winery.\nReturn to Tbilisi for a free evening.\nOvernight stay in Tbilisi."},
-        {"day": 9, "title": "Departure from Tbilisi", "description": "After breakfast, check out from the hotel.\nTransfer to Tbilisi airport for your onward flight."}
+        {
+          "day": 1,
+          "title": "Arrival in Baku | Evening on the Boulevard",
+          "description": "Arrive at Baku airport and meet your trip captain.\nTransfer to the hotel and check in.\nIn the evening take a relaxed walk along Baku Boulevard on the Caspian shore.\nOvernight stay in Baku."
+        },
+        {
+          "day": 2,
+          "title": "Baku Old City and Modern Baku",
+          "description": "After breakfast, explore the walled Old City, Icheri Sheher, including the Palace of the Shirvanshahs.\nDrive past the Flame Towers and make a photo stop at the Heydar Aliyev Center.\nEnjoy free time on Nizami Street in the evening.\nOvernight stay in Baku."
+        },
+        {
+          "day": 3,
+          "title": "Gobustan and the Fire Sites of Absheron",
+          "description": "After breakfast, drive south to Gobustan to see its ancient rock carvings.\nReturn towards Baku and visit the Ateshgah Fire Temple and Yanardag, the burning hillside.\nOvernight stay in Baku."
+        },
+        {
+          "day": 4,
+          "title": "Baku to Sheki",
+          "description": "After breakfast, check out and begin the long scenic drive to Sheki.\nStop along the way for comfort breaks and views of the countryside.\nArrive in the evening and check in to the hotel.\nOvernight stay in Sheki."
+        },
+        {
+          "day": 5,
+          "title": "Sheki to Tbilisi | Border Crossing",
+          "description": "After breakfast, visit the Palace of the Sheki Khans and the old caravanserai.\nDrive to the Georgian border and complete immigration formalities.\nContinue by road to Tbilisi and check in to the hotel.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 6,
+          "title": "Tbilisi Old Town and Mtskheta",
+          "description": "After breakfast, explore Tbilisi's old town and see the city from Narikala Fortress.\nDrive to Mtskheta, Georgia's ancient capital, for a walk through its historic centre.\nReturn to Tbilisi and enjoy the evening at leisure.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 7,
+          "title": "Kazbegi Day Trip",
+          "description": "After breakfast, drive north along the Georgian Military Road.\nStop at Ananuri and at the Gudauri viewpoint.\nReach Kazbegi for views of Gergeti Trinity Church beneath the mountains.\nReturn to Tbilisi in the evening.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 8,
+          "title": "Kakheti Wine Country",
+          "description": "After breakfast, drive east to Kakheti, Georgia's main wine region.\nVisit the hilltop town of Sighnaghi and a local winery.\nReturn to Tbilisi for a free evening.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 9,
+          "title": "Departure from Tbilisi",
+          "description": "After breakfast, check out from the hotel.\nTransfer to Tbilisi airport for your onward flight."
+        }
       ],
       "inclusions": [
         "Eight nights' hotel stay on twin sharing in Baku, Sheki and Tbilisi",
@@ -486,10 +669,117 @@
       "pickup": "Baku Heydar Aliyev International Airport",
       "drop_point": "Tbilisi Airport, Georgia",
       "photo": "gergeti-trinity-kazbegi",
-      "gallery": ["flame-towers-baku", "sheki-khan-palace", "tbilisi-old-town", "sighnaghi-kakheti", "ateshgah-fire-temple"],
+      "gallery": [
+        "flame-towers-baku",
+        "sheki-khan-palace",
+        "tbilisi-old-town",
+        "sighnaghi-kakheti",
+        "ateshgah-fire-temple"
+      ],
       "price": 76000,
       "original_price": 82000,
-      "departures": {"weekday": 6, "count": 4, "every_weeks": 3, "capacity": 16}
+      "departures": {
+        "weekday": 6,
+        "count": 4,
+        "every_weeks": 3,
+        "capacity": 16
+      }
+    },
+    {
+      "slug": "azerbaijan-baku-gobustan-weekend-escape",
+      "title": "Azerbaijan Weekend Escape: Baku, Gobustan and the Fire Sites",
+      "nights": 3,
+      "summary": "A relaxed long weekend in Baku with the walled Old City, the Gobustan rock carvings, the fire sites of Absheron and an evening on the Caspian boulevard.",
+      "overview": "Baku packs a surprising amount into a long weekend, and this fixed-departure escape is paced so that you see the best of it without rushing. You stay three nights in the capital, walking the UNESCO-listed Old City, strolling the Caspian-shore boulevard and seeing the Flame Towers and the Heydar Aliyev Center.\n\nOne full day goes to Gobustan, a short drive from the city, where ancient rock carvings and bubbling mud volcanoes sit in an open, stark landscape. The next day takes you to the Absheron peninsula for the Ateshgah Fire Temple and Yanardag, the hillside that burns, best seen as the light fades.\n\nA trip captain travels with the group, and Indian meal options are available on request.",
+      "highlights": [
+        "Baku's UNESCO-listed Old City, Icheri Sheher",
+        "Gobustan rock carvings and mud volcanoes",
+        "Ateshgah Fire Temple and Yanardag burning hillside",
+        "Flame Towers and a photo stop at the Heydar Aliyev Center",
+        "An evening walk on Baku Boulevard by the Caspian Sea",
+        "Fixed weekend departures with a trip captain"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Baku | Old City and Boulevard",
+          "description": "Arrive early at Baku airport and meet your trip captain.\nTransfer to the hotel, check in as soon as the room is ready and freshen up.\nIn the afternoon walk through the walled Old City, Icheri Sheher, with its narrow lanes and the Maiden Tower area.\nIn the evening take a relaxed stroll along Baku Boulevard on the Caspian shore.\nOvernight stay in Baku."
+        },
+        {
+          "day": 2,
+          "title": "Gobustan Rock Art | Heydar Aliyev Center",
+          "description": "After breakfast, drive south from Baku to Gobustan.\nSee the ancient rock carvings in the open landscape and visit the nearby mud volcanoes.\nReturn to Baku and make a photo stop at the Heydar Aliyev Center.\nThe evening is free for dinner or a walk on Nizami Street.\nOvernight stay in Baku."
+        },
+        {
+          "day": 3,
+          "title": "Absheron Fire Sites | Flame Towers",
+          "description": "After breakfast, enjoy a slower morning at leisure.\nIn the afternoon drive to the Absheron peninsula to visit the Ateshgah Fire Temple.\nContinue to Yanardag, the burning hillside, which looks best as the light fades.\nReturn to the city for a last view of the Flame Towers lit up after dark.\nOvernight stay in Baku."
+        },
+        {
+          "day": 4,
+          "title": "Free Morning and Departure",
+          "description": "After breakfast, enjoy a free morning for last-minute shopping or a walk on the boulevard.\nCheck out from the hotel at the time confirmed by your trip captain.\nTransfer to Baku airport for your late flight home."
+        }
+      ],
+      "inclusions": [
+        "Three nights' hotel stay in Baku on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport and sightseeing transfers by private coach or van",
+        "Sightseeing in Baku, Gobustan and the Absheron peninsula as per the itinerary",
+        "Entry tickets for the sights listed in the itinerary, where applicable",
+        "A trip captain accompanying the group throughout",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights are not included and are not booked by us unless asked.",
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "This is a group departure that runs on minimum numbers; a trip captain accompanies the group.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Baku can be windy and Gobustan is open and exposed, so carry a light layer and sun protection."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter for European two-pin sockets (Type C/F)",
+        "Comfortable walking shoes",
+        "A light jacket or windcheater",
+        "Sunglasses, hat and sunscreen"
+      ],
+      "pickup": "Baku Heydar Aliyev International Airport",
+      "drop_point": "Baku Heydar Aliyev International Airport",
+      "photo": "gobustan-rock-art",
+      "gallery": [
+        "baku-old-city",
+        "gobustan-rock-art",
+        "flame-towers-baku",
+        "yanar-dag",
+        "baku-boulevard"
+      ],
+      "price": 26500,
+      "original_price": 28600,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
     }
   ]
 }

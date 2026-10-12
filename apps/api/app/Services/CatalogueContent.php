@@ -87,7 +87,7 @@ class CatalogueContent
             'packages.*.overview' => ['nullable', 'string', 'max:1500'],
             'packages.*.price' => ['nullable', 'array'],
             'packages.*.price.from' => ['required_with:packages.*.price', 'integer', 'min:5000', 'max:2000000'],
-            'group_trips' => ['present', 'array', 'max:3'],
+            'group_trips' => ['present', 'array', 'max:4'],
             'group_trips.*.slug' => ['required', 'string', 'regex:/^[a-z0-9-]+$/'],
             'group_trips.*.title' => $text(120),
             'group_trips.*.nights' => ['required', 'integer', 'min:2', 'max:15'],
@@ -162,9 +162,9 @@ class CatalogueContent
             }
         }
         foreach ((array) ($data['group_trips'] ?? []) as $g) {
-            $inGroupMenu = collect((array) ($data['categories'] ?? []))->contains(fn ($c) => ($c['menu'] ?? '') === 'group-tours' && in_array($g['slug'] ?? '', (array) ($c['packages'] ?? []), true));
+            $inGroupMenu = collect((array) ($data['categories'] ?? []))->contains(fn ($c) => in_array($c['menu'] ?? '', ['group-tours', 'weekend-escapes'], true) && in_array($g['slug'] ?? '', (array) ($c['packages'] ?? []), true));
             if (! $inGroupMenu) {
-                $errors[] = "Group trip \"{$g['slug']}\" is not in a category of the group-tours menu.";
+                $errors[] = "Group trip \"{$g['slug']}\" is not in a category of the group-tours or weekend-escapes menu.";
             }
         }
 

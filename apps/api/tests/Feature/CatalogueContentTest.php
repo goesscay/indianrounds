@@ -89,7 +89,7 @@ class CatalogueContentTest extends TestCase
 
         $errors = implode(' | ', (new CatalogueContent)->validate($data));
         $this->assertStringContainsString('"thailand-group" is not in any category of the destinations menu', $errors);
-        $this->assertStringContainsString('is not in a category of the group-tours menu', $errors);
+        $this->assertStringContainsString('is not in a category of the group-tours or weekend-escapes menu', $errors);
     }
 
     public function test_apply_writes_details_categories_group_trips_and_sample_pricing(): void

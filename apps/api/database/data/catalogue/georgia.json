@@ -1,18 +1,66 @@
 {
   "destination": "georgia",
   "photos": [
-    {"slot": "tbilisi-old-town", "query": "Tbilisi old town Georgia", "caption": "Tbilisi old town"},
-    {"slot": "narikala-fortress", "query": "Narikala Fortress Tbilisi", "caption": "Narikala Fortress above Tbilisi"},
-    {"slot": "bridge-of-peace", "query": "Bridge of Peace Tbilisi Georgia", "caption": "Bridge of Peace, Tbilisi"},
-    {"slot": "mtskheta-jvari", "query": "Jvari Monastery Mtskheta Georgia", "caption": "Jvari Monastery, Mtskheta"},
-    {"slot": "gergeti-trinity-church", "query": "Gergeti Trinity Church Kazbegi Georgia", "caption": "Gergeti Trinity Church, Kazbegi"},
-    {"slot": "ananuri-fortress", "query": "Ananuri Fortress Zhinvali Reservoir Georgia", "caption": "Ananuri Fortress"},
-    {"slot": "gudauri-mountains", "query": "Gudauri Caucasus mountains Georgia", "caption": "Mountains above Gudauri"},
-    {"slot": "sighnaghi", "query": "Sighnaghi town Kakheti Georgia", "caption": "Sighnaghi, the City of Love"},
-    {"slot": "kakheti-vineyards", "query": "Kakheti vineyards Alazani Valley Georgia", "caption": "Vineyards of Kakheti"},
-    {"slot": "bodbe-monastery", "query": "Bodbe Monastery Sighnaghi Georgia", "caption": "Bodbe Monastery"},
-    {"slot": "batumi-boulevard", "query": "Batumi Boulevard Black Sea Georgia", "caption": "Batumi seafront"},
-    {"slot": "georgian-food", "query": "khachapuri khinkali Georgian food Tbilisi", "caption": "Georgian khachapuri and khinkali"}
+    {
+      "slot": "tbilisi-old-town",
+      "query": "Tbilisi old town Georgia",
+      "caption": "Tbilisi old town"
+    },
+    {
+      "slot": "narikala-fortress",
+      "query": "Narikala Fortress Tbilisi",
+      "caption": "Narikala Fortress above Tbilisi"
+    },
+    {
+      "slot": "bridge-of-peace",
+      "query": "Bridge of Peace Tbilisi Georgia",
+      "caption": "Bridge of Peace, Tbilisi"
+    },
+    {
+      "slot": "mtskheta-jvari",
+      "query": "Jvari Monastery Mtskheta Georgia",
+      "caption": "Jvari Monastery, Mtskheta"
+    },
+    {
+      "slot": "gergeti-trinity-church",
+      "query": "Gergeti Trinity Church Kazbegi Georgia",
+      "caption": "Gergeti Trinity Church, Kazbegi"
+    },
+    {
+      "slot": "ananuri-fortress",
+      "query": "Ananuri Fortress Zhinvali Reservoir Georgia",
+      "caption": "Ananuri Fortress"
+    },
+    {
+      "slot": "gudauri-mountains",
+      "query": "Gudauri Caucasus mountains Georgia",
+      "caption": "Mountains above Gudauri"
+    },
+    {
+      "slot": "sighnaghi",
+      "query": "Sighnaghi town Kakheti Georgia",
+      "caption": "Sighnaghi, the City of Love"
+    },
+    {
+      "slot": "kakheti-vineyards",
+      "query": "Kakheti vineyards Alazani Valley Georgia",
+      "caption": "Vineyards of Kakheti"
+    },
+    {
+      "slot": "bodbe-monastery",
+      "query": "Bodbe Monastery Sighnaghi Georgia",
+      "caption": "Bodbe Monastery"
+    },
+    {
+      "slot": "batumi-boulevard",
+      "query": "Batumi Boulevard Black Sea Georgia",
+      "caption": "Batumi seafront"
+    },
+    {
+      "slot": "georgian-food",
+      "query": "khachapuri khinkali Georgian food Tbilisi",
+      "caption": "Georgian khachapuri and khinkali"
+    }
   ],
   "hero": "tbilisi-old-town",
   "categories": [
@@ -22,7 +70,11 @@
       "name": "Classic Georgia Packages",
       "description": "Our core four-night holidays covering Tbilisi, the mountains around Kazbegi and Gudauri, and the wine country of Kakheti.",
       "photo": "gergeti-trinity-church",
-      "packages": ["classic-georgia", "simply-georgia"]
+      "packages": [
+        "classic-georgia",
+        "simply-georgia",
+        "georgia-tbilisi-kazbegi-weekend-escape"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +82,10 @@
       "name": "Seasonal Specials",
       "description": "Georgia in its best seasonal colours: the golden autumn vineyards of Kakheti and the snow of the Caucasus in winter.",
       "photo": "kakheti-vineyards",
-      "packages": ["autumn-georgia", "winter-georgia"]
+      "packages": [
+        "autumn-georgia",
+        "winter-georgia"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +93,9 @@
       "name": "Budget Saver and Offers",
       "description": "A city-focused Georgia holiday with a Buy 1 Get 1 Free offer, ideal for couples and friends travelling together.",
       "photo": "bridge-of-peace",
-      "packages": ["georgia-buy-1-get-1-free"]
+      "packages": [
+        "georgia-buy-1-get-1-free"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +103,10 @@
       "name": "Escorted Group Journeys",
       "description": "Fixed-departure trips with a trip captain, covering more of Georgia at a relaxed pace, from the Caucasus peaks to the Black Sea coast.",
       "photo": "mtskheta-jvari",
-      "packages": ["georgia-highlands-kazbegi-group-trip", "georgia-wine-country-batumi-group-trip"]
+      "packages": [
+        "georgia-highlands-kazbegi-group-trip",
+        "georgia-wine-country-batumi-group-trip"
+      ]
     },
     {
       "menu": "group-tours",
@@ -54,7 +114,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Join a small group of fellow Indian travellers on a scheduled Georgia departure, accompanied by a trip captain throughout.",
       "photo": "sighnaghi",
-      "packages": ["georgia-highlands-kazbegi-group-trip", "georgia-wine-country-batumi-group-trip"]
+      "packages": [
+        "georgia-highlands-kazbegi-group-trip",
+        "georgia-wine-country-batumi-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -62,7 +125,22 @@
       "name": "Romantic Escapes",
       "description": "Georgia for couples: candlelit old-town evenings in Tbilisi, mountain views and unhurried wine country afternoons.",
       "photo": "narikala-fortress",
-      "packages": ["classic-georgia", "simply-georgia", "autumn-georgia", "winter-georgia"]
+      "packages": [
+        "classic-georgia",
+        "simply-georgia",
+        "autumn-georgia",
+        "winter-georgia"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "Short three-night breaks from Tbilisi for a long weekend, with fixed Friday departures and a trip captain.",
+      "photo": "tbilisi-old-town",
+      "packages": [
+        "georgia-tbilisi-kazbegi-weekend-escape"
+      ]
     }
   ],
   "packages": [
@@ -122,8 +200,15 @@
       "pickup": "Tbilisi International Airport",
       "drop_point": "Tbilisi International Airport",
       "photo": "gergeti-trinity-church",
-      "gallery": ["mtskheta-jvari", "ananuri-fortress", "sighnaghi", "tbilisi-old-town"],
-      "price": {"from": 46500}
+      "gallery": [
+        "mtskheta-jvari",
+        "ananuri-fortress",
+        "sighnaghi",
+        "tbilisi-old-town"
+      ],
+      "price": {
+        "from": 46500
+      }
     },
     {
       "slug": "simply-georgia",
@@ -182,8 +267,15 @@
       "pickup": "Tbilisi International Airport",
       "drop_point": "Tbilisi International Airport",
       "photo": "narikala-fortress",
-      "gallery": ["tbilisi-old-town", "bridge-of-peace", "bodbe-monastery", "gudauri-mountains"],
-      "price": {"from": 43500}
+      "gallery": [
+        "tbilisi-old-town",
+        "bridge-of-peace",
+        "bodbe-monastery",
+        "gudauri-mountains"
+      ],
+      "price": {
+        "from": 43500
+      }
     },
     {
       "slug": "autumn-georgia",
@@ -235,7 +327,11 @@
       "pickup": "Tbilisi International Airport",
       "drop_point": "Tbilisi International Airport",
       "photo": "kakheti-vineyards",
-      "gallery": ["tbilisi-old-town", "sighnaghi", "georgian-food"]
+      "gallery": [
+        "tbilisi-old-town",
+        "sighnaghi",
+        "georgian-food"
+      ]
     },
     {
       "slug": "winter-georgia",
@@ -288,7 +384,11 @@
       "pickup": "Tbilisi International Airport",
       "drop_point": "Tbilisi International Airport",
       "photo": "gudauri-mountains",
-      "gallery": ["tbilisi-old-town", "gergeti-trinity-church", "georgian-food"]
+      "gallery": [
+        "tbilisi-old-town",
+        "gergeti-trinity-church",
+        "georgian-food"
+      ]
     },
     {
       "slug": "georgia-buy-1-get-1-free",
@@ -345,7 +445,12 @@
       "pickup": "Tbilisi International Airport",
       "drop_point": "Tbilisi International Airport",
       "photo": "bridge-of-peace",
-      "gallery": ["narikala-fortress", "sighnaghi", "bodbe-monastery", "tbilisi-old-town"]
+      "gallery": [
+        "narikala-fortress",
+        "sighnaghi",
+        "bodbe-monastery",
+        "tbilisi-old-town"
+      ]
     }
   ],
   "group_trips": [
@@ -448,10 +553,20 @@
       "pickup": "Tbilisi International Airport",
       "drop_point": "Tbilisi International Airport",
       "photo": "gergeti-trinity-church",
-      "gallery": ["ananuri-fortress", "mtskheta-jvari", "sighnaghi", "tbilisi-old-town"],
+      "gallery": [
+        "ananuri-fortress",
+        "mtskheta-jvari",
+        "sighnaghi",
+        "tbilisi-old-town"
+      ],
       "price": 54900,
       "original_price": 59900,
-      "departures": {"weekday": 5, "count": 6, "every_weeks": 2, "capacity": 20}
+      "departures": {
+        "weekday": 5,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 20
+      }
     },
     {
       "slug": "georgia-wine-country-batumi-group-trip",
@@ -557,10 +672,116 @@
       "pickup": "Tbilisi International Airport",
       "drop_point": "Tbilisi International Airport",
       "photo": "batumi-boulevard",
-      "gallery": ["tbilisi-old-town", "kakheti-vineyards", "bodbe-monastery", "mtskheta-jvari"],
+      "gallery": [
+        "tbilisi-old-town",
+        "kakheti-vineyards",
+        "bodbe-monastery",
+        "mtskheta-jvari"
+      ],
       "price": 64900,
       "original_price": 69900,
-      "departures": {"weekday": 6, "count": 5, "every_weeks": 3, "capacity": 18}
+      "departures": {
+        "weekday": 6,
+        "count": 5,
+        "every_weeks": 3,
+        "capacity": 18
+      }
+    },
+    {
+      "slug": "georgia-tbilisi-kazbegi-weekend-escape",
+      "title": "Georgia Weekend Escape: Tbilisi, Mtskheta and Kazbegi",
+      "nights": 3,
+      "summary": "A three-night long-weekend escape to Georgia: Tbilisi's old town, ancient Mtskheta and a day in the Kazbegi mountains, with a trip captain and Friday departures.",
+      "overview": "This short escorted break packs the best of Georgia into a long weekend without rushing. You stay three nights in Tbilisi, so there is no packing and unpacking, and head out from the capital each day with a trip captain and a small group.\n\nOne day covers the old town, the Bridge of Peace and the cable car up to Narikala Fortress, followed by an afternoon in Mtskheta with Jvari Monastery and Svetitskhoveli Cathedral. The next takes the Georgian Military Highway to Ananuri Fortress, Gudauri and the Gergeti Trinity Church beneath the Caucasus peaks, with time left on the last morning for a cafe breakfast and some shopping.",
+      "highlights": [
+        "Guided Tbilisi tour with the cable car to Narikala Fortress",
+        "Mtskheta, with Jvari Monastery and Svetitskhoveli Cathedral",
+        "A full day on the Georgian Military Highway to Kazbegi",
+        "Ananuri Fortress, Gudauri and the Gergeti Trinity Church",
+        "Three nights in one Tbilisi hotel, with no hotel changes",
+        "A trip captain with the group throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Tbilisi | Old Town Evening",
+          "description": "Arrive at Tbilisi International Airport, where you are met and transferred to your hotel.\nCheck in, freshen up and meet your trip captain and fellow travellers.\nTake an easy evening walk through the old town streets and across the Bridge of Peace.\nSettle in for a Georgian dinner of khachapuri or khinkali, with Indian meal options on request.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 2,
+          "title": "Tbilisi City Tour | Mtskheta",
+          "description": "After breakfast, set out on a guided tour of Tbilisi, including the old town and the Sulphur Baths area.\nStroll through Rike Park and take the cable car up to Narikala Fortress for views over the city.\nIn the afternoon, drive to nearby Mtskheta, one of the oldest towns in Georgia.\nVisit Jvari Monastery and Svetitskhoveli Cathedral, then return to Tbilisi.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 3,
+          "title": "Ananuri | Gudauri | Kazbegi Day Trip",
+          "description": "After an early breakfast, drive north along the Georgian Military Highway.\nStop at Ananuri Fortress beside the Zhinvali Reservoir and at the mountain viewpoints around Gudauri.\nContinue to Kazbegi (Stepantsminda) and travel up to the Gergeti Trinity Church, weather and road conditions permitting.\nTake in the Caucasus peaks, then head back to Tbilisi with comfort stops on the way.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 4,
+          "title": "Free Morning | Departure from Tbilisi",
+          "description": "Enjoy a relaxed breakfast and check out of your hotel.\nUse the free morning for a last walk, a cafe stop or some shopping in the old town.\nTransfer to Tbilisi International Airport in time for your flight home.\nDepart Georgia with wonderful memories."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 3 nights in Tbilisi",
+        "Daily breakfast",
+        "Indian vegetarian and Jain meal options on request, subject to availability",
+        "A trip captain accompanying the group throughout",
+        "Airport and inter-city transfers by private vehicle with the group",
+        "Guided Tbilisi city tour with cable car ride to Narikala Fortress",
+        "Excursions to Mtskheta, Ananuri, Gudauri and Kazbegi as per itinerary",
+        "Entry tickets and activities listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Georgia visa fees and processing",
+        "Travel insurance",
+        "Lunches, dinners and other meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights are not included and are not booked by us unless asked.",
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; a trip captain accompanies the group.",
+        "The Kazbegi day involves several hours on mountain roads, which can be affected by snow, rain or landslides, particularly in winter and spring.",
+        "Dress modestly at churches and monasteries; shoulders and knees should be covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C or F, two round pins)",
+        "Warm layers and a windproof jacket for Kazbegi",
+        "Comfortable walking shoes",
+        "Modest clothing for churches and monasteries"
+      ],
+      "pickup": "Tbilisi International Airport",
+      "drop_point": "Tbilisi International Airport",
+      "photo": "tbilisi-old-town",
+      "gallery": [
+        "gergeti-trinity-church",
+        "mtskheta-jvari",
+        "narikala-fortress",
+        "ananuri-fortress"
+      ],
+      "price": 30900,
+      "original_price": 33400,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
     }
   ]
 }

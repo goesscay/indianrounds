@@ -1,18 +1,66 @@
 {
   "destination": "thailand",
   "photos": [
-    {"slot": "grand-palace-bangkok", "query": "Grand Palace Bangkok Thailand", "caption": "The Grand Palace, Bangkok"},
-    {"slot": "golden-buddha-bangkok", "query": "Wat Traimit Golden Buddha Bangkok Thailand", "caption": "The Golden Buddha, Bangkok"},
-    {"slot": "coral-island-pattaya", "query": "Koh Larn Coral Island Pattaya Thailand", "caption": "Coral Island, off Pattaya"},
-    {"slot": "nong-nooch-pattaya", "query": "Nong Nooch Tropical Garden Pattaya Thailand", "caption": "Nong Nooch gardens, Pattaya"},
-    {"slot": "safari-world-bangkok", "query": "Safari World Bangkok Thailand", "caption": "Safari World, Bangkok"},
-    {"slot": "phuket-old-town", "query": "Phuket Old Town Sino-Portuguese shophouses Thailand", "caption": "Phuket Old Town"},
-    {"slot": "big-buddha-phuket", "query": "Big Buddha Phuket Thailand", "caption": "The Big Buddha, Phuket"},
-    {"slot": "phi-phi-islands", "query": "Phi Phi Islands Maya Bay Thailand", "caption": "The Phi Phi Islands"},
-    {"slot": "railay-beach-krabi", "query": "Railay Beach Krabi Thailand", "caption": "Railay Beach, Krabi"},
-    {"slot": "doi-suthep-chiang-mai", "query": "Wat Phra That Doi Suthep Chiang Mai Thailand", "caption": "Doi Suthep temple, Chiang Mai"},
-    {"slot": "elephant-sanctuary-chiang-mai", "query": "elephants sanctuary Chiang Mai Thailand", "caption": "An elephant sanctuary near Chiang Mai"},
-    {"slot": "thai-street-food", "query": "Thai street food market Bangkok Thailand", "caption": "Street food in Bangkok"}
+    {
+      "slot": "grand-palace-bangkok",
+      "query": "Grand Palace Bangkok Thailand",
+      "caption": "The Grand Palace, Bangkok"
+    },
+    {
+      "slot": "golden-buddha-bangkok",
+      "query": "Wat Traimit Golden Buddha Bangkok Thailand",
+      "caption": "The Golden Buddha, Bangkok"
+    },
+    {
+      "slot": "coral-island-pattaya",
+      "query": "Koh Larn Coral Island Pattaya Thailand",
+      "caption": "Coral Island, off Pattaya"
+    },
+    {
+      "slot": "nong-nooch-pattaya",
+      "query": "Nong Nooch Tropical Garden Pattaya Thailand",
+      "caption": "Nong Nooch gardens, Pattaya"
+    },
+    {
+      "slot": "safari-world-bangkok",
+      "query": "Safari World Bangkok Thailand",
+      "caption": "Safari World, Bangkok"
+    },
+    {
+      "slot": "phuket-old-town",
+      "query": "Phuket Old Town Sino-Portuguese shophouses Thailand",
+      "caption": "Phuket Old Town"
+    },
+    {
+      "slot": "big-buddha-phuket",
+      "query": "Big Buddha Phuket Thailand",
+      "caption": "The Big Buddha, Phuket"
+    },
+    {
+      "slot": "phi-phi-islands",
+      "query": "Phi Phi Islands Maya Bay Thailand",
+      "caption": "The Phi Phi Islands"
+    },
+    {
+      "slot": "railay-beach-krabi",
+      "query": "Railay Beach Krabi Thailand",
+      "caption": "Railay Beach, Krabi"
+    },
+    {
+      "slot": "doi-suthep-chiang-mai",
+      "query": "Wat Phra That Doi Suthep Chiang Mai Thailand",
+      "caption": "Doi Suthep temple, Chiang Mai"
+    },
+    {
+      "slot": "elephant-sanctuary-chiang-mai",
+      "query": "elephants sanctuary Chiang Mai Thailand",
+      "caption": "An elephant sanctuary near Chiang Mai"
+    },
+    {
+      "slot": "thai-street-food",
+      "query": "Thai street food market Bangkok Thailand",
+      "caption": "Street food in Bangkok"
+    }
   ],
   "hero": "phi-phi-islands",
   "categories": [
@@ -22,7 +70,13 @@
       "name": "Classic Packages",
       "description": "Tried-and-tested Thailand itineraries covering Bangkok, Pattaya and the Andaman coast, with hotels, transfers and sightseeing arranged for you.",
       "photo": "grand-palace-bangkok",
-      "packages": ["simply-thailand", "simply-thailand-fully-loaded", "simply-krabi-and-phuket", "thailand-bangkok-chiang-mai-group-trip"]
+      "packages": [
+        "simply-thailand",
+        "simply-thailand-fully-loaded",
+        "simply-krabi-and-phuket",
+        "thailand-bangkok-chiang-mai-group-trip",
+        "thailand-bangkok-pattaya-weekend-escape"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +84,12 @@
       "name": "Beaches and Islands",
       "description": "Phuket, Krabi and the Phi Phi Islands: boat days, island lagoons and plenty of time on the sand.",
       "photo": "phi-phi-islands",
-      "packages": ["phuket-buy-1-get-1-free", "phuket-special-offer", "simply-krabi-and-phuket", "thailand-phuket-krabi-group-trip"]
+      "packages": [
+        "phuket-buy-1-get-1-free",
+        "phuket-special-offer",
+        "simply-krabi-and-phuket",
+        "thailand-phuket-krabi-group-trip"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +97,10 @@
       "name": "Family Holidays",
       "description": "Easy-paced trips with shows, animal parks and island days that children and grandparents can enjoy together.",
       "photo": "safari-world-bangkok",
-      "packages": ["simply-thailand", "simply-thailand-fully-loaded"]
+      "packages": [
+        "simply-thailand",
+        "simply-thailand-fully-loaded"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +108,10 @@
       "name": "Special Offers",
       "description": "Limited-period Phuket offers. Request a quote to confirm current terms and available dates.",
       "photo": "big-buddha-phuket",
-      "packages": ["phuket-buy-1-get-1-free", "phuket-special-offer"]
+      "packages": [
+        "phuket-buy-1-get-1-free",
+        "phuket-special-offer"
+      ]
     },
     {
       "menu": "group-tours",
@@ -54,7 +119,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Join a small group on a fixed date with a trip captain, ready-made itinerary and Indian meal options on request.",
       "photo": "railay-beach-krabi",
-      "packages": ["thailand-phuket-krabi-group-trip", "thailand-bangkok-chiang-mai-group-trip"]
+      "packages": [
+        "thailand-phuket-krabi-group-trip",
+        "thailand-bangkok-chiang-mai-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -62,7 +130,21 @@
       "name": "Romantic Escapes",
       "description": "Beach stays in Phuket and Krabi for couples who want sea views, unhurried days and time together.",
       "photo": "railay-beach-krabi",
-      "packages": ["simply-krabi-and-phuket", "phuket-buy-1-get-1-free", "phuket-special-offer"]
+      "packages": [
+        "simply-krabi-and-phuket",
+        "phuket-buy-1-get-1-free",
+        "phuket-special-offer"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "Short Thailand breaks built around a long weekend, with early arrivals, a relaxed pace and a trip captain on every departure.",
+      "photo": "coral-island-pattaya",
+      "packages": [
+        "thailand-bangkok-pattaya-weekend-escape"
+      ]
     }
   ],
   "packages": [
@@ -120,7 +202,11 @@
       "pickup": "Phuket Airport",
       "drop_point": "Phuket Airport",
       "photo": "phi-phi-islands",
-      "gallery": ["phuket-old-town", "big-buddha-phuket", "railay-beach-krabi"]
+      "gallery": [
+        "phuket-old-town",
+        "big-buddha-phuket",
+        "railay-beach-krabi"
+      ]
     },
     {
       "slug": "simply-thailand",
@@ -176,8 +262,14 @@
       "pickup": "Bangkok Airport",
       "drop_point": "Bangkok Airport",
       "photo": "coral-island-pattaya",
-      "gallery": ["golden-buddha-bangkok", "grand-palace-bangkok", "thai-street-food"],
-      "price": {"from": 29500}
+      "gallery": [
+        "golden-buddha-bangkok",
+        "grand-palace-bangkok",
+        "thai-street-food"
+      ],
+      "price": {
+        "from": 29500
+      }
     },
     {
       "slug": "simply-thailand-fully-loaded",
@@ -238,8 +330,15 @@
       "pickup": "Bangkok Airport",
       "drop_point": "Bangkok Airport",
       "photo": "nong-nooch-pattaya",
-      "gallery": ["safari-world-bangkok", "coral-island-pattaya", "golden-buddha-bangkok", "thai-street-food"],
-      "price": {"from": 38500}
+      "gallery": [
+        "safari-world-bangkok",
+        "coral-island-pattaya",
+        "golden-buddha-bangkok",
+        "thai-street-food"
+      ],
+      "price": {
+        "from": 38500
+      }
     },
     {
       "slug": "phuket-special-offer",
@@ -291,7 +390,10 @@
       "pickup": "Phuket Airport",
       "drop_point": "Phuket Airport",
       "photo": "big-buddha-phuket",
-      "gallery": ["phi-phi-islands", "phuket-old-town"]
+      "gallery": [
+        "phi-phi-islands",
+        "phuket-old-town"
+      ]
     },
     {
       "slug": "simply-krabi-and-phuket",
@@ -343,8 +445,14 @@
       "pickup": "Phuket or Krabi Airport, as per the confirmed itinerary",
       "drop_point": "Phuket or Krabi Airport, as per the confirmed itinerary",
       "photo": "railay-beach-krabi",
-      "gallery": ["phi-phi-islands", "big-buddha-phuket", "phuket-old-town"],
-      "price": {"from": 36500}
+      "gallery": [
+        "phi-phi-islands",
+        "big-buddha-phuket",
+        "phuket-old-town"
+      ],
+      "price": {
+        "from": 36500
+      }
     }
   ],
   "group_trips": [
@@ -448,10 +556,19 @@
       "pickup": "Phuket Airport",
       "drop_point": "Krabi Airport",
       "photo": "phi-phi-islands",
-      "gallery": ["phuket-old-town", "big-buddha-phuket", "railay-beach-krabi"],
+      "gallery": [
+        "phuket-old-town",
+        "big-buddha-phuket",
+        "railay-beach-krabi"
+      ],
       "price": 41500,
       "original_price": 46500,
-      "departures": {"weekday": 5, "count": 5, "every_weeks": 2, "capacity": 24}
+      "departures": {
+        "weekday": 5,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 24
+      }
     },
     {
       "slug": "thailand-bangkok-chiang-mai-group-trip",
@@ -551,10 +668,117 @@
       "pickup": "Bangkok Airport",
       "drop_point": "Bangkok Airport",
       "photo": "doi-suthep-chiang-mai",
-      "gallery": ["grand-palace-bangkok", "elephant-sanctuary-chiang-mai", "thai-street-food"],
+      "gallery": [
+        "grand-palace-bangkok",
+        "elephant-sanctuary-chiang-mai",
+        "thai-street-food"
+      ],
       "price": 44900,
       "original_price": 49900,
-      "departures": {"weekday": 6, "count": 4, "every_weeks": 3, "capacity": 20}
+      "departures": {
+        "weekday": 6,
+        "count": 4,
+        "every_weeks": 3,
+        "capacity": 20
+      }
+    },
+    {
+      "slug": "thailand-bangkok-pattaya-weekend-escape",
+      "title": "Thailand Weekend Escape: Pattaya Islands, Gardens and Bangkok Temples",
+      "nights": 3,
+      "summary": "A relaxed long weekend in Thailand with a Coral Island speedboat day, Nong Nooch gardens, Bangkok's Golden Buddha and the Grand Palace, travelling in a small group.",
+      "overview": "This long-weekend trip fits the best of Pattaya and Bangkok into four easy days. You land in Bangkok, drive to the beach resort of Pattaya for two nights, and then return to the capital for its temples and street food before an evening flight home.\n\nThe pace is deliberately gentle, with one or two headline sights a day and time to unwind. A trip captain travels with the group, and Indian meal options are available on request.",
+      "highlights": [
+        "Speedboat trip to Coral Island off Pattaya",
+        "Nong Nooch Tropical Garden near Pattaya",
+        "Wat Traimit and its solid Golden Buddha in Bangkok",
+        "A morning at the Grand Palace",
+        "Street food and an evening stroll in Bangkok's Chinatown",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bangkok | Drive to Pattaya",
+          "description": "Arrive at Bangkok Suvarnabhumi Airport and meet your trip captain.\nTransfer by road to Pattaya, around two hours away.\nCheck in at your hotel and relax after the journey.\nStroll along the beachfront in the evening or simply rest.\nOvernight stay in Pattaya."
+        },
+        {
+          "day": 2,
+          "title": "Coral Island by Speedboat | Free Evening",
+          "description": "After breakfast, take a speedboat from Pattaya to Coral Island.\nSpend the day on the island's beaches, with lunch included.\nWater sports are available locally at your own cost.\nReturn to Pattaya and enjoy a free evening.\nOvernight stay in Pattaya."
+        },
+        {
+          "day": 3,
+          "title": "Nong Nooch Gardens | Bangkok Golden Buddha",
+          "description": "After breakfast, visit Nong Nooch Tropical Garden for its landscaped gardens and shows.\nCheck out and drive to Bangkok, around two hours away.\nVisit Wat Traimit to see the solid Golden Buddha.\nWalk through Chinatown for an evening of Thai street food.\nOvernight stay in Bangkok."
+        },
+        {
+          "day": 4,
+          "title": "The Grand Palace | Departure",
+          "description": "After breakfast, visit the Grand Palace and its nearby temples with your trip captain.\nCheck out and enjoy some free time for last-minute shopping.\nTransfer to Bangkok Suvarnabhumi Airport for your late departure flight."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Pattaya on twin sharing",
+        "1 night hotel accommodation in Bangkok on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Road transfers between Bangkok and Pattaya",
+        "Coral Island speedboat tour with lunch",
+        "Entry to Nong Nooch Tropical Garden",
+        "Sightseeing in Bangkok as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and water sports",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights are not included and are not booked by us unless asked.",
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group throughout.",
+        "Dress modestly at the Grand Palace and temples, with shoulders and knees covered.",
+        "Boat trips depend on sea conditions and may be rescheduled or altered for safety."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Bangkok Suvarnabhumi Airport",
+      "drop_point": "Bangkok Suvarnabhumi Airport",
+      "photo": "coral-island-pattaya",
+      "gallery": [
+        "grand-palace-bangkok",
+        "golden-buddha-bangkok",
+        "nong-nooch-pattaya",
+        "thai-street-food"
+      ],
+      "price": 19500,
+      "original_price": 21100,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
     }
   ]
 }

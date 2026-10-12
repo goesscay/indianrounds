@@ -1,18 +1,66 @@
 {
   "destination": "singapore",
   "photos": [
-    {"slot": "marina-bay-sands", "query": "Marina Bay Sands Singapore skyline", "caption": "Marina Bay Sands and the Singapore skyline"},
-    {"slot": "gardens-by-the-bay", "query": "Gardens by the Bay Supertree Grove Singapore", "caption": "Supertree Grove at Gardens by the Bay"},
-    {"slot": "merlion-park", "query": "Merlion Park Singapore", "caption": "The Merlion at Marina Bay"},
-    {"slot": "sentosa-island", "query": "Sentosa Island Singapore", "caption": "Sentosa Island"},
-    {"slot": "chinatown-singapore", "query": "Chinatown Singapore Buddha Tooth Relic Temple", "caption": "Chinatown, Singapore"},
-    {"slot": "mandai-bird-paradise", "query": "Mandai Bird Paradise Singapore", "caption": "Mandai Bird Paradise"},
-    {"slot": "petronas-twin-towers", "query": "Petronas Twin Towers Kuala Lumpur Malaysia", "caption": "Petronas Twin Towers, Kuala Lumpur"},
-    {"slot": "batu-caves", "query": "Batu Caves Kuala Lumpur Malaysia", "caption": "Batu Caves near Kuala Lumpur"},
-    {"slot": "genting-highlands", "query": "Genting Highlands cable car Malaysia", "caption": "Genting Highlands"},
-    {"slot": "putrajaya", "query": "Putra Mosque Putrajaya Malaysia", "caption": "Putrajaya"},
-    {"slot": "malacca-stadthuys", "query": "Stadthuys Red Square Malacca Malaysia", "caption": "Historic Malacca"},
-    {"slot": "coral-island-pattaya", "query": "Coral Island Koh Larn Pattaya Thailand", "caption": "Coral Island, Pattaya"}
+    {
+      "slot": "marina-bay-sands",
+      "query": "Marina Bay Sands Singapore skyline",
+      "caption": "Marina Bay Sands and the Singapore skyline"
+    },
+    {
+      "slot": "gardens-by-the-bay",
+      "query": "Gardens by the Bay Supertree Grove Singapore",
+      "caption": "Supertree Grove at Gardens by the Bay"
+    },
+    {
+      "slot": "merlion-park",
+      "query": "Merlion Park Singapore",
+      "caption": "The Merlion at Marina Bay"
+    },
+    {
+      "slot": "sentosa-island",
+      "query": "Sentosa Island Singapore",
+      "caption": "Sentosa Island"
+    },
+    {
+      "slot": "chinatown-singapore",
+      "query": "Chinatown Singapore Buddha Tooth Relic Temple",
+      "caption": "Chinatown, Singapore"
+    },
+    {
+      "slot": "mandai-bird-paradise",
+      "query": "Mandai Bird Paradise Singapore",
+      "caption": "Mandai Bird Paradise"
+    },
+    {
+      "slot": "petronas-twin-towers",
+      "query": "Petronas Twin Towers Kuala Lumpur Malaysia",
+      "caption": "Petronas Twin Towers, Kuala Lumpur"
+    },
+    {
+      "slot": "batu-caves",
+      "query": "Batu Caves Kuala Lumpur Malaysia",
+      "caption": "Batu Caves near Kuala Lumpur"
+    },
+    {
+      "slot": "genting-highlands",
+      "query": "Genting Highlands cable car Malaysia",
+      "caption": "Genting Highlands"
+    },
+    {
+      "slot": "putrajaya",
+      "query": "Putra Mosque Putrajaya Malaysia",
+      "caption": "Putrajaya"
+    },
+    {
+      "slot": "malacca-stadthuys",
+      "query": "Stadthuys Red Square Malacca Malaysia",
+      "caption": "Historic Malacca"
+    },
+    {
+      "slot": "coral-island-pattaya",
+      "query": "Coral Island Koh Larn Pattaya Thailand",
+      "caption": "Coral Island, Pattaya"
+    }
   ],
   "hero": "marina-bay-sands",
   "categories": [
@@ -22,7 +70,11 @@
       "name": "Classic Singapore Packages",
       "description": "Singapore on its own, with a guided city tour, Gardens by the Bay and Sentosa. A good first trip for families and friends who want an easy, well-connected city break.",
       "photo": "gardens-by-the-bay",
-      "packages": ["value-singapore", "singapore-sentosa-gardens-group-trip"]
+      "packages": [
+        "value-singapore",
+        "singapore-sentosa-gardens-group-trip",
+        "singapore-city-sentosa-weekend-escape"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +82,11 @@
       "name": "Singapore and Malaysia Combos",
       "description": "Kuala Lumpur and Singapore in one holiday, linked by a scenic road transfer. Twin Towers, Batu Caves and Genting Highlands, then Gardens by the Bay and city sights.",
       "photo": "petronas-twin-towers",
-      "packages": ["value-malaysia-singapore", "cost-saver-malaysia-singapore", "singapore-malaysia-kuala-lumpur-group-trip"]
+      "packages": [
+        "value-malaysia-singapore",
+        "cost-saver-malaysia-singapore",
+        "singapore-malaysia-kuala-lumpur-group-trip"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +94,10 @@
       "name": "Thailand, Malaysia and Singapore Circuits",
       "description": "Three countries over ten nights, from Pattaya's beaches and shows to Kuala Lumpur and Singapore. The best value way to see South-East Asia in a single trip.",
       "photo": "coral-island-pattaya",
-      "packages": ["value-thailand-malaysia-singapore", "premium-thailand-malaysia-singapore"]
+      "packages": [
+        "value-thailand-malaysia-singapore",
+        "premium-thailand-malaysia-singapore"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +105,11 @@
       "name": "Budget Saver Packages",
       "description": "Our value-priced Singapore and Malaysia packages, keeping the key sights and leaving room for optional extras such as Universal Studios or the Oceanarium.",
       "photo": "marina-bay-sands",
-      "packages": ["value-singapore", "cost-saver-malaysia-singapore", "value-malaysia-singapore"]
+      "packages": [
+        "value-singapore",
+        "cost-saver-malaysia-singapore",
+        "value-malaysia-singapore"
+      ]
     },
     {
       "menu": "destinations",
@@ -54,7 +117,11 @@
       "name": "Family Holidays",
       "description": "Packages with bird parks, cable cars, theme-park options and easy city days, suited to children and grandparents alike.",
       "photo": "mandai-bird-paradise",
-      "packages": ["value-singapore", "value-malaysia-singapore", "singapore-sentosa-gardens-group-trip"]
+      "packages": [
+        "value-singapore",
+        "value-malaysia-singapore",
+        "singapore-sentosa-gardens-group-trip"
+      ]
     },
     {
       "menu": "group-tours",
@@ -62,7 +129,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Small-group Singapore and Malaysia departures with a trip captain, fixed dates and Indian meal options on request.",
       "photo": "sentosa-island",
-      "packages": ["singapore-sentosa-gardens-group-trip", "singapore-malaysia-kuala-lumpur-group-trip"]
+      "packages": [
+        "singapore-sentosa-gardens-group-trip",
+        "singapore-malaysia-kuala-lumpur-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -70,7 +140,21 @@
       "name": "Romantic Escapes",
       "description": "Light-filled evenings at Gardens by the Bay, cable car rides and unhurried days, with the option to add Kuala Lumpur or Thailand.",
       "photo": "gardens-by-the-bay",
-      "packages": ["value-singapore", "value-malaysia-singapore", "premium-thailand-malaysia-singapore"]
+      "packages": [
+        "value-singapore",
+        "value-malaysia-singapore",
+        "premium-thailand-malaysia-singapore"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short, easy Singapore break from Friday to Monday, with fixed departures most weekends and a trip captain. Ideal when you have a long weekend and want the best of the city without rushing.",
+      "photo": "marina-bay-sands",
+      "packages": [
+        "singapore-city-sentosa-weekend-escape"
+      ]
     }
   ],
   "packages": [
@@ -126,8 +210,14 @@
       "pickup": "Arrival airport in Thailand, as confirmed at booking",
       "drop_point": "Singapore, as confirmed at booking",
       "photo": "coral-island-pattaya",
-      "gallery": ["petronas-twin-towers", "marina-bay-sands", "gardens-by-the-bay"],
-      "price": {"from": 82000}
+      "gallery": [
+        "petronas-twin-towers",
+        "marina-bay-sands",
+        "gardens-by-the-bay"
+      ],
+      "price": {
+        "from": 82000
+      }
     },
     {
       "slug": "premium-thailand-malaysia-singapore",
@@ -185,7 +275,11 @@
       "pickup": "Bangkok airport, Thailand",
       "drop_point": "Singapore Changi Airport",
       "photo": "coral-island-pattaya",
-      "gallery": ["petronas-twin-towers", "marina-bay-sands", "gardens-by-the-bay"]
+      "gallery": [
+        "petronas-twin-towers",
+        "marina-bay-sands",
+        "gardens-by-the-bay"
+      ]
     },
     {
       "slug": "value-malaysia-singapore",
@@ -243,7 +337,11 @@
       "pickup": "Kuala Lumpur International Airport (KLIA), Malaysia",
       "drop_point": "Singapore Changi Airport",
       "photo": "putrajaya",
-      "gallery": ["genting-highlands", "batu-caves", "gardens-by-the-bay"]
+      "gallery": [
+        "genting-highlands",
+        "batu-caves",
+        "gardens-by-the-bay"
+      ]
     },
     {
       "slug": "value-singapore",
@@ -301,8 +399,15 @@
       "pickup": "Singapore Changi Airport",
       "drop_point": "Singapore Changi Airport",
       "photo": "gardens-by-the-bay",
-      "gallery": ["merlion-park", "mandai-bird-paradise", "sentosa-island", "marina-bay-sands"],
-      "price": {"from": 46000}
+      "gallery": [
+        "merlion-park",
+        "mandai-bird-paradise",
+        "sentosa-island",
+        "marina-bay-sands"
+      ],
+      "price": {
+        "from": 46000
+      }
     },
     {
       "slug": "cost-saver-malaysia-singapore",
@@ -360,8 +465,15 @@
       "pickup": "Kuala Lumpur International Airport (KLIA), Malaysia",
       "drop_point": "Singapore Changi Airport",
       "photo": "petronas-twin-towers",
-      "gallery": ["batu-caves", "genting-highlands", "merlion-park", "gardens-by-the-bay"],
-      "price": {"from": 49000}
+      "gallery": [
+        "batu-caves",
+        "genting-highlands",
+        "merlion-park",
+        "gardens-by-the-bay"
+      ],
+      "price": {
+        "from": 49000
+      }
     }
   ],
   "group_trips": [
@@ -454,10 +566,20 @@
       "pickup": "Singapore Changi Airport",
       "drop_point": "Singapore Changi Airport",
       "photo": "sentosa-island",
-      "gallery": ["gardens-by-the-bay", "merlion-park", "mandai-bird-paradise", "chinatown-singapore"],
+      "gallery": [
+        "gardens-by-the-bay",
+        "merlion-park",
+        "mandai-bird-paradise",
+        "chinatown-singapore"
+      ],
       "price": 54000,
       "original_price": 58500,
-      "departures": {"weekday": 4, "count": 6, "every_weeks": 2, "capacity": 20}
+      "departures": {
+        "weekday": 4,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 20
+      }
     },
     {
       "slug": "singapore-malaysia-kuala-lumpur-group-trip",
@@ -560,10 +682,120 @@
       "pickup": "Kuala Lumpur International Airport (KLIA), Malaysia",
       "drop_point": "Singapore Changi Airport",
       "photo": "petronas-twin-towers",
-      "gallery": ["batu-caves", "genting-highlands", "malacca-stadthuys", "gardens-by-the-bay", "merlion-park"],
+      "gallery": [
+        "batu-caves",
+        "genting-highlands",
+        "malacca-stadthuys",
+        "gardens-by-the-bay",
+        "merlion-park"
+      ],
       "price": 56000,
       "original_price": 61000,
-      "departures": {"weekday": 5, "count": 6, "every_weeks": 2, "capacity": 20}
+      "departures": {
+        "weekday": 5,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 20
+      }
+    },
+    {
+      "slug": "singapore-city-sentosa-weekend-escape",
+      "title": "Singapore Weekend Escape: Marina Bay, Sentosa and Gardens by the Bay",
+      "nights": 3,
+      "summary": "A relaxed long-weekend break in Singapore with a trip captain, covering Marina Bay, Gardens by the Bay, a day on Sentosa Island and a morning at Mandai Bird Paradise.",
+      "overview": "Singapore is made for a long weekend: compact, safe and easy to move around, with its best-known sights close together. This fixed-departure escape starts on a Friday and finishes on Monday, with one or two headline experiences each day and plenty of room to rest.\n\nYou begin at Merlion Park and Marina Bay, spend a day on Sentosa Island, and see the Supertrees of Gardens by the Bay after dark. A morning at Mandai Bird Paradise and an easy afternoon in Chinatown and Little India round off the trip. A trip captain travels with the group, and Indian meal options are available on request.",
+      "highlights": [
+        "Merlion Park and the Marina Bay waterfront with views of Marina Bay Sands",
+        "Evening at Gardens by the Bay and the Supertree Grove",
+        "A day on Sentosa Island, reached by cable car",
+        "Morning at Mandai Bird Paradise",
+        "Chinatown and Little India at an easy pace",
+        "Accompanied by a trip captain throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Singapore | Merlion Park and Gardens by the Bay",
+          "description": "Arrive early at Singapore Changi Airport and meet your trip captain.\nTransfer to the hotel, leave your bags and freshen up, with check-in as soon as rooms are ready.\nVisit Merlion Park for photographs of the Merlion and the Marina Bay skyline.\nIn the evening, walk among the Supertrees at Gardens by the Bay, with the light show weather permitting.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 2,
+          "title": "Sentosa Island | Cable Car and Beaches",
+          "description": "After breakfast, travel to Sentosa Island by cable car.\nSpend the day at an easy pace on the island's beaches and attractions, with optional activities available.\nReturn to the hotel in the late afternoon for a rest.\nThe evening is free for dinner and a stroll around Marina Bay.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 3,
+          "title": "Mandai Bird Paradise | Chinatown and Little India",
+          "description": "After breakfast, transfer to Mandai Bird Paradise and spend the morning among its aviaries.\nReturn to the city for lunch at leisure.\nIn the afternoon, walk through Chinatown and visit the Buddha Tooth Relic Temple.\nContinue to Little India for its colourful streets and shops, with time left for Orchard Road if you wish.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 4,
+          "title": "Free Morning and Departure",
+          "description": "After breakfast, check out of the hotel and leave your luggage if your flight is later.\nEnjoy a free morning for last-minute shopping or a final walk around the city.\nTransfer to Singapore Changi Airport in time for your flight home."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 3 nights in Singapore",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Sightseeing and transfers as per itinerary",
+        "Sentosa cable car ride as per itinerary",
+        "Entry to Mandai Bird Paradise as per itinerary",
+        "A trip captain accompanying the group",
+        "Indian meal options on request",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and attraction tickets on Sentosa",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights are not included and are not booked by us unless you ask us to.",
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon; early arrivals can leave bags at the hotel.",
+        "The itinerary order may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Group size is limited to a maximum of 22 travellers per departure.",
+        "Each departure runs on minimum numbers; we will inform you in advance if a date needs to change.",
+        "Singapore has strict local laws on littering and e-cigarettes; please follow them."
+      ],
+      "must_carry": [
+        "Passport and Singapore visa copy",
+        "Return tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Type G (UK-style three-pin) power adapter",
+        "Compact umbrella or light rain jacket",
+        "Comfortable walking shoes and sunscreen",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Singapore Changi Airport",
+      "drop_point": "Singapore Changi Airport",
+      "photo": "marina-bay-sands",
+      "gallery": [
+        "gardens-by-the-bay",
+        "merlion-park",
+        "sentosa-island",
+        "mandai-bird-paradise",
+        "chinatown-singapore"
+      ],
+      "price": 34000,
+      "original_price": 36700,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
     }
   ]
 }

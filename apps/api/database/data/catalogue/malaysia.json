@@ -1,18 +1,66 @@
 {
   "destination": "malaysia",
   "photos": [
-    {"slot": "petronas-twin-towers", "query": "Petronas Twin Towers Kuala Lumpur Malaysia", "caption": "Petronas Twin Towers, Kuala Lumpur"},
-    {"slot": "batu-caves", "query": "Batu Caves Kuala Lumpur Malaysia", "caption": "Batu Caves, Kuala Lumpur"},
-    {"slot": "genting-highlands", "query": "Genting Highlands cable car Malaysia", "caption": "Genting Highlands"},
-    {"slot": "langkawi-sky-bridge", "query": "Langkawi Sky Bridge Malaysia", "caption": "Langkawi Sky Bridge"},
-    {"slot": "pantai-cenang", "query": "Pantai Cenang beach Langkawi Malaysia", "caption": "Pantai Cenang, Langkawi"},
-    {"slot": "dayang-bunting-lake", "query": "Pulau Dayang Bunting lake Langkawi", "caption": "Lake of the Pregnant Maiden, Langkawi"},
-    {"slot": "george-town-street-art", "query": "George Town Penang street art Malaysia", "caption": "George Town, Penang"},
-    {"slot": "kek-lok-si-temple", "query": "Kek Lok Si Temple Penang Malaysia", "caption": "Kek Lok Si Temple, Penang"},
-    {"slot": "gardens-by-the-bay", "query": "Gardens by the Bay Supertree Grove Singapore", "caption": "Gardens by the Bay, Singapore"},
-    {"slot": "merlion-park", "query": "Merlion Park Marina Bay Singapore", "caption": "Merlion Park, Singapore"},
-    {"slot": "wat-pho-bangkok", "query": "Wat Pho reclining Buddha Bangkok Thailand", "caption": "Wat Pho, Bangkok"},
-    {"slot": "coral-island-pattaya", "query": "Coral Island Koh Larn Pattaya Thailand", "caption": "Coral Island, Pattaya"}
+    {
+      "slot": "petronas-twin-towers",
+      "query": "Petronas Twin Towers Kuala Lumpur Malaysia",
+      "caption": "Petronas Twin Towers, Kuala Lumpur"
+    },
+    {
+      "slot": "batu-caves",
+      "query": "Batu Caves Kuala Lumpur Malaysia",
+      "caption": "Batu Caves, Kuala Lumpur"
+    },
+    {
+      "slot": "genting-highlands",
+      "query": "Genting Highlands cable car Malaysia",
+      "caption": "Genting Highlands"
+    },
+    {
+      "slot": "langkawi-sky-bridge",
+      "query": "Langkawi Sky Bridge Malaysia",
+      "caption": "Langkawi Sky Bridge"
+    },
+    {
+      "slot": "pantai-cenang",
+      "query": "Pantai Cenang beach Langkawi Malaysia",
+      "caption": "Pantai Cenang, Langkawi"
+    },
+    {
+      "slot": "dayang-bunting-lake",
+      "query": "Pulau Dayang Bunting lake Langkawi",
+      "caption": "Lake of the Pregnant Maiden, Langkawi"
+    },
+    {
+      "slot": "george-town-street-art",
+      "query": "George Town Penang street art Malaysia",
+      "caption": "George Town, Penang"
+    },
+    {
+      "slot": "kek-lok-si-temple",
+      "query": "Kek Lok Si Temple Penang Malaysia",
+      "caption": "Kek Lok Si Temple, Penang"
+    },
+    {
+      "slot": "gardens-by-the-bay",
+      "query": "Gardens by the Bay Supertree Grove Singapore",
+      "caption": "Gardens by the Bay, Singapore"
+    },
+    {
+      "slot": "merlion-park",
+      "query": "Merlion Park Marina Bay Singapore",
+      "caption": "Merlion Park, Singapore"
+    },
+    {
+      "slot": "wat-pho-bangkok",
+      "query": "Wat Pho reclining Buddha Bangkok Thailand",
+      "caption": "Wat Pho, Bangkok"
+    },
+    {
+      "slot": "coral-island-pattaya",
+      "query": "Coral Island Koh Larn Pattaya Thailand",
+      "caption": "Coral Island, Pattaya"
+    }
   ],
   "hero": "petronas-twin-towers",
   "categories": [
@@ -22,7 +70,11 @@
       "name": "Classic Malaysia Packages",
       "description": "Kuala Lumpur city sights, Batu Caves and a cable car ride up to Genting Highlands, with Penang's heritage streets added on our group trip.",
       "photo": "petronas-twin-towers",
-      "packages": ["kuala-lumpur-buy-1-get-1-free", "malaysia-kuala-lumpur-genting-penang-group-trip"]
+      "packages": [
+        "kuala-lumpur-buy-1-get-1-free",
+        "malaysia-kuala-lumpur-genting-penang-group-trip",
+        "malaysia-kuala-lumpur-genting-weekend-escape"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +82,10 @@
       "name": "Honeymoon and Island Escapes",
       "description": "Langkawi's beaches, mangroves and island hopping, paired with Kuala Lumpur by night for couples who want a mix of relaxation and city lights.",
       "photo": "langkawi-sky-bridge",
-      "packages": ["memorable-malaysia-honeymoon-special", "malaysia-langkawi-island-escape-group-trip"]
+      "packages": [
+        "memorable-malaysia-honeymoon-special",
+        "malaysia-langkawi-island-escape-group-trip"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +93,10 @@
       "name": "Malaysia Multi-Country Combos",
       "description": "Combine Kuala Lumpur with Singapore, or add Pattaya and Bangkok, for a longer Southeast Asia holiday on a single itinerary.",
       "photo": "gardens-by-the-bay",
-      "packages": ["cost-saver-malaysia-singapore-malaysia", "value-thailand-malaysia-singapore-malaysia"]
+      "packages": [
+        "cost-saver-malaysia-singapore-malaysia",
+        "value-thailand-malaysia-singapore-malaysia"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +104,10 @@
       "name": "Budget Saver and Offers",
       "description": "Value-focused Malaysia holidays, including a Kuala Lumpur offer and a Malaysia and Singapore combination that keeps the main sights covered.",
       "photo": "batu-caves",
-      "packages": ["kuala-lumpur-buy-1-get-1-free", "cost-saver-malaysia-singapore-malaysia"]
+      "packages": [
+        "kuala-lumpur-buy-1-get-1-free",
+        "cost-saver-malaysia-singapore-malaysia"
+      ]
     },
     {
       "menu": "group-tours",
@@ -54,7 +115,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Escorted Malaysia trips on fixed dates with a trip captain, hotel stays and sightseeing arranged, and Indian meal options on request.",
       "photo": "genting-highlands",
-      "packages": ["malaysia-kuala-lumpur-genting-penang-group-trip", "malaysia-langkawi-island-escape-group-trip"]
+      "packages": [
+        "malaysia-kuala-lumpur-genting-penang-group-trip",
+        "malaysia-langkawi-island-escape-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -62,7 +126,19 @@
       "name": "Romantic Escapes",
       "description": "A Langkawi sunset cruise, island hopping and a night-time Kuala Lumpur tour, planned for newlyweds and couples.",
       "photo": "pantai-cenang",
-      "packages": ["memorable-malaysia-honeymoon-special"]
+      "packages": [
+        "memorable-malaysia-honeymoon-special"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "Short Kuala Lumpur breaks for a long weekend, with fixed Friday departures, the city's best-known sights and a day in the hills at Genting Highlands.",
+      "photo": "petronas-twin-towers",
+      "packages": [
+        "malaysia-kuala-lumpur-genting-weekend-escape"
+      ]
     }
   ],
   "packages": [
@@ -123,8 +199,15 @@
       "pickup": "Kuala Lumpur International Airport (KLIA)",
       "drop_point": "Singapore Changi Airport",
       "photo": "gardens-by-the-bay",
-      "gallery": ["petronas-twin-towers", "genting-highlands", "batu-caves", "merlion-park"],
-      "price": {"from": 48000}
+      "gallery": [
+        "petronas-twin-towers",
+        "genting-highlands",
+        "batu-caves",
+        "merlion-park"
+      ],
+      "price": {
+        "from": 48000
+      }
     },
     {
       "slug": "kuala-lumpur-buy-1-get-1-free",
@@ -180,7 +263,10 @@
       "pickup": "Kuala Lumpur International Airport (KLIA)",
       "drop_point": "Kuala Lumpur International Airport (KLIA)",
       "photo": "petronas-twin-towers",
-      "gallery": ["batu-caves", "genting-highlands"]
+      "gallery": [
+        "batu-caves",
+        "genting-highlands"
+      ]
     },
     {
       "slug": "value-thailand-malaysia-singapore-malaysia",
@@ -241,8 +327,15 @@
       "pickup": "Bangkok airport",
       "drop_point": "Singapore Changi Airport",
       "photo": "coral-island-pattaya",
-      "gallery": ["wat-pho-bangkok", "genting-highlands", "gardens-by-the-bay", "merlion-park"],
-      "price": {"from": 88000}
+      "gallery": [
+        "wat-pho-bangkok",
+        "genting-highlands",
+        "gardens-by-the-bay",
+        "merlion-park"
+      ],
+      "price": {
+        "from": 88000
+      }
     },
     {
       "slug": "memorable-malaysia-honeymoon-special",
@@ -300,7 +393,12 @@
       "pickup": "Langkawi International Airport",
       "drop_point": "Kuala Lumpur International Airport (KLIA)",
       "photo": "langkawi-sky-bridge",
-      "gallery": ["dayang-bunting-lake", "pantai-cenang", "petronas-twin-towers", "genting-highlands"]
+      "gallery": [
+        "dayang-bunting-lake",
+        "pantai-cenang",
+        "petronas-twin-towers",
+        "genting-highlands"
+      ]
     }
   ],
   "group_trips": [
@@ -398,10 +496,20 @@
       "pickup": "Kuala Lumpur International Airport (KLIA)",
       "drop_point": "Penang International Airport",
       "photo": "george-town-street-art",
-      "gallery": ["petronas-twin-towers", "batu-caves", "genting-highlands", "kek-lok-si-temple"],
+      "gallery": [
+        "petronas-twin-towers",
+        "batu-caves",
+        "genting-highlands",
+        "kek-lok-si-temple"
+      ],
       "price": 38500,
       "original_price": 42000,
-      "departures": {"weekday": 5, "count": 6, "every_weeks": 2, "capacity": 20}
+      "departures": {
+        "weekday": 5,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 20
+      }
     },
     {
       "slug": "malaysia-langkawi-island-escape-group-trip",
@@ -490,10 +598,114 @@
       "pickup": "Langkawi International Airport",
       "drop_point": "Langkawi International Airport",
       "photo": "pantai-cenang",
-      "gallery": ["langkawi-sky-bridge", "dayang-bunting-lake"],
+      "gallery": [
+        "langkawi-sky-bridge",
+        "dayang-bunting-lake"
+      ],
       "price": 34000,
       "original_price": null,
-      "departures": {"weekday": 3, "count": 5, "every_weeks": 3, "capacity": 16}
+      "departures": {
+        "weekday": 3,
+        "count": 5,
+        "every_weeks": 3,
+        "capacity": 16
+      }
+    },
+    {
+      "slug": "malaysia-kuala-lumpur-genting-weekend-escape",
+      "title": "Kuala Lumpur Weekend Escape: Towers, Batu Caves and Genting",
+      "nights": 3,
+      "summary": "A four-day long-weekend break in Kuala Lumpur with the Petronas Twin Towers, Batu Caves and a cable car ride up to Genting Highlands, with a trip captain throughout.",
+      "overview": "This four-day escape is planned for a long weekend, so you land early, see one or two headline sights each day and still have time to rest. The days cover Kuala Lumpur's skyline and city centre, the limestone temple of Batu Caves and the cool hills of Genting Highlands.\n\nYou travel with a small group on a fixed departure, with a trip captain who looks after the day-to-day arrangements. Indian meal options are available on request, and the pace is easy enough for families and parents travelling with you.",
+      "highlights": [
+        "Photo stop at the Petronas Twin Towers and an evening at KLCC Park",
+        "Guided Kuala Lumpur city tour with Merdeka Square and the National Monument",
+        "Batu Caves and its colourful temple stairway",
+        "Cable car ride up to Genting Highlands",
+        "Free time for shopping and street food in Kuala Lumpur",
+        "Trip captain with the group throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kuala Lumpur | Petronas Towers at Night",
+          "description": "Arrive at Kuala Lumpur International Airport, where you are met and transferred to the hotel.\nCheck in and meet your trip captain for a short briefing on the weekend ahead.\nIn the evening, visit the Petronas Twin Towers for photographs and a stroll in KLCC Park.\nDinner is at leisure, with Indian meal options available on request.\nOvernight stay in Kuala Lumpur."
+        },
+        {
+          "day": 2,
+          "title": "Kuala Lumpur City Tour | Batu Caves",
+          "description": "After breakfast, set out on a guided tour of the city centre with a stop at Merdeka Square and the National Monument.\nContinue to Batu Caves and climb the steps to the temple cave beneath the limestone cliffs.\nReturn to the hotel for a rest in the afternoon.\nThe evening is free for shopping or a walk around the city.\nOvernight stay in Kuala Lumpur."
+        },
+        {
+          "day": 3,
+          "title": "Genting Highlands by Cable Car",
+          "description": "After breakfast, drive to the cable car station for the ride up to Genting Highlands.\nEnjoy the cool mountain air and views over the forested hills.\nSpend the day at your own pace in the resort area, with no fixed programme.\nRide the cable car back down and return to Kuala Lumpur.\nOvernight stay in Kuala Lumpur."
+        },
+        {
+          "day": 4,
+          "title": "Leisure Morning | Departure",
+          "description": "After breakfast, enjoy a relaxed morning for last-minute shopping or a visit to Central Market.\nCheck out from the hotel at the usual time, with luggage stored if your flight is later.\nTransfer to Kuala Lumpur International Airport for your onward flight.\nDepart with memories of Malaysia."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 3 nights in Kuala Lumpur",
+        "Daily breakfast at the hotel",
+        "Indian meal options on request, subject to availability",
+        "Airport arrival and departure transfers",
+        "Air-conditioned vehicle for all sightseeing as per itinerary",
+        "Guided Kuala Lumpur city tour with Batu Caves as per itinerary",
+        "Genting Highlands cable car ride as per itinerary",
+        "Trip captain with the group throughout",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Optional activities and entry tickets not listed in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not mentioned under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights are not included in the trip price and are not booked by us unless you ask us to.",
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "The order of sightseeing may change with weather, road, flight or operational conditions, without reducing the sights covered",
+        "Rates and availability are confirmed at the time of booking",
+        "Cancellation and refund are as per our Terms & Conditions",
+        "This is a group departure that runs on minimum numbers, and a trip captain accompanies the group",
+        "Dress modestly at Batu Caves, with shoulders and knees covered",
+        "The cable car may pause in strong wind or heavy rain, and Genting Highlands is noticeably cooler than the city"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or an international debit or credit card",
+        "Universal power adapter (Type G sockets in Malaysia)",
+        "Modest clothing for Batu Caves and a light jacket for Genting Highlands",
+        "Comfortable walking shoes, sunscreen and a compact umbrella"
+      ],
+      "pickup": "Kuala Lumpur International Airport (KLIA)",
+      "drop_point": "Kuala Lumpur International Airport (KLIA)",
+      "photo": "petronas-twin-towers",
+      "gallery": [
+        "batu-caves",
+        "genting-highlands",
+        "petronas-twin-towers"
+      ],
+      "price": 24500,
+      "original_price": 26500,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
     }
   ]
 }
