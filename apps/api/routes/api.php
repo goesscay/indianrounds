@@ -31,6 +31,7 @@ Route::prefix('v1')->group(function () {
         Route::get('/destinations', [DestinationController::class, 'index'])->name('destinations.index');
         Route::get('/destinations/{slug}', [DestinationController::class, 'show'])->name('destinations.show');
         Route::get('/tours', [TourController::class, 'index'])->name('tours.index');
+        Route::get('/departures', [TourController::class, 'departures'])->name('departures.index');
         Route::get('/tours/{slug}', [TourController::class, 'show'])->name('tours.show');
         Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
         Route::get('/posts', [PostController::class, 'index'])->name('posts.index');

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { safeNext } from "./client-api";
+import { activeFilterCount, applyFilters, boundsOf, defaultFilters, parseFilters, serializeFilters, type DepartureTrip } from "./departures";
 import { durationLabel, formatDate, formatINR, formatMonth } from "./format";
 import { legacyRedirects } from "./redirects";
 import { sameOrigin } from "./same-origin";
@@ -110,5 +111,73 @@ describe("legacy redirects", () => {
       expect(s.startsWith("/")).toBe(true);
       expect(d.startsWith("/")).toBe(true);
     }
+  });
+});
+
+describe("departure filters", () => {
+  const trip = (slug: string, o: Partial<DepartureTrip> & { dates: string[] }): DepartureTrip => ({
+    slug, title: slug, duration_nights: 5, duration_days: 6, price: 30000, original_price: null, image_url: null, tags: [], kind: "group", pickup: null, drop_point: null,
+    destination: { name: "Thailand", slug: "thailand", region: "international" }, departures: o.dates.map((d) => ({ starts_on: d, seats_left: 10 })), departure_count: o.dates.length, ...o,
+  });
+  const trips = [
+    trip("bangkok", { dates: ["2026-11-06", "2026-12-04"] }),
+    trip("kerala", { dates: ["2026-11-20"], duration_nights: 2, price: 15000, kind: "weekend", destination: { name: "Kerala", slug: "kerala", region: "india" } }),
+    trip("tanzania", { dates: ["2027-01-09"], duration_nights: 9, price: 210000, destination: { name: "Tanzania", slug: "tanzania", region: "international" } }),
+    trip("quote", { dates: ["2026-12-11"], price: null }),
+  ];
+  const b = boundsOf(trips);
+
+  it("works out the slider ranges and the months that have departures", () => {
+    expect(b.nights).toEqual([2, 9]);
+    expect(b.budget).toEqual([15000, 210000]);
+    expect(b.months).toEqual(["2026-11", "2026-12", "2027-01"]);
+  });
+
+  it("shows everything by default, earliest departure first", () => {
+    const out = applyFilters(trips, defaultFilters(b), b);
+    expect(out.map((t) => t.slug)).toEqual(["bangkok", "kerala", "quote", "tanzania"]);
+  });
+
+  it("filters by region, destination, type, nights and budget together", () => {
+    const f = defaultFilters(b);
+    expect(applyFilters(trips, { ...f, region: "india" }, b).map((t) => t.slug)).toEqual(["kerala"]);
+    expect(applyFilters(trips, { ...f, destinations: ["thailand", "tanzania"] }, b).map((t) => t.slug)).toEqual(["bangkok", "quote", "tanzania"]);
+    expect(applyFilters(trips, { ...f, kind: "weekend" }, b).map((t) => t.slug)).toEqual(["kerala"]);
+    expect(applyFilters(trips, { ...f, nights: [4, 6] }, b).map((t) => t.slug)).toEqual(["bangkok", "quote"]);
+    expect(applyFilters(trips, { ...f, budget: [15000, 40000] }, b).map((t) => t.slug)).toEqual(["bangkok", "kerala"]);
+  });
+
+  it("keeps trips with no visible price unless a budget is set", () => {
+    const f = defaultFilters(b);
+    expect(applyFilters(trips, f, b).some((t) => t.slug === "quote")).toBe(true);
+    expect(applyFilters(trips, { ...f, budget: [15000, 100000] }, b).some((t) => t.slug === "quote")).toBe(false);
+  });
+
+  it("a month keeps only the trips and the dates that fall in it", () => {
+    const out = applyFilters(trips, { ...defaultFilters(b), month: "2026-12" }, b);
+    expect(out.map((t) => [t.slug, t.shown.map((d) => d.starts_on)])).toEqual([["bangkok", ["2026-12-04"]], ["quote", ["2026-12-11"]]]);
+  });
+
+  it("sorts by price and length", () => {
+    const f = defaultFilters(b);
+    expect(applyFilters(trips, { ...f, sort: "price_asc" }, b).map((t) => t.slug)).toEqual(["kerala", "bangkok", "tanzania", "quote"]);
+    expect(applyFilters(trips, { ...f, sort: "price_desc" }, b).map((t) => t.slug)).toEqual(["tanzania", "bangkok", "kerala", "quote"]);
+    expect(applyFilters(trips, { ...f, sort: "nights_desc" }, b)[0].slug).toBe("tanzania");
+  });
+
+  it("counts active filters and round-trips through the URL", () => {
+    const f = { ...defaultFilters(b), region: "india" as const, nights: [2, 5] as [number, number], month: "2026-11", sort: "price_asc" as const };
+    expect(activeFilterCount(defaultFilters(b), b)).toBe(0);
+    expect(activeFilterCount(f, b)).toBe(3);
+    const qs = serializeFilters(f, b);
+    expect(qs).toBe("?region=india&nights=2-5&month=2026-11&sort=price_asc");
+    expect(parseFilters(qs, b)).toEqual(f);
+    expect(serializeFilters(defaultFilters(b), b)).toBe("");
+  });
+
+  it("ignores junk in the URL", () => {
+    const f = parseFilters("?region=mars&nights=9-2&budget=abc&month=2031-01&sort=wild&type=x", b);
+    expect(f).toEqual(defaultFilters(b));
+    expect(parseFilters("?nights=0-99", b).nights).toEqual(b.nights);
   });
 });

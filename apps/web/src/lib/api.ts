@@ -1,3 +1,5 @@
+import type { DepartureTrip } from "./departures";
+
 const API_URL = process.env.API_URL ?? "http://localhost:8000/api/v1";
 
 export type ProfileItem = { title: string; text?: string };
@@ -290,4 +292,9 @@ export async function getCaseStudies() {
 
 export async function getJobOpenings() {
   return (await get<{ data: JobOpening[] }>("/careers/openings"))?.data ?? [];
+}
+
+/** Every upcoming fixed-departure trip (group trips and weekend getaways) with its open departures. */
+export async function getDepartures() {
+  return (await get<{ data: DepartureTrip[] }>("/departures"))?.data ?? [];
 }

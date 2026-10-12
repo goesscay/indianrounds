@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\BatchResource;
 use App\Http\Resources\TourResource;
+use App\Models\Batch;
 use App\Models\Tour;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
@@ -104,6 +105,47 @@ class TourController extends Controller
             ->firstOrFail();
 
         return new TourResource($tour);
+    }
+
+    /**
+     * Every fixed-departure trip (group trips and weekend getaways) that still has an open departure, with those
+     * departures, for the filterable "upcoming group trips" page. Prices follow the same visibility rule as elsewhere.
+     */
+    public function departures(): array
+    {
+        $today = now()->toDateString();
+        $tours = Tour::query()
+            ->published()
+            ->where(fn ($q) => $q->where('tour_type', 'group')->orWhereJsonContains('tags', 'weekend'))
+            ->whereHas('batches', fn ($b) => $b->where('starts_on', '>=', $today)->where('status', 'open'))
+            ->with(['destination', 'batches' => fn ($b) => $b->where('starts_on', '>=', $today)->where('status', 'open')->orderBy('starts_on')])
+            ->get()
+            ->map(function (Tour $t): array {
+                $open = $t->batches->filter(fn (Batch $b) => $b->is_open)->values();
+
+                return [
+                    'slug' => $t->slug,
+                    'title' => $t->title,
+                    'duration_nights' => $t->duration_nights,
+                    'duration_days' => $t->duration_days,
+                    'price' => $t->priceVisible() ? $t->base_price : null,
+                    'original_price' => $t->priceVisible() ? $t->original_price : null,
+                    'image_url' => $t->image_url,
+                    'tags' => $t->tags ?? [],
+                    'kind' => in_array('weekend', $t->tags ?? [], true) ? 'weekend' : 'group',
+                    'pickup' => $t->pickup,
+                    'drop_point' => $t->drop_point,
+                    'destination' => ['name' => $t->destination->name, 'slug' => $t->destination->slug, 'region' => $t->destination->region],
+                    'departures' => $open->take(12)->map(fn (Batch $b) => ['starts_on' => $b->starts_on->toDateString(), 'seats_left' => $b->seats_left])->all(),
+                    'departure_count' => $open->count(),
+                ];
+            })
+            ->filter(fn (array $t) => $t['departures'] !== [])
+            ->sortBy(fn (array $t) => $t['departures'][0]['starts_on'].'-'.$t['slug'])
+            ->values()
+            ->all();
+
+        return ['data' => $tours];
     }
 
     public function batches(string $slug): array
