@@ -294,7 +294,7 @@ export async function getJobOpenings() {
   return (await get<{ data: JobOpening[] }>("/careers/openings"))?.data ?? [];
 }
 
-/** Every upcoming fixed-departure trip (group trips and weekend getaways) with its open departures. */
-export async function getDepartures() {
-  return (await get<{ data: DepartureTrip[] }>("/departures"))?.data ?? [];
+/** Upcoming fixed-departure trips with their open departures: group trips, weekend getaways or both. */
+export async function getDepartures(kind: "group" | "weekend" | "all" = "all") {
+  return (await get<{ data: DepartureTrip[] }>(`/departures?kind=${kind}`))?.data ?? [];
 }

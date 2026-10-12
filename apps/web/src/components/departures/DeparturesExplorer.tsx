@@ -58,6 +58,7 @@ export function DeparturesExplorer({ trips }: { trips: DepartureTrip[] }) {
     }
     return [...m.values()].sort((a, b) => a.name.localeCompare(b.name));
   }, [trips]);
+  const kinds = useMemo(() => [...new Set(trips.map((t) => t.kind))], [trips]);
   const visiblePlaces = places.filter((p) => f.region === "all" || p.region === f.region);
 
   const toggleDest = (slug: string) => set({ destinations: f.destinations.includes(slug) ? f.destinations.filter((s) => s !== slug) : [...f.destinations, slug] });
@@ -84,14 +85,14 @@ export function DeparturesExplorer({ trips }: { trips: DepartureTrip[] }) {
         </ul>
       </div>
 
-      <div className={box}>
+      {kinds.length > 1 && <div className={box}>
         <h3 className="font-bold">Trip type</h3>
         <div className="mt-3 flex flex-wrap gap-2">
           {([["all", "All trips"], ["group", "Group trips"], ["weekend", "Weekend getaways"]] as const).map(([k, label]) => (
             <button key={k} type="button" onClick={() => set({ kind: k })} aria-pressed={f.kind === k} className={chip(f.kind === k)}>{label}</button>
           ))}
         </div>
-      </div>
+      </div>}
 
       <div className={`${box} space-y-6`}>
         <RangeSlider label="Duration" min={bounds.nights[0]} max={bounds.nights[1]} value={f.nights} onChange={(nights) => set({ nights })} format={(n) => `${n}N`} />

@@ -76,4 +76,24 @@ class DeparturesApiTest extends TestCase
         $this->assertNull($row['original_price']);
         $this->assertStringNotContainsString('30000', (string) json_encode($row));
     }
+
+    public function test_the_kind_option_separates_group_trips_from_weekend_getaways(): void
+    {
+        $group = $this->tour('group-trip');
+        $this->batch($group, now()->addDays(10)->toDateString());
+        $untagged = $this->tour('tagged-group', ['tags' => ['family']]);
+        $this->batch($untagged, now()->addDays(11)->toDateString());
+        $weekend = $this->tour('weekend-trip', ['tags' => ['weekend']]);
+        $this->batch($weekend, now()->addDays(12)->toDateString());
+        $weekendCustom = $this->tour('weekend-custom', ['tour_type' => 'custom', 'tags' => ['weekend']]);
+        $this->batch($weekendCustom, now()->addDays(13)->toDateString());
+
+        $slugs = fn (string $q) => array_column($this->getJson("/api/v1/departures{$q}")->assertOk()->json('data'), 'slug');
+
+        $this->assertSame(['group-trip', 'tagged-group'], $slugs('?kind=group'), 'a group trip tagged weekend is a weekend trip');
+        $this->assertSame(['weekend-trip', 'weekend-custom'], $slugs('?kind=weekend'));
+        $this->assertCount(4, $slugs(''));
+        $this->assertCount(4, $slugs('?kind=all'));
+        $this->getJson('/api/v1/departures?kind=bogus')->assertUnprocessable();
+    }
 }

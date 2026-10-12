@@ -14,12 +14,12 @@ export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: MENUS["group-tours"].title,
-  description: "Upcoming group trips and weekend getaways with fixed dates and a trip captain. Filter by destination, duration, budget and month.",
+  description: "Upcoming group trips with fixed dates and a trip captain. Filter by destination, duration, budget and month.",
   alternates: { canonical: "/group-tours" },
 };
 
 export default async function GroupToursPage() {
-  const [trips, countries] = await Promise.all([getDepartures(), getMenuCountries("group-tours")]);
+  const [trips, countries] = await Promise.all([getDepartures("group"), getMenuCountries("group-tours")]);
 
   return (
     <>

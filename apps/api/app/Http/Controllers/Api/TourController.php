@@ -108,15 +108,19 @@ class TourController extends Controller
     }
 
     /**
-     * Every fixed-departure trip (group trips and weekend getaways) that still has an open departure, with those
-     * departures, for the filterable "upcoming group trips" page. Prices follow the same visibility rule as elsewhere.
+     * Every fixed-departure trip that still has an open departure, with those departures, for the filterable trips
+     * pages. ?kind=group leaves out weekend getaways, ?kind=weekend returns only those (default: both). Prices follow
+     * the same visibility rule as elsewhere.
      */
-    public function departures(): array
+    public function departures(Request $request): array
     {
+        $kind = $request->validate(['kind' => 'nullable|in:group,weekend,all'])['kind'] ?? 'all';
         $today = now()->toDateString();
         $tours = Tour::query()
             ->published()
-            ->where(fn ($q) => $q->where('tour_type', 'group')->orWhereJsonContains('tags', 'weekend'))
+            ->when($kind === 'weekend', fn ($q) => $q->whereJsonContains('tags', 'weekend'))
+            ->when($kind === 'group', fn ($q) => $q->where('tour_type', 'group')->where(fn ($w) => $w->whereNull('tags')->orWhereJsonDoesntContain('tags', 'weekend')))
+            ->when($kind === 'all', fn ($q) => $q->where(fn ($w) => $w->where('tour_type', 'group')->orWhereJsonContains('tags', 'weekend')))
             ->whereHas('batches', fn ($b) => $b->where('starts_on', '>=', $today)->where('status', 'open'))
             ->with(['destination', 'batches' => fn ($b) => $b->where('starts_on', '>=', $today)->where('status', 'open')->orderBy('starts_on')])
             ->get()
