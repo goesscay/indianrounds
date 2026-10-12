@@ -8,7 +8,7 @@ export function DestinationCard({ destination, href, note }: { destination: Dest
 
   return (
     <Link href={href ?? `/destinations/${destination.slug}`} className="group relative block aspect-[3/4] overflow-hidden rounded-card shadow-float">
-      <CoverImage src={destination.image_url} alt={destination.name} seed={destination.slug} className="absolute inset-0 transition duration-500 group-hover:scale-105" />
+      <div className="absolute inset-0"><CoverImage src={destination.image_url} alt={destination.name} seed={destination.slug} className="h-full w-full transition duration-500 group-hover:scale-105" /></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4 text-white">
         <div>
