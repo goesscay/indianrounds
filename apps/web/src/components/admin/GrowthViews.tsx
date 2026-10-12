@@ -10,7 +10,7 @@ import { field, ghostBtn, Labeled, Modal, Pager, primaryBtn, Status, Table, Titl
 // ---------- Blog posts ----------
 
 type PostRow = { id: number; title: string; slug: string; status: string; content_type: string; destination: string | null; author_name: string; read_minutes: number; published_at: string | null };
-type PostFull = { id: number; title: string; slug: string; excerpt: string | null; body: string; content_type: string; destination_id: number | null; author_name: string; cover_image_url: string | null; meta_description: string | null; status: string };
+type PostFull = { id: number; title: string; slug: string; excerpt: string | null; body: string; content_type: string; destination_id: number | null; author_name: string; cover_image_url: string | null; meta_description: string | null; status: string; is_featured: boolean; key_facts: { label: string; value: string }[] | null };
 
 export function PostsView() {
   const { user } = useAuth();
@@ -82,6 +82,11 @@ function PostForm({ initial, destinations, canPublish, canDelete, authorName, on
       title: f.title, body: f.body, excerpt: f.excerpt || null, content_type: f.content_type,
       destination_id: f.destination_id ? Number(f.destination_id) : null, author_name: f.author_name || authorName,
       cover_image_url: f.cover_image_url || null, meta_description: f.meta_description || null,
+      is_featured: f.is_featured === "on",
+      key_facts: f.key_facts.split("\n").map((l) => l.trim()).filter(Boolean).map((l) => {
+        const [label, ...rest] = l.split(":");
+        return { label: label.trim(), value: rest.join(":").trim() };
+      }),
       ...(f.slug ? { slug: f.slug } : {}),
       ...(canPublish ? { status: f.status } : {}),
     };
@@ -116,12 +121,17 @@ function PostForm({ initial, destinations, canPublish, canDelete, authorName, on
         <Labeled label="Author" id="p-author"><input id="p-author" name="author_name" defaultValue={initial?.author_name ?? authorName} className={field} /></Labeled>
         <Labeled label="URL slug (optional)" id="p-slug" error={errors.slug?.[0]}><input id="p-slug" name="slug" defaultValue={initial?.slug} placeholder="auto from title" className={field} /></Labeled>
       </div>
-      <Labeled label="Cover image URL" id="p-cover" error={errors.cover_image_url?.[0]}><input id="p-cover" name="cover_image_url" type="url" defaultValue={initial?.cover_image_url ?? ""} className={field} /></Labeled>
+      <Labeled label="Cover image (URL, or a site photo such as /photos/places/kerala/alleppey-houseboat.jpg)" id="p-cover" error={errors.cover_image_url?.[0]}><input id="p-cover" name="cover_image_url" defaultValue={initial?.cover_image_url ?? ""} className={field} /></Labeled>
       <Labeled label="Excerpt (shown on cards)" id="p-ex" error={errors.excerpt?.[0]}><textarea id="p-ex" name="excerpt" rows={2} defaultValue={initial?.excerpt ?? ""} className={field} /></Labeled>
       <Labeled label="Body *" id="p-body" error={errors.body?.[0]}>
         <textarea id="p-body" name="body" required rows={14} defaultValue={initial?.body} className={`${field} font-mono`} />
-        <p className="mt-1 text-xs text-muted">Formatting: ## Heading, ### Subheading, - bullets, 1. numbered, **bold**, *italic*, [text](https://link). Raw HTML is not rendered.</p>
+        <p className="mt-1 text-xs text-muted">Formatting: ## Heading, ### Subheading, - bullets, 1. numbered, **bold**, *italic*, [text](https://link), a tip box as &gt; **Tip:** text, and a photo on its own line as ![Caption](/photos/places/kerala/munnar-tea-plantations.jpg). Raw HTML is not rendered.</p>
       </Labeled>
+      <Labeled label="Quick facts (one per line, Label: value)" id="p-facts" error={errors.key_facts?.[0]}>
+        <textarea id="p-facts" name="key_facts" rows={4} defaultValue={(initial?.key_facts ?? []).map((k) => `${k.label}: ${k.value}`).join("\n")} placeholder={"Best time: October to March\nIdeal stay: 5 nights"} className={field} />
+        <p className="mt-1 text-xs text-muted">Shown in a box beside the article. Up to 8 lines.</p>
+      </Labeled>
+      <label className="flex items-center gap-2 text-sm font-medium"><input type="checkbox" name="is_featured" defaultChecked={initial?.is_featured ?? false} className="size-4 accent-brand-red" /> Feature this article at the top of the blog page</label>
       <Labeled label="Meta description (search results)" id="p-meta" error={errors.meta_description?.[0]}><input id="p-meta" name="meta_description" defaultValue={initial?.meta_description ?? ""} className={field} /></Labeled>
       {canPublish ? (
         <Labeled label="Status" id="p-status" error={errors.status?.[0]}><select id="p-status" name="status" defaultValue={initial?.status ?? "draft"} className={field}><option value="draft">draft</option><option value="published">published</option></select></Labeled>

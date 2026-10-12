@@ -20,6 +20,8 @@ use Illuminate\Support\Carbon;
  * @property int $read_minutes
  * @property string|null $meta_description
  * @property string $status
+ * @property bool $is_featured
+ * @property list<array{label: string, value: string}>|null $key_facts
  * @property Carbon|null $published_at
  * @property Destination|null $destination
  */
@@ -31,7 +33,7 @@ class Post extends Model
 
     protected function casts(): array
     {
-        return ['published_at' => 'datetime'];
+        return ['published_at' => 'datetime', 'is_featured' => 'boolean', 'key_facts' => 'array'];
     }
 
     protected static function booted(): void

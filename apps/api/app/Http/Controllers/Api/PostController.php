@@ -15,6 +15,7 @@ class PostController extends Controller
             'destination' => 'nullable|string|max:100',
             'type' => 'nullable|in:'.implode(',', Post::TYPES),
             'q' => 'nullable|string|max:100',
+            'featured' => 'nullable|boolean',
             'per_page' => 'nullable|integer|min:1|max:24',
         ]);
 
@@ -25,6 +26,9 @@ class PostController extends Controller
         if (! empty($data['type'])) {
             $q->where('content_type', $data['type']);
         }
+        if ($request->boolean('featured')) {
+            $q->where('is_featured', true);
+        }
         if (! empty($data['q'])) {
             $term = '%'.str_replace(['%', '_'], ['\\%', '\\_'], $data['q']).'%';
             $q->where(fn ($w) => $w->where('title', 'like', $term)->orWhere('excerpt', 'like', $term));
@@ -34,8 +38,27 @@ class PostController extends Controller
 
         return response()->json([
             'data' => $page->getCollection()->map(fn (Post $p) => $this->card($p))->values(),
-            'meta' => ['current_page' => $page->currentPage(), 'last_page' => $page->lastPage(), 'total' => $page->total()],
+            'meta' => ['current_page' => $page->currentPage(), 'last_page' => $page->lastPage(), 'total' => $page->total()] + $this->facets(),
         ]);
+    }
+
+    /**
+     * How many live articles there are per type and per destination, whatever the current filters are,
+     * so the blog page can show counts on its filters.
+     *
+     * @return array{types: array<string, int>, destinations: list<array{name: string, slug: string, count: int}>}
+     */
+    private function facets(): array
+    {
+        $types = Post::query()->live()->selectRaw('content_type, count(*) as n')->groupBy('content_type')->pluck('n', 'content_type')
+            ->map(fn ($n) => (int) $n)->all();
+
+        $destinations = Post::query()->live()->whereNotNull('destination_id')->with('destination:id,name,slug')->get(['id', 'destination_id'])
+            ->groupBy('destination_id')
+            ->map(fn ($rows) => ['name' => $rows->first()->destination->name, 'slug' => $rows->first()->destination->slug, 'count' => $rows->count()])
+            ->sortByDesc('count')->values()->all();
+
+        return ['types' => $types, 'destinations' => $destinations];
     }
 
     public function show(string $slug): JsonResponse
@@ -45,11 +68,14 @@ class PostController extends Controller
         $related = Post::query()->live()->with('destination:id,name,slug')
             ->whereKeyNot($post->id)
             ->where(fn ($w) => $w->where('destination_id', $post->destination_id)->orWhere('content_type', $post->content_type))
+            ->orderByRaw('case when destination_id = ? then 0 else 1 end', [$post->destination_id])
+            ->orderByRaw('case when content_type = ? then 0 else 1 end', [$post->content_type])
             ->orderByDesc('published_at')->limit(3)->get();
 
         return response()->json(['data' => $this->card($post) + [
             'body' => $post->body,
             'meta_description' => $post->meta_description,
+            'key_facts' => $post->key_facts ?? [],
             'related' => $related->map(fn (Post $p) => $this->card($p))->values(),
         ]]);
     }
@@ -67,6 +93,7 @@ class PostController extends Controller
             'author_name' => $p->author_name,
             'cover_image_url' => $p->cover_image_url,
             'read_minutes' => $p->read_minutes,
+            'is_featured' => $p->is_featured,
             'published_at' => $p->published_at?->toIso8601String(),
         ];
     }

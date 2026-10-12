@@ -108,7 +108,12 @@ class PostController extends Controller
             'content_type' => ['sometimes', Rule::in(Post::TYPES)],
             'destination_id' => 'nullable|integer|exists:destinations,id',
             'author_name' => 'sometimes|string|max:120',
-            'cover_image_url' => 'nullable|url|max:500',
+            // A full URL, or a photo already on this site (for example /photos/places/kerala/alleppey-houseboat.jpg).
+            'cover_image_url' => ['nullable', 'string', 'max:500', 'regex:#^(https?://\S+|/photos/\S+)$#'],
+            'is_featured' => 'sometimes|boolean',
+            'key_facts' => 'nullable|array|max:8',
+            'key_facts.*.label' => 'required|string|max:40',
+            'key_facts.*.value' => 'required|string|max:160',
             'meta_description' => 'nullable|string|max:300',
             'status' => 'sometimes|in:draft,published',
         ]);

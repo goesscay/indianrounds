@@ -257,11 +257,15 @@ export type Post = {
   author_name: string;
   cover_image_url: string | null;
   read_minutes: number;
+  is_featured?: boolean;
   published_at: string | null;
   body?: string;
   meta_description?: string | null;
+  key_facts?: { label: string; value: string }[];
   related?: Post[];
 };
+
+export type PostFacets = { types: Record<string, number>; destinations: { name: string; slug: string; count: number }[] };
 
 export type Collection = { slug: string; title: string; tag: string; intro: string; tours_count: number };
 export type CollectionDetail = { slug: string; title: string; intro: string; tours: Tour[] };
@@ -271,7 +275,7 @@ export type JobOpening = { id: number; title: string; department: string | null;
 export async function getPosts(params: Record<string, string | undefined> = {}) {
   const clean = Object.fromEntries(Object.entries(params).filter(([, v]) => v)) as Record<string, string>;
   const qs = new URLSearchParams(clean).toString();
-  return (await get<Paginated<Post>>(`/posts${qs ? `?${qs}` : ""}`)) ?? { data: [] };
+  return (await get<{ data: Post[]; meta?: { current_page: number; last_page: number; total: number } & Partial<PostFacets> }>(`/posts${qs ? `?${qs}` : ""}`)) ?? { data: [] };
 }
 
 export async function getPost(slug: string) {
