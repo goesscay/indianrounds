@@ -1,0 +1,918 @@
+{
+  "destination": "uttarakhand",
+  "destination_record": {
+    "name": "Uttarakhand",
+    "region": "india",
+    "tagline": "Ganga aarti in Haridwar and Rishikesh, white-water rafting, cool hill stations at Mussoorie and Nainital, and tiger country at Jim Corbett.",
+    "best_time": "Mar–Jun, Oct–Nov",
+    "places": "Haridwar, Rishikesh, Mussoorie, Dehradun, Nainital, Bhimtal, Jim Corbett National Park; Auli and Kedarnath on request",
+    "sort": 10,
+    "seasons": {
+      "on": {
+        "months": "Mar–Jun, Oct–Nov",
+        "places": "Rishikesh and Haridwar for aarti and rafting, Mussoorie, Nainital and Bhimtal for cool hill weather, and Jim Corbett from mid-November. The Char Dham shrines, including Kedarnath, open around late April or May and close around Diwali.",
+        "activities": "River rafting (best from March to June and from mid-September to November), Ganga aarti, sightseeing and short walks in the hill stations, boating on Naini Lake and cable car rides. October and November bring clear air and fine mountain views. Summers are hot in the plains and pleasant in the hills."
+      },
+      "off": {
+        "months": "Jul–Sep",
+        "places": "Haridwar, Rishikesh and the hill stations can still be visited, but this is the monsoon. Hill roads see landslides, most of the Corbett safari zones are closed and the higher shrines are hard to reach.",
+        "activities": "Temple visits, spa stays and quiet resort time. River rafting is suspended during the monsoon, roughly July to mid-September, and Jim Corbett's main safari zones are closed from about mid-June to mid-November. Hill roads can be blocked for hours or days, so plan buffer time. The Kanwar Yatra in July and August makes Haridwar and Rishikesh very crowded."
+      },
+      "mid": {
+        "months": "Dec–Feb",
+        "places": "Haridwar, Rishikesh, Jim Corbett and Dehradun are comfortable by day and cold at night. Mussoorie and Nainital are cold and can see snow, and Auli is the main snow destination.",
+        "activities": "Wildlife safaris at Corbett, Ganga aarti, temple visits and cosy hill stays. Mussoorie and Nainital are quiet and cold, with occasional snowfall and fog, and Auli's ski season usually runs from January to March. Rafting is possible but the water is cold. The Char Dham shrines are closed for winter."
+      }
+    },
+    "profile": {
+      "overview": "Uttarakhand sits on the Himalayan foothills and the upper Ganga, and few states pack in so much within a few hours of Delhi. You can watch the evening Ganga aarti at Haridwar and Rishikesh, raft through rapids on the river, walk the Mall Road at Mussoorie, row on Naini Lake in Nainital and look for tigers in Jim Corbett National Park, all in one holiday.\n\nIt is easy to reach from Delhi and works well for families, friends, couples and senior parents. Roads in the hills are winding and the monsoon brings landslides, so the season matters. Tell us your dates, group size and budget, and we will build the itinerary around you.",
+      "facts": {
+        "capital": "Dehradun (winter capital); Gairsain is the summer capital",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Hindi, Garhwali and Kumaoni; English in tourist areas",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "Plains and foothills about 5°C to 40°C; hill stations about 0°C to 30°C; heavy rain from July to September",
+        "flight_time": "Delhi to Dehradun (Jolly Grant) about 1 hr by air; from Chennai usually one stop, 5 to 6 hr in all. Haridwar and Dehradun are major railheads."
+      },
+      "reasons": [
+        {
+          "title": "Ganga, faith and adventure",
+          "text": "Evening aarti at the ghats and rapids on the same river, often within a single day in Rishikesh."
+        },
+        {
+          "title": "Hill stations close to the plains",
+          "text": "Mussoorie and Nainital offer cool air, lakes, ropeways and mountain views a few hours from Dehradun and Kathgodam."
+        },
+        {
+          "title": "Wildlife at Jim Corbett",
+          "text": "India's oldest national park offers jeep safaris through sal forest and grassland, with tigers, elephants and many birds."
+        },
+        {
+          "title": "Easy from the major cities",
+          "text": "Jolly Grant airport, Dehradun and Haridwar railheads and Kathgodam station keep transfers short."
+        },
+        {
+          "title": "Year-round choices",
+          "text": "Rafting and hill stations suit summer, Corbett suits winter, and the Char Dham yatra runs from late April or May to October or November."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "Har Ki Pauri, Haridwar",
+          "text": "The best-known ghat on the Ganga, where the evening aarti draws thousands of pilgrims and visitors."
+        },
+        {
+          "title": "Ram Jhula and Laxman Jhula, Rishikesh",
+          "text": "Riverside areas on both banks of the Ganga with cafes, ashrams and shops. The old Laxman Jhula bridge has been closed for safety, so we confirm the current position."
+        },
+        {
+          "title": "Mall Road and Gun Hill, Mussoorie",
+          "text": "Mussoorie's famous promenade and a ropeway-served viewpoint with mountain views on clear days."
+        },
+        {
+          "title": "Kempty Falls, Mussoorie",
+          "text": "A popular waterfall on the road from Mussoorie, with pools below that families enjoy in the warmer months."
+        },
+        {
+          "title": "Naini Lake, Nainital",
+          "text": "A crescent-shaped lake ringed by hills, with boating, the Mall Road and the Naina Devi temple on its shore."
+        },
+        {
+          "title": "Bhimtal and Sattal",
+          "text": "Quieter lakes a short drive from Nainital, good for a relaxed boat ride and a picnic."
+        },
+        {
+          "title": "Jim Corbett National Park",
+          "text": "Founded in 1936, it is India's oldest national park and a favourite for tiger and elephant sightings by jeep."
+        },
+        {
+          "title": "Auli and Kedarnath (on request)",
+          "text": "Auli is a ski and mountain-view resort and Kedarnath a high Himalayan shrine at about 3,583 m. Neither is in our standard packages, and both depend on season, road and weather."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Ganga aarti at dusk",
+          "text": "Lamps, chants and floating diyas at Har Ki Pauri in Haridwar or Triveni Ghat in Rishikesh."
+        },
+        {
+          "title": "White-water rafting in Rishikesh",
+          "text": "A guided run through rapids on the Ganga, with safety gear and a trained boatman, in the open season only."
+        },
+        {
+          "title": "Jeep safari in Jim Corbett",
+          "text": "A morning or afternoon drive through the park's safari zones, subject to permit availability and season."
+        },
+        {
+          "title": "Boating on Naini Lake",
+          "text": "A slow row or paddle boat ride at Nainital, best in the morning or at sunset."
+        },
+        {
+          "title": "Cable car and viewpoints",
+          "text": "Ropeway rides at Mussoorie and Nainital for mountain views, depending on weather and operating days."
+        },
+        {
+          "title": "Yoga and riverside camping",
+          "text": "Morning yoga and a night at a riverside camp near Rishikesh, with a campfire where permitted."
+        }
+      ],
+      "food": [
+        {
+          "title": "Garhwali thali",
+          "text": "Local dishes such as kafuli, a spinach curry, chainsoo, a black lentil dish, and jhangora kheer, a sweet made from millet."
+        },
+        {
+          "title": "Kumaoni aloo ke gutke",
+          "text": "Spiced boiled potatoes with local herbs, often served with bhatt ki churkani, a soybean curry."
+        },
+        {
+          "title": "Bal mithai and singori",
+          "text": "Kumaoni sweets, a fudge coated in sugar balls and a milk sweet wrapped in a leaf, sold in Nainital."
+        },
+        {
+          "title": "Momos and chai on the Mall",
+          "text": "Hot momos, maggi and tea are classic Mussoorie and Nainital snacks on a cool evening."
+        },
+        {
+          "title": "Vegetarian and Jain meals",
+          "text": "Haridwar and the temple areas of Rishikesh are vegetarian and largely alcohol-free, and we can arrange Jain meals on request."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Plan around the monsoon",
+          "text": "From July to September landslides can block hill roads for hours or days. Keep buffer time and avoid tight flight or train connections after hill drives."
+        },
+        {
+          "title": "Know the Char Dham season",
+          "text": "Kedarnath, Badrinath, Gangotri and Yamunotri open around late April or May and close around Diwali. Registration is required and rules change, so we confirm at booking."
+        },
+        {
+          "title": "Reach the ghats early for aarti",
+          "text": "Har Ki Pauri and Triveni Ghat fill up well before dusk. Arrive 45 minutes early for a good spot, and keep bags light."
+        },
+        {
+          "title": "Respect the holy towns",
+          "text": "Haridwar and the temple areas of Rishikesh are vegetarian and alcohol-free. Dress modestly at ghats and temples."
+        },
+        {
+          "title": "Book Corbett safaris in advance",
+          "text": "Safari permits are limited and issued against a valid photo ID. Most zones close from about mid-June to mid-November."
+        },
+        {
+          "title": "Pack for cold nights",
+          "text": "Hill stations can be cold at night even in summer, and from November to February they are very cold. Carry layers and motion-sickness tablets for winding roads."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa for Uttarakhand. Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence, which hotels and permits need. Entry to Jim Corbett's safari zones needs a permit booked against ID in advance, and the Char Dham yatra needs registration. We arrange permits and confirm the current rules at booking.",
+        "health": "No compulsory vaccinations. Hill roads are winding, so carry motion-sickness tablets. Mussoorie and Nainital are around 2,000 m, which most people find comfortable, but shrines such as Kedarnath (about 3,583 m) and Auli can cause altitude sickness. Drink bottled or filtered water, and note that rafting has age and health limits.",
+        "money": "ATMs are available in Haridwar, Rishikesh, Dehradun, Mussoorie and Nainital but are scarce in remote areas. UPI works in most towns, though mobile networks can be patchy in the hills, so carry some cash for small shops, ghat offerings and tips."
+      },
+      "faqs": [
+        {
+          "q": "When is the best time to visit Uttarakhand?",
+          "a": "March to June and October to November suit most trips. December to February is cold with snow in the higher hills and is good for Corbett. July to September is the monsoon, with landslide risk on hill roads."
+        },
+        {
+          "q": "How many days do I need?",
+          "a": "Four to five nights covers Haridwar, Rishikesh and Mussoorie, or Nainital and Jim Corbett. Six to seven nights lets you combine them at an easier pace."
+        },
+        {
+          "q": "Can I visit Kedarnath with Indian Rounds?",
+          "a": "Kedarnath is not part of our standard packages. The shrine opens around late April or May and closes around Diwali, needs registration and involves a trek of about 16 km from Gaurikund or a helicopter. We can plan it on request, subject to season and road conditions."
+        },
+        {
+          "q": "Is rafting available all year?",
+          "a": "No. Rafting at Rishikesh is suspended during the monsoon, roughly from July to mid-September, and the water is cold in winter. The season is best from March to June and from late September to November."
+        },
+        {
+          "q": "How do I reach Uttarakhand from Chennai?",
+          "a": "Fly to Dehradun's Jolly Grant airport, usually with one stop, or to Delhi and continue by train or road. Haridwar and Dehradun are the main railheads, and Kathgodam is the railhead for Nainital."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "har-ki-pauri-haridwar",
+      "query": "Har Ki Pauri Ganga aarti Haridwar Uttarakhand",
+      "caption": "Evening Ganga aarti at Har Ki Pauri, Haridwar"
+    },
+    {
+      "slot": "triveni-ghat-rishikesh",
+      "query": "Triveni Ghat Ganga aarti Rishikesh Uttarakhand",
+      "caption": "Ganga aarti at Triveni Ghat, Rishikesh"
+    },
+    {
+      "slot": "laxman-jhula-rishikesh",
+      "query": "Laxman Jhula suspension bridge Rishikesh Uttarakhand",
+      "caption": "The Laxman Jhula area, Rishikesh"
+    },
+    {
+      "slot": "rafting-rishikesh",
+      "query": "river rafting Ganges Rishikesh Uttarakhand",
+      "caption": "White-water rafting on the Ganga, Rishikesh"
+    },
+    {
+      "slot": "mussoorie-hills",
+      "query": "Mussoorie hill station Mall Road Uttarakhand",
+      "caption": "Mussoorie and the Doon valley"
+    },
+    {
+      "slot": "kempty-falls-mussoorie",
+      "query": "Kempty Falls Mussoorie Uttarakhand",
+      "caption": "Kempty Falls, Mussoorie"
+    },
+    {
+      "slot": "naini-lake-nainital",
+      "query": "Naini Lake boats Nainital Uttarakhand",
+      "caption": "Naini Lake, Nainital"
+    },
+    {
+      "slot": "bhimtal-lake",
+      "query": "Bhimtal Lake Nainital Uttarakhand",
+      "caption": "Bhimtal Lake near Nainital"
+    },
+    {
+      "slot": "jim-corbett-safari",
+      "query": "Jim Corbett National Park jeep safari Uttarakhand",
+      "caption": "Jeep safari in Jim Corbett National Park"
+    },
+    {
+      "slot": "robbers-cave-dehradun",
+      "query": "Robber's Cave Guchhupani Dehradun Uttarakhand",
+      "caption": "Robber's Cave, Dehradun"
+    },
+    {
+      "slot": "auli-snow-peaks",
+      "query": "Auli snow Himalayan peaks Chamoli Uttarakhand",
+      "caption": "Snow and Himalayan peaks near Auli"
+    },
+    {
+      "slot": "kumaoni-garhwali-food",
+      "query": "Kumaoni Garhwali food thali Uttarakhand",
+      "caption": "A Garhwali and Kumaoni meal"
+    }
+  ],
+  "hero": "naini-lake-nainital",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "uttarakhand-classic-packages",
+      "name": "Classic Packages",
+      "description": "Tried-and-tested circuits through Haridwar, Rishikesh and Mussoorie, with hotels, an AC vehicle and sightseeing arranged for you.",
+      "photo": "mussoorie-hills",
+      "packages": [
+        "uttarakhand-classic-haridwar-rishikesh-mussoorie",
+        "uttarakhand-ganga-mussoorie-group-trip",
+        "uttarakhand-rishikesh-mussoorie-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "uttarakhand-ganga-and-spiritual",
+      "name": "Ganga and Spiritual",
+      "description": "Aarti at Har Ki Pauri and Triveni Ghat, riverside temples and quiet mornings on the Ganga, with Haridwar and Rishikesh at the centre.",
+      "photo": "har-ki-pauri-haridwar",
+      "packages": [
+        "uttarakhand-classic-haridwar-rishikesh-mussoorie",
+        "uttarakhand-ganga-mussoorie-group-trip",
+        "uttarakhand-rishikesh-mussoorie-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "uttarakhand-family-holidays",
+      "name": "Family Holidays",
+      "description": "Easy-paced trips with lake boating, cable cars and a jeep safari that children and grandparents can enjoy together.",
+      "photo": "naini-lake-nainital",
+      "packages": [
+        "uttarakhand-nainital-corbett-family-holiday",
+        "uttarakhand-classic-haridwar-rishikesh-mussoorie"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "uttarakhand-adventure-and-budget",
+      "name": "Adventure and Budget Saver",
+      "description": "River rafting, riverside camps and short breaks near Rishikesh, planned to keep costs sensible. Ask for a quote for your dates.",
+      "photo": "rafting-rishikesh",
+      "packages": [
+        "uttarakhand-rishikesh-adventure-camp",
+        "uttarakhand-rishikesh-mussoorie-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "uttarakhand-wildlife-and-lakes",
+      "name": "Wildlife and Lakes",
+      "description": "Nainital, Bhimtal and Jim Corbett National Park: lakes, boat rides and jeep safaris for nature lovers and couples.",
+      "photo": "jim-corbett-safari",
+      "packages": [
+        "uttarakhand-nainital-corbett-family-holiday",
+        "uttarakhand-corbett-nainital-honeymoon"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "uttarakhand-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, ready-made itinerary and vegetarian and Jain meal options on request.",
+      "photo": "rafting-rishikesh",
+      "packages": [
+        "uttarakhand-ganga-mussoorie-group-trip"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "uttarakhand-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Forest stays near Corbett and lakeside evenings in Nainital for couples who want slow mornings and time together.",
+      "photo": "bhimtal-lake",
+      "packages": [
+        "uttarakhand-corbett-nainital-honeymoon"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "uttarakhand-weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short break from Friday built around Rishikesh and Mussoorie, with an early arrival, an easy pace and a trip captain on every departure.",
+      "photo": "triveni-ghat-rishikesh",
+      "packages": [
+        "uttarakhand-rishikesh-mussoorie-weekend-escape"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "uttarakhand-ganga-mussoorie-group-trip",
+      "title": "Ganga Aarti, Rafting and Mussoorie Group Trip",
+      "nights": 6,
+      "summary": "Seven days from Haridwar's Ganga aarti to Rishikesh rafting and the hill views of Mussoorie, with a trip captain and an easy pace.",
+      "overview": "This group trip follows the Ganga from the plains into the foothills over six nights: one in Haridwar, two in Rishikesh, two in Mussoorie and a last night in Dehradun. You see the evening aarti at Har Ki Pauri, spend a day on the water at Rishikesh and then climb to Mussoorie for Kempty Falls, Gun Hill and the Mall Road.\n\nA trip captain travels with the group, and vegetarian and Jain meal options are available on request. Breakfast and dinner are included at the hotels, and the pace is relaxed, which suits families, friends travelling together and senior parents.\n\nDepartures run in the dry season only. Rafting depends on river levels and is not available during the monsoon, and hill roads can be affected by weather.",
+      "highlights": [
+        "Evening Ganga aarti at Har Ki Pauri, Haridwar",
+        "Ram Jhula and Laxman Jhula areas and Triveni Ghat aarti in Rishikesh",
+        "White-water rafting on the Ganga, subject to season and river levels",
+        "Kempty Falls, Gun Hill and Mall Road in Mussoorie",
+        "Robber's Cave and Mindrolling Monastery in Dehradun",
+        "Trip captain with the group and vegetarian or Jain meals on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Haridwar | Ganga Aarti at Har Ki Pauri",
+          "description": "Arrive at Haridwar Railway Station or Dehradun (Jolly Grant) Airport and meet your trip captain.\nTransfer to your hotel in Haridwar and check in.\nIn the evening, walk to Har Ki Pauri for the Ganga aarti at dusk.\nDinner at the hotel.\nOvernight stay in Haridwar."
+        },
+        {
+          "day": 2,
+          "title": "Haridwar to Rishikesh | Triveni Ghat Aarti",
+          "description": "After breakfast, visit Mansa Devi temple; the ropeway ride is optional and paid locally.\nCheck out and drive to Rishikesh, about an hour away.\nCheck in, then explore the Ram Jhula and Laxman Jhula areas with their riverside cafes and shops.\nAttend the evening aarti at Triveni Ghat, followed by dinner at the hotel.\nOvernight stay in Rishikesh."
+        },
+        {
+          "day": 3,
+          "title": "River Rafting | Free Afternoon in Rishikesh",
+          "description": "After breakfast, head to the rafting point for a guided white-water run on the Ganga, with safety gear provided.\nHave a snack and change at the riverbank before returning to the hotel.\nThe afternoon is free for cafes, shopping or a quiet walk by the river.\nDinner at the hotel.\nOvernight stay in Rishikesh."
+        },
+        {
+          "day": 4,
+          "title": "Rishikesh to Mussoorie | Evening on Mall Road",
+          "description": "After breakfast, check out and drive to Mussoorie via Dehradun, about three hours.\nCheck in at your hotel and rest after the winding drive.\nIn the evening, stroll along Mall Road and enjoy tea and snacks.\nDinner at the hotel.\nOvernight stay in Mussoorie."
+        },
+        {
+          "day": 5,
+          "title": "Kempty Falls | Gun Hill | Company Garden",
+          "description": "After breakfast, drive to Kempty Falls for a morning at the waterfall.\nReturn to Mussoorie and visit Company Garden.\nTake the ropeway to Gun Hill for mountain views on clear days, subject to operation.\nThe evening is free for Mall Road.\nOvernight stay in Mussoorie."
+        },
+        {
+          "day": 6,
+          "title": "Mussoorie to Dehradun | Robber's Cave and Monastery",
+          "description": "After breakfast, check out and drive down to Dehradun, about 1.5 hours away.\nVisit Robber's Cave (Guchhupani), a river gorge cut through a natural cave.\nContinue to Mindrolling Monastery for its Buddhist temple and gardens.\nCheck in at your hotel and enjoy a free evening.\nOvernight stay in Dehradun."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Dehradun",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Dehradun Railway Station or Jolly Grant Airport for your onward journey."
+        }
+      ],
+      "inclusions": [
+        "1 night hotel accommodation in Haridwar on twin sharing",
+        "2 nights hotel accommodation in Rishikesh on twin sharing",
+        "2 nights hotel accommodation in Mussoorie on twin sharing",
+        "1 night hotel accommodation in Dehradun on twin sharing",
+        "Daily breakfast and dinner at the hotels",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Guided white-water rafting in Rishikesh, subject to season and river levels",
+        "Entry to the sights listed in the itinerary, except optional rides",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, such as flights or trains",
+        "Lunches and any meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and ropeway rides such as Mansa Devi, unless listed",
+        "Camera fees and any entry fees not listed",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller, as hotels require it at check-in.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change.",
+        "A trip captain accompanies the group throughout.",
+        "The itinerary order may change due to weather, road, river or operational conditions without reducing the sights covered.",
+        "Rafting is suspended during the monsoon, roughly July to mid-September, and has age and health limits. High water can also stop trips.",
+        "Hill roads between Rishikesh and Mussoorie can be delayed by landslides or heavy rain, so allow buffer time.",
+        "Haridwar and the temple areas of Rishikesh are vegetarian and alcohol-free. Dress modestly at ghats and temples."
+      ],
+      "must_carry": [
+        "Government photo ID such as Aadhaar, passport, voter ID or driving licence",
+        "Train or flight tickets",
+        "Warm layers, as hill nights are cold",
+        "Comfortable walking shoes",
+        "Swimwear or a quick-dry change of clothes for rafting",
+        "Motion-sickness tablets and personal medicines",
+        "Sunscreen, hat and sunglasses",
+        "Rain jacket or umbrella"
+      ],
+      "pickup": "Haridwar Railway Station or Dehradun (Jolly Grant) Airport",
+      "drop_point": "Dehradun Railway Station or Dehradun (Jolly Grant) Airport",
+      "photo": "triveni-ghat-rishikesh",
+      "gallery": [
+        "har-ki-pauri-haridwar",
+        "rafting-rishikesh",
+        "kempty-falls-mussoorie",
+        "robbers-cave-dehradun"
+      ],
+      "price": 22500,
+      "original_price": 24300,
+      "departures": {
+        "weekday": 6,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 24
+      }
+    },
+    {
+      "slug": "uttarakhand-rishikesh-mussoorie-weekend-escape",
+      "title": "Uttarakhand Weekend Escape: Rishikesh Rafting and Mussoorie Hills",
+      "nights": 3,
+      "summary": "A long weekend with Ganga aarti and white-water rafting in Rishikesh, then a night in the hills at Mussoorie, travelling in a small group.",
+      "overview": "This short break fits the river and the hills into four easy days. You arrive in Rishikesh for the Ganga aarti, spend a day rafting and relaxing by the river, and then drive up to Mussoorie for Kempty Falls and an evening on the Mall Road before a late departure.\n\nThe pace is deliberately gentle, with one headline activity a day. A trip captain travels with the group, and vegetarian and Jain meal options are available on request.\n\nRafting runs in the open season only and depends on river levels, and hill roads can be slow after heavy rain.",
+      "highlights": [
+        "Ram Jhula and Laxman Jhula areas and Triveni Ghat aarti in Rishikesh",
+        "White-water rafting on the Ganga, subject to season and river levels",
+        "Free time at riverside cafes in Rishikesh",
+        "Kempty Falls and Mall Road in Mussoorie",
+        "Trip captain with the group and vegetarian or Jain meals on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Rishikesh | Triveni Ghat Aarti",
+          "description": "Arrive at Haridwar Railway Station or Dehradun (Jolly Grant) Airport early in the day and meet your trip captain.\nTransfer to Rishikesh, about 25 minutes to an hour away depending on where you land.\nCheck in, then explore the Ram Jhula and Laxman Jhula areas and their riverside cafes.\nAttend the evening aarti at Triveni Ghat.\nOvernight stay in Rishikesh."
+        },
+        {
+          "day": 2,
+          "title": "River Rafting | Free Afternoon",
+          "description": "After breakfast, take a guided white-water rafting run on the Ganga, with safety gear provided.\nReturn to the hotel to freshen up.\nThe afternoon is free for cafes, shopping or a walk by the river.\nOvernight stay in Rishikesh."
+        },
+        {
+          "day": 3,
+          "title": "Rishikesh to Mussoorie | Kempty Falls | Mall Road",
+          "description": "After breakfast, check out and drive to Mussoorie via Dehradun, about three hours.\nVisit Kempty Falls in the afternoon.\nCheck in at your hotel, then stroll along Mall Road in the evening.\nOvernight stay in Mussoorie."
+        },
+        {
+          "day": 4,
+          "title": "Mussoorie Morning | Departure",
+          "description": "After breakfast, visit Company Garden or enjoy a short walk on Mall Road.\nCheck out and drive to Dehradun, about 1.5 hours away.\nTransfer to Dehradun Railway Station or Jolly Grant Airport for your late departure."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Rishikesh on twin sharing",
+        "1 night hotel accommodation in Mussoorie on twin sharing",
+        "Daily breakfast at the hotels",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Guided white-water rafting in Rishikesh, subject to season and river levels",
+        "Sightseeing in Rishikesh and Mussoorie as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, such as flights or trains",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities, ropeway rides and camera fees",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Transport to and from the destination is not included and is not booked by us unless asked.",
+        "Carry a valid government photo ID for every traveller, as hotels require it at check-in.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group throughout.",
+        "Rafting is suspended during the monsoon, roughly July to mid-September, and has age and health limits. High water can also stop trips.",
+        "Hill roads to Mussoorie can be delayed by landslides or heavy rain, so allow buffer time on the last day.",
+        "The itinerary order may change due to weather, road or river conditions without reducing the sights covered."
+      ],
+      "must_carry": [
+        "Government photo ID such as Aadhaar, passport, voter ID or driving licence",
+        "Train or flight tickets",
+        "Warm layers for Mussoorie evenings",
+        "Comfortable walking shoes",
+        "Swimwear or a quick-dry change of clothes for rafting",
+        "Motion-sickness tablets and personal medicines"
+      ],
+      "pickup": "Haridwar Railway Station or Dehradun (Jolly Grant) Airport",
+      "drop_point": "Dehradun Railway Station or Dehradun (Jolly Grant) Airport",
+      "photo": "rafting-rishikesh",
+      "gallery": [
+        "triveni-ghat-rishikesh",
+        "laxman-jhula-rishikesh",
+        "kempty-falls-mussoorie",
+        "mussoorie-hills"
+      ],
+      "price": 11500,
+      "original_price": 12400,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "uttarakhand-corbett-nainital-honeymoon",
+      "title": "Corbett and Nainital Honeymoon: Jungle Safari, Lakeside Evenings and Candlelight",
+      "nights": 5,
+      "summary": "Five unhurried nights for two, with a jeep safari near Jim Corbett, boat rides on Naini Lake, a couples spa session and a candlelight dinner in Nainital.",
+      "overview": "This private honeymoon pairs the forests of Jim Corbett with the lakes of Nainital: two nights near the national park and three in Nainital. You travel by private car throughout, start most mornings late and keep the evenings for each other.\n\nAt Corbett, the signature outing is a jeep safari through sal forest and grassland, subject to permit availability and season. In Nainital you take a boat ride on Naini Lake, ride the cable car to Snow View Point and make a day trip to the quieter Bhimtal lake.\n\nExpect a flower welcome and bed decoration on arrival, a couples spa session and a candlelight dinner, all subject to availability. Please share your wedding date at booking so the hotels can arrange the welcome. This trip runs from November to June, when the safari zones are open.",
+      "highlights": [
+        "Private car for transfers and sightseeing, with unhurried mornings",
+        "Jeep safari at Jim Corbett National Park, subject to permit and season",
+        "Boat ride on Naini Lake, Nainital",
+        "Snow View Point cable car and Naina Devi temple",
+        "Day trip to the quiet Bhimtal lake",
+        "Couples spa session, subject to availability",
+        "Candlelight dinner and a flower welcome with bed decoration"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival near Jim Corbett | Welcome",
+          "description": "Arrive at Ramnagar Railway Station, where your private car is waiting.\nTransfer to your resort near Jim Corbett National Park, about 20 minutes away, and check in.\nA flower welcome and bed decoration are arranged, subject to availability.\nThe evening is free for a quiet dinner and a walk around the grounds.\nOvernight stay near Jim Corbett."
+        },
+        {
+          "day": 2,
+          "title": "Jeep Safari | Free Afternoon",
+          "description": "Enjoy an early start for your jeep safari in one of the park's safari zones, subject to permit allotment.\nLook out for deer, elephants, birds and, with luck, a tiger.\nReturn to the resort for a late breakfast and rest.\nThe afternoon and evening are free, with optional activities on request.\nOvernight stay near Jim Corbett."
+        },
+        {
+          "day": 3,
+          "title": "Corbett to Nainital | Naini Lake Boat Ride",
+          "description": "After a leisurely breakfast, check out and travel by private car to Nainital, around two hours away.\nCheck in at your lakeside or hill-view hotel, subject to availability.\nTake a boat ride on Naini Lake in the late afternoon, weather permitting.\nEnjoy a stroll along Mall Road.\nOvernight stay in Nainital."
+        },
+        {
+          "day": 4,
+          "title": "Snow View Point | Naina Devi | Couples Spa",
+          "description": "After a late breakfast, ride the cable car to Snow View Point for mountain views on clear days.\nVisit the Naina Devi temple at the lake's edge.\nReturn to the hotel for a couples spa session, subject to availability.\nIn the evening, enjoy a candlelight dinner, subject to availability.\nOvernight stay in Nainital."
+        },
+        {
+          "day": 5,
+          "title": "Bhimtal Lake | Free Evening",
+          "description": "After breakfast, drive to Bhimtal, about 45 minutes from Nainital.\nSpend a relaxed morning by the lake, with time for a boat ride and a snack.\nReturn to Nainital for a free afternoon and evening.\nOvernight stay in Nainital."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Nainital",
+          "description": "Enjoy a relaxed breakfast and a last look at the lake.\nCheck out of the hotel.\nYour private car takes you to Kathgodam Railway Station, about 1.5 hours away, for your onward journey."
+        }
+      ],
+      "inclusions": [
+        "2 nights stay in a resort near Jim Corbett on twin sharing",
+        "3 nights hotel accommodation in Nainital on twin sharing",
+        "Daily breakfast at the hotels",
+        "Flower welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner in Nainital, subject to availability",
+        "One couples spa session in Nainital, subject to availability",
+        "One jeep safari at Jim Corbett, subject to permit availability",
+        "Boat ride on Naini Lake and cable car to Snow View Point",
+        "Private car for transfers and sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, such as flights or trains",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and additional safaris",
+        "Camera fees and any entry fees not listed",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Safari permits are issued against a valid photo ID, with names as on the ID, and zone allotment is set by the park authorities.",
+        "Most Corbett safari zones are closed from about mid-June to mid-November, so this trip is offered from November to June.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Rates are indicative and confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "The itinerary order may change due to weather, road or operational conditions without reducing the sights covered.",
+        "Nainital is cold from December to February, and heavy rain in the monsoon can cause landslides on hill roads."
+      ],
+      "must_carry": [
+        "Government photo ID for every traveller, matching the safari permit",
+        "Train or flight tickets",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Warm layers for Nainital and early safari mornings",
+        "Comfortable walking shoes",
+        "Muted clothing for the safari",
+        "Sunscreen, hat and sunglasses",
+        "Motion-sickness tablets and personal medicines"
+      ],
+      "pickup": "Ramnagar Railway Station (Jim Corbett)",
+      "drop_point": "Kathgodam Railway Station",
+      "photo": "jim-corbett-safari",
+      "gallery": [
+        "naini-lake-nainital",
+        "bhimtal-lake",
+        "kumaoni-garhwali-food"
+      ],
+      "price": 25500,
+      "original_price": 27500
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "uttarakhand-classic-haridwar-rishikesh-mussoorie",
+      "title": "Classic Uttarakhand: Haridwar, Rishikesh and Mussoorie",
+      "nights": 5,
+      "summary": "A private five-night circuit with Haridwar's Ganga aarti, Rishikesh rafting and the hill views of Mussoorie.",
+      "overview": "This classic private circuit takes you from the Ganga ghats to the hill station of Mussoorie in five nights. You see the evening aarti at Har Ki Pauri, explore Rishikesh and spend a day on the river, then travel up to Mussoorie for Kempty Falls, Gun Hill and the Mall Road.\n\nIt works for families, couples and friends who want a first look at Uttarakhand without a rushed schedule. Departure dates and the pace are flexible, and the price shown is a sample starting price.\n\nThis trip is best from March to June and from October to November. Rafting is not available in the monsoon.",
+      "highlights": [
+        "Evening Ganga aarti at Har Ki Pauri, Haridwar",
+        "Mansa Devi temple, with an optional ropeway ride",
+        "Ram Jhula and Laxman Jhula areas and Triveni Ghat aarti in Rishikesh",
+        "White-water rafting on the Ganga, subject to season",
+        "Kempty Falls, Gun Hill and Mall Road in Mussoorie"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Haridwar | Ganga Aarti at Har Ki Pauri",
+          "description": "Arrive at Haridwar Railway Station or Dehradun (Jolly Grant) Airport.\nTransfer to your hotel in Haridwar and check in.\nIn the evening, walk to Har Ki Pauri for the Ganga aarti at dusk.\nOvernight stay in Haridwar."
+        },
+        {
+          "day": 2,
+          "title": "Haridwar to Rishikesh | Triveni Ghat Aarti",
+          "description": "After breakfast, visit Mansa Devi temple; the ropeway ride is optional and paid locally.\nCheck out and drive to Rishikesh, about an hour away.\nExplore the Ram Jhula and Laxman Jhula areas and their riverside cafes.\nAttend the evening aarti at Triveni Ghat.\nOvernight stay in Rishikesh."
+        },
+        {
+          "day": 3,
+          "title": "River Rafting | Free Afternoon",
+          "description": "After breakfast, take a guided white-water rafting run on the Ganga, with safety gear provided.\nReturn to the hotel to freshen up.\nThe afternoon is free for cafes, yoga or a walk by the river.\nOvernight stay in Rishikesh."
+        },
+        {
+          "day": 4,
+          "title": "Rishikesh to Mussoorie | Mall Road",
+          "description": "After breakfast, check out and drive to Mussoorie via Dehradun, about three hours.\nCheck in at your hotel and rest after the winding drive.\nStroll along Mall Road in the evening.\nOvernight stay in Mussoorie."
+        },
+        {
+          "day": 5,
+          "title": "Kempty Falls | Gun Hill | Company Garden",
+          "description": "After breakfast, drive to Kempty Falls for a morning at the waterfall.\nVisit Company Garden and take the ropeway to Gun Hill for mountain views, subject to operation.\nEnjoy a free evening on Mall Road.\nOvernight stay in Mussoorie."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Dehradun",
+          "description": "After breakfast, check out and drive to Dehradun, about 1.5 hours away.\nTransfer to Dehradun Railway Station or Jolly Grant Airport for your onward journey."
+        }
+      ],
+      "inclusions": [
+        "1 night hotel accommodation in Haridwar on twin sharing",
+        "2 nights hotel accommodation in Rishikesh on twin sharing",
+        "2 nights hotel accommodation in Mussoorie on twin sharing",
+        "Daily breakfast at the hotels",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Guided white-water rafting in Rishikesh, subject to season and river levels",
+        "Sightseeing as per itinerary, except optional rides",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, such as flights or trains",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities, ropeway rides and camera fees",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller, as hotels require it at check-in.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Rates are indicative and confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "The itinerary order may change due to weather, road or river conditions without reducing the sights covered.",
+        "Rafting is suspended during the monsoon, roughly July to mid-September, and has age and health limits.",
+        "Hill roads can be blocked by landslides in the monsoon, so we advise travelling outside July to September.",
+        "Haridwar and the temple areas of Rishikesh are vegetarian and alcohol-free. Dress modestly at ghats and temples."
+      ],
+      "must_carry": [
+        "Government photo ID such as Aadhaar, passport, voter ID or driving licence",
+        "Train or flight tickets",
+        "Warm layers, as hill nights are cold",
+        "Comfortable walking shoes",
+        "Swimwear or a quick-dry change of clothes for rafting",
+        "Motion-sickness tablets and personal medicines"
+      ],
+      "pickup": "Haridwar Railway Station or Dehradun (Jolly Grant) Airport",
+      "drop_point": "Dehradun Railway Station or Dehradun (Jolly Grant) Airport",
+      "photo": "har-ki-pauri-haridwar",
+      "gallery": [
+        "laxman-jhula-rishikesh",
+        "rafting-rishikesh",
+        "mussoorie-hills",
+        "kempty-falls-mussoorie"
+      ],
+      "price": 19500,
+      "original_price": 21000
+    },
+    {
+      "slug": "uttarakhand-nainital-corbett-family-holiday",
+      "title": "Nainital, Bhimtal and Jim Corbett Family Holiday",
+      "nights": 4,
+      "summary": "A private four-night family trip with boating at Nainital and Bhimtal, a cable car ride and a jeep safari near Jim Corbett.",
+      "overview": "This family trip pairs two nights in Nainital with two near Jim Corbett National Park. In Nainital you take a boat ride on the lake, ride the cable car to Snow View Point and visit the quieter lake at Bhimtal, then drive towards Corbett via Kaladhungi, where Jim Corbett's old home is now a museum.\n\nThe next morning is a jeep safari through the park, with time to rest and enjoy the resort grounds afterwards. The pace is easy, with short drives and plenty of breaks, which suits children and grandparents.\n\nThis trip is offered from November to June, when the Corbett safari zones are open.",
+      "highlights": [
+        "Boat ride on Naini Lake and a stroll on Mall Road",
+        "Cable car ride to Snow View Point, subject to operation",
+        "Bhimtal Lake and a relaxed day by the water",
+        "Jim Corbett Museum at Kaladhungi on the drive",
+        "Jeep safari at Jim Corbett National Park, subject to permit and season"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kathgodam | Drive to Nainital",
+          "description": "Arrive at Kathgodam Railway Station and meet your driver.\nDrive to Nainital, about 1.5 hours away, and check in at your hotel.\nTake a boat ride on Naini Lake in the late afternoon, weather permitting.\nWalk along Mall Road in the evening.\nOvernight stay in Nainital."
+        },
+        {
+          "day": 2,
+          "title": "Snow View Point | Naina Devi | Bhimtal",
+          "description": "After breakfast, ride the cable car to Snow View Point for mountain views on clear days.\nVisit the Naina Devi temple beside the lake.\nIn the afternoon, drive to Bhimtal, about 45 minutes away, and enjoy the lake.\nReturn to Nainital for a free evening.\nOvernight stay in Nainital."
+        },
+        {
+          "day": 3,
+          "title": "Nainital to Jim Corbett | Kaladhungi",
+          "description": "After breakfast, check out and drive towards Corbett, about two hours away.\nStop at the Jim Corbett Museum in Kaladhungi on the way.\nCheck in at your resort near the park and rest.\nEnjoy a free evening in the resort grounds.\nOvernight stay near Jim Corbett."
+        },
+        {
+          "day": 4,
+          "title": "Jeep Safari | Free Afternoon",
+          "description": "Enjoy an early start for your jeep safari in one of the park's safari zones, subject to permit allotment.\nReturn to the resort for breakfast and rest.\nThe afternoon is free for the resort or optional activities on request.\nOvernight stay near Jim Corbett."
+        },
+        {
+          "day": 5,
+          "title": "Departure from Ramnagar",
+          "description": "After breakfast, check out of the resort.\nTransfer to Ramnagar Railway Station for your onward journey."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Nainital on twin sharing",
+        "2 nights stay in a resort near Jim Corbett on twin sharing",
+        "Daily breakfast at the hotels",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Boat ride on Naini Lake and cable car to Snow View Point",
+        "One jeep safari at Jim Corbett, subject to permit availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, such as flights or trains",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities, additional safaris and camera fees",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller. Safari permits are issued against ID, with names as on the ID.",
+        "Most Corbett safari zones are closed from about mid-June to mid-November, so this trip is offered from November to June.",
+        "Safari zone allotment and timings are set by the park authorities and may be subject to change.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Rates are indicative and confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "The itinerary order may change due to weather or road conditions without reducing the sights covered.",
+        "Nainital is cold from December to February, and heavy rain in the monsoon can cause landslides on hill roads."
+      ],
+      "must_carry": [
+        "Government photo ID for every traveller, matching the safari permit",
+        "Train tickets",
+        "Warm layers for Nainital and early safari mornings",
+        "Comfortable walking shoes",
+        "Muted clothing for the safari",
+        "Motion-sickness tablets and personal medicines"
+      ],
+      "pickup": "Kathgodam Railway Station",
+      "drop_point": "Ramnagar Railway Station (Jim Corbett)",
+      "photo": "naini-lake-nainital",
+      "gallery": [
+        "bhimtal-lake",
+        "jim-corbett-safari",
+        "kumaoni-garhwali-food"
+      ],
+      "price": 16500,
+      "original_price": 17800
+    },
+    {
+      "slug": "uttarakhand-rishikesh-adventure-camp",
+      "title": "Rishikesh Adventure: Rafting, Riverside Camp and Yoga",
+      "nights": 3,
+      "summary": "A private three-night break in Rishikesh with white-water rafting, a riverside camp stay, morning yoga and the Ganga aarti.",
+      "overview": "This active private break keeps you in and around Rishikesh for three nights. You raft through rapids on the Ganga, sleep at a riverside camp, start a morning with yoga and finish with the evening aarti at Triveni Ghat.\n\nIt suits friends, young travellers and anyone who wants a few days of fresh air on a modest budget. Optional adventure activities such as a giant swing or cliff jumping can be added on request, subject to operator availability and age and health limits.\n\nRafting runs in the open season only, from about mid-September to June. Ask for a quote for your dates and group size.",
+      "highlights": [
+        "White-water rafting on the Ganga, subject to season and river levels",
+        "Riverside camp stay with a campfire where permitted",
+        "Morning yoga session by the river",
+        "Ram Jhula and Laxman Jhula areas and Triveni Ghat aarti",
+        "Optional adventure activities on request, subject to age and health limits"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Rishikesh | Triveni Ghat Aarti",
+          "description": "Arrive at Haridwar Railway Station or Dehradun (Jolly Grant) Airport.\nTransfer to Rishikesh and check in at your riverside camp or hotel.\nExplore the Ram Jhula and Laxman Jhula areas and their cafes.\nAttend the evening aarti at Triveni Ghat.\nOvernight stay in Rishikesh."
+        },
+        {
+          "day": 2,
+          "title": "River Rafting | Campfire Evening",
+          "description": "After breakfast, take a guided white-water rafting run on the Ganga, with safety gear provided.\nReturn to the camp for a rest and a late lunch at your own cost.\nIn the evening, enjoy a campfire where permitted, with music and snacks.\nOvernight stay in Rishikesh."
+        },
+        {
+          "day": 3,
+          "title": "Morning Yoga | Waterfall Walk | Free Evening",
+          "description": "Start with a short yoga session by the river.\nAfter breakfast, take an easy walk to Neer Garh waterfall, near Laxman Jhula, if the path is open.\nThe afternoon is free for cafes, shopping or optional adventure activities on request.\nOvernight stay in Rishikesh."
+        },
+        {
+          "day": 4,
+          "title": "Departure via Haridwar",
+          "description": "After breakfast, check out of the camp or hotel.\nDrive to Haridwar, about an hour away, with a short stop at Har Ki Pauri if time allows.\nTransfer to Haridwar Railway Station or Jolly Grant Airport for your onward journey."
+        }
+      ],
+      "inclusions": [
+        "3 nights stay at a riverside camp or hotel in Rishikesh on twin sharing",
+        "Daily breakfast",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Guided white-water rafting in Rishikesh, subject to season and river levels",
+        "Morning yoga session as per itinerary",
+        "Campfire evening where permitted",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, such as flights or trains",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional adventure activities such as a giant swing or cliff jumping",
+        "Camera fees and any entry fees not listed",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller, as camps and hotels require it at check-in.",
+        "Rafting is suspended during the monsoon, roughly July to mid-September, and high water can stop trips at other times.",
+        "Rafting and adventure activities have age and health limits, and guests take part at their own risk, following the guide's instructions.",
+        "Standard check-in is around 2 pm and check-out around 12 noon. Camp facilities are simpler than a hotel.",
+        "Rates are indicative and confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "The itinerary order may change due to weather, river or operational conditions without reducing the activities covered.",
+        "Haridwar and the temple areas of Rishikesh are vegetarian and alcohol-free. Dress modestly at ghats and temples."
+      ],
+      "must_carry": [
+        "Government photo ID such as Aadhaar, passport, voter ID or driving licence",
+        "Train or flight tickets",
+        "Swimwear or a quick-dry change of clothes for rafting",
+        "Sports sandals or water shoes",
+        "Warm layers for camp evenings",
+        "Sunscreen, hat and sunglasses",
+        "Torch or phone light, power bank and personal medicines"
+      ],
+      "pickup": "Haridwar Railway Station or Dehradun (Jolly Grant) Airport",
+      "drop_point": "Haridwar Railway Station or Dehradun (Jolly Grant) Airport",
+      "photo": "rafting-rishikesh",
+      "gallery": [
+        "laxman-jhula-rishikesh",
+        "triveni-ghat-rishikesh",
+        "har-ki-pauri-haridwar"
+      ],
+      "price": null,
+      "original_price": null
+    }
+  ]
+}

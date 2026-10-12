@@ -113,7 +113,53 @@ class CatalogueContent
             'honeymoon_trips.*.itinerary.*.day' => ['required', 'integer', 'min:1'],
             'honeymoon_trips.*.itinerary.*.title' => $text(100),
             'honeymoon_trips.*.itinerary.*.description' => $text(1200),
-        ], $content('packages.*'), $content('group_trips.*'), $content('honeymoon_trips.*'));
+            'custom_trips' => ['nullable', 'array', 'max:6'],
+            'custom_trips.*.slug' => ['required', 'string', 'regex:/^[a-z0-9-]+$/'],
+            'custom_trips.*.title' => $text(120),
+            'custom_trips.*.nights' => ['required', 'integer', 'min:2', 'max:15'],
+            'custom_trips.*.overview' => $text(1500),
+            'custom_trips.*.price' => ['nullable', 'integer', 'min:3000', 'max:2000000'],
+            'custom_trips.*.original_price' => ['nullable', 'integer', 'gt:custom_trips.*.price'],
+            'custom_trips.*.itinerary' => ['required', 'array', 'min:3', 'max:16'],
+            'custom_trips.*.itinerary.*.day' => ['required', 'integer', 'min:1'],
+            'custom_trips.*.itinerary.*.title' => $text(100),
+            'custom_trips.*.itinerary.*.description' => $text(1200),
+            'destination_record' => ['nullable', 'array'],
+            'destination_record.name' => ['required_with:destination_record', 'string', 'max:120'],
+            'destination_record.region' => ['required_with:destination_record', 'in:india,international'],
+            'destination_record.tagline' => ['required_with:destination_record', 'string', 'max:255'],
+            'destination_record.best_time' => ['required_with:destination_record', 'string', 'max:120'],
+            'destination_record.places' => ['required_with:destination_record', 'string', 'max:500'],
+            'destination_record.sort' => ['nullable', 'integer', 'min:0', 'max:65535'],
+            'destination_record.seasons' => ['required_with:destination_record', 'array'],
+            'destination_record.seasons.*.months' => ['required', 'string', 'max:60'],
+            'destination_record.seasons.*.places' => ['required', 'string', 'max:600'],
+            'destination_record.seasons.*.activities' => ['required', 'string', 'max:1200'],
+            'destination_record.profile' => ['required_with:destination_record', 'array'],
+            'destination_record.profile.overview' => ['required_with:destination_record', 'string', 'max:5000'],
+            'destination_record.profile.facts' => ['required_with:destination_record', 'array'],
+            'destination_record.profile.facts.*' => ['string', 'max:200'],
+            'destination_record.profile.travel_info' => ['required_with:destination_record', 'array'],
+            'destination_record.profile.travel_info.*' => ['string', 'max:1500'],
+            'destination_record.profile.reasons' => ['required_with:destination_record', 'array', 'min:4', 'max:12'],
+            'destination_record.profile.attractions' => ['required_with:destination_record', 'array', 'min:6', 'max:16'],
+            'destination_record.profile.experiences' => ['required_with:destination_record', 'array', 'min:5', 'max:16'],
+            'destination_record.profile.food' => ['required_with:destination_record', 'array', 'min:4', 'max:12'],
+            'destination_record.profile.tips' => ['required_with:destination_record', 'array', 'min:5', 'max:12'],
+            'destination_record.profile.reasons.*.title' => ['required', 'string', 'max:120'],
+            'destination_record.profile.reasons.*.text' => ['nullable', 'string', 'max:700'],
+            'destination_record.profile.attractions.*.title' => ['required', 'string', 'max:120'],
+            'destination_record.profile.attractions.*.text' => ['nullable', 'string', 'max:700'],
+            'destination_record.profile.experiences.*.title' => ['required', 'string', 'max:120'],
+            'destination_record.profile.experiences.*.text' => ['nullable', 'string', 'max:700'],
+            'destination_record.profile.food.*.title' => ['required', 'string', 'max:120'],
+            'destination_record.profile.food.*.text' => ['nullable', 'string', 'max:700'],
+            'destination_record.profile.tips.*.title' => ['required', 'string', 'max:120'],
+            'destination_record.profile.tips.*.text' => ['nullable', 'string', 'max:700'],
+            'destination_record.profile.faqs' => ['required_with:destination_record', 'array', 'min:4', 'max:15'],
+            'destination_record.profile.faqs.*.q' => ['required', 'string', 'max:250'],
+            'destination_record.profile.faqs.*.a' => ['required', 'string', 'max:1500'],
+        ], $content('packages.*'), $content('group_trips.*'), $content('honeymoon_trips.*'), $content('custom_trips.*'));
 
         $validator = Validator::make($data, $rules);
         $errors = $validator->errors()->all();
@@ -122,7 +168,7 @@ class CatalogueContent
         $slots = array_column(is_array($data['photos'] ?? null) ? $data['photos'] : [], 'slot');
         $known = array_flip(array_filter($slots, 'is_string'));
         $used = [(string) ($data['hero'] ?? '')];
-        foreach (['categories', 'packages', 'group_trips', 'honeymoon_trips'] as $group) {
+        foreach (['categories', 'packages', 'group_trips', 'honeymoon_trips', 'custom_trips'] as $group) {
             foreach ((array) ($data[$group] ?? []) as $row) {
                 $used[] = (string) ($row['photo'] ?? '');
                 foreach ((array) ($row['gallery'] ?? []) as $g) {
@@ -140,7 +186,7 @@ class CatalogueContent
         }
 
         $slugs = [];
-        foreach (['packages', 'group_trips', 'honeymoon_trips'] as $group) {
+        foreach (['packages', 'group_trips', 'honeymoon_trips', 'custom_trips'] as $group) {
             foreach ((array) ($data[$group] ?? []) as $row) {
                 $slug = (string) ($row['slug'] ?? '');
                 if (isset($slugs[$slug])) {
@@ -149,7 +195,7 @@ class CatalogueContent
                 $slugs[$slug] = $group;
             }
         }
-        foreach ([...(array) ($data['group_trips'] ?? []), ...(array) ($data['honeymoon_trips'] ?? [])] as $g) {
+        foreach ([...(array) ($data['group_trips'] ?? []), ...(array) ($data['honeymoon_trips'] ?? []), ...(array) ($data['custom_trips'] ?? [])] as $g) {
             $nights = (int) ($g['nights'] ?? 0);
             $days = array_column((array) ($g['itinerary'] ?? []), 'day');
             if ($days !== range(1, $nights + 1)) {
@@ -160,7 +206,7 @@ class CatalogueContent
         foreach ((array) ($data['categories'] ?? []) as $c) {
             foreach ((array) ($c['packages'] ?? []) as $p) {
                 if (! isset($slugs[$p])) {
-                    $errors[] = "Category \"{$c['slug']}\" lists \"{$p}\", which is not in packages, group_trips or honeymoon_trips.";
+                    $errors[] = "Category \"{$c['slug']}\" lists \"{$p}\", which is not in packages, group_trips, honeymoon_trips or custom_trips.";
                 }
                 if (($c['menu'] ?? '') === 'destinations') {
                     $inMenus[$p] = true;
@@ -195,7 +241,30 @@ class CatalogueContent
      */
     public function apply(array $data, bool $withPhotos, bool $force, bool $dryRun): array
     {
-        $destination = Destination::query()->where('slug', $data['destination'])->firstOrFail();
+        if ($dryRun) {
+            // Run everything so the counts are real, then undo it.
+            DB::beginTransaction();
+            try {
+                return $this->applyAll($data, $withPhotos, $force);
+            } finally {
+                DB::rollBack();
+            }
+        }
+
+        return DB::transaction(fn () => $this->applyAll($data, $withPhotos, $force));
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     * @return array{tours: int, created: int, categories: int, photos_missing: list<string>, missing_tours: list<string>}
+     */
+    private function applyAll(array $data, bool $withPhotos, bool $force): array
+    {
+        $destination = Destination::query()->where('slug', $data['destination'])->first();
+        if ($destination === null && is_array($data['destination_record'] ?? null)) {
+            $destination = $this->createDestination($data['destination'], $data['destination_record']);
+        }
+        $destination ??= Destination::query()->where('slug', $data['destination'])->firstOrFail();
         $dest = $destination->slug;
         $summary = ['tours' => 0, 'created' => 0, 'categories' => 0, 'photos_missing' => [], 'missing_tours' => []];
 
@@ -290,6 +359,28 @@ class CatalogueContent
                 $summary['tours']++;
             }
 
+            foreach ($data['custom_trips'] ?? [] as $row) {
+                $tour = Tour::query()->firstOrNew(['slug' => $row['slug']]);
+                if (! $tour->exists) {
+                    $summary['created']++;
+                    $tour->fill(['slug' => $row['slug'], 'code' => mb_substr('content-'.$row['slug'], 0, 60), 'status' => 'published', 'featured' => false]);
+                }
+                $price = $row['price'] ?? null;
+                $tour->fill([
+                    'destination_id' => $destination->id, 'title' => $row['title'], 'tour_type' => 'custom',
+                    'haul_class' => $destination->region === 'india' ? 'short' : 'long', 'duration_nights' => $row['nights'],
+                    'summary' => $row['summary'], 'overview' => $row['overview'], 'highlights' => $row['highlights'], 'itinerary' => $row['itinerary'],
+                    'inclusions' => $row['inclusions'], 'exclusions' => $row['exclusions'], 'notes' => $row['notes'], 'must_carry' => $row['must_carry'],
+                    'pickup' => $row['pickup'] ?? null, 'drop_point' => $row['drop_point'] ?? null,
+                    'base_price' => $price, 'original_price' => $price === null ? null : ($row['original_price'] ?? null), 'show_price' => true,
+                    'tags' => $price === null ? ($tour->tags ?? []) : $this->withTag($tour->tags, self::SAMPLE_TAG),
+                ]);
+                $this->applyImages($tour, $row, $photo, $gallery, true);
+                $tour->save();
+                $tours[$row['slug']] = $tour;
+                $summary['tours']++;
+            }
+
             foreach ($data['categories'] as $i => $c) {
                 $category = Category::query()->firstOrNew(['menu' => $c['menu'], 'destination_id' => $destination->id, 'slug' => $c['slug']]);
                 $category->fill(['name' => $c['name'], 'description' => $c['description'], 'sort' => $category->exists ? $category->sort : 10 + $i]);
@@ -315,20 +406,23 @@ class CatalogueContent
             }
         };
 
-        if ($dryRun) {
-            // Run everything so the counts are real, then undo it.
-            DB::beginTransaction();
-            try {
-                $run();
-            } finally {
-                DB::rollBack();
-            }
-
-            return $summary;
-        }
-        DB::transaction($run);
+        $run();
 
         return $summary;
+    }
+
+    /**
+     * @param  array<string, mixed>  $record
+     */
+    private function createDestination(string $slug, array $record): Destination
+    {
+        $profile = (array) ($record['profile'] ?? []);
+
+        return Destination::query()->create([
+            'slug' => $slug, 'name' => $record['name'], 'region' => $record['region'], 'tagline' => $record['tagline'], 'best_time' => $record['best_time'],
+            'featured' => true, 'sort' => $record['sort'] ?? 100,
+            'seo_content' => ['places' => $record['places'], 'seasons' => $record['seasons']] + $profile,
+        ]);
     }
 
     /**

@@ -1,0 +1,983 @@
+{
+  "destination": "andaman-and-nicobar",
+  "destination_record": {
+    "name": "Andaman & Nicobar",
+    "region": "india",
+    "tagline": "Clear turquoise water, white-sand beaches and the history of Cellular Jail, on India's island chain in the Bay of Bengal.",
+    "best_time": "Nov-Apr",
+    "places": "Port Blair, Cellular Jail, Ross Island, North Bay, Havelock (Swaraj Dweep), Radhanagar Beach, Elephant Beach, Neil Island (Shaheed Dweep), Bharatpur Beach, Baratang, Chidiya Tapu",
+    "sort": 7,
+    "seasons": {
+      "on": {
+        "months": "Nov-Apr",
+        "places": "Havelock (Swaraj Dweep), Neil (Shaheed Dweep), Port Blair, Ross Island, North Bay",
+        "activities": "Scuba diving, snorkelling at Elephant Beach and North Bay, glass-bottom boat rides, beach days at Radhanagar and island-hopping by ferry. Seas are generally calmest and visibility best from December to March. Days turn hot by April, and peak dates around Christmas and New Year book out early."
+      },
+      "mid": {
+        "months": "Oct and May",
+        "places": "Port Blair, Cellular Jail, Ross Island, Havelock beaches in dry spells",
+        "activities": "Showers, humid heat and changing sea conditions. Ferries and water activities can be delayed or cancelled at short notice, so keep your plans flexible. Rates are lower than in the main season."
+      },
+      "off": {
+        "months": "Jun-Sep",
+        "places": "Port Blair museums and Cellular Jail, with limited island sightseeing",
+        "activities": "South-west monsoon with heavy rain and rough seas. Ferries can be suspended and diving and water sports are often limited. The islands are lush and green and rates are lowest, but we advise this season only for flexible travellers."
+      }
+    },
+    "profile": {
+      "overview": "The Andaman Islands lie in the Bay of Bengal, much nearer to Myanmar and Thailand than to the Indian mainland, yet they are part of India. Radhanagar Beach on Havelock is one of the country's most celebrated stretches of sand, the water is clear enough for snorkelling close to shore, and the coral reefs make this one of the easiest places in India to try scuba diving. Port Blair adds history, with Cellular Jail where freedom fighters were imprisoned and the colonial ruins of Ross Island.\n\nMost visitors fly into Port Blair and take ferries to Havelock (Swaraj Dweep) and Neil (Shaheed Dweep), where days pass in beach time, snorkelling and unhurried sunsets. Indian citizens need no passport or visa, which makes it an easy first island holiday. Ferries depend on the sea, so we plan with sensible buffers and keep the weather in mind throughout.",
+      "facts": {
+        "capital": "Port Blair (renamed Sri Vijaya Puram), capital of the Union Territory",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Hindi and English, with Bengali, Tamil and Telugu widely spoken",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "About 24°C to 32°C all year, humid; south-west monsoon from June to September and showers in October and November",
+        "flight_time": "Fly into Port Blair (IXZ): about 2 hr from Chennai or Kolkata and about 4 hr from Delhi. There is no rail link."
+      },
+      "reasons": [
+        {
+          "title": "Beaches among the best in India",
+          "text": "Radhanagar, Elephant Beach and Bharatpur have soft white sand and clear, calm water that is easy to swim and snorkel in."
+        },
+        {
+          "title": "Easy first scuba dive",
+          "text": "Discover Scuba sessions with certified instructors let beginners see coral and reef fish without any prior training."
+        },
+        {
+          "title": "History with meaning",
+          "text": "Cellular Jail and its evening Light and Sound show tell the story of India's freedom struggle in a moving setting."
+        },
+        {
+          "title": "No visa or passport",
+          "text": "Indian citizens travel on a valid photo ID, so the trip is as simple as a domestic holiday, though it feels like a world away."
+        },
+        {
+          "title": "Slow, uncrowded islands",
+          "text": "Havelock and Neil keep a quiet pace, with beach shacks, cycle rides and sunsets rather than crowds and traffic."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "Cellular Jail, Port Blair",
+          "text": "A colonial-era prison turned national memorial, with an evening Light and Sound show about the freedom fighters held here."
+        },
+        {
+          "title": "Radhanagar Beach, Havelock",
+          "text": "A long, curving white beach backed by forest, famous for its sunsets and safe, shallow swimming."
+        },
+        {
+          "title": "Elephant Beach, Havelock",
+          "text": "Reached by a short boat ride, with shallow reef for snorkelling and glass-bottom boat trips."
+        },
+        {
+          "title": "Ross Island",
+          "text": "The former British administrative headquarters, now a quiet island of ruined bungalows, a church and roaming deer."
+        },
+        {
+          "title": "Bharatpur Beach and Natural Bridge, Neil",
+          "text": "Calm shallows for snorkelling and a rock arch formed by the sea, best seen at low tide."
+        },
+        {
+          "title": "North Bay, Port Blair",
+          "text": "A coral beach near Port Blair for snorkelling, glass-bottom boats and sea walks, reached by boat."
+        },
+        {
+          "title": "Baratang limestone caves",
+          "text": "A long day trip by road and boat through mangrove creeks to natural limestone formations."
+        },
+        {
+          "title": "Chidiya Tapu",
+          "text": "A quiet southern tip of South Andaman, known for sunsets and birdwatching."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Discover Scuba at Havelock",
+          "text": "A beginner dive with a certified instructor, subject to medical fitness and sea conditions."
+        },
+        {
+          "title": "Snorkelling on the reef",
+          "text": "Shallow coral and reef fish at Elephant Beach, North Bay and Bharatpur, with visibility depending on tides and weather."
+        },
+        {
+          "title": "Sea walk at North Bay",
+          "text": "Walk on the seabed in a helmet with an instructor, no swimming needed. Available as an optional activity."
+        },
+        {
+          "title": "Glass-bottom boat rides",
+          "text": "A good way for families and older travellers to see coral without getting into the water."
+        },
+        {
+          "title": "Sunset at Radhanagar or Laxmanpur",
+          "text": "Walk onto the sand in the late afternoon and watch the sky change colour over the Bay of Bengal."
+        },
+        {
+          "title": "Cellular Jail Light and Sound show",
+          "text": "An evening show that tells the story of the jail and the people held there."
+        }
+      ],
+      "food": [
+        {
+          "title": "Fresh seafood",
+          "text": "Grilled fish, prawns, crab and fish curry are on most menus. Ask what was landed that day."
+        },
+        {
+          "title": "Bengali and South Indian meals",
+          "text": "Settler communities from the mainland have made fish curry with rice, dosas and thalis easy to find in Port Blair."
+        },
+        {
+          "title": "Tender coconut",
+          "text": "Sold at beaches and roadside stalls, and a welcome cool drink after a day in the sun."
+        },
+        {
+          "title": "Vegetarian and Jain meals",
+          "text": "Available at many restaurants in Port Blair and Havelock. Choice is narrower on Neil, so tell us in advance and we will plan around it."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Book early and expect ferry changes",
+          "text": "Ferries between islands run on the sea's terms and can be delayed or cancelled. Keep a buffer before flying home."
+        },
+        {
+          "title": "Carry cash",
+          "text": "ATMs are limited and sometimes out of cash on Havelock and Neil, and card or UPI payments depend on patchy networks."
+        },
+        {
+          "title": "Do not collect shells or coral",
+          "text": "Removing coral, shells and sand from the islands is prohibited, so leave them where they are."
+        },
+        {
+          "title": "Respect tribal reserves",
+          "text": "Some areas, including the Jarawa reserve on the Baratang road, have strict rules against stopping, photography and contact."
+        },
+        {
+          "title": "Plan scuba early in the stay",
+          "text": "Avoid flying for at least 24 hours after a scuba dive, so schedule dives well before your departure day."
+        },
+        {
+          "title": "Expect limited mobile coverage",
+          "text": "Networks and internet can be slow or absent on the smaller islands, so download maps and tickets before you go."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa or passport for the Andaman Islands. Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence, which is checked for flights and ferries. The tourist islands in our packages, including Port Blair, Havelock and Neil, need no separate permit for Indian citizens, but tribal reserves and the Nicobar group are restricted. We arrange permits and confirm the current rules at booking.",
+        "health": "No compulsory vaccinations from the mainland. Carry sunscreen, insect repellent, any regular medicines and a basic first-aid kit, as medical facilities on Havelock and Neil are limited. Scuba diving needs a medical declaration, and you should avoid flying for at least 24 hours after a dive. Take care with sea currents and coral cuts.",
+        "money": "Take enough cash for the smaller islands, as ATMs can be out of order or empty and card or UPI payments rely on patchy networks. Port Blair has the most banks and ATMs. Tips are optional for drivers and guides."
+      },
+      "faqs": [
+        {
+          "q": "How many days do I need for the Andaman Islands?",
+          "a": "Five to six nights is comfortable for Port Blair, Havelock and Neil. A shorter weekend trip can cover Port Blair and Havelock, and seven nights lets you add Baratang and more beach time."
+        },
+        {
+          "q": "When is the best time to visit?",
+          "a": "November to April is the main season, with calmer seas and better visibility, especially from December to March. June to September is the south-west monsoon, when ferries and water activities can be limited."
+        },
+        {
+          "q": "How do we reach the Andaman Islands?",
+          "a": "Most travellers fly into Port Blair (IXZ) from Chennai, Kolkata or Delhi. Ferries from the mainland also run but take days. Transfers between Port Blair, Havelock and Neil are by ferry, which depends on the weather."
+        },
+        {
+          "q": "Can I enjoy the islands without scuba diving?",
+          "a": "Yes. Many visitors spend their time on the beaches, on glass-bottom boats and snorkelling, and visiting Cellular Jail and Ross Island. Scuba is optional and suited to beginners with instructors."
+        },
+        {
+          "q": "Is the trip suitable for senior parents and children?",
+          "a": "Yes, with a relaxed itinerary. Ferry crossings and some beach access involve steps and walking, so tell us about mobility needs and we can base you longer in fewer places."
+        },
+        {
+          "q": "What if the ferry is cancelled?",
+          "a": "Ferries can be delayed or cancelled in rough weather. We rearrange the order of the programme where possible and advise a buffer day or a late flight on the last day. Costs of extra nights caused by weather are not included."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "radhanagar-beach-havelock",
+      "query": "Radhanagar Beach Havelock Island Andaman",
+      "caption": "Radhanagar Beach, Havelock (Swaraj Dweep)"
+    },
+    {
+      "slot": "cellular-jail-port-blair",
+      "query": "Cellular Jail Port Blair Andaman",
+      "caption": "Cellular Jail, Port Blair"
+    },
+    {
+      "slot": "elephant-beach-havelock",
+      "query": "Elephant Beach Havelock Island Andaman",
+      "caption": "Elephant Beach, Havelock"
+    },
+    {
+      "slot": "ross-island-ruins",
+      "query": "Ross Island ruins Port Blair Andaman",
+      "caption": "Ruins on Ross Island, Port Blair"
+    },
+    {
+      "slot": "north-bay-snorkelling",
+      "query": "North Bay Island Port Blair Andaman",
+      "caption": "North Bay, near Port Blair"
+    },
+    {
+      "slot": "scuba-diving-havelock",
+      "query": "scuba diving coral reef Havelock Andaman",
+      "caption": "Scuba diving off Havelock"
+    },
+    {
+      "slot": "bharatpur-beach-neil",
+      "query": "Bharatpur Beach Neil Island Andaman",
+      "caption": "Bharatpur Beach, Neil (Shaheed Dweep)"
+    },
+    {
+      "slot": "natural-bridge-neil",
+      "query": "Natural Bridge Howrah Bridge Neil Island Andaman",
+      "caption": "The Natural Bridge, Neil Island"
+    },
+    {
+      "slot": "laxmanpur-sunset-neil",
+      "query": "Laxmanpur Beach sunset Neil Island Andaman",
+      "caption": "Sunset at Laxmanpur Beach, Neil"
+    },
+    {
+      "slot": "corbyns-cove-port-blair",
+      "query": "Corbyn's Cove Beach Port Blair Andaman",
+      "caption": "Corbyn's Cove, Port Blair"
+    },
+    {
+      "slot": "baratang-limestone-caves",
+      "query": "Baratang limestone caves Andaman",
+      "caption": "Limestone caves at Baratang"
+    },
+    {
+      "slot": "chidiya-tapu-sunset",
+      "query": "Chidiya Tapu sunset South Andaman",
+      "caption": "Sunset at Chidiya Tapu"
+    }
+  ],
+  "hero": "radhanagar-beach-havelock",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "andaman-and-nicobar-classic-packages",
+      "name": "Classic Packages",
+      "description": "The best-known Andaman circuit of Port Blair, Havelock and Neil, with Cellular Jail, Ross Island and the beaches, using ferries between islands.",
+      "photo": "cellular-jail-port-blair",
+      "packages": [
+        "andaman-and-nicobar-classic-island-circuit",
+        "andaman-and-nicobar-island-hopping-group-trip",
+        "andaman-and-nicobar-family-holiday"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "andaman-and-nicobar-beaches-and-islands",
+      "name": "Beaches and Islands",
+      "description": "Radhanagar, Elephant Beach and Neil's quiet shores, with ferry hops between islands and plenty of time on the sand.",
+      "photo": "radhanagar-beach-havelock",
+      "packages": [
+        "andaman-and-nicobar-island-hopping-group-trip",
+        "andaman-and-nicobar-classic-island-circuit",
+        "andaman-and-nicobar-honeymoon",
+        "andaman-and-nicobar-port-blair-havelock-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "andaman-and-nicobar-family-holidays",
+      "name": "Family Holidays",
+      "description": "Easy-paced trips with glass-bottom boats, museums, shallow beaches and short ferry hops that suit children and grandparents.",
+      "photo": "north-bay-snorkelling",
+      "packages": [
+        "andaman-and-nicobar-family-holiday",
+        "andaman-and-nicobar-classic-island-circuit"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "andaman-and-nicobar-scuba-and-snorkelling",
+      "name": "Scuba and Snorkelling",
+      "description": "Reef days at Havelock, North Bay and Neil, with a beginner scuba session for those who want to try the water more closely.",
+      "photo": "scuba-diving-havelock",
+      "packages": [
+        "andaman-and-nicobar-scuba-and-snorkelling-adventure",
+        "andaman-and-nicobar-island-hopping-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "andaman-and-nicobar-honeymoon-and-couples",
+      "name": "Honeymoon and Couples",
+      "description": "Private-car holidays and short breaks for two, built around sunsets, beach dinners and unhurried days in Havelock and Neil.",
+      "photo": "laxmanpur-sunset-neil",
+      "packages": [
+        "andaman-and-nicobar-honeymoon",
+        "andaman-and-nicobar-port-blair-havelock-weekend-escape"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "andaman-and-nicobar-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, a ready-made island itinerary and Indian meal options on request.",
+      "photo": "elephant-beach-havelock",
+      "packages": [
+        "andaman-and-nicobar-island-hopping-group-trip"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "andaman-and-nicobar-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Island sunsets, a candlelight beach dinner and unhurried days for newly married couples in Havelock and Neil.",
+      "photo": "laxmanpur-sunset-neil",
+      "packages": [
+        "andaman-and-nicobar-honeymoon"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short Andaman break from Friday to Monday, with Cellular Jail, a Havelock ferry crossing and a beach day, with a trip captain on every departure.",
+      "photo": "radhanagar-beach-havelock",
+      "packages": [
+        "andaman-and-nicobar-port-blair-havelock-weekend-escape"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "andaman-and-nicobar-island-hopping-group-trip",
+      "title": "Port Blair, Havelock and Neil Island Group Trip",
+      "nights": 6,
+      "summary": "Seven days across the Andaman Islands with Cellular Jail, Ross Island, Radhanagar and Elephant Beach, and Neil's quiet shores, travelling in a small group.",
+      "overview": "This group trip covers the classic Andaman circuit over six nights: two in Port Blair, two in Havelock (Swaraj Dweep), one in Neil Island (Shaheed Dweep) and a final night back in Port Blair. You visit Cellular Jail and its evening Light and Sound show, explore Ross Island and North Bay, and spend time on Radhanagar Beach and Elephant Beach.\n\nFerries link the islands, and sailing times depend on the sea, so the order of days may change on the day. A trip captain travels with the group throughout, and Indian meal options are available on request.\n\nThe pace is easy, with free time on most days. Snorkelling is optional and diving can be added on request, which suits families, friends travelling together and senior parents.",
+      "highlights": [
+        "Cellular Jail and the evening Light and Sound show",
+        "Ross Island's colonial ruins and North Bay by boat",
+        "Radhanagar Beach at sunset, Havelock",
+        "Boat trip to Elephant Beach for snorkelling",
+        "Bharatpur Beach, Natural Bridge and Laxmanpur sunset on Neil Island",
+        "Ferry tickets between the islands included",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Port Blair | Cellular Jail and Light and Sound Show",
+          "description": "Arrive at Port Blair Airport and meet your trip captain.\nTransfer to your hotel and check in.\nVisit Cellular Jail, the colonial prison that is now a national memorial.\nIn the evening, watch the Light and Sound show about the jail, subject to show timings.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 2,
+          "title": "Ross Island | North Bay | Port Blair",
+          "description": "After breakfast, take a boat to Ross Island and walk among the ruins of the former British headquarters.\nContinue by boat to North Bay for a glass-bottom boat ride; snorkelling and sea walks are optional.\nReturn to Port Blair in the afternoon.\nEnjoy a free evening for shopping.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 3,
+          "title": "Ferry to Havelock | Radhanagar Beach Sunset",
+          "description": "After breakfast, transfer to the jetty and take the ferry to Havelock Island (Swaraj Dweep).\nTransfer to your hotel and check in.\nIn the late afternoon, visit Radhanagar Beach to swim and watch the sunset.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 4,
+          "title": "Elephant Beach | Free Afternoon",
+          "description": "After breakfast, take a boat to Elephant Beach.\nSwim, relax and snorkel on the reef, subject to sea conditions; water activities are optional.\nReturn to the hotel and spend the afternoon at leisure.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 5,
+          "title": "Ferry to Neil Island | Bharatpur Beach | Laxmanpur Sunset",
+          "description": "After breakfast, check out and take the ferry to Neil Island (Shaheed Dweep).\nCheck in at your hotel and visit Bharatpur Beach for swimming and a glass-bottom boat ride, subject to conditions.\nIn the late afternoon, watch the sunset at Laxmanpur Beach.\nOvernight stay in Neil."
+        },
+        {
+          "day": 6,
+          "title": "Natural Bridge | Ferry to Port Blair",
+          "description": "After breakfast, visit the Natural Bridge rock formation, best seen at low tide.\nEarly risers can ask for a visit to Sitapur Beach for sunrise.\nTake the ferry back to Port Blair and transfer to your hotel.\nSpend the evening at leisure.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Port Blair",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Port Blair Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel stay in Port Blair on twin sharing at the start",
+        "2 nights hotel stay in Havelock on twin sharing",
+        "1 night hotel stay in Neil Island on twin sharing",
+        "1 night hotel stay in Port Blair on twin sharing at the end",
+        "Daily breakfast at the hotel",
+        "AC vehicle for airport and island transfers and sightseeing as per itinerary",
+        "Ferry tickets between Port Blair, Havelock, Neil and back",
+        "Entry tickets for Cellular Jail and the Light and Sound show",
+        "Boat trips to Ross Island, North Bay and Elephant Beach as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or ships to and from Port Blair",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Scuba diving, snorkelling gear, sea walks and other water activities not listed",
+        "Camera fees at monuments and attractions",
+        "Personal expenses, laundry, tips and porterage",
+        "Extra nights or costs caused by ferry or flight disruption due to weather",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller; it is checked for flights and ferries.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Ferry timings and the order of the itinerary may change due to weather, sea conditions or operational reasons, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change.",
+        "A trip captain accompanies the group throughout.",
+        "Ferries and boat trips can be cancelled in rough weather; please book a flight home that leaves late on the last day.",
+        "Mobile networks and internet are patchy on Havelock and Neil.",
+        "Scuba diving can be added on request; avoid flying for at least 24 hours after a dive."
+      ],
+      "must_carry": [
+        "Valid government photo ID for each traveller",
+        "Flight tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Light cotton clothing and a light rain jacket",
+        "Water shoes or sturdy sandals",
+        "Insect repellent and regular medicines",
+        "Some cash for the smaller islands"
+      ],
+      "pickup": "Port Blair Airport (IXZ)",
+      "drop_point": "Port Blair Airport (IXZ)",
+      "photo": "elephant-beach-havelock",
+      "gallery": [
+        "cellular-jail-port-blair",
+        "radhanagar-beach-havelock",
+        "ross-island-ruins",
+        "bharatpur-beach-neil"
+      ],
+      "price": 39500,
+      "original_price": 42700,
+      "departures": {
+        "weekday": 6,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 22
+      }
+    },
+    {
+      "slug": "andaman-and-nicobar-port-blair-havelock-weekend-escape",
+      "title": "Andaman Weekend Escape: Port Blair and Havelock",
+      "nights": 3,
+      "summary": "A Friday to Monday break with Cellular Jail, a ferry to Havelock, Radhanagar Beach sunset and a morning at Elephant Beach.",
+      "overview": "This weekend escape packs the essential Andaman experience into three nights: one in Port Blair and two in Havelock (Swaraj Dweep). You visit Cellular Jail and its Light and Sound show, take the ferry to Havelock, and spend your time on Radhanagar Beach and Elephant Beach.\n\nWeekend trips are short, so arrive early on Friday and leave late on Monday. A trip captain accompanies the group, and Indian meal options are available on request.",
+      "highlights": [
+        "Cellular Jail and the evening Light and Sound show",
+        "Ferry to Havelock Island (Swaraj Dweep)",
+        "Radhanagar Beach at sunset",
+        "Boat trip to Elephant Beach for snorkelling",
+        "Ferry tickets between Port Blair and Havelock included",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Port Blair | Cellular Jail and Light and Sound Show",
+          "description": "Arrive at Port Blair Airport early in the day and meet your trip captain.\nTransfer to your hotel and check in.\nVisit Cellular Jail, the colonial prison that is now a national memorial.\nIn the evening, watch the Light and Sound show, subject to show timings.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 2,
+          "title": "Ferry to Havelock | Radhanagar Beach Sunset",
+          "description": "After breakfast, transfer to the jetty and take the ferry to Havelock Island (Swaraj Dweep).\nTransfer to your hotel and check in.\nIn the late afternoon, visit Radhanagar Beach to swim and watch the sunset.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 3,
+          "title": "Elephant Beach | Free Afternoon",
+          "description": "After breakfast, take a boat to Elephant Beach.\nSwim, relax and snorkel on the reef, subject to sea conditions; water activities are optional.\nReturn to the hotel and spend the afternoon at leisure.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 4,
+          "title": "Return to Port Blair | Departure",
+          "description": "After breakfast, check out and take the ferry back to Port Blair.\nTransfer to the airport in time for your late-day flight home."
+        }
+      ],
+      "inclusions": [
+        "1 night hotel stay in Port Blair on twin sharing",
+        "2 nights hotel stay in Havelock on twin sharing",
+        "Daily breakfast at the hotel",
+        "AC vehicle for airport and island transfers and sightseeing as per itinerary",
+        "Ferry tickets between Port Blair and Havelock and back",
+        "Entry tickets for Cellular Jail and the Light and Sound show",
+        "Boat trip to Elephant Beach as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or ships to and from Port Blair",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Scuba diving, snorkelling gear, sea walks and other water activities not listed",
+        "Camera fees at monuments and attractions",
+        "Personal expenses, laundry, tips and porterage",
+        "Extra nights or costs caused by ferry or flight disruption due to weather",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Transport to and from the destination is not included.",
+        "Carry a valid government photo ID for every traveller; it is checked for flights and ferries.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Ferry timings and the order of the itinerary may change due to weather, sea conditions or operational reasons.",
+        "The return ferry on the last day can be delayed or cancelled by weather, so book a flight that leaves in the evening rather than the morning.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change.",
+        "A trip captain accompanies the group throughout.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Valid government photo ID for each traveller",
+        "Flight tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Light cotton clothing",
+        "Water shoes or sturdy sandals",
+        "Some cash for Havelock"
+      ],
+      "pickup": "Port Blair Airport (IXZ)",
+      "drop_point": "Port Blair Airport (IXZ)",
+      "photo": "radhanagar-beach-havelock",
+      "gallery": [
+        "cellular-jail-port-blair",
+        "elephant-beach-havelock",
+        "corbyns-cove-port-blair"
+      ],
+      "price": 20500,
+      "original_price": 22200,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "andaman-and-nicobar-honeymoon",
+      "title": "Andaman Honeymoon: Island Sunsets, Beach Dinner and Private Car Days",
+      "nights": 6,
+      "summary": "Six unhurried nights for two across Port Blair, Havelock and Neil, with Radhanagar Beach sunsets, a couples spa session and a candlelight dinner by the sea.",
+      "overview": "This private honeymoon moves at an easy pace: one night in Port Blair, three in Havelock (Swaraj Dweep), one in Neil Island (Shaheed Dweep) and a final night in Port Blair. You travel by private car on each island and take ferries between them, with later starts and nothing packed into a single day.\n\nHavelock is the heart of the trip, with Radhanagar Beach at sunset, a boat outing to Elephant Beach and time to simply be together. Neil adds Bharatpur Beach, the Natural Bridge and the golden light of Laxmanpur.\n\nExpect a flower welcome, a couples spa session and a candlelight dinner by the beach, all subject to availability. Tell us your wedding date at booking so the hotels can prepare.",
+      "highlights": [
+        "Private car on each island, with unhurried mornings",
+        "Cellular Jail on arrival, with the evening Light and Sound show",
+        "Radhanagar Beach at sunset, Havelock",
+        "Boat trip to Elephant Beach",
+        "Couples spa session, subject to availability",
+        "Candlelight dinner by the beach",
+        "Flower welcome and bed decoration on arrival"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Port Blair | Welcome and Cellular Jail",
+          "description": "Arrive at Port Blair Airport, where your private car is waiting.\nTransfer to your hotel and check in; a flower welcome and bed decoration are arranged, subject to availability.\nVisit Cellular Jail in the afternoon, and watch the evening Light and Sound show if you wish.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 2,
+          "title": "Ferry to Havelock | Radhanagar Beach Sunset",
+          "description": "After a relaxed breakfast, transfer to the jetty and take the ferry to Havelock Island (Swaraj Dweep).\nCheck in at your beach hotel, with a sea-view or garden-view room where available.\nIn the late afternoon, drive to Radhanagar Beach to swim and watch the sunset together.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 3,
+          "title": "Elephant Beach | Couples Spa",
+          "description": "After a leisurely breakfast, take a boat to Elephant Beach to swim and snorkel, subject to sea conditions.\nReturn to the hotel to rest through the afternoon.\nEnjoy a couples spa session, subject to availability.\nThe evening is free.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 4,
+          "title": "Free Day by the Sea | Candlelight Dinner",
+          "description": "Today has no fixed plans, so sleep in and spend the day on the beach or by the pool.\nOptional activities such as scuba or kayaking can be added on request.\nIn the evening, enjoy a candlelight dinner by the beach, subject to availability.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 5,
+          "title": "Ferry to Neil Island | Bharatpur Beach | Laxmanpur Sunset",
+          "description": "After breakfast, check out and take the ferry to Neil Island (Shaheed Dweep).\nCheck in at your hotel and spend the afternoon at Bharatpur Beach.\nIn the late afternoon, drive to Laxmanpur Beach to watch the sunset.\nOvernight stay in Neil."
+        },
+        {
+          "day": 6,
+          "title": "Natural Bridge | Ferry to Port Blair",
+          "description": "After breakfast, visit the Natural Bridge rock formation, best seen at low tide.\nTake the ferry back to Port Blair and transfer to your hotel.\nThe rest of the day is free for a stroll along Corbyn's Cove or last-minute shopping.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Port Blair",
+          "description": "Enjoy a relaxed breakfast and check out of the hotel.\nYour private car takes you to Port Blair Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "1 night hotel stay in Port Blair on twin sharing at the start",
+        "3 nights hotel or resort stay in Havelock on twin sharing",
+        "1 night hotel stay in Neil Island on twin sharing",
+        "1 night hotel stay in Port Blair on twin sharing at the end",
+        "Daily breakfast at the hotel",
+        "Flower welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner by the beach, subject to availability",
+        "One couples spa session in Havelock, subject to availability",
+        "Private AC car for transfers and sightseeing as per itinerary",
+        "Ferry tickets between Port Blair, Havelock, Neil and back",
+        "Entry tickets for Cellular Jail and boat trip to Elephant Beach",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or ships to and from Port Blair",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Scuba diving, kayaking and other optional activities",
+        "Camera fees at monuments and attractions",
+        "Personal expenses, laundry, tips and porterage",
+        "Extra nights or costs caused by ferry or flight disruption due to weather",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Carry a valid government photo ID for both travellers; it is checked for flights and ferries.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Ferry timings and the order of the itinerary may change due to weather or sea conditions, without reducing the sights covered.",
+        "Rates are indicative and confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Book a flight that leaves late on the last day, as ferries can be delayed or cancelled in rough weather.",
+        "If you add scuba diving, avoid flying for at least 24 hours after a dive."
+      ],
+      "must_carry": [
+        "Valid government photo ID for both travellers",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Flight tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a light cover-up",
+        "Light cotton clothing and an evening outfit for the beach dinner",
+        "Water shoes or sturdy sandals",
+        "Some cash for the smaller islands"
+      ],
+      "pickup": "Port Blair Airport (IXZ)",
+      "drop_point": "Port Blair Airport (IXZ)",
+      "photo": "laxmanpur-sunset-neil",
+      "gallery": [
+        "radhanagar-beach-havelock",
+        "elephant-beach-havelock",
+        "natural-bridge-neil"
+      ],
+      "price": 54500,
+      "original_price": 58900
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "andaman-and-nicobar-classic-island-circuit",
+      "title": "Classic Andaman Circuit: Port Blair, Baratang, Havelock and Neil",
+      "nights": 7,
+      "summary": "Eight days covering Cellular Jail, Ross Island, a Baratang caves day, Radhanagar and Elephant Beach, and Neil Island, by private car and ferry.",
+      "overview": "This private classic circuit gives the Andamans a little more time than the usual week. Three nights in Port Blair cover Cellular Jail, Ross Island, North Bay and a long day trip to the limestone caves at Baratang. You then spend two nights on Havelock (Swaraj Dweep), one on Neil Island (Shaheed Dweep) and a last night in Port Blair.\n\nYou travel by private car and take ferries between the islands, with beach time at Radhanagar, Elephant Beach and Bharatpur. We can adjust the number of nights on each island to suit you.",
+      "highlights": [
+        "Cellular Jail and the evening Light and Sound show",
+        "Ross Island's colonial ruins and North Bay",
+        "Baratang limestone caves, by road and boat",
+        "Radhanagar Beach at sunset, Havelock",
+        "Elephant Beach boat trip",
+        "Bharatpur Beach, Natural Bridge and Laxmanpur sunset on Neil",
+        "Private car and ferry tickets included"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Port Blair | Cellular Jail and Light and Sound Show",
+          "description": "Arrive at Port Blair Airport, where your driver meets you.\nTransfer to your hotel and check in.\nVisit Cellular Jail, the colonial prison that is now a national memorial.\nWatch the evening Light and Sound show, subject to show timings.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 2,
+          "title": "Ross Island | North Bay",
+          "description": "After breakfast, take a boat to Ross Island and walk among the ruins of the former British headquarters.\nContinue by boat to North Bay for a glass-bottom boat ride; snorkelling and sea walks are optional.\nReturn to Port Blair in the afternoon.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 3,
+          "title": "Baratang Limestone Caves",
+          "description": "Start early for a full-day trip to Baratang by road, passing through a protected tribal reserve where stopping and photography are not allowed.\nTake a boat through mangrove creeks and walk to the limestone caves.\nReturn to Port Blair in the evening, tired but happy.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 4,
+          "title": "Ferry to Havelock | Radhanagar Beach Sunset",
+          "description": "After breakfast, transfer to the jetty and take the ferry to Havelock Island (Swaraj Dweep).\nTransfer to your hotel and check in.\nIn the late afternoon, visit Radhanagar Beach to swim and watch the sunset.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 5,
+          "title": "Elephant Beach | Free Afternoon",
+          "description": "After breakfast, take a boat to Elephant Beach.\nSwim, relax and snorkel on the reef, subject to sea conditions; water activities are optional.\nReturn to the hotel and spend the afternoon at leisure.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 6,
+          "title": "Ferry to Neil Island | Bharatpur Beach | Laxmanpur Sunset",
+          "description": "After breakfast, check out and take the ferry to Neil Island (Shaheed Dweep).\nCheck in at your hotel and visit Bharatpur Beach for swimming and a glass-bottom boat ride, subject to conditions.\nIn the late afternoon, watch the sunset at Laxmanpur Beach.\nOvernight stay in Neil."
+        },
+        {
+          "day": 7,
+          "title": "Natural Bridge | Ferry to Port Blair",
+          "description": "After breakfast, visit the Natural Bridge rock formation, best seen at low tide.\nTake the ferry back to Port Blair and transfer to your hotel.\nSpend the evening at Corbyn's Cove or shopping.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 8,
+          "title": "Departure from Port Blair",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Port Blair Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel stay in Port Blair on twin sharing at the start",
+        "2 nights hotel stay in Havelock on twin sharing",
+        "1 night hotel stay in Neil Island on twin sharing",
+        "1 night hotel stay in Port Blair on twin sharing at the end",
+        "Daily breakfast at the hotel",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Ferry tickets between Port Blair, Havelock, Neil and back",
+        "Entry tickets for Cellular Jail and the Light and Sound show",
+        "Boat trips to Ross Island, North Bay, Baratang caves and Elephant Beach as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or ships to and from Port Blair",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Scuba diving, sea walks and other water activities not listed",
+        "Camera fees at monuments and attractions",
+        "Personal expenses, laundry, tips and porterage",
+        "Extra nights or costs caused by ferry or flight disruption due to weather",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller; it is checked for flights and ferries.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Ferry timings and the order of the itinerary may change due to weather or sea conditions, without reducing the sights covered.",
+        "Rates are indicative and confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The Baratang day is long, with convoy timings set by the authorities; it may be changed or cancelled for safety.",
+        "Book a flight that leaves late on the last day, as ferries can be delayed or cancelled in rough weather.",
+        "Scuba diving can be added on request; avoid flying for at least 24 hours after a dive."
+      ],
+      "must_carry": [
+        "Valid government photo ID for each traveller",
+        "Flight tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Light cotton clothing and a light rain jacket",
+        "Water shoes or sturdy sandals",
+        "Insect repellent and regular medicines",
+        "Some cash for the smaller islands"
+      ],
+      "pickup": "Port Blair Airport (IXZ)",
+      "drop_point": "Port Blair Airport (IXZ)",
+      "photo": "cellular-jail-port-blair",
+      "gallery": [
+        "ross-island-ruins",
+        "baratang-limestone-caves",
+        "radhanagar-beach-havelock",
+        "natural-bridge-neil"
+      ],
+      "price": 49500,
+      "original_price": 53500
+    },
+    {
+      "slug": "andaman-and-nicobar-family-holiday",
+      "title": "Andaman Family Holiday: Port Blair and Havelock",
+      "nights": 5,
+      "summary": "Six easy days for families with Corbyn's Cove, Cellular Jail, Ross Island, North Bay and two nights on Havelock's Radhanagar and Elephant beaches.",
+      "overview": "This private family holiday uses two bases, Port Blair and Havelock (Swaraj Dweep), so there is only one ferry each way and little repacking. In Port Blair you visit a calm beach, Cellular Jail, Ross Island and North Bay, where glass-bottom boats let children see coral without swimming.\n\nOn Havelock you spend time at Radhanagar Beach and take a boat to Elephant Beach. The pace is relaxed, with free time each day, which suits children and grandparents. We can adjust meals and activities to the group's needs.",
+      "highlights": [
+        "Corbyn's Cove beach, Port Blair",
+        "Cellular Jail and the Light and Sound show",
+        "Ross Island and North Bay, with a glass-bottom boat ride",
+        "Radhanagar Beach, with calm, shallow swimming",
+        "Boat trip to Elephant Beach",
+        "Only two bases and one ferry each way",
+        "Private AC vehicle throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Port Blair | Corbyn's Cove | Cellular Jail",
+          "description": "Arrive at Port Blair Airport, where your driver meets you.\nTransfer to your hotel and check in.\nVisit Corbyn's Cove beach for a relaxed first outing.\nIn the evening, visit Cellular Jail and watch the Light and Sound show if you wish, subject to timings.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 2,
+          "title": "Ross Island | North Bay",
+          "description": "After breakfast, take a boat to Ross Island and see the ruins of the British headquarters, with deer roaming the grounds.\nContinue by boat to North Bay for a glass-bottom boat ride; snorkelling is optional.\nReturn to Port Blair in the afternoon and rest.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 3,
+          "title": "Ferry to Havelock | Radhanagar Beach",
+          "description": "After breakfast, transfer to the jetty and take the ferry to Havelock Island (Swaraj Dweep).\nTransfer to your hotel and check in.\nIn the late afternoon, visit Radhanagar Beach for swimming and sunset.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 4,
+          "title": "Elephant Beach | Free Afternoon",
+          "description": "After breakfast, take a boat to Elephant Beach.\nSwim, play on the sand and see coral from a glass-bottom boat; snorkelling is optional.\nReturn to the hotel for a free afternoon.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 5,
+          "title": "Ferry to Port Blair | Chidiya Tapu",
+          "description": "After breakfast, check out and take the ferry back to Port Blair.\nTransfer to your hotel and check in.\nIf the ferry arrives early enough, drive to Chidiya Tapu for sunset; otherwise relax in Port Blair.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Port Blair",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Port Blair Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel stay in Port Blair on twin sharing at the start",
+        "2 nights hotel stay in Havelock on twin sharing",
+        "1 night hotel stay in Port Blair on twin sharing at the end",
+        "Daily breakfast at the hotel",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Ferry tickets between Port Blair and Havelock and back",
+        "Entry tickets for Cellular Jail and the Light and Sound show",
+        "Boat trips to Ross Island, North Bay and Elephant Beach as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or ships to and from Port Blair",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Scuba diving, sea walks and other water activities not listed",
+        "Camera fees at monuments and attractions",
+        "Personal expenses, laundry, tips and porterage",
+        "Extra nights or costs caused by ferry or flight disruption due to weather",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every adult; carry age proof for children where needed.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Ferry timings and the order of the itinerary may change due to weather or sea conditions, without reducing the sights covered.",
+        "Rates are indicative and confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Children should wear life jackets on boats and stay supervised near water; sea conditions can change quickly.",
+        "Book a flight that leaves late on the last day, as ferries can be delayed or cancelled in rough weather."
+      ],
+      "must_carry": [
+        "Valid government photo ID for each adult, and age proof for children",
+        "Flight tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Light cotton clothing and a light rain jacket",
+        "Water shoes or sturdy sandals",
+        "Children's regular medicines and insect repellent"
+      ],
+      "pickup": "Port Blair Airport (IXZ)",
+      "drop_point": "Port Blair Airport (IXZ)",
+      "photo": "north-bay-snorkelling",
+      "gallery": [
+        "corbyns-cove-port-blair",
+        "radhanagar-beach-havelock",
+        "chidiya-tapu-sunset"
+      ],
+      "price": 34500,
+      "original_price": 37300
+    },
+    {
+      "slug": "andaman-and-nicobar-scuba-and-snorkelling-adventure",
+      "title": "Andaman Scuba and Snorkelling Adventure",
+      "nights": 5,
+      "summary": "Six days built around the reef, with North Bay, Elephant Beach snorkelling and a beginner scuba session at Havelock.",
+      "overview": "This private adventure trip puts the reef first. You start in Port Blair with Cellular Jail and a day on Ross Island and North Bay, then take the ferry to Havelock (Swaraj Dweep) for two nights. A Discover Scuba session with a certified instructor is planned early, so you are well clear of the 24-hour window before flying, followed by snorkelling at Elephant Beach.\n\nNo prior diving experience is needed, though age and medical-fitness limits apply. Tell us your age, health and swimming ability when you book.",
+      "highlights": [
+        "Ross Island and North Bay, with snorkelling and a glass-bottom boat",
+        "Discover Scuba session with an instructor at Havelock",
+        "Snorkelling at Elephant Beach",
+        "Radhanagar Beach at sunset",
+        "Cellular Jail on arrival",
+        "Schedule planned so you are not flying soon after diving"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Port Blair | Cellular Jail",
+          "description": "Arrive at Port Blair Airport, where your driver meets you.\nTransfer to your hotel and check in.\nVisit Cellular Jail, the colonial prison that is now a national memorial.\nWatch the evening Light and Sound show, subject to show timings.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 2,
+          "title": "Ross Island | North Bay Snorkelling",
+          "description": "After breakfast, take a boat to Ross Island and walk among the ruins of the former British headquarters.\nContinue by boat to North Bay for snorkelling, a glass-bottom boat ride and an optional sea walk, subject to sea conditions.\nReturn to Port Blair in the afternoon.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 3,
+          "title": "Ferry to Havelock | Radhanagar Beach Sunset",
+          "description": "After breakfast, transfer to the jetty and take the ferry to Havelock Island (Swaraj Dweep).\nTransfer to your hotel and check in.\nIn the late afternoon, visit Radhanagar Beach to swim and watch the sunset.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 4,
+          "title": "Discover Scuba | Elephant Beach Snorkelling",
+          "description": "In the morning, meet your instructor for a Discover Scuba session, subject to medical fitness and sea conditions.\nAfter lunch, take a boat to Elephant Beach for snorkelling and swimming.\nReturn to the hotel and spend the evening at leisure.\nOvernight stay in Havelock."
+        },
+        {
+          "day": 5,
+          "title": "Ferry to Port Blair | Free Evening",
+          "description": "After breakfast, check out and take the ferry back to Port Blair.\nTransfer to your hotel and check in.\nSpend the rest of the day at leisure or shopping at Aberdeen Bazaar.\nOvernight stay in Port Blair."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Port Blair",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Port Blair Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel stay in Port Blair on twin sharing at the start",
+        "2 nights hotel stay in Havelock on twin sharing",
+        "1 night hotel stay in Port Blair on twin sharing at the end",
+        "Daily breakfast at the hotel",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Ferry tickets between Port Blair and Havelock and back",
+        "One Discover Scuba session with a certified instructor, subject to fitness and conditions",
+        "Boat trips to Ross Island, North Bay and Elephant Beach as per itinerary",
+        "Entry tickets for Cellular Jail and the Light and Sound show",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or ships to and from Port Blair",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Additional dives, sea walks and optional water activities",
+        "Camera and underwater photo fees",
+        "Personal expenses, laundry, tips and porterage",
+        "Extra nights or costs caused by ferry or flight disruption due to weather",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller; it is checked for flights and ferries.",
+        "Scuba diving needs a medical declaration and age and fitness limits apply; some conditions may prevent diving.",
+        "Avoid flying for at least 24 hours after a scuba dive; the schedule is planned accordingly.",
+        "Snorkelling and diving depend on tides, visibility and sea conditions, and may be cancelled for safety.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "Ferry timings and the order of the itinerary may change due to weather or sea conditions, without reducing the sights covered.",
+        "Rates are quoted on request and confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Valid government photo ID for each traveller",
+        "Flight tickets",
+        "Swimwear and a quick-dry towel",
+        "Sunscreen, hat and sunglasses",
+        "Water shoes or sturdy sandals",
+        "Medical details and regular medicines",
+        "Light cotton clothing and a light rain jacket"
+      ],
+      "pickup": "Port Blair Airport (IXZ)",
+      "drop_point": "Port Blair Airport (IXZ)",
+      "photo": "scuba-diving-havelock",
+      "gallery": [
+        "north-bay-snorkelling",
+        "elephant-beach-havelock",
+        "radhanagar-beach-havelock"
+      ],
+      "price": null
+    }
+  ]
+}

@@ -76,7 +76,7 @@ class CatalogueContentTest extends TestCase
         $errors = implode(' | ', (new CatalogueContent)->validate($data));
         $this->assertStringContainsString('Photo slot "nope" is used but not defined', $errors);
         $this->assertStringContainsString('needs itinerary days 1 to 3', $errors);
-        $this->assertStringContainsString('"ghost", which is not in packages, group_trips or honeymoon_trips', $errors);
+        $this->assertStringContainsString('"ghost", which is not in packages, group_trips, honeymoon_trips or custom_trips', $errors);
         $this->assertStringContainsString('original_price', $errors);
     }
 
@@ -209,7 +209,7 @@ class CatalogueContentTest extends TestCase
     public function test_the_shipped_content_files_are_valid_and_every_photo_file_exists(): void
     {
         $files = glob(CatalogueContent::dir().'/*.json') ?: [];
-        $this->assertCount(12, $files);
+        $this->assertCount(22, $files);
         foreach ($files as $file) {
             $data = json_decode((string) file_get_contents($file), true);
             $this->assertSame([], (new CatalogueContent)->validate($data), basename($file));
@@ -258,5 +258,88 @@ class CatalogueContentTest extends TestCase
         $data['categories'][2]['packages'] = ['simply-thailand'];
 
         $this->assertStringContainsString('Honeymoon trip "thailand-honeymoon" is not in a category of the honeymoon menu', implode(' | ', (new CatalogueContent)->validate($data)));
+    }
+
+    /** @return array<string, mixed> */
+    private function newDestinationContent(): array
+    {
+        $item = fn (string $t) => ['title' => $t, 'text' => 'A short description.'];
+        $data = $this->content();
+        $data['destination'] = 'kerala';
+        $data['packages'] = [];
+        $data['group_trips'] = [];
+        $data['custom_trips'] = [
+            $this->entry('kerala-backwaters') + ['title' => 'Kerala Backwaters', 'nights' => 3, 'overview' => 'Houseboats.', 'price' => 21000, 'original_price' => null, 'itinerary' => array_map(fn (int $d) => ['day' => $d, 'title' => "Day {$d}", 'description' => 'Cruise.'], [1, 2, 3, 4])],
+            $this->entry('kerala-custom') + ['title' => 'Kerala Your Way', 'nights' => 4, 'overview' => 'Tailored.', 'price' => null, 'itinerary' => array_map(fn (int $d) => ['day' => $d, 'title' => "Day {$d}", 'description' => 'Explore.'], [1, 2, 3, 4, 5])],
+        ];
+        $data['categories'] = [
+            ['menu' => 'destinations', 'slug' => 'classic', 'name' => 'Classic', 'description' => 'Classic.', 'photo' => 'b', 'packages' => ['kerala-backwaters', 'kerala-custom']],
+            ['menu' => 'destinations', 'slug' => 'family', 'name' => 'Family', 'description' => 'Family.', 'photo' => 'c', 'packages' => ['kerala-backwaters']],
+            ['menu' => 'honeymoon', 'slug' => 'romantic', 'name' => 'Romantic', 'description' => 'Couples.', 'photo' => 'd', 'packages' => ['kerala-backwaters']],
+        ];
+        $data['destination_record'] = [
+            'name' => 'Kerala', 'region' => 'india', 'tagline' => 'God\'s Own Country.', 'best_time' => 'Oct–Mar', 'places' => 'Munnar, Alleppey, Kochi', 'sort' => 5,
+            'seasons' => [
+                'on' => ['months' => 'Oct–Mar', 'places' => 'Alleppey', 'activities' => 'houseboats'],
+                'mid' => ['months' => 'Apr–May', 'places' => 'Munnar', 'activities' => 'hill walks'],
+                'off' => ['months' => 'Jun–Sep', 'places' => 'Kochi', 'activities' => 'Ayurveda'],
+            ],
+            'profile' => [
+                'overview' => 'Backwaters and hills.',
+                'facts' => ['capital' => 'Thiruvananthapuram', 'currency' => 'Indian Rupee'],
+                'travel_info' => ['visa' => 'No visa is needed for Indian citizens.'],
+                'reasons' => array_map($item, ['One', 'Two', 'Three', 'Four']),
+                'attractions' => array_map($item, ['One', 'Two', 'Three', 'Four', 'Five', 'Six']),
+                'experiences' => array_map($item, ['One', 'Two', 'Three', 'Four', 'Five']),
+                'food' => array_map($item, ['One', 'Two', 'Three', 'Four']),
+                'tips' => array_map($item, ['One', 'Two', 'Three', 'Four', 'Five']),
+                'faqs' => array_map(fn (int $i) => ['q' => "Question {$i}?", 'a' => 'Answer.'], [1, 2, 3, 4]),
+            ],
+        ];
+
+        return $data;
+    }
+
+    public function test_a_missing_destination_is_created_from_its_record_with_custom_trips(): void
+    {
+        $content = new CatalogueContent;
+        $this->assertSame([], $content->validate($this->newDestinationContent()));
+
+        $content->apply($this->newDestinationContent(), false, false, false);
+
+        $d = Destination::query()->where('slug', 'kerala')->firstOrFail();
+        $this->assertSame('india', $d->region);
+        $this->assertTrue($d->featured);
+        $this->assertSame('Oct–Mar', $d->best_time);
+        $this->assertSame('Alleppey', $d->seo_content['seasons']['on']['places']);
+        $this->assertSame('Thiruvananthapuram', $d->seo_content['facts']['capital']);
+        $priced = Tour::query()->where('slug', 'kerala-backwaters')->firstOrFail();
+        $this->assertSame('custom', $priced->tour_type);
+        $this->assertSame(21000, $priced->base_price);
+        $this->assertContains('sample-pricing', $priced->tags);
+        $this->assertContains('couples', $priced->tags);
+        $quote = Tour::query()->where('slug', 'kerala-custom')->firstOrFail();
+        $this->assertNull($quote->base_price, 'a custom trip without a price stays quote-only');
+        $this->assertNotContains('sample-pricing', $quote->tags ?? []);
+        $this->assertSame('short', $quote->haul_class, 'India trips are short-haul');
+    }
+
+    public function test_a_dry_run_does_not_create_the_destination(): void
+    {
+        (new CatalogueContent)->apply($this->newDestinationContent(), false, false, true);
+
+        $this->assertSame(0, Destination::query()->count());
+        $this->assertSame(0, Tour::query()->count());
+    }
+
+    public function test_the_destination_record_is_validated(): void
+    {
+        $data = $this->newDestinationContent();
+        unset($data['destination_record']['profile']['overview']);
+        $data['destination_record']['region'] = 'mars';
+
+        $errors = implode(' | ', (new CatalogueContent)->validate($data));
+        $this->assertStringContainsString('profile.overview', $errors);
+        $this->assertStringContainsString('record.region is invalid', $errors);
     }
 }

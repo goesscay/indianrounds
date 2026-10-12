@@ -1,0 +1,977 @@
+{
+  "destination": "kashmir",
+  "destination_record": {
+    "name": "Kashmir",
+    "region": "india",
+    "tagline": "Houseboats on Dal Lake, Mughal gardens and Himalayan meadows at Gulmarg, Pahalgam and Sonamarg.",
+    "best_time": "Apr-Oct",
+    "places": "Srinagar, Dal Lake, Mughal Gardens, Gulmarg, Pahalgam, Sonamarg",
+    "sort": 5,
+    "seasons": {
+      "on": {
+        "months": "Apr-Oct",
+        "places": "Srinagar, Dal Lake, Gulmarg, Pahalgam, Sonamarg",
+        "activities": "Pleasant weather and open roads. April brings tulips and blossom, May and June green meadows and the easiest days for Pahalgam and Sonamarg, and September and October clear autumn light. July and August are cool but can bring rain and occasional landslide delays. Shikara rides, houseboats, the Gulmarg gondola, pony rides and valley walks are at their best."
+      },
+      "off": {
+        "months": "Dec-Feb",
+        "places": "Gulmarg, Srinagar, Pahalgam",
+        "activities": "Cold, with frost in Srinagar and snow on the hills. Gulmarg is the main draw, with the gondola, sledging and instructor-led skiing, though snow cannot be guaranteed. Heavy snowfall can delay flights and close roads, so Pahalgam and Sonamarg trips may change or be dropped. Pack heavy woollens and keep spare days."
+      },
+      "mid": {
+        "months": "Mar and Nov",
+        "places": "Srinagar, Dal Lake, Mughal gardens, Gulmarg, Pahalgam",
+        "activities": "March brings almond blossom and cold mornings, with snow still on the higher slopes. November brings golden chinar leaves and crisp air, with early snow possible at Gulmarg and short days. Roads to the higher valleys can close after snow, so we confirm the situation before each departure."
+      }
+    },
+    "profile": {
+      "overview": "Kashmir is the green valley at the top of India, ringed by the Pir Panjal and Himalayan ranges, with Srinagar, its largest city, at around 1,600 metres. Dal Lake's shikaras and carved wooden houseboats, the terraced Mughal gardens, chinar trees and the pine-lined Lidder river at Pahalgam give it a gentler face than most mountain destinations, while Gulmarg's gondola and the meadows of Sonamarg bring the high Himalaya within a day's drive of the city.\n\nIt is a favourite with Indian honeymooners, families and groups, and a classic holiday runs four to six nights. Conditions change with the season: summer is open and green, while winter brings snow and a real chance of flight or road delays. We plan with spare time, check weather and road updates before each departure, and tell you plainly what to expect on your dates.",
+      "facts": {
+        "capital": "Srinagar in summer and Jammu in winter (Union Territory of Jammu and Kashmir)",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Kashmiri, Urdu, Hindi and English; Dogri in Jammu",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "Summer days about 20 to 30 degrees Celsius; cool spring and autumn; winter near or below freezing, with snow at Gulmarg and on some days in Srinagar",
+        "flight_time": "Srinagar (SXR) is usually reached with one stop from Chennai (allow most of a day); Delhi to Srinagar is about 1 hr 30 min. By rail: Jammu Tawi or Katra, then road or rail onward."
+      },
+      "reasons": [
+        {
+          "title": "Dal Lake and houseboats",
+          "text": "Sleep on a carved cedar-wood houseboat and glide past floating gardens in a shikara at sunrise or sunset. It is the most distinctive stay in India."
+        },
+        {
+          "title": "Mughal gardens",
+          "text": "Shalimar Bagh, Nishat Bagh and Chashme Shahi are terraced gardens laid out by Mughal rulers, with chinar trees, fountains and views over the lake."
+        },
+        {
+          "title": "Four mountain landscapes in one trip",
+          "text": "Srinagar's lakes, Gulmarg's meadows and gondola, Pahalgam's river valleys and Sonamarg's high pastures are each a half-day to a day apart."
+        },
+        {
+          "title": "Snow in the right season",
+          "text": "Gulmarg usually holds snow from about December to March, with sledging, skiing lessons and a gondola that climbs close to 4,000 metres. Snow cannot be guaranteed on any date."
+        },
+        {
+          "title": "Cool summers",
+          "text": "From April to October the valley is pleasant when the plains are hot, which makes it a popular family and group escape."
+        },
+        {
+          "title": "Crafts, saffron and kahwa",
+          "text": "Shawls, carpets, papier-mache, walnuts and saffron are all local specialities, best enjoyed with a cup of saffron kahwa."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "Dal Lake and shikara rides",
+          "text": "Srinagar's famous lake, with houseboats, floating gardens and gentle shikara rides, especially lovely at sunrise and sunset."
+        },
+        {
+          "title": "Mughal gardens of Srinagar",
+          "text": "Shalimar Bagh, Nishat Bagh and Chashme Shahi climb in terraces towards the Zabarwan hills, with the lake below."
+        },
+        {
+          "title": "Floating vegetable market",
+          "text": "An early-morning market where growers sell vegetables from boats on Dal Lake, reached by shikara before sunrise."
+        },
+        {
+          "title": "Shankaracharya Temple",
+          "text": "An ancient hilltop Shiva temple above Srinagar, reached by a flight of steps, with wide views over the city and Dal Lake."
+        },
+        {
+          "title": "Gulmarg and the Gondola",
+          "text": "A high alpine meadow about 50 km from Srinagar. The two-phase gondola rises to close to 4,000 metres, weather permitting."
+        },
+        {
+          "title": "Pahalgam: Lidder River, Betaab and Aru valleys",
+          "text": "A river town among pine forests, with meadow valleys nearby that are reached by short drives or on ponies."
+        },
+        {
+          "title": "Sonamarg and Thajiwas Glacier",
+          "text": "A broad Himalayan valley beside the Sindh river, with the Thajiwas Glacier above it, reached on foot, by pony or by local cab depending on conditions."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "A night on a houseboat",
+          "text": "Carved cedar-panelled rooms, a lake view and home-cooked meals served on board."
+        },
+        {
+          "title": "Shikara ride at sunrise or sunset",
+          "text": "A slow paddle past lotus beds, floating gardens and the mountains behind the lake."
+        },
+        {
+          "title": "Gulmarg Gondola",
+          "text": "A cable car ride over pine forest and snow slopes to high viewpoints, subject to wind and weather on the day."
+        },
+        {
+          "title": "Valley walks and pony rides",
+          "text": "Gentle walks along the Lidder river at Pahalgam and pony rides to Betaab and Aru valleys, where the road ends."
+        },
+        {
+          "title": "Snow play and skiing in winter",
+          "text": "Sledging, snow walks and instructor-led skiing or snowboarding at Gulmarg, when snow conditions allow."
+        },
+        {
+          "title": "Shopping for Kashmiri crafts",
+          "text": "Pashmina and woollen shawls, carpets, papier-mache, walnut wood, dry fruits and saffron, from established shops in Srinagar."
+        }
+      ],
+      "food": [
+        {
+          "title": "Kahwa and noon chai",
+          "text": "Saffron-and-almond green tea (kahwa) and salted pink tea (noon chai) are served everywhere and are best on a cold evening."
+        },
+        {
+          "title": "Kashmiri breads",
+          "text": "Crisp bakarkhani, sheermal and girda from Srinagar's bakeries, usually eaten warm with tea for breakfast."
+        },
+        {
+          "title": "Wazwan",
+          "text": "The traditional multi-course Kashmiri feast. It is mostly meat-based, so vegetarian guests should ask for the vegetarian dishes instead."
+        },
+        {
+          "title": "Vegetarian Kashmiri dishes",
+          "text": "Dum aloo, nadru (lotus stem), haak (leafy greens), rajma and paneer dishes are widely available. We can arrange vegetarian and Jain meal options on request, subject to availability."
+        },
+        {
+          "title": "Dry fruits and saffron",
+          "text": "Walnuts, almonds, apricots and Kashmiri saffron make good gifts. Buy from established shops and ask about authenticity."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Pack layers for every season",
+          "text": "Evenings are cool at Gulmarg and Pahalgam even in summer. In winter, bring thermals, a heavy jacket, gloves, a woollen cap and grippy shoes. Snow boots and gear can usually be hired at Gulmarg."
+        },
+        {
+          "title": "Go slowly at altitude",
+          "text": "Gulmarg's upper gondola station is close to 4,000 metres. Take it easy, drink water and come down if you feel unwell. Speak to a doctor first if you have heart, lung or blood-pressure conditions."
+        },
+        {
+          "title": "Keep spare time in winter",
+          "text": "Heavy snow or rain can delay flights and close mountain roads, including the Sonamarg and Pahalgam routes. Avoid tight onward connections and tell us if your dates are fixed."
+        },
+        {
+          "title": "Carry cash and check your mobile plan",
+          "text": "Cards and UPI work in Srinagar, but networks can be patchy in the hills. Prepaid SIMs from other states have often not worked in Jammu and Kashmir, so check with your operator before travelling."
+        },
+        {
+          "title": "Agree rates for ponies and local cabs",
+          "text": "At Pahalgam, Gulmarg and Sonamarg some points are reached only by pony or local cab. Ask for the official rate list and confirm with us what is included."
+        },
+        {
+          "title": "Buy crafts from established shops",
+          "text": "Look for the GI label on Kashmir pashmina and saffron, ask for a bill and compare prices before you buy."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa for Kashmir. Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence for every traveller, as hotels and security points ask for it. Srinagar, Gulmarg, Pahalgam and Sonamarg do not generally need a separate permit for Indian visitors, but restricted border areas do. We arrange permits and confirm the current rules at booking.",
+        "health": "No compulsory vaccinations. At Gulmarg's upper gondola station, close to 4,000 metres, some people feel breathless or get a headache, so go slowly and drink water. Carry your regular medicines, as pharmacies and hospitals in the hill towns are basic, and larger hospitals are in Srinagar. Tell us about any heart, lung, blood-pressure or mobility concerns before booking so that we can plan sensibly.",
+        "money": "Cards and UPI work at Srinagar hotels and larger shops, but networks can be patchy at Gulmarg, Pahalgam and Sonamarg, so carry cash for ponies, local cabs, tips and small purchases. ATMs are available in Srinagar and the main towns. Check your mobile plan before you travel, as prepaid connections from other states have often not worked in Jammu and Kashmir."
+      },
+      "faqs": [
+        {
+          "q": "When is the best time to visit Kashmir?",
+          "a": "April to October is the easiest season: spring blossom and tulips in April, green meadows from May to June, and clear autumn light in September and October. December to February is the snow season at Gulmarg, but it is cold and travel can be delayed."
+        },
+        {
+          "q": "Will there be snow when we travel?",
+          "a": "Gulmarg usually has snow from about December to March, sometimes earlier or later, and the amount changes every year, so we cannot guarantee it. Srinagar sees snow only on some winter days. Sonamarg's Thajiwas Glacier often keeps snow into early summer."
+        },
+        {
+          "q": "How do we reach Srinagar?",
+          "a": "Most travellers fly to Srinagar Airport (SXR), usually with one stop from Chennai, often through Delhi. By rail, you can travel to Jammu Tawi or Katra and continue by road, which takes most of a day, or by the new rail link where services suit. We confirm current options at booking."
+        },
+        {
+          "q": "How many nights do I need?",
+          "a": "Five to six nights covers Srinagar, Gulmarg, Pahalgam and Sonamarg without rushing. Four nights from a single Srinagar base works for families, and a three-night weekend break suits Dal Lake and Gulmarg."
+        },
+        {
+          "q": "Is Kashmir suitable for children and senior parents?",
+          "a": "Yes, with a sensible plan. Srinagar and Dal Lake are easy, and we can base you in one hotel with day trips. Gulmarg and Sonamarg involve two to three hours each way, and the upper gondola is at high altitude, so tell us about any health concerns."
+        },
+        {
+          "q": "Is Kashmir safe for tourists?",
+          "a": "Large numbers of Indian travellers visit every year. Conditions can change, so we follow official advisories and local updates, keep to established tourist areas and tell you if anything affects your dates. We also recommend travel insurance."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "dal-lake-shikara",
+      "query": "Dal Lake shikara Srinagar Kashmir",
+      "caption": "A shikara on Dal Lake, Srinagar"
+    },
+    {
+      "slot": "dal-lake-houseboats",
+      "query": "Houseboats on Dal Lake Srinagar Kashmir",
+      "caption": "Houseboats on Dal Lake"
+    },
+    {
+      "slot": "shalimar-bagh",
+      "query": "Shalimar Bagh Mughal garden Srinagar Kashmir",
+      "caption": "Shalimar Bagh, Srinagar"
+    },
+    {
+      "slot": "nishat-bagh",
+      "query": "Nishat Bagh Mughal garden Srinagar Kashmir",
+      "caption": "Nishat Bagh, Srinagar"
+    },
+    {
+      "slot": "gulmarg-gondola",
+      "query": "Gulmarg Gondola cable car Kashmir",
+      "caption": "The Gulmarg Gondola"
+    },
+    {
+      "slot": "gulmarg-snow-slopes",
+      "query": "Gulmarg snow slopes ski Kashmir",
+      "caption": "Snow slopes at Gulmarg"
+    },
+    {
+      "slot": "pahalgam-lidder-river",
+      "query": "Pahalgam Lidder River valley Kashmir",
+      "caption": "The Lidder River at Pahalgam"
+    },
+    {
+      "slot": "betaab-valley",
+      "query": "Betaab Valley Pahalgam Kashmir",
+      "caption": "Betaab Valley, Pahalgam"
+    },
+    {
+      "slot": "sonamarg-thajiwas",
+      "query": "Sonamarg Thajiwas Glacier meadow Kashmir",
+      "caption": "Sonamarg and the Thajiwas Glacier"
+    },
+    {
+      "slot": "floating-vegetable-market",
+      "query": "Dal Lake floating vegetable market Srinagar Kashmir",
+      "caption": "Floating vegetable market, Dal Lake"
+    },
+    {
+      "slot": "shankaracharya-temple",
+      "query": "Shankaracharya Temple hill Srinagar Kashmir",
+      "caption": "Shankaracharya Temple, Srinagar"
+    }
+  ],
+  "hero": "dal-lake-shikara",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "kashmir-classic-packages",
+      "name": "Classic Packages",
+      "description": "The best-known Kashmir circuit with Dal Lake, the Mughal gardens, Gulmarg, Pahalgam and Sonamarg, with hotels, a houseboat and transfers arranged for you.",
+      "photo": "dal-lake-shikara",
+      "packages": [
+        "kashmir-classic-valley-tour",
+        "kashmir-valley-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kashmir-honeymoon-and-couples",
+      "name": "Honeymoon and Couples",
+      "description": "Private trips for two with a Dal Lake houseboat, sunset shikara rides and quiet meadow and river stays.",
+      "photo": "dal-lake-houseboats",
+      "packages": [
+        "kashmir-houseboat-and-gulmarg-honeymoon",
+        "kashmir-classic-valley-tour"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kashmir-family-holidays",
+      "name": "Family Holidays",
+      "description": "Easy-paced holidays with fewer hotel changes, shikara rides, gondola views and Sonamarg's meadows for children and grandparents.",
+      "photo": "sonamarg-thajiwas",
+      "packages": [
+        "kashmir-family-holiday",
+        "kashmir-classic-valley-tour"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kashmir-snow-and-adventure",
+      "name": "Snow and Adventure",
+      "description": "Gulmarg snow, skiing and sledging in winter, and meadow walks, riding and river rafting in the warmer months. Quoted for your dates.",
+      "photo": "gulmarg-snow-slopes",
+      "packages": [
+        "kashmir-gulmarg-pahalgam-adventure-trip",
+        "kashmir-dal-lake-gulmarg-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kashmir-short-breaks",
+      "name": "Short Breaks",
+      "description": "Three- and four-night breaks centred on Srinagar, Dal Lake and Gulmarg.",
+      "photo": "gulmarg-gondola",
+      "packages": [
+        "kashmir-dal-lake-gulmarg-weekend-escape",
+        "kashmir-family-holiday"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "kashmir-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, a ready-made itinerary and vegetarian and Jain meal options on request.",
+      "photo": "betaab-valley",
+      "packages": [
+        "kashmir-valley-group-trip"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "kashmir-weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short Kashmir break built around a long weekend, with Friday departures, a houseboat night and a day at Gulmarg.",
+      "photo": "gulmarg-gondola",
+      "packages": [
+        "kashmir-dal-lake-gulmarg-weekend-escape"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "kashmir-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Houseboat nights, shikara rides at sunset and mountain stays for couples who want time together.",
+      "photo": "dal-lake-houseboats",
+      "packages": [
+        "kashmir-houseboat-and-gulmarg-honeymoon"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "kashmir-valley-group-trip",
+      "title": "Kashmir Valley Group Trip: Dal Lake, Pahalgam, Sonamarg and Gulmarg",
+      "nights": 6,
+      "summary": "Seven days in the Kashmir valley with a Dal Lake houseboat, the Mughal gardens, Pahalgam, a day at Sonamarg and the Gulmarg Gondola, with a trip captain.",
+      "overview": "This fixed-departure group trip covers the best-known places in the Kashmir valley over six nights. You begin with two nights on a houseboat on Dal Lake, with a shikara ride and a day among the Mughal gardens, then drive to Pahalgam for its river and meadow valleys.\n\nFrom Srinagar you make two day excursions: one to Sonamarg and the Thajiwas Glacier, and one to Gulmarg for the gondola. Day trips from a Srinagar base mean fewer hotel changes, and a trip captain travels with the group throughout. Daily breakfast and dinner are included, and vegetarian and Jain options are available on request.\n\nMountain roads and the gondola depend on weather, so the order of days may change, and we keep spare time in the plan.",
+      "highlights": [
+        "Two nights on a houseboat on Dal Lake, with a shikara ride",
+        "Mughal gardens of Srinagar: Chashme Shahi, Nishat Bagh and Shalimar Bagh",
+        "Pahalgam, with Betaab Valley and Aru Valley by local cab",
+        "Day trip to Sonamarg and the Thajiwas Glacier area, as conditions allow",
+        "Gulmarg Gondola ride (Phase 1 included, Phase 2 optional and weather permitting)",
+        "Daily breakfast and dinner, with vegetarian and Jain options on request",
+        "Trip captain with the group throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar | Houseboat on Dal Lake | Shikara Ride",
+          "description": "Arrive at Srinagar Airport, where your trip captain meets the group.\nTransfer to your houseboat on Dal Lake and check in.\nIn the evening, take a shikara ride on the lake, weather permitting.\nDinner on the houseboat.\nOvernight stay on Dal Lake, Srinagar."
+        },
+        {
+          "day": 2,
+          "title": "Mughal Gardens | Srinagar Sightseeing",
+          "description": "After breakfast, visit Chashme Shahi, Nishat Bagh and Shalimar Bagh, the terraced Mughal gardens above the lake.\nContinue to a local market for shawls, dry fruits and handicrafts, at your own pace.\nSpend the evening on the houseboat deck or at leisure.\nOvernight stay on Dal Lake, Srinagar."
+        },
+        {
+          "day": 3,
+          "title": "Srinagar to Pahalgam | Lidder River",
+          "description": "After breakfast, check out and drive to Pahalgam, a journey of about three hours.\nCheck in to your hotel and have a relaxed afternoon.\nWalk beside the Lidder river and enjoy the pine-covered slopes.\nOvernight stay in Pahalgam."
+        },
+        {
+          "day": 4,
+          "title": "Betaab Valley | Aru Valley | Return to Srinagar",
+          "description": "After breakfast, visit Betaab Valley and Aru Valley by local cab, as local conditions allow.\nPony rides are available at some points and are paid locally.\nAfter lunch at leisure, drive back to Srinagar, about three hours.\nCheck in to your hotel in Srinagar.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 5,
+          "title": "Day Trip to Sonamarg",
+          "description": "After breakfast, drive to Sonamarg, a journey of about three hours each way.\nEnjoy the valley beside the Sindh river and, as conditions allow, the Thajiwas Glacier area by local cab or pony.\nLunch is at your own cost. Return to Srinagar in the evening.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 6,
+          "title": "Day Trip to Gulmarg | Gondola",
+          "description": "After breakfast, drive to Gulmarg, about two hours from Srinagar.\nRide the Gulmarg Gondola (Phase 1 included) and walk across the meadow.\nThe upper phase is optional and depends on wind and weather on the day.\nReturn to Srinagar in the late afternoon.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Srinagar",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Srinagar Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "2 nights on a houseboat on Dal Lake, twin sharing",
+        "1 night hotel stay in Pahalgam, twin sharing",
+        "3 nights hotel stay in Srinagar, twin sharing",
+        "Daily breakfast and dinner at the houseboat and hotels",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Airport arrival and departure transfers in Srinagar",
+        "Shikara ride on Dal Lake",
+        "Visit to the Mughal gardens of Srinagar",
+        "Day excursions to Sonamarg and Gulmarg by AC vehicle",
+        "Gulmarg Gondola Phase 1 ride",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights, trains or other transport to and from Srinagar",
+        "Lunches and any meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Pony rides, local union cab charges, sledging, skiing and other optional activities",
+        "Gulmarg Gondola Phase 2 ticket, which can be added on request",
+        "Camera or video fees at monuments and gardens, where charged",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Every traveller must carry a valid government photo ID, which is checked at hotels and security points.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change.",
+        "A trip captain accompanies the group throughout.",
+        "The Gulmarg Gondola depends on wind and weather, and the upper phase can close at short notice; if so, we will suggest an alternative where possible.",
+        "Gulmarg's upper gondola station is close to 4,000 metres. Some travellers feel breathless or get headaches, so tell us about any heart, lung or blood-pressure conditions in advance.",
+        "Heavy snow, rain or landslides can close mountain roads and delay flights, mainly from December to February and in heavy monsoon rain. Keep spare time before any onward connection.",
+        "At Pahalgam, Gulmarg and Sonamarg some points are reached only by local union cab or pony; we confirm at booking what is included."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence)",
+        "Return flight or train tickets",
+        "Warm layers: thermals, jacket, gloves and a woollen cap (heavier in winter)",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including anything for altitude or motion sickness",
+        "Some cash for ponies, local cabs, tips and small purchases",
+        "Power bank and phone charger (Indian plugs are used)"
+      ],
+      "pickup": "Srinagar Airport (SXR)",
+      "drop_point": "Srinagar Airport (SXR)",
+      "photo": "betaab-valley",
+      "gallery": [
+        "dal-lake-houseboats",
+        "shalimar-bagh",
+        "gulmarg-gondola",
+        "sonamarg-thajiwas"
+      ],
+      "price": 36900,
+      "original_price": 39900,
+      "departures": {
+        "weekday": 6,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 24
+      }
+    },
+    {
+      "slug": "kashmir-dal-lake-gulmarg-weekend-escape",
+      "title": "Kashmir Weekend Escape: Dal Lake, Mughal Gardens and Gulmarg",
+      "nights": 3,
+      "summary": "A Friday-to-Monday break with a Dal Lake houseboat night, shikara ride, Mughal gardens and a day at Gulmarg with the gondola.",
+      "overview": "This three-night break fits Kashmir's best-known sights into a long weekend. You spend the first night on a houseboat on Dal Lake, ride a shikara, visit the Mughal gardens and make a day trip to Gulmarg for the gondola.\n\nIt is a short programme, so it works best with early arrivals and late departures. A trip captain accompanies every weekly Friday departure, and breakfast and dinner are included.",
+      "highlights": [
+        "Night on a houseboat on Dal Lake",
+        "Shikara ride on Dal Lake",
+        "Mughal gardens: Nishat Bagh and Shalimar Bagh",
+        "Day trip to Gulmarg with the gondola (Phase 1 included)",
+        "Breakfast and dinner included",
+        "Weekly Friday departures with a trip captain"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar | Houseboat | Shikara Ride",
+          "description": "Arrive at Srinagar Airport in the morning and meet your trip captain.\nTransfer to your houseboat on Dal Lake and check in.\nTake a shikara ride on the lake in the afternoon or at sunset, weather permitting.\nDinner on the houseboat.\nOvernight stay on Dal Lake, Srinagar."
+        },
+        {
+          "day": 2,
+          "title": "Mughal Gardens | Srinagar Sightseeing",
+          "description": "After breakfast, visit Nishat Bagh and Shalimar Bagh, the terraced Mughal gardens.\nCheck in to your hotel in Srinagar.\nSpend the afternoon and evening at leisure, perhaps browsing the markets for shawls and dry fruits.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 3,
+          "title": "Day Trip to Gulmarg | Gondola",
+          "description": "After breakfast, drive to Gulmarg, about two hours from Srinagar.\nRide the Gulmarg Gondola (Phase 1 included) and enjoy the meadow and mountain views.\nThe upper phase is optional and depends on wind and weather.\nReturn to Srinagar in the late afternoon.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 4,
+          "title": "Free Morning | Departure",
+          "description": "After breakfast, check out of the hotel.\nUse the free time for last-minute shopping or a relaxed stroll by the lake.\nTransfer to Srinagar Airport for your afternoon or evening flight home."
+        }
+      ],
+      "inclusions": [
+        "1 night on a houseboat on Dal Lake, twin sharing",
+        "2 nights hotel stay in Srinagar, twin sharing",
+        "Daily breakfast and dinner at the houseboat and hotel",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Airport arrival and departure transfers in Srinagar",
+        "Shikara ride on Dal Lake",
+        "Visit to the Mughal gardens of Srinagar",
+        "Day excursion to Gulmarg by AC vehicle",
+        "Gulmarg Gondola Phase 1 ride",
+        "Services of a trip captain throughout the tour",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights, trains or other transport to and from Srinagar",
+        "Lunches and any meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Pony rides, local union cab charges, sledging, skiing and other optional activities",
+        "Gulmarg Gondola Phase 2 ticket, which can be added on request",
+        "Camera or video fees at monuments and gardens, where charged",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Flights, trains or other transport to and from Srinagar are not included.",
+        "Every traveller must carry a valid government photo ID, which is checked at hotels and security points.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; a trip captain accompanies the group.",
+        "The Gulmarg Gondola depends on wind and weather, and the upper phase can close at short notice; if so, we will suggest an alternative where possible.",
+        "Heavy snow, rain or landslides can close mountain roads and delay flights, mainly from December to February and in heavy monsoon rain. Keep spare time before any onward connection.",
+        "At Pahalgam, Gulmarg and Sonamarg some points are reached only by local union cab or pony; we confirm at booking what is included."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence)",
+        "Return flight or train tickets",
+        "Warm layers: thermals, jacket, gloves and a woollen cap (heavier in winter)",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Some cash for ponies, local cabs, tips and small purchases"
+      ],
+      "pickup": "Srinagar Airport (SXR)",
+      "drop_point": "Srinagar Airport (SXR)",
+      "photo": "gulmarg-gondola",
+      "gallery": [
+        "dal-lake-shikara",
+        "shalimar-bagh",
+        "floating-vegetable-market"
+      ],
+      "price": 17900,
+      "original_price": 19400,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "kashmir-houseboat-and-gulmarg-honeymoon",
+      "title": "Kashmir Honeymoon: Dal Lake Houseboat, Gulmarg and Pahalgam",
+      "nights": 6,
+      "summary": "Six private nights for two with a Dal Lake houseboat, a sunset shikara ride, the Gulmarg Gondola, Pahalgam's valleys, a couples spa session and a candlelight dinner.",
+      "overview": "This private honeymoon starts on the water, with two nights on a houseboat on Dal Lake, then moves to the meadows of Gulmarg and the river valleys of Pahalgam, finishing in Srinagar. You travel by private vehicle, start most mornings unhurried and keep afternoons and evenings for each other.\n\nExpect a flower welcome and bed decoration on arrival, a private shikara ride at sunset, a candlelight dinner and a couples spa session, all subject to availability. Gulmarg to Pahalgam is the longest drive, about five hours with a lunch stop, and we plan it at an easy pace. Tell us your wedding date at booking so that the hotels can prepare the welcome.",
+      "highlights": [
+        "Private vehicle for transfers and sightseeing",
+        "Two nights on a Dal Lake houseboat",
+        "Private shikara ride at sunset, our signature romantic moment",
+        "Gulmarg Gondola ride (Phase 1 included) and a night in the meadows",
+        "Pahalgam's Betaab and Aru valleys by local cab",
+        "Candlelight dinner and couples spa session, subject to availability",
+        "Flower welcome and bed decoration on arrival"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar | Houseboat | Sunset Shikara",
+          "description": "Arrive at Srinagar Airport, where your private vehicle is waiting.\nTransfer to your houseboat on Dal Lake, where a flower welcome and bed decoration are arranged, subject to availability.\nEnjoy a private shikara ride at sunset, with kahwa if you wish.\nDinner on the houseboat.\nOvernight stay on Dal Lake, Srinagar."
+        },
+        {
+          "day": 2,
+          "title": "Mughal Gardens | Candlelight Dinner",
+          "description": "Enjoy a relaxed breakfast and a late start.\nVisit Chashme Shahi, Nishat Bagh and Shalimar Bagh, the terraced Mughal gardens.\nSpend the afternoon at leisure on the lake.\nA candlelight dinner is arranged for the two of you, subject to availability.\nOvernight stay on Dal Lake, Srinagar."
+        },
+        {
+          "day": 3,
+          "title": "Srinagar to Gulmarg | Gondola",
+          "description": "After breakfast, drive to Gulmarg, about two hours from Srinagar.\nCheck in to your hotel and ride the Gulmarg Gondola (Phase 1 included), weather permitting.\nWalk across the meadow and watch the light change on the peaks.\nOvernight stay in Gulmarg."
+        },
+        {
+          "day": 4,
+          "title": "Gulmarg to Pahalgam",
+          "description": "Enjoy a slow morning in the meadows of Gulmarg.\nDrive to Pahalgam via Srinagar, about five hours with a lunch stop, taken at an easy pace.\nCheck in to your hotel and rest by the Lidder river.\nOvernight stay in Pahalgam."
+        },
+        {
+          "day": 5,
+          "title": "Betaab Valley | Aru Valley",
+          "description": "After breakfast, visit Betaab Valley and Aru Valley by local cab, as local conditions allow.\nPony rides are optional and paid locally.\nReturn to the hotel for a quiet afternoon and a riverside walk.\nOvernight stay in Pahalgam."
+        },
+        {
+          "day": 6,
+          "title": "Pahalgam to Srinagar | Couples Spa",
+          "description": "After breakfast, drive to Srinagar, about three hours.\nCheck in to your hotel in Srinagar.\nEnjoy a couples spa session at the hotel or a nearby spa, subject to availability.\nSpend the evening at leisure by the lake.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Srinagar",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Srinagar Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "2 nights on a houseboat on Dal Lake, twin sharing",
+        "1 night hotel stay in Gulmarg, twin sharing",
+        "2 nights hotel stay in Pahalgam, twin sharing",
+        "1 night hotel stay in Srinagar, twin sharing",
+        "Daily breakfast and dinner at the houseboat and hotels",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Private shikara ride at sunset on Dal Lake",
+        "Flower welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner, subject to availability",
+        "One couples spa session, subject to availability",
+        "Gulmarg Gondola Phase 1 ride",
+        "Visit to the Mughal gardens of Srinagar",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights, trains or other transport to and from Srinagar",
+        "Lunches and any meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Pony rides, local union cab charges and other optional activities",
+        "Gulmarg Gondola Phase 2 ticket, which can be added on request",
+        "Camera or video fees at monuments and gardens, where charged",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches such as the welcome, candlelight dinner and spa session are subject to availability and hotel policy.",
+        "Every traveller must carry a valid government photo ID, which is checked at hotels and security points.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions.",
+        "The Gulmarg Gondola depends on wind and weather, and the upper phase can close at short notice; if so, we will suggest an alternative where possible.",
+        "Gulmarg's upper gondola station is close to 4,000 metres. Some travellers feel breathless or get headaches, so tell us about any heart, lung or blood-pressure conditions in advance.",
+        "Heavy snow, rain or landslides can close mountain roads and delay flights, mainly from December to February and in heavy monsoon rain. Keep spare time before any onward connection.",
+        "At Pahalgam, Gulmarg and Sonamarg some points are reached only by local union cab or pony; we confirm at booking what is included."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence)",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Return flight or train tickets",
+        "Warm layers: thermals, jacket, gloves and a woollen cap (heavier in winter)",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including anything for altitude or motion sickness",
+        "Some cash for ponies, local cabs, tips and small purchases"
+      ],
+      "pickup": "Srinagar Airport (SXR)",
+      "drop_point": "Srinagar Airport (SXR)",
+      "photo": "dal-lake-houseboats",
+      "gallery": [
+        "dal-lake-shikara",
+        "nishat-bagh",
+        "gulmarg-snow-slopes",
+        "pahalgam-lidder-river"
+      ],
+      "price": 44900,
+      "original_price": 48500
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "kashmir-classic-valley-tour",
+      "title": "Kashmir Classic: Srinagar, Gulmarg and Pahalgam",
+      "nights": 5,
+      "summary": "A private classic circuit with a Dal Lake houseboat, the Mughal gardens and Shankaracharya Temple, a night at Gulmarg with the gondola and a night at Pahalgam.",
+      "overview": "This is a ready-made private package that covers the classic Kashmir circuit in five nights. You stay on a Dal Lake houseboat and see Srinagar's Mughal gardens and hilltop temple, spend a night at Gulmarg for the gondola and meadows, then continue to Pahalgam for its river valleys.\n\nDates, hotels and pace can be adjusted to suit your family or group, and Sonamarg can be added as a day trip from Srinagar. Ask for a quote for your dates.",
+      "highlights": [
+        "Two nights on a houseboat on Dal Lake, with a shikara ride",
+        "Mughal gardens and Shankaracharya Temple in Srinagar",
+        "Night at Gulmarg with the Gondola (Phase 1 included)",
+        "Pahalgam's Lidder river, Betaab Valley and Aru Valley",
+        "Private AC vehicle throughout",
+        "Dates, hotels and pace tailored to you"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar | Houseboat | Shikara Ride",
+          "description": "Arrive at Srinagar Airport and transfer to your houseboat on Dal Lake.\nCheck in and relax.\nIn the evening, take a shikara ride on the lake, weather permitting.\nOvernight stay on Dal Lake, Srinagar."
+        },
+        {
+          "day": 2,
+          "title": "Mughal Gardens | Shankaracharya Temple",
+          "description": "After breakfast, visit Chashme Shahi, Nishat Bagh and Shalimar Bagh.\nDrive to the Shankaracharya Temple hill for views of Srinagar and Dal Lake, subject to local access rules.\nSpend the evening at leisure or shopping for crafts.\nOvernight stay on Dal Lake, Srinagar."
+        },
+        {
+          "day": 3,
+          "title": "Srinagar to Gulmarg | Gondola",
+          "description": "After breakfast, drive to Gulmarg, about two hours from Srinagar.\nCheck in to your hotel and ride the Gulmarg Gondola (Phase 1 included), weather permitting.\nWalk across the meadow and enjoy the mountain views.\nOvernight stay in Gulmarg."
+        },
+        {
+          "day": 4,
+          "title": "Gulmarg to Pahalgam",
+          "description": "After breakfast, drive to Pahalgam via Srinagar, about five hours with a lunch stop.\nCheck in to your hotel and walk beside the Lidder river.\nOvernight stay in Pahalgam."
+        },
+        {
+          "day": 5,
+          "title": "Betaab Valley | Aru Valley | Return to Srinagar",
+          "description": "After breakfast, visit Betaab Valley and Aru Valley by local cab, as local conditions allow.\nPony rides are optional and paid locally.\nDrive to Srinagar in the afternoon, about three hours, and check in to your hotel.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Srinagar",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Srinagar Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "2 nights on a houseboat on Dal Lake, twin sharing",
+        "1 night hotel stay in Gulmarg, twin sharing",
+        "1 night hotel stay in Pahalgam, twin sharing",
+        "1 night hotel stay in Srinagar, twin sharing",
+        "Daily breakfast and dinner at the houseboat and hotels",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Airport arrival and departure transfers in Srinagar",
+        "Shikara ride on Dal Lake",
+        "Visit to the Mughal gardens and Shankaracharya Temple, subject to access",
+        "Gulmarg Gondola Phase 1 ride",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights, trains or other transport to and from Srinagar",
+        "Lunches and any meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Pony rides, local union cab charges, sledging, skiing and other optional activities",
+        "Gulmarg Gondola Phase 2 ticket, which can be added on request",
+        "Camera or video fees at monuments and gardens, where charged",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Every traveller must carry a valid government photo ID, which is checked at hotels and security points.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions.",
+        "The Gulmarg Gondola depends on wind and weather, and the upper phase can close at short notice; if so, we will suggest an alternative where possible.",
+        "Gulmarg's upper gondola station is close to 4,000 metres. Some travellers feel breathless or get headaches, so tell us about any heart, lung or blood-pressure conditions in advance.",
+        "Heavy snow, rain or landslides can close mountain roads and delay flights, mainly from December to February and in heavy monsoon rain. Keep spare time before any onward connection.",
+        "At Pahalgam, Gulmarg and Sonamarg some points are reached only by local union cab or pony; we confirm at booking what is included.",
+        "During the Amarnath Yatra season (usually July and August, dates set each year) Pahalgam is very busy and road movement can be restricted."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence)",
+        "Return flight or train tickets",
+        "Warm layers: thermals, jacket, gloves and a woollen cap (heavier in winter)",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including anything for altitude or motion sickness",
+        "Some cash for ponies, local cabs, tips and small purchases"
+      ],
+      "pickup": "Srinagar Airport (SXR)",
+      "drop_point": "Srinagar Airport (SXR)",
+      "photo": "nishat-bagh",
+      "gallery": [
+        "dal-lake-shikara",
+        "gulmarg-gondola",
+        "pahalgam-lidder-river",
+        "shankaracharya-temple"
+      ],
+      "price": 28900,
+      "original_price": 31200
+    },
+    {
+      "slug": "kashmir-family-holiday",
+      "title": "Kashmir Family Holiday: One Hotel, Gulmarg and Sonamarg",
+      "nights": 4,
+      "summary": "An easy-paced family holiday from a single Srinagar hotel, with Dal Lake, the Mughal gardens and day trips to Gulmarg and Sonamarg.",
+      "overview": "This family holiday uses one hotel in Srinagar for all four nights, so there is no repeated packing and unpacking with children or grandparents. From there you take a shikara ride, visit the Mughal gardens and make day trips to Gulmarg for the gondola and to Sonamarg for its meadows and the Thajiwas Glacier area.\n\nGulmarg and Sonamarg are two to three hours each way, so we put a gentler Srinagar day between them. Dates and hotels can be tailored to your family.",
+      "highlights": [
+        "Four nights in one Srinagar hotel, with no hotel changes",
+        "Shikara ride on Dal Lake",
+        "Mughal gardens and the floating vegetable market (optional early start)",
+        "Day trip to Gulmarg with the gondola (Phase 1 included)",
+        "Day trip to Sonamarg, with the Thajiwas Glacier area by pony or cab as conditions allow",
+        "An easy Srinagar day between the two longer excursions"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar | Shikara Ride",
+          "description": "Arrive at Srinagar Airport and transfer to your hotel.\nCheck in and rest after your journey.\nIn the late afternoon, take a shikara ride on Dal Lake, weather permitting.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 2,
+          "title": "Day Trip to Gulmarg | Gondola",
+          "description": "After breakfast, drive to Gulmarg, about two hours from Srinagar.\nRide the Gulmarg Gondola (Phase 1 included) and enjoy the meadow.\nPony rides and snow play, where the season allows, are paid locally.\nReturn to Srinagar in the late afternoon.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 3,
+          "title": "Mughal Gardens | Srinagar at Leisure",
+          "description": "After a relaxed breakfast, visit Chashme Shahi, Nishat Bagh and Shalimar Bagh.\nAn early-morning shikara visit to the floating vegetable market can be added on request.\nSpend the afternoon at leisure, shopping for shawls and dry fruits if you wish.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 4,
+          "title": "Day Trip to Sonamarg",
+          "description": "After breakfast, drive to Sonamarg, about three hours each way.\nEnjoy the valley beside the Sindh river and, as conditions allow, the Thajiwas Glacier area by pony or local cab.\nReturn to Srinagar in the evening.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 5,
+          "title": "Departure from Srinagar",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Srinagar Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "4 nights hotel stay in Srinagar, twin sharing",
+        "Daily breakfast at the hotel",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Airport arrival and departure transfers in Srinagar",
+        "Shikara ride on Dal Lake",
+        "Visit to the Mughal gardens of Srinagar",
+        "Day excursions to Gulmarg and Sonamarg by AC vehicle",
+        "Gulmarg Gondola Phase 1 ride",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights, trains or other transport to and from Srinagar",
+        "Lunches and any meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Pony rides, local union cab charges, sledging, skiing and other optional activities",
+        "Gulmarg Gondola Phase 2 ticket, which can be added on request",
+        "Camera or video fees at monuments and gardens, where charged",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Every traveller must carry a valid government photo ID, which is checked at hotels and security points.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions.",
+        "The Gulmarg Gondola depends on wind and weather, and the upper phase can close at short notice; if so, we will suggest an alternative where possible.",
+        "Gulmarg's upper gondola station is close to 4,000 metres. Some travellers feel breathless or get headaches, so tell us about any heart, lung or blood-pressure conditions in advance.",
+        "Heavy snow, rain or landslides can close mountain roads and delay flights, mainly from December to February and in heavy monsoon rain. Keep spare time before any onward connection.",
+        "Sonamarg is a long day trip. In winter heavy snow can close the road, and we will offer another plan if so.",
+        "Children's rates, extra beds and family rooms are confirmed at booking."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence)",
+        "Children's ID proof or birth certificate, where required",
+        "Return flight or train tickets",
+        "Warm layers: thermals, jacket, gloves and a woollen cap (heavier in winter)",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including anything for altitude or motion sickness",
+        "Some cash for ponies, local cabs, tips and small purchases"
+      ],
+      "pickup": "Srinagar Airport (SXR)",
+      "drop_point": "Srinagar Airport (SXR)",
+      "photo": "sonamarg-thajiwas",
+      "gallery": [
+        "dal-lake-shikara",
+        "gulmarg-gondola",
+        "floating-vegetable-market"
+      ],
+      "price": 24500,
+      "original_price": 26500
+    },
+    {
+      "slug": "kashmir-gulmarg-pahalgam-adventure-trip",
+      "title": "Kashmir Adventure: Gulmarg Snow or Meadows and Pahalgam Rivers",
+      "nights": 5,
+      "summary": "A private active trip with two nights at Gulmarg for skiing and snow in winter or meadow walks and riding in summer, plus Pahalgam's river and valleys.",
+      "overview": "This private adventure trip is built around Gulmarg and Pahalgam, and the activities depend on the season. In winter, usually December to March, Gulmarg offers sledging and instructor-led skiing or snowboarding if snow conditions allow. From late spring to autumn it offers meadow walks, pony rides and views from the gondola.\n\nAt Pahalgam you can walk or ride into Aru and Betaab valleys and, in the warmer months, add a river rafting session on the Lidder, subject to water levels. Every plan is quoted for your dates, fitness and group, so ask for a free quote.",
+      "highlights": [
+        "Two nights in Gulmarg with a full activity day",
+        "Winter: sledging and instructor-led skiing or snowboarding, if snow allows",
+        "Summer and autumn: meadow walks, pony rides and the gondola",
+        "Pahalgam's Lidder river, with rafting in warmer months if water levels allow",
+        "Aru and Betaab valleys on foot, by pony or by local cab",
+        "Private AC vehicle throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar",
+          "description": "Arrive at Srinagar Airport and transfer to your hotel.\nCheck in and enjoy an easy evening.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 2,
+          "title": "Srinagar to Gulmarg",
+          "description": "After breakfast, drive to Gulmarg, about two hours from Srinagar.\nCheck in to your hotel and ride the Gulmarg Gondola (Phase 1 included), weather permitting.\nSpend the rest of the day acclimatising and exploring the meadow.\nOvernight stay in Gulmarg."
+        },
+        {
+          "day": 3,
+          "title": "Gulmarg Activity Day",
+          "description": "In winter, spend the day on the snow with sledging or instructor-led skiing, if snow allows.\nIn other seasons, enjoy meadow walks or pony rides, with Khilanmarg possible when the snow has cleared.\nThe activities are optional, paid locally and depend on conditions on the day.\nOvernight stay in Gulmarg."
+        },
+        {
+          "day": 4,
+          "title": "Gulmarg to Pahalgam",
+          "description": "After breakfast, drive to Pahalgam via Srinagar, about five hours with a lunch stop.\nCheck in to your hotel and walk beside the Lidder river.\nOvernight stay in Pahalgam."
+        },
+        {
+          "day": 5,
+          "title": "Pahalgam Activities | Return to Srinagar",
+          "description": "After breakfast, explore Aru Valley or Betaab Valley by local cab, as local conditions allow.\nIn the warmer months, add a rafting session on the Lidder, subject to water levels and arrangement.\nIn the afternoon, drive to Srinagar, about three hours, and check in to your hotel.\nOvernight stay in Srinagar."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Srinagar",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Srinagar Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel stay in Srinagar, twin sharing",
+        "2 nights hotel stay in Gulmarg, twin sharing",
+        "1 night hotel stay in Pahalgam, twin sharing",
+        "Daily breakfast and dinner at the hotels",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Airport arrival and departure transfers in Srinagar",
+        "Gulmarg Gondola Phase 1 ride",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights, trains or other transport to and from Srinagar",
+        "Lunches and any meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Skiing, snowboarding, sledging, rafting, pony rides, equipment hire, instructors and other activities",
+        "Gulmarg Gondola Phase 2 ticket, which can be added on request",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Every traveller must carry a valid government photo ID, which is checked at hotels and security points.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions.",
+        "Adventure activities carry risk and depend on weather, snow and water levels; age, health and fitness limits set by the operators apply.",
+        "Gulmarg usually has snow from about December to March, but the amount and timing vary and snow cannot be guaranteed.",
+        "The Gulmarg Gondola depends on wind and weather, and the upper phase can close at short notice; if so, we will suggest an alternative where possible.",
+        "Gulmarg's upper gondola station is close to 4,000 metres. Some travellers feel breathless or get headaches, so tell us about any heart, lung or blood-pressure conditions in advance.",
+        "Heavy snow, rain or landslides can close mountain roads and delay flights, mainly from December to February and in heavy monsoon rain. Keep spare time before any onward connection.",
+        "At Pahalgam, Gulmarg and Sonamarg some points are reached only by local union cab or pony; we confirm at booking what is included."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence)",
+        "Return flight or train tickets",
+        "Thermals, waterproof jacket, gloves, cap and snow-grip shoes (winter)",
+        "Comfortable trekking shoes and a change of clothes (summer)",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including anything for altitude or motion sickness",
+        "Some cash for ponies, local cabs, tips and small purchases",
+        "Power bank and phone charger (Indian plugs are used)"
+      ],
+      "pickup": "Srinagar Airport (SXR)",
+      "drop_point": "Srinagar Airport (SXR)",
+      "photo": "gulmarg-snow-slopes",
+      "gallery": [
+        "gulmarg-gondola",
+        "pahalgam-lidder-river",
+        "betaab-valley"
+      ],
+      "price": null,
+      "original_price": null
+    }
+  ]
+}

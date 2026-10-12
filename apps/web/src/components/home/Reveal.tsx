@@ -12,9 +12,12 @@ export function Reveal({ children, className = "", delay = 0 }: { children: Reac
 
   useEffect(() => {
     const el = ref.current;
-    if (!el || typeof IntersectionObserver === "undefined") return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    if (el.getBoundingClientRect().top < window.innerHeight * 0.9) return;
+    // Anything that is already on screen, scrolled past, or cannot be observed simply stays visible.
+    const rect = el?.getBoundingClientRect();
+    if (!el || !rect || typeof IntersectionObserver === "undefined" || window.matchMedia("(prefers-reduced-motion: reduce)").matches || rect.top < window.innerHeight * 0.9) {
+      setState("visible");
+      return;
+    }
     setState("hidden");
     const io = new IntersectionObserver(
       ([entry]) => {

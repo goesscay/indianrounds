@@ -1,0 +1,950 @@
+{
+  "destination": "meghalaya",
+  "destination_record": {
+    "name": "Meghalaya",
+    "region": "india",
+    "tagline": "The Abode of Clouds, with living root bridges, towering waterfalls and the crystal-clear Umngot river.",
+    "best_time": "Oct-Mar",
+    "places": "Shillong, Cherrapunji (Sohra), Nongriat, Mawlynnong, Dawki, Umngot River, Laitlum Canyons, Umiam Lake, Kaziranga (optional add-on)",
+    "sort": 9,
+    "seasons": {
+      "on": {
+        "months": "Oct-Mar",
+        "places": "Shillong, Cherrapunji (Sohra), Nongriat, Mawlynnong, Dawki and the Umngot river, Laitlum Canyons, with Kaziranga from November",
+        "activities": "The clearest weather of the year: canyon and waterfall views, the root bridge trek on drier paths, boating on the clear Umngot and, from November, Kaziranga safaris. Nights in Shillong turn cold from November to February, so carry warm layers. Rain can linger into early October."
+      },
+      "mid": {
+        "months": "Apr-May",
+        "places": "Shillong, Cherrapunji, Mawlynnong and Dawki; Kaziranga safaris usually run until about April",
+        "activities": "Warmer and greener, with pre-monsoon showers and afternoon thunderstorms that grow more frequent through May. Sightseeing and village walks work best in the mornings, waterfalls begin to fill, and prices are lower than in winter. Carry rain gear."
+      },
+      "off": {
+        "months": "Jun-Sep",
+        "places": "Shillong and the Cherrapunji viewpoints in clear spells; Kaziranga is usually closed",
+        "activities": "The monsoon, with extremely heavy rain at Cherrapunji and nearby Mawsynram, among the wettest places on Earth. Waterfalls are at their most spectacular, but landslides, road delays, slippery root bridge trails and muddy Umngot water are common, and some boating and treks may be suspended. Keep the itinerary flexible and allow buffer days."
+      }
+    },
+    "profile": {
+      "overview": "Meghalaya, the Abode of Clouds, is a compact hill state in India's north-east where misty plateaus, deep gorges, caves and waterfalls sit close together. Within a few days you can stand at the edge of Laitlum Canyons in the morning, walk to a living root bridge grown by Khasi villagers from the roots of rubber fig trees, and watch boats drift over the glass-clear Umngot river at Dawki. Shillong, the capital, is a cool hill town with lakes, cafes and a lively music scene.\n\nThe state is easy to reach for Indian travellers: fly to Guwahati, then drive about three hours to Shillong. There is no visa to arrange and the roads between the main sights are good, though the hills make for winding drives. The best months are October to March; the monsoon from June to September is extremely wet. Tell us your dates, group size and comfort level, and we will build the route around you, with Kaziranga as an optional add-on.",
+      "facts": {
+        "capital": "Shillong",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Khasi, Garo and English (official); Hindi is widely understood in towns",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "Cool and pleasant at about 1,500 m, roughly 4 to 25 degrees C through the year, with very heavy monsoon rain from June to September",
+        "flight_time": "Fly to Guwahati: about 3 hr from Chennai and 2 hr 30 min from Delhi, then about 3 hr by road to Shillong. Guwahati is also well served by train."
+      },
+      "reasons": [
+        {
+          "title": "Living root bridges and waterfalls",
+          "text": "Khasi villagers have trained tree roots into bridges that are centuries old, and the Cherrapunji plateau drops away in some of India's tallest waterfalls."
+        },
+        {
+          "title": "A river as clear as glass",
+          "text": "The Umngot at Dawki is so transparent in the dry months that boats seem to float on air, with the Bangladesh border a short way downstream."
+        },
+        {
+          "title": "Cool weather and no visa",
+          "text": "Shillong and the plateau stay mild even when plains cities are hot, and Indian travellers need only a valid photo ID."
+        },
+        {
+          "title": "Easy to combine",
+          "text": "Shillong, Cherrapunji and Dawki fit comfortably into five to seven nights by road from Guwahati, with Kaziranga as an extension."
+        },
+        {
+          "title": "Village life and homestays",
+          "text": "Stay in or near Khasi villages such as Mawlynnong, where gardens, bamboo structures and a strong community culture are part of the visit."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "Shillong city",
+          "text": "Ward's Lake, the Police Bazaar and the Iewduh market, with colonial-era churches and cafes that earned it the name Scotland of the East."
+        },
+        {
+          "title": "Elephant Falls and Shillong Peak",
+          "text": "A three-tiered waterfall in a forested gorge, and a viewpoint at one of the highest points in the Shillong area."
+        },
+        {
+          "title": "Laitlum Canyons",
+          "text": "A ridge near Shillong that looks down over layered green canyons, best in clear morning light."
+        },
+        {
+          "title": "Nohkalikai Falls",
+          "text": "One of India's tallest plunge waterfalls, seen from a viewpoint above Cherrapunji and at its fullest during and after the rains."
+        },
+        {
+          "title": "Mawsmai Cave and Seven Sisters Falls",
+          "text": "A lit limestone cave you can walk through, and a seven-stream waterfall that spreads across a cliff face near Sohra."
+        },
+        {
+          "title": "Double-decker living root bridge, Nongriat",
+          "text": "Two bridges grown one above the other, reached by a long stepped trek down from Tyrna village."
+        },
+        {
+          "title": "Dawki and the Umngot river",
+          "text": "A border town on a river so clear that boats cast shadows on the riverbed, with boat rides and a suspension bridge."
+        },
+        {
+          "title": "Mawlynnong",
+          "text": "A tidy Khasi village with bamboo dustbins, flower gardens and a short walk to a living root bridge nearby."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Trek to the living root bridges",
+          "text": "Walk the stone steps to Nongriat and cross the double-decker bridge; allow most of a day and wear shoes with grip."
+        },
+        {
+          "title": "Boat ride on the Umngot",
+          "text": "A calm ride on one of India's clearest rivers, best between November and March when the water is transparent."
+        },
+        {
+          "title": "Cave and waterfall day around Sohra",
+          "text": "Mawsmai Cave, Nohkalikai Falls and Seven Sisters Falls make an easy, rewarding day from Cherrapunji."
+        },
+        {
+          "title": "Morning at Laitlum",
+          "text": "An early start for soft light over the canyons, with tea and a walk along the ridge."
+        },
+        {
+          "title": "Homestay evening in a Khasi village",
+          "text": "Simple stays in places such as Mawlynnong give you time with local families and village walks."
+        },
+        {
+          "title": "Kaziranga jeep safari (optional add-on)",
+          "text": "A two-night extension to Assam for the one-horned rhinoceros, elephants and birds, usually open from about November to April."
+        }
+      ],
+      "food": [
+        {
+          "title": "Jadoh and Dohneiiong",
+          "text": "Khasi rice-and-pork dishes, the best-known local meals. Both are non-vegetarian and rich, and widely served."
+        },
+        {
+          "title": "Tungrymbai and local vegetable dishes",
+          "text": "Fermented soybean, strongly flavoured and eaten with rice; ask for a mild vegetable plate if you prefer."
+        },
+        {
+          "title": "Pukhlein and rice cakes",
+          "text": "Sweet rice-flour snacks sold at markets and roadside stalls, good with strong tea."
+        },
+        {
+          "title": "Shillong cafes and bakeries",
+          "text": "The city has a lively cafe scene, good coffee and bakeries, along with North Indian and Chinese restaurants."
+        },
+        {
+          "title": "Vegetarian and Jain meals",
+          "text": "Easy in Shillong, simpler in Cherrapunji and the villages. Tell us in advance so we can arrange meals in the remote stretches."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Plan around the monsoon",
+          "text": "June to September brings extremely heavy rain, landslides and slow roads. October to March is the comfortable season."
+        },
+        {
+          "title": "Wear shoes with grip",
+          "text": "Root bridge trails and viewpoints are stepped and slippery when wet. Trekking sandals or sports shoes work best."
+        },
+        {
+          "title": "Carry cash",
+          "text": "Mobile networks, ATMs and UPI can be unreliable in Cherrapunji, Dawki and the villages, so carry enough cash."
+        },
+        {
+          "title": "Allow time for hill roads",
+          "text": "Distances look short but roads wind and can be slowed by traffic or rain, so we keep each day's programme modest."
+        },
+        {
+          "title": "Layer up in winter",
+          "text": "Shillong nights from November to February are cold. Carry a light jacket and a warmer layer."
+        },
+        {
+          "title": "Respect village customs",
+          "text": "Ask before photographing people, keep villages clean and follow your driver-guide's advice, especially near the border at Dawki."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa for Meghalaya. Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence, as hotels and some sites ask for it. We arrange any permits that apply and confirm the current rules at booking.",
+        "health": "No compulsory vaccinations. Shillong is at about 1,500 m, so altitude is mild, but the trails to the root bridges are steep and tiring. Carry personal medicines, insect repellent and a rain jacket, and drink bottled or boiled water. Leeches are common on forest paths in the monsoon.",
+        "money": "ATMs are easy to find in Guwahati and Shillong but scarce around Cherrapunji, Dawki and the villages, and card or UPI payments may not work there. Carry enough cash for local meals, entry points and tips. Tipping your driver-guide is customary but optional."
+      },
+      "faqs": [
+        {
+          "q": "How many days do I need for Meghalaya?",
+          "a": "Five to six nights cover Shillong, Cherrapunji, Mawlynnong and Dawki comfortably by road from Guwahati. Add the Nongriat root bridge trek or a Kaziranga extension for seven nights or more."
+        },
+        {
+          "q": "When is the best time to visit?",
+          "a": "October to March is the best season, with clear views and a clear Umngot river. April and May are warmer with showers, and June to September is the heavy monsoon, when roads, trails and boating can be disrupted."
+        },
+        {
+          "q": "How do I reach Meghalaya from Chennai?",
+          "a": "Fly to Guwahati, about three hours, then travel by road to Shillong, about three hours. A few flights serve Shillong's Umroi airport, but Guwahati has the widest choice."
+        },
+        {
+          "q": "Is the root bridge trek difficult?",
+          "a": "The Nongriat trek has thousands of steps down and back up, so it needs reasonable fitness and good knees. If you prefer an easier option, the root bridge near Mawlynnong is a short walk."
+        },
+        {
+          "q": "Is Meghalaya suitable for vegetarians and Jain travellers?",
+          "a": "Yes, in Shillong and the larger towns. In Cherrapunji, Dawki and the villages the choice is simpler, so we arrange vegetarian and Jain meals ahead of time."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "umngot-river-dawki",
+      "query": "Umngot River Dawki Meghalaya",
+      "caption": "The clear Umngot river at Dawki"
+    },
+    {
+      "slot": "double-decker-root-bridge-nongriat",
+      "query": "Double Decker Living Root Bridge Nongriat Meghalaya",
+      "caption": "The double-decker living root bridge, Nongriat"
+    },
+    {
+      "slot": "mawlynnong-village",
+      "query": "Mawlynnong village Meghalaya",
+      "caption": "Mawlynnong village"
+    },
+    {
+      "slot": "nohkalikai-falls-cherrapunji",
+      "query": "Nohkalikai Falls Cherrapunji Meghalaya",
+      "caption": "Nohkalikai Falls, Cherrapunji"
+    },
+    {
+      "slot": "seven-sisters-falls-sohra",
+      "query": "Nohsngithiang Seven Sisters Falls Cherrapunji Meghalaya",
+      "caption": "Seven Sisters Falls, Sohra"
+    },
+    {
+      "slot": "mawsmai-cave-sohra",
+      "query": "Mawsmai Cave Cherrapunji Meghalaya",
+      "caption": "Mawsmai Cave, Sohra"
+    },
+    {
+      "slot": "laitlum-canyons-shillong",
+      "query": "Laitlum Canyons Shillong Meghalaya",
+      "caption": "Laitlum Canyons, near Shillong"
+    },
+    {
+      "slot": "elephant-falls-shillong",
+      "query": "Elephant Falls Shillong Meghalaya",
+      "caption": "Elephant Falls, Shillong"
+    },
+    {
+      "slot": "wards-lake-shillong",
+      "query": "Ward's Lake Shillong Meghalaya",
+      "caption": "Ward's Lake, Shillong"
+    },
+    {
+      "slot": "umiam-lake-shillong",
+      "query": "Umiam Lake Barapani Shillong Meghalaya",
+      "caption": "Umiam Lake, on the road to Shillong"
+    },
+    {
+      "slot": "kaziranga-rhino",
+      "query": "one-horned rhinoceros Kaziranga National Park Assam",
+      "caption": "A one-horned rhinoceros in Kaziranga"
+    }
+  ],
+  "hero": "umngot-river-dawki",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "meghalaya-classic-packages",
+      "name": "Classic Packages",
+      "description": "The best-known Meghalaya circuit, taking in Shillong, Cherrapunji, Mawlynnong and Dawki, with transfers, stays and sightseeing arranged for you.",
+      "photo": "umngot-river-dawki",
+      "packages": [
+        "meghalaya-classic-circuit",
+        "meghalaya-shillong-cherrapunji-dawki-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "meghalaya-root-bridges-and-waterfalls",
+      "name": "Root Bridges and Waterfalls",
+      "description": "Living root bridges, Nohkalikai Falls and the Cherrapunji plateau, best from October to March when views are clearest.",
+      "photo": "double-decker-root-bridge-nongriat",
+      "packages": [
+        "meghalaya-shillong-cherrapunji-dawki-group-trip",
+        "meghalaya-classic-circuit",
+        "meghalaya-adventure-kaziranga"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "meghalaya-family-holidays",
+      "name": "Family Holidays",
+      "description": "Easy-paced hill holidays with waterfalls, a cave and lakes and no long treks, so children and grandparents can enjoy them together.",
+      "photo": "mawsmai-cave-sohra",
+      "packages": [
+        "meghalaya-family-holiday",
+        "meghalaya-classic-circuit"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "meghalaya-adventure-and-wildlife",
+      "name": "Adventure and Wildlife",
+      "description": "The Nongriat trek, the Umngot river and a Kaziranga jeep safari for travellers who want to be active. Kaziranga is usually open from November to April.",
+      "photo": "kaziranga-rhino",
+      "packages": [
+        "meghalaya-adventure-kaziranga"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "meghalaya-couples-and-short-breaks",
+      "name": "Couples and Short Breaks",
+      "description": "A private honeymoon in the hills and a long-weekend escape to Shillong, Cherrapunji and Dawki.",
+      "photo": "laitlum-canyons-shillong",
+      "packages": [
+        "meghalaya-shillong-cherrapunji-honeymoon",
+        "meghalaya-shillong-sohra-weekend-escape"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "meghalaya-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, a ready-made itinerary and vegetarian and Jain meal options on request.",
+      "photo": "double-decker-root-bridge-nongriat",
+      "packages": [
+        "meghalaya-shillong-cherrapunji-dawki-group-trip"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "meghalaya-weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short Meghalaya break built around a long weekend, with Friday departures, early arrivals and a trip captain on every departure.",
+      "photo": "nohkalikai-falls-cherrapunji",
+      "packages": [
+        "meghalaya-shillong-sohra-weekend-escape"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "meghalaya-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Misty hills, waterfalls and quiet evenings for couples, with a private car, a couples spa session and a candlelight dinner.",
+      "photo": "laitlum-canyons-shillong",
+      "packages": [
+        "meghalaya-shillong-cherrapunji-honeymoon"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "meghalaya-shillong-cherrapunji-dawki-group-trip",
+      "title": "Meghalaya Root Bridges, Waterfalls and Dawki Group Trip",
+      "nights": 6,
+      "summary": "Seven days through Shillong, Cherrapunji, Nongriat, Mawlynnong and Dawki, with the double-decker root bridge trek, Nohkalikai Falls and a boat ride on the Umngot, travelling in a small group.",
+      "overview": "This group trip covers the best of Meghalaya over six nights, three in Shillong, two in Cherrapunji and one near Dawki. You see Shillong's lakes and waterfalls, stand above Laitlum Canyons, visit Mawsmai Cave, Nohkalikai Falls and Seven Sisters Falls, and trek down to the double-decker living root bridge at Nongriat.\n\nThe journey then moves towards the Bangladesh border, with a walk in Mawlynnong village and a boat ride on the clear Umngot river at Dawki. A trip captain travels with the group, and vegetarian and Jain meal options are available on request.\n\nThe Nongriat trek is steep and takes most of a day, so this trip suits travellers with reasonable fitness. The drives are on winding hill roads, and we keep each day's programme modest.",
+      "highlights": [
+        "Shillong's Elephant Falls, Shillong Peak and Ward's Lake",
+        "Views over Laitlum Canyons",
+        "Mawsmai Cave, Nohkalikai Falls and Seven Sisters Falls near Cherrapunji",
+        "Trek to the double-decker living root bridge at Nongriat",
+        "Mawlynnong village and its nearby root bridge",
+        "Boat ride on the clear Umngot river at Dawki",
+        "Trip captain with the group and vegetarian and Jain meals on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Guwahati | Drive to Shillong",
+          "description": "Arrive at Guwahati and meet your trip captain.\nDrive to Shillong, about 100 km and around three hours, with a stop at Umiam Lake.\nCheck in at your hotel and relax after the journey.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 2,
+          "title": "Shillong Sightseeing | Elephant Falls | Shillong Peak",
+          "description": "After breakfast, visit Elephant Falls, a three-tiered waterfall in a forested gorge.\nContinue to Shillong Peak for views over the hills and the city.\nSpend the afternoon at Ward's Lake and in the Police Bazaar area.\nEnjoy a free evening for cafes and shopping.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 3,
+          "title": "Laitlum Canyons | Drive to Cherrapunji",
+          "description": "After an early breakfast, visit Laitlum Canyons for views over layered green gorges.\nDrive to Cherrapunji (Sohra), around two hours from Shillong.\nVisit the Nohkalikai Falls viewpoint, one of India's tallest plunge waterfalls.\nCheck in and spend the evening at leisure.\nOvernight stay in Cherrapunji."
+        },
+        {
+          "day": 4,
+          "title": "Nongriat Root Bridge Trek | Seven Sisters Falls",
+          "description": "Start early after breakfast and drive to Tyrna village, the trailhead for Nongriat.\nWalk down the stone steps to the double-decker living root bridge, with time to rest and look around.\nClimb back up at your own pace, accompanied by your trip captain and a local guide.\nIf time and weather allow, see Seven Sisters Falls and Mawsmai Cave.\nOvernight stay in Cherrapunji."
+        },
+        {
+          "day": 5,
+          "title": "Mawlynnong Village | Dawki and the Umngot River",
+          "description": "After breakfast, drive towards Mawlynnong, around three hours from Cherrapunji.\nWalk through the village and to the nearby living root bridge.\nContinue to Dawki for a boat ride on the Umngot river, subject to water conditions.\nWalk to the suspension bridge and enjoy the river view near the border.\nOvernight stay in Dawki or nearby."
+        },
+        {
+          "day": 6,
+          "title": "Return to Shillong | Evening at Leisure",
+          "description": "After breakfast, enjoy a relaxed morning by the river.\nDrive back to Shillong, around three hours, with a lunch stop on the way.\nCheck in and spend the evening at the Police Bazaar or at leisure.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Guwahati",
+          "description": "After breakfast, check out of the hotel.\nDrive to Guwahati, about three hours, for your onward flight or train.\nPlan departures from the evening onwards to allow for road delays."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Shillong on twin sharing",
+        "2 nights accommodation in Cherrapunji on twin sharing",
+        "1 night accommodation in the Dawki area on twin sharing",
+        "Daily breakfast",
+        "AC vehicle for all transfers and sightseeing as per itinerary",
+        "Local guide support for the Nongriat trek",
+        "Boat ride on the Umngot river at Dawki",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Guwahati",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as kayaking, snorkelling or camping",
+        "Anything not listed under inclusions",
+        "GST as applicable",
+        "Entry fees and activities not listed in the itinerary"
+      ],
+      "notes": [
+        "Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence. Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "Hill roads are winding. Guwahati to Shillong is about 100 km and takes around 3 hours, often longer in traffic or rain.",
+        "Meghalaya's monsoon runs from June to September with extremely heavy rain, landslides and road delays; treks, boating and viewpoints may be restricted or closed for safety.",
+        "Accommodation around Cherrapunji, Mawlynnong and Dawki is simpler than in Shillong, and hot water, power and mobile networks can be limited. Carry cash, as ATMs, cards and UPI may not work there.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group.",
+        "The Nongriat trek has thousands of steps and takes most of a day; it is not suitable for guests with knee, heart or back problems, or for small children.",
+        "Departures between June and September are subject to monsoon conditions and may be rescheduled for safety. Boat rides on the Umngot depend on water levels."
+      ],
+      "must_carry": [
+        "Valid government photo ID (Aadhaar, passport, voter ID or driving licence)",
+        "Train or flight tickets to and from Guwahati",
+        "Rain jacket or poncho and a small umbrella",
+        "Shoes with good grip for wet steps and viewpoints",
+        "Light woollens or a jacket for Shillong evenings",
+        "Cash in small notes",
+        "Personal medicines, insect repellent and sunscreen",
+        "Power bank and a torch",
+        "Trekking poles, if you use them",
+        "Quick-dry clothing for the trek"
+      ],
+      "pickup": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "drop_point": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "photo": "double-decker-root-bridge-nongriat",
+      "gallery": [
+        "nohkalikai-falls-cherrapunji",
+        "umngot-river-dawki",
+        "laitlum-canyons-shillong",
+        "mawlynnong-village"
+      ],
+      "price": 29900,
+      "original_price": 32300,
+      "departures": {
+        "weekday": 6,
+        "count": 5,
+        "every_weeks": 3,
+        "capacity": 20
+      }
+    },
+    {
+      "slug": "meghalaya-shillong-sohra-weekend-escape",
+      "title": "Meghalaya Weekend Escape: Shillong, Cherrapunji and Dawki",
+      "nights": 3,
+      "summary": "A long weekend in the hills with Shillong's lakes, Cherrapunji's caves and waterfalls, and a day at Mawlynnong and Dawki, travelling in a small group.",
+      "overview": "This long-weekend trip fits the main sights of Meghalaya into four days, with all three nights in Shillong. You land at Guwahati, drive up to the hills, and use two full days for day trips to Cherrapunji and to Mawlynnong and Dawki.\n\nThe days are long on the road, so the programme sticks to the headline sights. A trip captain travels with the group, and vegetarian and Jain meal options are available on request.",
+      "highlights": [
+        "Umiam Lake and Shillong's Ward's Lake",
+        "Nohkalikai Falls, Mawsmai Cave and Seven Sisters Falls",
+        "Mawlynnong village and its living root bridge",
+        "Boat ride on the clear Umngot river at Dawki",
+        "Three nights in one hotel in Shillong, with no packing and unpacking",
+        "Trip captain with the group and vegetarian and Jain meals on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Guwahati | Drive to Shillong",
+          "description": "Arrive at Guwahati in the morning and meet your trip captain.\nDrive to Shillong, around three hours, with a stop at Umiam Lake.\nCheck in at your hotel and visit Ward's Lake in the late afternoon.\nStroll through the Police Bazaar in the evening.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 2,
+          "title": "Cherrapunji Day Trip | Waterfalls and Cave",
+          "description": "After breakfast, drive to Cherrapunji (Sohra), around two hours from Shillong.\nVisit the Nohkalikai Falls viewpoint and Mawsmai Cave.\nSee Seven Sisters Falls, subject to weather and visibility.\nReturn to Shillong in the evening.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 3,
+          "title": "Mawlynnong | Dawki and the Umngot River",
+          "description": "After an early breakfast, drive to Mawlynnong, around three hours from Shillong.\nWalk through the village and to the nearby living root bridge.\nContinue to Dawki for a boat ride on the Umngot river, subject to water conditions.\nReturn to Shillong, arriving in the evening.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 4,
+          "title": "Elephant Falls | Departure from Guwahati",
+          "description": "After breakfast, visit Elephant Falls, a three-tiered waterfall near Shillong.\nCheck out and drive to Guwahati, around three hours.\nArrive at Guwahati airport or railway station for your late departure."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Shillong on twin sharing",
+        "Daily breakfast",
+        "AC vehicle for all transfers and sightseeing as per itinerary",
+        "Boat ride on the Umngot river at Dawki",
+        "Entry to the sights listed in the itinerary",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Guwahati",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as kayaking, snorkelling or camping",
+        "Anything not listed under inclusions",
+        "GST as applicable",
+        "Entry fees and activities not listed in the itinerary"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Transport to and from the destination is not included, and we do not book flights or trains unless asked.",
+        "Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence. Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "Hill roads are winding. Guwahati to Shillong is about 100 km and takes around 3 hours, often longer in traffic or rain.",
+        "Meghalaya's monsoon runs from June to September with extremely heavy rain, landslides and road delays; treks, boating and viewpoints may be restricted or closed for safety.",
+        "Accommodation around Cherrapunji, Mawlynnong and Dawki is simpler than in Shillong, and hot water, power and mobile networks can be limited. Carry cash, as ATMs, cards and UPI may not work there.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group."
+      ],
+      "must_carry": [
+        "Valid government photo ID (Aadhaar, passport, voter ID or driving licence)",
+        "Train or flight tickets to and from Guwahati",
+        "Rain jacket or poncho and a small umbrella",
+        "Shoes with good grip for wet steps and viewpoints",
+        "Light woollens or a jacket for Shillong evenings",
+        "Cash in small notes",
+        "Personal medicines, insect repellent and sunscreen",
+        "Power bank and a torch"
+      ],
+      "pickup": "Guwahati Airport (GAU)",
+      "drop_point": "Guwahati Airport (GAU)",
+      "photo": "nohkalikai-falls-cherrapunji",
+      "gallery": [
+        "umngot-river-dawki",
+        "mawlynnong-village",
+        "elephant-falls-shillong",
+        "wards-lake-shillong"
+      ],
+      "price": 16900,
+      "original_price": 18300,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "meghalaya-shillong-cherrapunji-honeymoon",
+      "title": "Meghalaya Honeymoon: Misty Hills, Waterfalls and a Candlelight Dinner",
+      "nights": 5,
+      "summary": "Five unhurried nights for two in the Abode of Clouds, with Laitlum Canyons, Cherrapunji's waterfalls, a private boat ride on the Umngot at Dawki, a couples spa session and a candlelight dinner.",
+      "overview": "This private honeymoon takes you through Meghalaya's hill landscapes at an easy pace: four nights in Shillong and one in Cherrapunji, travelling by private car. Mornings start late, and each day has just one or two outings.\n\nYou see Laitlum Canyons and Elephant Falls, the cliffs and waterfalls around Cherrapunji, the village of Mawlynnong and the clear Umngot river at Dawki. The root bridge walk near Mawlynnong is short and easy, while the longer Nongriat trek can be added on request.\n\nExpect a flower welcome and bed decoration on arrival, a couples spa session and a candlelight dinner, all subject to availability. Tell us your wedding date at booking and we will pass it to the hotels.",
+      "highlights": [
+        "Private car throughout, with relaxed mornings",
+        "Flower welcome and bed decoration on arrival",
+        "Laitlum Canyons and Elephant Falls near Shillong",
+        "Nohkalikai Falls, Mawsmai Cave and Seven Sisters Falls near Cherrapunji",
+        "Private boat ride on the clear Umngot river at Dawki",
+        "Couples spa session, subject to availability",
+        "Candlelight dinner on the last evening"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Guwahati | Drive to Shillong | Welcome",
+          "description": "Arrive at Guwahati, where your private car is waiting.\nDrive to Shillong, around three hours, with a stop at Umiam Lake.\nA flower welcome and bed decoration are arranged at your hotel, subject to availability.\nSpend the evening at leisure.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 2,
+          "title": "Elephant Falls | Laitlum Canyons",
+          "description": "Enjoy a relaxed breakfast with a late start.\nVisit Elephant Falls, then drive to Laitlum Canyons for views over the gorges.\nStroll along the ridge and return to Shillong in the afternoon.\nSpend the evening at Ward's Lake or in a cafe.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 3,
+          "title": "Drive to Cherrapunji | Waterfalls and Cave",
+          "description": "After breakfast, drive to Cherrapunji (Sohra), around two hours from Shillong.\nVisit the Nohkalikai Falls viewpoint, Seven Sisters Falls and Mawsmai Cave.\nReturn to your hotel to rest and watch the mist roll over the plateau.\nOvernight stay in Cherrapunji."
+        },
+        {
+          "day": 4,
+          "title": "Mawlynnong | Dawki Private Boat Ride | Return to Shillong",
+          "description": "After an early breakfast, drive towards Mawlynnong, around three hours from Cherrapunji.\nWalk through the village and to the nearby living root bridge.\nContinue to Dawki for a private boat ride on the Umngot river, subject to water conditions.\nDrive back to Shillong, arriving in the evening. This is a long day, so we start early.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 5,
+          "title": "Free Day | Couples Spa | Candlelight Dinner",
+          "description": "Sleep in and enjoy a leisurely breakfast.\nSpend the day at Umiam Lake or in Shillong's cafes, or simply relax.\nEnjoy a couples spa session in the afternoon, subject to availability.\nIn the evening, enjoy a candlelight dinner, subject to availability.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Guwahati",
+          "description": "Enjoy a relaxed breakfast.\nCheck out and travel by private car to Guwahati, about three hours.\nPlan departures from the afternoon onwards to allow for road delays."
+        }
+      ],
+      "inclusions": [
+        "4 nights hotel accommodation in Shillong on twin sharing",
+        "1 night hotel accommodation in Cherrapunji on twin sharing",
+        "Daily breakfast",
+        "Flower welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner, subject to availability",
+        "One couples spa session, subject to availability",
+        "Private AC car for all transfers and sightseeing as per itinerary",
+        "Private boat ride on the Umngot river at Dawki",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Guwahati",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as kayaking, snorkelling or camping",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence. Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "Hill roads are winding. Guwahati to Shillong is about 100 km and takes around 3 hours, often longer in traffic or rain.",
+        "Meghalaya's monsoon runs from June to September with extremely heavy rain, landslides and road delays; treks, boating and viewpoints may be restricted or closed for safety.",
+        "Accommodation around Cherrapunji, Mawlynnong and Dawki is simpler than in Shillong, and hot water, power and mobile networks can be limited. Carry cash, as ATMs, cards and UPI may not work there.",
+        "Day 4 is a long driving day through hill country, so we start early to keep it comfortable."
+      ],
+      "must_carry": [
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Valid government photo ID (Aadhaar, passport, voter ID or driving licence)",
+        "Train or flight tickets to and from Guwahati",
+        "Rain jacket or poncho and a small umbrella",
+        "Shoes with good grip for wet steps and viewpoints",
+        "Light woollens or a jacket for Shillong evenings",
+        "Cash in small notes",
+        "Personal medicines, insect repellent and sunscreen",
+        "Power bank and a torch"
+      ],
+      "pickup": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "drop_point": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "photo": "laitlum-canyons-shillong",
+      "gallery": [
+        "umngot-river-dawki",
+        "nohkalikai-falls-cherrapunji",
+        "umiam-lake-shillong"
+      ],
+      "price": 36500,
+      "original_price": 39400
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "meghalaya-classic-circuit",
+      "title": "Meghalaya Classic Circuit: Shillong, Cherrapunji and Dawki",
+      "nights": 5,
+      "summary": "A private five-night circuit of Meghalaya's best-known sights, from Shillong's waterfalls and lakes to Cherrapunji, Mawlynnong and the clear Umngot at Dawki.",
+      "overview": "The Classic Circuit is the most popular way to see Meghalaya, with two nights in Shillong, one in Cherrapunji, one near Dawki and a final night in Shillong. You travel by private car, with time for Elephant Falls, Laitlum Canyons, Mawsmai Cave, Nohkalikai Falls and Seven Sisters Falls.\n\nYou also walk through Mawlynnong village and take a boat ride on the Umngot river at Dawki. The Nongriat root bridge trek and a Kaziranga extension can be added on request.",
+      "highlights": [
+        "Elephant Falls, Ward's Lake and Shillong Peak",
+        "Laitlum Canyons",
+        "Nohkalikai Falls, Mawsmai Cave and Seven Sisters Falls",
+        "Mawlynnong village and its living root bridge",
+        "Boat ride on the Umngot river at Dawki",
+        "Private car throughout, with the Nongriat trek or a Kaziranga extension on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Guwahati | Drive to Shillong",
+          "description": "Arrive at Guwahati, where your driver is waiting.\nDrive to Shillong, around three hours, with a stop at Umiam Lake.\nCheck in and relax at your hotel.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 2,
+          "title": "Shillong Sightseeing | Laitlum Canyons",
+          "description": "After breakfast, visit Elephant Falls and Shillong Peak.\nContinue to Laitlum Canyons for views over the gorges.\nReturn to Shillong for Ward's Lake and the Police Bazaar.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 3,
+          "title": "Cherrapunji | Waterfalls and Cave",
+          "description": "After breakfast, drive to Cherrapunji (Sohra), around two hours from Shillong.\nVisit Nohkalikai Falls, Seven Sisters Falls and Mawsmai Cave.\nCheck in and spend the evening at leisure.\nOvernight stay in Cherrapunji."
+        },
+        {
+          "day": 4,
+          "title": "Mawlynnong | Dawki and the Umngot River",
+          "description": "After breakfast, drive towards Mawlynnong, around three hours from Cherrapunji.\nWalk through the village and to the nearby living root bridge.\nContinue to Dawki for a boat ride on the Umngot river, subject to water conditions.\nOvernight stay in Dawki or nearby."
+        },
+        {
+          "day": 5,
+          "title": "Return to Shillong",
+          "description": "After breakfast, enjoy a relaxed morning by the river.\nDrive back to Shillong, around three hours.\nSpend the evening at leisure.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Guwahati",
+          "description": "After breakfast, check out and drive to Guwahati, around three hours.\nPlan departures from the evening onwards to allow for road delays."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Shillong on twin sharing",
+        "1 night accommodation in Cherrapunji on twin sharing",
+        "1 night accommodation in the Dawki area on twin sharing",
+        "Daily breakfast",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Boat ride on the Umngot river at Dawki",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Guwahati",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as kayaking, snorkelling or camping",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence. Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "Hill roads are winding. Guwahati to Shillong is about 100 km and takes around 3 hours, often longer in traffic or rain.",
+        "Meghalaya's monsoon runs from June to September with extremely heavy rain, landslides and road delays; treks, boating and viewpoints may be restricted or closed for safety.",
+        "Accommodation around Cherrapunji, Mawlynnong and Dawki is simpler than in Shillong, and hot water, power and mobile networks can be limited. Carry cash, as ATMs, cards and UPI may not work there.",
+        "The Nongriat trek has thousands of steps and takes most of a day; it can be added on request for fit travellers.",
+        "Kaziranga can be added as a 2-night extension; the park is usually open from about November to April."
+      ],
+      "must_carry": [
+        "Valid government photo ID (Aadhaar, passport, voter ID or driving licence)",
+        "Train or flight tickets to and from Guwahati",
+        "Rain jacket or poncho and a small umbrella",
+        "Shoes with good grip for wet steps and viewpoints",
+        "Light woollens or a jacket for Shillong evenings",
+        "Cash in small notes",
+        "Personal medicines, insect repellent and sunscreen",
+        "Power bank and a torch"
+      ],
+      "pickup": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "drop_point": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "photo": "nohkalikai-falls-cherrapunji",
+      "gallery": [
+        "umngot-river-dawki",
+        "laitlum-canyons-shillong",
+        "mawlynnong-village",
+        "elephant-falls-shillong"
+      ],
+      "price": 26500,
+      "original_price": null
+    },
+    {
+      "slug": "meghalaya-family-holiday",
+      "title": "Meghalaya Family Holiday: Shillong and Cherrapunji at an Easy Pace",
+      "nights": 4,
+      "summary": "A relaxed four-night family holiday based in Shillong and Cherrapunji, with waterfalls, a cave and lakes, and no long treks.",
+      "overview": "The Family Holiday keeps the driving short and the days balanced, so children and grandparents can enjoy the hills together. You spend two nights in Shillong, one in Cherrapunji and a final night back in Shillong.\n\nThe programme sticks to easy sights: Elephant Falls, Ward's Lake, Mawsmai Cave and Nohkalikai Falls, with a stop at Umiam Lake on the way. Steep treks such as Nongriat are left out. Mawlynnong, Dawki and a Kaziranga extension can be added on request.",
+      "highlights": [
+        "Umiam Lake and Ward's Lake",
+        "Elephant Falls near Shillong",
+        "Mawsmai Cave and Nohkalikai Falls near Cherrapunji",
+        "Short drives and flexible days, with no long treks",
+        "Private car throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Guwahati | Drive to Shillong",
+          "description": "Arrive at Guwahati, where your driver is waiting.\nDrive to Shillong, around three hours, with a stop at Umiam Lake.\nCheck in and rest at your hotel.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 2,
+          "title": "Elephant Falls | Ward's Lake",
+          "description": "After a relaxed breakfast, visit Elephant Falls.\nSpend the afternoon at Ward's Lake and the Police Bazaar.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 3,
+          "title": "Cherrapunji | Mawsmai Cave and Nohkalikai Falls",
+          "description": "After breakfast, drive to Cherrapunji (Sohra), around two hours from Shillong.\nVisit Mawsmai Cave, the Nohkalikai Falls viewpoint and Seven Sisters Falls.\nCheck in and spend the evening at leisure.\nOvernight stay in Cherrapunji."
+        },
+        {
+          "day": 4,
+          "title": "Return to Shillong | Free Evening",
+          "description": "After breakfast, drive back to Shillong, around two hours.\nSpend the afternoon at leisure or shopping.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 5,
+          "title": "Departure from Guwahati",
+          "description": "After breakfast, check out and drive to Guwahati, around three hours.\nPlan departures from the afternoon onwards to allow for road delays."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Shillong on twin sharing",
+        "1 night accommodation in Cherrapunji on twin sharing",
+        "Daily breakfast",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Assistance from our travel experts",
+        "Entry tickets to the sights listed in the itinerary, where applicable"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Guwahati",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as kayaking, snorkelling or camping",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence. Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "Hill roads are winding. Guwahati to Shillong is about 100 km and takes around 3 hours, often longer in traffic or rain.",
+        "Meghalaya's monsoon runs from June to September with extremely heavy rain, landslides and road delays; treks, boating and viewpoints may be restricted or closed for safety.",
+        "Accommodation around Cherrapunji, Mawlynnong and Dawki is simpler than in Shillong, and hot water, power and mobile networks can be limited. Carry cash, as ATMs, cards and UPI may not work there.",
+        "Child and extra-bed policies vary by hotel; please share the ages of children at booking.",
+        "Mawlynnong and Dawki can be added as a long day trip, and Kaziranga as a 2-night extension; the park is usually open from about November to April."
+      ],
+      "must_carry": [
+        "Valid government photo ID (Aadhaar, passport, voter ID or driving licence)",
+        "Train or flight tickets to and from Guwahati",
+        "Rain jacket or poncho and a small umbrella",
+        "Shoes with good grip for wet steps and viewpoints",
+        "Light woollens or a jacket for Shillong evenings",
+        "Cash in small notes",
+        "Personal medicines, insect repellent and sunscreen",
+        "Power bank and a torch"
+      ],
+      "pickup": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "drop_point": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "photo": "mawsmai-cave-sohra",
+      "gallery": [
+        "elephant-falls-shillong",
+        "umiam-lake-shillong",
+        "wards-lake-shillong"
+      ],
+      "price": 22500,
+      "original_price": null
+    },
+    {
+      "slug": "meghalaya-adventure-kaziranga",
+      "title": "Meghalaya Adventure: Root Bridge Trek, Dawki and Kaziranga Safari",
+      "nights": 7,
+      "summary": "A seven-night active route with the Nongriat root bridge trek, the Umngot river at Dawki and a Kaziranga jeep safari in Assam, travelling by private car.",
+      "overview": "This trip is for travellers who want a more active route. After Shillong and Laitlum Canyons you base yourself in Cherrapunji for the long trek down to the double-decker living root bridge at Nongriat. You then move to the Dawki area for the Umngot river, where optional kayaking or snorkelling may be arranged in the dry season.\n\nThe last two nights are in Kaziranga, Assam, for jeep safaris to see the one-horned rhinoceros and other wildlife. Kaziranga is usually closed in the monsoon, so this trip is best from November to March; ask us for a Meghalaya-only version if you travel at another time. The price is on request because it depends on the season and the activities you choose.",
+      "highlights": [
+        "Laitlum Canyons and Shillong",
+        "Long trek to the double-decker living root bridge at Nongriat",
+        "Nohkalikai Falls near Cherrapunji",
+        "Mawlynnong village and the Umngot river at Dawki",
+        "Optional kayaking, snorkelling or camping near Dawki, in the dry season",
+        "Jeep safari at Kaziranga National Park, subject to park timings"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Guwahati | Drive to Shillong",
+          "description": "Arrive at Guwahati, where your driver is waiting.\nDrive to Shillong, around three hours, with a stop at Umiam Lake.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 2,
+          "title": "Laitlum Canyons | Drive to Cherrapunji",
+          "description": "After breakfast, visit Laitlum Canyons for views over the gorges.\nDrive to Cherrapunji (Sohra) and visit the Nohkalikai Falls viewpoint.\nOvernight stay in Cherrapunji."
+        },
+        {
+          "day": 3,
+          "title": "Nongriat Root Bridge Trek",
+          "description": "Start early and drive to Tyrna village, the trailhead.\nTrek down the steps to the double-decker living root bridge, with a local guide.\nClimb back at your own pace and rest in the afternoon.\nOvernight stay in Cherrapunji."
+        },
+        {
+          "day": 4,
+          "title": "Mawlynnong | Dawki and the Umngot River",
+          "description": "After breakfast, drive to Mawlynnong, around three hours from Cherrapunji.\nWalk through the village and to the nearby living root bridge.\nContinue to Dawki for a boat ride on the Umngot river.\nOptional kayaking or snorkelling may be arranged in the dry season, subject to availability.\nOvernight stay in Dawki or nearby."
+        },
+        {
+          "day": 5,
+          "title": "Drive to Shillong | Evening at Leisure",
+          "description": "After breakfast, drive to Shillong, around three hours.\nSpend the evening at Ward's Lake or the Police Bazaar.\nOvernight stay in Shillong."
+        },
+        {
+          "day": 6,
+          "title": "Drive to Kaziranga",
+          "description": "After breakfast, drive to Kaziranga in Assam, around six hours.\nCheck in and relax before the safari.\nOvernight stay in Kaziranga."
+        },
+        {
+          "day": 7,
+          "title": "Jeep Safari in Kaziranga",
+          "description": "Take a morning jeep safari, with timings set by the park.\nLook out for the one-horned rhinoceros, elephants and many bird species; sightings are not guaranteed.\nSpend the afternoon at leisure or on a second safari, subject to availability.\nOvernight stay in Kaziranga."
+        },
+        {
+          "day": 8,
+          "title": "Departure from Guwahati",
+          "description": "After breakfast, check out and drive to Guwahati, around five hours.\nPlan departures from the evening onwards to allow for road delays."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Shillong on twin sharing",
+        "2 nights accommodation in Cherrapunji on twin sharing",
+        "1 night accommodation in the Dawki area on twin sharing",
+        "2 nights accommodation in Kaziranga on twin sharing",
+        "Daily breakfast",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Local guide for the Nongriat trek",
+        "Boat ride on the Umngot river at Dawki",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Guwahati",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as kayaking, snorkelling or camping",
+        "Anything not listed under inclusions",
+        "GST as applicable",
+        "Kaziranga jeep safari tickets and park entry fees, payable as per park rules"
+      ],
+      "notes": [
+        "Carry a valid government photo ID such as an Aadhaar card, passport, voter ID or driving licence. Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "Hill roads are winding. Guwahati to Shillong is about 100 km and takes around 3 hours, often longer in traffic or rain.",
+        "Meghalaya's monsoon runs from June to September with extremely heavy rain, landslides and road delays; treks, boating and viewpoints may be restricted or closed for safety.",
+        "Accommodation around Cherrapunji, Mawlynnong and Dawki is simpler than in Shillong, and hot water, power and mobile networks can be limited. Carry cash, as ATMs, cards and UPI may not work there.",
+        "The Nongriat trek has thousands of steps and needs good fitness; it is not suitable for guests with knee, heart or back problems.",
+        "Kaziranga is usually open from about November to April and closed in the monsoon; wildlife sightings are not guaranteed.",
+        "Kayaking, snorkelling and camping near Dawki are optional, depend on water conditions and are paid locally."
+      ],
+      "must_carry": [
+        "Valid government photo ID (Aadhaar, passport, voter ID or driving licence)",
+        "Train or flight tickets to and from Guwahati",
+        "Rain jacket or poncho and a small umbrella",
+        "Shoes with good grip for wet steps and viewpoints",
+        "Light woollens or a jacket for Shillong evenings",
+        "Cash in small notes",
+        "Personal medicines, insect repellent and sunscreen",
+        "Power bank and a torch",
+        "Binoculars and a camera, for Kaziranga",
+        "Quick-dry clothing and a change of footwear for the trek"
+      ],
+      "pickup": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "drop_point": "Guwahati Airport (GAU) or Guwahati Railway Station",
+      "photo": "double-decker-root-bridge-nongriat",
+      "gallery": [
+        "kaziranga-rhino",
+        "umngot-river-dawki",
+        "laitlum-canyons-shillong",
+        "nohkalikai-falls-cherrapunji"
+      ],
+      "price": null,
+      "original_price": null
+    }
+  ]
+}

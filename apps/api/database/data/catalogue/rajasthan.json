@@ -1,0 +1,949 @@
+{
+  "destination": "rajasthan",
+  "destination_record": {
+    "name": "Rajasthan",
+    "region": "india",
+    "tagline": "Forts, palaces and desert dunes: royal Rajasthan from pink Jaipur and lakeside Udaipur to golden Jaisalmer, with tiger safaris at Ranthambore.",
+    "best_time": "Oct-Mar",
+    "places": "Jaipur, Jodhpur, Udaipur, Jaisalmer, Pushkar, Ranthambore, Bikaner",
+    "sort": 2,
+    "seasons": {
+      "on": {
+        "months": "Oct-Mar",
+        "places": "Jaipur, Jodhpur, Udaipur, Jaisalmer, Pushkar, Ranthambore, Bikaner",
+        "activities": "Pleasant weather for forts, palaces and bazaars, camel rides and sunsets on the Jaisalmer dunes, boat rides on Udaipur's lakes and tiger safaris at Ranthambore, which reopens in October. The Pushkar Camel Fair falls around Oct-Nov and the date changes each year. Desert nights turn cold in Dec-Jan, so carry warm layers."
+      },
+      "off": {
+        "months": "Apr-Jun",
+        "places": "Jaipur, Udaipur, Ranthambore, Jodhpur",
+        "activities": "Very hot, with daytime temperatures of 40 to 45°C, so sightseeing happens early in the morning and after sunset. Ranthambore can be good for tiger sightings, as animals come to the waterholes. Palace hotels, indoor museums and lower prices suit travellers who can handle the heat. We suggest skipping the Jaisalmer dunes in the daytime."
+      },
+      "mid": {
+        "months": "Jul-Sep",
+        "places": "Udaipur, Jaipur, Jodhpur, Pushkar",
+        "activities": "The monsoon turns the Aravalli hills around Udaipur green and fills its lakes, with fewer crowds and lower rates. Jaipur and Jodhpur see occasional showers and milder days. Ranthambore is closed for safaris through the rains, usually until October, and road journeys can slow after heavy rain."
+      }
+    },
+    "profile": {
+      "overview": "Rajasthan, the Land of Kings, is India's most colourful holiday state. Jaipur glows pink, Jodhpur spills down a hill in shades of blue, Udaipur sits on its lakes in white marble and Jaisalmer's golden fort rises straight out of the Thar Desert. Between them lie Pushkar's holy lake, Bikaner's red fort and Ranthambore, where tigers roam among ruined ramparts.\n\nIt is easy to travel for families, couples and senior parents, with comfortable road journeys, heritage hotels at every budget and excellent vegetarian and Jain food. Delhi is the usual gateway, and Jaipur, Udaipur and Jodhpur all have airports. Tell us your dates, group size and budget, and we will build the route around you.",
+      "facts": {
+        "capital": "Jaipur",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Hindi and Rajasthani (Marwari, Mewari), English in tourist areas",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "Oct-Mar pleasant, about 8 to 28°C with cold desert nights; Apr-Jun very hot, 40 to 45°C; light to moderate monsoon showers Jul-Sep",
+        "flight_time": "Chennai to Jaipur about 3 hr by air, some days via Delhi or Mumbai; Delhi to Jaipur about 1 hr by air or 4 to 5 hr by road or train"
+      },
+      "reasons": [
+        {
+          "title": "Forts and palaces",
+          "text": "Amber, Mehrangarh, Jaisalmer and Junagarh forts and the City Palaces of Jaipur and Udaipur are among India's most impressive historic sights."
+        },
+        {
+          "title": "The desert experience",
+          "text": "Camel rides, dune sunsets and folk music near Jaisalmer give you a taste of the Thar Desert in a single evening."
+        },
+        {
+          "title": "Easy for the whole family",
+          "text": "Comfortable road travel, heritage hotels and widely available vegetarian and Jain meals suit children and senior parents."
+        },
+        {
+          "title": "Tigers and wildlife",
+          "text": "Ranthambore National Park offers safaris through ruins and lakes, with a real chance of seeing a tiger."
+        },
+        {
+          "title": "Shopping and crafts",
+          "text": "Jaipur's bazaars are known for block prints, blue pottery, jewellery and leather mojari footwear, and Jodhpur for spices and textiles."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "Amber Fort, Jaipur",
+          "text": "A hilltop fort-palace of sandstone and marble above Maota Lake, reached by jeep or on foot."
+        },
+        {
+          "title": "City Palace and Jantar Mantar, Jaipur",
+          "text": "The royal residence and the 18th-century stone observatory, a UNESCO World Heritage Site, with the Hawa Mahal close by."
+        },
+        {
+          "title": "Mehrangarh Fort, Jodhpur",
+          "text": "A vast fort on a rocky ridge, with museum galleries, ramparts and views over the blue houses of the old city."
+        },
+        {
+          "title": "City Palace and Lake Pichola, Udaipur",
+          "text": "A palace complex of courtyards and balconies on the lakeshore, best finished with a boat ride at sunset."
+        },
+        {
+          "title": "Jaisalmer Fort",
+          "text": "A living fort of golden sandstone, with shops, havelis and homes inside its walls."
+        },
+        {
+          "title": "Pushkar Lake and Brahma Temple",
+          "text": "A sacred lake ringed by bathing ghats, with one of the very few temples in India dedicated to Brahma."
+        },
+        {
+          "title": "Ranthambore National Park",
+          "text": "A tiger reserve of forest, lakes and a 10th-century fort, with safaris in the morning and afternoon."
+        },
+        {
+          "title": "Junagarh Fort, Bikaner",
+          "text": "A richly decorated fort-palace in red sandstone that was never conquered, with fine courtyards and halls."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Tiger safari at Ranthambore",
+          "text": "A jeep or canter ride through the park at dawn or in the afternoon; sightings are never guaranteed, but the scenery is superb."
+        },
+        {
+          "title": "Camel ride and sunset on the dunes",
+          "text": "A short camel ride across the Sam Sand Dunes near Jaisalmer, followed by sunset and an evening of folk music."
+        },
+        {
+          "title": "Boat ride on Lake Pichola",
+          "text": "A calm evening on the water at Udaipur, with palaces and ghats glowing in the late light."
+        },
+        {
+          "title": "Jaipur bazaar walk",
+          "text": "Browse Johari Bazaar and Bapu Bazaar for jewellery, block-printed fabrics and mojari, and bargain politely."
+        },
+        {
+          "title": "Pushkar ghats at sunrise or sunset",
+          "text": "Watch pilgrims, priests and floating lamps by the lake, with a short walk through the bazaar."
+        },
+        {
+          "title": "Rajasthani folk evening",
+          "text": "Puppet shows, folk songs and dance performances are part of many hotel and desert-camp evenings."
+        }
+      ],
+      "food": [
+        {
+          "title": "Dal baati churma",
+          "text": "Baked wheat balls with lentils and a sweet crumbled wheat dessert, the classic Rajasthani meal."
+        },
+        {
+          "title": "Gatte ki sabzi and ker sangri",
+          "text": "Gram-flour dumplings in a spiced curry, and a desert bean-and-berry dish, both fully vegetarian and loved by families."
+        },
+        {
+          "title": "Pyaaz kachori, mawa kachori and mirchi vada",
+          "text": "Jodhpur's favourite snacks: a spicy onion kachori, a sweet stuffed kachori and a chilli fritter."
+        },
+        {
+          "title": "Ghewar and Rajasthani sweets",
+          "text": "Honeycomb-like ghewar, malpua and rabri are found in sweet shops across the state."
+        },
+        {
+          "title": "Vegetarian and Jain meals",
+          "text": "Pure vegetarian and Jain food is easy to find, and we arrange meal preferences with your hotels and drivers."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Dress for the weather",
+          "text": "Wear light cottons in summer, and carry a jacket for winter evenings, as desert nights can be close to freezing."
+        },
+        {
+          "title": "Cover up at temples",
+          "text": "Cover shoulders and knees, and be ready to remove shoes at temples and in Pushkar."
+        },
+        {
+          "title": "Book Ranthambore early",
+          "text": "Safari places are limited and zones are allocated by the park, so we reserve safaris well ahead of your dates."
+        },
+        {
+          "title": "Plan for long drives",
+          "text": "Distances between cities are 4 to 6 hours by road. Start early, take rest stops and keep a water bottle handy."
+        },
+        {
+          "title": "Bargain with a smile",
+          "text": "Negotiate politely in bazaars and check what is genuine handicraft, such as block print, blue pottery and leather."
+        },
+        {
+          "title": "Be careful with offers at the ghats",
+          "text": "Pushkar's ghats attract people offering paid puja. Decline politely, or ask our guide to help if you wish to take part."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa to travel in Rajasthan. Carry a valid government photo ID, such as an Aadhaar card, passport, voter ID or driving licence, for hotel check-in and airport security. Ranthambore safaris are booked against ID, and names must match exactly. We arrange permits and safari bookings and confirm the current rules at booking.",
+        "health": "No compulsory vaccinations for domestic travel. Rajasthan is hot and dry, so use sunscreen, carry water and drink bottled or filtered water. Take care with street food if you have a sensitive stomach, and carry any regular medicines with you.",
+        "money": "Cards and UPI work in hotels, malls and most larger restaurants in the cities. Carry some cash for bazaars, small eateries, camel rides and tips. ATMs are plentiful in Jaipur, Udaipur and Jodhpur but fewer in smaller towns, so withdraw before heading to Jaisalmer or Ranthambore."
+      },
+      "faqs": [
+        {
+          "q": "How many days do I need for Rajasthan?",
+          "a": "Four to five nights covers Jaipur with one other city. Six to seven nights lets you add Jodhpur and Udaipur, or Jodhpur and Jaisalmer, at a comfortable pace. Seven to eight nights suits a full circuit."
+        },
+        {
+          "q": "When is the best time to visit?",
+          "a": "October to March is the best season, with pleasant days and cool nights. April to June is very hot, and July to September brings the monsoon, when Udaipur is green and Ranthambore is closed."
+        },
+        {
+          "q": "Which airport should I fly into?",
+          "a": "Jaipur is the main airport, and Udaipur and Jodhpur also have airports. Many travellers connect via Delhi. We can plan a one-way route, flying into Jaipur and out of Udaipur or Jodhpur, to avoid doubling back."
+        },
+        {
+          "q": "Will we definitely see a tiger at Ranthambore?",
+          "a": "No. Tigers are wild animals and sightings are never guaranteed. Several safaris improve your chances, and the park's lakes, birds and old fort make the visit worthwhile in any case."
+        },
+        {
+          "q": "Is Rajasthan suitable for senior parents and children?",
+          "a": "Yes. Most sights are reached by road, hotels are comfortable, and the pace can be adjusted. Forts involve some walking and steps, so tell us about any mobility needs and we will choose routes and timings to suit."
+        },
+        {
+          "q": "Can you arrange vegetarian and Jain meals?",
+          "a": "Yes. Rajasthan has a strong vegetarian tradition, and we can arrange Jain, vegetarian and other meal preferences with your hotels and during sightseeing."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "amber-fort-jaipur",
+      "query": "Amber Fort Jaipur Rajasthan",
+      "caption": "Amber Fort, Jaipur"
+    },
+    {
+      "slot": "hawa-mahal-jaipur",
+      "query": "Hawa Mahal Jaipur Rajasthan",
+      "caption": "Hawa Mahal, Jaipur"
+    },
+    {
+      "slot": "city-palace-udaipur",
+      "query": "City Palace Udaipur Rajasthan",
+      "caption": "The City Palace, Udaipur"
+    },
+    {
+      "slot": "lake-pichola-udaipur",
+      "query": "Lake Pichola Udaipur Rajasthan",
+      "caption": "Lake Pichola, Udaipur"
+    },
+    {
+      "slot": "mehrangarh-fort-jodhpur",
+      "query": "Mehrangarh Fort Jodhpur Rajasthan",
+      "caption": "Mehrangarh Fort, Jodhpur"
+    },
+    {
+      "slot": "blue-city-jodhpur",
+      "query": "Blue houses old city Jodhpur Rajasthan",
+      "caption": "The blue lanes of Jodhpur"
+    },
+    {
+      "slot": "jaisalmer-fort",
+      "query": "Jaisalmer Fort Rajasthan",
+      "caption": "Jaisalmer Fort"
+    },
+    {
+      "slot": "sam-sand-dunes-jaisalmer",
+      "query": "Sam Sand Dunes camel safari Jaisalmer Rajasthan",
+      "caption": "Sam Sand Dunes, Jaisalmer"
+    },
+    {
+      "slot": "pushkar-lake-ghats",
+      "query": "Pushkar Lake ghats Rajasthan",
+      "caption": "Pushkar Lake and its ghats"
+    },
+    {
+      "slot": "ranthambore-tiger",
+      "query": "Tiger Ranthambore National Park Rajasthan",
+      "caption": "A tiger in Ranthambore National Park"
+    },
+    {
+      "slot": "junagarh-fort-bikaner",
+      "query": "Junagarh Fort Bikaner Rajasthan",
+      "caption": "Junagarh Fort, Bikaner"
+    },
+    {
+      "slot": "ranakpur-jain-temple",
+      "query": "Ranakpur Jain Temple Rajasthan",
+      "caption": "Ranakpur Jain Temple"
+    }
+  ],
+  "hero": "mehrangarh-fort-jodhpur",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "rajasthan-classic-packages",
+      "name": "Classic Packages",
+      "description": "Tried-and-tested Rajasthan routes covering the big forts, palaces and lakes, with hotels, vehicle and sightseeing arranged for you.",
+      "photo": "amber-fort-jaipur",
+      "packages": [
+        "rajasthan-jaipur-jodhpur-udaipur-group-trip",
+        "rajasthan-forts-and-dunes-circuit",
+        "rajasthan-budget-saver-jaipur-pushkar-jodhpur"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "rajasthan-forts-and-desert",
+      "name": "Forts and Desert",
+      "description": "Jaisalmer's golden fort, Bikaner's Junagarh and Jodhpur's Mehrangarh, with a camel ride and sunset on the Sam Sand Dunes.",
+      "photo": "jaisalmer-fort",
+      "packages": [
+        "rajasthan-forts-and-dunes-circuit",
+        "rajasthan-jaipur-jodhpur-udaipur-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "rajasthan-family-and-wildlife",
+      "name": "Family and Wildlife",
+      "description": "Easy-paced holidays with Ranthambore tiger safaris, short drives and sights that children and grandparents can enjoy together.",
+      "photo": "ranthambore-tiger",
+      "packages": [
+        "rajasthan-family-pushkar-jaipur-ranthambore",
+        "rajasthan-jaipur-jodhpur-udaipur-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "rajasthan-couples-and-palaces",
+      "name": "Couples and Palaces",
+      "description": "Lake views, candlelit dinners and palace-fort settings in Udaipur and Jodhpur for couples who want time together.",
+      "photo": "lake-pichola-udaipur",
+      "packages": [
+        "rajasthan-udaipur-jodhpur-honeymoon"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "rajasthan-short-breaks-and-saver",
+      "name": "Short Breaks and Budget Saver",
+      "description": "A weekend in Jaipur and a four-night value route, for travellers with limited time or a tighter budget.",
+      "photo": "hawa-mahal-jaipur",
+      "packages": [
+        "rajasthan-jaipur-weekend-escape",
+        "rajasthan-budget-saver-jaipur-pushkar-jodhpur"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "rajasthan-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, ready-made itinerary and Indian meal options on request.",
+      "photo": "mehrangarh-fort-jodhpur",
+      "packages": [
+        "rajasthan-jaipur-jodhpur-udaipur-group-trip"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "rajasthan-weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short Jaipur break built around a long weekend, with early arrivals, a relaxed pace and a trip captain on every Friday departure.",
+      "photo": "hawa-mahal-jaipur",
+      "packages": [
+        "rajasthan-jaipur-weekend-escape"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "rajasthan-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Private honeymoon stays in lake-and-fort Rajasthan, with flower welcomes, candlelight dinners and unhurried days for two.",
+      "photo": "lake-pichola-udaipur",
+      "packages": [
+        "rajasthan-udaipur-jodhpur-honeymoon"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "rajasthan-jaipur-jodhpur-udaipur-group-trip",
+      "title": "Royal Rajasthan Group Trip: Jaipur, Jodhpur and Udaipur",
+      "nights": 6,
+      "summary": "Seven days through Rajasthan's three great cities: Jaipur's Amber Fort and City Palace, Jodhpur's Mehrangarh Fort and the Jain temples of Ranakpur on the way to lakeside Udaipur, with a trip captain.",
+      "overview": "This group trip takes you through the best-loved cities of Rajasthan over six nights, two each in Jaipur, Jodhpur and Udaipur. You see Amber Fort and the City Palace in the pink city, climb Mehrangarh Fort above Jodhpur's blue houses, stop at the marble Jain temples of Ranakpur, and end with a boat ride on Lake Pichola.\n\nAll travel is by air-conditioned vehicle, with rest stops on the longer drives. A trip captain travels with the group, and Indian meal options, including Jain and vegetarian, are available on request.\n\nThe days are paced with free time in the afternoons, which suits families, friends travelling together and senior parents.",
+      "highlights": [
+        "Amber Fort, City Palace and Jantar Mantar in Jaipur",
+        "Photo stop at the Hawa Mahal and an evening in Jaipur's bazaars",
+        "Mehrangarh Fort and Jaswant Thada in Jodhpur",
+        "Ranakpur Jain Temples, with their carved marble pillars, on the way to Udaipur",
+        "City Palace and a boat ride on Lake Pichola in Udaipur",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Jaipur | Evening at leisure",
+          "description": "Arrive at Jaipur Airport or railway station and meet your trip captain.\nTransfer to your hotel and check in.\nRelax after your journey, with the evening at leisure.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 2,
+          "title": "Amber Fort | City Palace | Jantar Mantar | Bazaars",
+          "description": "After breakfast, visit Amber Fort, reaching the fort by jeep or on foot.\nMake a photo stop at the Hawa Mahal, then visit the City Palace and the Jantar Mantar observatory.\nSpend the evening in Johari Bazaar or Bapu Bazaar for jewellery, block prints and mojari.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 3,
+          "title": "Jaipur to Jodhpur | Evening in the old city",
+          "description": "After breakfast, check out and drive to Jodhpur, about 340 km and 5 to 6 hours with rest stops.\nCheck in at your hotel on arrival.\nIn the evening, walk to the Clock Tower and Sardar Market, if time allows.\nOvernight stay in Jodhpur."
+        },
+        {
+          "day": 4,
+          "title": "Mehrangarh Fort | Jaswant Thada | Blue City",
+          "description": "After breakfast, visit Mehrangarh Fort, one of India's largest forts, on a rocky ridge above the city.\nContinue to Jaswant Thada, the white marble memorial near the fort.\nEnjoy views over the blue houses of the old city, then spend the afternoon at leisure.\nOvernight stay in Jodhpur."
+        },
+        {
+          "day": 5,
+          "title": "Jodhpur to Udaipur via Ranakpur",
+          "description": "After breakfast, check out and drive towards Udaipur, with a stop at the Ranakpur Jain Temples.\nSee the marble temple, famous for its carved pillars, as per visiting hours for non-worshippers.\nContinue to Udaipur, about 5 to 6 hours of driving in all, and check in.\nOvernight stay in Udaipur."
+        },
+        {
+          "day": 6,
+          "title": "Udaipur City Palace | Lake Pichola Boat Ride",
+          "description": "After breakfast, visit the City Palace complex on the shore of Lake Pichola.\nWalk to Jagdish Temple and the lanes of the old city.\nIn the late afternoon, take a shared boat ride on Lake Pichola, subject to water levels.\nOvernight stay in Udaipur."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Udaipur",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Udaipur Airport or railway station for your onward journey."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Jaipur on twin sharing",
+        "2 nights hotel accommodation in Jodhpur on twin sharing",
+        "2 nights hotel accommodation in Udaipur on twin sharing",
+        "Daily breakfast at the hotel",
+        "Air-conditioned vehicle for all transfers and sightseeing as per itinerary",
+        "Entry tickets to the monuments listed in the itinerary",
+        "Shared boat ride on Lake Pichola, subject to water levels",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Rajasthan",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera or video fees charged at monuments, where applicable",
+        "Optional activities and entry fees not listed",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID (Aadhaar, passport, voter ID or driving licence) for hotel check-in and airport security.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change.",
+        "A trip captain accompanies the group throughout.",
+        "Road journeys between cities take 3 to 6 hours with rest stops; we suggest early starts on travel days.",
+        "Dress modestly at temples and religious sites, with shoulders and knees covered, and remove shoes where required.",
+        "Summers (Apr-Jun) are very hot and desert nights in Dec-Jan are cold, so pack for the season you travel in."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Light cotton clothing, plus a warm jacket for Dec-Feb",
+        "Sunscreen, hat and sunglasses",
+        "Comfortable walking shoes for forts and steps",
+        "Scarf or modest clothing for temple visits",
+        "Power bank and any regular medicines"
+      ],
+      "pickup": "Jaipur Airport or Railway Station",
+      "drop_point": "Udaipur Airport or Railway Station",
+      "photo": "amber-fort-jaipur",
+      "gallery": [
+        "mehrangarh-fort-jodhpur",
+        "ranakpur-jain-temple",
+        "city-palace-udaipur",
+        "hawa-mahal-jaipur"
+      ],
+      "price": 34500,
+      "original_price": 37200,
+      "departures": {
+        "weekday": 6,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 24
+      }
+    },
+    {
+      "slug": "rajasthan-jaipur-weekend-escape",
+      "title": "Jaipur Pink City Weekend Escape",
+      "nights": 2,
+      "summary": "A Friday-to-Sunday break in Jaipur with Amber Fort, the City Palace, Jantar Mantar, Hawa Mahal, the old bazaars and a sunset over the city.",
+      "overview": "This weekend escape fits the best of Jaipur into two nights. You see the City Palace, the Jantar Mantar observatory and the Hawa Mahal on the first day, then spend the second at Amber Fort, with a photo stop at Jal Mahal and a sunset viewpoint above the city.\n\nWith the old bazaars for shopping and the evenings free, it is a relaxed short break for friends, couples and families. A trip captain accompanies the group, and Indian meal options are available on request.",
+      "highlights": [
+        "City Palace and Jantar Mantar observatory",
+        "Photo stop at the Hawa Mahal",
+        "Amber Fort, with a jeep or walking approach",
+        "Photo stop at Jal Mahal on Man Sagar Lake",
+        "Sunset over Jaipur from Nahargarh Fort",
+        "Evenings in Johari Bazaar and Bapu Bazaar"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Jaipur | City Palace | Jantar Mantar | Bazaars",
+          "description": "Arrive early in the morning at Jaipur Airport or railway station and meet your trip captain.\nTransfer to your hotel, freshen up and have breakfast; early check-in is subject to availability.\nVisit the City Palace and the Jantar Mantar observatory, with a photo stop at the Hawa Mahal.\nSpend the evening in Johari Bazaar or Bapu Bazaar for block prints, jewellery and mojari.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 2,
+          "title": "Amber Fort | Jal Mahal | Nahargarh Sunset",
+          "description": "After breakfast, drive to Amber Fort and explore its courtyards, halls and mirror work.\nMake a photo stop at Jal Mahal on the way back to the city.\nEnjoy a free afternoon for rest or shopping.\nIn the late afternoon, drive up to Nahargarh Fort for sunset views over Jaipur.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 3,
+          "title": "Leisure Morning | Departure",
+          "description": "After a relaxed breakfast, enjoy free time for last-minute shopping or a café stop.\nCheck out of the hotel at noon, with luggage stored if needed.\nTransfer to Jaipur Airport or railway station for your late-afternoon or evening departure."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Jaipur on twin sharing",
+        "Daily breakfast at the hotel",
+        "Air-conditioned vehicle for all transfers and sightseeing as per itinerary",
+        "Entry tickets to the monuments listed in the itinerary",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Jaipur; transport to and from the destination is not included",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera or video fees charged at monuments, where applicable",
+        "Optional activities and entry fees not listed",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Transport to and from the destination (flights or trains) is not included.",
+        "Carry a valid government photo ID (Aadhaar, passport, voter ID or driving licence) for hotel check-in and airport security.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; a trip captain accompanies the group throughout.",
+        "Dress modestly at temples and religious sites, with shoulders and knees covered, and remove shoes where required.",
+        "Summers (Apr-Jun) are very hot and desert nights in Dec-Jan are cold, so pack for the season you travel in."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Light cotton clothing, plus a warm jacket for Dec-Feb",
+        "Sunscreen, hat and sunglasses",
+        "Comfortable walking shoes for forts and steps",
+        "Scarf or modest clothing for temple visits",
+        "Power bank and any regular medicines"
+      ],
+      "pickup": "Jaipur Airport or Railway Station",
+      "drop_point": "Jaipur Airport or Railway Station",
+      "photo": "hawa-mahal-jaipur",
+      "gallery": [
+        "amber-fort-jaipur",
+        "hawa-mahal-jaipur"
+      ],
+      "price": 17500,
+      "original_price": 18900,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "rajasthan-udaipur-jodhpur-honeymoon",
+      "title": "Udaipur and Jodhpur Honeymoon: Lake Palaces, Candlelight Dinner and the Blue City",
+      "nights": 5,
+      "summary": "Five unhurried nights for two in Rajasthan, with a private boat ride on Lake Pichola, a candlelight dinner, a couples spa session and Jodhpur's Mehrangarh Fort, travelling by private car.",
+      "overview": "This private honeymoon pairs the lakes of Udaipur with the fort-top views of Jodhpur: three nights in Udaipur and two in Jodhpur. You travel by private car throughout, start most mornings late and keep every afternoon and evening for each other.\n\nUdaipur brings the City Palace, gardens and a private boat ride on Lake Pichola at sunset. The drive to Jodhpur stops at the carved marble temples of Ranakpur, and Jodhpur rewards you with Mehrangarh Fort and the blue houses of the old city.\n\nExpect a flower welcome and bed decoration on arrival, a candlelight dinner and a couples spa session, all subject to availability. Tell us your wedding date at booking and we will pass it to the hotels.",
+      "highlights": [
+        "Private car transfers and sightseeing, with unhurried mornings",
+        "City Palace, Saheliyon-ki-Bari and the Sajjangarh hilltop palace in Udaipur",
+        "Private boat ride on Lake Pichola at sunset, subject to water levels",
+        "Candlelight dinner, subject to availability",
+        "Couples spa session, subject to availability",
+        "Ranakpur Jain Temples on the drive to Jodhpur",
+        "Mehrangarh Fort and the blue houses of Jodhpur"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Udaipur | Welcome and Evening Together",
+          "description": "Arrive at Udaipur Airport, where your private car is waiting.\nTransfer to your hotel, with a lake-view room where available, and check in.\nA flower welcome and bed decoration are arranged, subject to availability.\nThe rest of the day is yours to unwind or stroll by the lake.\nOvernight stay in Udaipur."
+        },
+        {
+          "day": 2,
+          "title": "City Palace | Private Lake Pichola Boat Ride | Candlelight Dinner",
+          "description": "Enjoy a relaxed breakfast, with a late start at around 10 am.\nVisit the City Palace complex and the lanes around Jagdish Temple with your private car and driver.\nReturn to the hotel to rest in the afternoon.\nAt sunset, enjoy a private boat ride on Lake Pichola, subject to water levels and operating rules.\nLater, share a candlelight dinner, subject to availability.\nOvernight stay in Udaipur."
+        },
+        {
+          "day": 3,
+          "title": "Saheliyon-ki-Bari | Couples Spa | Sajjangarh Palace",
+          "description": "After a leisurely breakfast, stroll through the fountains and gardens of Saheliyon-ki-Bari.\nIn the afternoon, enjoy a couples spa session, subject to availability.\nDrive up to Sajjangarh, the hilltop Monsoon Palace, for views over the city and lakes at sunset.\nOvernight stay in Udaipur."
+        },
+        {
+          "day": 4,
+          "title": "Udaipur to Jodhpur via Ranakpur",
+          "description": "After a relaxed breakfast, check out and set off by private car for Jodhpur.\nStop at the Ranakpur Jain Temples to see the marble carvings, as per visiting hours for non-worshippers.\nContinue to Jodhpur, about 5 to 6 hours of driving in all, and check in.\nSpend the evening at leisure.\nOvernight stay in Jodhpur."
+        },
+        {
+          "day": 5,
+          "title": "Mehrangarh Fort | Jaswant Thada | Blue City",
+          "description": "After breakfast, visit Mehrangarh Fort, high on its rocky ridge, with its museum galleries and ramparts.\nContinue to Jaswant Thada, the white marble memorial near the fort.\nSpend the afternoon wandering the blue lanes of the old city, with a stop at a café.\nThe evening is yours to enjoy a quiet dinner together.\nOvernight stay in Jodhpur."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Jodhpur",
+          "description": "Enjoy a relaxed breakfast and a last walk around the hotel.\nCheck out of the hotel.\nYour private car takes you to Jodhpur Airport or railway station for your onward journey."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Udaipur on twin sharing, with a lake-view room where available",
+        "2 nights hotel accommodation in Jodhpur on twin sharing",
+        "Daily breakfast at the hotel",
+        "Flower welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner, subject to availability",
+        "One couples spa session, subject to availability",
+        "Private boat ride on Lake Pichola, subject to water levels",
+        "Private air-conditioned car for all transfers and sightseeing as per itinerary",
+        "Entry tickets to the monuments listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Rajasthan",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera or video fees charged at monuments, where applicable",
+        "Optional activities and entry fees not listed",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Carry a valid government photo ID (Aadhaar, passport, voter ID or driving licence) for hotel check-in and airport security.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates are indicative and confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The Lake Pichola boat ride depends on water levels and weather, and may be replaced by another activity.",
+        "Dress modestly at temples and religious sites, with shoulders and knees covered, and remove shoes where required.",
+        "Summers (Apr-Jun) are very hot and desert nights in Dec-Jan are cold, so pack for the season you travel in."
+      ],
+      "must_carry": [
+        "Valid government photo ID for both travellers",
+        "Flight or train tickets",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Light cotton clothing, plus a warm jacket for Dec-Feb",
+        "Sunscreen, hat and sunglasses",
+        "Comfortable walking shoes for forts and steps",
+        "Scarf or modest clothing for temple visits"
+      ],
+      "pickup": "Udaipur Airport",
+      "drop_point": "Jodhpur Airport",
+      "photo": "lake-pichola-udaipur",
+      "gallery": [
+        "city-palace-udaipur",
+        "mehrangarh-fort-jodhpur",
+        "blue-city-jodhpur",
+        "ranakpur-jain-temple"
+      ],
+      "price": 41500,
+      "original_price": 44800
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "rajasthan-forts-and-dunes-circuit",
+      "title": "Forts and Dunes Circuit: Jaipur, Bikaner, Jaisalmer and Jodhpur",
+      "nights": 7,
+      "summary": "A seven-night private circuit through Rajasthan's fort cities and the Thar Desert, from pink Jaipur to Bikaner's Junagarh Fort, the golden fort of Jaisalmer, a dune sunset and Jodhpur's Mehrangarh.",
+      "overview": "This private circuit follows the desert side of Rajasthan over seven nights: two in Jaipur, one in Bikaner, two in Jaisalmer and two in Jodhpur. You see Amber Fort and the City Palace, Bikaner's Junagarh Fort, the living fort of Jaisalmer and Mehrangarh above Jodhpur's blue houses.\n\nThe highlight is an evening at the Sam Sand Dunes, with a camel ride and sunset over the desert. The drives are long, 5 to 6 hours between cities, so the route is planned with rest stops and a late start where possible.\n\nIt suits travellers who enjoy history and open landscapes. Dates, hotel category and pace can all be adjusted.",
+      "highlights": [
+        "Amber Fort, City Palace and Jantar Mantar in Jaipur",
+        "Junagarh Fort in Bikaner",
+        "Jaisalmer Fort, Patwon Ki Haveli and Gadisar Lake",
+        "Camel ride and sunset at the Sam Sand Dunes",
+        "Mehrangarh Fort and Jaswant Thada in Jodhpur",
+        "Private air-conditioned vehicle throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Jaipur",
+          "description": "Arrive at Jaipur Airport and meet your driver.\nTransfer to your hotel and check in.\nRelax after your journey, with the evening at leisure.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 2,
+          "title": "Amber Fort | City Palace | Jantar Mantar",
+          "description": "After breakfast, visit Amber Fort, reaching the fort by jeep or on foot.\nMake a photo stop at the Hawa Mahal, then visit the City Palace and the Jantar Mantar observatory.\nSpend the evening in Johari Bazaar or Bapu Bazaar.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 3,
+          "title": "Jaipur to Bikaner | Junagarh Fort",
+          "description": "After breakfast, drive to Bikaner, about 330 km and 5 to 6 hours with rest stops.\nCheck in at your hotel and rest after the drive.\nIn the afternoon, visit Junagarh Fort, with its courtyards, halls and carved balconies.\nOvernight stay in Bikaner."
+        },
+        {
+          "day": 4,
+          "title": "Bikaner to Jaisalmer | Gadisar Lake",
+          "description": "After breakfast, drive to Jaisalmer, about 330 km and 5 to 6 hours, with rest stops on the way.\nCheck in at your hotel on arrival.\nIn the evening, visit Gadisar Lake, with its small temples and ghats, at sunset.\nOvernight stay in Jaisalmer."
+        },
+        {
+          "day": 5,
+          "title": "Jaisalmer Fort | Havelis | Sam Sand Dunes",
+          "description": "After breakfast, explore Jaisalmer Fort, a living fort of golden sandstone with shops and homes inside.\nVisit Patwon Ki Haveli and Nathmal Ki Haveli, known for their carved facades.\nIn the afternoon, drive to the Sam Sand Dunes, about 40 km away, for a camel ride and sunset over the desert.\nEnjoy a folk music evening where available, then return to Jaisalmer.\nOvernight stay in Jaisalmer."
+        },
+        {
+          "day": 6,
+          "title": "Jaisalmer to Jodhpur",
+          "description": "After breakfast, check out and drive to Jodhpur, about 285 km and 5 hours.\nCheck in at your hotel on arrival.\nIn the evening, walk to the Clock Tower and Sardar Market, if time allows.\nOvernight stay in Jodhpur."
+        },
+        {
+          "day": 7,
+          "title": "Mehrangarh Fort | Jaswant Thada | Blue City",
+          "description": "After breakfast, visit Mehrangarh Fort, one of India's largest forts, on a rocky ridge above the city.\nContinue to Jaswant Thada, the white marble memorial near the fort.\nEnjoy views over the blue houses of the old city, then spend the afternoon at leisure.\nOvernight stay in Jodhpur."
+        },
+        {
+          "day": 8,
+          "title": "Departure from Jodhpur",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Jodhpur Airport or railway station for your onward journey."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Jaipur on twin sharing",
+        "1 night hotel accommodation in Bikaner on twin sharing",
+        "2 nights hotel accommodation in Jaisalmer on twin sharing",
+        "2 nights hotel accommodation in Jodhpur on twin sharing",
+        "Daily breakfast at the hotel",
+        "Private air-conditioned vehicle for all transfers and sightseeing as per itinerary",
+        "Entry tickets to the monuments listed in the itinerary",
+        "Camel ride at the Sam Sand Dunes",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Rajasthan",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera or video fees charged at monuments, where applicable",
+        "Optional activities and entry fees not listed",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID (Aadhaar, passport, voter ID or driving licence) for hotel check-in and airport security.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Road journeys between Jaipur, Bikaner, Jaisalmer and Jodhpur take 5 to 6 hours each; we plan rest stops along the way.",
+        "Camel rides and desert activities depend on weather; desert evenings are cold in Dec-Jan and very hot in Apr-Jun.",
+        "An overnight desert camp can be added on request, subject to availability and season.",
+        "Dress modestly at temples and religious sites, with shoulders and knees covered, and remove shoes where required."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Light cotton clothing, plus a warm jacket for Dec-Feb",
+        "Sunscreen, hat and sunglasses",
+        "Comfortable walking shoes for forts and steps",
+        "Scarf or modest clothing for temple visits",
+        "Power bank and any regular medicines"
+      ],
+      "pickup": "Jaipur Airport",
+      "drop_point": "Jodhpur Airport",
+      "photo": "jaisalmer-fort",
+      "gallery": [
+        "sam-sand-dunes-jaisalmer",
+        "junagarh-fort-bikaner",
+        "mehrangarh-fort-jodhpur",
+        "amber-fort-jaipur"
+      ],
+      "price": 36500,
+      "original_price": 39400
+    },
+    {
+      "slug": "rajasthan-family-pushkar-jaipur-ranthambore",
+      "title": "Rajasthan Family Holiday: Pushkar, Jaipur and Ranthambore Safari",
+      "nights": 5,
+      "summary": "A five-night family holiday combining Pushkar's holy lake, Jaipur's forts and palaces and two tiger safaris at Ranthambore, with short drives and an easy pace.",
+      "overview": "This private family holiday balances culture and wildlife over five nights: one in Pushkar, two in Jaipur and two in Ranthambore. Children enjoy the forts and safaris, while grandparents can take the temples and bazaars at their own pace.\n\nYou visit the Brahma Temple and ghats at Pushkar, Amber Fort and the City Palace in Jaipur, and take two safaris in Ranthambore National Park. Drives are 3 to 4 hours at most, with breakfast and rest stops built in.\n\nMeal preferences, including vegetarian and Jain, can be arranged with your hotels. Tiger sightings are never guaranteed.",
+      "highlights": [
+        "Pushkar Lake ghats and Brahma Temple",
+        "Amber Fort, City Palace and Jantar Mantar in Jaipur",
+        "Photo stop at the Hawa Mahal",
+        "Two safaris in Ranthambore National Park",
+        "Short drives and unhurried days suited to children and senior parents"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Jaipur | Drive to Pushkar",
+          "description": "Arrive at Jaipur Airport and meet your driver.\nDrive to Pushkar, about 145 km and 2.5 to 3 hours.\nCheck in at your hotel and rest after your journey.\nIn the evening, walk to the lake ghats and the bazaar.\nOvernight stay in Pushkar."
+        },
+        {
+          "day": 2,
+          "title": "Brahma Temple | Pushkar Lake | Drive to Jaipur",
+          "description": "After breakfast, visit the Brahma Temple, one of the few dedicated to Brahma in India.\nWalk along the Pushkar Lake ghats, and visit the Savitri Mata Temple above the town if time allows.\nAfter lunch, drive to Jaipur, about 145 km and 2.5 to 3 hours.\nCheck in and enjoy a free evening.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 3,
+          "title": "Amber Fort | City Palace | Jantar Mantar",
+          "description": "After breakfast, visit Amber Fort, reaching the fort by jeep or on foot.\nMake a photo stop at the Hawa Mahal, then visit the City Palace and the Jantar Mantar observatory.\nSpend the evening in the old-city bazaars at your own pace.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 4,
+          "title": "Jaipur to Ranthambore",
+          "description": "After breakfast, check out and drive to Ranthambore, about 180 km and 3.5 to 4 hours.\nCheck in at your hotel near the park.\nRest in the afternoon, and get an early night ahead of the safari.\nOvernight stay in Ranthambore."
+        },
+        {
+          "day": 5,
+          "title": "Ranthambore Safaris",
+          "description": "Set off early for a morning safari in Ranthambore National Park, in a shared jeep or canter.\nReturn to the hotel for breakfast and rest.\nIn the afternoon, take a second safari through the park's forest and lakes.\nOvernight stay in Ranthambore."
+        },
+        {
+          "day": 6,
+          "title": "Departure via Jaipur",
+          "description": "After breakfast, enjoy a relaxed morning at the hotel.\nCheck out and drive to Jaipur Airport, about 4 hours.\nTake an evening flight home, or ask us to add a night in Jaipur."
+        }
+      ],
+      "inclusions": [
+        "1 night hotel accommodation in Pushkar on twin or family room sharing",
+        "2 nights hotel accommodation in Jaipur on twin or family room sharing",
+        "2 nights hotel accommodation in Ranthambore on twin or family room sharing",
+        "Daily breakfast at the hotel",
+        "Private air-conditioned vehicle for all transfers and sightseeing as per itinerary",
+        "Two safaris in Ranthambore National Park in a shared jeep or canter, subject to park permission",
+        "Entry tickets to the monuments listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Rajasthan",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera or video fees charged at monuments, where applicable",
+        "Optional activities and entry fees not listed",
+        "Anything not listed under inclusions",
+        "GST as applicable",
+        "Private jeep for safaris, if preferred, charged extra"
+      ],
+      "notes": [
+        "Carry a valid government photo ID (Aadhaar, passport, voter ID or driving licence) for hotel check-in and airport security. Safari bookings are made against ID, and names must match exactly.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Safari zones and timings are set by the park authorities, and tiger sightings are never guaranteed.",
+        "Ranthambore National Park is closed for safaris during the monsoon, usually from July to September, so this holiday suits Oct-Jun.",
+        "Pushkar is a holy town, so please dress modestly and keep to vegetarian meals while there.",
+        "Road journeys between cities take 3 to 6 hours with rest stops; we suggest early starts on travel days."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller, including children",
+        "Flight or train tickets",
+        "Light cotton clothing in earthy colours for safaris, plus a warm jacket for Dec-Feb",
+        "Sunscreen, hat and sunglasses",
+        "Comfortable walking shoes",
+        "Scarf or modest clothing for temple visits",
+        "Binoculars, if you own a pair"
+      ],
+      "pickup": "Jaipur Airport",
+      "drop_point": "Jaipur Airport",
+      "photo": "ranthambore-tiger",
+      "gallery": [
+        "pushkar-lake-ghats",
+        "amber-fort-jaipur",
+        "hawa-mahal-jaipur"
+      ],
+      "price": 29500,
+      "original_price": 31800
+    },
+    {
+      "slug": "rajasthan-budget-saver-jaipur-pushkar-jodhpur",
+      "title": "Rajasthan Budget Saver: Jaipur, Pushkar and Jodhpur",
+      "nights": 4,
+      "summary": "A value-for-money four-night route through Jaipur, Pushkar and Jodhpur, covering the main forts, a holy lake and the blue city in comfortable hotels, with a quote built around your dates.",
+      "overview": "This budget route covers three of Rajasthan's best-known stops in four nights: two in Jaipur, one in Pushkar and one in Jodhpur. You see Amber Fort and the City Palace in Jaipur, the Brahma Temple and lake ghats at Pushkar, and Mehrangarh Fort in Jodhpur.\n\nHotels are comfortable 3-star properties, and the route is planned to keep drives to 3 to 4 hours. It is a good first Rajasthan trip, and it can be extended with Udaipur or Jaisalmer. Prices depend on dates and hotel choice, so ask for a quote.",
+      "highlights": [
+        "Amber Fort, City Palace and Jantar Mantar in Jaipur",
+        "Photo stop at the Hawa Mahal",
+        "Brahma Temple and lake ghats at Pushkar",
+        "Mehrangarh Fort and Jaswant Thada in Jodhpur",
+        "Comfortable 3-star hotels and an efficient route"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Jaipur",
+          "description": "Arrive at Jaipur Airport or railway station and meet your driver.\nTransfer to your hotel and check in.\nSpend the evening at leisure or explore the nearby bazaars.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 2,
+          "title": "Amber Fort | City Palace | Jantar Mantar",
+          "description": "After breakfast, visit Amber Fort, reaching the fort by jeep or on foot.\nMake a photo stop at the Hawa Mahal, then visit the City Palace and the Jantar Mantar observatory.\nSpend the evening in Johari Bazaar or Bapu Bazaar.\nOvernight stay in Jaipur."
+        },
+        {
+          "day": 3,
+          "title": "Jaipur to Pushkar | Lake and Brahma Temple",
+          "description": "After breakfast, drive to Pushkar, about 145 km and 2.5 to 3 hours.\nCheck in at your hotel, then visit the Brahma Temple.\nWalk along the lake ghats and through the bazaar at sunset.\nOvernight stay in Pushkar."
+        },
+        {
+          "day": 4,
+          "title": "Pushkar to Jodhpur | Mehrangarh Fort",
+          "description": "After breakfast, drive to Jodhpur, about 190 km and 3.5 to 4 hours.\nCheck in at your hotel, then visit Mehrangarh Fort and Jaswant Thada.\nEnjoy views over the blue houses of the old city.\nOvernight stay in Jodhpur."
+        },
+        {
+          "day": 5,
+          "title": "Departure from Jodhpur",
+          "description": "After breakfast, visit the Clock Tower and Sardar Market, if time allows.\nCheck out of the hotel.\nTransfer to Jodhpur Airport or railway station for your onward journey."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Jaipur on twin sharing, in a comfortable 3-star hotel",
+        "1 night hotel accommodation in Pushkar on twin sharing",
+        "1 night hotel accommodation in Jodhpur on twin sharing",
+        "Daily breakfast at the hotel",
+        "Air-conditioned vehicle for all transfers and sightseeing as per itinerary",
+        "Entry tickets to the monuments listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Rajasthan",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera or video fees charged at monuments, where applicable",
+        "Optional activities and entry fees not listed",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID (Aadhaar, passport, voter ID or driving licence) for hotel check-in and airport security.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Prices depend on dates and hotel choice; rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Pushkar is a holy town, so please dress modestly and keep to vegetarian meals while there.",
+        "Road journeys between cities take 3 to 6 hours with rest stops; we suggest early starts on travel days.",
+        "Summers (Apr-Jun) are very hot and desert nights in Dec-Jan are cold, so pack for the season you travel in."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Light cotton clothing, plus a warm jacket for Dec-Feb",
+        "Sunscreen, hat and sunglasses",
+        "Comfortable walking shoes for forts and steps",
+        "Scarf or modest clothing for temple visits",
+        "Power bank and any regular medicines"
+      ],
+      "pickup": "Jaipur Airport or Railway Station",
+      "drop_point": "Jodhpur Airport or Railway Station",
+      "photo": "pushkar-lake-ghats",
+      "gallery": [
+        "amber-fort-jaipur",
+        "mehrangarh-fort-jodhpur",
+        "hawa-mahal-jaipur"
+      ],
+      "price": null,
+      "original_price": null
+    }
+  ]
+}

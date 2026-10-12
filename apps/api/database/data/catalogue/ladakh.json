@@ -1,0 +1,980 @@
+{
+  "destination": "ladakh",
+  "destination_record": {
+    "name": "Ladakh",
+    "region": "india",
+    "tagline": "Cross Khardung La, ride a camel across the Hunder dunes and wake beside Pangong Tso on a Himalayan road trip through monasteries and cold desert.",
+    "best_time": "May-Sep",
+    "places": "Leh, Sham Valley, Alchi, Khardung La, Nubra Valley, Diskit, Hunder, Pangong Tso, Thiksey, Hemis, Shey",
+    "sort": 6,
+    "seasons": {
+      "on": {
+        "months": "May-Sep",
+        "places": "Leh, Sham Valley, Nubra Valley and Pangong Tso, with the high passes and most camps and guesthouses open",
+        "activities": "Monastery visits, the Khardung La drive, camel rides at Hunder, sunrise at Pangong Tso, river rafting (usually June to September), trekking and the summer monastery festivals such as Hemis, whose dates follow the Tibetan calendar. Days are bright and pleasant, nights are cold, and May can still bring snow on the high passes."
+      },
+      "off": {
+        "months": "Nov-Mar",
+        "places": "Leh and the lower Sham Valley; the high passes, Nubra Valley and Pangong Tso are often closed or very hard to reach",
+        "activities": "Winter in Ladakh is for experienced and well-prepared travellers. Temperatures fall far below freezing, many hotels and camps shut, and roads can close after snow. Speciality winter journeys such as the Chadar trek on the frozen Zanskar river (usually January to February) and snow leopard tracking in Hemis National Park need expert planning."
+      },
+      "mid": {
+        "months": "Apr and Oct",
+        "places": "Leh, the monasteries and the Sham Valley, with Nubra Valley and Pangong Tso depending on snow clearance and camp openings",
+        "activities": "Quieter roads, clear skies, monastery visits and photography, with lower prices. Days are cool and nights are very cold, and some camps open late in spring or close early in autumn, so we confirm availability before you book."
+      }
+    },
+    "profile": {
+      "overview": "Ladakh is a high-altitude cold desert in the Himalaya, a land of bare mountains, deep-blue skies, river gorges and whitewashed monasteries. Leh, at around 3,500 metres, is the base for the classic circuit over Khardung La to the sand dunes of Nubra Valley and on to the colour-changing water of Pangong Tso, with centuries-old monasteries such as Thiksey, Hemis and Diskit along the way.\n\nIt is one of India's most rewarding road-trip destinations, but the altitude deserves respect. Our itineraries always begin with a rest day in Leh and keep a steady pace, and the travel season runs roughly from May to September. Tell us your dates, group size and budget, and we will build the itinerary around you.",
+      "facts": {
+        "capital": "Leh, the administrative headquarters of the Union Territory of Ladakh",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Ladakhi, Hindi and English",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "Cold, dry high-altitude desert; summer days about 15°C to 30°C with cold nights, and winters far below freezing",
+        "flight_time": "About 1 hr 30 min from Delhi to Leh by direct flight; from Chennai connect via Delhi or Mumbai. Road routes from Manali and Srinagar are seasonal."
+      },
+      "reasons": [
+        {
+          "title": "Landscapes like nowhere else",
+          "text": "Bare peaks, turquoise lakes, river valleys and cold-desert dunes, often within a single day's drive."
+        },
+        {
+          "title": "Living Buddhist culture",
+          "text": "Thiksey, Hemis and Diskit are working monasteries, with monks, prayer wheels, butter lamps and colourful festivals."
+        },
+        {
+          "title": "The great Himalayan road trip",
+          "text": "Cross high passes such as Khardung La and Chang La on mountain roads that are an adventure in themselves."
+        },
+        {
+          "title": "Clear skies and sharp light",
+          "text": "Dry, thin air gives crisp views by day and some of the best stargazing in India after dark."
+        },
+        {
+          "title": "Adventure and slow travel together",
+          "text": "Add river rafting, short treks or a camel ride to the sightseeing, or simply sit by a lake and watch the colours change."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "Leh Palace and Shanti Stupa",
+          "text": "A 17th-century royal palace above the old town and a white-domed stupa with sunset views over the Indus valley."
+        },
+        {
+          "title": "Thiksey Monastery",
+          "text": "A hillside complex of many storeys with a large Maitreya Buddha statue, close to Leh."
+        },
+        {
+          "title": "Hemis Monastery",
+          "text": "The largest monastery in Ladakh, in a quiet valley south-east of Leh, known for its summer festival."
+        },
+        {
+          "title": "Sham Valley",
+          "text": "Alchi's ancient murals, the Sangam where the Indus and Zanskar rivers meet, Gurudwara Pathar Sahib and the Magnetic Hill illusion."
+        },
+        {
+          "title": "Khardung La",
+          "text": "A very high mountain pass on the road from Leh to Nubra Valley, with wide Himalayan views and thin air."
+        },
+        {
+          "title": "Nubra Valley and Hunder dunes",
+          "text": "A green valley with a pocket of cold-desert sand dunes, where double-humped Bactrian camels graze."
+        },
+        {
+          "title": "Diskit Monastery",
+          "text": "Nubra's main monastery, with a giant Maitreya Buddha statue looking over the valley."
+        },
+        {
+          "title": "Pangong Tso",
+          "text": "A long, high-altitude lake that shifts from turquoise to deep blue through the day, at around 4,250 metres."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Bactrian camel ride at Hunder",
+          "text": "A short ride across the dunes at sunset, on the double-humped camels of the old Silk Route."
+        },
+        {
+          "title": "Sunrise and sunset at Pangong Tso",
+          "text": "Spend a night beside the lake to see the light change from dawn to dusk, weather permitting."
+        },
+        {
+          "title": "River rafting on the Indus or Zanskar",
+          "text": "A guided rafting session in the summer months, with the stretch chosen according to water levels."
+        },
+        {
+          "title": "Morning prayers at a monastery",
+          "text": "Visitors can sometimes sit quietly in the prayer hall while monks chant, which is a memorable start to the day."
+        },
+        {
+          "title": "Stargazing from the lake or the dunes",
+          "text": "On a clear night far from city lights, the Milky Way is easy to see."
+        },
+        {
+          "title": "Leh market and cafes",
+          "text": "Browse shawls, Tibetan handicrafts and dried apricots, then rest in a rooftop cafe with a view of the palace."
+        }
+      ],
+      "food": [
+        {
+          "title": "Momos and thukpa",
+          "text": "Steamed dumplings and a hot noodle soup, the comfort food of the mountains."
+        },
+        {
+          "title": "Skyu, tingmo and khambir",
+          "text": "A traditional Ladakhi pasta stew, steamed bread and a thick local bread, often served in homestays."
+        },
+        {
+          "title": "Butter tea and Ladakhi tea",
+          "text": "Salty butter tea is an acquired taste; sweet masala tea and kahwa are easy to find too."
+        },
+        {
+          "title": "Apricots and sea buckthorn",
+          "text": "Dried apricots, apricot jam and sea buckthorn juice are local products worth taking home."
+        },
+        {
+          "title": "Vegetarian and Jain meals",
+          "text": "Vegetarian food is widely available in Leh. In remote camps choices are simpler, so tell us in advance and we will arrange the best option on request."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Rest on your first day",
+          "text": "Leh is at around 3,500 metres. Rest, drink plenty of water and avoid alcohol and smoking on day 1, and do not rush the first two days."
+        },
+        {
+          "title": "Dress in layers",
+          "text": "Days can be warm in the sun and nights are cold. Carry a down jacket, thermals, a cap and gloves, even in summer."
+        },
+        {
+          "title": "Protect against sun and dryness",
+          "text": "UV is strong at altitude. Use sunscreen, sunglasses and lip balm, and moisturise often."
+        },
+        {
+          "title": "Carry cash and expect patchy signal",
+          "text": "ATMs are mostly in Leh and can be out of order. Mobile and internet connectivity is limited in Nubra and Pangong, and postpaid connections generally work better than prepaid ones from other states."
+        },
+        {
+          "title": "Be respectful at monasteries",
+          "text": "Remove shoes where asked, dress modestly, walk clockwise around stupas and prayer wheels, and ask before photographing monks."
+        },
+        {
+          "title": "Follow local rules near the border",
+          "text": "Photography near military areas is not allowed, and the environment is fragile, so carry a reusable bottle and take rubbish with you."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa to visit Ladakh, but every traveller must carry a valid original government photo ID such as Aadhaar, passport or driving licence. Some areas, including Nubra Valley and Pangong Tso, need area permits or registration, and an environment fee and other local charges apply. We arrange permits and confirm the current rules at booking.",
+        "health": "Altitude sickness can affect anyone, whatever their fitness. Symptoms include headache, nausea, breathlessness and poor sleep. Ascend gradually, rest on day 1, drink plenty of water, avoid alcohol and smoking, and tell your guide at once if you feel unwell. Travellers with heart, lung or blood-pressure conditions, pregnant women, and families with young children or senior parents should consult a doctor before booking, and should take any medicines advised by their doctor.",
+        "money": "Carry enough cash for small purchases, tips and personal expenses, as ATMs are mostly in Leh and can run out of cash or be out of order. Cards and digital payments work in larger hotels and shops in Leh, but connectivity is patchy in Nubra and Pangong."
+      },
+      "faqs": [
+        {
+          "q": "How many days do I need for Ladakh?",
+          "a": "Six to seven nights is the comfortable minimum for Leh, Nubra Valley and Pangong Tso, with a rest day at the start. A short weekend trip of three nights covers Leh, Sham Valley and monasteries only, without the high passes."
+        },
+        {
+          "q": "Why is the first day kept free?",
+          "a": "Flying into Leh takes you from low altitude to about 3,500 metres in a couple of hours. Resting on day 1 gives your body time to adjust and greatly lowers the risk of altitude sickness, so we never plan sightseeing on arrival."
+        },
+        {
+          "q": "Do I need permits for Ladakh?",
+          "a": "Indian citizens need no visa, but must carry a valid photo ID. Areas such as Nubra Valley and Pangong Tso need permits or registration, and an environment fee and other charges apply. We arrange permits and confirm the current rules at booking."
+        },
+        {
+          "q": "When is the best time to go?",
+          "a": "May to September is the main season, when the passes, camps and guesthouses are open. April and October are possible but colder, and from November to March winter makes most of the circuit unsuitable for ordinary holidays."
+        },
+        {
+          "q": "Is Ladakh suitable for children and senior parents?",
+          "a": "Many families visit, but the altitude needs care. We suggest a doctor's advice before booking, a slower itinerary with extra nights in Leh, and skipping the overnight stay at Pangong Tso if anyone is unwell or very young or elderly."
+        },
+        {
+          "q": "How do we get to Leh?",
+          "a": "Flying to Leh Airport (IXL), usually from Delhi, is the practical choice for most travellers. Road routes from Manali and Srinagar are open only in summer and are long, high-altitude journeys, so we recommend them only for experienced travellers."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "pangong-tso-lake",
+      "query": "Pangong Tso lake Ladakh India",
+      "caption": "Pangong Tso lake"
+    },
+    {
+      "slot": "khardung-la-pass",
+      "query": "Khardung La pass Ladakh India",
+      "caption": "Khardung La pass"
+    },
+    {
+      "slot": "hunder-sand-dunes",
+      "query": "Hunder sand dunes Nubra Valley Ladakh India",
+      "caption": "The Hunder dunes, Nubra Valley"
+    },
+    {
+      "slot": "diskit-monastery",
+      "query": "Diskit Monastery Maitreya Buddha Nubra Valley Ladakh",
+      "caption": "Diskit Monastery, Nubra Valley"
+    },
+    {
+      "slot": "thiksey-monastery",
+      "query": "Thiksey Monastery Leh Ladakh India",
+      "caption": "Thiksey Monastery, near Leh"
+    },
+    {
+      "slot": "hemis-monastery",
+      "query": "Hemis Monastery Ladakh India",
+      "caption": "Hemis Monastery"
+    },
+    {
+      "slot": "shanti-stupa-leh",
+      "query": "Shanti Stupa Leh Ladakh India",
+      "caption": "Shanti Stupa, Leh"
+    },
+    {
+      "slot": "leh-palace",
+      "query": "Leh Palace Leh Ladakh India",
+      "caption": "Leh Palace above the old town"
+    },
+    {
+      "slot": "alchi-monastery",
+      "query": "Alchi Monastery Sham Valley Ladakh India",
+      "caption": "Alchi Monastery, Sham Valley"
+    },
+    {
+      "slot": "indus-zanskar-sangam",
+      "query": "Indus Zanskar river confluence Sangam Nimmu Ladakh",
+      "caption": "Where the Indus and Zanskar rivers meet"
+    },
+    {
+      "slot": "zanskar-river-rafting",
+      "query": "river rafting Zanskar Indus Ladakh India",
+      "caption": "River rafting in Ladakh"
+    },
+    {
+      "slot": "ladakhi-food",
+      "query": "momos thukpa Ladakhi food Leh Ladakh",
+      "caption": "Momos and thukpa in Leh"
+    }
+  ],
+  "hero": "pangong-tso-lake",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "ladakh-classic-packages",
+      "name": "Classic Packages",
+      "description": "The classic Ladakh circuit: Leh, Khardung La, Nubra Valley and Pangong Tso, with a rest day at the start and sensible time for acclimatisation.",
+      "photo": "khardung-la-pass",
+      "packages": [
+        "ladakh-classic-leh-nubra-pangong",
+        "ladakh-leh-nubra-pangong-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "ladakh-family-holidays",
+      "name": "Family Holidays",
+      "description": "Gentler itineraries with extra nights in Leh and Nubra Valley, kept below the highest altitude, for families and senior parents.",
+      "photo": "diskit-monastery",
+      "packages": [
+        "ladakh-family-holiday-leh-nubra",
+        "ladakh-leh-sham-valley-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "ladakh-adventure-and-lakes",
+      "name": "Adventure and Lakes",
+      "description": "Rafting, camel rides, high passes and a night beside Pangong Tso for travellers who want the landscape up close.",
+      "photo": "zanskar-river-rafting",
+      "packages": [
+        "ladakh-adventure-rafting-nubra-pangong",
+        "ladakh-leh-nubra-pangong-group-trip",
+        "ladakh-classic-leh-nubra-pangong"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "ladakh-monasteries-and-culture",
+      "name": "Monasteries and Culture",
+      "description": "Thiksey, Hemis, Diskit, Alchi and Leh Palace, with time to see Ladakh's Buddhist heritage at a relaxed pace.",
+      "photo": "hemis-monastery",
+      "packages": [
+        "ladakh-leh-sham-valley-weekend-escape",
+        "ladakh-family-holiday-leh-nubra",
+        "ladakh-classic-leh-nubra-pangong"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "ladakh-couples-and-honeymoon",
+      "name": "Honeymoon and Couples",
+      "description": "Private trips for two with sunset dunes, a lakeside night at Pangong Tso and time to be together in Leh.",
+      "photo": "shanti-stupa-leh",
+      "packages": [
+        "ladakh-leh-nubra-pangong-honeymoon",
+        "ladakh-classic-leh-nubra-pangong"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "ladakh-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, a ready-made Ladakh itinerary and vegetarian and Jain meal options on request.",
+      "photo": "pangong-tso-lake",
+      "packages": [
+        "ladakh-leh-nubra-pangong-group-trip"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "ladakh-weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short, low-pass introduction to Leh, Sham Valley and its monasteries, with Friday departures and a rest day built in.",
+      "photo": "thiksey-monastery",
+      "packages": [
+        "ladakh-leh-sham-valley-weekend-escape"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "ladakh-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "A private honeymoon through Leh, Nubra Valley and Pangong Tso, with a flower welcome, a candlelight dinner and a couples spa session.",
+      "photo": "hunder-sand-dunes",
+      "packages": [
+        "ladakh-leh-nubra-pangong-honeymoon"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "ladakh-leh-nubra-pangong-group-trip",
+      "title": "Leh, Nubra Valley and Pangong Tso Group Trip",
+      "nights": 6,
+      "summary": "Seven days in Ladakh with a rest day in Leh, Sham Valley, Khardung La, Diskit Monastery, the Hunder dunes and a night beside Pangong Tso, with a trip captain and acclimatisation built in.",
+      "overview": "This group trip covers Ladakh's best-known sights over six nights: four in Leh, one in Nubra Valley and one beside Pangong Tso. The first two days stay in and around Leh so your body can adjust to the altitude before you cross Khardung La into Nubra Valley.\n\nIn Nubra you visit Diskit Monastery and its giant Maitreya Buddha statue and walk on the Hunder sand dunes, home to double-humped Bactrian camels. A long scenic drive then takes you to Pangong Tso, and you return to Leh over Chang La, with a stop at Thiksey Monastery. The last full day takes in Hemis Monastery and Leh Palace.\n\nA trip captain travels with the group, and vegetarian and Jain meal options are available on request. Day 1 is a rest day on purpose, and we ask every guest to keep it that way.",
+      "highlights": [
+        "A rest day in Leh at the start, to acclimatise at around 3,500 metres",
+        "Sham Valley: Alchi, the Indus and Zanskar Sangam and the Magnetic Hill",
+        "Khardung La and a night in Nubra Valley",
+        "Diskit Monastery and the Hunder sand dunes at sunset",
+        "A night beside Pangong Tso, with sunrise over the lake, weather permitting",
+        "Thiksey and Hemis monasteries and Leh Palace",
+        "Trip captain with the group and vegetarian and Jain options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Leh | Rest and Acclimatisation",
+          "description": "Arrive at Leh Airport and meet your trip captain.\nTransfer to your hotel and check in.\nRest for the whole day, which is essential at around 3,500 metres.\nDrink plenty of water, eat light and avoid alcohol and smoking.\nOvernight stay in Leh."
+        },
+        {
+          "day": 2,
+          "title": "Sham Valley | Magnetic Hill | Sangam | Alchi",
+          "description": "After breakfast, drive west from Leh along the Indus valley.\nSee the Magnetic Hill, where vehicles appear to roll uphill, and visit Gurudwara Pathar Sahib.\nStop at the Sangam, where the Indus and Zanskar rivers meet, and continue to Alchi to see its ancient monastery.\nReturn to Leh in the afternoon and rest.\nOvernight stay in Leh."
+        },
+        {
+          "day": 3,
+          "title": "Leh to Nubra Valley via Khardung La | Diskit | Hunder Dunes",
+          "description": "After an early breakfast, drive north from Leh to Khardung La, at around 5,300 metres.\nStay at the pass only briefly, as the air is very thin.\nContinue down into Nubra Valley, a journey of about five to six hours with stops.\nVisit Diskit Monastery and its giant Maitreya Buddha statue.\nWalk on the Hunder sand dunes at sunset; a Bactrian camel ride is optional and paid locally.\nDinner and overnight stay at a camp or guesthouse in Nubra Valley."
+        },
+        {
+          "day": 4,
+          "title": "Nubra Valley to Pangong Tso via Shyok",
+          "description": "After breakfast, drive from Nubra Valley to Pangong Tso along the Shyok river route, about seven to eight hours with stops.\nThe road is rough in places and the scenery is remote and dramatic.\nArrive in time to see the lake change colour in the evening light.\nFacilities at the lake are basic and nights are very cold.\nDinner and overnight stay at a camp or guesthouse beside Pangong Tso, at around 4,250 metres."
+        },
+        {
+          "day": 5,
+          "title": "Pangong Tso to Leh via Chang La | Thiksey Monastery",
+          "description": "Rise early to see the lake at sunrise, weather permitting.\nAfter breakfast, drive back towards Leh over Chang La, at around 5,300 metres, a journey of about five to six hours.\nVisit Thiksey Monastery, with its large Maitreya Buddha statue, time permitting.\nCheck in at your hotel in Leh and rest.\nOvernight stay in Leh."
+        },
+        {
+          "day": 6,
+          "title": "Hemis Monastery | Leh Palace | Local Market",
+          "description": "After breakfast, drive south-east along the Indus valley to Hemis Monastery, the largest in Ladakh.\nExplore its courtyards and prayer halls.\nReturn to Leh and visit Leh Palace above the old town.\nUse the free time in the main bazaar for shawls, handicrafts and dried apricots.\nOvernight stay in Leh."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Leh",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Leh Airport for your flight home.\nMany flights from Leh leave in the morning, so please be ready for an early start."
+        }
+      ],
+      "inclusions": [
+        "4 nights in a hotel in Leh, 1 night in Nubra Valley and 1 night at Pangong Tso, all on twin sharing",
+        "Daily breakfast, and dinner at the Nubra Valley and Pangong Tso stays",
+        "Airport transfers and road travel as per itinerary, in a comfortable vehicle with an experienced local driver",
+        "Permits and registration for Nubra Valley and Pangong Tso, arranged by us",
+        "Sightseeing in Leh, Sham Valley, Nubra Valley and Pangong Tso as per itinerary",
+        "Entry tickets for the sights listed in the itinerary, where applicable",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights to and from Leh, and any other transport to and from the destination",
+        "Lunches, and dinners other than those mentioned in the itinerary",
+        "Environment fee and other government or local charges, as per the rules in force",
+        "Travel insurance",
+        "Optional activities such as the Hunder camel ride",
+        "Camera fees at monasteries and other sights",
+        "Personal expenses, laundry, tips and porterage",
+        "Extra costs caused by road closures, weather, landslides or medical needs, including oxygen",
+        "Anything not listed under inclusions",
+        "GST and other taxes as applicable"
+      ],
+      "notes": [
+        "Every traveller must carry a valid original government photo ID; we arrange the permits and confirm the current rules at booking.",
+        "Leh is at around 3,500 metres, and Day 1 is kept free for rest. Altitude sickness can affect anyone; tell your trip captain at once if you feel unwell, and the plan may be slowed or changed.",
+        "Travellers with heart, lung, blood-pressure or other health conditions, pregnant women and families with young children or senior parents should consult a doctor before booking.",
+        "Khardung La, Chang La and the Shyok route can close or slow down because of snow, landslides or washouts, so the itinerary may be altered or reordered for safety. If the Shyok route is shut, we return via Leh.",
+        "Stays in Nubra Valley and at Pangong Tso are in camps or guesthouses with basic facilities, and hot water and electricity may be limited.",
+        "Mobile and internet connectivity is limited in Nubra and at Pangong; postpaid connections generally work better than prepaid ones from other states.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon. Rates and availability are confirmed at booking.",
+        "This is a group departure of up to 20 travellers and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID (Aadhaar, passport or driving licence) and a few photocopies",
+        "Two passport-size photographs",
+        "Down jacket or heavy fleece, thermals, woollen cap, gloves and scarf",
+        "Sunglasses with UV protection, sunscreen, lip balm and a hat",
+        "Comfortable walking shoes with good grip",
+        "Any prescribed medicines, including those your doctor advises for altitude",
+        "Reusable water bottle and a power bank",
+        "Cash for personal use, as ATMs are limited outside Leh"
+      ],
+      "pickup": "Leh Airport (IXL)",
+      "drop_point": "Leh Airport (IXL)",
+      "photo": "pangong-tso-lake",
+      "gallery": [
+        "hunder-sand-dunes",
+        "diskit-monastery",
+        "khardung-la-pass",
+        "thiksey-monastery"
+      ],
+      "price": 36500,
+      "original_price": 39400,
+      "departures": {
+        "weekday": 6,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 20
+      }
+    },
+    {
+      "slug": "ladakh-leh-sham-valley-weekend-escape",
+      "title": "Ladakh Weekend Escape: Leh, Sham Valley and Monasteries",
+      "nights": 3,
+      "summary": "A four-day introduction to Ladakh with a rest day in Leh, Sham Valley, Thiksey and Hemis monasteries and sunset at Shanti Stupa, kept below the high passes so it suits a long weekend.",
+      "overview": "This long-weekend trip gives you the gentle side of Ladakh in four days. You fly into Leh and rest on the first day, then explore the Sham Valley with Alchi, the Sangam and the Magnetic Hill, and spend a day among Thiksey and Hemis monasteries, Leh Palace and Shanti Stupa.\n\nThe trip does not cross any high pass, so it is a sensible first taste of Ladakh and suits travellers who cannot take a full week. A trip captain travels with the group, and vegetarian and Jain meal options are available on request.",
+      "highlights": [
+        "A rest day in Leh to acclimatise at around 3,500 metres",
+        "Alchi, the Indus and Zanskar Sangam and the Magnetic Hill in the Sham Valley",
+        "Thiksey Monastery and the large Maitreya Buddha statue",
+        "Hemis Monastery, the largest in Ladakh",
+        "Leh Palace and sunset from Shanti Stupa",
+        "Trip captain with the group and vegetarian and Jain options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Leh | Rest and Acclimatisation",
+          "description": "Arrive at Leh Airport and meet your trip captain.\nTransfer to your hotel and check in.\nRest for the day, which is essential at around 3,500 metres.\nDrink plenty of water and avoid alcohol and smoking.\nOvernight stay in Leh."
+        },
+        {
+          "day": 2,
+          "title": "Sham Valley | Magnetic Hill | Sangam | Alchi",
+          "description": "After breakfast, drive west from Leh along the Indus valley.\nSee the Magnetic Hill, where vehicles appear to roll uphill, and visit Gurudwara Pathar Sahib.\nStop at the Sangam, where the Indus and Zanskar rivers meet, and continue to Alchi to see its ancient monastery.\nReturn to Leh in the afternoon.\nOvernight stay in Leh."
+        },
+        {
+          "day": 3,
+          "title": "Thiksey | Hemis | Leh Palace | Shanti Stupa",
+          "description": "After breakfast, drive east along the Indus valley to Thiksey Monastery and its large Maitreya Buddha statue.\nContinue to Hemis Monastery, the largest in Ladakh.\nReturn to Leh and visit Leh Palace above the old town.\nWatch the sunset from Shanti Stupa, if you feel well.\nOvernight stay in Leh."
+        },
+        {
+          "day": 4,
+          "title": "Departure from Leh",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Leh Airport for your flight home.\nMany flights from Leh leave in the morning, so no sightseeing is planned today."
+        }
+      ],
+      "inclusions": [
+        "3 nights in a hotel in Leh on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Road travel and sightseeing as per itinerary, in a comfortable vehicle with an experienced local driver",
+        "Entry tickets for the sights listed in the itinerary, where applicable",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights to and from Leh, and any other transport to and from the destination",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Environment fee and other government or local charges, as per the rules in force",
+        "Travel insurance",
+        "Camera fees at monasteries and other sights",
+        "Personal expenses, laundry, tips and porterage",
+        "Anything not listed under inclusions",
+        "GST and other taxes as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Transport to and from the destination is not included. Many Leh flights operate in the morning, so day 4 is kept free of sightseeing.",
+        "Leh is at around 3,500 metres, and Day 1 is kept free for rest. Altitude sickness can affect anyone; tell your trip captain at once if you feel unwell.",
+        "Travellers with heart, lung, blood-pressure or other health conditions, pregnant women and families with young children or senior parents should consult a doctor before booking.",
+        "Every traveller must carry a valid original government photo ID; we confirm the current local rules at booking.",
+        "Weekend departures run in the Ladakh travel season, roughly May to September. Roads can slow down or close because of weather or landslides, and the order of the programme may change for safety.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon. Rates and availability are confirmed at booking.",
+        "This is a group departure of up to 22 travellers and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID (Aadhaar, passport or driving licence) and a photocopy",
+        "Down jacket or heavy fleece, thermals, woollen cap and gloves",
+        "Sunglasses with UV protection, sunscreen, lip balm and a hat",
+        "Comfortable walking shoes with good grip",
+        "Any prescribed medicines, including those your doctor advises for altitude",
+        "Reusable water bottle and a power bank"
+      ],
+      "pickup": "Leh Airport (IXL)",
+      "drop_point": "Leh Airport (IXL)",
+      "photo": "thiksey-monastery",
+      "gallery": [
+        "shanti-stupa-leh",
+        "leh-palace",
+        "hemis-monastery",
+        "indus-zanskar-sangam"
+      ],
+      "price": 19500,
+      "original_price": 21100,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "ladakh-leh-nubra-pangong-honeymoon",
+      "title": "Ladakh Honeymoon: Leh, Hunder Dunes and a Night at Pangong Tso",
+      "nights": 6,
+      "summary": "Six nights for two across Leh, Nubra Valley and Pangong Tso by private car, with a flower welcome, a candlelight dinner, a couples spa session and an evening by the lake.",
+      "overview": "This private honeymoon follows the classic Ladakh circuit at an easy pace: four nights in Leh, one in Nubra Valley and one beside Pangong Tso. You travel by private car with your own driver, start most mornings late, and keep the first day free for rest at altitude.\n\nHighlights include Leh Palace and Shanti Stupa, the drive over Khardung La, Diskit Monastery, a walk on the Hunder dunes at sunset and an evening beside Pangong Tso, when the lake changes colour and, if the sky is clear, the stars come out. Back in Leh you have a couples spa session and time to visit Hemis Monastery.\n\nExpect a flower welcome and room decoration on arrival and a candlelight dinner in Leh, all subject to availability. Please share your wedding date at booking.",
+      "highlights": [
+        "Private car and driver throughout, with unhurried mornings",
+        "Rest day at the start to acclimatise in Leh",
+        "Leh Palace and sunset at Shanti Stupa",
+        "Khardung La, Diskit Monastery and the Hunder dunes at sunset",
+        "An evening and sunrise beside Pangong Tso, with stargazing if the sky is clear",
+        "Couples spa session and a candlelight dinner in Leh, subject to availability",
+        "Flower welcome and room decoration on arrival"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Leh | Flower Welcome and Rest",
+          "description": "Arrive at Leh Airport, where your private car and driver are waiting.\nTransfer to your hotel, where a flower welcome and room decoration are arranged, subject to availability.\nRest for the whole day, as the first day at around 3,500 metres is for acclimatising.\nHave a light dinner and an early night.\nOvernight stay in Leh."
+        },
+        {
+          "day": 2,
+          "title": "Leh Palace | Shanti Stupa | Candlelight Dinner",
+          "description": "After a late breakfast, visit Leh Palace and walk through the old town.\nSpend the afternoon at leisure in the main bazaar or a rooftop cafe.\nWatch the sunset from Shanti Stupa, if you feel well.\nEnjoy a candlelight dinner arranged in Leh, subject to availability.\nOvernight stay in Leh."
+        },
+        {
+          "day": 3,
+          "title": "Leh to Nubra Valley via Khardung La | Hunder Dunes",
+          "description": "After breakfast, drive north over Khardung La, at around 5,300 metres, stopping only briefly because the air is very thin.\nContinue into Nubra Valley and visit Diskit Monastery and its Maitreya Buddha statue.\nWalk on the Hunder sand dunes at sunset; a Bactrian camel ride is optional and paid locally.\nDinner and overnight stay at a camp or guesthouse in Nubra Valley."
+        },
+        {
+          "day": 4,
+          "title": "Nubra Valley to Pangong Tso via Shyok | Evening by the Lake",
+          "description": "After a relaxed breakfast, drive to Pangong Tso along the Shyok river route, about seven to eight hours with stops.\nCheck in at your camp or guesthouse beside the lake, at around 4,250 metres.\nWalk to the shore as the water shifts from turquoise to deep blue; this is the signature moment of the trip.\nIf the sky is clear, stay out for stargazing, dressed warmly, as nights are very cold.\nDinner and overnight stay at Pangong Tso."
+        },
+        {
+          "day": 5,
+          "title": "Pangong Tso to Leh via Chang La | Couples Spa",
+          "description": "Wake early for sunrise over the lake, weather permitting.\nAfter breakfast, drive back to Leh over Chang La, about five to six hours.\nStop at Thiksey Monastery on the way, if time permits.\nEnjoy a couples spa session in Leh in the evening, subject to availability.\nOvernight stay in Leh."
+        },
+        {
+          "day": 6,
+          "title": "Hemis Monastery | Leisure in Leh",
+          "description": "Start late, then drive to Hemis Monastery, the largest in Ladakh.\nReturn to Leh for lunch at your own cost.\nSpend the rest of the day at leisure for cafes, shopping or rest.\nOvernight stay in Leh."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Leh",
+          "description": "Enjoy a relaxed breakfast.\nCheck out of the hotel.\nYour private car takes you to Leh Airport for your flight home.\nMany flights from Leh leave in the morning, so please be ready for an early start."
+        }
+      ],
+      "inclusions": [
+        "4 nights in a hotel in Leh, 1 night in Nubra Valley and 1 night at Pangong Tso, all on twin sharing",
+        "Daily breakfast, and dinner at the Nubra Valley and Pangong Tso stays",
+        "Flower welcome and room decoration on arrival, subject to availability",
+        "One candlelight dinner in Leh, subject to availability",
+        "One couples spa session in Leh, subject to availability",
+        "Private car with an experienced local driver for transfers and sightseeing as per itinerary",
+        "Permits and registration for Nubra Valley and Pangong Tso, arranged by us",
+        "Entry tickets for the sights listed in the itinerary, where applicable",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights to and from Leh, and any other transport to and from the destination",
+        "Lunches, and dinners other than those mentioned in the itinerary",
+        "Environment fee and other government or local charges, as per the rules in force",
+        "Travel insurance",
+        "Optional activities such as the Hunder camel ride",
+        "Camera fees at monasteries and other sights",
+        "Personal expenses, laundry, tips and porterage",
+        "Extra costs caused by road closures, weather, landslides or medical needs, including oxygen",
+        "Anything not listed under inclusions",
+        "GST and other taxes as applicable"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Every traveller must carry a valid original government photo ID; we arrange the permits and confirm the current rules at booking.",
+        "Leh is at around 3,500 metres, and Day 1 is kept free for rest. Altitude sickness can affect anyone; tell your driver or our team at once if either of you feels unwell, and the plan may be slowed or changed.",
+        "Guests with heart, lung, blood-pressure or other health conditions, and pregnant women, should consult a doctor before booking.",
+        "Khardung La, Chang La and the Shyok route can close or slow down because of snow, landslides or washouts, so the itinerary may be altered for safety. If the Shyok route is shut, we return via Leh.",
+        "Stays in Nubra Valley and at Pangong Tso are in camps or guesthouses with basic facilities; hot water and electricity may be limited and connectivity is poor.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon. Rates are indicative and confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID (Aadhaar, passport or driving licence) for both travellers, with photocopies",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Two passport-size photographs each",
+        "Down jackets or heavy fleece, thermals, woollen caps and gloves",
+        "Sunglasses with UV protection, sunscreen, lip balm and a hat",
+        "Comfortable walking shoes with good grip",
+        "Any prescribed medicines, including those your doctor advises for altitude"
+      ],
+      "pickup": "Leh Airport (IXL)",
+      "drop_point": "Leh Airport (IXL)",
+      "photo": "hunder-sand-dunes",
+      "gallery": [
+        "pangong-tso-lake",
+        "shanti-stupa-leh",
+        "leh-palace"
+      ],
+      "price": 53500,
+      "original_price": 57800
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "ladakh-classic-leh-nubra-pangong",
+      "title": "Ladakh Classic: Leh, Sham Valley, Nubra Valley and Pangong Tso",
+      "nights": 7,
+      "summary": "A private eight-day Ladakh circuit with two easy days in Leh, Sham Valley, Khardung La, Diskit, the Hunder dunes, a night at Pangong Tso and Hemis Monastery.",
+      "overview": "This private classic circuit gives you time at every stage: five nights in Leh, one in Nubra Valley and one beside Pangong Tso. Two days around Leh and the Sham Valley let you acclimatise before the high passes, and a spare half-day in Leh at the end gives you room for Hemis Monastery and the market.\n\nYou cross Khardung La into Nubra Valley, visit Diskit Monastery and the Hunder dunes, and drive on to Pangong Tso. You return over Chang La, stopping at Thiksey Monastery on the way into Leh.\n\nThe trip is private, with your own vehicle and driver, and you can add days, change hotels or skip Pangong Tso if you prefer.",
+      "highlights": [
+        "Rest day and two gentle sightseeing days in Leh before the high passes",
+        "Alchi, the Sangam, Magnetic Hill and Gurudwara Pathar Sahib in the Sham Valley",
+        "Khardung La, Diskit Monastery and the Hunder dunes",
+        "A night beside Pangong Tso, with sunrise over the lake, weather permitting",
+        "Shey, Thiksey and Hemis monasteries",
+        "Private vehicle and driver throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Leh | Rest and Acclimatisation",
+          "description": "Arrive at Leh Airport, where your driver is waiting.\nTransfer to your hotel and check in.\nRest for the whole day, which is essential at around 3,500 metres.\nDrink plenty of water and avoid alcohol and smoking.\nOvernight stay in Leh."
+        },
+        {
+          "day": 2,
+          "title": "Leh Palace | Shanti Stupa | Local Market",
+          "description": "After breakfast, visit Leh Palace and walk through the old town.\nExplore the main bazaar at an easy pace.\nWatch the sunset from Shanti Stupa, if you feel well.\nOvernight stay in Leh."
+        },
+        {
+          "day": 3,
+          "title": "Sham Valley | Magnetic Hill | Sangam | Alchi",
+          "description": "After breakfast, drive west along the Indus valley.\nSee the Magnetic Hill, where vehicles appear to roll uphill, and visit Gurudwara Pathar Sahib.\nStop at the Sangam, where the Indus and Zanskar rivers meet, and continue to Alchi to see its ancient monastery.\nReturn to Leh in the afternoon.\nOvernight stay in Leh."
+        },
+        {
+          "day": 4,
+          "title": "Leh to Nubra Valley via Khardung La | Diskit | Hunder",
+          "description": "After an early breakfast, drive north to Khardung La, at around 5,300 metres, and stay only briefly.\nContinue into Nubra Valley, a journey of about five to six hours with stops.\nVisit Diskit Monastery and its giant Maitreya Buddha statue.\nWalk on the Hunder sand dunes at sunset; a Bactrian camel ride is optional and paid locally.\nDinner and overnight stay at a camp or guesthouse in Nubra Valley."
+        },
+        {
+          "day": 5,
+          "title": "Nubra Valley to Pangong Tso via Shyok",
+          "description": "Enjoy a relaxed morning and an early breakfast.\nDrive from Nubra Valley to Pangong Tso along the Shyok river route, about seven to eight hours with stops.\nArrive in time to see the lake in the evening light.\nDinner and overnight stay at a camp or guesthouse beside Pangong Tso, at around 4,250 metres."
+        },
+        {
+          "day": 6,
+          "title": "Pangong Tso to Leh via Chang La | Thiksey Monastery",
+          "description": "Rise early to see the lake at sunrise, weather permitting.\nAfter breakfast, drive back to Leh over Chang La, about five to six hours.\nVisit Shey Palace and Thiksey Monastery on the way, time permitting.\nCheck in at your hotel in Leh.\nOvernight stay in Leh."
+        },
+        {
+          "day": 7,
+          "title": "Hemis Monastery | Leisure in Leh",
+          "description": "After breakfast, drive to Hemis Monastery, the largest in Ladakh.\nReturn to Leh and spend the rest of the day at leisure.\nUse the time for shawls, handicrafts and dried apricots in the bazaar.\nOvernight stay in Leh."
+        },
+        {
+          "day": 8,
+          "title": "Departure from Leh",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Leh Airport for your flight home.\nMany flights from Leh leave in the morning, so please be ready for an early start."
+        }
+      ],
+      "inclusions": [
+        "5 nights in a hotel in Leh, 1 night in Nubra Valley and 1 night at Pangong Tso, all on twin sharing",
+        "Daily breakfast, and dinner at the Nubra Valley and Pangong Tso stays",
+        "Private vehicle with an experienced local driver for transfers and sightseeing as per itinerary",
+        "Permits and registration for Nubra Valley and Pangong Tso, arranged by us",
+        "Entry tickets for the sights listed in the itinerary, where applicable",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights to and from Leh, and any other transport to and from the destination",
+        "Lunches, and dinners other than those mentioned in the itinerary",
+        "Environment fee and other government or local charges, as per the rules in force",
+        "Travel insurance",
+        "Optional activities such as the Hunder camel ride",
+        "Camera fees at monasteries and other sights",
+        "Personal expenses, laundry, tips and porterage",
+        "Extra costs caused by road closures, weather, landslides or medical needs, including oxygen",
+        "Anything not listed under inclusions",
+        "GST and other taxes as applicable"
+      ],
+      "notes": [
+        "Every traveller must carry a valid original government photo ID; we arrange the permits and confirm the current rules at booking.",
+        "Leh is at around 3,500 metres, and Day 1 is kept free for rest. Altitude sickness can affect anyone; tell your driver or our team at once if you feel unwell, and the plan may be slowed or changed.",
+        "Travellers with heart, lung, blood-pressure or other health conditions, pregnant women and families with young children or senior parents should consult a doctor before booking.",
+        "Khardung La, Chang La and the Shyok route can close or slow down because of snow, landslides or washouts, so the itinerary may be altered or reordered for safety. If the Shyok route is shut, we return via Leh.",
+        "Stays in Nubra Valley and at Pangong Tso are in camps or guesthouses with basic facilities, and hot water and electricity may be limited.",
+        "Mobile and internet connectivity is limited in Nubra and at Pangong; postpaid connections generally work better than prepaid ones from other states.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon. Rates are indicative and confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID (Aadhaar, passport or driving licence) and a few photocopies",
+        "Two passport-size photographs",
+        "Down jacket or heavy fleece, thermals, woollen cap, gloves and scarf",
+        "Sunglasses with UV protection, sunscreen, lip balm and a hat",
+        "Comfortable walking shoes with good grip",
+        "Any prescribed medicines, including those your doctor advises for altitude",
+        "Reusable water bottle and a power bank",
+        "Cash for personal use, as ATMs are limited outside Leh"
+      ],
+      "pickup": "Leh Airport (IXL)",
+      "drop_point": "Leh Airport (IXL)",
+      "photo": "khardung-la-pass",
+      "gallery": [
+        "pangong-tso-lake",
+        "diskit-monastery",
+        "alchi-monastery",
+        "hemis-monastery"
+      ],
+      "price": 42500,
+      "original_price": 45900
+    },
+    {
+      "slug": "ladakh-family-holiday-leh-nubra",
+      "title": "Ladakh Family Holiday: Leh, Monasteries and Nubra Valley",
+      "nights": 5,
+      "summary": "A gentler six-day Ladakh holiday for families, with three nights in Leh, a night in Nubra Valley and no stay at Pangong Tso, so the altitude is easier on children and senior parents.",
+      "overview": "This private family holiday keeps the pace slow and the sleeping altitude lower. You spend three nights in Leh, visiting Leh Palace, Shanti Stupa, Shey, Thiksey and Hemis, then cross Khardung La for one night in Nubra Valley, with Diskit Monastery and the Hunder dunes, where children often enjoy the camels.\n\nPangong Tso is not included because the overnight stay is at around 4,250 metres and the drive is long. If everyone is fit and your doctor agrees, we can add it as an extra.\n\nThe trip is private, with your own vehicle and driver, and the plan can be adjusted to suit children and senior parents.",
+      "highlights": [
+        "Three nights in Leh to settle in before the high pass",
+        "Leh Palace and sunset at Shanti Stupa",
+        "Shey, Thiksey and Hemis monasteries",
+        "Khardung La and a night in Nubra Valley",
+        "Diskit Monastery and the Hunder dunes, with an optional camel ride",
+        "No overnight stay at Pangong Tso, to keep the altitude gentler"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Leh | Rest and Acclimatisation",
+          "description": "Arrive at Leh Airport, where your driver is waiting.\nTransfer to your hotel and check in.\nRest for the whole day, which is essential at around 3,500 metres.\nDrink plenty of water, and keep children and senior parents resting too.\nOvernight stay in Leh."
+        },
+        {
+          "day": 2,
+          "title": "Leh Palace | Shanti Stupa | Local Market",
+          "description": "After a late breakfast, visit Leh Palace and walk through the old town.\nExplore the main bazaar at an easy pace.\nWatch the sunset from Shanti Stupa, if everyone feels well.\nOvernight stay in Leh."
+        },
+        {
+          "day": 3,
+          "title": "Shey | Thiksey | Hemis",
+          "description": "After breakfast, drive east along the Indus valley to Shey Palace and Thiksey Monastery.\nSee the large Maitreya Buddha statue at Thiksey.\nContinue to Hemis Monastery, the largest in Ladakh.\nReturn to Leh in the afternoon.\nOvernight stay in Leh."
+        },
+        {
+          "day": 4,
+          "title": "Leh to Nubra Valley via Khardung La | Diskit | Hunder",
+          "description": "After an early breakfast, drive north to Khardung La, at around 5,300 metres, and stay only briefly.\nContinue into Nubra Valley, a journey of about five to six hours with stops.\nVisit Diskit Monastery and its giant Maitreya Buddha statue.\nWalk on the Hunder sand dunes at sunset; a Bactrian camel ride is optional and paid locally.\nDinner and overnight stay at a camp or guesthouse in Nubra Valley."
+        },
+        {
+          "day": 5,
+          "title": "Nubra Valley to Leh via Khardung La",
+          "description": "Enjoy a relaxed morning in Nubra Valley.\nAfter breakfast, drive back to Leh over Khardung La, about five to six hours.\nCheck in at your hotel in Leh.\nUse the evening for the bazaar or a rooftop cafe.\nOvernight stay in Leh."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Leh",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Leh Airport for your flight home.\nMany flights from Leh leave in the morning, so please be ready for an early start."
+        }
+      ],
+      "inclusions": [
+        "4 nights in a hotel in Leh and 1 night in Nubra Valley, all on twin or family room sharing",
+        "Daily breakfast, and dinner at the Nubra Valley stay",
+        "Private vehicle with an experienced local driver for transfers and sightseeing as per itinerary",
+        "Permits and registration for Nubra Valley, arranged by us",
+        "Entry tickets for the sights listed in the itinerary, where applicable",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights to and from Leh, and any other transport to and from the destination",
+        "Lunches, and dinners other than those mentioned in the itinerary",
+        "Environment fee and other government or local charges, as per the rules in force",
+        "Travel insurance",
+        "Optional activities such as the Hunder camel ride",
+        "Camera fees at monasteries and other sights",
+        "Personal expenses, laundry, tips and porterage",
+        "Anything not listed under inclusions",
+        "GST and other taxes as applicable"
+      ],
+      "notes": [
+        "Every traveller, including children, must carry valid government photo ID; we arrange the permits and confirm the current rules at booking.",
+        "Leh is at around 3,500 metres, and Day 1 is kept free for rest. Altitude sickness can affect children, adults and seniors alike; tell your driver or our team at once if anyone feels unwell.",
+        "Please consult a doctor, and a paediatrician for young children, before booking; travellers with heart, lung or blood-pressure conditions and pregnant women should take particular care.",
+        "Khardung La can close or slow down because of snow or landslides, so the itinerary may be altered for safety.",
+        "Pangong Tso is not included to keep the sleeping altitude lower; it can be added on request if everyone is fit and a doctor agrees.",
+        "The stay in Nubra Valley is in a camp or guesthouse with basic facilities; hot water and electricity may be limited.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon. Rates are indicative and confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID for every traveller, including children, with photocopies",
+        "Warm jackets, thermals, woollen caps and gloves for everyone",
+        "Sunglasses with UV protection, sunscreen and lip balm",
+        "Comfortable walking shoes with good grip",
+        "Any prescribed medicines, including those your doctor advises for altitude",
+        "Snacks and a reusable water bottle for the long drives"
+      ],
+      "pickup": "Leh Airport (IXL)",
+      "drop_point": "Leh Airport (IXL)",
+      "photo": "diskit-monastery",
+      "gallery": [
+        "leh-palace",
+        "hunder-sand-dunes",
+        "thiksey-monastery",
+        "ladakhi-food"
+      ],
+      "price": 33500,
+      "original_price": null
+    },
+    {
+      "slug": "ladakh-adventure-rafting-nubra-pangong",
+      "title": "Ladakh Adventure: Rafting, Hunder Dunes and Pangong Tso",
+      "nights": 6,
+      "summary": "A private seven-day Ladakh trip with a rafting day on the Indus or Zanskar, Khardung La, the Hunder dunes and a night beside Pangong Tso, with two easy days first for acclimatisation.",
+      "overview": "This active version of the Ladakh circuit adds a guided river rafting day to the usual sights. After a rest day and an easy day around Leh, you raft on the Indus or Zanskar river, with the stretch chosen by the operator according to water levels, and see the Sangam and the Magnetic Hill on the way back.\n\nYou then cross Khardung La to Nubra Valley, walk on the Hunder dunes, drive on to Pangong Tso and return to Leh over Chang La. Rafting is seasonal, usually June to September, and has age and fitness limits.\n\nThis trip is quoted on request, as the price depends on group size, season and the rafting stretch.",
+      "highlights": [
+        "A rest day and an easy day in Leh before any activity",
+        "Guided river rafting on the Indus or Zanskar, in season",
+        "The Sangam, Magnetic Hill and Gurudwara Pathar Sahib",
+        "Khardung La, Diskit Monastery and the Hunder dunes",
+        "A night beside Pangong Tso, with sunrise over the lake, weather permitting",
+        "Private vehicle and driver throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Leh | Rest and Acclimatisation",
+          "description": "Arrive at Leh Airport, where your driver is waiting.\nTransfer to your hotel and check in.\nRest for the whole day, which is essential at around 3,500 metres.\nDrink plenty of water and avoid alcohol and smoking.\nOvernight stay in Leh."
+        },
+        {
+          "day": 2,
+          "title": "Leh Palace | Shanti Stupa | Easy Day",
+          "description": "After breakfast, visit Leh Palace and walk through the old town.\nExplore the main bazaar at an easy pace.\nWatch the sunset from Shanti Stupa, if you feel well.\nOvernight stay in Leh."
+        },
+        {
+          "day": 3,
+          "title": "River Rafting | Magnetic Hill | Sangam",
+          "description": "After breakfast, drive west from Leh to the river stretch chosen for the day.\nJoin a guided rafting session on the Indus or Zanskar river, with a safety briefing, helmets and life jackets.\nOn the way back, see the Magnetic Hill, where vehicles appear to roll uphill, and the Sangam, where the two rivers meet.\nVisit Gurudwara Pathar Sahib if time permits.\nOvernight stay in Leh."
+        },
+        {
+          "day": 4,
+          "title": "Leh to Nubra Valley via Khardung La | Diskit | Hunder",
+          "description": "After an early breakfast, drive north to Khardung La, at around 5,300 metres, and stay only briefly.\nContinue into Nubra Valley, a journey of about five to six hours with stops.\nVisit Diskit Monastery and its giant Maitreya Buddha statue.\nWalk on the Hunder sand dunes at sunset.\nDinner and overnight stay at a camp or guesthouse in Nubra Valley."
+        },
+        {
+          "day": 5,
+          "title": "Hunder Camel Ride | Nubra Valley to Pangong Tso via Shyok",
+          "description": "After an early breakfast, take an optional Bactrian camel ride at Hunder, paid locally.\nDrive from Nubra Valley to Pangong Tso along the Shyok river route, about seven to eight hours with stops.\nArrive in time to see the lake in the evening light.\nDinner and overnight stay at a camp or guesthouse beside Pangong Tso, at around 4,250 metres."
+        },
+        {
+          "day": 6,
+          "title": "Pangong Tso to Leh via Chang La | Thiksey Monastery",
+          "description": "Rise early to see the lake at sunrise, weather permitting.\nAfter breakfast, drive back to Leh over Chang La, about five to six hours.\nVisit Thiksey Monastery, time permitting.\nCheck in at your hotel in Leh.\nOvernight stay in Leh."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Leh",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Leh Airport for your flight home.\nMany flights from Leh leave in the morning, so please be ready for an early start."
+        }
+      ],
+      "inclusions": [
+        "4 nights in a hotel in Leh, 1 night in Nubra Valley and 1 night at Pangong Tso, all on twin sharing",
+        "Daily breakfast, and dinner at the Nubra Valley and Pangong Tso stays",
+        "Guided river rafting session, with helmet and life jacket, subject to season and water levels",
+        "Private vehicle with an experienced local driver for transfers and sightseeing as per itinerary",
+        "Permits and registration for Nubra Valley and Pangong Tso, arranged by us",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights to and from Leh, and any other transport to and from the destination",
+        "Lunches, and dinners other than those mentioned in the itinerary",
+        "Environment fee and other government or local charges, as per the rules in force",
+        "Travel insurance",
+        "Optional activities such as the Hunder camel ride",
+        "Camera fees at monasteries and other sights",
+        "Personal expenses, laundry, tips and porterage",
+        "Anything not listed under inclusions",
+        "GST and other taxes as applicable"
+      ],
+      "notes": [
+        "Every traveller must carry a valid original government photo ID; we arrange the permits and confirm the current rules at booking.",
+        "Leh is at around 3,500 metres, and Day 1 is kept free for rest. Altitude sickness can affect anyone; tell your driver or our team at once if you feel unwell. Rafting should not be attempted if you feel unwell.",
+        "Rafting is seasonal, usually June to September, and depends on water levels and weather. Age, health and fitness limits set by the operator apply.",
+        "Travellers with heart, lung, blood-pressure or other health conditions and pregnant women should consult a doctor before booking.",
+        "Khardung La, Chang La and the Shyok route can close or slow down because of snow, landslides or washouts, so the itinerary may be altered or reordered for safety. If the Shyok route is shut, we return via Leh.",
+        "Stays in Nubra Valley and at Pangong Tso are in camps or guesthouses with basic facilities; hot water and electricity may be limited and connectivity is poor.",
+        "This trip is quoted on request, as the price depends on group size, season and the rafting stretch.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon. Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID (Aadhaar, passport or driving licence) and a few photocopies",
+        "Two passport-size photographs",
+        "Down jacket or heavy fleece, thermals, woollen cap and gloves",
+        "Quick-dry clothes, a change of clothes and a towel for rafting",
+        "Sports sandals or shoes that can get wet, and comfortable walking shoes",
+        "Sunglasses with UV protection, sunscreen, lip balm and a hat",
+        "Any prescribed medicines, including those your doctor advises for altitude",
+        "Reusable water bottle and a power bank"
+      ],
+      "pickup": "Leh Airport (IXL)",
+      "drop_point": "Leh Airport (IXL)",
+      "photo": "zanskar-river-rafting",
+      "gallery": [
+        "pangong-tso-lake",
+        "hunder-sand-dunes",
+        "indus-zanskar-sangam"
+      ],
+      "price": null,
+      "original_price": null
+    }
+  ]
+}

@@ -1,0 +1,958 @@
+{
+  "destination": "himachal-pradesh",
+  "destination_record": {
+    "name": "Himachal Pradesh",
+    "region": "india",
+    "tagline": "Pine forests, snow peaks and river valleys, from colonial Shimla to adventure in Manali, Solang Valley and the Atal Tunnel.",
+    "best_time": "Mar-Jun",
+    "places": "Shimla, Kufri, Manali, Solang Valley, Atal Tunnel, Sissu, Kullu, Naggar, Kasol, Manikaran, Dharamshala, McLeod Ganj. Spiti Valley can be planned separately on request.",
+    "sort": 4,
+    "seasons": {
+      "on": {
+        "months": "Mar-Jun",
+        "places": "Shimla, Kufri, Manali, Solang Valley, Kullu, Kasol, McLeod Ganj",
+        "activities": "Pleasant weather for sightseeing, paragliding at Solang, river rafting on the Beas, walks in the Parvati valley and day trips through the Atal Tunnel to Sissu. Snow still lies at higher places in March. Rohtang Pass opens in late spring or early summer, subject to snow clearing and permit limits. May and June are the busiest and most expensive months."
+      },
+      "off": {
+        "months": "Jul-Aug",
+        "places": "Shimla, Manali, Kullu, Kasol, Dharamshala",
+        "activities": "Monsoon season, with heavy rain, landslides and road blockages on the mountain highways. Views are often hidden by cloud and river rafting is suspended. Hotel rates are lower, but journeys can be delayed, so keep your plans flexible and avoid tight onward connections."
+      },
+      "mid": {
+        "months": "Sep-Feb",
+        "places": "Manali, Solang Valley, Shimla, Kufri, Kullu, McLeod Ganj",
+        "activities": "September and October bring clear mountain views, apple orchards and the Kullu Dussehra festival. From December to February it is cold, with snow around Manali, Solang Valley, Shimla and Kufri for snow play and skiing. Some high roads close after heavy snowfall and Rohtang Pass stays shut."
+      }
+    },
+    "profile": {
+      "overview": "Himachal Pradesh is the Himalayan state that most Indian families picture when they think of the mountains: deodar and pine forests, snow peaks above the Beas and Parvati rivers, orchards, monasteries and hill towns with a colonial past. Shimla gives you the Ridge, Mall Road and the old railway, Manali and Solang Valley bring snow and adventure, Kasol has riverside cafes in the Parvati valley, and McLeod Ganj is the home of the Tibetan community in exile.\n\nIt is easy to reach from Chandigarh, Delhi and the Kullu-Manali airport, and a week is enough for a satisfying circuit. The Atal Tunnel now opens the Lahaul valley to a day trip from Manali. Tell us your dates, group size and budget, and we will build the itinerary around you.",
+      "facts": {
+        "capital": "Shimla",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Hindi, Pahari dialects, Punjabi, English in tourist areas",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "Hill climate: about 15 to 30°C in summer, near or below freezing with snow from December to February at higher places, and heavy rain in July and August",
+        "flight_time": "Fly to Chandigarh (about 1 hr from Delhi; from Chennai usually one-stop via Delhi) or Kullu-Manali airport; Delhi to Manali by overnight Volvo takes about 12 to 14 hr"
+      },
+      "reasons": [
+        {
+          "title": "Snow and mountain scenery",
+          "text": "Manali, Solang Valley and Kufri have snow in winter, and the Dhauladhar and Pir Panjal ranges frame the views for much of the year."
+        },
+        {
+          "title": "A complete hill-station circuit",
+          "text": "Shimla, Kullu, Manali and Dharamshala each have a different character, so one trip can mix heritage, adventure and quiet time."
+        },
+        {
+          "title": "Adventure for every age",
+          "text": "Paragliding, river rafting, ropeway rides and gentle valley walks suit couples, friends and families alike."
+        },
+        {
+          "title": "Easy to reach from every metro",
+          "text": "Chandigarh and Kullu-Manali have flights, and overnight Volvo buses run from Delhi, so you need only a few days of leave."
+        },
+        {
+          "title": "Culture and calm",
+          "text": "Temples, Buddhist monasteries and gurudwaras sit beside apple orchards and village homestays."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "The Ridge and Mall Road, Shimla",
+          "text": "The old summer capital of British India, with Christ Church, colonial buildings and a lively pedestrian promenade."
+        },
+        {
+          "title": "Kalka-Shimla railway",
+          "text": "A narrow-gauge mountain railway, a UNESCO World Heritage Site, winding through tunnels and bridges."
+        },
+        {
+          "title": "Hadimba Devi Temple, Manali",
+          "text": "A wooden pagoda-style temple in a cedar forest, among the best-known sights of the town."
+        },
+        {
+          "title": "Solang Valley",
+          "text": "A wide meadow valley near Manali for snow play, skiing in winter, paragliding and ropeway rides."
+        },
+        {
+          "title": "Atal Tunnel and Sissu",
+          "text": "A highway tunnel about 9 km long under the Rohtang range that opens the green Lahaul valley as a day trip from Manali."
+        },
+        {
+          "title": "Kullu Valley and Naggar",
+          "text": "The Beas river valley with the Raghunath Temple in Kullu, and Naggar's old castle and Roerich art gallery."
+        },
+        {
+          "title": "Kasol and Manikaran, Parvati valley",
+          "text": "Pine-covered riverside villages, with hot springs and a well-known gurudwara at Manikaran."
+        },
+        {
+          "title": "McLeod Ganj and Dharamshala",
+          "text": "The Tsuglagkhang temple complex, home of the Dalai Lama, with Tibetan cafes, monasteries and Bhagsu waterfall."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Paragliding at Solang Valley",
+          "text": "A tandem flight over the valley with a trained pilot, available in suitable weather."
+        },
+        {
+          "title": "Snow play and skiing",
+          "text": "From December to February, Solang Valley and the slopes around Manali and Kufri turn white."
+        },
+        {
+          "title": "Drive through the Atal Tunnel",
+          "text": "Go from the Manali side to the Lahaul valley in minutes, with views of snow peaks and the waterfall at Sissu."
+        },
+        {
+          "title": "River rafting on the Beas",
+          "text": "A seasonal ride on the rapids near Kullu, usually in spring and early summer, supervised by trained guides."
+        },
+        {
+          "title": "Tibetan culture in McLeod Ganj",
+          "text": "Visit monasteries, taste momos and browse shops selling prayer flags and handicrafts."
+        },
+        {
+          "title": "Riverside walks in the Parvati valley",
+          "text": "Easy village paths near Kasol and Chalal, with cafes and views of the Parvati river."
+        }
+      ],
+      "food": [
+        {
+          "title": "Himachali dham",
+          "text": "A festive meal served on leaf plates, with dal, rajma, madra and rice, traditionally cooked by specialist chefs."
+        },
+        {
+          "title": "Siddu",
+          "text": "A steamed wheat bread, often stuffed with poppy seeds or walnuts, eaten with ghee or dal."
+        },
+        {
+          "title": "Trout fish",
+          "text": "Fresh river trout is a speciality of the Kullu and Manali area."
+        },
+        {
+          "title": "Tibetan momos and thukpa",
+          "text": "Steamed dumplings and noodle soup, best sampled in McLeod Ganj and Manali."
+        },
+        {
+          "title": "Vegetarian and Jain meals",
+          "text": "Most hotels cook simple vegetarian food, and we can arrange Jain meals on request in the main towns."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Allow for slow mountain roads",
+          "text": "Shimla to Manali takes 7 to 8 hours and Chandigarh to Manali 8 to 9 hours, so avoid tight connections on travel days."
+        },
+        {
+          "title": "Pack layers in every season",
+          "text": "Evenings are cool even in summer, and Solang Valley and the Atal Tunnel are much colder than Manali town."
+        },
+        {
+          "title": "Respect altitude sickness",
+          "text": "Sissu and the Atal Tunnel are above 3,000 m and Rohtang Pass is near 4,000 m. Go slowly, drink water and come down if you feel unwell."
+        },
+        {
+          "title": "Watch the monsoon and winter roads",
+          "text": "Landslides in July and August and heavy snow from December can close roads, including Rohtang Pass and parts of the Lahaul side."
+        },
+        {
+          "title": "Carry some cash",
+          "text": "Mobile networks and ATMs are patchy in Kasol, Sissu and smaller villages, so keep notes for cafes and taxis."
+        },
+        {
+          "title": "Dress modestly at holy places",
+          "text": "Cover your head at gurudwaras such as Manikaran, and follow the rules at temples and Buddhist monasteries."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa for Himachal Pradesh, but every adult must carry a valid government photo ID such as an Aadhaar card, passport, driving licence or voter ID for hotel check-in. Rohtang Pass needs a vehicle permit that is issued within daily limits, and rules for other high-altitude places can change. We arrange permits and confirm the current rules at booking.",
+        "health": "No compulsory vaccinations. Manali is at about 2,050 m and Solang Valley at about 2,500 m, while Sissu and the Atal Tunnel are above 3,000 m and Rohtang Pass is close to 4,000 m. Headache, nausea or breathlessness can be signs of altitude sickness, so go slowly, drink water, avoid alcohol and descend if symptoms worsen. Roads are full of curves, so carry travel-sickness tablets and your regular medicines.",
+        "money": "Carry some cash, as ATMs and UPI networks are patchy in Kasol, Sissu and Lahaul. Cards and UPI work in Shimla, Manali and McLeod Ganj hotels, shops and larger restaurants. Keep small notes for taxis, cafes and tips."
+      },
+      "faqs": [
+        {
+          "q": "How many days do I need for Himachal Pradesh?",
+          "a": "Five to six nights cover Shimla and Manali or Manali with Kasol. Add two nights for Dharamshala and McLeod Ganj, and allow extra travel time because the roads are slow."
+        },
+        {
+          "q": "When is the best time to visit?",
+          "a": "March to June is pleasant and best for sightseeing and adventure. September to November has clear views, and December to February is for snow. July and August are monsoon months with a risk of landslides."
+        },
+        {
+          "q": "Can we see snow in Manali?",
+          "a": "Snow usually falls from December to February in Manali, Solang Valley and Kufri. In other months, the Atal Tunnel and the Lahaul side can still show snow-covered peaks."
+        },
+        {
+          "q": "Is Rohtang Pass included in your itineraries?",
+          "a": "No. Rohtang Pass opens only in summer, needs a vehicle permit within daily limits and can close at short notice, so we visit the Lahaul valley through the Atal Tunnel instead. Ask us if you want Rohtang added in season."
+        },
+        {
+          "q": "Can I include Spiti Valley?",
+          "a": "Spiti is a high-altitude trip of its own, with Kaza at around 3,800 m and roads that close with snow. It needs a longer itinerary, so tell us your dates and we will plan it separately."
+        },
+        {
+          "q": "How do we reach Himachal from Chennai?",
+          "a": "Fly to Chandigarh, usually with a stop in Delhi, then drive to Shimla or Manali. You can also fly to Delhi and take an overnight Volvo to Manali, or fly into Kullu-Manali airport."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "solang-valley-manali",
+      "query": "Solang Valley Manali Himachal Pradesh",
+      "caption": "Solang Valley, near Manali"
+    },
+    {
+      "slot": "hadimba-temple-manali",
+      "query": "Hadimba Devi Temple Manali Himachal Pradesh",
+      "caption": "Hadimba Devi Temple, Manali"
+    },
+    {
+      "slot": "atal-tunnel-lahaul",
+      "query": "Atal Tunnel Rohtang Lahaul Himachal Pradesh",
+      "caption": "The Atal Tunnel and the road to Lahaul"
+    },
+    {
+      "slot": "old-manali-village",
+      "query": "Old Manali village Himachal Pradesh",
+      "caption": "Old Manali"
+    },
+    {
+      "slot": "shimla-ridge-christ-church",
+      "query": "Christ Church The Ridge Shimla Himachal Pradesh",
+      "caption": "Christ Church on the Ridge, Shimla"
+    },
+    {
+      "slot": "kalka-shimla-toy-train",
+      "query": "Kalka Shimla toy train railway Himachal Pradesh",
+      "caption": "The Kalka-Shimla mountain railway"
+    },
+    {
+      "slot": "kullu-valley-beas-river",
+      "query": "Kullu Valley Beas River Himachal Pradesh",
+      "caption": "The Beas river in the Kullu Valley"
+    },
+    {
+      "slot": "naggar-castle-kullu",
+      "query": "Naggar Castle Kullu Himachal Pradesh",
+      "caption": "Naggar Castle, Kullu Valley"
+    },
+    {
+      "slot": "kasol-parvati-valley",
+      "query": "Kasol Parvati Valley Himachal Pradesh",
+      "caption": "Kasol, in the Parvati valley"
+    },
+    {
+      "slot": "tsuglagkhang-mcleod-ganj",
+      "query": "Tsuglagkhang Complex McLeod Ganj Dharamshala Himachal Pradesh",
+      "caption": "Tsuglagkhang complex, McLeod Ganj"
+    },
+    {
+      "slot": "dhauladhar-range-dharamshala",
+      "query": "Dhauladhar range Triund Dharamshala Himachal Pradesh",
+      "caption": "The Dhauladhar range above Dharamshala"
+    },
+    {
+      "slot": "himachali-dham-food",
+      "query": "Himachali dham thali food Himachal Pradesh",
+      "caption": "A Himachali dham meal"
+    }
+  ],
+  "hero": "solang-valley-manali",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "himachal-pradesh-classic-packages",
+      "name": "Classic Packages",
+      "description": "Tried-and-tested Himachal circuits covering Shimla, Kullu, Manali and the Atal Tunnel, with hotels, transfers and sightseeing arranged for you.",
+      "photo": "shimla-ridge-christ-church",
+      "packages": [
+        "himachal-pradesh-shimla-kullu-manali-classic",
+        "himachal-pradesh-mcleod-ganj-manali-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "himachal-pradesh-family-holidays",
+      "name": "Family Holidays",
+      "description": "Easy-paced plans with one base for several nights, short drives and sights that children and senior parents can enjoy together.",
+      "photo": "hadimba-temple-manali",
+      "packages": [
+        "himachal-pradesh-manali-solang-family-holiday",
+        "himachal-pradesh-shimla-kullu-manali-classic"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "himachal-pradesh-adventure-and-snow",
+      "name": "Adventure and Snow",
+      "description": "Solang Valley, the Atal Tunnel, the Parvati valley and the Beas river for travellers who want paragliding, rafting, snow and fresh mountain air.",
+      "photo": "atal-tunnel-lahaul",
+      "packages": [
+        "himachal-pradesh-kasol-manali-adventure",
+        "himachal-pradesh-manali-weekend-escape",
+        "himachal-pradesh-manali-solang-family-holiday"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "himachal-pradesh-couples-and-honeymoon",
+      "name": "Honeymoon and Couples",
+      "description": "Unhurried hill-station stays for two, with private cars, a candlelight dinner and time for each other.",
+      "photo": "kullu-valley-beas-river",
+      "packages": [
+        "himachal-pradesh-shimla-manali-honeymoon"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "himachal-pradesh-hill-towns-and-valleys",
+      "name": "Hill Towns and Valleys",
+      "description": "Shimla, Manali, McLeod Ganj and the Kullu valley, with heritage, monasteries and mountain views in one trip.",
+      "photo": "tsuglagkhang-mcleod-ganj",
+      "packages": [
+        "himachal-pradesh-mcleod-ganj-manali-group-trip",
+        "himachal-pradesh-shimla-kullu-manali-classic",
+        "himachal-pradesh-shimla-manali-honeymoon"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "himachal-pradesh-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, a ready-made itinerary and vegetarian and Jain meal options on request.",
+      "photo": "dhauladhar-range-dharamshala",
+      "packages": [
+        "himachal-pradesh-mcleod-ganj-manali-group-trip"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "himachal-pradesh-weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short Manali break built around a long weekend, with Friday departures, a relaxed pace and a trip captain on every departure.",
+      "photo": "old-manali-village",
+      "packages": [
+        "himachal-pradesh-manali-weekend-escape"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "himachal-pradesh-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Mountain stays for couples, with flower welcomes, a candlelight dinner, a couples spa and a private day among the peaks.",
+      "photo": "solang-valley-manali",
+      "packages": [
+        "himachal-pradesh-shimla-manali-honeymoon"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "himachal-pradesh-mcleod-ganj-manali-group-trip",
+      "title": "McLeod Ganj, Manali and Atal Tunnel Group Trip",
+      "nights": 6,
+      "summary": "Seven days in the Himalayan foothills, from the Dalai Lama's temple in McLeod Ganj to Hadimba temple, Solang Valley and the Atal Tunnel near Manali, travelling in a small group.",
+      "overview": "This group trip links two of Himachal's best-loved hill destinations over six nights: two in McLeod Ganj and four in Manali. In McLeod Ganj you visit the Tsuglagkhang temple complex, home of the Dalai Lama, walk to Bhagsu waterfall and enjoy the Tibetan cafes. A long but scenic drive through the Kangra and Kullu valleys then takes you to Manali.\n\nIn Manali you see Hadimba Devi Temple and Old Manali, spend a day at Solang Valley and drive through the Atal Tunnel to Sissu in the Lahaul valley. A fourth day takes in Kullu and Naggar. A trip captain travels with the group, and vegetarian and Jain meal options are available on request.\n\nThe drives are long on two days, so the pace on the other days is easy, which suits families, friends and senior parents.",
+      "highlights": [
+        "Tsuglagkhang temple complex, home of the Dalai Lama, in McLeod Ganj",
+        "Bhagsu waterfall and Tibetan cafes",
+        "Scenic drive through the Kangra and Kullu valleys",
+        "Hadimba Devi Temple and Old Manali",
+        "Solang Valley, with optional adventure activities",
+        "Drive through the Atal Tunnel to Sissu in the Lahaul valley",
+        "Kullu's Raghunath Temple and Naggar Castle"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Chandigarh | Drive to McLeod Ganj",
+          "description": "Arrive at Chandigarh Airport or railway station by morning and meet your trip captain.\nDrive by road to Dharamshala and McLeod Ganj, around five to six hours with a lunch stop at your own cost.\nCheck in at your hotel and relax after the journey.\nDinner at the hotel.\nOvernight stay in McLeod Ganj."
+        },
+        {
+          "day": 2,
+          "title": "Tsuglagkhang Complex | Bhagsu Waterfall",
+          "description": "After breakfast, visit the Tsuglagkhang temple complex, the Tibetan temple beside the Dalai Lama's residence.\nWalk through McLeod Ganj for its Tibetan shops and cafes.\nContinue to the Bhagsu temple and waterfall for a short walk.\nFit travellers can take an optional walk in the hills above town, with free time for the rest.\nDinner at the hotel and overnight stay in McLeod Ganj."
+        },
+        {
+          "day": 3,
+          "title": "McLeod Ganj to Manali",
+          "description": "After an early breakfast, check out and drive towards Manali through the Kangra and Kullu valleys.\nThe journey takes around eight hours with tea and lunch stops at your own cost.\nCheck in at your hotel in Manali and rest.\nDinner at the hotel.\nOvernight stay in Manali."
+        },
+        {
+          "day": 4,
+          "title": "Hadimba Temple | Old Manali | Mall Road",
+          "description": "After breakfast, visit Hadimba Devi Temple, set in a cedar forest.\nContinue to Vashisht village for its temples and hot springs.\nWalk through Old Manali for its cafes and riverside views.\nSpend the evening on Mall Road for shopping and street food.\nDinner at the hotel and overnight stay in Manali."
+        },
+        {
+          "day": 5,
+          "title": "Solang Valley | Atal Tunnel | Sissu",
+          "description": "After breakfast, drive to Solang Valley for its meadows and mountain views, with snow in season.\nParagliding, ropeway and other activities are optional and paid locally.\nContinue through the Atal Tunnel to Sissu in the Lahaul valley.\nReturn to Manali in the evening.\nDinner at the hotel and overnight stay in Manali."
+        },
+        {
+          "day": 6,
+          "title": "Kullu | Naggar Castle | Free Evening",
+          "description": "After breakfast, drive down the Kullu valley to the Raghunath Temple in Kullu.\nContinue to Naggar to see Naggar Castle and the Nicholas Roerich Art Gallery.\nReturn to Manali for a free evening of shopping for shawls and caps.\nDinner at the hotel and overnight stay in Manali."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Manali",
+          "description": "After an early breakfast, check out of the hotel.\nDrive to Chandigarh Airport or railway station, around eight to nine hours with stops.\nBook evening flights or trains, as the road journey takes most of the day."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in McLeod Ganj on twin sharing",
+        "4 nights hotel accommodation in Manali on twin sharing",
+        "Daily breakfast and dinner at the hotel",
+        "AC vehicle for transfers and sightseeing as per itinerary, from Chandigarh to Chandigarh",
+        "Sightseeing in McLeod Ganj, Manali, Kullu and Naggar as per itinerary",
+        "Day trip through the Atal Tunnel to Sissu",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, including flights, trains and buses to Chandigarh",
+        "Lunches and any meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as paragliding, ropeway rides, rafting and ATV rides",
+        "Camera fees and monument entry tickets not listed",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Every adult traveller must carry a valid government photo ID, such as an Aadhaar card, passport, driving licence or voter ID.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group throughout.",
+        "Day 3 and day 7 involve long mountain drives of 8 to 9 hours; carry travel-sickness tablets if you need them.",
+        "Sissu and the Atal Tunnel are above 3,000 m; some travellers feel headaches or breathlessness at altitude, so go slowly and drink plenty of water.",
+        "Landslides, snow or heavy rain can block mountain roads, especially from December to February and in July and August; the plan may then be altered for safety.",
+        "Rohtang Pass is not part of this itinerary; it opens only in summer and needs a vehicle permit."
+      ],
+      "must_carry": [
+        "Government photo ID for every adult traveller",
+        "Return tickets from Chandigarh",
+        "Warm layers, a jacket and a woollen cap, even in summer",
+        "Comfortable walking shoes with good grip",
+        "Personal medicines and travel-sickness tablets",
+        "Sunscreen and sunglasses",
+        "Rain jacket or umbrella",
+        "Some cash for small purchases and local cafes"
+      ],
+      "pickup": "Chandigarh Airport or Railway Station",
+      "drop_point": "Chandigarh Airport or Railway Station",
+      "photo": "tsuglagkhang-mcleod-ganj",
+      "gallery": [
+        "dhauladhar-range-dharamshala",
+        "hadimba-temple-manali",
+        "atal-tunnel-lahaul",
+        "naggar-castle-kullu"
+      ],
+      "price": 22900,
+      "original_price": 24700,
+      "departures": {
+        "weekday": 6,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 24
+      }
+    },
+    {
+      "slug": "himachal-pradesh-manali-weekend-escape",
+      "title": "Manali Weekend Escape: Solang Valley, Atal Tunnel and Old Manali",
+      "nights": 2,
+      "summary": "A relaxed long weekend in Manali with Hadimba temple, a day at Solang Valley and the Atal Tunnel, and time in Old Manali, travelling in a small group.",
+      "overview": "This short trip fits the best of Manali into three easy days. You arrive on Friday, see Hadimba Devi Temple and Mall Road, spend Saturday at Solang Valley and drive through the Atal Tunnel to Sissu, and finish with Old Manali and Vashisht on Sunday before you head home.\n\nThe pace is gentle, with one main outing a day and time to unwind. A trip captain travels with the group, and vegetarian and Jain meal options are available on request.",
+      "highlights": [
+        "Hadimba Devi Temple, in a cedar forest",
+        "Solang Valley, with optional paragliding and ropeway rides",
+        "Drive through the Atal Tunnel to Sissu in the Lahaul valley",
+        "Old Manali cafes and Vashisht hot springs",
+        "Evening stroll on Mall Road",
+        "Trip captain with the group and vegetarian and Jain meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Manali | Hadimba Temple | Mall Road",
+          "description": "Arrive at Kullu-Manali Airport at Bhuntar or at the Manali bus stand, and meet your trip captain.\nTransfer to your hotel and check in.\nVisit Hadimba Devi Temple, set in a cedar forest.\nWalk along Mall Road in the evening.\nDinner at the hotel and overnight stay in Manali."
+        },
+        {
+          "day": 2,
+          "title": "Solang Valley | Atal Tunnel | Sissu",
+          "description": "After breakfast, drive to Solang Valley for its meadows and mountain views, with snow in season.\nParagliding, ropeway rides and other activities are optional and paid locally.\nContinue through the Atal Tunnel to Sissu in the Lahaul valley.\nReturn to Manali in the evening.\nDinner at the hotel and overnight stay in Manali."
+        },
+        {
+          "day": 3,
+          "title": "Old Manali | Vashisht | Departure",
+          "description": "After breakfast, check out and leave your bags at the hotel.\nWalk through Old Manali for its cafes and river views.\nVisit Vashisht village for its temples and hot springs.\nTransfer to Kullu-Manali Airport or the Manali bus stand for your journey home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Manali on twin sharing",
+        "Daily breakfast and dinner at the hotel",
+        "Arrival and departure transfers from Kullu-Manali Airport or the Manali bus stand",
+        "AC vehicle for sightseeing as per itinerary",
+        "Day trip to Solang Valley and through the Atal Tunnel to Sissu",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Jain meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, including flights, trains and Volvo buses",
+        "Lunches and any meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as paragliding, ropeway rides and ATV rides",
+        "Camera fees and entry tickets not listed",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Transport to and from the destination is not included. Many guests take the overnight Volvo from Delhi, which reaches Manali in the morning, and we can share meeting details.",
+        "Every adult traveller must carry a valid government photo ID, such as an Aadhaar card, passport, driving licence or voter ID.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group throughout.",
+        "Sissu and the Atal Tunnel are above 3,000 m; some travellers feel headaches or breathlessness at altitude, so go slowly.",
+        "Heavy snow, rain or landslides can block mountain roads, and the Solang and Sissu day may then be altered for safety."
+      ],
+      "must_carry": [
+        "Government photo ID for every adult traveller",
+        "Return tickets",
+        "Warm layers, a jacket and a woollen cap, even in summer",
+        "Comfortable walking shoes with good grip",
+        "Personal medicines and travel-sickness tablets",
+        "Sunscreen and sunglasses",
+        "Some cash for small purchases and local cafes"
+      ],
+      "pickup": "Kullu-Manali Airport (Bhuntar) or Manali bus stand",
+      "drop_point": "Kullu-Manali Airport (Bhuntar) or Manali bus stand",
+      "photo": "old-manali-village",
+      "gallery": [
+        "hadimba-temple-manali",
+        "solang-valley-manali",
+        "atal-tunnel-lahaul"
+      ],
+      "price": 11900,
+      "original_price": 12900,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "himachal-pradesh-shimla-manali-honeymoon",
+      "title": "Shimla and Manali Honeymoon: Pine Forests, Snow Peaks and Candlelit Evenings",
+      "nights": 5,
+      "summary": "Five unhurried nights for two in Shimla and Manali, with a flower welcome, a private day to Solang Valley and the Atal Tunnel, a couples spa session and a candlelight dinner.",
+      "overview": "This private honeymoon pairs two of Himachal's best-loved hill stations: two nights in Shimla and three in Manali. You travel by private car, start most mornings late and keep the afternoons and evenings for each other.\n\nShimla brings colonial streets, the Ridge and a drive to Kufri for mountain views. A scenic day on the road through the Kullu valley takes you to Manali, where you see Hadimba Devi Temple, then spend a private day at Solang Valley and the Atal Tunnel with a ropeway ride.\n\nExpect a flower welcome or room decoration on arrival, a couples spa session and a candlelight dinner, all subject to availability. Please tell us your wedding date at booking.",
+      "highlights": [
+        "Private car for transfers and sightseeing, with unhurried mornings",
+        "Shimla's Ridge, Mall Road and a drive to Kufri",
+        "Scenic drive through the Kullu valley to Manali",
+        "Hadimba Devi Temple and Vashisht hot springs",
+        "Private Solang Valley and Atal Tunnel day, with a ropeway ride",
+        "Couples spa session, subject to availability",
+        "Candlelight dinner and flower welcome"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Chandigarh | Drive to Shimla | Welcome",
+          "description": "Arrive at Chandigarh Airport or railway station, where your private car is waiting.\nDrive to Shimla, around three to three and a half hours.\nCheck in at your hotel, where a flower welcome and room decoration are arranged, subject to availability.\nStroll on Mall Road in the evening or simply rest.\nOvernight stay in Shimla."
+        },
+        {
+          "day": 2,
+          "title": "The Ridge | Christ Church | Kufri",
+          "description": "Enjoy a relaxed breakfast, with a late start at around 10 am.\nVisit the Ridge and Christ Church in the heart of Shimla.\nDrive to Kufri for mountain views, with an optional pony ride at your own cost.\nReturn to the hotel in the afternoon and spend the evening at leisure.\nOvernight stay in Shimla."
+        },
+        {
+          "day": 3,
+          "title": "Shimla to Manali | Kullu Valley",
+          "description": "After breakfast, check out and drive by private car through Mandi and the Kullu valley to Manali.\nThe journey takes around seven to eight hours, with stops by the Beas river.\nCheck in at your hotel in Manali and rest.\nEnjoy a quiet dinner at your own cost.\nOvernight stay in Manali."
+        },
+        {
+          "day": 4,
+          "title": "Hadimba Temple | Vashisht | Couples Spa | Candlelight Dinner",
+          "description": "After a leisurely breakfast, visit Hadimba Devi Temple, set in a cedar forest.\nContinue to Vashisht village for its hot springs and a walk through Old Manali.\nIn the afternoon, enjoy a couples spa session, subject to availability.\nIn the evening, enjoy a candlelight dinner, subject to availability.\nOvernight stay in Manali."
+        },
+        {
+          "day": 5,
+          "title": "Private Solang Valley and Atal Tunnel Day",
+          "description": "After breakfast, your private car takes you to Solang Valley for its meadows and snow views.\nTake a ropeway ride, subject to operating days and weather; tandem paragliding is optional and paid locally.\nDrive through the Atal Tunnel to Sissu in the Lahaul valley for mountain views.\nReturn to Manali and spend the evening at leisure.\nOvernight stay in Manali."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Manali",
+          "description": "Enjoy a relaxed breakfast and a last walk in the town.\nCheck out of the hotel.\nYour private car takes you to Kullu-Manali Airport, or on to Chandigarh if you leave early, for your journey home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Shimla on twin sharing, with a mountain-view room where available",
+        "3 nights hotel accommodation in Manali on twin sharing, with a mountain-view room where available",
+        "Daily breakfast at the hotel",
+        "Flower welcome and room decoration on arrival, subject to availability",
+        "One candlelight dinner in Manali, subject to availability",
+        "One couples spa session in Manali, subject to availability",
+        "Private AC car for transfers and sightseeing as per itinerary",
+        "Solang Valley ropeway ride, subject to operating days and weather",
+        "Day trip through the Atal Tunnel to Sissu",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, including flights and trains",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as tandem paragliding, pony rides and rafting",
+        "Camera fees and entry tickets not listed",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Every adult traveller must carry a valid government photo ID, such as an Aadhaar card, passport, driving licence or voter ID.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates are indicative and confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "The drive from Shimla to Manali takes 7 to 8 hours on winding mountain roads; carry travel-sickness tablets if you need them.",
+        "Heavy snow, rain or landslides can block roads, especially from December to February and in July and August; the plan may be altered for safety.",
+        "Sissu and the Atal Tunnel are above 3,000 m; some travellers feel headaches or breathlessness at altitude, so go slowly."
+      ],
+      "must_carry": [
+        "Government photo ID for every adult traveller",
+        "Return tickets",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Warm layers, a jacket and a woollen cap, even in summer",
+        "Comfortable walking shoes with good grip",
+        "Personal medicines and travel-sickness tablets",
+        "Sunscreen and sunglasses"
+      ],
+      "pickup": "Chandigarh Airport or Railway Station",
+      "drop_point": "Kullu-Manali Airport (Bhuntar) or Chandigarh, as per your flight",
+      "photo": "solang-valley-manali",
+      "gallery": [
+        "shimla-ridge-christ-church",
+        "hadimba-temple-manali",
+        "kullu-valley-beas-river",
+        "atal-tunnel-lahaul"
+      ],
+      "price": 27500,
+      "original_price": 29700
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "himachal-pradesh-shimla-kullu-manali-classic",
+      "title": "Shimla, Kullu and Manali Classic Himachal Circuit",
+      "nights": 6,
+      "summary": "Six nights across the classic Himachal circuit, from Shimla's colonial Ridge to Hadimba temple, Solang Valley, the Atal Tunnel and the Kullu valley, arranged as a private holiday.",
+      "overview": "This private holiday covers the classic Himachal circuit in six nights: two in Shimla and four in Manali. You see the Ridge, Christ Church and Kufri in Shimla, then drive through the Kullu valley to Manali.\n\nIn Manali you visit Hadimba Devi Temple and Old Manali, spend a day at Solang Valley and the Atal Tunnel, and take a day trip to Kullu and Naggar. Dates, hotels and pace can be adjusted to suit your group, so ask us for a quote.",
+      "highlights": [
+        "Shimla's Ridge, Christ Church and Mall Road",
+        "Kufri for mountain views",
+        "Scenic drive through the Kullu valley",
+        "Hadimba Devi Temple and Old Manali",
+        "Solang Valley and the drive through the Atal Tunnel to Sissu",
+        "Kullu's Raghunath Temple and Naggar Castle"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Chandigarh | Drive to Shimla",
+          "description": "Arrive at Chandigarh Airport or railway station, where your driver is waiting.\nDrive to Shimla, around three to three and a half hours.\nCheck in at your hotel and relax.\nEnjoy a stroll on Mall Road in the evening.\nOvernight stay in Shimla."
+        },
+        {
+          "day": 2,
+          "title": "The Ridge | Christ Church | Kufri",
+          "description": "After breakfast, visit the Ridge and Christ Church in Shimla.\nDrive to Kufri for mountain views, with optional pony rides at your own cost.\nReturn to Shimla for an afternoon of shopping on Mall Road.\nOvernight stay in Shimla."
+        },
+        {
+          "day": 3,
+          "title": "Shimla to Manali | Kullu Valley",
+          "description": "After breakfast, check out and drive through Mandi and the Kullu valley to Manali.\nThe journey takes around seven to eight hours, with tea and lunch stops at your own cost.\nRiver rafting on the Beas near Kullu is optional in season.\nCheck in at your hotel in Manali.\nOvernight stay in Manali."
+        },
+        {
+          "day": 4,
+          "title": "Hadimba Temple | Vashisht | Old Manali",
+          "description": "After breakfast, visit Hadimba Devi Temple, set in a cedar forest.\nContinue to Vashisht village for its temples and hot springs.\nWalk through Old Manali for its cafes and river views.\nOvernight stay in Manali."
+        },
+        {
+          "day": 5,
+          "title": "Solang Valley | Atal Tunnel | Sissu",
+          "description": "After breakfast, drive to Solang Valley for meadows and mountain views, with snow in season.\nParagliding, ropeway rides and other activities are optional and paid locally.\nContinue through the Atal Tunnel to Sissu in the Lahaul valley.\nReturn to Manali in the evening.\nOvernight stay in Manali."
+        },
+        {
+          "day": 6,
+          "title": "Kullu | Naggar Castle | Free Evening",
+          "description": "After breakfast, drive down the Kullu valley to the Raghunath Temple in Kullu.\nContinue to Naggar to see Naggar Castle and the Nicholas Roerich Art Gallery.\nReturn to Manali for a free evening of shopping.\nOvernight stay in Manali."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Manali",
+          "description": "After an early breakfast, check out of the hotel.\nDrive to Chandigarh Airport or railway station, around eight to nine hours with stops.\nBook evening flights or trains, as the road journey takes most of the day."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Shimla on twin sharing",
+        "4 nights hotel accommodation in Manali on twin sharing",
+        "Daily breakfast at the hotel",
+        "Private AC vehicle for transfers and sightseeing as per itinerary, from Chandigarh to Chandigarh",
+        "Sightseeing in Shimla, Manali, Kullu and Naggar as per itinerary",
+        "Day trip through the Atal Tunnel to Sissu",
+        "Driver for the whole trip, with local guidance from our travel experts",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, including flights, trains and buses to Chandigarh",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as paragliding, ropeway rides, rafting and pony rides",
+        "Camera fees and entry tickets not listed",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Every adult traveller must carry a valid government photo ID, such as an Aadhaar card, passport, driving licence or voter ID.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "The starting price is per person on twin sharing, and rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Day 3 and day 7 involve long mountain drives of 7 to 9 hours; carry travel-sickness tablets if you need them.",
+        "Heavy snow, rain or landslides can block roads, especially from December to February and in July and August; the plan may then be altered for safety.",
+        "Rohtang Pass is not part of this itinerary; it opens only in summer and needs a vehicle permit. Sissu and the Atal Tunnel are above 3,000 m, so go slowly."
+      ],
+      "must_carry": [
+        "Government photo ID for every adult traveller",
+        "Return tickets from Chandigarh",
+        "Warm layers, a jacket and a woollen cap, even in summer",
+        "Comfortable walking shoes with good grip",
+        "Personal medicines and travel-sickness tablets",
+        "Sunscreen and sunglasses",
+        "Some cash for small purchases"
+      ],
+      "pickup": "Chandigarh Airport or Railway Station",
+      "drop_point": "Chandigarh Airport or Railway Station",
+      "photo": "shimla-ridge-christ-church",
+      "gallery": [
+        "kalka-shimla-toy-train",
+        "hadimba-temple-manali",
+        "kullu-valley-beas-river",
+        "naggar-castle-kullu"
+      ],
+      "price": 24500,
+      "original_price": 26500
+    },
+    {
+      "slug": "himachal-pradesh-manali-solang-family-holiday",
+      "title": "Manali, Solang and Atal Tunnel Family Holiday",
+      "nights": 5,
+      "summary": "Five relaxed nights in one Manali hotel, with short day trips to Hadimba temple, Solang Valley, the Atal Tunnel and Naggar, planned for families and senior parents.",
+      "overview": "This private family holiday keeps you in one hotel in Manali for five nights, so there is no packing and unpacking. Each day has one main outing, with time to rest in the afternoon.\n\nYou visit Hadimba Devi Temple and Van Vihar, spend a day at Solang Valley, drive through the Atal Tunnel to Sissu and take a gentle day trip to Kullu and Naggar. Snow is likely from December to February.",
+      "highlights": [
+        "One hotel for all five nights, with no packing and unpacking",
+        "Hadimba Devi Temple and Van Vihar",
+        "Solang Valley, with snow play in season and ropeway rides",
+        "Atal Tunnel and Sissu in the Lahaul valley",
+        "Kullu's Raghunath Temple and Naggar Castle",
+        "Evenings on Mall Road with local snacks"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Manali | Evening at Leisure",
+          "description": "Arrive at Kullu-Manali Airport at Bhuntar or at the Manali bus stand, where your driver is waiting.\nTransfer to your hotel and check in.\nRest after the journey and enjoy a short stroll on Mall Road in the evening.\nOvernight stay in Manali."
+        },
+        {
+          "day": 2,
+          "title": "Hadimba Temple | Van Vihar | Mall Road",
+          "description": "After breakfast, visit Hadimba Devi Temple, set in a cedar forest.\nContinue to Van Vihar, a park beside the Beas river.\nVisit the Tibetan monastery in town and take a rest at the hotel.\nShop for shawls and caps on Mall Road in the evening.\nOvernight stay in Manali."
+        },
+        {
+          "day": 3,
+          "title": "Solang Valley",
+          "description": "After breakfast, drive to Solang Valley, around 14 km from Manali.\nEnjoy the meadows and views, with snow play in season.\nRopeway rides and other activities are optional and paid locally.\nReturn to the hotel in the afternoon.\nOvernight stay in Manali."
+        },
+        {
+          "day": 4,
+          "title": "Atal Tunnel | Sissu",
+          "description": "After breakfast, drive through the Atal Tunnel to Sissu in the Lahaul valley.\nSee the waterfall and the green valley views, with a short walk for those who like.\nReturn to Manali by late afternoon, as roads and weather permit.\nOvernight stay in Manali."
+        },
+        {
+          "day": 5,
+          "title": "Kullu | Naggar Castle",
+          "description": "After breakfast, drive down the Kullu valley to the Raghunath Temple in Kullu.\nContinue to Naggar to see Naggar Castle and the Nicholas Roerich Art Gallery.\nReturn to Manali for a free evening.\nOvernight stay in Manali."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Manali",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Kullu-Manali Airport at Bhuntar or the Manali bus stand for your journey home."
+        }
+      ],
+      "inclusions": [
+        "5 nights hotel accommodation in Manali on twin sharing",
+        "Daily breakfast at the hotel",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Arrival and departure transfers from Kullu-Manali Airport or the Manali bus stand",
+        "Day trips to Solang Valley, the Atal Tunnel and Sissu, and to Kullu and Naggar",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, including flights, trains and Volvo buses",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as paragliding, ropeway rides, rafting and ATV rides",
+        "Camera fees and entry tickets not listed",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Every adult traveller must carry a valid government photo ID, such as an Aadhaar card, passport, driving licence or voter ID.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "The starting price is per person on twin sharing, and rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Sissu and the Atal Tunnel are above 3,000 m; children, senior travellers and anyone with heart or breathing problems should check with a doctor and go slowly.",
+        "Heavy snow, rain or landslides can block mountain roads, especially from December to February and in July and August; the plan may then be altered for safety.",
+        "Optional adventure activities have age, weight and health limits set by the operators."
+      ],
+      "must_carry": [
+        "Government photo ID for every adult traveller",
+        "Return tickets",
+        "Warm layers, a jacket and a woollen cap, even in summer",
+        "Comfortable walking shoes with good grip",
+        "Personal medicines and travel-sickness tablets",
+        "Sunscreen and sunglasses",
+        "Snacks and water for children on long drives"
+      ],
+      "pickup": "Kullu-Manali Airport (Bhuntar) or Manali bus stand",
+      "drop_point": "Kullu-Manali Airport (Bhuntar) or Manali bus stand",
+      "photo": "hadimba-temple-manali",
+      "gallery": [
+        "solang-valley-manali",
+        "atal-tunnel-lahaul",
+        "naggar-castle-kullu",
+        "old-manali-village"
+      ],
+      "price": 18900,
+      "original_price": 20400
+    },
+    {
+      "slug": "himachal-pradesh-kasol-manali-adventure",
+      "title": "Kasol, Solang and Manali Adventure and Chill Trip",
+      "nights": 5,
+      "summary": "Five nights of river valleys and mountains, with the Parvati valley around Kasol and Manikaran, adventure at Solang Valley and a drive through the Atal Tunnel, arranged on request.",
+      "overview": "This private trip is for friends and active couples. You spend two nights in Kasol, a pine-covered village on the Parvati river, with a visit to Manikaran and an easy walk to Chalal. You then drive to Manali for three nights.\n\nIn Manali you spend a day at Solang Valley, drive through the Atal Tunnel to Sissu and keep a day free for optional river rafting on the Beas, Naggar and Old Manali. Adventure activities are optional, seasonal and paid locally, so tell us your dates and interests and we will send a quote.",
+      "highlights": [
+        "Kasol and the Parvati river valley",
+        "Manikaran gurudwara and hot springs",
+        "Easy village walk to Chalal",
+        "Solang Valley, with optional paragliding and ATV rides",
+        "Drive through the Atal Tunnel to Sissu",
+        "River rafting on the Beas near Kullu, optional and seasonal"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival at Bhuntar | Drive to Kasol",
+          "description": "Arrive at Kullu-Manali Airport at Bhuntar, where your driver is waiting.\nDrive up the Parvati valley to Kasol, around two hours.\nCheck in at your hotel or guesthouse and relax by the river.\nOvernight stay in Kasol."
+        },
+        {
+          "day": 2,
+          "title": "Manikaran | Chalal Village Walk",
+          "description": "After breakfast, drive to Manikaran to visit the gurudwara and its hot springs.\nReturn to Kasol and walk through the forest to Chalal village.\nSpend the evening at the cafes of Kasol.\nA trek to Kheerganga is possible as an optional extra, with an extra night; ask us for details.\nOvernight stay in Kasol."
+        },
+        {
+          "day": 3,
+          "title": "Kasol to Manali | Old Manali",
+          "description": "After breakfast, check out and drive to Manali, around three to four hours.\nCheck in at your hotel and rest.\nWalk through Old Manali for its cafes and river views in the evening.\nOvernight stay in Manali."
+        },
+        {
+          "day": 4,
+          "title": "Solang Valley | Atal Tunnel | Sissu",
+          "description": "After breakfast, drive to Solang Valley, with snow in season.\nParagliding, ropeway rides, zorbing and ATV rides are optional and paid locally.\nContinue through the Atal Tunnel to Sissu in the Lahaul valley.\nReturn to Manali in the evening.\nOvernight stay in Manali."
+        },
+        {
+          "day": 5,
+          "title": "Rafting on the Beas | Naggar | Hadimba Temple",
+          "description": "After breakfast, drive down the Kullu valley for optional river rafting on the Beas, in season.\nVisit Naggar Castle and the Nicholas Roerich Art Gallery.\nReturn to Manali and visit Hadimba Devi Temple.\nOvernight stay in Manali."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Manali",
+          "description": "After breakfast, check out of the hotel.\nDrive to Kullu-Manali Airport at Bhuntar for your flight home, around one and a half to two hours."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel or guesthouse accommodation in Kasol on twin sharing",
+        "3 nights hotel accommodation in Manali on twin sharing",
+        "Daily breakfast",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Arrival and departure transfers at Kullu-Manali Airport",
+        "Sightseeing in Manikaran, Naggar and Manali as per itinerary",
+        "Day trip through the Atal Tunnel to Sissu",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from the destination, including flights and Volvo buses",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as paragliding, rafting, zorbing, ATV rides and treks",
+        "Camera fees and entry tickets not listed",
+        "Travel insurance",
+        "Anything not listed under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Every adult traveller must carry a valid government photo ID, such as an Aadhaar card, passport, driving licence or voter ID.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "This is a quote-only package, and rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Adventure activities are optional, seasonal and paid locally; rafting is suspended in the monsoon, and age, weight and health limits apply.",
+        "Mobile networks and ATMs are patchy in Kasol, so carry some cash.",
+        "Heavy snow, rain or landslides can block mountain roads, especially from December to February and in July and August; the plan may then be altered for safety.",
+        "Cover your head and dress modestly at the Manikaran gurudwara. Sissu and the Atal Tunnel are above 3,000 m, so go slowly."
+      ],
+      "must_carry": [
+        "Government photo ID for every adult traveller",
+        "Return tickets",
+        "Warm layers, a jacket and a woollen cap, even in summer",
+        "Comfortable walking shoes with good grip",
+        "Personal medicines and travel-sickness tablets",
+        "Sunscreen and sunglasses",
+        "Cash for small purchases, as networks are patchy",
+        "Headscarf or cap for the gurudwara"
+      ],
+      "pickup": "Kullu-Manali Airport (Bhuntar)",
+      "drop_point": "Kullu-Manali Airport (Bhuntar)",
+      "photo": "kasol-parvati-valley",
+      "gallery": [
+        "solang-valley-manali",
+        "kullu-valley-beas-river",
+        "old-manali-village",
+        "atal-tunnel-lahaul"
+      ],
+      "price": null,
+      "original_price": null
+    }
+  ]
+}

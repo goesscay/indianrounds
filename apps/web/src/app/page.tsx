@@ -63,7 +63,8 @@ export default async function Home() {
     getTestimonials(),
     getPosts({ per_page: "3" }),
   ]);
-  const india = destinations.filter((d) => d.region === "india");
+  const india = international.filter((d) => d.region === "india");
+  const abroad = international.filter((d) => d.region !== "india");
   const featured = destinations.filter((d) => d.featured);
   const upcoming = allGroup.data
     .filter((t) => t.next_batch && t.price !== null && !(t.tags ?? []).includes("weekend"))
@@ -168,15 +169,15 @@ export default async function Home() {
       {india.length > 0 && (
         <RailSection kicker="Closer to home" lead="India" accent="Trips" blurb="Mountains, backwaters, deserts and coastlines, planned the way you like to travel." href="/destinations" cta="Explore India" label="India destinations" tone="sand">
           {india.map((d) => (
-            <PlaceCard key={d.slug} href={`/destinations/${d.slug}`} place={{ slug: d.slug, name: d.name, image_url: d.image_url, tours_count: d.tours_count ?? 0, menu_starting_price: d.starting_price }} />
+            <PlaceCard key={d.slug} href={`/destinations/${d.slug}`} place={d} />
           ))}
         </RailSection>
       )}
 
       {/* INTERNATIONAL */}
-      {international.length > 0 && (
+      {abroad.length > 0 && (
         <RailSection kicker="Around the world" lead="International" accent="Trips" blurb="From skylines and deserts to islands, Silk Road cities and safaris. Pick a country and see every package." href="/destinations" cta="All destinations" label="International destinations">
-          {international.map((d) => (
+          {abroad.map((d) => (
             <PlaceCard key={d.slug} href={`/destinations/${d.slug}`} place={d} />
           ))}
         </RailSection>

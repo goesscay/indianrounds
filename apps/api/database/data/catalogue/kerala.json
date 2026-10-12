@@ -1,0 +1,958 @@
+{
+  "destination": "kerala",
+  "destination_record": {
+    "name": "Kerala",
+    "region": "india",
+    "tagline": "Backwater houseboats, misty tea hills and palm-fringed beaches, a short flight or an overnight train from Chennai.",
+    "best_time": "Nov-Mar",
+    "places": "Kochi, Munnar, Thekkady, Alleppey backwaters, Kovalam, Varkala, Kumarakom, Wayanad",
+    "sort": 1,
+    "seasons": {
+      "on": {
+        "months": "Nov-Mar",
+        "places": "Munnar, Thekkady, Alleppey and Kumarakom backwaters, Kochi, Kovalam, Varkala, Wayanad",
+        "activities": "The best months for almost everything: dry, sunny days of roughly 25 to 32 degrees on the coast, and cooler air in the hills. Houseboat cruises, tea-estate walks, Periyar boat rides, beach days at Kovalam and Varkala and Wayanad treks are all at their best. Munnar and Thekkady can be chilly in December and January, and hotels and houseboats fill up around Christmas and New Year, so book early."
+      },
+      "off": {
+        "months": "Jun-Sep",
+        "places": "Munnar, Wayanad, Alleppey and Kumarakom backwaters, Thekkady, Kochi",
+        "activities": "The south-west monsoon brings heavy rain, green hills and full waterfalls, with lower hotel rates and a good season for Ayurvedic rejuvenation. Expect rough seas at Kovalam and Varkala, so swimming is not advised, possible landslides or slow travel on hill roads, and some forest treks and viewpoints closed. Houseboat cruising can be restricted in heavy rain. Onam falls in August or September."
+      },
+      "mid": {
+        "months": "Apr-May, Oct",
+        "places": "Munnar, Thekkady, Wayanad, Kochi, Kovalam, Varkala",
+        "activities": "April and May are hot and humid on the coast at 32 to 36 degrees, so the hill stations of Munnar and Thekkady are the better choice, with pre-monsoon thunderstorms in the evenings. October is the shoulder month, with scattered showers as the north-east monsoon sets in, lighter crowds and good rates. Plan beach and houseboat days for the mornings."
+      }
+    },
+    "profile": {
+      "overview": "Kerala is a long, green strip of India's south-west coast, and few states pack so much variety into so short a distance. In a single week you can wake to mist and tea bushes in Munnar, watch boats on Periyar Lake in Thekkady, drift through the palm-lined canals of Alleppey on a houseboat and finish with a sunset on the cliffs at Varkala or the sands of Kovalam. Kochi adds its old Fort quarter, Chinese fishing nets and Kathakali, and Wayanad offers forest, caves and waterfalls.\n\nFor Chennai travellers it is one of the easiest holidays to plan: a short direct flight or an overnight train to Kochi or Thiruvananthapuram, then a private car for the whole trip. The food is generous for vegetarians, the pace is gentle and the scenery suits couples, families with children and senior parents alike. Tell us your dates, group size and budget, and we will build the route around you.",
+      "facts": {
+        "capital": "Thiruvananthapuram (Trivandrum)",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Malayalam; English is widely understood in tourist areas, and Hindi and Tamil are understood in many places",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "Warm and humid, about 25 to 33 degrees on the coast and cooler in the hills; south-west monsoon from June to September",
+        "flight_time": "Chennai to Kochi or Thiruvananthapuram about 1 hr 15 min by air, or Ernakulam by overnight train in 10 to 12 hr. Delhi to Kochi about 3 hr 15 min."
+      },
+      "reasons": [
+        {
+          "title": "Backwaters and houseboats",
+          "text": "Stay a night on a houseboat among the canals and lakes of Alleppey and Kumarakom, with meals cooked on board."
+        },
+        {
+          "title": "Hills, tea and wildlife",
+          "text": "Munnar's tea hills and Thekkady's Periyar Tiger Reserve give cool air, green views and a boat ride among the forest."
+        },
+        {
+          "title": "Beaches and cliffs",
+          "text": "Kovalam and Varkala offer lighthouse views, palm-backed sand and sunsets from the cliff."
+        },
+        {
+          "title": "Culture and Ayurveda",
+          "text": "Kathakali, Kalaripayattu, spice gardens and traditional Ayurvedic massage are part of everyday Kerala."
+        },
+        {
+          "title": "Close to Chennai",
+          "text": "A short direct flight or an overnight train makes Kerala practical even for a long weekend."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "Alleppey backwaters",
+          "text": "A network of canals, lakes and villages best seen from a houseboat or a smaller country boat."
+        },
+        {
+          "title": "Munnar tea country",
+          "text": "Rolling tea plantations, Mattupetty Dam, Echo Point and viewpoints at about 1,500 metres."
+        },
+        {
+          "title": "Eravikulam National Park",
+          "text": "Grassy hills that are home to the Nilgiri tahr; the park closes for a few weeks each year for the calving season."
+        },
+        {
+          "title": "Periyar Tiger Reserve, Thekkady",
+          "text": "A boat ride on Periyar Lake, with a chance to see elephants, deer and birds along the shore."
+        },
+        {
+          "title": "Fort Kochi and Mattancherry",
+          "text": "Chinese fishing nets, St Francis Church, Santa Cruz Basilica, Mattancherry Palace and the spice and antique lanes of Jew Town."
+        },
+        {
+          "title": "Kumarakom and Vembanad Lake",
+          "text": "A quiet lakeside village with a bird sanctuary and some of the state's most relaxed resorts."
+        },
+        {
+          "title": "Kovalam and Varkala",
+          "text": "Kovalam's crescent beaches and lighthouse, and Varkala's red laterite cliff above the sea."
+        },
+        {
+          "title": "Wayanad",
+          "text": "Edakkal Caves, Banasura Sagar Dam, Soochipara Falls and spice-scented hills in the Western Ghats."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Overnight houseboat cruise",
+          "text": "Cruise the backwaters by day, moor for sunset and enjoy Kerala meals prepared on board."
+        },
+        {
+          "title": "Kathakali or Kalaripayattu show",
+          "text": "Watch elaborate make-up and costume or the martial art that is said to be among the oldest in India."
+        },
+        {
+          "title": "Ayurvedic massage",
+          "text": "A traditional oil massage at an authorised centre is a favourite way to unwind between sightseeing days."
+        },
+        {
+          "title": "Spice plantation walk",
+          "text": "See cardamom, pepper, cinnamon and vanilla growing, mostly around Thekkady and Wayanad."
+        },
+        {
+          "title": "Tea estate and sunrise views",
+          "text": "Walk between the tea bushes around Munnar in the cool early morning."
+        },
+        {
+          "title": "Sunset on Varkala Cliff",
+          "text": "Stroll along the cliff path and watch the sun go down over the Arabian Sea."
+        }
+      ],
+      "food": [
+        {
+          "title": "Kerala sadhya",
+          "text": "A vegetarian feast of rice and many curries served on a banana leaf, especially during Onam."
+        },
+        {
+          "title": "Appam with vegetable stew",
+          "text": "Lacy rice pancakes with a mild coconut-milk stew, a favourite breakfast."
+        },
+        {
+          "title": "Puttu and kadala curry",
+          "text": "Steamed rice and coconut cylinders with a spiced black chickpea curry."
+        },
+        {
+          "title": "Seafood and coconut dishes",
+          "text": "Fish curry, prawn roast and karimeen are specialities for those who eat non-vegetarian food."
+        },
+        {
+          "title": "Vegetarian and Jain meals",
+          "text": "Vegetarian food is easy to find, and we can request Jain meals with advance notice, though choices may be limited at some stops."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Book houseboats early for peak months",
+          "text": "December and January fill fast. Houseboats usually cruise by day and moor for the night, and air-conditioning typically runs only at night."
+        },
+        {
+          "title": "Check the weather from June to September",
+          "text": "Heavy monsoon rain can cause landslides and slow hill roads, close treks and make the sea unsafe for swimming."
+        },
+        {
+          "title": "Swim only where it is safe",
+          "text": "Currents at Kovalam and Varkala can be strong. Swim near lifeguards, follow flag signs and avoid the sea in the monsoon."
+        },
+        {
+          "title": "Pack for hills and humidity",
+          "text": "Bring light cotton for the coast and a warm layer for Munnar and Thekkady, especially from December to February."
+        },
+        {
+          "title": "Dress modestly at temples",
+          "text": "Many Kerala temples have strict dress codes, and some admit only Hindus. Ask your driver or our team before visiting."
+        },
+        {
+          "title": "Allow for slow roads",
+          "text": "Hill and coastal roads are winding and busy, so journeys take longer than the distance suggests. We plan days with that in mind."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa for Kerala. Carry a valid photo ID such as an Aadhaar card, passport, driving licence or voter ID for hotel check-in. No special permit is needed for the main tourist circuits, but protected areas such as the Periyar Tiger Reserve, Eravikulam National Park and Wayanad's wildlife sanctuaries have entry tickets and forest department rules, and some treks need permission. We arrange permits and confirm the current rules at booking.",
+        "health": "No compulsory vaccinations for travel within India. Drink bottled or filtered water, carry insect repellent and use sunscreen. In the monsoon Wayanad's forests have leeches, so wear closed shoes. Choose authorised centres for Ayurvedic treatments and tell them about any medical conditions. Carry your regular medicines.",
+        "money": "UPI and cards are widely accepted in towns, hotels and larger restaurants. Carry some cash for small shops, tea stalls, parking and tips, as ATMs are fewer in hill areas such as Munnar, Thekkady and Wayanad. Tipping drivers, houseboat crew and guides for good service is customary."
+      },
+      "faqs": [
+        {
+          "q": "How many days do I need for Kerala?",
+          "a": "Four to five nights covers Munnar, Thekkady and the backwaters at a comfortable pace. Six to seven nights lets you add Kovalam or Varkala. A long weekend works for Kochi and an Alleppey houseboat."
+        },
+        {
+          "q": "When is the best time to visit Kerala?",
+          "a": "November to March is dry and pleasant and is the main season. April and May are hot on the coast but fine in the hills. From June to September the monsoon is heavy, with lower prices, green scenery and some restrictions on travel and activities."
+        },
+        {
+          "q": "How do I reach Kerala from Chennai?",
+          "a": "There are regular direct flights from Chennai to Kochi and Thiruvananthapuram, taking about an hour and a quarter. You can also take an overnight train to Ernakulam. Flights and trains are not included in our packages, but we can help you plan them."
+        },
+        {
+          "q": "Is Kerala suitable for senior parents and young children?",
+          "a": "Yes. Most days are easy drives and boat rides. Some hill roads are winding, and a few sights such as Edakkal Caves involve steps or a climb, so tell us about any mobility needs and we will adjust the plan."
+        },
+        {
+          "q": "Can I get vegetarian or Jain food?",
+          "a": "Yes. Kerala has many vegetarian dishes, from sadhya to appam and stew. Jain meals can be requested in advance at hotels and houseboats, though the choice may be simpler in remote places."
+        },
+        {
+          "q": "Is an overnight houseboat stay worth it?",
+          "a": "For most travellers it is the highlight of the trip. You cruise through the canals by day, moor at sunset and eat on board. Houseboats do not usually cruise at night, and space is shared with the crew, so it suits couples, families and small groups."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "alleppey-houseboat",
+      "query": "Alleppey houseboat backwaters Kerala",
+      "caption": "A houseboat on the Alleppey backwaters"
+    },
+    {
+      "slot": "munnar-tea-plantations",
+      "query": "Munnar tea plantations Kerala",
+      "caption": "Tea plantations around Munnar"
+    },
+    {
+      "slot": "fort-kochi-fishing-nets",
+      "query": "Chinese fishing nets Fort Kochi Kerala",
+      "caption": "Chinese fishing nets, Fort Kochi"
+    },
+    {
+      "slot": "periyar-lake-thekkady",
+      "query": "Periyar Lake Thekkady Kerala",
+      "caption": "Periyar Lake, Thekkady"
+    },
+    {
+      "slot": "kovalam-lighthouse-beach",
+      "query": "Kovalam lighthouse beach Kerala",
+      "caption": "Lighthouse Beach, Kovalam"
+    },
+    {
+      "slot": "varkala-cliff",
+      "query": "Varkala cliff beach Kerala",
+      "caption": "The cliff and beach at Varkala"
+    },
+    {
+      "slot": "kumarakom-vembanad-lake",
+      "query": "Vembanad Lake Kumarakom Kerala",
+      "caption": "Vembanad Lake, Kumarakom"
+    },
+    {
+      "slot": "edakkal-caves-wayanad",
+      "query": "Edakkal Caves Wayanad Kerala",
+      "caption": "Edakkal Caves, Wayanad"
+    },
+    {
+      "slot": "banasura-sagar-wayanad",
+      "query": "Banasura Sagar Dam Wayanad Kerala",
+      "caption": "Banasura Sagar Dam, Wayanad"
+    },
+    {
+      "slot": "eravikulam-munnar",
+      "query": "Eravikulam National Park Munnar Kerala",
+      "caption": "Eravikulam National Park, near Munnar"
+    },
+    {
+      "slot": "kathakali-kerala",
+      "query": "Kathakali performance Kochi Kerala",
+      "caption": "A Kathakali performer"
+    },
+    {
+      "slot": "kerala-sadhya",
+      "query": "Kerala sadhya banana leaf meal",
+      "caption": "A traditional Kerala sadhya on a banana leaf"
+    }
+  ],
+  "hero": "alleppey-houseboat",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "kerala-classic-packages",
+      "name": "Classic Packages",
+      "description": "Kerala's best-loved circuit of Munnar, Thekkady, the backwaters and Kochi, with a private car and driver and hotels arranged for you.",
+      "photo": "munnar-tea-plantations",
+      "packages": [
+        "kerala-classic-munnar-thekkady-backwaters",
+        "kerala-hills-backwaters-beaches-group-trip",
+        "kerala-kochi-alleppey-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kerala-backwaters-and-beaches",
+      "name": "Backwaters and Beaches",
+      "description": "Houseboat nights on the Alleppey and Kumarakom backwaters, then sea views at Kovalam and Varkala.",
+      "photo": "alleppey-houseboat",
+      "packages": [
+        "kerala-classic-munnar-thekkady-backwaters",
+        "kerala-munnar-alleppey-varkala-honeymoon",
+        "kerala-hills-backwaters-beaches-group-trip",
+        "kerala-kochi-alleppey-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kerala-hills-and-wildlife",
+      "name": "Hills and Wildlife",
+      "description": "Tea plantations in Munnar, boat rides at Periyar and the forests and waterfalls of Wayanad.",
+      "photo": "periyar-lake-thekkady",
+      "packages": [
+        "kerala-classic-munnar-thekkady-backwaters",
+        "kerala-family-holiday-hills-and-lakeside",
+        "kerala-wayanad-wild-hills-adventure",
+        "kerala-hills-backwaters-beaches-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kerala-family-holidays",
+      "name": "Family Holidays",
+      "description": "Easy-paced trips with short driving days, a lakeside stay and activities that children and grandparents can enjoy together.",
+      "photo": "kumarakom-vembanad-lake",
+      "packages": [
+        "kerala-family-holiday-hills-and-lakeside",
+        "kerala-kochi-alleppey-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kerala-honeymoon-and-couples",
+      "name": "Honeymoon and Couples",
+      "description": "Private trips for two, with misty hill mornings, a houseboat night and a cliff-top sunset at Varkala.",
+      "photo": "varkala-cliff",
+      "packages": [
+        "kerala-munnar-alleppey-varkala-honeymoon"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "kerala-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, a ready-made itinerary and Indian meal options on request.",
+      "photo": "munnar-tea-plantations",
+      "packages": [
+        "kerala-hills-backwaters-beaches-group-trip"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "Short Kerala breaks built around a long weekend, with Friday departures and a trip captain on every trip.",
+      "photo": "fort-kochi-fishing-nets",
+      "packages": [
+        "kerala-kochi-alleppey-weekend-escape"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "kerala-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Private honeymoon holidays with flower welcomes, candlelight dinners and couples spa sessions where they fit.",
+      "photo": "varkala-cliff",
+      "packages": [
+        "kerala-munnar-alleppey-varkala-honeymoon"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "kerala-hills-backwaters-beaches-group-trip",
+      "title": "Kerala Hills, Backwaters and Beaches Group Trip",
+      "nights": 6,
+      "summary": "Seven days in a small group through Fort Kochi, Munnar's tea hills, Periyar at Thekkady, an Alleppey houseboat night and the beaches of Kovalam.",
+      "overview": "This fixed-departure group trip follows Kerala from the old port of Kochi, through the tea hills of Munnar and the forests of Thekkady, down to a night on a houseboat in Alleppey and a final stay by the sea at Kovalam. It covers the state's best-loved sights in seven days, with a trip captain to look after the group.\n\nDrives are broken up with stops at waterfalls, spice plantations and viewpoints, and every day has some free time. Vegetarian and Indian meal options are available on request.\n\nThe group departs from Kochi and ends at Thiruvananthapuram, so you avoid a long drive back and can fly home from the airport nearest to Kovalam.",
+      "highlights": [
+        "Fort Kochi's Chinese fishing nets, St Francis Church and spice lanes",
+        "Munnar's tea plantations, Eravikulam National Park, Mattupetty Dam and Echo Point",
+        "Periyar Lake boat ride and spice plantation visit at Thekkady",
+        "Overnight stay on an Alleppey houseboat, with meals on board",
+        "Beach and lighthouse views at Kovalam",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kochi | Fort Kochi Evening",
+          "description": "Arrive at Cochin International Airport or Ernakulam railhead and meet your trip captain.\nTransfer to your hotel and check in.\nIn the evening, visit Fort Kochi to see the Chinese fishing nets at sunset.\nOvernight stay in Kochi."
+        },
+        {
+          "day": 2,
+          "title": "Kochi to Munnar | Waterfalls and Tea Hills",
+          "description": "After breakfast, drive to Munnar, about four hours, with stops at roadside waterfalls such as Cheeyappara and Valara.\nCheck in to your hotel.\nSpend the evening at leisure in the cool hill air.\nOvernight stay in Munnar."
+        },
+        {
+          "day": 3,
+          "title": "Munnar Sightseeing | Eravikulam | Mattupetty",
+          "description": "After breakfast, visit Eravikulam National Park for its grassy hills and the Nilgiri tahr, if the park is open.\nWalk through a tea plantation and visit a tea museum.\nContinue to Mattupetty Dam and Echo Point for lake and hill views.\nOvernight stay in Munnar."
+        },
+        {
+          "day": 4,
+          "title": "Munnar to Thekkady | Spice Plantation",
+          "description": "After breakfast, drive to Thekkady, about four hours, through cardamom and tea country.\nVisit a spice plantation to see how pepper, cardamom and cinnamon grow.\nIn the evening, attend an optional Kalaripayattu or Kathakali show, paid locally.\nOvernight stay in Thekkady."
+        },
+        {
+          "day": 5,
+          "title": "Periyar Lake Boat Ride | Alleppey Houseboat",
+          "description": "Take a morning boat ride on Periyar Lake in the Periyar Tiger Reserve, subject to the reserve's schedule.\nDrive to Alleppey, about four hours, and board your houseboat.\nCruise the canals and Vembanad Lake in the afternoon, and enjoy dinner on board.\nOvernight stay on the houseboat. The group may be spread across more than one houseboat."
+        },
+        {
+          "day": 6,
+          "title": "Alleppey to Kovalam | Beach Evening",
+          "description": "Have breakfast on board and disembark by around 9 am.\nDrive to Kovalam, about four and a half hours, and check in to your hotel.\nSpend the rest of the day at Lighthouse Beach, with free time for a swim in the safe area or a walk.\nOvernight stay in Kovalam."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Thiruvananthapuram",
+          "description": "Enjoy breakfast and a last stroll by the sea.\nCheck out of the hotel.\nTransfer to Thiruvananthapuram airport, about 30 to 40 minutes, for your journey home."
+        }
+      ],
+      "inclusions": [
+        "1 night hotel accommodation in Kochi on twin sharing",
+        "2 nights hotel accommodation in Munnar on twin sharing",
+        "1 night hotel accommodation in Thekkady on twin sharing",
+        "1 night on an Alleppey houseboat on twin sharing, with meals on board",
+        "1 night hotel accommodation in Kovalam on twin sharing",
+        "Daily breakfast at the hotels",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Periyar Lake boat ride and spice plantation visit",
+        "Fort Kochi sightseeing and Munnar sightseeing as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Kerala",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees, optional activities and cultural shows not listed in the itinerary",
+        "Ayurvedic treatments and spa sessions unless listed",
+        "GST as applicable",
+        "Anything not listed under inclusions",
+        "Optional activities and entry fees not listed"
+      ],
+      "notes": [
+        "Carry a valid photo ID, such as an Aadhaar card, passport or driving licence, for hotel check-in.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change.",
+        "A trip captain accompanies the group throughout, and the group may be split across more than one houseboat.",
+        "Houseboats usually cruise during the day and are moored for the night; air-conditioning typically runs only at night, and boarding is around midday.",
+        "Munnar and Thekkady can be cool in the early morning and evening, especially from December to February; the sea at Kovalam can be rough, so swim only in the designated safe areas.",
+        "Some museums and monuments close on one day each week; the order of visits is arranged around this."
+      ],
+      "must_carry": [
+        "Valid photo ID such as an Aadhaar card, passport or driving licence",
+        "Flight or train tickets to and from Kerala",
+        "Light cotton clothing for the coast",
+        "A light jacket or sweater for Munnar and Thekkady",
+        "Sunscreen, hat and sunglasses",
+        "Insect repellent",
+        "Comfortable walking shoes",
+        "Umbrella or raincoat",
+        "Power bank and your regular medicines"
+      ],
+      "pickup": "Cochin International Airport (Kochi) or Ernakulam railhead",
+      "drop_point": "Thiruvananthapuram (Trivandrum) International Airport",
+      "photo": "alleppey-houseboat",
+      "gallery": [
+        "munnar-tea-plantations",
+        "kovalam-lighthouse-beach",
+        "periyar-lake-thekkady",
+        "fort-kochi-fishing-nets"
+      ],
+      "price": 34900,
+      "original_price": 37700,
+      "departures": {
+        "weekday": 0,
+        "count": 6,
+        "every_weeks": 2,
+        "capacity": 22
+      }
+    },
+    {
+      "slug": "kerala-kochi-alleppey-weekend-escape",
+      "title": "Kochi and Alleppey Houseboat Weekend Escape",
+      "nights": 2,
+      "summary": "A Friday-to-Sunday break with a night on an Alleppey houseboat and a day exploring Fort Kochi, travelling with a trip captain in a small group.",
+      "overview": "This weekend escape fits a night on the Alleppey backwaters and a day in Fort Kochi into three easy days. You land in Kochi early on Friday, drive to Alleppey for a houseboat cruise, then spend Saturday among the fishing nets, churches and spice lanes of Fort Kochi before an evening departure on Sunday.\n\nIt is short and relaxed, with one main activity each day. A trip captain travels with the group, and vegetarian and Indian meal options are available on request.",
+      "highlights": [
+        "Overnight houseboat cruise on the Alleppey backwaters",
+        "Meals on board, with sunset on the water",
+        "Fort Kochi's Chinese fishing nets and St Francis Church",
+        "Mattancherry Palace and the spice lanes of Jew Town",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kochi | Alleppey Houseboat Cruise",
+          "description": "Arrive early at Cochin International Airport or Ernakulam railhead and meet your trip captain.\nDrive to Alleppey, about two hours, and board your houseboat around midday.\nCruise the canals and Vembanad Lake, with lunch on board.\nEnjoy sunset on the water and dinner on board.\nOvernight stay on the houseboat."
+        },
+        {
+          "day": 2,
+          "title": "Backwaters to Fort Kochi",
+          "description": "Have breakfast on board and disembark by around 9 am.\nDrive to Kochi, about two hours, and check in to your hotel.\nVisit Fort Kochi: the Chinese fishing nets, St Francis Church, Mattancherry Palace and the spice lanes of Jew Town.\nSpend the evening at leisure on the waterfront, with an optional Kathakali show paid locally.\nOvernight stay in Kochi."
+        },
+        {
+          "day": 3,
+          "title": "Fort Kochi Morning | Departure",
+          "description": "Enjoy breakfast and a free morning for a walk along the waterfront, shopping for spices or a cafe stop.\nCheck out of the hotel and store your bags if needed.\nTransfer to Cochin International Airport or Ernakulam railhead for your evening journey home."
+        }
+      ],
+      "inclusions": [
+        "1 night on an Alleppey houseboat on twin sharing, with meals on board",
+        "1 night hotel accommodation in Kochi on twin sharing",
+        "Daily breakfast",
+        "Airport and railhead pickup and drop in Kochi",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Fort Kochi sightseeing as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Vegetarian and Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Transport to and from Kerala, whether flights or trains",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees, optional activities and cultural shows",
+        "GST as applicable",
+        "Anything not listed under inclusions"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Transport to and from the destination is not included, and we do not book it unless you ask.",
+        "Carry a valid photo ID, such as an Aadhaar card, passport or driving licence, for hotel check-in.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group throughout.",
+        "Houseboats usually cruise during the day and are moored for the night; air-conditioning typically runs only at night, and boarding is around midday. The group may be spread across more than one houseboat.",
+        "Some museums and monuments in Kochi close on one day each week; the order of visits is arranged around this."
+      ],
+      "must_carry": [
+        "Valid photo ID such as an Aadhaar card, passport or driving licence",
+        "Flight or train tickets to and from Kochi",
+        "Light cotton clothing",
+        "Sunscreen, hat and sunglasses",
+        "Insect repellent",
+        "Comfortable walking shoes",
+        "Umbrella or raincoat"
+      ],
+      "pickup": "Cochin International Airport (Kochi) or Ernakulam railhead",
+      "drop_point": "Cochin International Airport (Kochi) or Ernakulam railhead",
+      "photo": "fort-kochi-fishing-nets",
+      "gallery": [
+        "alleppey-houseboat",
+        "kathakali-kerala",
+        "kerala-sadhya"
+      ],
+      "price": 15900,
+      "original_price": 17200,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "kerala-munnar-alleppey-varkala-honeymoon",
+      "title": "Kerala Honeymoon: Munnar Mists, a Private Houseboat and Varkala Cliff",
+      "nights": 5,
+      "summary": "A private five-night honeymoon with misty Munnar, a night on a private Alleppey houseboat, a couples spa and a candlelight dinner above the sea at Varkala.",
+      "overview": "This private honeymoon moves from hills to water to sea over five nights. You begin in cool, misty Munnar among the tea plantations, then spend a night on a private houseboat in the Alleppey backwaters, and finish with two nights at Varkala, where the red cliff drops to the Arabian Sea.\n\nExpect a flower welcome or bed decoration on arrival, a candlelight dinner at Varkala, a couples spa session and slow mornings with a private car and driver. All honeymoon touches are subject to availability. Tell us your wedding date at booking and we will pass it to the hotels.",
+      "highlights": [
+        "Private car and driver, with unhurried mornings",
+        "Tea plantation views and Mattupetty Dam around Munnar",
+        "Overnight stay on a private Alleppey houseboat",
+        "Sunset walk along the cliff at Varkala",
+        "Couples spa session, subject to availability",
+        "Candlelight dinner and flower welcome, subject to availability"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kochi | Drive to Munnar | Flower Welcome",
+          "description": "Arrive at Cochin International Airport, where your private car is waiting.\nDrive to Munnar, about four hours, with a stop at a waterfall on the way.\nCheck in to your hotel, where a flower welcome or bed decoration is arranged, subject to availability.\nSpend a quiet evening in the cool hill air.\nOvernight stay in Munnar."
+        },
+        {
+          "day": 2,
+          "title": "Munnar Tea Hills | Mattupetty | Echo Point",
+          "description": "Enjoy a relaxed breakfast, with a late start.\nWalk among the tea plantations and stop at viewpoints over the hills.\nContinue to Mattupetty Dam and Echo Point at an easy pace.\nSpend the evening together at leisure.\nOvernight stay in Munnar."
+        },
+        {
+          "day": 3,
+          "title": "Munnar to Alleppey | Private Houseboat",
+          "description": "After an early breakfast, drive to Alleppey, about five hours.\nBoard your private houseboat, with lunch on board.\nCruise the quiet canals and Vembanad Lake in the afternoon, and watch village life drift past.\nEnjoy dinner on board as the houseboat moors for the night.\nOvernight stay on the houseboat."
+        },
+        {
+          "day": 4,
+          "title": "Backwaters to Varkala Cliff",
+          "description": "Have breakfast on board and disembark by around 9 am.\nDrive to Varkala, about three hours, and check in to your hotel.\nIn the evening, walk along the cliff path and watch the sunset over the sea.\nOvernight stay in Varkala."
+        },
+        {
+          "day": 5,
+          "title": "Varkala Beach | Couples Spa | Candlelight Dinner",
+          "description": "After a slow breakfast, spend the morning at Papanasam Beach and the Janardhana Swami Temple area, or simply relax.\nEnjoy a couples spa session in the afternoon, subject to availability.\nIn the evening, enjoy a candlelight dinner by the sea, subject to availability.\nOvernight stay in Varkala."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Thiruvananthapuram",
+          "description": "Enjoy a relaxed breakfast and a last walk by the sea.\nCheck out of the hotel.\nYour private car takes you to Thiruvananthapuram airport, about an hour, for your journey home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Munnar on twin sharing",
+        "1 night on a private Alleppey houseboat, with meals on board as per itinerary",
+        "2 nights hotel accommodation in Varkala on twin sharing, with a sea-view room where available",
+        "Daily breakfast at the hotels",
+        "Flower welcome or bed decoration on arrival, subject to availability",
+        "One candlelight dinner at Varkala, subject to availability",
+        "One couples spa session, subject to availability",
+        "Private AC vehicle with driver for transfers and sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Kerala",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees, optional activities and cultural shows not listed in the itinerary",
+        "Ayurvedic treatments and spa sessions unless listed",
+        "GST as applicable",
+        "Anything not listed under inclusions"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Carry a valid photo ID, such as an Aadhaar card, passport or driving licence, for hotel check-in.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather or operational conditions, without reducing the sights covered.",
+        "Rates are indicative and confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Houseboats usually cruise during the day and are moored for the night; air-conditioning typically runs only at night, and boarding is around midday.",
+        "From June to September rough seas make swimming at Varkala unsafe and heavy rain can slow the hill roads; we advise on the best travel months."
+      ],
+      "must_carry": [
+        "Valid photo ID such as an Aadhaar card, passport or driving licence",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Flight or train tickets to and from Kerala",
+        "Light cotton clothing and swimwear",
+        "A light jacket or sweater for Munnar",
+        "Sunscreen, hat and sunglasses",
+        "Insect repellent",
+        "Comfortable walking shoes",
+        "Power bank and your regular medicines"
+      ],
+      "pickup": "Cochin International Airport (Kochi)",
+      "drop_point": "Thiruvananthapuram (Trivandrum) International Airport",
+      "photo": "varkala-cliff",
+      "gallery": [
+        "alleppey-houseboat",
+        "munnar-tea-plantations",
+        "kovalam-lighthouse-beach"
+      ],
+      "price": 35500,
+      "original_price": 38400
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "kerala-classic-munnar-thekkady-backwaters",
+      "title": "Kerala Classic: Munnar Tea Hills, Periyar and Alleppey Houseboat",
+      "nights": 5,
+      "summary": "Five nights through Kerala's best-loved circuit: Munnar's tea hills, Periyar wildlife at Thekkady, a night on an Alleppey houseboat and Fort Kochi.",
+      "overview": "This is Kerala's classic route in five nights, arranged as a private holiday with a car and driver. You start in the cool tea hills of Munnar, move on to the spice and forest country of Thekkady and spend a night afloat on the Alleppey backwaters.\n\nThe trip ends in Fort Kochi, where you can walk among the Chinese fishing nets, old churches and spice lanes before you fly or take the train home. It suits couples, families and first-time visitors who want the main sights without rushing.",
+      "highlights": [
+        "Munnar's tea plantations, Mattupetty Dam and Echo Point",
+        "Eravikulam National Park, home of the Nilgiri tahr",
+        "Spice plantation visit and Periyar Lake boat ride at Thekkady",
+        "Overnight stay on an Alleppey houseboat, with meals on board",
+        "Fort Kochi's Chinese fishing nets, St Francis Church and Jew Town",
+        "Private AC vehicle with driver for the whole route"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kochi | Drive to Munnar",
+          "description": "Arrive at Cochin International Airport or Ernakulam railhead, where your driver meets you.\nDrive to Munnar, about four hours, with short stops at roadside waterfalls such as Cheeyappara and Valara.\nCheck in to your hotel and enjoy the cool evening air.\nOvernight stay in Munnar."
+        },
+        {
+          "day": 2,
+          "title": "Munnar Tea Gardens | Eravikulam | Mattupetty",
+          "description": "After breakfast, visit Eravikulam National Park to see its grassy hills and, with luck, the Nilgiri tahr, if the park is open.\nWalk through the tea plantations and visit a tea museum.\nContinue to Mattupetty Dam and Echo Point for lake and hill views.\nSpend the evening at leisure.\nOvernight stay in Munnar."
+        },
+        {
+          "day": 3,
+          "title": "Munnar to Thekkady | Spice Plantation",
+          "description": "After breakfast, drive to Thekkady through cardamom and tea country, about four hours.\nVisit a spice plantation to see cardamom, pepper and cinnamon growing.\nIn the evening, attend an optional Kalaripayattu or Kathakali show, paid locally.\nOvernight stay in Thekkady."
+        },
+        {
+          "day": 4,
+          "title": "Periyar Lake Boat Ride | Drive to Alleppey Houseboat",
+          "description": "Take an early boat ride on Periyar Lake in the Periyar Tiger Reserve, subject to the reserve's schedule.\nDrive to Alleppey, about four hours, and board your houseboat.\nCruise the canals and lake in the afternoon, passing village life and paddy fields.\nEnjoy dinner on board as the boat moors for the night.\nOvernight stay on the houseboat."
+        },
+        {
+          "day": 5,
+          "title": "Backwater Morning | Fort Kochi",
+          "description": "Have breakfast on board and disembark by around 9 am.\nDrive to Kochi, about two hours, and check in to your hotel.\nVisit Fort Kochi: the Chinese fishing nets, St Francis Church and the spice lanes of Jew Town.\nEnjoy a sunset walk along the waterfront.\nOvernight stay in Kochi."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Kochi",
+          "description": "Enjoy breakfast and check out of the hotel.\nTransfer to Cochin International Airport or Ernakulam railhead for your journey home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Munnar on twin sharing",
+        "1 night hotel accommodation in Thekkady on twin sharing",
+        "1 night on an Alleppey houseboat, with meals on board as per itinerary",
+        "1 night hotel accommodation in Kochi on twin sharing",
+        "Daily breakfast at the hotels",
+        "AC vehicle with driver for transfers and sightseeing as per itinerary",
+        "Periyar Lake boat ride and entry tickets listed in the itinerary",
+        "Spice plantation visit in Thekkady",
+        "Fort Kochi sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Kerala",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees, optional activities and cultural shows not listed in the itinerary",
+        "Ayurvedic treatments and spa sessions unless listed",
+        "GST as applicable",
+        "Anything not listed under inclusions"
+      ],
+      "notes": [
+        "Carry a valid photo ID, such as an Aadhaar card, passport or driving licence, for hotel check-in.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Munnar and Thekkady can be cool in the early morning and evening, especially from December to February.",
+        "Many temples in Kerala have strict dress codes, and some admit only Hindus.",
+        "Houseboats usually cruise during the day and are moored for the night; air-conditioning typically runs only at night, and boarding is around midday.",
+        "From June to September heavy rain can cause landslides and slow hill roads, rough seas and closure of some treks and viewpoints; the itinerary may be adjusted for safety."
+      ],
+      "must_carry": [
+        "Valid photo ID such as an Aadhaar card, passport or driving licence",
+        "Flight or train tickets to and from Kerala",
+        "Light cotton clothing for the coast",
+        "A light jacket or sweater for Munnar and Thekkady",
+        "Sunscreen, hat and sunglasses",
+        "Insect repellent",
+        "Comfortable walking shoes",
+        "Umbrella or raincoat",
+        "Power bank and your regular medicines"
+      ],
+      "pickup": "Cochin International Airport (Kochi) or Ernakulam railhead",
+      "drop_point": "Cochin International Airport (Kochi) or Ernakulam railhead",
+      "photo": "munnar-tea-plantations",
+      "gallery": [
+        "alleppey-houseboat",
+        "periyar-lake-thekkady",
+        "fort-kochi-fishing-nets",
+        "eravikulam-munnar"
+      ],
+      "price": 26500,
+      "original_price": 28600
+    },
+    {
+      "slug": "kerala-family-holiday-hills-and-lakeside",
+      "title": "Kerala Family Holiday: Munnar, Periyar Wildlife and Kumarakom Lake",
+      "nights": 5,
+      "summary": "An easy-paced family holiday with Munnar's tea hills, a boat ride at Periyar and two relaxed nights by Vembanad Lake in Kumarakom.",
+      "overview": "This five-night private holiday keeps the driving manageable and the days varied, which suits families with children and grandparents. You see tea hills and a viewpoint-and-dam day in Munnar, watch for wildlife from a boat on Periyar Lake and end with two nights at a lakeside resort in Kumarakom.\n\nThe Kumarakom stay replaces the overnight houseboat with a daytime backwater cruise, so everyone sleeps on land and children can run about. Tell us your children's ages and we will suit the pace.",
+      "highlights": [
+        "Tea plantations, Mattupetty Dam and Echo Point around Munnar",
+        "Eravikulam National Park with its Nilgiri tahr, if open",
+        "Periyar Lake boat ride and a spice plantation visit",
+        "Two nights at a lakeside stay in Kumarakom",
+        "Kumarakom Bird Sanctuary and a daytime backwater cruise",
+        "Private AC vehicle, with short driving days where possible"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kochi | Drive to Munnar",
+          "description": "Arrive at Cochin International Airport or Ernakulam railhead, where your driver meets you.\nDrive to Munnar, about four hours, with a break at a roadside waterfall.\nCheck in and rest, with the evening free.\nOvernight stay in Munnar."
+        },
+        {
+          "day": 2,
+          "title": "Munnar Tea Hills | Mattupetty Dam | Echo Point",
+          "description": "After breakfast, visit Eravikulam National Park, subject to it being open.\nWalk through a tea plantation and see how tea is made at a tea museum.\nStop at Mattupetty Dam and Echo Point, with optional boating paid locally.\nFree evening.\nOvernight stay in Munnar."
+        },
+        {
+          "day": 3,
+          "title": "Munnar to Thekkady | Spice Plantation",
+          "description": "After breakfast, drive to Thekkady, about four hours.\nVisit a spice plantation and learn how pepper, cardamom and vanilla grow.\nSpend the evening at leisure, or attend an optional cultural show paid locally.\nOvernight stay in Thekkady."
+        },
+        {
+          "day": 4,
+          "title": "Periyar Lake Boat Ride | Drive to Kumarakom",
+          "description": "Take a boat ride on Periyar Lake in the Periyar Tiger Reserve, subject to the reserve's schedule.\nDrive to Kumarakom, about four hours, and check in to your lakeside stay.\nRelax by the water for the rest of the day.\nOvernight stay in Kumarakom."
+        },
+        {
+          "day": 5,
+          "title": "Kumarakom Bird Sanctuary | Backwater Cruise",
+          "description": "After breakfast, visit Kumarakom Bird Sanctuary for a gentle walk among the birds and trees.\nEnjoy a daytime cruise on Vembanad Lake and the nearby canals.\nSpend the evening at leisure at the resort.\nOvernight stay in Kumarakom."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Kochi",
+          "description": "After breakfast, check out of the hotel.\nDrive to Cochin International Airport or Ernakulam railhead, about two and a half hours, for your journey home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Munnar on twin sharing",
+        "1 night hotel accommodation in Thekkady on twin sharing",
+        "2 nights lakeside stay in Kumarakom on twin sharing",
+        "Daily breakfast at the hotels",
+        "AC vehicle with driver for transfers and sightseeing as per itinerary",
+        "Periyar Lake boat ride and entry tickets listed in the itinerary",
+        "Spice plantation visit in Thekkady",
+        "Kumarakom Bird Sanctuary visit and a daytime backwater cruise",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Kerala",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees, optional activities and cultural shows not listed in the itinerary",
+        "Ayurvedic treatments and spa sessions unless listed",
+        "GST as applicable",
+        "Anything not listed under inclusions"
+      ],
+      "notes": [
+        "Carry a valid photo ID, such as an Aadhaar card, passport or driving licence, for hotel check-in.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Munnar and Thekkady can be cool in the early morning and evening, especially from December to February.",
+        "Many temples in Kerala have strict dress codes, and some admit only Hindus.",
+        "From June to September heavy rain can cause landslides and slow hill roads, rough seas and closure of some treks and viewpoints; the itinerary may be adjusted for safety.",
+        "Family rooms, extra beds and child rates are confirmed at booking; please share children's ages when you enquire."
+      ],
+      "must_carry": [
+        "Valid photo ID such as an Aadhaar card, passport or driving licence",
+        "Flight or train tickets to and from Kerala",
+        "Light cotton clothing for the coast",
+        "A light jacket or sweater for Munnar and Thekkady",
+        "Sunscreen, hat and sunglasses",
+        "Insect repellent",
+        "Comfortable walking shoes",
+        "Umbrella or raincoat",
+        "Power bank and your regular medicines"
+      ],
+      "pickup": "Cochin International Airport (Kochi) or Ernakulam railhead",
+      "drop_point": "Cochin International Airport (Kochi) or Ernakulam railhead",
+      "photo": "kumarakom-vembanad-lake",
+      "gallery": [
+        "munnar-tea-plantations",
+        "periyar-lake-thekkady",
+        "eravikulam-munnar",
+        "kerala-sadhya"
+      ],
+      "price": 29500,
+      "original_price": null
+    },
+    {
+      "slug": "kerala-wayanad-wild-hills-adventure",
+      "title": "Wayanad Wilds: Caves, Waterfalls and Forest Trails",
+      "nights": 4,
+      "summary": "Four nights in the Western Ghats of Wayanad, with Edakkal Caves, Banasura Sagar, waterfalls, spice gardens and optional forest and wildlife activities.",
+      "overview": "Wayanad is Kerala's quieter hill district, with forests, tea and spice estates, lakes and waterfalls. This four-night private trip bases you in the district and visits Banasura Sagar Dam, Pookode Lake, the prehistoric carvings at Edakkal Caves and the Soochipara Falls, with room for easy walks.\n\nIt suits friends, young travellers and families who enjoy being outdoors. Some of the activities involve steps or a short climb, and forest trails and safaris are subject to forest department rules and the weather. We quote this trip on request, so tell us your dates and group size.",
+      "highlights": [
+        "Edakkal Caves and their ancient rock carvings, reached by a stepped climb",
+        "Banasura Sagar Dam and its island-dotted reservoir",
+        "Soochipara Falls, with a walk down to the pool when conditions allow",
+        "Pookode Lake and spice and tea estate views",
+        "Optional wildlife safari or forest trek, subject to forest department rules",
+        "Private AC vehicle with driver throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kozhikode | Drive to Wayanad",
+          "description": "Arrive at Calicut International Airport or Kozhikode railhead, where your driver meets you.\nDrive up to Wayanad, about three hours, through the winding Thamarassery ghat road.\nCheck in to your hotel or resort and relax.\nOvernight stay in Wayanad."
+        },
+        {
+          "day": 2,
+          "title": "Pookode Lake | Banasura Sagar Dam",
+          "description": "After breakfast, visit Pookode Lake, a freshwater lake set in forest.\nContinue to Banasura Sagar Dam for views of the reservoir and hills.\nSpend the evening at leisure or take a short walk through a spice and coffee estate.\nOvernight stay in Wayanad."
+        },
+        {
+          "day": 3,
+          "title": "Edakkal Caves | Spice Gardens",
+          "description": "Drive to Edakkal Caves and climb the steps to see the ancient carvings on the rock walls.\nVisit a spice garden to see pepper, cardamom and coffee growing.\nEnjoy the afternoon at leisure, or add a forest safari, paid locally and subject to availability.\nOvernight stay in Wayanad."
+        },
+        {
+          "day": 4,
+          "title": "Soochipara Falls | Forest Trail",
+          "description": "After breakfast, drive to Soochipara Falls and walk down to view the waterfall, subject to the water level.\nTake an easy forest trail with a local guide where permitted.\nReturn to the hotel for a free evening.\nOvernight stay in Wayanad."
+        },
+        {
+          "day": 5,
+          "title": "Departure from Kozhikode",
+          "description": "Enjoy breakfast and check out of the hotel.\nDrive to Calicut International Airport or Kozhikode railhead, about three hours, for your journey home."
+        }
+      ],
+      "inclusions": [
+        "4 nights hotel or resort accommodation in Wayanad on twin sharing",
+        "Daily breakfast at the hotel",
+        "AC vehicle with driver for transfers and sightseeing as per itinerary",
+        "Pookode Lake and Banasura Sagar Dam visits as per itinerary",
+        "Edakkal Caves visit as per itinerary",
+        "Spice garden visit",
+        "Soochipara Falls and easy forest trail with a local guide where permitted",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Kerala",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees, optional activities and cultural shows not listed in the itinerary",
+        "Ayurvedic treatments and spa sessions unless listed",
+        "GST as applicable",
+        "Anything not listed under inclusions",
+        "Wildlife safari, trekking and other adventure activities unless listed"
+      ],
+      "notes": [
+        "Carry a valid photo ID, such as an Aadhaar card, passport or driving licence, for hotel check-in.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Edakkal Caves involve a climb of many steps and are not suitable for guests with knee, heart or mobility issues.",
+        "Safaris, treks and forest trails are subject to forest department rules, permits and weather, and some close in the monsoon.",
+        "Wayanad has leeches and heavy rain from June to September, and some attractions may close or roads may be restricted; we confirm what is open at booking.",
+        "The drive from Kozhikode up the ghat road has many hairpin bends; guests prone to motion sickness should carry medicine."
+      ],
+      "must_carry": [
+        "Valid photo ID such as an Aadhaar card, passport or driving licence",
+        "Flight or train tickets to and from Kerala",
+        "Closed walking shoes with good grip",
+        "Light cotton clothing and a warm layer for the evenings",
+        "Sunscreen, hat and sunglasses",
+        "Insect repellent and leech socks in the monsoon",
+        "Umbrella or raincoat",
+        "Power bank and your regular medicines"
+      ],
+      "pickup": "Calicut International Airport (Kozhikode) or Kozhikode railhead",
+      "drop_point": "Calicut International Airport (Kozhikode) or Kozhikode railhead",
+      "photo": "edakkal-caves-wayanad",
+      "gallery": [
+        "banasura-sagar-wayanad",
+        "munnar-tea-plantations",
+        "periyar-lake-thekkady"
+      ],
+      "price": null,
+      "original_price": null
+    }
+  ]
+}

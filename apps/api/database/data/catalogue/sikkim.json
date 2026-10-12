@@ -1,0 +1,965 @@
+{
+  "destination": "sikkim",
+  "destination_record": {
+    "name": "Sikkim",
+    "region": "india",
+    "tagline": "Himalayan monasteries, high lakes and Kanchenjunga views, from Gangtok to Tsomgo Lake, Yumthang Valley and Pelling.",
+    "best_time": "Mar-May, Oct-Nov",
+    "places": "Gangtok, Tsomgo (Changu) Lake, Nathu La, Lachung, Yumthang Valley, Ravangla, Pelling, Darjeeling (optional add-on)",
+    "sort": 8,
+    "seasons": {
+      "on": {
+        "months": "Mar-May, Oct-Nov",
+        "places": "Gangtok, Tsomgo Lake, Pelling, Ravangla, Lachung and Yumthang Valley",
+        "activities": "Clear mountain views, sightseeing at monasteries and viewpoints, and flower-filled valleys in spring. These months suit most trips, including Lachung and Yumthang."
+      },
+      "off": {
+        "months": "Jun-Sep",
+        "places": "Gangtok, Pelling and Ravangla",
+        "activities": "Heavy rain, green hills and lower prices. Landslides can delay roads, especially towards North Sikkim, and views are often hidden by cloud, so plans may change at short notice."
+      },
+      "mid": {
+        "months": "Dec-Feb",
+        "places": "Gangtok, Pelling, Tsomgo Lake and Yumthang Valley",
+        "activities": "Cold, clear days with snow at Tsomgo Lake, Lachung and Yumthang, and good Kanchenjunga views. High roads can close after snow, so we plan flexibly."
+      }
+    },
+    "profile": {
+      "overview": "Sikkim is a small Himalayan state between Nepal, Bhutan and Tibet, with Kanchenjunga, the world's third-highest peak, filling the western skyline. In a few days you can go from the monasteries and cafes of Gangtok to the high waters of Tsomgo Lake, the meadows of Yumthang Valley and the quiet ridge-top town of Pelling.\n\nIt is clean, safe and easy to travel, and a favourite with Indian families, couples and friends who want mountain scenery without a long trek. Roads are winding, so days are shorter than the map suggests. Tell us your dates, group size and comfort level, and we will build the route around you, with permits arranged.",
+      "facts": {
+        "capital": "Gangtok",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Nepali, Sikkimese (Bhutia), Lepcha, Hindi and English",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "Mild in Gangtok, cold and snowy at altitude from December to February, heavy rain from June to September",
+        "flight_time": "Delhi to Bagdogra is about 2 hr 15 min by air; Chennai usually has a one-stop flight; trains run to New Jalpaiguri; then 4 to 5 hr by road"
+      },
+      "reasons": [
+        {
+          "title": "Mountains close at hand",
+          "text": "Kanchenjunga views, high lakes and alpine valleys are all within a few hours' drive of each other."
+        },
+        {
+          "title": "Monasteries and living culture",
+          "text": "Rumtek, Pemayangtse and Enchey show Buddhist traditions that are part of everyday life in Sikkim."
+        },
+        {
+          "title": "Clean, calm and easy",
+          "text": "Sikkim is known for tidy towns, polite drivers and a relaxed pace, which suits families and senior parents."
+        },
+        {
+          "title": "Snow and flowers",
+          "text": "Winter brings snow to Tsomgo Lake and Yumthang, and spring brings rhododendrons and clear skies."
+        },
+        {
+          "title": "Easy to reach",
+          "text": "Fly to Bagdogra or take a train to New Jalpaiguri, then drive into the hills."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "Tsomgo (Changu) Lake",
+          "text": "A glacial lake at about 3,780 m, ringed by mountains and often frozen in winter."
+        },
+        {
+          "title": "Nathu La",
+          "text": "A high mountain pass on the Sikkim border at about 4,310 m, open to Indian citizens with a permit, on certain days and in good weather."
+        },
+        {
+          "title": "Yumthang Valley",
+          "text": "A high valley north of Lachung with meadows, a river and hot springs, known for spring flowers and winter snow."
+        },
+        {
+          "title": "Lachung",
+          "text": "A mountain village in North Sikkim and the usual base for Yumthang."
+        },
+        {
+          "title": "Gangtok and MG Marg",
+          "text": "The capital's pedestrian promenade, with cafes, shops and views of the hills."
+        },
+        {
+          "title": "Rumtek Monastery",
+          "text": "A large monastery near Gangtok and an important seat of the Karma Kagyu school."
+        },
+        {
+          "title": "Pemayangtse Monastery and Rabdentse",
+          "text": "A historic monastery near Pelling and the ruins of Sikkim's old capital."
+        },
+        {
+          "title": "Buddha Park, Ravangla",
+          "text": "A large seated Buddha statue set among hills near the town of Ravangla."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Kanchenjunga sunrise",
+          "text": "Watch the first light on the range from Pelling or a Gangtok viewpoint, in clear weather."
+        },
+        {
+          "title": "Gangtok ropeway",
+          "text": "A short cable-car ride that gives a wide view over the city and the valley."
+        },
+        {
+          "title": "Yak ride at Tsomgo Lake",
+          "text": "An optional short ride by the lake, popular with families, paid locally."
+        },
+        {
+          "title": "Snow in Lachung and Yumthang",
+          "text": "From December to February the high valleys are white, with cold, clear days."
+        },
+        {
+          "title": "Monastery visit",
+          "text": "Join the quiet of a morning at a monastery, with prayer flags, butter lamps and mountain air."
+        },
+        {
+          "title": "River rafting on the Teesta",
+          "text": "A seasonal and optional rafting stretch, usually in the drier months and subject to water levels."
+        }
+      ],
+      "food": [
+        {
+          "title": "Momos and thukpa",
+          "text": "Steamed dumplings and noodle soup, the everyday comfort food of Sikkim."
+        },
+        {
+          "title": "Sikkimese thali",
+          "text": "Rice, dal and local greens, sometimes with gundruk, a tangy fermented-leaf dish."
+        },
+        {
+          "title": "Sel roti and local tea",
+          "text": "A ring-shaped rice bread served at festivals and breakfasts, with hot tea from nearby gardens."
+        },
+        {
+          "title": "Temi tea",
+          "text": "Tea from the Temi garden near Ravangla, one of the best-known in the state."
+        },
+        {
+          "title": "Vegetarian and Jain meals",
+          "text": "Vegetarian momos and dal-rice are easy to find, and we can arrange Indian vegetarian and Jain meal options."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Carry photo ID for everyone",
+          "text": "Aadhaar, passport, voter ID or a driving licence is needed for hotels and permits."
+        },
+        {
+          "title": "Take it slowly at altitude",
+          "text": "Tsomgo Lake, Nathu La, Lachung and Yumthang are high. Drink water, rest and avoid rushing."
+        },
+        {
+          "title": "Pack warm layers",
+          "text": "Even in summer, nights are cool in the hills and cold at altitude. Thermals and a windproof jacket help."
+        },
+        {
+          "title": "Plan for slow roads",
+          "text": "Distances look short, but winding roads mean most transfers take 3 to 7 hours."
+        },
+        {
+          "title": "Keep cash handy",
+          "text": "ATMs and mobile networks can be patchy outside Gangtok, especially in Lachung and Yumthang."
+        },
+        {
+          "title": "Respect monasteries",
+          "text": "Dress modestly, remove shoes where asked and ask before photographing inside."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa to travel in Sikkim, but every traveller must carry a valid photo ID such as an Aadhaar card, passport, voter ID or driving licence. Some places, including Tsomgo Lake, Nathu La and parts of North Sikkim, need permits, and Nathu La is open only on certain days and to Indian citizens. We arrange permits and confirm the current rules at booking.",
+        "health": "No compulsory vaccinations from India. Altitude sickness can affect some travellers at Tsomgo Lake, Nathu La, Lachung and Yumthang, so go slowly, drink water and seek medical advice beforehand if you have heart, breathing or blood pressure problems. Carry personal medicines and motion-sickness tablets for winding roads.",
+        "money": "Carry some cash, as ATMs and mobile networks can be patchy outside Gangtok, especially in Lachung and Yumthang. UPI and cards work in many hotels and shops in Gangtok and Pelling. Tipping drivers and guides is customary but optional."
+      },
+      "faqs": [
+        {
+          "q": "How many days do I need for Sikkim?",
+          "a": "Five to six nights covers Gangtok, Tsomgo Lake and Pelling. Seven nights lets you add Lachung and Yumthang at an easier pace."
+        },
+        {
+          "q": "Do I need permits for Sikkim?",
+          "a": "Indian citizens need no visa, but some places, such as Tsomgo Lake, Nathu La and parts of North Sikkim, need permits. We arrange permits and confirm the current rules at booking."
+        },
+        {
+          "q": "Is Nathu La always open?",
+          "a": "No. Nathu La is open to Indian citizens on certain days of the week and in good weather, with a permit, so it cannot be guaranteed. If it is closed, we add another local sight."
+        },
+        {
+          "q": "When is the best time to go?",
+          "a": "March to May and October to November have clearer skies and good views. December to February is cold with snow at altitude, and June to September is the rainy season with a risk of landslides."
+        },
+        {
+          "q": "How do I reach Sikkim?",
+          "a": "Most travellers fly to Bagdogra (IXB) or take a train to New Jalpaiguri, then drive. Pakyong Airport near Gangtok also exists, but flights there are limited and vary."
+        },
+        {
+          "q": "Can I add Darjeeling?",
+          "a": "Yes. Darjeeling is about 3 to 4 hours by road from Bagdogra and can be added as an optional extension. Ask us for a quote."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "kanchenjunga-pelling",
+      "query": "Kanchenjunga view Pelling Sikkim",
+      "caption": "Kanchenjunga from Pelling"
+    },
+    {
+      "slot": "tsomgo-lake",
+      "query": "Tsomgo Lake Changu Lake Sikkim",
+      "caption": "Tsomgo (Changu) Lake"
+    },
+    {
+      "slot": "nathu-la-pass",
+      "query": "Nathu La pass Sikkim",
+      "caption": "Nathu La, on the Sikkim border"
+    },
+    {
+      "slot": "yumthang-valley",
+      "query": "Yumthang Valley Lachung North Sikkim",
+      "caption": "Yumthang Valley"
+    },
+    {
+      "slot": "lachung-village",
+      "query": "Lachung village North Sikkim",
+      "caption": "Lachung, North Sikkim"
+    },
+    {
+      "slot": "gangtok-mg-marg",
+      "query": "MG Marg Gangtok Sikkim",
+      "caption": "MG Marg, Gangtok"
+    },
+    {
+      "slot": "gangtok-city-view",
+      "query": "Gangtok city view Tashi View Point Sikkim",
+      "caption": "Gangtok and the hills beyond"
+    },
+    {
+      "slot": "rumtek-monastery",
+      "query": "Rumtek Monastery Gangtok Sikkim",
+      "caption": "Rumtek Monastery"
+    },
+    {
+      "slot": "pemayangtse-monastery",
+      "query": "Pemayangtse Monastery Pelling Sikkim",
+      "caption": "Pemayangtse Monastery, Pelling"
+    },
+    {
+      "slot": "buddha-park-ravangla",
+      "query": "Buddha Park Tathagata Tsal Ravangla Sikkim",
+      "caption": "The Buddha statue at Ravangla"
+    },
+    {
+      "slot": "khecheopalri-lake",
+      "query": "Khecheopalri Lake Sikkim",
+      "caption": "Khecheopalri Lake"
+    },
+    {
+      "slot": "sikkim-momos",
+      "query": "momos thukpa Gangtok Sikkim food",
+      "caption": "Momos and thukpa"
+    }
+  ],
+  "hero": "kanchenjunga-pelling",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "sikkim-classic-packages",
+      "name": "Classic Packages",
+      "description": "Tried-and-tested Sikkim routes through Gangtok, Ravangla and Pelling, with permits, a private vehicle and sightseeing arranged for you.",
+      "photo": "gangtok-mg-marg",
+      "packages": [
+        "sikkim-classic-circuit",
+        "sikkim-gangtok-lachung-pelling-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "sikkim-family-holidays",
+      "name": "Family Holidays",
+      "description": "Easy-paced Sikkim holidays with the ropeway, zoo and monasteries, planned around children and senior parents.",
+      "photo": "khecheopalri-lake",
+      "packages": [
+        "sikkim-family-holiday",
+        "sikkim-gangtok-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "sikkim-snow-and-high-valleys",
+      "name": "Snow and High Valleys",
+      "description": "Tsomgo Lake, Lachung and Yumthang Valley for travellers who want high-altitude scenery, with permits arranged and altitude advice shared.",
+      "photo": "yumthang-valley",
+      "packages": [
+        "sikkim-north-sikkim-snow-and-lakes",
+        "sikkim-gangtok-lachung-pelling-group-trip",
+        "sikkim-gangtok-weekend-escape"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "sikkim-couples-and-honeymoon",
+      "name": "Honeymoon and Couples",
+      "description": "A slow Sikkim route for two, with private transfers, a candlelight dinner and a Kanchenjunga sunrise drive.",
+      "photo": "kanchenjunga-pelling",
+      "packages": [
+        "sikkim-honeymoon"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "sikkim-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, ready-made itinerary and Indian meal options on request.",
+      "photo": "lachung-village",
+      "packages": [
+        "sikkim-gangtok-lachung-pelling-group-trip"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "sikkim-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Hill stays in Gangtok, Ravangla and Pelling for couples who want quiet mornings, mountain views and time together.",
+      "photo": "kanchenjunga-pelling",
+      "packages": [
+        "sikkim-honeymoon"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "Short Sikkim breaks built around a long weekend, with early arrivals, a relaxed pace and a trip captain on every departure.",
+      "photo": "tsomgo-lake",
+      "packages": [
+        "sikkim-gangtok-weekend-escape"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "sikkim-gangtok-lachung-pelling-group-trip",
+      "title": "Sikkim Gangtok, Lachung, Yumthang and Pelling Group Trip",
+      "nights": 6,
+      "summary": "Seven days across Sikkim with Gangtok, Tsomgo Lake, Nathu La where permitted, Lachung and Yumthang Valley, and the Kanchenjunga views of Pelling, with a trip captain.",
+      "overview": "This fixed-departure group trip covers the best of Sikkim in six nights: two in Gangtok, one in Lachung, one more in Gangtok and two in Pelling. You visit Tsomgo Lake and, where permits and the day allow, Nathu La, then drive north to Lachung and the high meadows of Yumthang Valley.\n\nYou then return to Gangtok and travel west to Pelling, where Pemayangtse Monastery, the ruins of Rabdentse and the Chenrezig statue sit below the Kanchenjunga range. A trip captain travels with the group, and Indian meal options are available on request.\n\nRoads are winding and the Lachung leg has long driving days, so the pace is planned with rest in mind. We arrange the permits and share altitude advice at booking.",
+      "highlights": [
+        "Tsomgo (Changu) Lake, and Nathu La where permits and the day allow",
+        "Gangtok's MG Marg and Rumtek Monastery",
+        "Overnight stay in Lachung, in the mountains of North Sikkim",
+        "Yumthang Valley, with meadows, a river and hot springs",
+        "Pemayangtse Monastery and the ruins of Rabdentse near Pelling",
+        "Chenrezig statue and Skywalk, with Kanchenjunga views in clear weather",
+        "Permits arranged by us, trip captain and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival at Bagdogra | Drive to Gangtok",
+          "description": "Arrive at Bagdogra Airport or New Jalpaiguri station and meet your trip captain.\nDrive to Gangtok, about 4 to 5 hours by road, with a stop for lunch on the way.\nCheck in at your hotel and rest after the journey.\nStroll along MG Marg in the evening if you feel fresh.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 2,
+          "title": "Tsomgo Lake | Baba Mandir | Nathu La (subject to permit)",
+          "description": "After an early breakfast, drive up to Tsomgo (Changu) Lake, at about 3,780 m.\nContinue to Baba Mandir and, where the permit and the day allow, on to Nathu La.\nIf Nathu La is closed, we add another sight near Gangtok instead.\nReturn to Gangtok by late afternoon and enjoy a free evening.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 3,
+          "title": "Gangtok to Lachung | Waterfalls and River Valleys",
+          "description": "After breakfast, check out and drive north towards Lachung, about 6 to 7 hours with stops.\nPause at roadside waterfalls and viewpoints, and have lunch on the way.\nCheck in at your Lachung stay and rest while you adjust to the altitude.\nDinner is served at the stay.\nOvernight stay in Lachung."
+        },
+        {
+          "day": 4,
+          "title": "Yumthang Valley | Return to Gangtok",
+          "description": "After an early breakfast, drive to Yumthang Valley, about 25 km from Lachung.\nWalk among the meadows and river, and see the hot springs; the valley has flowers in spring and snow in winter.\nReturn to Lachung for lunch, then drive back to Gangtok, a long day on the road.\nArrive in Gangtok in the evening and check in.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 5,
+          "title": "Gangtok to Pelling | Rumtek Monastery",
+          "description": "After breakfast, check out and visit Rumtek Monastery near Gangtok.\nDrive west to Pelling, about 5 to 6 hours in all, with a lunch stop.\nCheck in at your hotel and enjoy the mountain air.\nSpend the evening at leisure.\nOvernight stay in Pelling."
+        },
+        {
+          "day": 6,
+          "title": "Pemayangtse | Rabdentse | Chenrezig Statue and Skywalk",
+          "description": "After breakfast, visit Pemayangtse Monastery.\nWalk through the ruins of Rabdentse, the old capital of Sikkim.\nVisit the Chenrezig statue and Skywalk, for views of the Kanchenjunga range in clear weather.\nReturn to the hotel and enjoy a free evening.\nOvernight stay in Pelling."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Bagdogra",
+          "description": "After breakfast, check out of the hotel.\nDrive to Bagdogra Airport or New Jalpaiguri station, about 5 to 6 hours by road.\nBook an afternoon or evening departure to allow for the road journey."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Gangtok on twin sharing (2 before and 1 after Lachung)",
+        "1 night stay in Lachung on twin sharing, with dinner",
+        "2 nights hotel accommodation in Pelling on twin sharing",
+        "Daily breakfast",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Permits for Tsomgo Lake, Nathu La (subject to the day and conditions) and North Sikkim, arranged by us",
+        "Sightseeing in Gangtok and Pelling as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Bagdogra or New Jalpaiguri",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees at monasteries and viewpoints, where charged",
+        "Optional activities such as yak rides and river rafting",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "This trip travels on winding mountain roads and some days involve 5 to 7 hours of driving.",
+        "Carry a valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence); it is needed for hotel check-in and for permits.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road or operational conditions, without reducing the sights covered.",
+        "Tsomgo Lake and Nathu La need permits, which we arrange. Nathu La is open only on certain days of the week and in good weather, so it cannot be guaranteed; if it is closed we add another local sight.",
+        "Lachung and Yumthang need permits, which we arrange. Rooms in Lachung are simple, and hot water, heating and power can be limited in cold weather. Roads to North Sikkim can close after rain or snow.",
+        "Tsomgo Lake is at about 3,780 m and Nathu La at about 4,310 m. Go slowly, drink water and tell your driver if you feel unwell; take medical advice first if you have heart or breathing problems.",
+        "Heavy rain from June to September can cause landslides and road delays in Sikkim, especially towards North Sikkim; sightseeing may be rearranged for safety.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group throughout."
+      ],
+      "must_carry": [
+        "Original government photo ID for every traveller, plus photocopies",
+        "A few passport-size photographs, in case permits need them",
+        "Thermals, a warm jacket, gloves and a woollen cap for Tsomgo, Lachung and Yumthang",
+        "Waterproof jacket or umbrella",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including motion-sickness and altitude tablets if your doctor advises them",
+        "Some cash, as ATMs and mobile networks can be patchy outside Gangtok"
+      ],
+      "pickup": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "drop_point": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "photo": "yumthang-valley",
+      "gallery": [
+        "tsomgo-lake",
+        "lachung-village",
+        "pemayangtse-monastery",
+        "kanchenjunga-pelling"
+      ],
+      "price": 31500,
+      "original_price": 34000,
+      "departures": {
+        "weekday": 6,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 20
+      }
+    },
+    {
+      "slug": "sikkim-gangtok-weekend-escape",
+      "title": "Sikkim Weekend Escape: Gangtok, Tsomgo Lake and Rumtek",
+      "nights": 3,
+      "summary": "A long weekend in Gangtok with Tsomgo Lake, Baba Mandir, Rumtek Monastery and the city's viewpoints, travelling in a small group with a trip captain.",
+      "overview": "This long-weekend trip gives you the mountains of Sikkim in four days, based in Gangtok for all three nights. You drive up to Tsomgo Lake and Baba Mandir on the second day, then spend the next day at Rumtek Monastery and Gangtok's viewpoints and markets.\n\nThe pace is easy, with no hotel changes. Nathu La is not part of this short trip. A trip captain travels with the group, and Indian meal options are available on request.",
+      "highlights": [
+        "Tsomgo (Changu) Lake, at about 3,780 m",
+        "Baba Mandir, a memorial shrine on the high road towards Nathu La",
+        "Rumtek Monastery, the main seat of the Karma Kagyu school",
+        "Gangtok viewpoints, including Tashi View Point and Ganesh Tok",
+        "An evening on MG Marg and the chance to try momos and thukpa",
+        "Three nights in one hotel, with no packing and unpacking",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival at Bagdogra | Drive to Gangtok | MG Marg",
+          "description": "Arrive at Bagdogra Airport or New Jalpaiguri station early in the morning and meet your trip captain.\nDrive to Gangtok, about 4 to 5 hours by road, with a stop for lunch on the way.\nCheck in at your hotel and freshen up.\nVisit Ganesh Tok or stroll along MG Marg in the evening.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 2,
+          "title": "Tsomgo Lake | Baba Mandir",
+          "description": "After an early breakfast, drive up to Tsomgo (Changu) Lake, at about 3,780 m.\nContinue to Baba Mandir, a memorial shrine on the high road towards Nathu La.\nReturn to Gangtok by afternoon and enjoy a free evening.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 3,
+          "title": "Rumtek Monastery | Gangtok Viewpoints",
+          "description": "After breakfast, visit Rumtek Monastery near Gangtok.\nStop at Tashi View Point for views of the hills and, in clear weather, Kanchenjunga.\nSpend the afternoon at leisure for shopping and cafes.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 4,
+          "title": "Departure from Bagdogra",
+          "description": "After breakfast, check out of the hotel.\nDrive to Bagdogra Airport or New Jalpaiguri station, about 4 to 5 hours by road.\nBook an afternoon or evening departure to allow for the road journey."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Gangtok on twin sharing",
+        "Daily breakfast at the hotel",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Permit for Tsomgo Lake, arranged by us",
+        "Sightseeing in Gangtok as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Bagdogra or New Jalpaiguri",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees at monasteries and viewpoints, where charged",
+        "Optional activities such as yak rides and river rafting",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Transport to and from the destination (flights or trains to Bagdogra or New Jalpaiguri) is not included, and we do not book it unless asked.",
+        "Carry a valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence); it is needed for hotel check-in and for permits.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road or operational conditions, without reducing the sights covered.",
+        "Tsomgo Lake needs a permit, which we arrange. Nathu La is not part of this trip.",
+        "Tsomgo Lake is at about 3,780 m, where the air is thin. Go slowly and drink water; take medical advice first if you have heart, breathing or blood pressure problems.",
+        "Heavy rain from June to September can cause landslides and road delays in Sikkim, especially towards North Sikkim; sightseeing may be rearranged for safety.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group throughout."
+      ],
+      "must_carry": [
+        "Original government photo ID for every traveller, plus photocopies",
+        "A few passport-size photographs, in case the permit needs them",
+        "Thermals, a warm jacket, gloves and a woollen cap for Tsomgo Lake",
+        "Waterproof jacket or umbrella",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including motion-sickness tablets if your doctor advises them"
+      ],
+      "pickup": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "drop_point": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "photo": "tsomgo-lake",
+      "gallery": [
+        "gangtok-mg-marg",
+        "rumtek-monastery",
+        "gangtok-city-view",
+        "sikkim-momos"
+      ],
+      "price": 16500,
+      "original_price": 17800,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "sikkim-honeymoon",
+      "title": "Sikkim Honeymoon: Gangtok, Ravangla and Pelling with Kanchenjunga Views",
+      "nights": 6,
+      "summary": "Six unhurried nights for two across Gangtok, Ravangla and Pelling, with Tsomgo Lake, the Ravangla Buddha statue, a candlelight dinner, a couples spa session and a private Kanchenjunga sunrise drive.",
+      "overview": "This private honeymoon moves slowly through the quieter side of Sikkim: two nights in Gangtok, two in Ravangla and two in Pelling. You travel by private car, start most mornings late and keep afternoons and evenings for each other.\n\nGangtok brings Tsomgo Lake, Rumtek Monastery and a ropeway ride over the city. Ravangla offers the great Buddha statue and cool mountain air, and Pelling ends the trip with a private sunrise drive to a Kanchenjunga viewpoint, weather permitting.\n\nExpect a flower welcome on arrival, a candlelight dinner and a couples spa session, all subject to availability. Tell us your wedding date at booking and we will pass it to the hotels.",
+      "highlights": [
+        "Private AC car for transfers and sightseeing, with unhurried mornings",
+        "Tsomgo (Changu) Lake, at about 3,780 m, with the permit arranged",
+        "Rumtek Monastery and a ropeway ride over Gangtok",
+        "The Buddha statue at Buddha Park, Ravangla",
+        "Private sunrise drive to a Kanchenjunga viewpoint near Pelling, weather permitting",
+        "Candlelight dinner and couples spa session, subject to availability",
+        "Flower welcome and room decoration on arrival"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival at Bagdogra | Drive to Gangtok | Welcome",
+          "description": "Arrive at Bagdogra Airport or New Jalpaiguri station, where your private car is waiting.\nDrive to Gangtok, about 4 to 5 hours by road, with a stop for lunch on the way.\nA flower welcome and room decoration are arranged, subject to availability.\nSpend the evening at leisure or take a quiet walk on MG Marg.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 2,
+          "title": "Tsomgo Lake | Gangtok Ropeway",
+          "description": "After a relaxed breakfast, drive up to Tsomgo (Changu) Lake, at about 3,780 m.\nEnjoy a warm drink by the lake and the mountain views, with time for photographs.\nReturn to Gangtok and ride the ropeway over the city in the afternoon.\nThe evening is free.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 3,
+          "title": "Rumtek Monastery | Drive to Ravangla",
+          "description": "After a late breakfast, visit Rumtek Monastery near Gangtok.\nContinue by private car to Ravangla, about 3 to 4 hours by road.\nCheck in at your hotel and enjoy the cool mountain air.\nSpend the evening at leisure.\nOvernight stay in Ravangla."
+        },
+        {
+          "day": 4,
+          "title": "Buddha Park | Candlelight Dinner",
+          "description": "After breakfast, visit Buddha Park and the large seated Buddha statue.\nReturn to the hotel to rest through the afternoon.\nIn the evening, enjoy a candlelight dinner, subject to availability.\nOvernight stay in Ravangla."
+        },
+        {
+          "day": 5,
+          "title": "Ravangla to Pelling | Couples Spa",
+          "description": "After a leisurely breakfast, check out and travel by private car to Pelling, about 3 hours by road.\nCheck in at your hotel and relax.\nEnjoy a couples spa session in the afternoon, subject to availability.\nThe evening is free.\nOvernight stay in Pelling."
+        },
+        {
+          "day": 6,
+          "title": "Kanchenjunga Sunrise | Pemayangtse | Chenrezig Statue",
+          "description": "Rise early for a private drive to a Kanchenjunga sunrise viewpoint, weather permitting.\nReturn for breakfast, then visit Pemayangtse Monastery.\nVisit the Chenrezig statue and Skywalk at an easy pace.\nThe rest of the day is free.\nOvernight stay in Pelling."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Bagdogra",
+          "description": "After a relaxed breakfast, check out of the hotel.\nYour private car takes you to Bagdogra Airport or New Jalpaiguri station, about 5 to 6 hours by road.\nBook an afternoon or evening departure to allow for the road journey."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Gangtok on twin sharing",
+        "2 nights hotel accommodation in Ravangla on twin sharing",
+        "2 nights hotel accommodation in Pelling on twin sharing",
+        "Daily breakfast",
+        "Flower welcome and room decoration on arrival, subject to availability",
+        "One candlelight dinner in Ravangla, subject to availability",
+        "One couples spa session in Pelling, subject to availability",
+        "Gangtok ropeway ride as per itinerary",
+        "Private AC car for transfers and sightseeing as per itinerary",
+        "Permit for Tsomgo Lake, arranged by us",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Bagdogra or New Jalpaiguri",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees at monasteries and viewpoints, where charged",
+        "Optional activities such as yak rides and river rafting",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Carry a valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence); it is needed for hotel check-in and for permits.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road or operational conditions, without reducing the sights covered.",
+        "Tsomgo Lake needs a permit, which we arrange. Tsomgo Lake is at about 3,780 m, where the air is thin. Go slowly and drink water; take medical advice first if you have heart, breathing or blood pressure problems.",
+        "The Kanchenjunga sunrise depends on clear weather and cannot be guaranteed.",
+        "Heavy rain from June to September can cause landslides and road delays in Sikkim, especially towards North Sikkim; sightseeing may be rearranged for safety.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID for each partner, plus photocopies",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "A few passport-size photographs, in case permits need them",
+        "Thermals, a warm jacket, gloves and a woollen cap",
+        "Waterproof jacket or umbrella",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including motion-sickness tablets if your doctor advises them"
+      ],
+      "pickup": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "drop_point": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "photo": "kanchenjunga-pelling",
+      "gallery": [
+        "tsomgo-lake",
+        "buddha-park-ravangla",
+        "pemayangtse-monastery",
+        "rumtek-monastery"
+      ],
+      "price": 43500,
+      "original_price": 47000
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "sikkim-classic-circuit",
+      "title": "Sikkim Classic Circuit: Gangtok, Ravangla and Pelling",
+      "nights": 6,
+      "summary": "A private six-night circuit through Gangtok, Ravangla and Pelling, with Tsomgo Lake, Nathu La where permitted, Rumtek, the Ravangla Buddha statue and Kanchenjunga views.",
+      "overview": "This private classic circuit follows the traditional route through Sikkim: three nights in Gangtok, one in Ravangla and two in Pelling. You see Tsomgo Lake and, where the permit and the day allow, Nathu La, then visit Rumtek Monastery and the Buddha statue at Ravangla.\n\nPelling completes the trip with Pemayangtse Monastery, the ruins of Rabdentse and views of the Kanchenjunga range. You travel by private AC vehicle, and the plan can be adjusted to your dates and pace.",
+      "highlights": [
+        "Tsomgo (Changu) Lake, and Nathu La where permits and the day allow",
+        "Gangtok viewpoints, Rumtek Monastery and MG Marg",
+        "The Buddha statue at Buddha Park, Ravangla",
+        "Pemayangtse Monastery and the ruins of Rabdentse",
+        "Chenrezig statue and Skywalk, with Kanchenjunga views in clear weather",
+        "Private AC vehicle and permits arranged by us",
+        "Darjeeling can be added as an optional extension"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival at Bagdogra | Drive to Gangtok",
+          "description": "Arrive at Bagdogra Airport or New Jalpaiguri station, where your driver is waiting.\nDrive to Gangtok, about 4 to 5 hours by road, with a stop for lunch on the way.\nCheck in at your hotel and rest.\nStroll along MG Marg in the evening.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 2,
+          "title": "Tsomgo Lake | Baba Mandir | Nathu La (subject to permit)",
+          "description": "After an early breakfast, drive up to Tsomgo (Changu) Lake, at about 3,780 m.\nContinue to Baba Mandir and, where the permit and the day allow, on to Nathu La.\nIf Nathu La is closed, we add another sight near Gangtok instead.\nReturn to Gangtok by late afternoon.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 3,
+          "title": "Gangtok Sightseeing | Rumtek Monastery",
+          "description": "After breakfast, visit Rumtek Monastery near Gangtok.\nStop at Enchey Monastery, Ganesh Tok and Tashi View Point.\nSpend the afternoon on MG Marg for shopping and cafes.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 4,
+          "title": "Gangtok to Ravangla | Buddha Park",
+          "description": "After breakfast, check out and drive to Ravangla, about 3 to 4 hours by road.\nVisit Buddha Park and its large seated Buddha statue.\nCheck in at your hotel and enjoy the cool evening air.\nOvernight stay in Ravangla."
+        },
+        {
+          "day": 5,
+          "title": "Ravangla to Pelling",
+          "description": "After breakfast, check out and drive to Pelling, about 3 hours by road.\nCheck in at your hotel and relax.\nSpend the evening at leisure with views of the hills.\nOvernight stay in Pelling."
+        },
+        {
+          "day": 6,
+          "title": "Pemayangtse | Rabdentse | Chenrezig Statue and Skywalk",
+          "description": "After breakfast, visit Pemayangtse Monastery.\nWalk through the ruins of Rabdentse, the old capital of Sikkim.\nVisit the Chenrezig statue and Skywalk, for views of the Kanchenjunga range in clear weather.\nOvernight stay in Pelling."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Bagdogra",
+          "description": "After breakfast, check out of the hotel.\nDrive to Bagdogra Airport or New Jalpaiguri station, about 5 to 6 hours by road.\nBook an afternoon or evening departure to allow for the road journey."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Gangtok on twin sharing",
+        "1 night hotel accommodation in Ravangla on twin sharing",
+        "2 nights hotel accommodation in Pelling on twin sharing",
+        "Daily breakfast",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Permits for Tsomgo Lake and Nathu La (subject to the day and conditions), arranged by us",
+        "Sightseeing in Gangtok, Ravangla and Pelling as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Bagdogra or New Jalpaiguri",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees at monasteries and viewpoints, where charged",
+        "Optional activities such as yak rides and river rafting",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence); it is needed for hotel check-in and for permits.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road or operational conditions, without reducing the sights covered.",
+        "Tsomgo Lake and Nathu La need permits, which we arrange. Nathu La is open only on certain days of the week and in good weather, so it cannot be guaranteed; if it is closed we add another local sight.",
+        "Tsomgo Lake is at about 3,780 m and Nathu La at about 4,310 m. Go slowly, drink water and tell your driver if you feel unwell; take medical advice first if you have heart or breathing problems.",
+        "Heavy rain from June to September can cause landslides and road delays in Sikkim, especially towards North Sikkim; sightseeing may be rearranged for safety.",
+        "Dress modestly at monasteries, remove shoes where asked and ask before photographing inside.",
+        "Darjeeling can be added as an optional extension from Bagdogra, about 3 to 4 hours by road; ask us for a quote.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID for every traveller, plus photocopies",
+        "A few passport-size photographs, in case permits need them",
+        "Thermals, a warm jacket, gloves and a woollen cap for Tsomgo, Lachung and Yumthang",
+        "Waterproof jacket or umbrella",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including motion-sickness and altitude tablets if your doctor advises them",
+        "Some cash, as ATMs and mobile networks can be patchy outside Gangtok"
+      ],
+      "pickup": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "drop_point": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "photo": "gangtok-mg-marg",
+      "gallery": [
+        "tsomgo-lake",
+        "rumtek-monastery",
+        "buddha-park-ravangla",
+        "pemayangtse-monastery"
+      ],
+      "price": 33500,
+      "original_price": null
+    },
+    {
+      "slug": "sikkim-family-holiday",
+      "title": "Sikkim Family Holiday: Gangtok and Pelling at an Easy Pace",
+      "nights": 6,
+      "summary": "A private six-night family holiday in Gangtok and Pelling, with the zoo, the ropeway, a Tsomgo Lake day, a Buddha statue stop at Ravangla and easy sightseeing around Pelling.",
+      "overview": "This family holiday keeps the driving manageable and the days varied: three nights in Gangtok and three in Pelling. In Gangtok you ride the ropeway, visit the Himalayan Zoological Park and take a day trip to Tsomgo Lake, which can be skipped or shortened for young children or senior parents.\n\nOn the way to Pelling you stop at the Buddha statue in Ravangla. Pelling has easy sightseeing, with Pemayangtse Monastery, the ruins of Rabdentse, Khecheopalri Lake and the Chenrezig statue. Tell us the ages in your group and we will adjust the plan.",
+      "highlights": [
+        "Gangtok ropeway and the Himalayan Zoological Park",
+        "Tsomgo (Changu) Lake day trip, which can be shortened for children or seniors",
+        "Rumtek Monastery and Gangtok viewpoints",
+        "A stop at the Buddha statue in Ravangla on the road to Pelling",
+        "Pemayangtse Monastery and the ruins of Rabdentse",
+        "Khecheopalri Lake and the Chenrezig statue near Pelling",
+        "Private AC vehicle, with a relaxed pace"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival at Bagdogra | Drive to Gangtok",
+          "description": "Arrive at Bagdogra Airport or New Jalpaiguri station, where your driver is waiting.\nDrive to Gangtok, about 4 to 5 hours by road, with a stop for lunch on the way.\nCheck in at your hotel and rest.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 2,
+          "title": "Gangtok Ropeway | Zoo | Viewpoints",
+          "description": "After breakfast, ride the Gangtok ropeway for views over the city.\nVisit the Himalayan Zoological Park at an easy pace.\nStop at Ganesh Tok and Tashi View Point.\nSpend the evening on MG Marg.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 3,
+          "title": "Tsomgo Lake | Baba Mandir",
+          "description": "After an early breakfast, drive up to Tsomgo (Changu) Lake, at about 3,780 m.\nContinue to Baba Mandir, if everyone is comfortable at the altitude.\nOptional yak rides are available at the lake, at your own cost.\nReturn to Gangtok by afternoon and rest.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 4,
+          "title": "Gangtok to Pelling | Buddha Park, Ravangla",
+          "description": "After breakfast, check out and drive towards Pelling.\nStop at Buddha Park in Ravangla to see the large seated Buddha statue.\nContinue to Pelling, about 6 to 7 hours in all with stops, and check in.\nOvernight stay in Pelling."
+        },
+        {
+          "day": 5,
+          "title": "Pemayangtse | Rabdentse | Chenrezig Statue",
+          "description": "After breakfast, visit Pemayangtse Monastery.\nWalk through the ruins of Rabdentse, the old capital of Sikkim.\nVisit the Chenrezig statue and Skywalk, with views of the Kanchenjunga range in clear weather.\nOvernight stay in Pelling."
+        },
+        {
+          "day": 6,
+          "title": "Khecheopalri Lake | Free Time",
+          "description": "After breakfast, drive to Khecheopalri Lake, a sacred and peaceful lake set among forest.\nReturn to Pelling and spend the afternoon at leisure.\nOvernight stay in Pelling."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Bagdogra",
+          "description": "After breakfast, check out of the hotel.\nDrive to Bagdogra Airport or New Jalpaiguri station, about 5 to 6 hours by road.\nBook an afternoon or evening departure to allow for the road journey."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Gangtok on twin or family room sharing",
+        "3 nights hotel accommodation in Pelling on twin or family room sharing",
+        "Daily breakfast",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Permit for Tsomgo Lake, arranged by us",
+        "Gangtok ropeway ride and zoo visit as per itinerary",
+        "Sightseeing in Gangtok, Ravangla and Pelling as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Bagdogra or New Jalpaiguri",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees at monasteries and viewpoints, where charged",
+        "Optional activities such as yak rides and river rafting",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence); it is needed for hotel check-in and for permits.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road or operational conditions, without reducing the sights covered.",
+        "Tsomgo Lake needs a permit, which we arrange. Nathu La is not part of this family plan.",
+        "Tsomgo Lake is at about 3,780 m, where the air is thin. Go slowly and drink water; take medical advice first if you have heart, breathing or blood pressure problems.",
+        "Please share children's ages and any senior travellers' needs at booking so we can plan the pace.",
+        "Heavy rain from June to September can cause landslides and road delays in Sikkim, especially towards North Sikkim; sightseeing may be rearranged for safety.",
+        "Dress modestly at monasteries, remove shoes where asked and ask before photographing inside.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID for every traveller, plus photocopies",
+        "A few passport-size photographs, in case permits need them",
+        "Thermals, a warm jacket, gloves and a woollen cap for Tsomgo, Lachung and Yumthang",
+        "Waterproof jacket or umbrella",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including motion-sickness and altitude tablets if your doctor advises them",
+        "Some cash, as ATMs and mobile networks can be patchy outside Gangtok"
+      ],
+      "pickup": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "drop_point": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "photo": "khecheopalri-lake",
+      "gallery": [
+        "gangtok-city-view",
+        "buddha-park-ravangla",
+        "kanchenjunga-pelling",
+        "sikkim-momos"
+      ],
+      "price": null,
+      "original_price": null
+    },
+    {
+      "slug": "sikkim-north-sikkim-snow-and-lakes",
+      "title": "North Sikkim Explorer: Tsomgo Lake, Lachung and Yumthang Valley",
+      "nights": 5,
+      "summary": "A private five-night mountain trip for travellers who want high-altitude scenery, with Tsomgo Lake, Nathu La where permitted, two nights in Lachung and a full day at Yumthang Valley.",
+      "overview": "This private trip focuses on the high country of Sikkim. You base yourself in Gangtok for two nights, visit Tsomgo Lake and, where permits and the day allow, Nathu La, then drive north to Lachung for two nights.\n\nA full day at Yumthang Valley, with the option to go on towards Zero Point where the road and permit allow, gives you time among the meadows, river and hot springs. It is a high, cold trip with long drives, best for travellers who are fit and comfortable at altitude.",
+      "highlights": [
+        "Tsomgo (Changu) Lake, and Nathu La where permits and the day allow",
+        "Two nights in Lachung, in the mountains of North Sikkim",
+        "Full day at Yumthang Valley, with meadows, river and hot springs",
+        "Optional drive towards Zero Point where the road and permit allow",
+        "Snow in winter, and rhododendrons and flowers in spring",
+        "Permits arranged by us and private AC vehicle"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival at Bagdogra | Drive to Gangtok",
+          "description": "Arrive at Bagdogra Airport or New Jalpaiguri station, where your driver is waiting.\nDrive to Gangtok, about 4 to 5 hours by road, with a stop for lunch on the way.\nCheck in at your hotel and rest.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 2,
+          "title": "Tsomgo Lake | Baba Mandir | Nathu La (subject to permit)",
+          "description": "After an early breakfast, drive up to Tsomgo (Changu) Lake, at about 3,780 m.\nContinue to Baba Mandir and, where the permit and the day allow, on to Nathu La.\nIf Nathu La is closed, we add another sight near Gangtok instead.\nReturn to Gangtok by late afternoon.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 3,
+          "title": "Gangtok to Lachung",
+          "description": "After breakfast, check out and drive north towards Lachung, about 6 to 7 hours with stops.\nPause at roadside waterfalls and viewpoints, and have lunch on the way.\nCheck in at your Lachung stay and rest while you adjust to the altitude.\nDinner is served at the stay.\nOvernight stay in Lachung."
+        },
+        {
+          "day": 4,
+          "title": "Yumthang Valley | Zero Point (subject to road and permit)",
+          "description": "After an early breakfast, drive to Yumthang Valley, about 25 km from Lachung.\nWalk among the meadows and river, and see the hot springs.\nWhere the road and permit allow, continue towards Zero Point, at over 4,500 m; otherwise spend longer in the valley.\nReturn to Lachung for the evening.\nOvernight stay in Lachung."
+        },
+        {
+          "day": 5,
+          "title": "Lachung to Gangtok",
+          "description": "After breakfast, check out and drive back to Gangtok, about 6 to 7 hours with stops.\nCheck in at your hotel and spend the evening on MG Marg.\nOvernight stay in Gangtok."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Bagdogra",
+          "description": "After breakfast, check out of the hotel.\nDrive to Bagdogra Airport or New Jalpaiguri station, about 4 to 5 hours by road.\nBook an afternoon or evening departure to allow for the road journey."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Gangtok on twin sharing",
+        "2 nights stay in Lachung on twin sharing, with dinner",
+        "Daily breakfast",
+        "Private AC vehicle for transfers and sightseeing as per itinerary",
+        "Permits for Tsomgo Lake, Nathu La (subject to the day and conditions) and North Sikkim, arranged by us",
+        "Sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Bagdogra or New Jalpaiguri",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees at monasteries and viewpoints, where charged",
+        "Optional activities such as yak rides and river rafting",
+        "Anything not mentioned under inclusions",
+        "GST as applicable"
+      ],
+      "notes": [
+        "Carry a valid government photo ID for every traveller (Aadhaar, passport, voter ID or driving licence); it is needed for hotel check-in and for permits.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road or operational conditions, without reducing the sights covered.",
+        "Tsomgo Lake and Nathu La need permits, which we arrange. Nathu La is open only on certain days of the week and in good weather, so it cannot be guaranteed; if it is closed we add another local sight.",
+        "Lachung and Yumthang need permits, which we arrange. Rooms in Lachung are simple, and hot water, heating and power can be limited in cold weather. Roads to North Sikkim can close after rain or snow.",
+        "Tsomgo Lake is at about 3,780 m and Nathu La at about 4,310 m. Go slowly, drink water and tell your driver if you feel unwell; take medical advice first if you have heart or breathing problems.",
+        "Yumthang Valley is at about 3,500 m and Zero Point at over 4,500 m, so acclimatise slowly and descend if you feel unwell.",
+        "Heavy rain from June to September can cause landslides and road delays in Sikkim, especially towards North Sikkim; sightseeing may be rearranged for safety.",
+        "Rates and availability are confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Original government photo ID for every traveller, plus photocopies",
+        "A few passport-size photographs, in case permits need them",
+        "Thermals, a warm jacket, gloves and a woollen cap for Tsomgo, Lachung and Yumthang",
+        "Waterproof jacket or umbrella",
+        "Comfortable walking shoes with good grip",
+        "Sunscreen, sunglasses and lip balm",
+        "Personal medicines, including motion-sickness and altitude tablets if your doctor advises them",
+        "Some cash, as ATMs and mobile networks can be patchy outside Gangtok"
+      ],
+      "pickup": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "drop_point": "Bagdogra Airport (IXB) or New Jalpaiguri (NJP) railway station",
+      "photo": "yumthang-valley",
+      "gallery": [
+        "lachung-village",
+        "tsomgo-lake",
+        "nathu-la-pass"
+      ],
+      "price": 29500,
+      "original_price": null
+    }
+  ]
+}

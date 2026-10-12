@@ -1,0 +1,939 @@
+{
+  "destination": "goa",
+  "destination_record": {
+    "name": "Goa",
+    "region": "india",
+    "tagline": "Sun, sand and Portuguese-era heritage on India's west coast, from lively Baga to peaceful Palolem.",
+    "best_time": "Nov–Feb",
+    "places": "Baga, Calangute, Anjuna, Chapora Fort, Fort Aguada, Old Goa, Panjim and Fontainhas, Mandovi river, Dudhsagar Falls, Colva, Palolem",
+    "sort": 3,
+    "seasons": {
+      "on": {
+        "months": "Nov–Feb",
+        "places": "Baga, Calangute, Anjuna, Colva, Palolem, Old Goa, Fontainhas, Dudhsagar Falls",
+        "activities": "Dry, sunny weather with cooler evenings. Beach days, water sports, sunset river cruises, Dudhsagar jeep safaris, heritage walks and markets; Christmas and New Year are the busiest weeks, so book early."
+      },
+      "off": {
+        "months": "Jun–Sep",
+        "places": "Old Goa, Fontainhas, spice plantations, Ayurveda and spa stays, the green Goan countryside",
+        "activities": "Monsoon with heavy rain and a rough sea; swimming and water sports are usually closed and many beach shacks shut. Lush scenery, lower prices and relaxed spa and heritage stays, with access to Dudhsagar usually restricted."
+      },
+      "mid": {
+        "months": "Oct, Mar–May",
+        "places": "Baga, Calangute, Colva, Palolem, Old Goa, Panjim",
+        "activities": "Warmer and more humid, with calm seas and fewer crowds. Good for beach days, church and city visits and spa breaks; March to May can be hot, so plan sightseeing for mornings and evenings."
+      }
+    },
+    "profile": {
+      "overview": "Goa is India's smallest state and its most relaxed holiday coast, with long Arabian Sea beaches, palm-fringed villages and four centuries of Portuguese heritage left in its churches, forts and painted houses. North Goa is lively, with Baga, Calangute and Anjuna beaches, beach shacks, markets and hilltop forts. South Goa is calmer, with the wide sands of Colva and the crescent bay at Palolem.\n\nBeyond the beaches there is plenty to do: the UNESCO-listed churches of Old Goa, the Latin Quarter of Fontainhas in Panjim, an evening cruise on the Mandovi river, spice plantations in the hills and a jeep ride to Dudhsagar Falls. It suits families, friends, couples and senior parents alike. Tell us your dates, group size and budget, and we will build the trip around you.",
+      "facts": {
+        "capital": "Panaji (Panjim)",
+        "currency": "Indian Rupee (INR)",
+        "languages": "Konkani, Marathi, Hindi and English",
+        "time_zone": "IST (UTC+5:30)",
+        "calling_code": "+91",
+        "driving_side": "Left",
+        "climate": "About 22°C to 35°C, warm and humid; heavy monsoon rain from June to September, with the best weather from November to February",
+        "flight_time": "About 1 hr 30 min to 2 hr from Chennai and about 2 hr 45 min from Delhi by direct flight, to Dabolim (GOI) or Mopa (GOX); long-distance trains reach Madgaon"
+      },
+      "reasons": [
+        {
+          "title": "Beaches for every mood",
+          "text": "Lively Baga and Calangute in the north, quiet Palolem and Colva in the south, so you can choose your pace."
+        },
+        {
+          "title": "Portuguese-era heritage",
+          "text": "Old Goa's grand churches and Panjim's Fontainhas give the coast a history that few beach destinations can match."
+        },
+        {
+          "title": "Easy to reach",
+          "text": "Direct flights from Chennai and other metros, two airports and a railhead at Madgaon make it simple to plan, even for a long weekend."
+        },
+        {
+          "title": "Rivers, waterfalls and spice hills",
+          "text": "Mandovi cruises, spice plantations and the Dudhsagar jeep ride add variety to the sea and sand."
+        },
+        {
+          "title": "Good for all ages",
+          "text": "Gentle beaches, short drives and plenty of hotels and resorts suit families, couples and senior parents."
+        }
+      ],
+      "attractions": [
+        {
+          "title": "Baga and Calangute beaches",
+          "text": "North Goa's busiest stretch of sand, with beach shacks, sunset views and water sports in the season."
+        },
+        {
+          "title": "Anjuna Beach and Chapora Fort",
+          "text": "A rocky, laid-back beach and the hilltop fort above Vagator with sweeping views of the coast."
+        },
+        {
+          "title": "Fort Aguada",
+          "text": "A 17th-century Portuguese fort and lighthouse at Candolim, overlooking the sea."
+        },
+        {
+          "title": "Old Goa churches",
+          "text": "The Basilica of Bom Jesus, Se Cathedral and the Church of St Francis of Assisi, part of a UNESCO World Heritage site."
+        },
+        {
+          "title": "Fontainhas, Panjim",
+          "text": "A Latin Quarter of narrow lanes, colourful Portuguese-style houses and the whitewashed Chapel of St Sebastian."
+        },
+        {
+          "title": "Dudhsagar Falls",
+          "text": "A tiered waterfall in the Western Ghats, reached by jeep from the Mollem and Collem side during the open season."
+        },
+        {
+          "title": "Palolem Beach",
+          "text": "A calm crescent bay in South Goa, framed by palms and hills, popular for easy swimming and sunsets."
+        },
+        {
+          "title": "Colva Beach",
+          "text": "A long, wide beach in South Goa with a relaxed family feel and plenty of cafes."
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Sunset cruise on the Mandovi",
+          "text": "An evening river cruise from Panjim, typically with music and a cultural programme on board."
+        },
+        {
+          "title": "Dudhsagar jeep safari",
+          "text": "A bumpy ride through forest and stream crossings to one of India's best-known waterfalls."
+        },
+        {
+          "title": "Spice plantation visit",
+          "text": "A guided walk among pepper, cardamom, cashew and vanilla, usually followed by a Goan meal."
+        },
+        {
+          "title": "Water sports and dolphin trips",
+          "text": "Parasailing, jet skiing and banana boat rides at the northern beaches, and boat trips at Palolem, in the open season."
+        },
+        {
+          "title": "Heritage walk through Fontainhas",
+          "text": "An unhurried walk past Portuguese-era houses, small cafes and art galleries."
+        },
+        {
+          "title": "Sunsets at a beach shack",
+          "text": "A simple but memorable evening of fresh seafood, cold drinks and the sea turning gold."
+        }
+      ],
+      "food": [
+        {
+          "title": "Goan fish curry and rice",
+          "text": "A coconut-based curry with a tangy kick, eaten with rice at almost every local restaurant."
+        },
+        {
+          "title": "Prawn balchao and seafood grills",
+          "text": "Spicy pickled prawns and freshly grilled catch of the day at beach shacks."
+        },
+        {
+          "title": "Bebinca",
+          "text": "A rich, layered coconut and egg dessert that is a Goan Christmas classic and available all year."
+        },
+        {
+          "title": "Poi and bhaji",
+          "text": "Soft local bread served with a lightly spiced potato curry, a favourite breakfast."
+        },
+        {
+          "title": "Vegetarian and Jain meals",
+          "text": "Vegetarian thalis are easy to find, and we can arrange Jain and Indian meal options with advance notice."
+        }
+      ],
+      "tips": [
+        {
+          "title": "Dress modestly in churches",
+          "text": "Cover shoulders and knees when visiting the churches and temples of Old Goa."
+        },
+        {
+          "title": "Respect the sea",
+          "text": "Swim only in flagged areas near lifeguards, and avoid the water when red flags are up or the sea is rough."
+        },
+        {
+          "title": "Plan around the monsoon",
+          "text": "From June to September the sea is rough, swimming and water sports are usually closed and many beach shacks shut."
+        },
+        {
+          "title": "Book early for Christmas and New Year",
+          "text": "Late December is the busiest and most expensive time, so reserve hotels and transfers well ahead."
+        },
+        {
+          "title": "Drive carefully",
+          "text": "If you hire a scooter, wear a helmet and carry your licence, and never drink and drive."
+        },
+        {
+          "title": "Carry sun protection",
+          "text": "The coastal sun is strong all year, so pack sunscreen, a hat, sunglasses and a reusable water bottle."
+        }
+      ],
+      "travel_info": {
+        "visa": "Indian citizens need no visa to visit Goa. Carry a valid government photo ID, such as Aadhaar, passport, driving licence or voter ID, for flights, trains and hotel check-in. No special permit is needed for the standard beach, heritage and Dudhsagar sightseeing in our packages; we arrange permits and confirm the current rules at booking.",
+        "health": "No compulsory vaccinations. Drink bottled or filtered water, use sunscreen and mosquito repellent, and carry your regular medicines. Take care in the sea, as currents can be strong, and avoid swimming in the monsoon.",
+        "money": "UPI and cards work in most hotels, restaurants and shops, but carry some cash for beach shacks, taxis, markets and small purchases. ATMs are widely available in the main beach towns. Tipping 5 to 10 per cent for good service is customary."
+      },
+      "faqs": [
+        {
+          "q": "How many days do I need for Goa?",
+          "a": "Three to four nights covers the main beaches and Old Goa. Five to six nights lets you add South Goa and Dudhsagar at an easy pace."
+        },
+        {
+          "q": "What is the best time to visit Goa?",
+          "a": "November to February is dry, sunny and the busiest season. October and March to May are warmer with lower prices, and June to September is the monsoon, when the sea is rough and water sports are closed."
+        },
+        {
+          "q": "Which is better, North Goa or South Goa?",
+          "a": "North Goa has the livelier beaches, forts, markets and nightlife. South Goa is quieter and more spacious, which suits families, couples and senior travellers. Many of our trips combine both."
+        },
+        {
+          "q": "Is Goa good for families and senior parents?",
+          "a": "Yes. Distances are short, hotels have pools and many beaches have gentle waters. We can plan relaxed days and arrange vegetarian and Jain meal options."
+        },
+        {
+          "q": "Which airport should I fly into?",
+          "a": "Dabolim (GOI) in the south and Mopa (GOX) in the north both serve Goa. Madgaon is the main railhead. We plan the transfer from whichever arrival point you use."
+        },
+        {
+          "q": "Is Dudhsagar open all year?",
+          "a": "The jeep safari usually runs in the dry season and is restricted during the heavy monsoon. We confirm the current position at booking."
+        }
+      ]
+    }
+  },
+  "photos": [
+    {
+      "slot": "baga-calangute-beach",
+      "query": "Baga Beach Calangute Goa India",
+      "caption": "Baga and Calangute beaches, North Goa"
+    },
+    {
+      "slot": "anjuna-beach",
+      "query": "Anjuna Beach Goa India",
+      "caption": "Anjuna Beach, North Goa"
+    },
+    {
+      "slot": "chapora-fort",
+      "query": "Chapora Fort Vagator Goa India",
+      "caption": "Chapora Fort, above Vagator"
+    },
+    {
+      "slot": "basilica-bom-jesus",
+      "query": "Basilica of Bom Jesus Old Goa India",
+      "caption": "Basilica of Bom Jesus, Old Goa"
+    },
+    {
+      "slot": "se-cathedral-old-goa",
+      "query": "Se Cathedral Old Goa India",
+      "caption": "Se Cathedral, Old Goa"
+    },
+    {
+      "slot": "fontainhas-panjim",
+      "query": "Fontainhas Latin Quarter Panjim Goa India",
+      "caption": "Fontainhas, Panjim"
+    },
+    {
+      "slot": "dudhsagar-falls",
+      "query": "Dudhsagar Falls Goa India",
+      "caption": "Dudhsagar Falls"
+    },
+    {
+      "slot": "palolem-beach",
+      "query": "Palolem Beach Canacona South Goa India",
+      "caption": "Palolem Beach, South Goa"
+    },
+    {
+      "slot": "colva-beach",
+      "query": "Colva Beach South Goa India",
+      "caption": "Colva Beach, South Goa"
+    },
+    {
+      "slot": "mandovi-river-cruise",
+      "query": "Mandovi River cruise Panjim Goa India",
+      "caption": "A river cruise on the Mandovi, Panjim"
+    },
+    {
+      "slot": "spice-plantation-goa",
+      "query": "Spice plantation Ponda Goa India",
+      "caption": "A spice plantation near Ponda"
+    },
+    {
+      "slot": "goan-fish-curry",
+      "query": "Goan fish curry rice thali Goa India",
+      "caption": "Goan fish curry and rice"
+    }
+  ],
+  "hero": "palolem-beach",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "goa-classic-packages",
+      "name": "Classic Packages",
+      "description": "Tried-and-tested Goa itineraries that combine North and South Goa beaches with the heritage of Old Goa and Panjim.",
+      "photo": "baga-calangute-beach",
+      "packages": [
+        "goa-classic-north-south-holiday",
+        "goa-beaches-heritage-group-trip",
+        "goa-budget-beach-saver"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "goa-beaches-north-and-south",
+      "name": "Beaches North and South",
+      "description": "From lively Baga and Anjuna to peaceful Colva and Palolem, with time on the sand and sunsets by the sea.",
+      "photo": "palolem-beach",
+      "packages": [
+        "goa-classic-north-south-holiday",
+        "goa-beaches-heritage-group-trip",
+        "goa-north-goa-weekend-escape",
+        "goa-beach-romance-honeymoon",
+        "goa-budget-beach-saver"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "goa-family-holidays",
+      "name": "Family Holidays",
+      "description": "Short drives, easy-paced days and experiences for all ages, from a Dudhsagar jeep ride to a spice plantation walk.",
+      "photo": "dudhsagar-falls",
+      "packages": [
+        "goa-family-dudhsagar-holiday",
+        "goa-classic-north-south-holiday",
+        "goa-beaches-heritage-group-trip"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "goa-heritage-and-rivers",
+      "name": "Heritage, Falls and Rivers",
+      "description": "Old Goa's churches, Fontainhas, Mandovi river cruises, spice plantations and Dudhsagar Falls.",
+      "photo": "basilica-bom-jesus",
+      "packages": [
+        "goa-family-dudhsagar-holiday",
+        "goa-beaches-heritage-group-trip",
+        "goa-north-goa-weekend-escape",
+        "goa-classic-north-south-holiday"
+      ]
+    },
+    {
+      "menu": "destinations",
+      "slug": "goa-budget-and-short-breaks",
+      "name": "Budget Saver and Short Breaks",
+      "description": "Value stays and long-weekend trips for travellers who want Goa at a sensible price and a short time away.",
+      "photo": "anjuna-beach",
+      "packages": [
+        "goa-budget-beach-saver",
+        "goa-north-goa-weekend-escape"
+      ]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "goa-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, a ready-made itinerary and Indian meal options on request.",
+      "photo": "palolem-beach",
+      "packages": [
+        "goa-beaches-heritage-group-trip"
+      ]
+    },
+    {
+      "menu": "weekend-escapes",
+      "slug": "goa-weekend-getaways",
+      "name": "Weekend Getaways",
+      "description": "A short Goa break built around a long weekend, with Friday departures, a relaxed pace and a trip captain on every departure.",
+      "photo": "anjuna-beach",
+      "packages": [
+        "goa-north-goa-weekend-escape"
+      ]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "goa-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Private beach stays for couples, with sunset cruises, candlelight dinners and unhurried days together.",
+      "photo": "palolem-beach",
+      "packages": [
+        "goa-beach-romance-honeymoon"
+      ]
+    }
+  ],
+  "packages": [],
+  "group_trips": [
+    {
+      "slug": "goa-beaches-heritage-group-trip",
+      "title": "Goa Beaches, Old Goa and Palolem Group Trip",
+      "nights": 5,
+      "summary": "Six days across North and South Goa with Baga, Anjuna and Chapora Fort, the Old Goa churches, Fontainhas, a Mandovi cruise and Palolem Beach, travelling in a small group.",
+      "overview": "This group trip covers both sides of Goa over five nights, three in North Goa and two in South Goa. You see the beaches and forts of the north, the UNESCO-listed churches of Old Goa and the painted lanes of Fontainhas, with an evening river cruise on the Mandovi.\n\nYou then travel south, stopping at a spice plantation near Ponda on the way, and spend a day at the crescent bay of Palolem. A trip captain travels with the group, and Indian meal options are available on request.\n\nThe pace is easy, with free time on most days, which suits families, friends travelling together and senior parents.",
+      "highlights": [
+        "Baga, Calangute and Anjuna beaches in North Goa",
+        "Fort Aguada and Chapora Fort viewpoints",
+        "Basilica of Bom Jesus and Se Cathedral in Old Goa",
+        "Fontainhas, Panjim's Latin Quarter, on foot",
+        "Evening river cruise on the Mandovi",
+        "Spice plantation visit near Ponda",
+        "A day at Palolem Beach and an evening at Colva",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Goa | Baga Beach Sunset",
+          "description": "Arrive in Goa and meet your trip captain at the airport or railway station.\nTransfer to your hotel in the Calangute and Baga area and check in.\nWalk to Baga Beach for the sunset and settle in at leisure.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 2,
+          "title": "Fort Aguada | Anjuna Beach | Chapora Fort",
+          "description": "After breakfast, drive to Fort Aguada and its lighthouse at Candolim.\nContinue to Anjuna Beach for time by the rocks and the sea.\nVisit Chapora Fort above Vagator for views along the coast.\nReturn to the hotel and enjoy a free evening.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 3,
+          "title": "Old Goa Churches | Fontainhas | Mandovi River Cruise",
+          "description": "After breakfast, drive to Old Goa to see the Basilica of Bom Jesus and Se Cathedral.\nContinue to Panjim and walk through the lanes of Fontainhas.\nIn the evening, board a river cruise on the Mandovi.\nReturn to your North Goa hotel after the cruise.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 4,
+          "title": "North to South Goa | Spice Plantation | Colva Beach",
+          "description": "After breakfast, check out and drive towards South Goa.\nStop at a spice plantation near Ponda for a guided walk and lunch.\nCheck in at your hotel in the Colva or Benaulim area.\nSpend the evening on Colva Beach at your own pace.\nOvernight stay in South Goa."
+        },
+        {
+          "day": 5,
+          "title": "Palolem Beach Day",
+          "description": "After breakfast, drive to Palolem Beach in Canacona, around an hour away.\nSpend the day on the beach, with optional boat trips subject to season and sea conditions.\nEnjoy lunch at a beach cafe at your own cost.\nReturn to your hotel in the evening.\nOvernight stay in South Goa."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Goa",
+          "description": "After breakfast, check out of the hotel.\nTransfer to the airport or Madgaon railway station for your journey home."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in North Goa on twin sharing",
+        "2 nights hotel accommodation in South Goa on twin sharing",
+        "Daily breakfast at the hotel",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Transfer from North Goa to South Goa",
+        "Mandovi river cruise",
+        "Spice plantation visit with lunch as per itinerary",
+        "Old Goa, Fontainhas, forts and beach sightseeing as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Goa",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as water sports",
+        "Entry fees and activities not listed under inclusions",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "A valid government photo ID is required for every traveller, at hotel check-in and on flights and trains.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, traffic or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "From June to September the sea is rough; swimming, water sports and some beach shacks are usually closed, so we advise travelling between October and May.",
+        "Swim only in areas marked as safe and near lifeguards; the sea can be dangerous when red flags are shown.",
+        "Dress modestly at churches and temples, with shoulders and knees covered.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change.",
+        "A trip captain accompanies the group throughout."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Light cotton clothing",
+        "Modest clothing for churches and temples",
+        "Comfortable sandals and walking shoes",
+        "Mosquito repellent and regular medicines"
+      ],
+      "pickup": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "drop_point": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "photo": "baga-calangute-beach",
+      "gallery": [
+        "basilica-bom-jesus",
+        "palolem-beach",
+        "mandovi-river-cruise",
+        "chapora-fort"
+      ],
+      "price": 23500,
+      "original_price": 25400,
+      "departures": {
+        "weekday": 6,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 24
+      }
+    },
+    {
+      "slug": "goa-north-goa-weekend-escape",
+      "title": "Goa Weekend Escape: Baga, Anjuna, Old Goa and Fontainhas",
+      "nights": 3,
+      "summary": "A relaxed long weekend in North Goa with Baga and Anjuna beaches, Chapora Fort, the Old Goa churches, Fontainhas and a Mandovi river cruise, travelling in a small group.",
+      "overview": "This long-weekend trip fits the best of North Goa into four easy days, with all three nights in one hotel near Calangute and Baga. You get the beaches and forts of the coast, the UNESCO-listed churches of Old Goa and an evening on the Mandovi river.\n\nThe pace is deliberately gentle, with one or two headline sights a day and time to unwind. A trip captain travels with the group, and Indian meal options are available on request.",
+      "highlights": [
+        "Baga and Calangute beaches at sunset",
+        "Fort Aguada, Anjuna Beach and Chapora Fort",
+        "Basilica of Bom Jesus and Se Cathedral in Old Goa",
+        "Walk through the lanes of Fontainhas, Panjim",
+        "Evening river cruise on the Mandovi",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Goa | Baga Beach Sunset",
+          "description": "Arrive in Goa early and meet your trip captain at the airport or railway station.\nTransfer to your hotel in the Calangute and Baga area and check in.\nWalk to Baga Beach for the sunset.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 2,
+          "title": "Fort Aguada | Anjuna Beach | Chapora Fort",
+          "description": "After breakfast, drive to Fort Aguada and its lighthouse at Candolim.\nContinue to Anjuna Beach for time by the rocks and the sea.\nVisit Chapora Fort above Vagator for views along the coast.\nReturn to the hotel and enjoy a free evening.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 3,
+          "title": "Old Goa Churches | Fontainhas | Mandovi River Cruise",
+          "description": "After breakfast, drive to Old Goa to see the Basilica of Bom Jesus and Se Cathedral.\nContinue to Panjim and walk through the lanes of Fontainhas.\nIn the evening, board a river cruise on the Mandovi.\nReturn to your hotel after the cruise.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 4,
+          "title": "Free Morning | Departure",
+          "description": "Enjoy a relaxed breakfast and a last walk on the beach.\nCheck out of the hotel and make the most of the free time for shopping.\nTransfer to the airport or Madgaon railway station for your late departure."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in North Goa on twin sharing",
+        "Daily breakfast at the hotel",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Mandovi river cruise",
+        "Old Goa, Fontainhas, forts and beach sightseeing as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Goa",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as water sports",
+        "Entry fees and activities not listed under inclusions",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "Weekend trips are short, so flights or trains should arrive early on day 1 and depart late on the last day to make full use of the programme.",
+        "Transport to and from Goa is not included and is not booked by us unless asked.",
+        "A valid government photo ID is required for every traveller, at hotel check-in and on flights and trains.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, traffic or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change. A trip captain accompanies the group throughout.",
+        "From June to September the sea is rough and swimming and water sports are usually closed, so we advise travelling between October and May."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Light cotton clothing",
+        "Modest clothing for churches and temples",
+        "Comfortable sandals and walking shoes",
+        "Mosquito repellent and regular medicines"
+      ],
+      "pickup": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "drop_point": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "photo": "anjuna-beach",
+      "gallery": [
+        "baga-calangute-beach",
+        "se-cathedral-old-goa",
+        "fontainhas-panjim",
+        "mandovi-river-cruise"
+      ],
+      "price": 14500,
+      "original_price": 15700,
+      "departures": {
+        "weekday": 5,
+        "count": 8,
+        "every_weeks": 1,
+        "capacity": 22
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "goa-beach-romance-honeymoon",
+      "title": "Goa Honeymoon: Beach Sunsets, River Cruise and Palolem Bay",
+      "nights": 5,
+      "summary": "Five unhurried nights for two in North and South Goa, with a flower welcome, a Mandovi sunset cruise, a couples spa session, a candlelight dinner by the sea and a quiet day at Palolem.",
+      "overview": "This private honeymoon pairs the beaches of North Goa with the calmer bays of the south: three nights in the north and two in the south. You travel by private car throughout, start most mornings late and keep every evening for each other.\n\nNorth Goa brings Fort Aguada, Anjuna Beach, the hilltop views from Chapora Fort and the churches of Old Goa. In Panjim you wander through Fontainhas and then board a sunset cruise on the Mandovi river. In the south you spend time at Colva and a slow day at Palolem Beach.\n\nExpect a flower welcome or bed decoration on arrival, a couples spa session and a candlelight dinner by the sea, all subject to availability. Tell us your wedding date at booking and we will pass it to the hotels.",
+      "highlights": [
+        "Private car transfers and sightseeing, with unhurried mornings",
+        "Fort Aguada, Anjuna Beach and Chapora Fort at a gentle pace",
+        "Old Goa churches and a walk through Fontainhas",
+        "Sunset cruise on the Mandovi river",
+        "Couples spa session, subject to availability",
+        "Candlelight dinner by the sea",
+        "Flower welcome and bed decoration on arrival"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Goa | Welcome and Evening Together",
+          "description": "Arrive in Goa, where your private car is waiting.\nTransfer to your hotel in North Goa and check in.\nA flower welcome and bed decoration are arranged, subject to availability.\nThe rest of the day is yours to unwind, stroll on the beach or enjoy a quiet dinner.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 2,
+          "title": "Fort Aguada | Anjuna Beach | Chapora Fort at Sunset",
+          "description": "Enjoy a relaxed breakfast, with a late start at around 10 am.\nYour private car takes you to Fort Aguada and on to Anjuna Beach.\nVisit Chapora Fort above Vagator in the late afternoon for views along the coast.\nReturn to the hotel and spend the evening at leisure.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 3,
+          "title": "Old Goa | Fontainhas | Mandovi Sunset Cruise",
+          "description": "After a leisurely breakfast, drive to Old Goa to see the Basilica of Bom Jesus and Se Cathedral.\nWalk through the lanes of Fontainhas in Panjim and stop for coffee at a cafe.\nIn the evening, board a sunset cruise on the Mandovi river.\nReturn to your hotel by private car.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 4,
+          "title": "North to South Goa | Colva Beach | Couples Spa",
+          "description": "After breakfast, check out and travel by private car to South Goa.\nCheck in at your beach hotel in the Colva or Benaulim area.\nIn the afternoon, enjoy a couples spa session, subject to availability.\nWalk along Colva Beach as the sun sets.\nOvernight stay in South Goa."
+        },
+        {
+          "day": 5,
+          "title": "Palolem Beach | Candlelight Dinner",
+          "description": "After a late breakfast, travel by private car to Palolem Beach, around an hour away.\nSpend the day on the crescent bay at an easy pace, with time to swim, subject to sea conditions.\nReturn to the hotel in the late afternoon to rest.\nIn the evening, enjoy a candlelight dinner by the sea, subject to availability.\nOvernight stay in South Goa."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Goa",
+          "description": "Enjoy a relaxed breakfast and a last walk on the beach.\nCheck out of the hotel.\nYour private car takes you to the airport or Madgaon railway station for your journey home."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in North Goa on twin sharing, with a sea-view or pool-view room where available",
+        "2 nights hotel accommodation in South Goa on twin sharing, with a sea-view or pool-view room where available",
+        "Daily breakfast at the hotel",
+        "Flower welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner by the sea, subject to availability",
+        "One couples spa session, subject to availability",
+        "Mandovi sunset river cruise",
+        "Private AC car for transfers and sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Goa",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as water sports",
+        "Entry fees and activities not listed under inclusions",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "A valid government photo ID is required for every traveller, at hotel check-in and on flights and trains.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather or operational conditions, without reducing the sights covered.",
+        "Rates are indicative and confirmed at the time of booking. Cancellation and refund are as per our Terms & Conditions.",
+        "From June to September the sea is rough and swimming and some beach shacks are closed, so we advise travelling between October and May.",
+        "Dress modestly at churches, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a light cover-up",
+        "Light cotton clothing and a smart outfit for the dinner",
+        "Modest clothing for churches"
+      ],
+      "pickup": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "drop_point": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "photo": "palolem-beach",
+      "gallery": [
+        "mandovi-river-cruise",
+        "colva-beach",
+        "fontainhas-panjim",
+        "chapora-fort"
+      ],
+      "price": 26900,
+      "original_price": 29000
+    }
+  ],
+  "custom_trips": [
+    {
+      "slug": "goa-classic-north-south-holiday",
+      "title": "Goa Classic: North Goa Beaches, Old Goa and Palolem",
+      "nights": 4,
+      "summary": "Four nights in North and South Goa covering Baga, Anjuna, Chapora Fort, Old Goa, Fontainhas and a day at Palolem Beach.",
+      "overview": "This classic circuit gives you both faces of Goa in four nights, two in the north and two in the south. You visit the beaches and forts of North Goa, then see Old Goa's churches and Fontainhas in Panjim before travelling south.\n\nThe last full day is spent at Palolem, the calm crescent bay in Canacona. It suits first-time visitors who want a balanced mix of beach, heritage and rest.",
+      "highlights": [
+        "Baga, Calangute and Anjuna beaches",
+        "Fort Aguada and Chapora Fort viewpoints",
+        "Basilica of Bom Jesus and Se Cathedral in Old Goa",
+        "Fontainhas, Panjim's Latin Quarter",
+        "A day at Palolem Beach in South Goa"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Goa | Baga Beach",
+          "description": "Arrive in Goa and meet our representative at the airport or railway station.\nTransfer to your hotel in the Calangute and Baga area and check in.\nWalk to Baga Beach for the sunset.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 2,
+          "title": "Fort Aguada | Anjuna Beach | Chapora Fort",
+          "description": "After breakfast, drive to Fort Aguada and its lighthouse at Candolim.\nContinue to Anjuna Beach and then to Chapora Fort above Vagator.\nReturn to the hotel and spend a free evening at Calangute or Baga.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 3,
+          "title": "Old Goa | Fontainhas | Transfer to South Goa",
+          "description": "After breakfast, check out and drive to Old Goa to see the Basilica of Bom Jesus and Se Cathedral.\nWalk through the lanes of Fontainhas in Panjim.\nContinue to South Goa and check in at your hotel in the Colva or Benaulim area.\nEnjoy the evening on Colva Beach.\nOvernight stay in South Goa."
+        },
+        {
+          "day": 4,
+          "title": "Palolem Beach Day",
+          "description": "After breakfast, drive to Palolem Beach in Canacona, around an hour away.\nSpend the day on the beach at your own pace, with optional boat trips subject to season and sea conditions.\nReturn to your hotel in the evening.\nOvernight stay in South Goa."
+        },
+        {
+          "day": 5,
+          "title": "Departure from Goa",
+          "description": "After breakfast, check out of the hotel.\nTransfer to the airport or Madgaon railway station for your journey home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in North Goa on twin sharing",
+        "2 nights hotel accommodation in South Goa on twin sharing",
+        "Daily breakfast at the hotel",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Transfer from North Goa to South Goa",
+        "Old Goa, Fontainhas, forts and beach sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Goa",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as water sports",
+        "Entry fees and activities not listed under inclusions",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "A valid government photo ID is required for every traveller, at hotel check-in and on flights and trains.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, traffic or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "From June to September the sea is rough; swimming, water sports and some beach shacks are usually closed, so we advise travelling between October and May.",
+        "Swim only in areas marked as safe and near lifeguards; the sea can be dangerous when red flags are shown.",
+        "Dress modestly at churches and temples, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Light cotton clothing",
+        "Modest clothing for churches and temples",
+        "Comfortable sandals and walking shoes",
+        "Mosquito repellent and regular medicines"
+      ],
+      "pickup": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "drop_point": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "photo": "chapora-fort",
+      "gallery": [
+        "baga-calangute-beach",
+        "basilica-bom-jesus",
+        "palolem-beach",
+        "fontainhas-panjim"
+      ],
+      "price": 18900,
+      "original_price": 20400
+    },
+    {
+      "slug": "goa-budget-beach-saver",
+      "title": "Goa Beach Saver: Three Nights in North Goa",
+      "nights": 3,
+      "summary": "A value three-night North Goa break with Baga, Calangute and Anjuna beaches, Chapora Fort, Old Goa and Fontainhas.",
+      "overview": "This budget-friendly break keeps everything simple, with three nights in one comfortable hotel near Calangute and Baga, so you unpack once. Two days of sightseeing cover the best-known beaches and forts of North Goa, the churches of Old Goa and the lanes of Fontainhas in Panjim.\n\nThe remaining time is yours for the beach, the pool and the shacks. It suits friends, young families and first-time visitors who want Goa at a sensible price.",
+      "highlights": [
+        "Three nights in one hotel, with no packing and unpacking",
+        "Baga, Calangute and Anjuna beaches",
+        "Chapora Fort viewpoint above Vagator",
+        "Basilica of Bom Jesus and Se Cathedral in Old Goa",
+        "Walk through Fontainhas, Panjim"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Goa | Baga Beach",
+          "description": "Arrive in Goa and meet our representative at the airport or railway station.\nTransfer to your hotel in the Calangute and Baga area and check in.\nSpend the evening on Baga Beach.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 2,
+          "title": "North Goa Beaches and Chapora Fort",
+          "description": "After breakfast, drive along the coast to Calangute, Anjuna and Vagator.\nVisit Chapora Fort for views over the sea.\nReturn to the hotel and enjoy a free evening.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 3,
+          "title": "Old Goa | Fontainhas | Free Evening",
+          "description": "After breakfast, drive to Old Goa to see the Basilica of Bom Jesus and Se Cathedral.\nContinue to Panjim and walk through the lanes of Fontainhas.\nReturn to the hotel for a free evening.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 4,
+          "title": "Departure from Goa",
+          "description": "After breakfast, check out of the hotel.\nTransfer to the airport or Madgaon railway station for your journey home."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in North Goa on twin sharing",
+        "Daily breakfast at the hotel",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Arrival and departure transfers between the airport or railway station and the hotel",
+        "Old Goa, Fontainhas, fort and beach sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Goa",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as water sports",
+        "Entry fees and activities not listed under inclusions",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "A valid government photo ID is required for every traveller, at hotel check-in and on flights and trains.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, traffic or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "From June to September the sea is rough; swimming, water sports and some beach shacks are usually closed, so we advise travelling between October and May.",
+        "Swim only in areas marked as safe and near lifeguards; the sea can be dangerous when red flags are shown.",
+        "Dress modestly at churches and temples, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Light cotton clothing",
+        "Modest clothing for churches and temples",
+        "Comfortable sandals and walking shoes",
+        "Mosquito repellent and regular medicines"
+      ],
+      "pickup": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "drop_point": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "photo": "anjuna-beach",
+      "gallery": [
+        "baga-calangute-beach",
+        "chapora-fort",
+        "se-cathedral-old-goa"
+      ],
+      "price": 12900,
+      "original_price": 13900
+    },
+    {
+      "slug": "goa-family-dudhsagar-holiday",
+      "title": "Goa Family Holiday: Dudhsagar, Spice Plantation and Beaches",
+      "nights": 5,
+      "summary": "Five nights in North and South Goa for families, with a Dudhsagar Falls jeep ride, a spice plantation, a Mandovi cruise, Old Goa and easy beach days.",
+      "overview": "This family holiday mixes easy beach time with the experiences that children and grandparents enjoy together. You spend three nights in North Goa and two in South Goa, with short drives and one main outing each day.\n\nHighlights are a jeep ride to Dudhsagar Falls, a guided walk through a spice plantation, a family cruise on the Mandovi and the churches of Old Goa, with Colva and Palolem for relaxed time by the sea. Dudhsagar access depends on the season, so this trip is best from October to May.",
+      "highlights": [
+        "Jeep safari to Dudhsagar Falls, subject to season",
+        "Guided walk through a spice plantation near Ponda",
+        "Family-friendly cruise on the Mandovi river",
+        "Old Goa churches and a short walk in Fontainhas",
+        "Easy beach days at Baga, Colva and Palolem"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Goa | Evening at Leisure",
+          "description": "Arrive in Goa and meet our representative at the airport or railway station.\nTransfer to your hotel in North Goa and check in.\nSpend the evening at the pool or on the beach.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 2,
+          "title": "Spice Plantation | Dudhsagar Falls",
+          "description": "After an early breakfast, drive towards the Western Ghats.\nVisit a spice plantation near Ponda for a guided walk and lunch.\nContinue to the Mollem and Collem side for a jeep ride to Dudhsagar Falls, subject to season and conditions.\nReturn to your North Goa hotel in the evening.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 3,
+          "title": "Old Goa | Fontainhas | Mandovi Cruise",
+          "description": "After breakfast, drive to Old Goa to see the Basilica of Bom Jesus and Se Cathedral.\nWalk through the lanes of Fontainhas in Panjim.\nIn the evening, board a river cruise on the Mandovi.\nReturn to your hotel after the cruise.\nOvernight stay in North Goa."
+        },
+        {
+          "day": 4,
+          "title": "Beach Morning | Transfer to South Goa",
+          "description": "Enjoy a relaxed morning at the pool or at Baga Beach.\nAfter lunch, check out and drive to South Goa.\nCheck in at your hotel in the Colva or Benaulim area and visit Colva Beach in the evening.\nOvernight stay in South Goa."
+        },
+        {
+          "day": 5,
+          "title": "Palolem Beach Day",
+          "description": "After breakfast, drive to Palolem Beach in Canacona, around an hour away.\nSpend the day on the beach at an easy pace, with optional boat trips subject to season and sea conditions.\nReturn to your hotel in the evening.\nOvernight stay in South Goa."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Goa",
+          "description": "After breakfast, check out of the hotel.\nTransfer to the airport or Madgaon railway station for your journey home."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in North Goa on twin sharing",
+        "2 nights hotel accommodation in South Goa on twin sharing",
+        "Daily breakfast at the hotel",
+        "AC vehicle for transfers and sightseeing as per itinerary",
+        "Transfer from North Goa to South Goa",
+        "Spice plantation visit with lunch as per itinerary",
+        "Dudhsagar jeep ride, subject to season",
+        "Mandovi river cruise",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "Flights or trains to and from Goa",
+        "Lunches and dinners not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera fees and optional activities such as water sports",
+        "Entry fees and activities not listed under inclusions",
+        "GST as applicable",
+        "Anything not mentioned under inclusions"
+      ],
+      "notes": [
+        "A valid government photo ID is required for every traveller, at hotel check-in and on flights and trains.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, traffic or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "From June to September the sea is rough; swimming, water sports and some beach shacks are usually closed, so we advise travelling between October and May.",
+        "Swim only in areas marked as safe and near lifeguards; the sea can be dangerous when red flags are shown.",
+        "The Dudhsagar jeep ride usually runs in the dry season and access is restricted during the monsoon; we confirm the position at booking.",
+        "Dudhsagar involves a rough jeep ride and some walking over uneven ground; it may not suit travellers with back problems or very young children."
+      ],
+      "must_carry": [
+        "Valid government photo ID for every traveller",
+        "Flight or train tickets",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Light cotton clothing",
+        "Modest clothing for churches and temples",
+        "Comfortable sandals and walking shoes",
+        "Mosquito repellent and regular medicines"
+      ],
+      "pickup": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "drop_point": "Goa Dabolim (GOI) or Mopa (GOX) Airport, or Madgaon Railway Station",
+      "photo": "dudhsagar-falls",
+      "gallery": [
+        "spice-plantation-goa",
+        "mandovi-river-cruise",
+        "colva-beach",
+        "basilica-bom-jesus"
+      ],
+      "price": null,
+      "original_price": null
+    }
+  ]
+}
