@@ -1,0 +1,495 @@
+{
+  "destination": "azerbaijan",
+  "photos": [
+    {"slot": "flame-towers-baku", "query": "Flame Towers Baku Azerbaijan skyline", "caption": "The Flame Towers above Baku"},
+    {"slot": "heydar-aliyev-center", "query": "Heydar Aliyev Center Baku Azerbaijan", "caption": "Heydar Aliyev Center, Baku"},
+    {"slot": "baku-old-city", "query": "Icheri Sheher Old City Baku Maiden Tower", "caption": "The walled Old City of Baku"},
+    {"slot": "baku-boulevard", "query": "Baku Boulevard seaside promenade Caspian Sea", "caption": "Baku Boulevard on the Caspian shore"},
+    {"slot": "gobustan-rock-art", "query": "Gobustan petroglyphs rock art Azerbaijan", "caption": "Ancient rock carvings at Gobustan"},
+    {"slot": "ateshgah-fire-temple", "query": "Ateshgah Fire Temple Surakhani Baku", "caption": "Ateshgah Fire Temple near Baku"},
+    {"slot": "yanar-dag", "query": "Yanar Dag burning mountain Absheron Azerbaijan", "caption": "Yanardag, the burning hillside"},
+    {"slot": "nohur-lake-gabala", "query": "Nohur Lake Gabala Azerbaijan mountains", "caption": "Nohur Lake, Gabala"},
+    {"slot": "sheki-khan-palace", "query": "Sheki Khan's Palace Azerbaijan", "caption": "Palace of the Sheki Khans"},
+    {"slot": "tbilisi-old-town", "query": "Tbilisi Old Town Narikala Fortress Georgia", "caption": "Old Tbilisi below Narikala Fortress"},
+    {"slot": "gergeti-trinity-kazbegi", "query": "Gergeti Trinity Church Kazbegi Georgia", "caption": "Gergeti Trinity Church, Kazbegi"},
+    {"slot": "sighnaghi-kakheti", "query": "Sighnaghi Kakheti Georgia vineyards", "caption": "Sighnaghi in Georgia's wine country"}
+  ],
+  "hero": "flame-towers-baku",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "azerbaijan-classic-packages",
+      "name": "Classic Azerbaijan Packages",
+      "description": "Baku-based holidays covering the Old City, the Flame Towers, Heydar Aliyev Center and the fire sites of Absheron, plus a fixed-departure circuit to Gabala and Sheki.",
+      "photo": "baku-old-city",
+      "packages": ["classic-azerbaijan", "azerbaijan-buy-1-get-1-free", "azerbaijan-baku-gabala-sheki-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "azerbaijan-georgia-combos",
+      "name": "Azerbaijan and Georgia Combos",
+      "description": "Two countries on one holiday, with Baku and the Caucasus foothills on one side and Tbilisi on the other, linked by a road journey across the border.",
+      "photo": "tbilisi-old-town",
+      "packages": ["azerbaijan-and-georgia-van-tours", "autumn-azerbaijan-georgia", "best-of-azerbaijan-with-georgia-winter", "azerbaijan-georgia-baku-sheki-tbilisi-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "azerbaijan-seasonal-specials",
+      "name": "Seasonal Specials",
+      "description": "Autumn and winter departures for Azerbaijan and Georgia, timed for golden Caucasus colour or a snowy mountain backdrop.",
+      "photo": "gergeti-trinity-kazbegi",
+      "packages": ["autumn-azerbaijan-georgia", "best-of-azerbaijan-with-georgia-winter"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "azerbaijan-budget-saver-offers",
+      "name": "Budget Saver and Offers",
+      "description": "A short, easy Baku holiday that is offered as a special deal, a good fit for first-time visitors to Azerbaijan.",
+      "photo": "baku-boulevard",
+      "packages": ["azerbaijan-buy-1-get-1-free"]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "azerbaijan-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Scheduled small-group departures to Azerbaijan and Georgia with a trip captain, fixed dates and a set price, so you can plan and book with confidence.",
+      "photo": "sheki-khan-palace",
+      "packages": ["azerbaijan-baku-gabala-sheki-group-trip", "azerbaijan-georgia-baku-sheki-tbilisi-group-trip"]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "azerbaijan-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Seaside walks on the Baku Boulevard, evenings under the Flame Towers and, on the longer trips, the old streets of Tbilisi for couples.",
+      "photo": "flame-towers-baku",
+      "packages": ["classic-azerbaijan", "autumn-azerbaijan-georgia", "best-of-azerbaijan-with-georgia-winter"]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "azerbaijan-and-georgia-van-tours",
+      "summary": "Nine nights by road across Azerbaijan and Georgia, from Baku's Old City and Flame Towers to the historic sights of Tbilisi.",
+      "overview": "This nine-night journey begins in Baku, where you see Highland Park, Martyrs Lane, the Flame Towers, the Heydar Aliyev Center and the UNESCO-listed Old Town, followed by the fire-related attractions of the Absheron peninsula. You then travel overland through Azerbaijan and cross into Georgia. The second half is spent in and around Tbilisi, with its principal historical attractions and further Georgia excursions as per the programme.",
+      "highlights": [
+        "Highland Park, Martyrs Lane and the Flame Towers in Baku",
+        "The Heydar Aliyev Center and the UNESCO-listed Old Town of Baku",
+        "Fire-related attractions of the Absheron peninsula",
+        "An overland journey from Azerbaijan to Georgia",
+        "Tbilisi and its principal historical attractions",
+        "Georgia excursion days as per the programme",
+        "Free evening to explore Nizami Street on arrival"
+      ],
+      "inclusions": [
+        "Nine nights' hotel stay in Azerbaijan and Georgia on twin sharing",
+        "Daily breakfast at the hotels",
+        "Airport and inter-city transfers as per the itinerary",
+        "Road transfer from Azerbaijan to Georgia as per the itinerary",
+        "Sightseeing in Baku, Tbilisi and the surrounding regions as per the itinerary",
+        "Entry tickets for the sightseeing listed in the itinerary, where applicable",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing for Azerbaijan and Georgia",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, border or operational conditions without reducing the sights covered.",
+        "The Azerbaijan-Georgia border crossing is made by road, so allow extra time for immigration formalities on that day.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Dress modestly at religious sites such as mosques and churches."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter for European two-pin sockets (Type C/F)",
+        "Comfortable walking shoes",
+        "A light jacket for evenings and mountain areas"
+      ],
+      "pickup": "Baku Heydar Aliyev International Airport",
+      "drop_point": "Airport as confirmed at booking",
+      "photo": "tbilisi-old-town",
+      "gallery": ["baku-old-city", "flame-towers-baku", "heydar-aliyev-center", "ateshgah-fire-temple"]
+    },
+    {
+      "slug": "azerbaijan-buy-1-get-1-free",
+      "summary": "Four nights in Baku covering the evening city views, the Old City, the Absheron fire sites and a free day to shop or explore.",
+      "overview": "Four nights in Baku give you time to see the city properly. Your stay includes an evening panoramic tour past Highland Park, the Alley of Martyrs, the National Assembly and the Flame Towers, a private tour of the historic Old City with a photo stop at the Heydar Aliyev Center, and a Flames Tour to the Ateshgah Fire Worshippers Temple and Yanardag. A free day lets you explore or shop at your own pace.",
+      "highlights": [
+        "Evening panoramic tour of Highland Park, Alley of Martyrs and the Flame Towers",
+        "Private tour of the Old City, Icheri Sheher",
+        "Photo stop at the Heydar Aliyev Center",
+        "Flames Tour to the Ateshgah Fire Worshippers Temple and Yanardag Fire Mountain",
+        "A visit to Ganjlik Mall",
+        "A full free day in Baku for shopping or independent exploration"
+      ],
+      "inclusions": [
+        "Four nights' hotel stay in Baku on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Evening panoramic tour of Baku as per the itinerary",
+        "Private Old City tour as per the itinerary",
+        "Flames Tour covering Ateshgah, Yanardag and Ganjlik Mall as per the itinerary",
+        "Entry tickets for the sightseeing listed in the itinerary, where applicable",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at booking.",
+        "Offer terms and eligibility are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Baku can be windy, so carry a light layer for evening sightseeing."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter for European two-pin sockets (Type C/F)",
+        "Comfortable walking shoes",
+        "A light jacket or windcheater"
+      ],
+      "pickup": "Baku Heydar Aliyev International Airport",
+      "drop_point": "Baku Heydar Aliyev International Airport",
+      "photo": "ateshgah-fire-temple",
+      "gallery": ["flame-towers-baku", "baku-old-city", "yanar-dag"]
+    },
+    {
+      "slug": "autumn-azerbaijan-georgia",
+      "summary": "Eight nights from Baku to Gabala and on to Tbilisi, with the Old City, Nohur Lake, wine country and the Kazbegi mountains.",
+      "overview": "This eight-night autumn journey starts in Baku with Highland Park, the Alley of Martyrs, the National Assembly, the Flame Towers and Baku Boulevard, followed by the Old City, Nizami Street and the Heydar Aliyev Center. After Ateshgah and Yanardag, you drive to Gabala for Tufandag, Nohur Lake and the Yeddi Gozel Waterfalls. You then cross the land border into Georgia for Tbilisi, a wine country excursion and the Kazbegi and Gudauri mountain road.",
+      "highlights": [
+        "Baku Boulevard, Highland Park and the Flame Towers",
+        "The Old City, Nizami Street and the Heydar Aliyev Center",
+        "Ateshgah and Yanardag, the fire sites of Absheron",
+        "Gabala with Tufandag, Nohur Lake and the Yeddi Gozel Waterfalls",
+        "An overland crossing from Azerbaijan into Georgia",
+        "Tbilisi city tour and a Georgian wine country excursion",
+        "Dashbashi Canyon and Diamond Bridge, with the Kazbegi and Gudauri excursion"
+      ],
+      "inclusions": [
+        "Eight nights' hotel stay in Azerbaijan and Georgia on twin sharing",
+        "Daily breakfast at the hotels",
+        "Airport and inter-city transfers as per the itinerary",
+        "Road transfer from Azerbaijan to Georgia as per the itinerary",
+        "Sightseeing in Baku, Gabala and Georgia as per the itinerary",
+        "Entry tickets and activities listed in the itinerary, where applicable",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing for Azerbaijan and Georgia",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, border or operational conditions without reducing the sights covered.",
+        "Allow extra time on the day of the Azerbaijan-Georgia land border crossing for immigration formalities.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Autumn days can be mild but mornings and mountain areas are cool; pack layers.",
+        "Dress modestly at mosques and churches."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter for European two-pin sockets (Type C/F)",
+        "Warm layers and a light jacket",
+        "Comfortable walking shoes",
+        "Scarf or shawl for religious sites"
+      ],
+      "pickup": "Baku Heydar Aliyev International Airport",
+      "drop_point": "Tbilisi Airport or as confirmed at booking",
+      "photo": "nohur-lake-gabala",
+      "gallery": ["baku-boulevard", "flame-towers-baku", "tbilisi-old-town", "gergeti-trinity-kazbegi", "sighnaghi-kakheti"],
+      "price": {"from": 72000}
+    },
+    {
+      "slug": "classic-azerbaijan",
+      "summary": "Four nights in Baku with the evening city views, the Old City, the Absheron fire sites and a shopping day on Nizami Street.",
+      "overview": "Classic Azerbaijan spends four nights in Baku. You see the city from Highland Park and the Alley of Martyrs on the first evening, walk through the Old City and Baku Boulevard, and stop at the Heydar Aliyev Center. A Flames Tour takes in the Ateshgah Fire Worshippers Temple and Yanardag Fire Mountain, and the last full day is for shopping on Nizami Street and Fountains Square, with local Azerbaijani sweets to take home.",
+      "highlights": [
+        "Evening panoramic tour of Highland Park, Alley of Martyrs and the Flame Towers",
+        "Walk through the historic Old City, Icheri Sheher",
+        "Photo stop at the Heydar Aliyev Center and a stroll along Baku Boulevard",
+        "Ateshgah Fire Worshippers Temple and Yanardag Fire Mountain",
+        "Shopping tour of Nizami Street and Fountains Square",
+        "Time to try local Azerbaijani sweets"
+      ],
+      "inclusions": [
+        "Four nights' hotel stay in Baku on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Evening panoramic tour of Baku as per the itinerary",
+        "Old City sightseeing and Baku Boulevard visit as per the itinerary",
+        "Flames Tour covering Ateshgah, Yanardag and Ganjlik Mall as per the itinerary",
+        "Shopping tour of Nizami Street and Fountains Square as per the itinerary",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Baku can be windy, so carry a light layer for evening sightseeing."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter for European two-pin sockets (Type C/F)",
+        "Comfortable walking shoes",
+        "A light jacket or windcheater"
+      ],
+      "pickup": "Baku Heydar Aliyev International Airport",
+      "drop_point": "Baku Heydar Aliyev International Airport",
+      "photo": "heydar-aliyev-center",
+      "gallery": ["baku-old-city", "flame-towers-baku", "ateshgah-fire-temple", "baku-boulevard"],
+      "price": {"from": 39500}
+    },
+    {
+      "slug": "best-of-azerbaijan-with-georgia-winter",
+      "summary": "Six nights combining Azerbaijan and Georgia in the cooler months, with sightseeing in both countries as per the programme.",
+      "overview": "This six-night winter holiday combines Azerbaijan and Georgia in a single trip. It includes hotel stays, transfers and sightseeing in both countries. The detailed day-by-day programme is confirmed at booking, so your plan can be matched to the season and your travel dates.",
+      "highlights": [
+        "Six nights across Azerbaijan and Georgia",
+        "Sightseeing in both countries as per the confirmed programme",
+        "Hotel stays on twin sharing with daily breakfast",
+        "Airport and inter-city transfers as per the itinerary",
+        "A winter-season holiday with the cooler months in mind"
+      ],
+      "inclusions": [
+        "Six nights' hotel stay in Azerbaijan and Georgia on twin sharing",
+        "Daily breakfast at the hotels",
+        "Airport and inter-city transfers as per the itinerary",
+        "Sightseeing in Azerbaijan and Georgia as per the confirmed itinerary",
+        "Entry tickets and activities listed in the confirmed itinerary, where applicable",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing for Azerbaijan and Georgia",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, border or operational conditions without reducing the sights covered.",
+        "Winters are cold and mountain roads can be affected by snow, so some excursions may be adjusted.",
+        "The detailed itinerary, rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter for European two-pin sockets (Type C/F)",
+        "Heavy winter jacket, gloves and cap",
+        "Warm, non-slip walking shoes"
+      ],
+      "pickup": "Airport as confirmed at booking",
+      "drop_point": "Airport as confirmed at booking",
+      "photo": "tbilisi-old-town",
+      "gallery": ["flame-towers-baku", "gergeti-trinity-kazbegi", "baku-old-city"]
+    }
+  ],
+  "group_trips": [
+    {
+      "slug": "azerbaijan-baku-gabala-sheki-group-trip",
+      "title": "Baku, Gobustan, Gabala and Sheki Group Trip",
+      "nights": 6,
+      "summary": "A small-group circuit from Baku's Old City and the Gobustan rock carvings to the mountains of Gabala and the old silk-road town of Sheki.",
+      "overview": "Azerbaijan is a country of contrasts, and this fixed-departure trip shows both sides. You spend three nights in Baku, taking in the Old City, the Flame Towers, the Heydar Aliyev Center, the ancient rock carvings at Gobustan and the burning hillside of Yanardag.\n\nFrom there you head into the Greater Caucasus foothills, with a night at Gabala for its mountain scenery and Nohur Lake, and a night in Sheki, where the Palace of the Sheki Khans and the old caravanserai show another side of the country.\n\nA trip captain travels with the group throughout, and Indian meal options are available on request.",
+      "highlights": [
+        "Baku's UNESCO-listed Old City and the Flame Towers",
+        "Photo stop at the Heydar Aliyev Center",
+        "Gobustan rock carvings and mud volcanoes",
+        "Ateshgah Fire Temple and Yanardag burning hillside",
+        "Mountain scenery and Nohur Lake at Gabala",
+        "Palace of the Sheki Khans and Sheki's old caravanserai",
+        "Travel with a trip captain and a small group"
+      ],
+      "itinerary": [
+        {"day": 1, "title": "Arrival in Baku | Evening on the Boulevard", "description": "Arrive at Baku airport and meet your trip captain.\nTransfer to the hotel and check in.\nIn the evening take a relaxed walk along Baku Boulevard on the Caspian shore.\nOvernight stay in Baku."},
+        {"day": 2, "title": "Baku Old City and Modern Baku", "description": "After breakfast, explore the walled Old City, Icheri Sheher, including the Palace of the Shirvanshahs and the Maiden Tower area.\nDrive past the Flame Towers and make a photo stop at the Heydar Aliyev Center.\nEnjoy free time on Nizami Street in the evening.\nOvernight stay in Baku."},
+        {"day": 3, "title": "Gobustan and the Fire Sites of Absheron", "description": "After breakfast, drive south to Gobustan to see its ancient rock carvings.\nReturn towards Baku and visit the Ateshgah Fire Temple and Yanardag, the burning hillside.\nOvernight stay in Baku."},
+        {"day": 4, "title": "Baku to Gabala | Nohur Lake", "description": "After breakfast, check out and drive towards Gabala with a comfort stop along the way.\nOn arrival, visit Nohur Lake and enjoy the mountain scenery.\nUse the remaining time to relax or walk around the hotel.\nOvernight stay in Gabala."},
+        {"day": 5, "title": "Gabala to Sheki | Khan's Palace", "description": "After breakfast, drive to Sheki, set among the Caucasus foothills.\nVisit the Palace of the Sheki Khans and the old caravanserai.\nTry Sheki's famous sweets in the old town.\nOvernight stay in Sheki."},
+        {"day": 6, "title": "Sheki to Baku | Free Evening", "description": "After breakfast, check out and take the long scenic drive back to Baku.\nArrive in the evening and check in to the hotel.\nUse the free time for last-minute shopping or a farewell dinner.\nOvernight stay in Baku."},
+        {"day": 7, "title": "Departure from Baku", "description": "After breakfast, check out from the hotel.\nTransfer to Baku airport for your onward flight."}
+      ],
+      "inclusions": [
+        "Six nights' hotel stay on twin sharing in Baku, Gabala and Sheki",
+        "Daily breakfast at the hotels",
+        "Airport and inter-city transfers by private coach or van",
+        "Sightseeing in Baku, Gobustan, Gabala and Sheki as per the itinerary",
+        "Entry tickets for the sights listed in the itinerary, where applicable",
+        "A trip captain accompanying the group throughout",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "This is a group departure that runs on minimum numbers; a trip captain accompanies the group.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The drives to Gabala and Sheki are long; carry motion-sickness medication if needed.",
+        "Dress modestly at mosques and other religious sites."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter for European two-pin sockets (Type C/F)",
+        "Comfortable walking shoes",
+        "A light jacket for evenings and mountain areas",
+        "Scarf or shawl for religious sites"
+      ],
+      "pickup": "Baku Heydar Aliyev International Airport",
+      "drop_point": "Baku Heydar Aliyev International Airport",
+      "photo": "sheki-khan-palace",
+      "gallery": ["flame-towers-baku", "gobustan-rock-art", "nohur-lake-gabala", "baku-old-city", "yanar-dag"],
+      "price": 52000,
+      "original_price": 57500,
+      "departures": {"weekday": 5, "count": 5, "every_weeks": 2, "capacity": 20}
+    },
+    {
+      "slug": "azerbaijan-georgia-baku-sheki-tbilisi-group-trip",
+      "title": "Baku, Sheki and Tbilisi Group Trip",
+      "nights": 8,
+      "summary": "A small-group journey from Baku to Sheki, across the land border to Tbilisi, with Kazbegi's mountains and Kakheti wine country.",
+      "overview": "This fixed-departure trip joins two Caucasus neighbours in one holiday. You begin in Baku with the Old City, the Flame Towers and the fire sites of Absheron, then head to Sheki in the Caucasus foothills for its Khan's Palace and caravanserai.\n\nA road crossing at the border takes you into Georgia. Tbilisi is your base for four nights, with the old town, Narikala Fortress and the ancient capital of Mtskheta, a day in the mountains at Kazbegi and a day in Kakheti, Georgia's wine country.\n\nA trip captain travels with the group, and Indian meal options are available on request. You arrive in Baku and fly home from Tbilisi.",
+      "highlights": [
+        "Baku's Old City, Flame Towers and Heydar Aliyev Center",
+        "Ateshgah Fire Temple and Yanardag burning hillside",
+        "Palace of the Sheki Khans and the old caravanserai",
+        "Overland crossing from Azerbaijan to Georgia",
+        "Tbilisi Old Town and Narikala Fortress",
+        "Mtskheta, Georgia's ancient capital",
+        "Kazbegi day trip via Ananuri and Gudauri to Gergeti Trinity Church",
+        "Kakheti wine country and the hilltop town of Sighnaghi"
+      ],
+      "itinerary": [
+        {"day": 1, "title": "Arrival in Baku | Evening on the Boulevard", "description": "Arrive at Baku airport and meet your trip captain.\nTransfer to the hotel and check in.\nIn the evening take a relaxed walk along Baku Boulevard on the Caspian shore.\nOvernight stay in Baku."},
+        {"day": 2, "title": "Baku Old City and Modern Baku", "description": "After breakfast, explore the walled Old City, Icheri Sheher, including the Palace of the Shirvanshahs.\nDrive past the Flame Towers and make a photo stop at the Heydar Aliyev Center.\nEnjoy free time on Nizami Street in the evening.\nOvernight stay in Baku."},
+        {"day": 3, "title": "Gobustan and the Fire Sites of Absheron", "description": "After breakfast, drive south to Gobustan to see its ancient rock carvings.\nReturn towards Baku and visit the Ateshgah Fire Temple and Yanardag, the burning hillside.\nOvernight stay in Baku."},
+        {"day": 4, "title": "Baku to Sheki", "description": "After breakfast, check out and begin the long scenic drive to Sheki.\nStop along the way for comfort breaks and views of the countryside.\nArrive in the evening and check in to the hotel.\nOvernight stay in Sheki."},
+        {"day": 5, "title": "Sheki to Tbilisi | Border Crossing", "description": "After breakfast, visit the Palace of the Sheki Khans and the old caravanserai.\nDrive to the Georgian border and complete immigration formalities.\nContinue by road to Tbilisi and check in to the hotel.\nOvernight stay in Tbilisi."},
+        {"day": 6, "title": "Tbilisi Old Town and Mtskheta", "description": "After breakfast, explore Tbilisi's old town and see the city from Narikala Fortress.\nDrive to Mtskheta, Georgia's ancient capital, for a walk through its historic centre.\nReturn to Tbilisi and enjoy the evening at leisure.\nOvernight stay in Tbilisi."},
+        {"day": 7, "title": "Kazbegi Day Trip", "description": "After breakfast, drive north along the Georgian Military Road.\nStop at Ananuri and at the Gudauri viewpoint.\nReach Kazbegi for views of Gergeti Trinity Church beneath the mountains.\nReturn to Tbilisi in the evening.\nOvernight stay in Tbilisi."},
+        {"day": 8, "title": "Kakheti Wine Country", "description": "After breakfast, drive east to Kakheti, Georgia's main wine region.\nVisit the hilltop town of Sighnaghi and a local winery.\nReturn to Tbilisi for a free evening.\nOvernight stay in Tbilisi."},
+        {"day": 9, "title": "Departure from Tbilisi", "description": "After breakfast, check out from the hotel.\nTransfer to Tbilisi airport for your onward flight."}
+      ],
+      "inclusions": [
+        "Eight nights' hotel stay on twin sharing in Baku, Sheki and Tbilisi",
+        "Daily breakfast at the hotels",
+        "Airport and inter-city transfers by private coach or van",
+        "Road transfer across the Azerbaijan-Georgia border as per the itinerary",
+        "Sightseeing in Azerbaijan and Georgia as per the itinerary",
+        "Entry tickets for the sights listed in the itinerary, where applicable",
+        "A trip captain accompanying the group throughout",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing for Azerbaijan and Georgia",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and wine tastings not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, border or operational conditions without reducing the sights covered.",
+        "This is a group departure that runs on minimum numbers; a trip captain accompanies the group.",
+        "Air tickets should be booked into Baku and out of Tbilisi.",
+        "Allow extra time on Day 5 for border formalities.",
+        "The Kazbegi road can be affected by snow in colder months, in which case the day may be adjusted.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter for European two-pin sockets (Type C/F)",
+        "Comfortable walking shoes",
+        "Warm layers and a light jacket for the mountains",
+        "Scarf or shawl for religious sites"
+      ],
+      "pickup": "Baku Heydar Aliyev International Airport",
+      "drop_point": "Tbilisi Airport, Georgia",
+      "photo": "gergeti-trinity-kazbegi",
+      "gallery": ["flame-towers-baku", "sheki-khan-palace", "tbilisi-old-town", "sighnaghi-kakheti", "ateshgah-fire-temple"],
+      "price": 76000,
+      "original_price": 82000,
+      "departures": {"weekday": 6, "count": 4, "every_weeks": 3, "capacity": 16}
+    }
+  ]
+}

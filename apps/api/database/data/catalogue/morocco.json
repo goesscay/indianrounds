@@ -1,0 +1,482 @@
+{
+  "destination": "morocco",
+  "photos": [
+    {"slot": "hassan-ii-mosque", "query": "Hassan II Mosque Casablanca Morocco", "caption": "Hassan II Mosque, Casablanca"},
+    {"slot": "hassan-tower-rabat", "query": "Hassan Tower Rabat Morocco", "caption": "Hassan Tower, Rabat"},
+    {"slot": "fez-medina", "query": "Fez medina Morocco old city", "caption": "The medina of Fez"},
+    {"slot": "chefchaouen-blue-city", "query": "Chefchaouen blue streets Morocco", "caption": "The blue lanes of Chefchaouen"},
+    {"slot": "merzouga-sahara", "query": "Merzouga Erg Chebbi Sahara dunes camels Morocco", "caption": "Erg Chebbi dunes, Merzouga"},
+    {"slot": "djemaa-el-fna", "query": "Jemaa el-Fnaa square Marrakech", "caption": "Djemaa el-Fna, Marrakech"},
+    {"slot": "majorelle-garden", "query": "Majorelle Garden Marrakech Morocco", "caption": "Majorelle Garden, Marrakech"},
+    {"slot": "essaouira-ramparts", "query": "Essaouira ramparts harbour Morocco", "caption": "The ramparts of Essaouira"},
+    {"slot": "volubilis-ruins", "query": "Volubilis Roman ruins Morocco", "caption": "Roman ruins of Volubilis"},
+    {"slot": "ait-benhaddou", "query": "Ait Benhaddou kasbah Ouarzazate Morocco", "caption": "Ait Benhaddou kasbah"},
+    {"slot": "tangier-medina", "query": "Tangier medina Morocco", "caption": "The medina of Tangier"},
+    {"slot": "ourika-valley", "query": "Ourika Valley Atlas Mountains Morocco", "caption": "Ourika Valley, High Atlas"}
+  ],
+  "hero": "merzouga-sahara",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "morocco-classic-circuits",
+      "name": "Classic Morocco Circuits",
+      "description": "Week-long guided circuits that link Morocco's coast, imperial cities and Marrakech in one comfortable route, ideal for first-time visitors.",
+      "photo": "djemaa-el-fna",
+      "packages": ["majestic-morocco", "marvellous-morocco", "grand-tour-of-morocco-summer", "grand-tour-of-morocco-winter"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "morocco-imperial-cities-blue-streets",
+      "name": "Imperial Cities and Blue Streets",
+      "description": "Walk the medinas of Fez and Rabat, see Roman Volubilis and wander the blue-washed lanes of Chefchaouen on tours built around Morocco's heritage.",
+      "photo": "fez-medina",
+      "packages": ["majestic-morocco", "grand-tour-of-morocco-winter", "morocco-imperial-cities-and-sahara-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "morocco-desert-and-mountains",
+      "name": "Desert and Mountain Journeys",
+      "description": "Camel rides over the Sahara dunes at Merzouga, the Atlas passes, Ait Benhaddou and the Agafay and Ourika landscapes near Marrakech.",
+      "photo": "merzouga-sahara",
+      "packages": ["morocco-imperial-cities-and-sahara-group-trip", "grand-tour-of-morocco-winter"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "morocco-multi-country-combos",
+      "name": "Multi-Country Combos",
+      "description": "Pair Morocco with Spain and Portugal on one longer itinerary, for travellers who want North Africa and southern Europe in a single holiday.",
+      "photo": "majorelle-garden",
+      "packages": ["best-of-spain-portugal-and-morocco-summer"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "morocco-seasonal-specials",
+      "name": "Seasonal Specials",
+      "description": "Packages timed for the summer and winter travel seasons, so you can pick the Morocco itinerary that suits the weather and your school or work calendar.",
+      "photo": "hassan-ii-mosque",
+      "packages": ["best-of-spain-portugal-and-morocco-summer", "grand-tour-of-morocco-summer", "grand-tour-of-morocco-winter"]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "morocco-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a scheduled Morocco departure with a trip captain, fixed dates and Indian meal options on request.",
+      "photo": "merzouga-sahara",
+      "packages": ["morocco-imperial-cities-and-sahara-group-trip"]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "morocco-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Riads, rooftop sunsets and the Atlantic breeze of Essaouira make Morocco a memorable choice for couples and honeymooners.",
+      "photo": "essaouira-ramparts",
+      "packages": ["majestic-morocco", "grand-tour-of-morocco-winter"]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "best-of-spain-portugal-and-morocco-summer",
+      "summary": "A 14-night summer journey that begins in Casablanca and Marrakech and continues through Spain and Portugal on a guided multi-country route.",
+      "overview": "This 14-night summer holiday opens in Casablanca, where you are met by our representative and taken to your hotel. A guided tour of Marrakech follows, taking in Bahia Palace, El Badi Palace, Koutoubia Mosque, the Majorelle Gardens, Djemaa el-Fna and the souks. The journey then continues toward Spain and Portugal, with sightseeing and inter-city transfers as scheduled.",
+      "highlights": [
+        "A single 14-night holiday across Morocco, Spain and Portugal",
+        "Met on arrival in Casablanca by our representative",
+        "Guided Marrakech tour covering Bahia Palace, El Badi Palace and Koutoubia Mosque",
+        "Majorelle Gardens, Djemaa el-Fna square and the Marrakech souks",
+        "Scheduled sightseeing and inter-city transfers across Spain and Portugal",
+        "Cultural and heritage sights along the published route"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 14 nights across the route",
+        "Daily breakfast",
+        "Meet and greet on arrival in Casablanca and transfer to the hotel",
+        "Guided Marrakech tour as per the itinerary",
+        "Inter-city transfers and sightseeing as per itinerary",
+        "Entry tickets for the sightseeing listed in the itinerary",
+        "Departure transfer to the airport",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing for all countries visited",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and excursions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the travel date.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms and Conditions.",
+        "Visa requirements differ for Morocco, Spain and Portugal; our team will guide you on documents well before departure.",
+        "Dress modestly at mosques and other religious sites."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C and E plugs, 220V)",
+        "Comfortable walking shoes",
+        "Sunscreen, hat and sunglasses for summer sightseeing"
+      ],
+      "pickup": "Casablanca Mohammed V Airport",
+      "drop_point": "Departure airport as per itinerary",
+      "photo": "majorelle-garden",
+      "gallery": ["djemaa-el-fna", "hassan-ii-mosque", "ait-benhaddou"]
+    },
+    {
+      "slug": "majestic-morocco",
+      "summary": "A seven-night road journey from Casablanca through Rabat, Meknes, Fez, Marrakech and the coast at Essaouira, with dinners included.",
+      "overview": "Majestic Morocco takes you from the Hassan II Mosque in Casablanca to the royal city of Rabat, then inland to Meknes, the Roman ruins of Volubilis and the medieval medina of Fez. You cross the cedar forests of the Middle Atlas to Marrakech, spend a full day in its historic sites and souks, and then follow the Atlantic coast through Essaouira, Safi and El Jadida before a final night in Casablanca. Dinner is included at your hotel each evening.",
+      "highlights": [
+        "Hassan II Mosque in Casablanca and the Hassan Tower in Rabat",
+        "Mohammed V Mausoleum and royal capital sights",
+        "Meknes ramparts, Bab el Mansour and the Roman ruins of Volubilis",
+        "Fez, with Karaouine Mosque, Medersa Bouanania and Place Nejjarine",
+        "Drive through the cedar forests of Ifrane and the Middle Atlas",
+        "Full day in Marrakech with souks and Djemaa el-Fna",
+        "Essaouira, the blue-and-white Atlantic fortress town",
+        "Portuguese cisterns of El Jadida and the pottery town of Safi"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 7 nights",
+        "Daily breakfast",
+        "Dinner at the hotel on each night of the tour",
+        "Lunch at a local restaurant in Marrakech",
+        "Private airport transfer on departure",
+        "Inter-city transfers and sightseeing as per itinerary",
+        "Entry tickets and sightseeing listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and excursions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the travel date.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms and Conditions.",
+        "This is a road tour with several long drives, so comfortable clothing and patience for travel time are helpful.",
+        "Dress modestly at mosques and in the medinas; some religious buildings are not open to non-Muslim visitors."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C and E plugs, 220V)",
+        "Comfortable walking shoes for medina lanes",
+        "Light jacket for evenings and the Atlas mountains",
+        "Sunscreen and sunglasses"
+      ],
+      "pickup": "Casablanca Mohammed V Airport",
+      "drop_point": "Casablanca Mohammed V Airport",
+      "photo": "essaouira-ramparts",
+      "gallery": ["hassan-ii-mosque", "fez-medina", "volubilis-ruins", "djemaa-el-fna"],
+      "price": {"from": 118000}
+    },
+    {
+      "slug": "marvellous-morocco",
+      "summary": "A seven-night guided Morocco holiday with hotels, transfers and sightseeing arranged around your dates; ask for a free quote.",
+      "overview": "Marvellous Morocco is a seven-night guided holiday that introduces you to the country's culture, cities and landscapes. Hotels, transfers and sightseeing are arranged by our travel experts, and the detailed route is confirmed when we prepare your personalised quote.",
+      "highlights": [
+        "A seven-night guided holiday in Morocco",
+        "Hotel stays arranged to suit the route",
+        "Airport and inter-city transfers as per itinerary",
+        "Sightseeing arranged by our travel experts",
+        "Detailed route confirmed in your personalised quote"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 7 nights",
+        "Daily breakfast",
+        "Airport transfers on arrival and departure",
+        "Inter-city transfers and sightseeing as per itinerary",
+        "Entry tickets for the sightseeing listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and excursions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the travel date.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms and Conditions.",
+        "The detailed day-by-day route is shared with your quote.",
+        "Dress modestly at mosques and other religious sites."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C and E plugs, 220V)",
+        "Comfortable walking shoes",
+        "Light jacket for evenings"
+      ],
+      "pickup": "Arrival airport in Morocco",
+      "drop_point": "Departure airport in Morocco",
+      "photo": "fez-medina",
+      "gallery": ["chefchaouen-blue-city", "djemaa-el-fna", "hassan-tower-rabat"]
+    },
+    {
+      "slug": "grand-tour-of-morocco-summer",
+      "summary": "A seven-night summer holiday through Morocco with hotels, transfers and sightseeing arranged for you; ask for a free quote.",
+      "overview": "Grand Tour of Morocco Summer is a seven-night guided holiday designed for travel in the summer months. Hotels, transfers and sightseeing are arranged by our travel experts, and the full route is confirmed when we prepare your personalised quote.",
+      "highlights": [
+        "A seven-night guided Morocco holiday for the summer season",
+        "Hotel stays arranged to suit the route",
+        "Airport and inter-city transfers as per itinerary",
+        "Sightseeing arranged by our travel experts",
+        "Detailed route confirmed in your personalised quote"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 7 nights",
+        "Daily breakfast",
+        "Airport transfers on arrival and departure",
+        "Inter-city transfers and sightseeing as per itinerary",
+        "Entry tickets for the sightseeing listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and excursions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the travel date.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms and Conditions.",
+        "Summer days in inland Morocco can be very hot, so sightseeing is best done in the morning and evening.",
+        "Dress modestly at mosques and other religious sites."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C and E plugs, 220V)",
+        "Sunscreen, hat and sunglasses",
+        "Light, breathable clothing and comfortable walking shoes"
+      ],
+      "pickup": "Arrival airport in Morocco",
+      "drop_point": "Departure airport in Morocco",
+      "photo": "djemaa-el-fna",
+      "gallery": ["hassan-ii-mosque", "majorelle-garden", "essaouira-ramparts"]
+    },
+    {
+      "slug": "grand-tour-of-morocco-winter",
+      "summary": "A seven-night winter circuit from Casablanca through Tangier, Chefchaouen, Rabat and Marrakech, with the Ourika Valley and Agafay Desert, and dinners included.",
+      "overview": "Grand Tour of Morocco Winter begins in Casablanca with a Tour Manager and moves north to Tangier, the Caves of Hercules and the blue lanes of Chefchaouen. You continue to Rabat for its royal and historic sights before spending three nights in Marrakech, which include a day in the Ourika Valley and a sunset in the Agafay Desert. Dinner is included each evening, with an Indian restaurant meal in Tangier.",
+      "highlights": [
+        "Hassan II Mosque and the Habous district in Casablanca",
+        "Tangier medina and Petit Socco",
+        "Chefchaouen, the Blue City, with its Kasbah and Plaza Uta el-Hammam",
+        "Cape Spartel and the Caves of Hercules",
+        "Rabat's Hassan Tower, Mohammed V Mausoleum, Kasbah des Oudayas and Chellah",
+        "Marrakech: Koutoubia Mosque, Menara Gardens, Saadian Tombs and Bahia Palace",
+        "Ourika Valley, Setti Fatma waterfalls and sunset in the Agafay Desert",
+        "Dinner at an Indian restaurant in Tangier"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 7 nights",
+        "Daily breakfast",
+        "Dinner on each night of the tour, including an Indian restaurant dinner in Tangier",
+        "Lunch at local restaurants in Chefchaouen, on the way to Rabat and in the Ourika Valley",
+        "Airport arrival meeting by the local representative or Tour Manager",
+        "Inter-city transfers and sightseeing as per itinerary",
+        "Entry tickets and sightseeing listed in the itinerary",
+        "Transfer to Casablanca Airport on departure",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and excursions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the travel date.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms and Conditions.",
+        "Book your departure flight after 2 pm on the last day, as the drive to Casablanca Airport takes time.",
+        "Winter evenings in Chefchaouen, the Atlas foothills and the Agafay Desert are cold, so carry warm layers.",
+        "Dress modestly at mosques and other religious sites."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C and E plugs, 220V)",
+        "Warm jacket and layers for winter evenings",
+        "Comfortable walking shoes for medina lanes",
+        "Sunglasses and sunscreen"
+      ],
+      "pickup": "Casablanca Mohammed V Airport",
+      "drop_point": "Casablanca Mohammed V Airport",
+      "photo": "chefchaouen-blue-city",
+      "gallery": ["tangier-medina", "hassan-tower-rabat", "djemaa-el-fna", "ourika-valley"],
+      "price": {"from": 132000}
+    }
+  ],
+  "group_trips": [
+    {
+      "slug": "morocco-imperial-cities-and-sahara-group-trip",
+      "title": "Morocco Imperial Cities, Blue City and Sahara Group Trip",
+      "nights": 8,
+      "summary": "A nine-day small-group journey from Casablanca through Rabat, Chefchaouen and Fez to a night in the Sahara at Merzouga, then Ait Benhaddou and Marrakech.",
+      "overview": "This fixed-departure trip follows Morocco's classic route, from the Atlantic coast to the edge of the Sahara. You begin in Casablanca and Rabat, then head north to the blue-washed lanes of Chefchaouen and on to Fez, where two nights give you time to explore the medieval medina properly.\n\nFrom Fez you cross the Middle Atlas to Merzouga for a sunset camel ride on the Erg Chebbi dunes and a night in a desert camp. The return takes in the Todra Gorge, the kasbah of Ait Benhaddou and the High Atlas before two nights in Marrakech. A trip captain travels with the group throughout, and Indian meal options are available on request.",
+      "highlights": [
+        "Hassan II Mosque in Casablanca and the Hassan Tower in Rabat",
+        "Chefchaouen, the blue-painted Blue City of the Rif mountains",
+        "Two nights in Fez with a guided tour of its medieval medina",
+        "Camel ride at sunset on the Erg Chebbi dunes at Merzouga",
+        "Night in a Berber-style desert camp under the Saharan sky",
+        "Ait Benhaddou kasbah and the High Atlas crossing to Marrakech",
+        "Full day in Marrakech with Koutoubia Mosque, Bahia Palace and Djemaa el-Fna",
+        "Small group with a trip captain and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Casablanca | Hassan II Mosque",
+          "description": "Arrive at Casablanca Mohammed V Airport and meet your trip captain.\nTransfer to your hotel and check in.\nIn the afternoon, visit the Hassan II Mosque and drive along the Corniche.\nMeet your fellow travellers at a welcome dinner.\nOvernight stay in Casablanca."
+        },
+        {
+          "day": 2,
+          "title": "Rabat | Chefchaouen",
+          "description": "After breakfast, drive to Rabat, the capital of Morocco.\nVisit the Hassan Tower, the Mohammed V Mausoleum and the Kasbah of the Udayas.\nAfter lunch, continue by road towards the Rif mountains to reach Chefchaouen in the evening.\nDinner at the hotel.\nOvernight stay in Chefchaouen."
+        },
+        {
+          "day": 3,
+          "title": "Chefchaouen Blue City | Drive to Fez",
+          "description": "After breakfast, walk through the blue-painted lanes of the Chefchaouen medina with your trip captain.\nSee Plaza Uta el-Hammam and the Kasbah, and enjoy free time for photographs and shopping.\nDrive to Fez after lunch.\nDinner at the hotel.\nOvernight stay in Fez."
+        },
+        {
+          "day": 4,
+          "title": "Fez Medina Full-Day Tour",
+          "description": "After breakfast, set out with a local guide to explore the medieval medina of Fez.\nVisit Bab Boujloud, the Karaouine Mosque exterior, Medersa Bouanania and Place Nejjarine.\nSee the leather tanneries from a viewing terrace, then enjoy free time in the souks.\nDinner at the hotel.\nOvernight stay in Fez."
+        },
+        {
+          "day": 5,
+          "title": "Fez to Merzouga | Sahara Camel Ride",
+          "description": "After an early breakfast, begin the long scenic drive south through the cedar forests of Ifrane and the Middle Atlas.\nStop for lunch along the way before descending into the Ziz valley.\nOn arrival in Merzouga, ride camels across the Erg Chebbi dunes at sunset.\nDinner and music at the desert camp.\nOvernight stay in a desert camp in Merzouga."
+        },
+        {
+          "day": 6,
+          "title": "Merzouga to Ouarzazate | Todra Gorge",
+          "description": "Wake early for sunrise over the dunes, then have breakfast at the camp.\nDrive west through the oasis towns of the Tafilalet and Tinghir.\nStop at the Todra Gorge for a short walk beneath its rock walls.\nContinue to Ouarzazate in the evening.\nOvernight stay in Ouarzazate."
+        },
+        {
+          "day": 7,
+          "title": "Ait Benhaddou | High Atlas to Marrakech",
+          "description": "After breakfast, visit the fortified kasbah village of Ait Benhaddou, a UNESCO World Heritage site.\nDrive over the Tizi n'Tichka pass in the High Atlas with photo stops.\nArrive in Marrakech in the late afternoon and check in.\nFree evening to try the food stalls of Djemaa el-Fna, with dinner as arranged.\nOvernight stay in Marrakech."
+        },
+        {
+          "day": 8,
+          "title": "Marrakech City Tour",
+          "description": "After breakfast, begin a guided tour of Marrakech with the Koutoubia Mosque and Bahia Palace.\nVisit the Majorelle Garden and walk through the souks.\nSpend the late afternoon at leisure before a farewell dinner with the group.\nOvernight stay in Marrakech."
+        },
+        {
+          "day": 9,
+          "title": "Departure from Marrakech",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Marrakech Menara Airport for your flight home.\nDepart Morocco with memories of the medinas and the dunes."
+        }
+      ],
+      "inclusions": [
+        "Hotel and desert camp stay on twin sharing for 8 nights",
+        "Daily breakfast and dinner, with lunches as noted in the itinerary",
+        "Welcome dinner in Casablanca and farewell dinner in Marrakech",
+        "Airport arrival and departure transfers",
+        "Comfortable air-conditioned coach or minibus for all inter-city transfers",
+        "Sunset camel ride at Merzouga",
+        "Guided tours of Fez and Marrakech",
+        "Entry tickets for the sightseeing listed in the itinerary",
+        "A trip captain accompanying the group throughout",
+        "Indian meal options on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and excursions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the travel date.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms and Conditions.",
+        "This is a small-group departure, and each departure runs on minimum numbers.",
+        "A trip captain accompanies the group from arrival to departure.",
+        "Days 5 to 7 involve long drives, so carry water, snacks and motion-sickness medication if needed.",
+        "Nights in the Sahara are cold, and the desert camp has simple facilities.",
+        "Dress modestly at mosques and religious sites; some are not open to non-Muslim visitors."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C and E plugs, 220V)",
+        "Warm layers for the desert nights",
+        "Scarf and sunglasses for the dunes",
+        "Comfortable walking shoes",
+        "Small overnight bag for the desert camp"
+      ],
+      "pickup": "Casablanca Mohammed V Airport",
+      "drop_point": "Marrakech Menara Airport",
+      "photo": "merzouga-sahara",
+      "gallery": ["chefchaouen-blue-city", "fez-medina", "ait-benhaddou", "djemaa-el-fna", "hassan-ii-mosque"],
+      "price": 149000,
+      "original_price": 164000,
+      "departures": {"weekday": 6, "count": 5, "every_weeks": 2, "capacity": 20}
+    }
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "destination": "vietnam",
+  "photos": [
+    {"slot": "ha-long-bay", "query": "Ha Long Bay limestone karsts Vietnam", "caption": "Ha Long Bay"},
+    {"slot": "hanoi-old-quarter", "query": "Hanoi Old Quarter Vietnam street", "caption": "Hanoi Old Quarter"},
+    {"slot": "ninh-binh-tam-coc", "query": "Tam Coc Ninh Binh boat Vietnam", "caption": "Tam Coc, Ninh Binh"},
+    {"slot": "hoi-an-ancient-town", "query": "Hoi An Ancient Town lanterns Vietnam", "caption": "Hoi An Ancient Town"},
+    {"slot": "golden-bridge-ba-na-hills", "query": "Golden Bridge Ba Na Hills Da Nang Vietnam", "caption": "Golden Bridge, Ba Na Hills"},
+    {"slot": "saigon-notre-dame", "query": "Notre-Dame Cathedral Ho Chi Minh City Vietnam", "caption": "Notre-Dame Cathedral, Ho Chi Minh City"},
+    {"slot": "mekong-delta", "query": "Mekong Delta boat Vietnam", "caption": "Mekong Delta"},
+    {"slot": "phu-quoc-beach", "query": "Phu Quoc island beach Vietnam", "caption": "Phu Quoc beach"},
+    {"slot": "hon-thom-cable-car", "query": "Hon Thom cable car Phu Quoc Vietnam", "caption": "Hon Thom cable car, Phu Quoc"},
+    {"slot": "phu-quoc-sunset", "query": "Phu Quoc sunset Vietnam", "caption": "Sunset on Phu Quoc"},
+    {"slot": "angkor-wat", "query": "Angkor Wat Siem Reap Cambodia", "caption": "Angkor Wat, Cambodia"},
+    {"slot": "bangkok-grand-palace", "query": "Grand Palace Bangkok Thailand", "caption": "Grand Palace, Bangkok"}
+  ],
+  "hero": "ha-long-bay",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "vietnam-classic-packages",
+      "name": "Classic Vietnam Packages",
+      "description": "Limestone bays, old quarters and lantern-lit towns, from the north of Vietnam to the central coast. A good first Vietnam holiday for families and friends.",
+      "photo": "ha-long-bay",
+      "packages": ["vietnam-buy-1-get-1-free", "vietnam-hanoi-halong-hoi-an-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "vietnam-phu-quoc-beach-escapes",
+      "name": "Phu Quoc Beach Escapes",
+      "description": "Island holidays on Phu Quoc, with beaches, speedboat island hopping, the Hon Thom cable car and resort time. Easy to combine with Ho Chi Minh City or Bangkok.",
+      "photo": "phu-quoc-beach",
+      "packages": ["phu-quoc-buy-1-get-1-free", "winter-phu-quoc-vin-resort-spa-5n", "wonders-of-phu-quoc-with-bangkok-winter", "vietnam-saigon-mekong-phu-quoc-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "vietnam-multi-country-combos",
+      "name": "Multi-Country Combos",
+      "description": "Pair Vietnam with its neighbours: Phu Quoc with Bangkok, or Vietnam with the temples of Angkor in Cambodia. Two cultures on one itinerary.",
+      "photo": "angkor-wat",
+      "packages": ["wonders-of-phu-quoc-with-bangkok-winter", "wonders-of-vietnam-with-cambodia-winter"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "vietnam-winter-specials",
+      "name": "Winter Specials",
+      "description": "Packages planned for the cooler, drier months, when island beaches and sightseeing are at their most comfortable.",
+      "photo": "phu-quoc-sunset",
+      "packages": ["winter-phu-quoc-vin-resort-spa-5n", "wonders-of-phu-quoc-with-bangkok-winter", "wonders-of-vietnam-with-cambodia-winter"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "vietnam-buy-1-get-1-free-offers",
+      "name": "Buy 1 Get 1 Free Offers",
+      "description": "Our Buy 1 Get 1 Free Vietnam and Phu Quoc offers, subject to the offer terms and travel dates confirmed at booking.",
+      "photo": "hon-thom-cable-car",
+      "packages": ["vietnam-buy-1-get-1-free", "phu-quoc-buy-1-get-1-free"]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "vietnam-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Travel with a trip captain and a friendly group on fixed dates. Flights within Vietnam, hotels, sightseeing and daily breakfast are taken care of.",
+      "photo": "hoi-an-ancient-town",
+      "packages": ["vietnam-hanoi-halong-hoi-an-group-trip", "vietnam-saigon-mekong-phu-quoc-group-trip"]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "vietnam-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Island sunsets, resort time and unhurried days for couples, in Phu Quoc and beyond.",
+      "photo": "phu-quoc-sunset",
+      "packages": ["winter-phu-quoc-vin-resort-spa-5n", "phu-quoc-buy-1-get-1-free", "wonders-of-phu-quoc-with-bangkok-winter"]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "vietnam-buy-1-get-1-free",
+      "summary": "Hanoi's temples and Old Quarter, a day in Ninh Binh and an overnight cruise on Ha Long Bay, in one northern Vietnam holiday.",
+      "overview": "This northern Vietnam holiday starts in Hanoi, where you visit Ba Dinh Square, the Temple of Literature, Hoan Kiem Lake and the Old Quarter. A day trip takes you to Ninh Binh for the Dinh and Le temples at Hoa Lu and a boat ride through Tam Coc. The journey ends with an overnight cruise among the limestone islets of Ha Long Bay before a return to Hanoi and your flight home.",
+      "highlights": [
+        "Hanoi sightseeing with Ba Dinh Square, the Temple of Literature and Hoan Kiem Lake",
+        "Walk through the Old Quarter, Hanoi's historic web of trading streets",
+        "Dinh and Le temples at Hoa Lu, Vietnam's ancient capital",
+        "Boat trip through the rice fields and limestone hills of Tam Coc",
+        "Overnight cruise on Ha Long Bay with grotto, kayaking and swimming stops",
+        "Cooking demonstration on board and sunrise over the bay"
+      ],
+      "inclusions": [
+        "Hotel stay in Hanoi on twin sharing, as per the itinerary",
+        "One night on an overnight Ha Long Bay cruise",
+        "Daily breakfast, plus the meals mentioned in the itinerary (dinner on arrival day, lunch in Ninh Binh and meals on the cruise)",
+        "Airport transfers and inter-city transfers as per the itinerary",
+        "Hanoi city sightseeing as per the itinerary",
+        "Hoa Lu temples visit and Tam Coc boat trip in Ninh Binh",
+        "Ha Long Bay cruise activities listed in the itinerary, including the cooking demonstration",
+        "Entry tickets for the sights listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as cycling and any extras on the cruise",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "The Buy 1 Get 1 Free offer is subject to its terms, travel dates and availability.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Ha Long Bay cruises can be altered or cancelled by the authorities in bad weather; an alternative is arranged where possible.",
+        "Dress modestly at temples and pagodas, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter",
+        "Light layers, as northern Vietnam can be cool and damp in winter",
+        "Comfortable walking shoes",
+        "Swimwear and sunscreen for the cruise"
+      ],
+      "pickup": "Hanoi (Noi Bai International Airport)",
+      "drop_point": "Hanoi (Noi Bai International Airport)",
+      "photo": "ha-long-bay",
+      "gallery": ["hanoi-old-quarter", "ninh-binh-tam-coc"]
+    },
+    {
+      "slug": "phu-quoc-buy-1-get-1-free",
+      "summary": "A beach holiday on Phu Quoc with VinWonders and Vinpearl Safari, a speedboat island-hopping day and the Hon Thom cable car.",
+      "overview": "This Phu Quoc holiday balances leisure and activity. You spend your first days at the resort on the beach, then visit Vinpearl Safari, VinWonders and Grand World in one day. Another day takes you to the Coconut Prison and by speedboat to the islands of Mong Tay, Gam Ghi and May Rut, with the Hon Thom cable car ride back. A day at leisure remains before your flight home.",
+      "highlights": [
+        "Beach and swimming time at the resort",
+        "Vinpearl Safari and VinWonders with its aquarium, 5D cinema and water musical show",
+        "Evening at Grand World",
+        "Visit to the Coconut Prison, a former wartime prison",
+        "Speedboat trip to Mong Tay, Gam Ghi and May Rut islands with coral reef experiences",
+        "Hon Thom cable car ride back to An Thoi",
+        "A free day to explore Phu Quoc at your own pace"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for the nights of the package",
+        "Daily breakfast, plus lunch on the island-hopping day as per the itinerary",
+        "Airport and inter-city transfers as per the itinerary",
+        "Vinpearl Safari and VinWonders visit as per the itinerary",
+        "Visit to Grand World",
+        "Coconut Prison visit and speedboat island-hopping as per the itinerary",
+        "Hon Thom Cable Car ride and Aquatopia entry as listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and water sports",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "The Buy 1 Get 1 Free offer is subject to its terms, travel dates and availability.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Speedboat trips and the cable car depend on sea and wind conditions and may be rescheduled.",
+        "Rides and activities at theme parks may have age, height or health restrictions."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter",
+        "Swimwear, sunscreen and a hat",
+        "Light cotton clothing and a rain jacket",
+        "Beach sandals or water shoes"
+      ],
+      "pickup": "Phu Quoc International Airport",
+      "drop_point": "Phu Quoc International Airport",
+      "photo": "hon-thom-cable-car",
+      "gallery": ["phu-quoc-beach", "phu-quoc-sunset"]
+    },
+    {
+      "slug": "wonders-of-phu-quoc-with-bangkok-winter",
+      "summary": "Phu Quoc's beaches and island hopping, followed by Bangkok sightseeing and shopping, in one winter holiday across two countries.",
+      "overview": "This winter combination starts on Phu Quoc, where you settle in at the hotel and spend a day island hopping by canoe around Mong Tay, Hon Gam Ghi, May Rut and Hon Thom, finishing with the Hon Thom cable car. After more Phu Quoc time, you transfer to Bangkok for a day of sightseeing and shopping before your departure. Beach calm and city energy sit side by side.",
+      "highlights": [
+        "Four-island hopping by canoe around Mong Tay, Hon Gam Ghi, May Rut and Hon Thom",
+        "Hon Thom cable car ride",
+        "Leisure time on Phu Quoc's beaches",
+        "Onward journey from Phu Quoc to Bangkok",
+        "Bangkok sightseeing and shopping day"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing in Phu Quoc and Bangkok for the nights of the package",
+        "Daily breakfast",
+        "Airport transfers and transfers between Phu Quoc and Bangkok as per the itinerary",
+        "Four-island canoe hopping and Hon Thom cable car ride",
+        "Phu Quoc sightseeing and Bangkok sightseeing as per the itinerary",
+        "Entry tickets and activities listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare, and flights between Phu Quoc and Bangkok unless confirmed in your final itinerary",
+        "Visa fees and processing for Vietnam and Thailand where required",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and shopping",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Visa requirements for Vietnam and Thailand depend on your passport and current rules; please check before booking.",
+        "Island trips depend on sea conditions and may be rescheduled.",
+        "Dress modestly when visiting temples and palaces in Bangkok."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter",
+        "Swimwear and sunscreen",
+        "Modest clothing for temple visits",
+        "Comfortable walking shoes"
+      ],
+      "pickup": "Phu Quoc International Airport",
+      "drop_point": "Bangkok airport",
+      "photo": "bangkok-grand-palace",
+      "gallery": ["phu-quoc-beach", "hon-thom-cable-car"],
+      "price": {"from": 58000}
+    },
+    {
+      "slug": "wonders-of-vietnam-with-cambodia-winter",
+      "summary": "Phnom Penh, the temples of Angkor in Siem Reap and a Vietnam leg, combined in one winter holiday across two countries.",
+      "overview": "This winter combination begins in Phnom Penh with the Royal Palace and Wat Phnom, then continues by road to Siem Reap. You spend two days exploring the Angkor temples and their surroundings before crossing over to Vietnam. The final days follow a scheduled Vietnam programme of sightseeing and cultural experiences before departure.",
+      "highlights": [
+        "Royal Palace and Wat Phnom in Phnom Penh",
+        "Road journey from Phnom Penh to Siem Reap",
+        "The principal Angkor temples and their surroundings",
+        "Onward journey from Cambodia into Vietnam",
+        "Vietnam sightseeing and cultural experiences",
+        "Two countries and two cultures on one itinerary"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing in Cambodia and Vietnam for the nights of the package",
+        "Daily breakfast",
+        "Airport transfers and inter-city transfers as per the itinerary",
+        "Phnom Penh sightseeing with the Royal Palace and Wat Phnom",
+        "Siem Reap and Angkor sightseeing as per the itinerary",
+        "Vietnam sightseeing and cultural experiences as per the itinerary",
+        "Entry tickets for the sights listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare, and flights between Cambodia and Vietnam unless confirmed in your final itinerary",
+        "Visa fees and processing for Cambodia and Vietnam",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Visa requirements for Cambodia and Vietnam depend on your passport and current rules; please check before booking.",
+        "Shoulders and knees must be covered at the Royal Palace and the Angkor temples.",
+        "Angkor involves a lot of walking and steps in warm conditions; carry water and a hat."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter",
+        "Modest clothing covering shoulders and knees",
+        "Comfortable walking shoes",
+        "Sunscreen, hat and sunglasses"
+      ],
+      "pickup": "Phnom Penh International Airport",
+      "drop_point": "Departure airport in Vietnam, as per the final itinerary",
+      "photo": "angkor-wat",
+      "gallery": ["ha-long-bay", "hoi-an-ancient-town"],
+      "price": {"from": 74000}
+    },
+    {
+      "slug": "winter-phu-quoc-vin-resort-spa-5n",
+      "summary": "A relaxed winter beach holiday on Phu Quoc with a resort and spa stay and plenty of time to unwind.",
+      "overview": "A winter holiday built around rest on Phu Quoc, the island known for its beaches and warm sea. You stay at a resort and spa with daily breakfast and airport transfers, and the days are yours to spend by the pool, on the sand or exploring the island. Sightseeing and activities can be added on request.",
+      "highlights": [
+        "Resort and spa stay on Phu Quoc island",
+        "Beach and pool time in the dry winter season",
+        "Daily breakfast at the resort",
+        "Airport transfers on arrival and departure",
+        "Optional island activities arranged on request"
+      ],
+      "inclusions": [
+        "Resort stay on twin sharing for the duration of the package",
+        "Daily breakfast",
+        "Airport transfers as per the itinerary",
+        "Use of the resort's pool and beach facilities, subject to resort policy",
+        "Help with booking optional sightseeing on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned",
+        "Spa treatments, optional activities and sightseeing unless specified",
+        "Personal expenses, laundry, tips and porterage",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Room category and resort facilities are as per the details confirmed at booking.",
+        "Sea activities depend on weather and sea conditions."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter",
+        "Swimwear and sunscreen",
+        "Light cotton clothing"
+      ],
+      "pickup": "Phu Quoc International Airport",
+      "drop_point": "Phu Quoc International Airport",
+      "photo": "phu-quoc-sunset",
+      "gallery": ["phu-quoc-beach", "hon-thom-cable-car"],
+      "price": {"from": 46000}
+    }
+  ],
+  "group_trips": [
+    {
+      "slug": "vietnam-hanoi-halong-hoi-an-group-trip",
+      "title": "Vietnam Hanoi, Ha Long Bay and Hoi An Group Trip",
+      "nights": 7,
+      "summary": "Travel with a trip captain from Hanoi and an overnight Ha Long Bay cruise to Hoi An, Ba Na Hills and Da Nang.",
+      "overview": "This group trip covers the best of northern and central Vietnam in eight days. You begin in Hanoi with its lakes, temples and Old Quarter, then spend a night aboard a cruise among the limestone islands of Ha Long Bay.\n\nA flight takes the group south to Da Nang and the lantern-lit lanes of Hoi An. A day at Ba Na Hills brings the Golden Bridge and a ride on one of the world's longest cable cars, before the Marble Mountains and Da Nang's coast complete the trip.\n\nA trip captain accompanies the group throughout, and Indian meal options can be arranged on request.",
+      "highlights": [
+        "Hanoi's Temple of Literature, Ba Dinh Square and the Old Quarter",
+        "Overnight cruise among the limestone karsts of Ha Long Bay",
+        "Kayaking or swimming stops and a cave visit on the bay, weather permitting",
+        "Hoi An Ancient Town and its lantern-lit lanes",
+        "Golden Bridge and the French Village at Ba Na Hills",
+        "Marble Mountains and the Lady Buddha at Linh Ung Pagoda in Da Nang",
+        "Domestic flight from Hanoi to Da Nang included",
+        "Trip captain throughout and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Hanoi | Old Quarter Evening Walk",
+          "description": "Arrive at Noi Bai International Airport, where your trip captain meets the group.\nTransfer to your 4-star hotel in Hanoi and check in.\nTake an easy evening walk around Hoan Kiem Lake and the Old Quarter.\nDinner at leisure; Indian meal options can be arranged on request.\nOvernight stay in Hanoi."
+        },
+        {
+          "day": 2,
+          "title": "Hanoi City Tour | Temple of Literature",
+          "description": "After breakfast, visit Ba Dinh Square and see the Ho Chi Minh Mausoleum from outside.\nStop at the One Pillar Pagoda and the Temple of Literature, Vietnam's first national university.\nSpend the afternoon in the Old Quarter with its narrow streets, street food and craft shops.\nAn optional evening water puppet show can be arranged, subject to availability.\nOvernight stay in Hanoi."
+        },
+        {
+          "day": 3,
+          "title": "Hanoi to Ha Long Bay | Overnight Cruise",
+          "description": "Drive from Hanoi to Ha Long Bay, with a comfort stop on the way.\nBoard your cruise, settle into your cabin and enjoy lunch on board.\nCruise past limestone islets with stops for kayaking or swimming and a cave visit, weather permitting.\nWatch the sunset from the deck, then enjoy dinner on board.\nOvernight stay on the cruise."
+        },
+        {
+          "day": 4,
+          "title": "Ha Long Bay Sunrise | Return to Hanoi",
+          "description": "Wake early to watch the sun rise over the bay.\nHave breakfast or brunch on board while cruising among the islets, then disembark.\nDrive back to Hanoi and check in at the hotel.\nThe rest of the day is at leisure for last-minute shopping or a rest.\nOvernight stay in Hanoi."
+        },
+        {
+          "day": 5,
+          "title": "Fly to Da Nang | Hoi An Ancient Town",
+          "description": "After breakfast, transfer to Noi Bai airport for the short flight to Da Nang.\nDrive to Hoi An, about 45 minutes away, and check in.\nStroll through Hoi An Ancient Town, including the Japanese Covered Bridge, as the lanterns light up.\nDinner at leisure; Hoi An is known for its tailors and cafes.\nOvernight stay in Hoi An."
+        },
+        {
+          "day": 6,
+          "title": "Ba Na Hills | Golden Bridge",
+          "description": "Drive from Hoi An to Ba Na Hills and ride the cable car up the mountain.\nWalk across the Golden Bridge, held up by two giant stone hands, and explore the French Village and gardens.\nLunch at leisure in the hill resort, then return to Hoi An in the afternoon.\nThe evening is free for the old town or an optional lantern boat ride on the river.\nOvernight stay in Hoi An."
+        },
+        {
+          "day": 7,
+          "title": "Hoi An Morning | Marble Mountains and Da Nang",
+          "description": "Enjoy a relaxed morning in Hoi An, with an optional cooking class or cycle ride through the paddy fields.\nCheck out and drive to Da Nang to visit the Marble Mountains, hills with caves and pagodas.\nContinue to Linh Ung Pagoda on the Son Tra Peninsula, home to the tall Lady Buddha statue and wide coastal views.\nSpend the evening free along the Han River or at My Khe beach.\nOvernight stay in Da Nang."
+        },
+        {
+          "day": 8,
+          "title": "Departure from Da Nang",
+          "description": "After breakfast, check out and enjoy free time until your transfer.\nTransfer to Da Nang International Airport for your onward flight.\nDepart Vietnam with a camera full of memories."
+        }
+      ],
+      "inclusions": [
+        "7 nights in 4-star hotels and on the Ha Long Bay cruise, on twin sharing",
+        "Daily breakfast, lunch and dinner on the Ha Long Bay cruise and lunch on the Ba Na Hills day as per the itinerary",
+        "Economy class domestic flight from Hanoi to Da Nang",
+        "Airport and inter-city transfers and sightseeing as per the itinerary",
+        "Hanoi city tour with Temple of Literature and Old Quarter visit",
+        "Ha Long Bay overnight cruise with the activities listed in the itinerary",
+        "Hoi An Ancient Town visit and Ba Na Hills entry with cable car",
+        "Marble Mountains and Linh Ung Pagoda visit",
+        "A trip captain accompanying the group throughout",
+        "Indian meal options on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as the water puppet show, cooking class and lantern boat ride",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group trip with a typical group of 12 to 24 travellers; the departure runs on minimum numbers.",
+        "A trip captain accompanies the group throughout the tour.",
+        "Ha Long Bay cruises can be altered or cancelled by the authorities in bad weather; an alternative is arranged where possible.",
+        "The Ho Chi Minh Mausoleum is viewed from outside; it has its own opening days and annual closure.",
+        "Dress modestly at temples and pagodas, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter",
+        "Light layers for cool, damp weather in Hanoi and on the bay",
+        "Comfortable walking shoes",
+        "Sunscreen, hat and swimwear",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Hanoi (Noi Bai International Airport)",
+      "drop_point": "Da Nang International Airport",
+      "photo": "hoi-an-ancient-town",
+      "gallery": ["ha-long-bay", "golden-bridge-ba-na-hills", "hanoi-old-quarter", "ninh-binh-tam-coc"],
+      "price": 68000,
+      "original_price": 74000,
+      "departures": {"weekday": 6, "count": 6, "every_weeks": 2, "capacity": 24}
+    },
+    {
+      "slug": "vietnam-saigon-mekong-phu-quoc-group-trip",
+      "title": "Vietnam Saigon, Mekong Delta and Phu Quoc Island Group Trip",
+      "nights": 6,
+      "summary": "Ho Chi Minh City, the Cu Chi Tunnels and the Mekong Delta, followed by three beach days on Phu Quoc, with a trip captain throughout.",
+      "overview": "This group trip pairs the energy of southern Vietnam with island relaxation. The first three days cover Ho Chi Minh City, the Cu Chi Tunnels and a day on the waterways of the Mekong Delta.\n\nYou then fly to Phu Quoc for three nights, with an island-hopping day by speedboat to Mong Tay, Gam Ghi and May Rut, a ride on the Hon Thom cable car, and a day of local sights and the night market.\n\nA trip captain accompanies the group, and Indian meal options can be arranged on request.",
+      "highlights": [
+        "Notre-Dame Cathedral, the Central Post Office and Ben Thanh Market in Ho Chi Minh City",
+        "Cu Chi Tunnels, the wartime tunnel network outside the city",
+        "Day trip into the Mekong Delta with a boat ride and fruit tasting",
+        "Domestic flight from Ho Chi Minh City to Phu Quoc included",
+        "Speedboat island hopping to Mong Tay, Gam Ghi and May Rut",
+        "Hon Thom cable car ride",
+        "Dinh Cau Night Market and local sights on Phu Quoc",
+        "Trip captain throughout and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Ho Chi Minh City | Saigon Riverside",
+          "description": "Arrive at Tan Son Nhat International Airport, where your trip captain meets the group.\nTransfer to your 4-star hotel and check in.\nTake an easy evening walk along Nguyen Hue walking street towards the Saigon River.\nDinner at leisure; Indian meal options can be arranged on request.\nOvernight stay in Ho Chi Minh City."
+        },
+        {
+          "day": 2,
+          "title": "Cu Chi Tunnels | Colonial Saigon",
+          "description": "After breakfast, drive to the Cu Chi Tunnels and explore the tunnel network used during the war.\nReturn to the city for lunch at leisure.\nSee the Notre-Dame Cathedral and the Central Post Office, two landmarks of French colonial Saigon.\nBrowse the stalls of Ben Thanh Market before returning to the hotel.\nOvernight stay in Ho Chi Minh City."
+        },
+        {
+          "day": 3,
+          "title": "Mekong Delta Day Trip",
+          "description": "After breakfast, drive south to the Mekong Delta.\nTake a boat ride along the river and a rowing boat through a narrow canal.\nTaste tropical fruit and enjoy lunch at a local restaurant.\nReturn to Ho Chi Minh City in the late afternoon, with the evening free.\nOvernight stay in Ho Chi Minh City."
+        },
+        {
+          "day": 4,
+          "title": "Fly to Phu Quoc | Beach Afternoon",
+          "description": "After breakfast, check out and transfer to the airport for the short flight to Phu Quoc.\nTransfer to your resort and check in.\nSpend the afternoon on the beach or by the pool.\nWatch the sunset over the sea; dinner is at leisure.\nOvernight stay in Phu Quoc."
+        },
+        {
+          "day": 5,
+          "title": "Island Hopping | Hon Thom Cable Car",
+          "description": "After breakfast, drive to An Thoi Harbour in the south of the island.\nTake a speedboat to Mong Tay, Gam Ghi and May Rut islands for swimming and snorkelling stops, with lunch included.\nRide the Hon Thom cable car back to An Thoi station, subject to sea and wind conditions.\nReturn to the resort for the evening.\nOvernight stay in Phu Quoc."
+        },
+        {
+          "day": 6,
+          "title": "Phu Quoc Local Sights | Dinh Cau Night Market",
+          "description": "After breakfast, visit the Coconut Prison, a former wartime prison.\nSee how Phu Quoc's famous fish sauce is made and visit a pepper farm.\nHave a relaxed afternoon at leisure at the resort.\nIn the evening, browse Dinh Cau Night Market for seafood and souvenirs.\nOvernight stay in Phu Quoc."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Phu Quoc",
+          "description": "After breakfast, check out and enjoy free time until your transfer.\nTransfer to Phu Quoc International Airport for your onward flight.\nDepart Vietnam with sand still in your shoes."
+        }
+      ],
+      "inclusions": [
+        "6 nights in 4-star hotels and resorts on twin sharing",
+        "Daily breakfast, plus lunch on the Mekong Delta day and the island-hopping day as per the itinerary",
+        "Economy class domestic flight from Ho Chi Minh City to Phu Quoc",
+        "Airport and inter-city transfers and sightseeing as per the itinerary",
+        "Ho Chi Minh City sightseeing and Cu Chi Tunnels entry",
+        "Mekong Delta day trip with boat rides",
+        "Speedboat island hopping and Hon Thom cable car ride",
+        "Coconut Prison, fish sauce and pepper farm visits",
+        "A trip captain accompanying the group throughout",
+        "Indian meal options on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and water sports",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group trip with a typical group of 12 to 20 travellers; the departure runs on minimum numbers.",
+        "A trip captain accompanies the group throughout the tour.",
+        "Speedboat trips and the cable car depend on sea and wind conditions and may be rescheduled.",
+        "The Cu Chi Tunnels involve crawling through narrow spaces; participation is optional.",
+        "Flights home from Phu Quoc often connect through Ho Chi Minh City or another hub; please plan accordingly."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter",
+        "Swimwear, sunscreen and a hat",
+        "Light cotton clothing and a rain jacket",
+        "Comfortable walking shoes and beach sandals"
+      ],
+      "pickup": "Ho Chi Minh City (Tan Son Nhat International Airport)",
+      "drop_point": "Phu Quoc International Airport",
+      "photo": "mekong-delta",
+      "gallery": ["saigon-notre-dame", "hon-thom-cable-car", "phu-quoc-beach", "phu-quoc-sunset"],
+      "price": 62000,
+      "original_price": 66000,
+      "departures": {"weekday": 5, "count": 5, "every_weeks": 3, "capacity": 20}
+    }
+  ]
+}

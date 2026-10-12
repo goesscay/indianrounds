@@ -1,0 +1,585 @@
+{
+  "destination": "indonesia",
+  "photos": [
+    {"slot": "tanah-lot-temple", "query": "Tanah Lot Temple Bali Indonesia", "caption": "Tanah Lot Temple, Bali"},
+    {"slot": "uluwatu-temple", "query": "Uluwatu Temple cliff Bali Indonesia", "caption": "Uluwatu Temple on the clifftop"},
+    {"slot": "tegalalang-rice-terraces", "query": "Tegalalang rice terraces Ubud Bali", "caption": "Tegalalang rice terraces near Ubud"},
+    {"slot": "kuta-beach", "query": "Kuta Beach Bali Indonesia", "caption": "Kuta Beach at sunset"},
+    {"slot": "seminyak-beach-sunset", "query": "Seminyak Beach sunset Bali Indonesia", "caption": "Seminyak Beach"},
+    {"slot": "tanjung-benoa-water-sports", "query": "Tanjung Benoa water sports banana boat Bali", "caption": "Water sports at Tanjung Benoa"},
+    {"slot": "mount-batur-kintamani", "query": "Mount Batur Kintamani Bali Indonesia", "caption": "Mount Batur and Lake Batur, Kintamani"},
+    {"slot": "kelingking-beach-nusa-penida", "query": "Kelingking Beach Nusa Penida Indonesia", "caption": "Kelingking Beach, Nusa Penida"},
+    {"slot": "gili-trawangan", "query": "Gili Trawangan beach Lombok Indonesia", "caption": "Gili Trawangan"},
+    {"slot": "tirta-empul-temple", "query": "Tirta Empul temple Tampaksiring Bali", "caption": "Tirta Empul holy spring temple"},
+    {"slot": "bali-swing-ubud", "query": "Bali swing Ubud jungle rice terrace", "caption": "A swing over the jungle near Ubud"},
+    {"slot": "mas-wood-carving-village", "query": "Mas village wood carving Bali Indonesia", "caption": "Woodcarving at Mas village"}
+  ],
+  "hero": "tanah-lot-temple",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "classic-bali-packages",
+      "name": "Classic Bali Packages",
+      "description": "Easy, well-paced Bali holidays with beach stays, temples, rice terraces and a free day or two to relax. A good first Bali trip for families and friends.",
+      "photo": "kuta-beach",
+      "packages": ["simply-bali-fully-loaded", "simply-bali-split-stay-with-villa", "indonesia-bali-culture-and-coast-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "bali-honeymoon-and-couples",
+      "name": "Honeymoon and Couples",
+      "description": "Bali for two, with private tours, a Balinese massage, sunset temples and beach time built into the days.",
+      "photo": "uluwatu-temple",
+      "packages": ["wonderful-bali-honeymoon-special", "memorable-bali-honeymoon-special"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "bali-offers-and-value",
+      "name": "Budget Saver and Offers",
+      "description": "Bali holidays that stretch your budget, including our Buy 1 Get 1 Free offer and a fully loaded six-night stay.",
+      "photo": "seminyak-beach-sunset",
+      "packages": ["bali-buy-1-get-1-free", "simply-bali-fully-loaded"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "bali-islands-and-adventure",
+      "name": "Islands and Adventure",
+      "description": "Fast boats to Nusa Penida and the Gili Islands, volcano views, water sports and snorkelling for travellers who like to be active.",
+      "photo": "kelingking-beach-nusa-penida",
+      "packages": ["memorable-bali-honeymoon-special", "indonesia-bali-culture-and-coast-group-trip", "indonesia-bali-and-gili-islands-group-trip"]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "bali-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Escorted Bali group trips on fixed dates, with a trip captain, shared sightseeing and Indian meal options on request.",
+      "photo": "tegalalang-rice-terraces",
+      "packages": ["indonesia-bali-culture-and-coast-group-trip", "indonesia-bali-and-gili-islands-group-trip"]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "bali-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Bali honeymoon packages with private sightseeing, sunset temples, beach time and a Balinese massage for two.",
+      "photo": "uluwatu-temple",
+      "packages": ["wonderful-bali-honeymoon-special", "memorable-bali-honeymoon-special"]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "simply-bali-fully-loaded",
+      "summary": "Six nights in Kuta with airport transfers, daily breakfast and a full Bali sightseeing and leisure programme across the island.",
+      "overview": "This six-night Bali holiday is based in Kuta, close to the beach, shops and cafes, with transfers from and to the airport. Your days combine the island's cultural and scenic sights with time to relax. It is a simple, good-value way to see the best of Bali without changing hotels.",
+      "highlights": [
+        "Six nights in Kuta, with the beach and shopping nearby",
+        "Airport arrival and departure transfers",
+        "Bali sightseeing programme covering cultural and scenic attractions",
+        "Daily breakfast at the hotel",
+        "Leisure time built into the programme"
+      ],
+      "inclusions": [
+        "6 nights in a hotel in Kuta on twin sharing",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Bali sightseeing and experiences as per the itinerary",
+        "Transfers as per itinerary",
+        "Entry tickets and activities listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Bali tourism levy or local taxes payable where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered",
+        "Rates and availability are confirmed at the time of booking",
+        "Cancellation and refund are as per our Terms & Conditions",
+        "Please dress modestly at temples; a sarong may be required at some sites",
+        "Bali is warm and humid all year, and showers are possible, especially from November to March"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Power adapter (Type C or F, 230V)",
+        "Sunscreen, hat and sunglasses",
+        "Light, modest clothing for temples",
+        "Comfortable walking shoes or sandals"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "kuta-beach",
+      "gallery": ["seminyak-beach-sunset", "tegalalang-rice-terraces", "tanah-lot-temple"],
+      "price": {"from": 42000}
+    },
+    {
+      "slug": "wonderful-bali-honeymoon-special",
+      "summary": "Four nights in Bali for couples, with private tours of Benoa Beach, Kintamani and Ubud, and Tanah Lot and Uluwatu temples.",
+      "overview": "A four-night Bali honeymoon with private sightseeing so you can go at your own pace. You begin with a half-day at Benoa Beach, including a Banana Boat ride, then spend a full day on Mount Batur at Kintamani and in Ubud village. The last full day takes in the sea temples of Tanah Lot and Uluwatu.",
+      "highlights": [
+        "Private half-day Benoa Beach tour with a Banana Boat ride",
+        "Private full-day Kintamani Volcano and Ubud Village tour",
+        "Private full-day Tanah Lot Temple and Uluwatu Temple tour",
+        "Airport transfers and daily breakfast",
+        "Four nights of twin-sharing stay for couples"
+      ],
+      "inclusions": [
+        "4 nights hotel stay in Bali on twin sharing",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Half-day Benoa Beach tour with Banana Boat ride on a private basis",
+        "Full-day Kintamani Volcano and Ubud Village tour on a private basis",
+        "Full-day Tanah Lot Temple and Uluwatu Temple tour on a private basis",
+        "Transfers and sightseeing as per itinerary",
+        "Entry tickets for the sights listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Lunches, dinners and other meals not mentioned in the itinerary",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities and water sports other than those listed",
+        "Bali tourism levy or local taxes payable where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered",
+        "Rates and availability are confirmed at the time of booking",
+        "Cancellation and refund are as per our Terms & Conditions",
+        "Cover shoulders and knees at temples; a sarong may be required at Tanah Lot and Uluwatu",
+        "Sea activities depend on weather and sea conditions on the day",
+        "Monkeys live around Uluwatu Temple; keep sunglasses, phones and bags secure"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Power adapter (Type C or F, 230V)",
+        "Swimwear and a light towel",
+        "Sunscreen, hat and sunglasses",
+        "Modest clothing for temple visits",
+        "Comfortable walking shoes or sandals"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "uluwatu-temple",
+      "gallery": ["tanah-lot-temple", "mount-batur-kintamani", "tanjung-benoa-water-sports"],
+      "price": {"from": 36500}
+    },
+    {
+      "slug": "simply-bali-split-stay-with-villa",
+      "summary": "Six nights in Bali, four in a Kuta hotel and two in a villa, with village crafts, Kintamani, Tanah Lot and water sports at Tanjung Benoa.",
+      "overview": "This six-night Bali holiday splits your stay between a hotel in Kuta and a villa, so you get beach convenience first and a more private stay later. Highlights include the craft villages of Celuk and Mas, Kintamani Hot Spring, Tanah Lot at sunset and a morning of water sports at Tanjung Benoa Beach. There are two free days to shop, relax or explore on your own.",
+      "highlights": [
+        "Celuk Silver Art Village and Mas Wooden Carved Art Village",
+        "Kintamani Hot Spring and Tanah Lot sunset tour",
+        "Water sports at Tanjung Benoa including Jet Ski and Banana Boat",
+        "Complimentary Parasailing or Flying Fish ride",
+        "Four nights in a Kuta hotel and two nights in a villa",
+        "Meeting and assistance by a local guide on arrival"
+      ],
+      "inclusions": [
+        "4 nights hotel stay in Kuta and 2 nights in a villa on twin sharing",
+        "Daily breakfast",
+        "Airport arrival meeting by a local guide and transfers",
+        "Transfer from the Kuta hotel to the villa",
+        "Celuk, Mas, Kintamani Hot Spring and Tanah Lot sunset tour as per itinerary",
+        "Water sports at Tanjung Benoa Beach including Jet Ski and Banana Boat",
+        "Complimentary Parasailing or Flying Fish, as per itinerary",
+        "Entry tickets for the sights listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Lunches, dinners and other meals not mentioned in the itinerary",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Bali tourism levy or local taxes payable where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered",
+        "Rates and availability are confirmed at the time of booking",
+        "Cancellation and refund are as per our Terms & Conditions",
+        "Two days are free for you to explore or shop, and any activities on those days are at your own cost",
+        "Water sports depend on weather and sea conditions, and some have age or health limits",
+        "Cover shoulders and knees at temples; a sarong may be required"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Power adapter (Type C or F, 230V)",
+        "Swimwear and a light towel",
+        "Sunscreen, hat and sunglasses",
+        "Modest clothing for temple visits",
+        "Comfortable walking shoes or sandals"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "mount-batur-kintamani",
+      "gallery": ["mas-wood-carving-village", "tanah-lot-temple", "tanjung-benoa-water-sports"],
+      "price": {"from": 54000}
+    },
+    {
+      "slug": "memorable-bali-honeymoon-special",
+      "summary": "Four nights in Kuta for couples, with Banana Boat at Benoa, a 120-minute Balinese massage, the Ubud swing and a Nusa Penida day trip.",
+      "overview": "A four-night Bali honeymoon based in Kuta that mixes beach, pampering and the island's most photographed views. You enjoy a Banana Boat ride at Benoa, a 120-minute Balinese massage and the Bali Pioneer Swing in Ubud. A full-day Nusa Penida West Island tour by fast boat visits Kelingking Beach, Angel's Billabong, Broken Beach and Crystal Bay.",
+      "highlights": [
+        "Banana Boat ride on a morning of water sports at Tanjung Benoa or Benoa Beach",
+        "Authentic 120-minute Balinese massage",
+        "Bali Pioneer Swing experience in Ubud",
+        "Nusa Penida West Island tour by fast boat, with lunch",
+        "Kelingking Beach, Angel's Billabong, Broken Beach and Crystal Bay",
+        "Four nights in Kuta with airport meet and transfer"
+      ],
+      "inclusions": [
+        "4 nights hotel stay in Kuta on twin sharing",
+        "Daily breakfast",
+        "Airport arrival meeting by a local guide and transfers",
+        "Banana Boat activity at Tanjung Benoa or Benoa Beach",
+        "120-minute Balinese massage",
+        "Bali Pioneer Swing experience in Ubud",
+        "Full-day Nusa Penida West Island tour by fast boat on sharing basis, with lunch",
+        "Transfers and sightseeing as per itinerary",
+        "Entry tickets for the sights listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Dinners and other meals not mentioned in the itinerary",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities and water sports other than the Banana Boat",
+        "Bali tourism levy or local taxes payable where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered",
+        "Rates and availability are confirmed at the time of booking",
+        "Cancellation and refund are as per our Terms & Conditions",
+        "Fast boat crossings to Nusa Penida depend on sea conditions and can be rescheduled or cancelled for safety",
+        "The Nusa Penida viewpoints involve steps and uneven paths, so wear sturdy footwear",
+        "Water sports depend on weather and sea conditions, and some have age or health limits"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Power adapter (Type C or F, 230V)",
+        "Swimwear and a light towel",
+        "Sunscreen, hat and sunglasses",
+        "Sturdy walking shoes or sandals with grip",
+        "Motion sickness tablets if you are prone to sea sickness"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "kelingking-beach-nusa-penida",
+      "gallery": ["bali-swing-ubud", "tanjung-benoa-water-sports", "kuta-beach"]
+    },
+    {
+      "slug": "bali-buy-1-get-1-free",
+      "summary": "Five nights in Kuta with Kintamani, Ubud and a Tanah Lot sunset, water sports at Tanjung Benoa and a free day to explore.",
+      "overview": "A five-night Bali holiday in Kuta, offered on our Buy 1 Get 1 Free deal; the terms and validity of the offer are confirmed at booking. One day covers Kintamani Hot Spring, Ubud, the Tohpati, Celuk and Mas craft villages, Mount and Lake Batur viewpoints and a coffee plantation, ending with sunset at Tanah Lot Temple. Another day goes to water sports at Tanjung Benoa Beach, and one day is free for shopping or exploring on your own.",
+      "highlights": [
+        "Kintamani Hot Spring and Ubud tour with Mount and Lake Batur viewpoints",
+        "Tohpati, Celuk and Mas craft villages and a coffee plantation",
+        "Sunset at Tanah Lot Temple",
+        "Water sports at Tanjung Benoa including Jet Ski and Banana Boat",
+        "Complimentary Parasailing or Flying Fish ride",
+        "A free day for shopping and independent exploring"
+      ],
+      "inclusions": [
+        "5 nights hotel stay in Kuta on twin sharing",
+        "Daily breakfast",
+        "Airport arrival meeting by a local guide and transfers",
+        "Kintamani Hot Spring, Ubud and Tanah Lot sunset tour as per itinerary",
+        "Water sports at Tanjung Benoa Beach including Jet Ski and Banana Boat",
+        "Complimentary Parasailing or Flying Fish, as per itinerary",
+        "Entry tickets for the sights listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Lunches, dinners and other meals not mentioned in the itinerary",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Bali tourism levy or local taxes payable where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered",
+        "Rates and availability are confirmed at the time of booking",
+        "Cancellation and refund are as per our Terms & Conditions",
+        "The Buy 1 Get 1 Free offer is subject to its terms, dates and availability, confirmed at booking",
+        "Water sports depend on weather and sea conditions, and some have age or health limits",
+        "Cover shoulders and knees at temples; a sarong may be required"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Power adapter (Type C or F, 230V)",
+        "Swimwear and a light towel",
+        "Sunscreen, hat and sunglasses",
+        "Modest clothing for temple visits",
+        "Comfortable walking shoes or sandals"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "tanah-lot-temple",
+      "gallery": ["mount-batur-kintamani", "tanjung-benoa-water-sports", "kuta-beach"]
+    }
+  ],
+  "group_trips": [
+    {
+      "slug": "indonesia-bali-culture-and-coast-group-trip",
+      "title": "Bali Temples, Rice Terraces and Nusa Penida Group Trip",
+      "nights": 6,
+      "summary": "A six-night escorted Bali group trip through Seminyak, Ubud and Nusa Penida, with Uluwatu, Tegalalang, Kintamani and Tanah Lot.",
+      "overview": "Travel with a small group and a trip captain through the best of Bali in six nights. You start on the coast in Seminyak, with sunset at the Uluwatu clifftop temple and a Kecak fire dance performance. You then move inland to Ubud for craft villages, rice terraces, Mount Batur and the holy spring at Tirta Empul.\n\nA full day by fast boat takes you to Nusa Penida for Kelingking Beach and its dramatic coastline. The trip ends with a relaxed day in Seminyak and sunset at Tanah Lot. Indian meal options are available on request throughout.",
+      "highlights": [
+        "Uluwatu Temple on its sea cliff, with a Kecak fire dance performance",
+        "Celuk and Mas craft villages, and the Tegalalang rice terraces",
+        "Mount Batur viewpoint at Kintamani and the holy spring of Tirta Empul",
+        "Full-day Nusa Penida tour by fast boat: Kelingking Beach, Angel's Billabong, Broken Beach and Crystal Bay",
+        "Sunset at Tanah Lot Temple",
+        "Four nights in Seminyak and two nights in Ubud, with only two hotel changes",
+        "Trip captain throughout and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bali | Seminyak Sunset",
+          "description": "Arrive at Ngurah Rai International Airport, where you are met and transferred to your hotel in Seminyak.\nCheck in and freshen up, then meet your trip captain for a short briefing.\nWalk to Seminyak Beach to watch the sun go down.\nOvernight stay in Seminyak."
+        },
+        {
+          "day": 2,
+          "title": "Uluwatu Temple | Kecak Dance",
+          "description": "After breakfast, drive south to the Bukit peninsula and Padang Padang Beach for some time by the sea.\nVisit Uluwatu Temple, set on a cliff high above the Indian Ocean.\nWatch a Kecak fire dance performance at sunset.\nDrive back to Seminyak.\nOvernight stay in Seminyak."
+        },
+        {
+          "day": 3,
+          "title": "Craft Villages | Tegalalang | Ubud",
+          "description": "After breakfast, check out and drive towards Ubud.\nStop at Celuk for silver jewellery and Mas for Balinese woodcarving.\nVisit the Tegalalang rice terraces and enjoy the view over the green slopes.\nCheck in at your hotel in Ubud and spend the evening at leisure in the town.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 4,
+          "title": "Kintamani | Tirta Empul",
+          "description": "After breakfast, drive up to Kintamani for views of Mount Batur and Lake Batur.\nVisit a local coffee plantation to see how Balinese coffee is grown and tasted.\nContinue to Tirta Empul, a temple known for its holy spring.\nReturn to Ubud and spend the evening at leisure.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 5,
+          "title": "Nusa Penida Island by Fast Boat",
+          "description": "After an early breakfast, check out and drive to the harbour for a fast boat to Nusa Penida.\nVisit Kelingking Beach, Angel's Billabong, Broken Beach and Crystal Bay on the island's west side.\nHave lunch on the island, then take the fast boat back to Bali.\nTransfer to Seminyak and check in.\nOvernight stay in Seminyak."
+        },
+        {
+          "day": 6,
+          "title": "Leisure Morning | Tanah Lot Sunset",
+          "description": "Enjoy a relaxed morning for the beach, a spa treatment or shopping in Seminyak at your own cost.\nIn the afternoon, drive to Tanah Lot Temple on its rock in the sea.\nWatch the sunset from the cliffs with the group.\nReturn to Seminyak for a farewell evening.\nOvernight stay in Seminyak."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Bali",
+          "description": "Enjoy breakfast and check out of the hotel.\nTransfer to Ngurah Rai International Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "6 nights hotel stay on twin sharing: 4 nights in Seminyak and 2 nights in Ubud",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Air-conditioned vehicle for transfers and sightseeing as per itinerary",
+        "Fast boat tickets to Nusa Penida and back on sharing basis, with the island tour",
+        "Lunch on the Nusa Penida day",
+        "Kecak fire dance performance ticket at Uluwatu",
+        "Entry tickets for the sights listed in the itinerary",
+        "Trip captain accompanying the group",
+        "Indian meal options on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Lunches (except on the Nusa Penida day), dinners and other meals not mentioned",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities such as spa treatments",
+        "Bali tourism levy or local taxes payable where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered",
+        "Rates and availability are confirmed at the time of booking",
+        "Cancellation and refund are as per our Terms & Conditions",
+        "This is a group departure that runs on minimum numbers, and a trip captain accompanies the group",
+        "Fast boat crossings depend on sea conditions and can be rescheduled for safety",
+        "Cover shoulders and knees at temples; a sarong may be required",
+        "Monkeys live around Uluwatu Temple; keep sunglasses, phones and bags secure"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Power adapter (Type C or F, 230V)",
+        "Sunscreen, hat and sunglasses",
+        "Modest clothing for temple visits",
+        "Sturdy walking shoes or sandals with grip",
+        "Swimwear and a light towel",
+        "A light jacket or shawl for the cooler air at Kintamani"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "tegalalang-rice-terraces",
+      "gallery": ["kelingking-beach-nusa-penida", "uluwatu-temple", "tanah-lot-temple", "tirta-empul-temple", "seminyak-beach-sunset"],
+      "price": 52500,
+      "original_price": 57000,
+      "departures": {"weekday": 5, "count": 5, "every_weeks": 2, "capacity": 20}
+    },
+    {
+      "slug": "indonesia-bali-and-gili-islands-group-trip",
+      "title": "Ubud, Gili Trawangan and Uluwatu Group Trip",
+      "nights": 7,
+      "summary": "A seven-night escorted trip from Ubud's rice terraces to snorkelling on the Gili Islands and sunset at Uluwatu.",
+      "overview": "This group trip pairs Bali's green heart with the car-free Gili Islands. You begin in Ubud with rice terraces, the holy spring of Tirta Empul and Mount Batur at Kintamani. A fast boat then takes you to Gili Trawangan for three nights of white sand, clear water and an island-hopping snorkelling trip.\n\nYou return to Bali for two nights at Uluwatu, where cliff-top views and sunset at the sea temple finish the journey. Your trip captain travels with the group, and Indian meal options are available on request.",
+      "highlights": [
+        "Tegalalang rice terraces, Tirta Empul and the Mount Batur viewpoint",
+        "Fast boat from Bali to Gili Trawangan, where there are no motorised vehicles",
+        "Snorkelling trip to Gili Meno and Gili Air, with a chance to see sea turtles",
+        "Free time for beaches and sunsets on Gili Trawangan",
+        "Uluwatu Temple on its sea cliff, with a Kecak fire dance performance",
+        "Padang Padang Beach on the Bukit peninsula",
+        "Trip captain throughout and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bali | Transfer to Ubud",
+          "description": "Arrive at Ngurah Rai International Airport, where you are met and transferred to Ubud.\nCheck in at your hotel and freshen up.\nMeet your trip captain and fellow travellers for a short briefing.\nSpend the evening at leisure in Ubud.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 2,
+          "title": "Tegalalang | Tirta Empul | Kintamani",
+          "description": "After breakfast, visit the Tegalalang rice terraces for the morning light.\nContinue to Tirta Empul, a temple known for its holy spring.\nDrive up to Kintamani for views of Mount Batur and Lake Batur.\nReturn to Ubud in the afternoon.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 3,
+          "title": "Fast Boat to Gili Trawangan",
+          "description": "After breakfast, check out and drive east to Padang Bai harbour.\nTake the fast boat to Gili Trawangan, a crossing of around two hours depending on conditions.\nLuggage is carried to the hotel by horse cart, as the island has no motorised vehicles.\nCheck in and spend the rest of the day on the beach.\nOvernight stay on Gili Trawangan."
+        },
+        {
+          "day": 4,
+          "title": "Gili Snorkelling Trip",
+          "description": "After breakfast, join a boat trip to Gili Meno and Gili Air with snorkelling equipment provided.\nSwim over coral and look out for sea turtles, subject to conditions.\nReturn to Gili Trawangan in the afternoon.\nWatch the sunset from the west coast of the island.\nOvernight stay on Gili Trawangan."
+        },
+        {
+          "day": 5,
+          "title": "Free Day on Gili Trawangan",
+          "description": "Enjoy a full day at leisure after breakfast.\nCycle around the island, relax on the beach or try optional diving or snorkelling at your own cost.\nMeet your trip captain in the evening for a group sunset.\nOvernight stay on Gili Trawangan."
+        },
+        {
+          "day": 6,
+          "title": "Back to Bali | Uluwatu",
+          "description": "After breakfast, check out and take the fast boat back to Padang Bai.\nDrive south to the Bukit peninsula and check in at your hotel in Uluwatu.\nSpend the evening at leisure and enjoy the clifftop sunsets.\nOvernight stay in Uluwatu."
+        },
+        {
+          "day": 7,
+          "title": "Padang Padang Beach | Uluwatu Temple",
+          "description": "After breakfast, spend the morning at Padang Padang Beach or relax at the hotel.\nIn the late afternoon, visit Uluwatu Temple on its cliff above the Indian Ocean.\nWatch a Kecak fire dance performance at sunset.\nShare a farewell evening with the group.\nOvernight stay in Uluwatu."
+        },
+        {
+          "day": 8,
+          "title": "Departure from Bali",
+          "description": "Enjoy breakfast and check out of the hotel.\nTransfer to Ngurah Rai International Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "7 nights hotel stay on twin sharing: 2 nights in Ubud, 3 nights on Gili Trawangan and 2 nights in Uluwatu",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Air-conditioned vehicle for transfers and sightseeing as per itinerary",
+        "Fast boat tickets between Bali and Gili Trawangan, return, on sharing basis",
+        "Gili Meno and Gili Air snorkelling boat trip with equipment",
+        "Luggage transfer by horse cart on Gili Trawangan",
+        "Kecak fire dance performance ticket at Uluwatu",
+        "Entry tickets for the sights listed in the itinerary",
+        "Trip captain accompanying the group",
+        "Indian meal options on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Lunches, dinners and other meals not mentioned",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities such as diving and spa treatments",
+        "Bali tourism levy or local taxes payable where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered",
+        "Rates and availability are confirmed at the time of booking",
+        "Cancellation and refund are as per our Terms & Conditions",
+        "This is a group departure that runs on minimum numbers, and a trip captain accompanies the group",
+        "Fast boat crossings depend on sea conditions and can be rescheduled for safety; please carry a small bag for the boat days",
+        "Snorkelling needs basic comfort in water; life jackets are available",
+        "Cover shoulders and knees at temples; a sarong may be required",
+        "Monkeys live around Uluwatu Temple; keep sunglasses, phones and bags secure"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card, and some cash for the Gili Islands",
+        "Power adapter (Type C or F, 230V)",
+        "Swimwear, a light towel and reef-safe sunscreen",
+        "Hat and sunglasses",
+        "Modest clothing for temple visits",
+        "Sturdy walking shoes or sandals with grip",
+        "Motion sickness tablets if you are prone to sea sickness"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "gili-trawangan",
+      "gallery": ["tegalalang-rice-terraces", "tirta-empul-temple", "mount-batur-kintamani", "uluwatu-temple"],
+      "price": 68500,
+      "original_price": 74000,
+      "departures": {"weekday": 3, "count": 4, "every_weeks": 3, "capacity": 16}
+    }
+  ]
+}

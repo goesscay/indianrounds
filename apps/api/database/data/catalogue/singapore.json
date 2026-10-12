@@ -1,0 +1,569 @@
+{
+  "destination": "singapore",
+  "photos": [
+    {"slot": "marina-bay-sands", "query": "Marina Bay Sands Singapore skyline", "caption": "Marina Bay Sands and the Singapore skyline"},
+    {"slot": "gardens-by-the-bay", "query": "Gardens by the Bay Supertree Grove Singapore", "caption": "Supertree Grove at Gardens by the Bay"},
+    {"slot": "merlion-park", "query": "Merlion Park Singapore", "caption": "The Merlion at Marina Bay"},
+    {"slot": "sentosa-island", "query": "Sentosa Island Singapore", "caption": "Sentosa Island"},
+    {"slot": "chinatown-singapore", "query": "Chinatown Singapore Buddha Tooth Relic Temple", "caption": "Chinatown, Singapore"},
+    {"slot": "mandai-bird-paradise", "query": "Mandai Bird Paradise Singapore", "caption": "Mandai Bird Paradise"},
+    {"slot": "petronas-twin-towers", "query": "Petronas Twin Towers Kuala Lumpur Malaysia", "caption": "Petronas Twin Towers, Kuala Lumpur"},
+    {"slot": "batu-caves", "query": "Batu Caves Kuala Lumpur Malaysia", "caption": "Batu Caves near Kuala Lumpur"},
+    {"slot": "genting-highlands", "query": "Genting Highlands cable car Malaysia", "caption": "Genting Highlands"},
+    {"slot": "putrajaya", "query": "Putra Mosque Putrajaya Malaysia", "caption": "Putrajaya"},
+    {"slot": "malacca-stadthuys", "query": "Stadthuys Red Square Malacca Malaysia", "caption": "Historic Malacca"},
+    {"slot": "coral-island-pattaya", "query": "Coral Island Koh Larn Pattaya Thailand", "caption": "Coral Island, Pattaya"}
+  ],
+  "hero": "marina-bay-sands",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "classic-singapore-packages",
+      "name": "Classic Singapore Packages",
+      "description": "Singapore on its own, with a guided city tour, Gardens by the Bay and Sentosa. A good first trip for families and friends who want an easy, well-connected city break.",
+      "photo": "gardens-by-the-bay",
+      "packages": ["value-singapore", "singapore-sentosa-gardens-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "singapore-malaysia-combos",
+      "name": "Singapore and Malaysia Combos",
+      "description": "Kuala Lumpur and Singapore in one holiday, linked by a scenic road transfer. Twin Towers, Batu Caves and Genting Highlands, then Gardens by the Bay and city sights.",
+      "photo": "petronas-twin-towers",
+      "packages": ["value-malaysia-singapore", "cost-saver-malaysia-singapore", "singapore-malaysia-kuala-lumpur-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "thailand-malaysia-singapore-circuits",
+      "name": "Thailand, Malaysia and Singapore Circuits",
+      "description": "Three countries over ten nights, from Pattaya's beaches and shows to Kuala Lumpur and Singapore. The best value way to see South-East Asia in a single trip.",
+      "photo": "coral-island-pattaya",
+      "packages": ["value-thailand-malaysia-singapore", "premium-thailand-malaysia-singapore"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "budget-saver-singapore",
+      "name": "Budget Saver Packages",
+      "description": "Our value-priced Singapore and Malaysia packages, keeping the key sights and leaving room for optional extras such as Universal Studios or the Oceanarium.",
+      "photo": "marina-bay-sands",
+      "packages": ["value-singapore", "cost-saver-malaysia-singapore", "value-malaysia-singapore"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "singapore-family-holidays",
+      "name": "Family Holidays",
+      "description": "Packages with bird parks, cable cars, theme-park options and easy city days, suited to children and grandparents alike.",
+      "photo": "mandai-bird-paradise",
+      "packages": ["value-singapore", "value-malaysia-singapore", "singapore-sentosa-gardens-group-trip"]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "singapore-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Small-group Singapore and Malaysia departures with a trip captain, fixed dates and Indian meal options on request.",
+      "photo": "sentosa-island",
+      "packages": ["singapore-sentosa-gardens-group-trip", "singapore-malaysia-kuala-lumpur-group-trip"]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "singapore-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Light-filled evenings at Gardens by the Bay, cable car rides and unhurried days, with the option to add Kuala Lumpur or Thailand.",
+      "photo": "gardens-by-the-bay",
+      "packages": ["value-singapore", "value-malaysia-singapore", "premium-thailand-malaysia-singapore"]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "value-thailand-malaysia-singapore",
+      "summary": "A ten-night, three-country holiday combining Thailand, Malaysia and Singapore, with hotel stays, transfers and sightseeing in each.",
+      "overview": "This ten-night holiday brings together three of South-East Asia's favourite destinations in one trip. You travel through Thailand and Malaysia before ending in Singapore, with hotel stays, transfers and sightseeing in each country. The detailed day-wise programme is confirmed at booking by our travel experts.",
+      "highlights": [
+        "Three countries in one holiday: Thailand, Malaysia and Singapore",
+        "Ten nights of hotel stays, with a change of city and country along the way",
+        "Sightseeing and transfers arranged in each country",
+        "Singapore as a polished finish to the trip",
+        "A good-value way to see more of South-East Asia in a single journey"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 10 nights across Thailand, Malaysia and Singapore",
+        "Daily breakfast at the hotels",
+        "Airport and inter-city transfers as per itinerary",
+        "Sightseeing in each country as per itinerary",
+        "Entry tickets for the sightseeing and activities listed in the itinerary",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare, including flights between countries",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and excursions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Visa requirements differ for each of the three countries; our team will guide you on the documents needed.",
+        "Dress modestly when visiting temples and religious sites."
+      ],
+      "must_carry": [
+        "Passport and visa copies for each country",
+        "Return tickets and inter-country flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter (Thailand, Malaysia and Singapore use different plug types)",
+        "Sunscreen, hat and light cotton clothing",
+        "Modest clothing for temple visits",
+        "Comfortable walking shoes"
+      ],
+      "pickup": "Arrival airport in Thailand, as confirmed at booking",
+      "drop_point": "Singapore, as confirmed at booking",
+      "photo": "coral-island-pattaya",
+      "gallery": ["petronas-twin-towers", "marina-bay-sands", "gardens-by-the-bay"],
+      "price": {"from": 82000}
+    },
+    {
+      "slug": "premium-thailand-malaysia-singapore",
+      "summary": "Ten nights across Pattaya, Kuala Lumpur and Singapore, with the Alcazar Show, a Coral Island speedboat trip and sightseeing in each country.",
+      "overview": "Begin in Bangkok and transfer to Pattaya for an evening at the Alcazar Show, followed by a speedboat trip to Coral Island with a glass-bottom boat ride. The journey then continues to Kuala Lumpur and on to Singapore, with sightseeing and transfers arranged in each country. This is the more comfortable of our three-country circuits.",
+      "highlights": [
+        "Evening Alcazar Show in Pattaya",
+        "Speedboat trip to Coral Island with a glass-bottom boat experience",
+        "Optional water sports, Nong Nooch Village shows and Thai massage",
+        "Kuala Lumpur sightseeing programme in Malaysia",
+        "Scheduled Singapore sightseeing before onward departure",
+        "Three countries and ten nights in a single holiday"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 10 nights across Thailand, Malaysia and Singapore",
+        "Daily breakfast at the hotels",
+        "Dinners on the days mentioned in the itinerary",
+        "Airport and inter-city transfers as per itinerary",
+        "Alcazar Show in Pattaya as per itinerary",
+        "Speedboat transfer to Coral Island with glass-bottom boat experience",
+        "Sightseeing in Thailand, Malaysia and Singapore as per itinerary",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare, including flights between countries",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as water sports, Nong Nooch Village shows and Thai massage, unless stated as included",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Island and boat activities depend on sea and weather conditions.",
+        "Visa requirements differ for each of the three countries; our team will guide you on the documents needed.",
+        "Dress modestly when visiting temples and religious sites."
+      ],
+      "must_carry": [
+        "Passport and visa copies for each country",
+        "Return tickets and inter-country flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter (Thailand, Malaysia and Singapore use different plug types)",
+        "Swimwear, sunscreen and sunglasses for the island day",
+        "Modest clothing for temple visits",
+        "Comfortable walking shoes"
+      ],
+      "pickup": "Bangkok airport, Thailand",
+      "drop_point": "Singapore Changi Airport",
+      "photo": "coral-island-pattaya",
+      "gallery": ["petronas-twin-towers", "marina-bay-sands", "gardens-by-the-bay"]
+    },
+    {
+      "slug": "value-malaysia-singapore",
+      "summary": "Six nights in Kuala Lumpur and Singapore, covering Putrajaya, Genting Highlands, Batu Caves, Gardens by the Bay and the Singapore city tour.",
+      "overview": "Start in Kuala Lumpur with an orientation tour of Putrajaya and a city sightseeing programme that includes the Petronas Twin Towers. Ride the cable car up to Genting Highlands, visit Batu Caves and keep a day free in the city. You then travel by road to Singapore for a guided city tour and an evening at Gardens by the Bay.",
+      "highlights": [
+        "Orientation tour of Putrajaya",
+        "Kuala Lumpur city sightseeing: Istana Negara, National Monument, Merdeka Square and Petronas Twin Towers",
+        "Chocolate Boutique visit and a cable car ride to Genting Highlands",
+        "SkyWorld Theme Park and Batu Caves",
+        "Road journey from Kuala Lumpur to Singapore",
+        "Gardens by the Bay with Cloud Forest, Flower Dome and the evening light-and-sound experience"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 6 nights: 3 in Kuala Lumpur and 3 in Singapore",
+        "Daily breakfast at the hotels",
+        "Airport and inter-city transfers as per itinerary, including the road transfer to Singapore",
+        "Kuala Lumpur sightseeing including Putrajaya and the city tour as per itinerary",
+        "Genting Highlands cable car and SkyWorld Theme Park entry as per itinerary",
+        "Guided Singapore city tour and Gardens by the Bay as per itinerary",
+        "Entry tickets for the sightseeing and activities listed in the itinerary",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as Sunway Lagoon",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The drive between Kuala Lumpur and Singapore includes border immigration formalities, which can take time.",
+        "Dress modestly for Batu Caves; shoulders and knees should be covered.",
+        "Singapore has strict local laws on littering and e-cigarettes; please follow them."
+      ],
+      "must_carry": [
+        "Passport and visa copies for Malaysia and Singapore",
+        "Return tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Type G (UK-style three-pin) power adapter",
+        "Light jacket for Genting Highlands, which is cooler than the city",
+        "Modest clothing for Batu Caves",
+        "Comfortable walking shoes and sunscreen"
+      ],
+      "pickup": "Kuala Lumpur International Airport (KLIA), Malaysia",
+      "drop_point": "Singapore Changi Airport",
+      "photo": "putrajaya",
+      "gallery": ["genting-highlands", "batu-caves", "gardens-by-the-bay"]
+    },
+    {
+      "slug": "value-singapore",
+      "summary": "Four nights in Singapore with a guided city tour, Gardens by the Bay, Mandai Bird Paradise, Sentosa and two flexible days for optional tours.",
+      "overview": "Arrive in Singapore and begin with a guided city tour, taking in Chinatown, the Buddha Tooth Relic Temple and Merlion Park, followed by Gardens by the Bay and its evening light show. Spend a day at Mandai Bird Paradise and Sentosa Island, then keep two days free for optional tours such as Universal Studios or the Oceanarium. It is an easy, well-paced first visit to the city.",
+      "highlights": [
+        "Guided city tour passing Suntec City, the Business District, Chinatown and Orchard",
+        "Buddha Tooth Relic Temple and Merlion Park",
+        "Gardens by the Bay with Cloud Forest Dome, Flower Dome and the Light and Sound Show",
+        "Mandai Bird Paradise, home to more than 5,000 birds",
+        "Sentosa Island by one-way cable car, with Madame Tussauds and Wings of Time",
+        "Two free days for optional tours such as Universal Studios and the Oceanarium"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 4 nights in Singapore",
+        "Daily breakfast at the hotel",
+        "Airport and sightseeing transfers as per itinerary",
+        "Guided Singapore city tour as per itinerary",
+        "Entry to Gardens by the Bay domes and the Light and Sound Show as per itinerary",
+        "Entry to Mandai Bird Paradise as per itinerary",
+        "One-way Sentosa cable car and the Sentosa attractions listed in the itinerary",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional tours such as Universal Studios and the Oceanarium",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The Gardens by the Bay Light and Sound Show is subject to weather.",
+        "Dress modestly at the Buddha Tooth Relic Temple.",
+        "Singapore has strict local laws on littering and e-cigarettes; please follow them."
+      ],
+      "must_carry": [
+        "Passport and Singapore visa copy",
+        "Return tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Type G (UK-style three-pin) power adapter",
+        "Compact umbrella or light rain jacket",
+        "Comfortable walking shoes and sunscreen",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Singapore Changi Airport",
+      "drop_point": "Singapore Changi Airport",
+      "photo": "gardens-by-the-bay",
+      "gallery": ["merlion-park", "mandai-bird-paradise", "sentosa-island", "marina-bay-sands"],
+      "price": {"from": 46000}
+    },
+    {
+      "slug": "cost-saver-malaysia-singapore",
+      "summary": "Six nights across Kuala Lumpur and Singapore, with Genting Highlands, Batu Caves, a Singapore city tour and Gardens by the Bay at a keen price.",
+      "overview": "Begin in Kuala Lumpur with a guided city tour that includes photo stops at the Petronas Twin Towers, then ride the cable car to Genting Highlands and visit Batu Caves. After a free day in the city, drive to Singapore for a guided tour taking in Chinatown, Merlion Park and Gardens by the Bay. A day at leisure in Singapore leaves time for optional visits to Sentosa, the Oceanarium or Universal Studios.",
+      "highlights": [
+        "Kuala Lumpur city tour with photo stops at Istana Negara, National Monument, Merdeka Square and Petronas Twin Towers",
+        "Cable car to Genting Highlands and SkyWorld Theme Park",
+        "Batu Caves",
+        "Road journey from Kuala Lumpur to Singapore",
+        "Singapore city tour with the Buddha Tooth Relic Temple and Merlion Park",
+        "Gardens by the Bay with Cloud Forest and Flower Dome"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 6 nights: 3 in Kuala Lumpur and 3 in Singapore",
+        "Daily breakfast at the hotels",
+        "Airport and inter-city transfers as per itinerary, including the road transfer to Singapore",
+        "Kuala Lumpur guided city tour as per itinerary",
+        "Genting Highlands cable car and SkyWorld Theme Park entry as per itinerary",
+        "Guided Singapore city tour and Gardens by the Bay as per itinerary",
+        "Entry tickets for the sightseeing and activities listed in the itinerary",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as Sunway Lagoon, the Sentosa half-day tour, the Oceanarium and Universal Studios",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The drive between Kuala Lumpur and Singapore includes border immigration formalities, which can take time.",
+        "Dress modestly for Batu Caves; shoulders and knees should be covered.",
+        "Singapore has strict local laws on littering and e-cigarettes; please follow them."
+      ],
+      "must_carry": [
+        "Passport and visa copies for Malaysia and Singapore",
+        "Return tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Type G (UK-style three-pin) power adapter",
+        "Light jacket for Genting Highlands, which is cooler than the city",
+        "Modest clothing for Batu Caves",
+        "Comfortable walking shoes and sunscreen"
+      ],
+      "pickup": "Kuala Lumpur International Airport (KLIA), Malaysia",
+      "drop_point": "Singapore Changi Airport",
+      "photo": "petronas-twin-towers",
+      "gallery": ["batu-caves", "genting-highlands", "merlion-park", "gardens-by-the-bay"],
+      "price": {"from": 49000}
+    }
+  ],
+  "group_trips": [
+    {
+      "slug": "singapore-sentosa-gardens-group-trip",
+      "title": "Singapore City, Sentosa and Mandai Bird Paradise Group Trip",
+      "nights": 4,
+      "summary": "A small-group Singapore holiday with a trip captain, covering Gardens by the Bay, the city tour, Sentosa Island and Mandai Bird Paradise.",
+      "overview": "Singapore packs a great deal into a small island, and this group trip lets you see its best sides without planning a thing. You travel with a trip captain, from the first evening at Gardens by the Bay to a day on Sentosa Island and a morning among the birds at Mandai.\n\nThe city tour passes Merlion Park, Chinatown and Little India, with time on Orchard Road for shopping. Evenings are left free for Marina Bay, hawker-style food and a rest, with Indian meal options available on request.",
+      "highlights": [
+        "Evening at Gardens by the Bay and the Supertree Grove",
+        "Guided city tour with Merlion Park and the Buddha Tooth Relic Temple",
+        "Walk through Chinatown and Little India",
+        "A day on Sentosa Island, reached by cable car",
+        "Mandai Bird Paradise",
+        "Free time on Orchard Road and at Marina Bay",
+        "Accompanied by a trip captain throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Singapore | Gardens by the Bay",
+          "description": "Arrive at Singapore Changi Airport and meet your trip captain.\nTransfer to the hotel and check in.\nIn the evening, visit Gardens by the Bay to walk among the Supertrees, with the light show weather permitting.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 2,
+          "title": "City Tour | Merlion Park, Chinatown and Little India",
+          "description": "After breakfast, begin a guided city tour with a photo stop at Merlion Park.\nVisit the Buddha Tooth Relic Temple and walk through Chinatown.\nContinue to Little India for its colourful streets and shops.\nSpend free time on Orchard Road before returning to the hotel.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 3,
+          "title": "Sentosa Island | Cable Car and Beaches",
+          "description": "After breakfast, travel to Sentosa Island by cable car.\nEnjoy the island's beaches and attractions at an easy pace, with optional activities available.\nReturn to the hotel in the late afternoon.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 4,
+          "title": "Mandai Bird Paradise | Marina Bay Evening",
+          "description": "After breakfast, transfer to Mandai Bird Paradise and spend the morning among its aviaries.\nReturn to the hotel for a rest.\nIn the evening, stroll around Marina Bay at leisure, with views of Marina Bay Sands.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 5,
+          "title": "Departure from Singapore",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Singapore Changi Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 4 nights in Singapore",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Guided city tour and transfers as per itinerary",
+        "Sentosa cable car ride as per itinerary",
+        "Entry to Mandai Bird Paradise as per itinerary",
+        "A trip captain accompanying the group",
+        "Indian meal options on request",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and attraction tickets on Sentosa",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Group size is limited to a maximum of 20 travellers per departure.",
+        "Each departure runs on minimum numbers; we will inform you in advance if a date needs to change.",
+        "A trip captain accompanies the group throughout.",
+        "The Gardens by the Bay light show is subject to weather.",
+        "Singapore has strict local laws on littering and e-cigarettes; please follow them."
+      ],
+      "must_carry": [
+        "Passport and Singapore visa copy",
+        "Return tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Type G (UK-style three-pin) power adapter",
+        "Compact umbrella or light rain jacket",
+        "Comfortable walking shoes and sunscreen",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Singapore Changi Airport",
+      "drop_point": "Singapore Changi Airport",
+      "photo": "sentosa-island",
+      "gallery": ["gardens-by-the-bay", "merlion-park", "mandai-bird-paradise", "chinatown-singapore"],
+      "price": 54000,
+      "original_price": 58500,
+      "departures": {"weekday": 4, "count": 6, "every_weeks": 2, "capacity": 20}
+    },
+    {
+      "slug": "singapore-malaysia-kuala-lumpur-group-trip",
+      "title": "Kuala Lumpur, Malacca and Singapore Group Trip",
+      "nights": 6,
+      "summary": "A small-group journey from Kuala Lumpur through historic Malacca to Singapore, with Genting Highlands, Batu Caves, Gardens by the Bay and Sentosa.",
+      "overview": "This group trip follows the natural route south, beginning in Kuala Lumpur and ending in Singapore. You see the Petronas Twin Towers, Batu Caves and the cool heights of Genting Highlands before breaking the road journey at the old trading port of Malacca.\n\nIn Singapore, a guided city tour, Gardens by the Bay and a day on Sentosa Island complete the trip. A trip captain travels with the group, and Indian meal options are available on request.",
+      "highlights": [
+        "Kuala Lumpur city tour with the Petronas Twin Towers and Merdeka Square",
+        "Batu Caves",
+        "Cable car ride to Genting Highlands",
+        "Heritage stop in Malacca on the drive to Singapore",
+        "Singapore city tour with Merlion Park and Chinatown",
+        "Gardens by the Bay",
+        "A day on Sentosa Island",
+        "Accompanied by a trip captain throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kuala Lumpur",
+          "description": "Arrive at Kuala Lumpur International Airport and meet your trip captain.\nTransfer to the hotel and check in.\nRest after the journey, with the evening at leisure.\nOvernight stay in Kuala Lumpur."
+        },
+        {
+          "day": 2,
+          "title": "Kuala Lumpur City Tour | Petronas Twin Towers and Batu Caves",
+          "description": "After breakfast, begin a guided city tour with photo stops at Merdeka Square and the Petronas Twin Towers.\nVisit Batu Caves, set in a limestone hill outside the city.\nReturn to the hotel, with free time in the evening.\nOvernight stay in Kuala Lumpur."
+        },
+        {
+          "day": 3,
+          "title": "Genting Highlands | Cable Car Day",
+          "description": "After breakfast, drive to the base station and ride the cable car up to Genting Highlands.\nEnjoy the cooler mountain air and the attractions at the top at your own pace.\nReturn by cable car and drive back to Kuala Lumpur.\nOvernight stay in Kuala Lumpur."
+        },
+        {
+          "day": 4,
+          "title": "Kuala Lumpur to Malacca | Drive to Singapore",
+          "description": "After breakfast, check out and drive south to Malacca.\nVisit the old town, including the Stadthuys and Red Square, and have lunch.\nContinue by road to the Malaysia-Singapore border and complete immigration formalities.\nArrive in Singapore, check in and relax.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 5,
+          "title": "Singapore City Tour | Gardens by the Bay",
+          "description": "After breakfast, begin a guided city tour with a photo stop at Merlion Park.\nVisit the Buddha Tooth Relic Temple and walk through Chinatown.\nIn the evening, visit Gardens by the Bay and the Supertree Grove, with the light show weather permitting.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 6,
+          "title": "Sentosa Island | Free Evening at Marina Bay",
+          "description": "After breakfast, travel to Sentosa Island by cable car.\nSpend the day on the island's beaches and attractions, with optional activities available.\nReturn to the hotel, with the evening free for Marina Bay or last-minute shopping.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Singapore",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Singapore Changi Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 6 nights: 3 in Kuala Lumpur and 3 in Singapore",
+        "Daily breakfast at the hotels",
+        "Airport arrival and departure transfers",
+        "Road transfer from Kuala Lumpur to Singapore with a stop in Malacca",
+        "Guided city tours in Kuala Lumpur and Singapore as per itinerary",
+        "Genting Highlands cable car as per itinerary",
+        "Sentosa cable car ride as per itinerary",
+        "A trip captain accompanying the group",
+        "Indian meal options on request",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and attraction tickets at Genting Highlands and Sentosa",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Group size is limited to a maximum of 20 travellers per departure.",
+        "Each departure runs on minimum numbers; we will inform you in advance if a date needs to change.",
+        "A trip captain accompanies the group throughout.",
+        "Day 4 involves a long road journey and a border crossing, so please keep passports and hand luggage easily accessible.",
+        "Dress modestly for Batu Caves; shoulders and knees should be covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies for Malaysia and Singapore",
+        "Return tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Type G (UK-style three-pin) power adapter",
+        "Light jacket for Genting Highlands, which is cooler than the city",
+        "Modest clothing for Batu Caves",
+        "Comfortable walking shoes and sunscreen"
+      ],
+      "pickup": "Kuala Lumpur International Airport (KLIA), Malaysia",
+      "drop_point": "Singapore Changi Airport",
+      "photo": "petronas-twin-towers",
+      "gallery": ["batu-caves", "genting-highlands", "malacca-stadthuys", "gardens-by-the-bay", "merlion-park"],
+      "price": 56000,
+      "original_price": 61000,
+      "departures": {"weekday": 5, "count": 6, "every_weeks": 2, "capacity": 20}
+    }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "destination": "uzbekistan",
+  "photos": [
+    {"slot": "registan-square", "query": "Registan Square Samarkand Uzbekistan", "caption": "Registan Square, Samarkand"},
+    {"slot": "gur-e-amir", "query": "Gur-e-Amir Mausoleum Samarkand", "caption": "Gur-e-Amir Mausoleum, Samarkand"},
+    {"slot": "shah-i-zinda", "query": "Shah-i-Zinda necropolis Samarkand", "caption": "Shah-i-Zinda, Samarkand"},
+    {"slot": "hazrati-imam-tashkent", "query": "Hazrati Imam Complex Tashkent Uzbekistan", "caption": "Hazrati Imam Complex, Tashkent"},
+    {"slot": "tashkent-metro", "query": "Tashkent Metro station Uzbekistan", "caption": "Tashkent Metro"},
+    {"slot": "charvak-lake", "query": "Charvak Lake Uzbekistan", "caption": "Charvak Lake"},
+    {"slot": "amirsoy-resort", "query": "Amirsoy mountain resort Uzbekistan", "caption": "Amirsoy mountain resort"},
+    {"slot": "chimgan-mountains", "query": "Chimgan mountains Uzbekistan", "caption": "Chimgan Mountains"},
+    {"slot": "kalyan-minaret-bukhara", "query": "Kalyan Minaret Bukhara Uzbekistan", "caption": "Kalyan Minaret, Bukhara"},
+    {"slot": "itchan-kala-khiva", "query": "Itchan Kala Khiva Uzbekistan", "caption": "Itchan Kala, Khiva"},
+    {"slot": "charyn-canyon", "query": "Charyn Canyon Kazakhstan", "caption": "Charyn Canyon, Kazakhstan"},
+    {"slot": "almaty-kok-tobe", "query": "Kok Tobe Almaty Kazakhstan", "caption": "Kok-Tobe hill, Almaty"}
+  ],
+  "hero": "registan-square",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "classic-uzbekistan-packages",
+      "name": "Classic Uzbekistan Packages",
+      "description": "Short, well-paced holidays built around Tashkent, a day in Samarkand and the nearby Tian Shan foothills. A comfortable first introduction to Uzbekistan.",
+      "photo": "hazrati-imam-tashkent",
+      "packages": ["simply-tashkent", "scenic-uzbekistan", "uzbekistan-with-amirsoy-van-tours", "uzbekistan-tashkent-samarkand-amirsoy-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "silk-road-heritage-uzbekistan",
+      "name": "Silk Road Cities and Heritage",
+      "description": "Walk through the great Silk Road cities, from the tiled domes of Samarkand to the old trading quarters of Bukhara and the walled town of Khiva.",
+      "photo": "kalyan-minaret-bukhara",
+      "packages": ["scenic-uzbekistan", "uzbekistan-silk-road-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "mountains-amirsoy-uzbekistan",
+      "name": "Mountains, Lakes and Amirsoy",
+      "description": "Chairlifts at Chimgan, turquoise Charvak Lake and the Amirsoy mountain resort, all within reach of Tashkent. Good for families and anyone who likes fresh mountain air.",
+      "photo": "amirsoy-resort",
+      "packages": ["winter-uzbekistan", "uzbekistan-with-amirsoy-van-tours", "uzbekistan-tashkent-samarkand-amirsoy-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "seasonal-specials-uzbekistan",
+      "name": "Seasonal Specials: Winter and Autumn",
+      "description": "Packages timed for the cooler months, when the mountains turn snowy or golden and the sightseeing is comfortable.",
+      "photo": "chimgan-mountains",
+      "packages": ["winter-uzbekistan", "autumn-kazakhstan-uzbekistan"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kazakhstan-uzbekistan-combos",
+      "name": "Multi-Country Combos",
+      "description": "Pair Uzbekistan with its Central Asian neighbour. Almaty's mountains and canyons, followed by Tashkent, Charvak and Samarkand.",
+      "photo": "charyn-canyon",
+      "packages": ["autumn-kazakhstan-uzbekistan"]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "uzbekistan-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Escorted small-group departures on fixed dates with a trip captain throughout. Meet fellow travellers and leave the planning to us.",
+      "photo": "registan-square",
+      "packages": ["uzbekistan-silk-road-group-trip", "uzbekistan-tashkent-samarkand-amirsoy-group-trip"]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "uzbekistan-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Unhurried itineraries for couples, mixing mountain scenery, lakeside time and the lovely tilework of Samarkand.",
+      "photo": "amirsoy-resort",
+      "packages": ["winter-uzbekistan", "uzbekistan-with-amirsoy-van-tours", "scenic-uzbekistan"]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "simply-tashkent",
+      "summary": "A relaxed Uzbekistan introduction based in Tashkent, with a city tour, a Chimgan mountain day, a Samarkand excursion by high-speed train and a visit to Magic City.",
+      "overview": "Simply Tashkent keeps you in one comfortable base and brings the highlights to you. You tour the capital's landmarks, ride a chairlift in the Chimgan Mountains and pass by Charvak Reservoir. A day trip by Afrosiyob high-speed train takes you to the Timurid monuments of Samarkand. A relaxed visit to Magic City rounds off the stay.",
+      "highlights": [
+        "Panoramic Tashkent tour including Amir Timur Museum, Monument of Courage and Minor Mosque",
+        "Hazrati Imam Ensemble and the Palace of Nations Friendship",
+        "Chairlift ride and mountain views at Chimgan, with a drive past Charvak Reservoir",
+        "Afrosiyob high-speed train day trip to Samarkand and Registan Square",
+        "Konigil Village experience with traditional dress-up and tea tasting",
+        "Leisure time at Magic City with its themed streets, lakeside areas and cafes"
+      ],
+      "inclusions": [
+        "Accommodation in a hotel on twin sharing for 4 nights",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Panoramic Tashkent city tour as per the itinerary",
+        "Chimgan Mountains excursion with chairlift ride",
+        "Afrosiyob high-speed train travel for the Samarkand day trip",
+        "Samarkand sightseeing as per the itinerary, including Registan Square and Gur-e-Amir Mausoleum",
+        "Konigil Village experience with tea tasting",
+        "Magic City visit as per the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and rides not mentioned in the itinerary",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Modest clothing is advised when visiting mosques and mausoleums; shoulders and knees should be covered.",
+        "Mountain weather can change quickly, so the chairlift ride is subject to operating conditions."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or international debit/credit card",
+        "Power adapter (Type C or F, 220 V)",
+        "Comfortable walking shoes",
+        "Light jacket or layers for the mountains"
+      ],
+      "pickup": "Tashkent International Airport",
+      "drop_point": "Tashkent International Airport",
+      "photo": "hazrati-imam-tashkent",
+      "gallery": ["tashkent-metro", "chimgan-mountains", "registan-square", "gur-e-amir"],
+      "price": {"from": 45000}
+    },
+    {
+      "slug": "scenic-uzbekistan",
+      "summary": "A compact Uzbekistan holiday combining Tashkent's old and new quarters, Chimgan and Charvak Lake scenery, and a day in Samarkand by high-speed train.",
+      "overview": "Scenic Uzbekistan balances mountain views with monuments. You ride the chairlift at Chimgan and relax at Charvak Lake, then take the Afrosiyob train to Samarkand for Registan Square, Gur-e-Amir and the Ulughbek Observatory. A full day exploring old and new Tashkent and a shopping tour make a pleasant finish.",
+      "highlights": [
+        "Chimgan Mountains chairlift ride and Charvak Lake leisure time",
+        "Afrosiyob train to Samarkand with Registan Square and Gur-e-Amir Mausoleum",
+        "Ulughbek Observatory, Shahi Zinda and Bibi-Khanym Mosque",
+        "Tashkent's Hazrati Imam Complex and Barakhan Madrasah",
+        "Independence Square, Amir Temur Square and Broadway Street",
+        "Shopping at Chorus Bazaar, Alay Bazaar and Samarkand Darwaza Mall"
+      ],
+      "inclusions": [
+        "Accommodation in a hotel on twin sharing for 4 nights",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Chimgan and Charvak Lake excursion as per the itinerary",
+        "Afrosiyob train travel between Tashkent and Samarkand",
+        "Samarkand sightseeing as per the itinerary",
+        "Tashkent old and new city tour as per the itinerary",
+        "Shopping tour covering the bazaars and malls listed",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities not mentioned in the itinerary",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Please dress modestly at religious sites and be prepared to remove shoes in some places.",
+        "Samarkand is a full day by train, so comfortable walking shoes are important."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or international debit/credit card",
+        "Power adapter (Type C or F, 220 V)",
+        "Comfortable walking shoes",
+        "Sunscreen, hat and light jacket"
+      ],
+      "pickup": "Tashkent International Airport",
+      "drop_point": "Tashkent International Airport",
+      "photo": "registan-square",
+      "gallery": ["charvak-lake", "chimgan-mountains", "hazrati-imam-tashkent", "gur-e-amir"],
+      "price": {"from": 52000}
+    },
+    {
+      "slug": "winter-uzbekistan",
+      "summary": "A four-night winter holiday with Tashkent's heritage sights, a day at Amirsoy and Charvak Lake, and a high-speed train day trip to Samarkand.",
+      "overview": "Winter Uzbekistan pairs the capital's architecture with crisp mountain scenery. You tour Tashkent's old and new landmarks and ride the Metro, then spend a day at the Amirsoy mountain resort and Charvak Lake. A high-speed train carries you to Samarkand for Registan Square and its grand madrasahs before you return to Tashkent.",
+      "highlights": [
+        "Tashkent city tour with Hazrati Imam Complex, Barak-Khan Madrasah and Minor Mosque",
+        "Ride through Tashkent's decorated Metro stations",
+        "Day excursion to Amirsoy mountain resort with cable car opportunities",
+        "Charvak Lake scenery in the Tian Shan foothills",
+        "High-speed train to Samarkand, Registan Square and Bibi Khanum Mosque",
+        "Shahi Zinda and Hazrati Hizir Mosque"
+      ],
+      "inclusions": [
+        "Accommodation in a hotel on twin sharing for 4 nights",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Tashkent city tour as per the itinerary",
+        "Amirsoy and Charvak Lake day excursion",
+        "High-speed train travel between Tashkent and Samarkand",
+        "Samarkand sightseeing as per the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Cable car tickets and optional adventure activities unless stated",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Winters are cold; mountain roads and cable car operations depend on snow and weather conditions.",
+        "Optional adventure activities have their own age and health requirements."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or international debit/credit card",
+        "Power adapter (Type C or F, 220 V)",
+        "Heavy jacket, thermals, gloves and woollen cap",
+        "Non-slip waterproof shoes"
+      ],
+      "pickup": "Tashkent International Airport",
+      "drop_point": "Tashkent International Airport",
+      "photo": "amirsoy-resort",
+      "gallery": ["charvak-lake", "tashkent-metro", "registan-square", "shah-i-zinda"]
+    },
+    {
+      "slug": "uzbekistan-with-amirsoy-van-tours",
+      "summary": "A five-night journey through Tashkent and Samarkand, followed by a mountain stay at Amirsoy with Chimgan and Charvak Lake along the way.",
+      "overview": "This holiday begins with Tashkent's landmarks and a day in Samarkand by train, then heads into the Western Tian Shan. You travel by road with an English-speaking driver, ride the cable car at Amirsoy and visit Charvak Lake. Two nights in the mountains give you time to slow down.",
+      "highlights": [
+        "Magic City Park on the first evening",
+        "Tashkent's Barak-Khan Madrasah, Minor Mosque and Monument of Courage",
+        "Artistic Tashkent Metro stations",
+        "Train day trip to Samarkand with Registan Square and Bibi Khanum Mosque",
+        "Konigil Village visit, Shahi Zinda and Hazrati Hizir Mosque",
+        "Chimgan, Amirsoy cable car and Charvak Lake with a free day at the resort"
+      ],
+      "inclusions": [
+        "Accommodation on twin sharing for 5 nights, including 2 nights in Amirsoy",
+        "Daily breakfast",
+        "Airport arrival and departure transfers with an English-speaking driver",
+        "Magic City Park visit as per the itinerary",
+        "Tashkent sightseeing as per the itinerary",
+        "Train travel between Tashkent and Samarkand",
+        "Samarkand and Konigil Village sightseeing as per the itinerary",
+        "Chimgan, Amirsoy and Charvak Lake excursion with cable car ride",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional leisure activities at Charvak Lake and Amirsoy",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Mountain temperatures are much cooler than in Tashkent, even in summer, so carry layers.",
+        "Cable car operation is subject to weather and resort schedules."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or international debit/credit card",
+        "Power adapter (Type C or F, 220 V)",
+        "Comfortable walking shoes",
+        "Light jacket or sweater for the mountains"
+      ],
+      "pickup": "Tashkent International Airport",
+      "drop_point": "Tashkent International Airport",
+      "photo": "chimgan-mountains",
+      "gallery": ["amirsoy-resort", "charvak-lake", "registan-square", "tashkent-metro"]
+    },
+    {
+      "slug": "autumn-kazakhstan-uzbekistan",
+      "summary": "An eight-night autumn combination of Almaty's city sights, Charyn Canyon and Kolsai Lakes with Tashkent, Amirsoy, Charvak Lake and Samarkand.",
+      "overview": "This two-country journey starts in Almaty, with its cable car, markets, mountain resort at Shymbulak and a full day to Charyn Canyon and the alpine Kolsai Lakes. You then fly to Tashkent for the city's heritage sights, a day among the Amirsoy and Charvak mountains and a train journey to Samarkand's Registan Square.",
+      "highlights": [
+        "Almaty city tour with Green Bazaar, Ascension Cathedral and a Kok-Tobe cable car ride",
+        "Medeu and Shymbulak mountain resort",
+        "Day excursion to Charyn Canyon and Kolsai Lakes",
+        "Tashkent's Hazrati Imam Complex, Barak-Khan Madrasah and Metro",
+        "Amirsoy mountain scenery and Charvak Lake",
+        "High-speed train to Samarkand and Registan Square"
+      ],
+      "inclusions": [
+        "Accommodation on twin sharing for 8 nights, 4 in Almaty and 4 in Tashkent",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Almaty city tour and Kok-Tobe cable car ride",
+        "Medeu and Shymbulak visit as per the itinerary",
+        "Charyn Canyon and Kolsai Lakes day excursion",
+        "Tashkent city tour as per the itinerary",
+        "Amirsoy and Charvak Lake excursion",
+        "High-speed train travel and Samarkand sightseeing as per the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Flight between Almaty and Tashkent unless confirmed in your quote",
+        "Visa fees and processing for Kazakhstan and Uzbekistan",
+        "Travel insurance",
+        "Meals other than daily breakfast",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities not mentioned in the itinerary",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Please check visa requirements for both Kazakhstan and Uzbekistan before booking.",
+        "The Charyn Canyon and Kolsai Lakes day involves long road journeys.",
+        "Autumn mornings and evenings in the mountains are cold, so carry warm layers."
+      ],
+      "must_carry": [
+        "Passport and visa copies for both countries",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or international debit/credit card",
+        "Power adapter (Type C or F, 220 V)",
+        "Warm jacket, scarf and layers for the mountains",
+        "Comfortable walking shoes"
+      ],
+      "pickup": "Almaty International Airport, Kazakhstan",
+      "drop_point": "Tashkent International Airport, Uzbekistan",
+      "photo": "charyn-canyon",
+      "gallery": ["almaty-kok-tobe", "amirsoy-resort", "charvak-lake", "registan-square"],
+      "price": {"from": 98000}
+    }
+  ],
+  "group_trips": [
+    {
+      "slug": "uzbekistan-silk-road-group-trip",
+      "title": "Silk Road Cities: Samarkand, Bukhara and Khiva Group Trip",
+      "nights": 8,
+      "summary": "An escorted nine-day journey through Uzbekistan's four great Silk Road cities, with Tashkent, Samarkand, Bukhara and Khiva on fixed departure dates.",
+      "overview": "This group trip follows the old Silk Road through Uzbekistan's most storied cities. You begin in Tashkent, then travel by high-speed train to Samarkand for Registan Square, Gur-e-Amir and Shah-i-Zinda. From there you continue to Bukhara, with its old trading quarter, minarets and madrasahs.\n\nAfter a long scenic drive across the desert region, you reach Khiva and its walled inner city, Itchan Kala. A domestic flight returns you to Tashkent for a final night before your flight home.\n\nA trip captain travels with the group throughout, so you can focus on the sights. Indian meal options are available on request.",
+      "highlights": [
+        "Registan Square, Gur-e-Amir Mausoleum and Shah-i-Zinda in Samarkand",
+        "Afrosiyob high-speed train between Tashkent, Samarkand and Bukhara",
+        "Bukhara's Kalyan Minaret, Ark Fortress and Lyab-i-Hauz pond",
+        "Walled inner city of Itchan Kala in Khiva",
+        "Ulugh Beg Observatory and Bibi-Khanym Mosque",
+        "Scenic drive across the Kyzylkum desert region",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Tashkent",
+          "description": "Arrive at Tashkent International Airport and meet our representative.\nTransfer to your hotel and check in.\nRelax and enjoy an evening at leisure.\nOvernight stay in Tashkent."
+        },
+        {
+          "day": 2,
+          "title": "Tashkent City Tour | Train to Samarkand",
+          "description": "After breakfast, tour Tashkent including the Hazrati Imam Complex and Chorsu Bazaar.\nTransfer to the station and board the Afrosiyob high-speed train to Samarkand.\nCheck in at your hotel and enjoy the evening at leisure.\nOvernight stay in Samarkand."
+        },
+        {
+          "day": 3,
+          "title": "Samarkand | Registan Square and Gur-e-Amir",
+          "description": "After breakfast, visit Registan Square with its three grand madrasahs.\nContinue to the Gur-e-Amir Mausoleum and Bibi-Khanym Mosque.\nExplore Siab Bazaar and enjoy free time in the afternoon.\nOvernight stay in Samarkand."
+        },
+        {
+          "day": 4,
+          "title": "Samarkand | Shah-i-Zinda | Train to Bukhara",
+          "description": "After breakfast, visit the Shah-i-Zinda necropolis and the Ulugh Beg Observatory.\nTransfer to the station for the train to Bukhara.\nCheck in at your hotel and relax.\nOvernight stay in Bukhara."
+        },
+        {
+          "day": 5,
+          "title": "Bukhara Old Town Walk",
+          "description": "After breakfast, explore Bukhara on foot, including the Kalyan Minaret and the Ark Fortress.\nVisit the Lyab-i-Hauz pond and the old trading domes.\nEnjoy free time for shopping and tea in the old town.\nOvernight stay in Bukhara."
+        },
+        {
+          "day": 6,
+          "title": "Bukhara to Khiva Scenic Drive",
+          "description": "After an early breakfast, begin the long drive to Khiva across the Kyzylkum desert region.\nEnjoy comfort and photo stops along the way.\nArrive in Khiva, check in and relax.\nOvernight stay in Khiva."
+        },
+        {
+          "day": 7,
+          "title": "Khiva | Itchan Kala Walled City",
+          "description": "After breakfast, explore Itchan Kala, the walled inner city of Khiva.\nSee its minarets, mosques and old palaces on a guided walk.\nEnjoy free time on the city walls and in the bazaars at sunset.\nOvernight stay in Khiva."
+        },
+        {
+          "day": 8,
+          "title": "Khiva to Tashkent by Flight",
+          "description": "After breakfast, transfer to Urgench airport for the domestic flight to Tashkent.\nTransfer to your hotel and check in.\nSpend the afternoon at leisure for last-minute shopping.\nOvernight stay in Tashkent."
+        },
+        {
+          "day": 9,
+          "title": "Departure from Tashkent",
+          "description": "After breakfast, complete check-out formalities.\nTransfer to Tashkent International Airport for your flight home.\nDepart Uzbekistan with warm memories."
+        }
+      ],
+      "inclusions": [
+        "Hotel accommodation on twin sharing for 8 nights",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Afrosiyob high-speed train tickets for the Tashkent to Samarkand and Samarkand to Bukhara sectors",
+        "Domestic flight from Urgench to Tashkent",
+        "Private road transfer from Bukhara to Khiva",
+        "Sightseeing in Tashkent, Samarkand, Bukhara and Khiva as per the itinerary",
+        "Entry tickets to the monuments listed in the itinerary",
+        "A trip captain accompanying the group",
+        "Indian meal options on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera permits and optional activities",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a small-group departure with a maximum group size as per the departure listing, and it runs on minimum numbers.",
+        "A trip captain accompanies the group throughout.",
+        "The drive from Bukhara to Khiva is long, so please carry water, snacks and any travel-sickness medication.",
+        "Dress modestly at mosques and madrasahs; shoulders and knees should be covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or international debit/credit card",
+        "Power adapter (Type C or F, 220 V)",
+        "Sunscreen, sunglasses and hat",
+        "Comfortable walking shoes and modest clothing"
+      ],
+      "pickup": "Tashkent International Airport",
+      "drop_point": "Tashkent International Airport",
+      "photo": "kalyan-minaret-bukhara",
+      "gallery": ["registan-square", "gur-e-amir", "shah-i-zinda", "itchan-kala-khiva", "hazrati-imam-tashkent"],
+      "price": 89000,
+      "original_price": 96000,
+      "departures": {"weekday": 6, "count": 6, "every_weeks": 2, "capacity": 20}
+    },
+    {
+      "slug": "uzbekistan-tashkent-samarkand-amirsoy-group-trip",
+      "title": "Tashkent, Samarkand and Amirsoy Mountains Group Trip",
+      "nights": 5,
+      "summary": "A six-day escorted group trip combining Tashkent's landmarks, a full day in Samarkand and a day in the Amirsoy and Charvak mountains.",
+      "overview": "This escorted departure mixes city culture with mountain air. You explore Tashkent, then take the Afrosiyob train to Samarkand for Registan Square, Gur-e-Amir and a night in the Silk Road city.\n\nBack in Tashkent, you head into the foothills of the Western Tian Shan for the Amirsoy mountain resort and Charvak Lake. A trip captain accompanies the group and Indian meal options are available on request.",
+      "highlights": [
+        "Tashkent city tour with the Hazrati Imam Complex and decorated Metro stations",
+        "Afrosiyob high-speed train to Samarkand",
+        "Registan Square, Gur-e-Amir Mausoleum and Shah-i-Zinda",
+        "Amirsoy mountain resort and cable car views",
+        "Charvak Lake in the Tian Shan foothills",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Tashkent",
+          "description": "Arrive at Tashkent International Airport and meet our representative.\nTransfer to your hotel and check in.\nRelax and enjoy an evening at leisure.\nOvernight stay in Tashkent."
+        },
+        {
+          "day": 2,
+          "title": "Tashkent City Tour",
+          "description": "After breakfast, tour Tashkent including the Hazrati Imam Complex and the Minor Mosque.\nRide through some of the city's decorated Metro stations.\nEnjoy free time in the afternoon for shopping.\nOvernight stay in Tashkent."
+        },
+        {
+          "day": 3,
+          "title": "Train to Samarkand | Registan Square",
+          "description": "After breakfast, board the Afrosiyob high-speed train to Samarkand.\nVisit Registan Square and the Gur-e-Amir Mausoleum.\nCheck in at your hotel and enjoy the evening at leisure.\nOvernight stay in Samarkand."
+        },
+        {
+          "day": 4,
+          "title": "Samarkand | Return to Tashkent",
+          "description": "After breakfast, visit Shah-i-Zinda and the Bibi-Khanym Mosque.\nExplore Siab Bazaar before heading to the station.\nTake the train back to Tashkent and check in at your hotel.\nOvernight stay in Tashkent."
+        },
+        {
+          "day": 5,
+          "title": "Amirsoy Mountains and Charvak Lake",
+          "description": "After breakfast, drive into the mountains towards Amirsoy.\nEnjoy the resort's scenery and views, with optional cable car rides.\nVisit Charvak Lake before returning to Tashkent in the evening.\nOvernight stay in Tashkent."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Tashkent",
+          "description": "After breakfast, complete check-out formalities.\nTransfer to Tashkent International Airport for your flight home.\nDepart Uzbekistan with warm memories."
+        }
+      ],
+      "inclusions": [
+        "Hotel accommodation on twin sharing for 5 nights",
+        "Daily breakfast",
+        "Airport arrival and departure transfers",
+        "Afrosiyob high-speed train tickets between Tashkent and Samarkand",
+        "Sightseeing in Tashkent and Samarkand as per the itinerary",
+        "Amirsoy and Charvak Lake excursion by road",
+        "Entry tickets to the monuments listed in the itinerary",
+        "A trip captain accompanying the group",
+        "Indian meal options on request",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Cable car tickets and optional activities",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a small-group departure with a maximum group size as per the departure listing, and it runs on minimum numbers.",
+        "A trip captain accompanies the group throughout.",
+        "Mountain weather is cooler and can change quickly; cable car operation is subject to conditions.",
+        "Dress modestly at mosques and mausoleums; shoulders and knees should be covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or international debit/credit card",
+        "Power adapter (Type C or F, 220 V)",
+        "Light jacket or sweater for the mountains",
+        "Comfortable walking shoes"
+      ],
+      "pickup": "Tashkent International Airport",
+      "drop_point": "Tashkent International Airport",
+      "photo": "charvak-lake",
+      "gallery": ["amirsoy-resort", "registan-square", "hazrati-imam-tashkent", "tashkent-metro"],
+      "price": 58000,
+      "original_price": 64000,
+      "departures": {"weekday": 4, "count": 6, "every_weeks": 2, "capacity": 24}
+    }
+  ]
+}

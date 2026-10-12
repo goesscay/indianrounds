@@ -101,6 +101,14 @@ export default async function TourPage({ params }: Props) {
 
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1fr_22rem] lg:px-8">
         <div className="space-y-12">
+          {(t.gallery?.length ?? 0) > 1 && (
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4" aria-label="Photos">
+              {t.gallery!.slice(0, 4).map((src, i) => (
+                <CoverImage key={src} src={src} alt={`${t.title}, photo ${i + 1}`} seed={src} sizes="(min-width: 1024px) 18vw, 50vw" className="aspect-[4/3] rounded-card" />
+              ))}
+            </div>
+          )}
+
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[
               ["Duration", durationLabel(t.duration_nights, t.duration_days)],

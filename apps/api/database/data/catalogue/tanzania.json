@@ -1,0 +1,572 @@
+{
+  "destination": "tanzania",
+  "photos": [
+    {"slot": "serengeti-plains", "query": "Serengeti National Park Tanzania savannah", "caption": "The endless plains of the Serengeti"},
+    {"slot": "ngorongoro-crater", "query": "Ngorongoro Crater Tanzania wildlife", "caption": "Ngorongoro Crater"},
+    {"slot": "tarangire-elephants", "query": "Tarangire National Park elephants baobab Tanzania", "caption": "Elephants and baobabs in Tarangire"},
+    {"slot": "lake-manyara", "query": "Lake Manyara National Park Tanzania", "caption": "Lake Manyara National Park"},
+    {"slot": "zanzibar-beach", "query": "Nungwi beach Zanzibar Tanzania", "caption": "A white-sand beach in Zanzibar"},
+    {"slot": "stone-town", "query": "Stone Town Zanzibar old town", "caption": "Stone Town, Zanzibar"},
+    {"slot": "masai-mara", "query": "Masai Mara Kenya wildebeest safari", "caption": "Game viewing in the Masai Mara"},
+    {"slot": "amboseli-kilimanjaro", "query": "Amboseli National Park elephants Mount Kilimanjaro Kenya", "caption": "Amboseli with Mount Kilimanjaro behind"},
+    {"slot": "lake-naivasha", "query": "Lake Naivasha Kenya hippos", "caption": "Lake Naivasha"},
+    {"slot": "maasai-warriors", "query": "Maasai people Kenya Tanzania traditional", "caption": "Maasai community"}
+  ],
+  "hero": "serengeti-plains",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "tanzania-safari-classics",
+      "name": "Tanzania Safari Classics",
+      "description": "Game-drive journeys through Tanzania's northern parks, from Lake Manyara and Tarangire to the Serengeti and the Ngorongoro Crater.",
+      "photo": "serengeti-plains",
+      "packages": ["untamed-tanzania", "tanzania-northern-circuit-safari-group-trip", "the-great-african-safari"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kenya-and-tanzania-combinations",
+      "name": "Kenya and Tanzania Combinations",
+      "description": "Cross the border between two safari countries, taking in the Masai Mara, the Serengeti and the Ngorongoro Crater in one holiday.",
+      "photo": "masai-mara",
+      "packages": ["the-great-african-safari", "delights-of-kenya-and-tanzania-summer"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "kenya-safari-escapes",
+      "name": "Kenya Safari Escapes",
+      "description": "Kenya-only safaris built around its famous reserves, with lodge stays and game drives for first-time safari travellers.",
+      "photo": "amboseli-kilimanjaro",
+      "packages": ["elegant-escapes-in-kenya", "elegant-escapes-in-kenya-durga-puja-navratri-special"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "safari-and-zanzibar-beach",
+      "name": "Safari and Zanzibar Beach",
+      "description": "Finish a Tanzanian safari with time on the Indian Ocean coast, combining game drives with Stone Town and Zanzibar's beaches.",
+      "photo": "zanzibar-beach",
+      "packages": ["tanzania-safari-and-zanzibar-beach-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "festival-and-seasonal-specials",
+      "name": "Festival and Seasonal Specials",
+      "description": "Safari holidays timed for the summer season and for the Durga Puja and Navratri festival period, when many families travel.",
+      "photo": "maasai-warriors",
+      "packages": ["delights-of-kenya-and-tanzania-summer", "elegant-escapes-in-kenya-durga-puja-navratri-special"]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "tanzania-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Scheduled Tanzania departures with a trip captain, fixed dates and a set price, so you can travel in good company without planning a thing.",
+      "photo": "tarangire-elephants",
+      "packages": ["tanzania-northern-circuit-safari-group-trip", "tanzania-safari-and-zanzibar-beach-group-trip"]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "tanzania-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Safari holidays for couples, with sunrise game drives, lodge evenings and the wide African landscape to share.",
+      "photo": "amboseli-kilimanjaro",
+      "packages": ["untamed-tanzania", "elegant-escapes-in-kenya"]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "untamed-tanzania",
+      "summary": "A Tanzanian northern-circuit safari taking in Lake Manyara, the Serengeti and the Ngorongoro Crater, with full-board lodge stays on the safari nights.",
+      "overview": "This safari follows the classic northern circuit of Tanzania, beginning with arrival in Arusha or Kilimanjaro and a day to acclimatise. You then head to Lake Manyara National Park, known for its tree-climbing lions, before crossing to the Serengeti for an afternoon drive and a full day exploring the plains. The journey ends with a half-day game drive in the Ngorongoro Crater, home to lions, wildebeest, elephants, hippos, rhinos, zebras, leopards and hyenas.",
+      "highlights": [
+        "Game drive in Lake Manyara National Park, known for its tree-climbing lions",
+        "Afternoon safari and a full day of game viewing in the Serengeti",
+        "Half-day game drive inside the Ngorongoro Crater",
+        "Full-board meals at the lodges and camps on safari nights",
+        "A relaxed arrival day in Arusha or Kilimanjaro to settle in"
+      ],
+      "inclusions": [
+        "Accommodation in hotels, lodges or camps on twin sharing for 6 nights",
+        "Dinner on arrival nights and full-board meals at Lake Manyara, Serengeti and Ngorongoro",
+        "Airport and inter-park transfers as per itinerary",
+        "Game drives in Lake Manyara, the Serengeti and the Ngorongoro Crater as per itinerary",
+        "Sightseeing and activities listed in the itinerary, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Tanzania visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and any park or crater fees not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Safari drives involve long road journeys and some uneven tracks; guests with back or mobility concerns should tell us when booking.",
+        "Carry a yellow fever vaccination certificate if required for your route, and speak to your doctor about malaria precautions before travel."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Type G (UK three-pin) power adapter",
+        "Neutral-coloured clothing, a warm layer for early mornings, a hat and sunscreen",
+        "Binoculars and insect repellent"
+      ],
+      "pickup": "Arusha or Kilimanjaro International Airport",
+      "drop_point": "Kilimanjaro International Airport",
+      "photo": "serengeti-plains",
+      "gallery": ["lake-manyara", "ngorongoro-crater", "maasai-warriors"],
+      "price": {"from": 185000}
+    },
+    {
+      "slug": "the-great-african-safari",
+      "summary": "A nine-night safari across two countries, from Lake Naivasha and the Masai Mara in Kenya to the Serengeti and Ngorongoro Crater in Tanzania.",
+      "overview": "Beginning in Nairobi, this journey takes you through the Rift Valley to Lake Naivasha for a boat ride among hippos and birdlife, then on to the Masai Mara for morning and evening game drives. You cross the Isebania border into Tanzania to continue through the Serengeti, then to the Ngorongoro Crater for a full-day crater tour. The trip ends with a scenic drive through the Tanzanian highlands to Arusha and your flight home.",
+      "highlights": [
+        "One-hour boat ride on Lake Naivasha with chances to see hippos and birdlife",
+        "Evening and early-morning game drives in the Masai Mara, plus an extended drive with picnic lunch",
+        "Border crossing from Kenya into Tanzania at Isebania",
+        "Morning and afternoon game drives in the Serengeti",
+        "Full-day Ngorongoro Crater tour with a lunch box",
+        "Optional hot-air balloon safari and bush breakfast in the Masai Mara, at extra cost"
+      ],
+      "inclusions": [
+        "Accommodation in hotels and lodges on twin sharing for 9 nights",
+        "Dinners as per itinerary, a picnic lunch in the Masai Mara and a lunch box on the crater day",
+        "Meeting and briefing by the safari representative on arrival in Nairobi",
+        "Airport, inter-city and cross-border transfers as per itinerary",
+        "Lake Naivasha boat ride and game drives in the Masai Mara, Serengeti and Ngorongoro as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare, including any flight from Arusha to Nairobi",
+        "Visa and electronic travel authorisation fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as the hot-air balloon safari and bush breakfast",
+        "Any park, conservancy or crater fees not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Vehicles and guides change at the Kenya and Tanzania border, and immigration formalities take time; please keep your documents handy.",
+        "The drive from Lake Naivasha to the Masai Mara takes roughly 4.5 to 5.5 hours, so this trip suits guests comfortable with long road days.",
+        "Carry a yellow fever vaccination certificate if required for your route, and speak to your doctor about malaria precautions before travel."
+      ],
+      "must_carry": [
+        "Passport and visa or travel authorisation copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Type G (UK three-pin) power adapter",
+        "Neutral-coloured clothing, a warm layer and a hat",
+        "Binoculars, sunscreen and insect repellent"
+      ],
+      "pickup": "Jomo Kenyatta International Airport, Nairobi",
+      "drop_point": "Kilimanjaro International Airport, Tanzania",
+      "photo": "masai-mara",
+      "gallery": ["lake-naivasha", "serengeti-plains", "ngorongoro-crater", "maasai-warriors"],
+      "price": {"from": 280000}
+    },
+    {
+      "slug": "delights-of-kenya-and-tanzania-summer",
+      "summary": "A seven-night safari linking Nairobi, the Masai Mara, the Serengeti and the Ngorongoro Crater, with lodge stays and full days of game viewing.",
+      "overview": "This itinerary starts in Nairobi and travels through the Great Rift Valley to the Masai Mara for a full day of game viewing. You then cross the Isebania border into Tanzania, with a game drive on the way into the Serengeti and a full day exploring its plains. The trip continues to Ngorongoro for a crater tour with an extended game drive and picnic lunch, before the drive back to Nairobi and your flight home.",
+      "highlights": [
+        "Drive through the Great Rift Valley to the Masai Mara",
+        "Full day of morning and evening game drives in the Masai Mara",
+        "Border crossing at Isebania with a game drive on the way into the Serengeti",
+        "Full-day game drive on the Serengeti plains",
+        "Ngorongoro Crater tour with an extended game drive and picnic lunch inside the crater",
+        "Packed lunch on the border-crossing day"
+      ],
+      "inclusions": [
+        "Accommodation in hotels, lodges and camps on twin sharing for the nights as per itinerary",
+        "Dinners as per itinerary, a packed lunch on the border day and a picnic lunch in the crater",
+        "Meeting by the local representative outside the baggage hall in Nairobi",
+        "Airport, inter-park and cross-border transfers as per itinerary",
+        "Game drives in the Masai Mara, Serengeti and Ngorongoro Crater as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa and electronic travel authorisation fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities",
+        "Any park, conservancy or crater fees not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm (14:00 hrs) and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Vehicles and guides change at the Kenya and Tanzania border, and immigration formalities take time; please keep your documents handy.",
+        "Carry a yellow fever vaccination certificate if required for your route, and speak to your doctor about malaria precautions before travel."
+      ],
+      "must_carry": [
+        "Passport and visa or travel authorisation copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Type G (UK three-pin) power adapter",
+        "Neutral-coloured clothing, a warm layer and a hat",
+        "Binoculars, sunscreen and insect repellent"
+      ],
+      "pickup": "Jomo Kenyatta International Airport, Nairobi",
+      "drop_point": "Jomo Kenyatta International Airport, Nairobi",
+      "photo": "ngorongoro-crater",
+      "gallery": ["masai-mara", "serengeti-plains", "maasai-warriors"]
+    },
+    {
+      "slug": "elegant-escapes-in-kenya-durga-puja-navratri-special",
+      "summary": "A six-night Kenya safari holiday for the Durga Puja and Navratri travel period, with lodge stays and game drives; final itinerary confirmed at booking.",
+      "overview": "This six-night Kenya safari is designed for families travelling over the Durga Puja and Navratri period. It is built around game viewing in Kenya's wildlife areas, with nights in lodges or hotels. Our travel experts will confirm the day-by-day plan and departure dates when you enquire.",
+      "highlights": [
+        "Six-night safari holiday in Kenya",
+        "Game viewing in Kenya's wildlife areas, subject to final itinerary",
+        "Lodge or hotel stays on twin sharing",
+        "Planned for the Durga Puja and Navratri travel period",
+        "Support from our travel experts before and during the trip"
+      ],
+      "inclusions": [
+        "Accommodation in hotels or lodges on twin sharing for 6 nights",
+        "Meals as confirmed in the final itinerary",
+        "Airport and inter-city transfers as per itinerary",
+        "Game drives and sightseeing as listed in the final itinerary",
+        "Entry tickets and activities listed in the final itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa and electronic travel authorisation fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the final itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as hot-air balloon safaris",
+        "Any park or conservancy fees not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at booking, and the festival period is a busy season, so early booking is advised.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Safari drives involve long road journeys; guests with back or mobility concerns should tell us when booking.",
+        "Carry a yellow fever vaccination certificate if required for your route, and speak to your doctor about malaria precautions before travel."
+      ],
+      "must_carry": [
+        "Passport and visa or travel authorisation copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Type G (UK three-pin) power adapter",
+        "Neutral-coloured clothing, a warm layer and a hat",
+        "Binoculars, sunscreen and insect repellent"
+      ],
+      "pickup": "Jomo Kenyatta International Airport, Nairobi",
+      "drop_point": "Jomo Kenyatta International Airport, Nairobi",
+      "photo": "maasai-warriors",
+      "gallery": ["masai-mara", "amboseli-kilimanjaro"]
+    },
+    {
+      "slug": "elegant-escapes-in-kenya",
+      "summary": "A six-night Kenya safari from Nairobi to Amboseli, Lake Naivasha and the Masai Mara, with game drives and a boat ride along the way.",
+      "overview": "This Kenya safari begins in Nairobi with a briefing from the safari representative, then heads to Amboseli National Park for game drives with Mount Kilimanjaro as the backdrop. You continue to Lake Naivasha for an afternoon boat ride among hippos and birdlife, then on to the Masai Mara for evening and early-morning game drives. A final morning game drive in the Mara leads to your evening flight from Nairobi.",
+      "highlights": [
+        "Evening and full-day game drives in Amboseli against the backdrop of Mount Kilimanjaro",
+        "Picnic lunch in the field on the full-day Amboseli drive",
+        "One-hour boat ride on Lake Naivasha with chances to spot hippos and birdlife",
+        "Evening and early-morning game drives in the Masai Mara",
+        "Final morning game drive before leaving the Mara",
+        "Optional hot-air balloon safari in the Masai Mara, at extra cost"
+      ],
+      "inclusions": [
+        "Accommodation in hotels and lodges on twin sharing for 6 nights",
+        "Dinners as per itinerary and a picnic lunch on the full-day Amboseli drive",
+        "Meeting and safari briefing by the representative on arrival in Nairobi",
+        "Airport and inter-park transfers as per itinerary",
+        "Game drives in Amboseli and the Masai Mara, and the Lake Naivasha boat ride, as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa and electronic travel authorisation fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as the hot-air balloon safari",
+        "Any park or conservancy fees not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Road transfers are long: Nairobi to Amboseli takes about 4 to 5 hours, Amboseli to Lake Naivasha about 6 to 7 hours and Naivasha to the Masai Mara about 4.5 to 5.5 hours.",
+        "Carry a yellow fever vaccination certificate if required for your route, and speak to your doctor about malaria precautions before travel."
+      ],
+      "must_carry": [
+        "Passport and visa or travel authorisation copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Type G (UK three-pin) power adapter",
+        "Neutral-coloured clothing, a warm layer and a hat",
+        "Binoculars, sunscreen and insect repellent"
+      ],
+      "pickup": "Jomo Kenyatta International Airport, Nairobi",
+      "drop_point": "Jomo Kenyatta International Airport, Nairobi",
+      "photo": "amboseli-kilimanjaro",
+      "gallery": ["lake-naivasha", "masai-mara", "maasai-warriors"],
+      "price": {"from": 165000}
+    }
+  ],
+  "group_trips": [
+    {
+      "slug": "tanzania-northern-circuit-safari-group-trip",
+      "title": "Tanzania Northern Circuit Safari Group Trip",
+      "nights": 7,
+      "summary": "A fixed-departure Tanzania safari through Tarangire, the Serengeti and the Ngorongoro Crater, with a trip captain and Indian meal options on request.",
+      "overview": "Travel with a small group through the heart of northern Tanzania, beginning in Arusha and moving on to Tarangire National Park, known for its large elephant herds and baobab trees. From there you cross the highlands to the Serengeti for two days of game drives across the open plains, home to lions, zebras, wildebeest and many other species.\n\nThe journey ends with a descent into the Ngorongoro Crater, a huge volcanic caldera that shelters a dense concentration of wildlife. A trip captain stays with the group throughout, and Indian meal options, including vegetarian and Jain, can be arranged on request.",
+      "highlights": [
+        "Game drives in Tarangire, known for elephants and baobab trees",
+        "Scenic drive to the Serengeti through the Ngorongoro Conservation Area",
+        "A full day of game viewing on the Serengeti plains",
+        "Early-morning descent into the Ngorongoro Crater for a game drive",
+        "A trip captain with the group throughout",
+        "Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kilimanjaro | Transfer to Arusha",
+          "description": "Arrive at Kilimanjaro International Airport and complete visa and immigration formalities.\nMeet our representative and your trip captain, and transfer to Arusha.\nCheck in to the hotel and relax after your journey.\nA short trip briefing is held in the evening.\nOvernight stay in Arusha."
+        },
+        {
+          "day": 2,
+          "title": "Arusha to Tarangire National Park",
+          "description": "After breakfast, drive from Arusha to Tarangire National Park.\nEnjoy an afternoon game drive among elephants, baobab trees and open woodland.\nCheck in to the lodge or camp for dinner.\nOvernight stay in the Tarangire area."
+        },
+        {
+          "day": 3,
+          "title": "Tarangire Game Drive | Drive to Karatu",
+          "description": "Set out early for a morning game drive in Tarangire.\nReturn for breakfast, then drive to the Karatu highlands.\nCheck in to the lodge and spend the evening at leisure.\nOvernight stay in Karatu."
+        },
+        {
+          "day": 4,
+          "title": "Karatu to the Serengeti",
+          "description": "After breakfast, drive through the Ngorongoro Conservation Area towards the Serengeti.\nEnjoy game viewing along the way as the landscape opens onto the plains.\nArrive at the lodge or camp in time for dinner.\nOvernight stay in the Serengeti."
+        },
+        {
+          "day": 5,
+          "title": "Full Day in the Serengeti",
+          "description": "Spend the day on game drives across the Serengeti plains, with a packed lunch in the park.\nLook out for lions, zebras, wildebeest, giraffes and many bird species.\nReturn to the lodge or camp to relax before dinner.\nOvernight stay in the Serengeti."
+        },
+        {
+          "day": 6,
+          "title": "Serengeti Morning Drive | Ngorongoro Highlands",
+          "description": "Enjoy a final morning game drive in the Serengeti.\nAfter breakfast, drive to the Ngorongoro highlands.\nCheck in to the lodge and enjoy the rest of the afternoon at leisure.\nOvernight stay in Karatu or the Ngorongoro area."
+        },
+        {
+          "day": 7,
+          "title": "Ngorongoro Crater | Return to Arusha",
+          "description": "Descend early into the Ngorongoro Crater for a half-day game drive.\nLook for lions, elephants, hippos, zebras and hyenas on the crater floor.\nAfter lunch, drive to Arusha.\nCheck in to the hotel for a farewell dinner with the group.\nOvernight stay in Arusha."
+        },
+        {
+          "day": 8,
+          "title": "Departure from Kilimanjaro",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Kilimanjaro International Airport for your flight home.\nDepart Tanzania with your safari memories."
+        }
+      ],
+      "inclusions": [
+        "Accommodation in hotels, lodges or camps on twin sharing for 7 nights",
+        "Daily breakfast, plus lunch and dinner on safari days as per itinerary",
+        "Indian meal options, including vegetarian and Jain, on request",
+        "Airport and inter-park transfers in a safari vehicle as per itinerary",
+        "Game drives in Tarangire, the Serengeti and the Ngorongoro Crater as per itinerary",
+        "Park and crater entry fees for the activities listed in the itinerary",
+        "A trip captain accompanying the group throughout",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Tanzania visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities not listed in the itinerary",
+        "Local taxes payable at hotels where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure that runs on minimum numbers, and a trip captain accompanies the group.",
+        "Safari days involve long drives, some on uneven roads; guests with back or mobility concerns should tell us when booking.",
+        "Carry a yellow fever vaccination certificate if required for your route, and speak to your doctor about malaria precautions before travel.",
+        "Camouflage-pattern clothing is prohibited in Tanzania, and plastic carrier bags are restricted."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Type G (UK three-pin) power adapter",
+        "Neutral-coloured clothing, a warm layer for early mornings, a hat and sunscreen",
+        "Binoculars and insect repellent"
+      ],
+      "pickup": "Kilimanjaro International Airport",
+      "drop_point": "Kilimanjaro International Airport",
+      "photo": "tarangire-elephants",
+      "gallery": ["serengeti-plains", "ngorongoro-crater", "lake-manyara"],
+      "price": 210000,
+      "original_price": 229000,
+      "departures": {"weekday": 6, "count": 5, "every_weeks": 4, "capacity": 16}
+    },
+    {
+      "slug": "tanzania-safari-and-zanzibar-beach-group-trip",
+      "title": "Tanzania Safari and Zanzibar Beach Group Trip",
+      "nights": 10,
+      "summary": "A fixed-departure holiday pairing a northern Tanzania safari with three nights in Zanzibar, led by a trip captain with Indian meal options on request.",
+      "overview": "This group trip pairs the best of northern Tanzania with the Indian Ocean coast. You begin in Arusha and visit Tarangire and Lake Manyara, then cross to the Serengeti for a full day of game drives and descend into the Ngorongoro Crater.\n\nAfter the safari, you fly from Arusha to Zanzibar for three nights. There is a guided walk through Stone Town, a UNESCO World Heritage Site, a spice tour, and a free day on the beach. A trip captain travels with the group, and Indian meal options can be arranged on request.",
+      "highlights": [
+        "Game drives in Tarangire and Lake Manyara National Parks",
+        "A full day of game viewing in the Serengeti",
+        "Half-day game drive in the Ngorongoro Crater",
+        "Flight from Arusha to Zanzibar to continue the holiday on the coast",
+        "Guided walk through Stone Town, a UNESCO World Heritage Site",
+        "Zanzibar spice tour and a free beach day",
+        "A trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kilimanjaro | Transfer to Arusha",
+          "description": "Arrive at Kilimanjaro International Airport and complete visa and immigration formalities.\nMeet our representative and your trip captain, and transfer to Arusha.\nCheck in to the hotel and rest after your journey.\nOvernight stay in Arusha."
+        },
+        {
+          "day": 2,
+          "title": "Arusha to Tarangire National Park",
+          "description": "After breakfast, drive from Arusha to Tarangire National Park.\nEnjoy an afternoon game drive among elephants and baobab trees.\nCheck in to the lodge or camp for dinner.\nOvernight stay in the Tarangire area."
+        },
+        {
+          "day": 3,
+          "title": "Lake Manyara National Park",
+          "description": "After breakfast, drive to Lake Manyara National Park, known for its tree-climbing lions and varied birdlife.\nEnjoy a game drive in the park.\nCheck in to the lodge in the Karatu area and relax.\nOvernight stay in Karatu."
+        },
+        {
+          "day": 4,
+          "title": "Karatu to the Serengeti",
+          "description": "After breakfast, drive through the Ngorongoro Conservation Area towards the Serengeti.\nEnjoy game viewing on the way as the landscape opens onto the plains.\nArrive at the lodge or camp in time for dinner.\nOvernight stay in the Serengeti."
+        },
+        {
+          "day": 5,
+          "title": "Full Day in the Serengeti",
+          "description": "Spend the day on game drives across the Serengeti plains, with a packed lunch in the park.\nLook out for lions, zebras, wildebeest and giraffes.\nReturn to the lodge or camp for dinner.\nOvernight stay in the Serengeti."
+        },
+        {
+          "day": 6,
+          "title": "Serengeti Morning Drive | Ngorongoro Highlands",
+          "description": "Enjoy a final morning game drive in the Serengeti.\nAfter breakfast, drive to the Ngorongoro highlands.\nCheck in to the lodge and enjoy the afternoon at leisure.\nOvernight stay in Karatu or the Ngorongoro area."
+        },
+        {
+          "day": 7,
+          "title": "Ngorongoro Crater | Return to Arusha",
+          "description": "Descend early into the Ngorongoro Crater for a half-day game drive.\nLook for lions, elephants, hippos, zebras and hyenas on the crater floor.\nAfter lunch, drive to Arusha and check in to the hotel.\nOvernight stay in Arusha."
+        },
+        {
+          "day": 8,
+          "title": "Fly to Zanzibar",
+          "description": "After breakfast, transfer to the airport for the flight from Arusha to Zanzibar.\nOn arrival, transfer to your beach hotel and check in.\nSpend the rest of the day at leisure by the sea.\nOvernight stay in Zanzibar."
+        },
+        {
+          "day": 9,
+          "title": "Stone Town Walk | Spice Tour",
+          "description": "After breakfast, take a guided walk through Stone Town, a UNESCO World Heritage Site, with its narrow lanes and carved doors.\nContinue to a spice tour to see and smell the spices Zanzibar is famous for.\nReturn to the hotel in the late afternoon.\nOvernight stay in Zanzibar."
+        },
+        {
+          "day": 10,
+          "title": "Free Day on the Beach",
+          "description": "Enjoy a free day to swim, relax or add optional activities such as water sports.\nYour trip captain can help you plan the day.\nJoin the group for a farewell dinner.\nOvernight stay in Zanzibar."
+        },
+        {
+          "day": 11,
+          "title": "Departure from Zanzibar",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Zanzibar airport for your flight home.\nDepart with memories of safari and sea."
+        }
+      ],
+      "inclusions": [
+        "Accommodation in hotels, lodges, camps and a beach hotel on twin sharing for 10 nights",
+        "Daily breakfast, plus lunch and dinner on safari days as per itinerary",
+        "Indian meal options, including vegetarian and Jain, on request",
+        "Airport and inter-park transfers in a safari vehicle as per itinerary",
+        "Economy flight from Arusha to Zanzibar, subject to airline baggage limits",
+        "Game drives in Tarangire, Lake Manyara, the Serengeti and the Ngorongoro Crater as per itinerary",
+        "Park and crater entry fees for the activities listed in the itinerary",
+        "Stone Town guided walk and spice tour as per itinerary",
+        "A trip captain accompanying the group throughout",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare and any domestic flights not listed under inclusions",
+        "Tanzania visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and water sports in Zanzibar",
+        "Local taxes payable at hotels where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure that runs on minimum numbers, and a trip captain accompanies the group.",
+        "The Arusha to Zanzibar flight is on a smaller aircraft with a strict baggage allowance, so soft-sided bags are recommended.",
+        "Zanzibar is a predominantly Muslim destination; dress modestly in Stone Town and the villages, and keep swimwear for the beach.",
+        "Carry a yellow fever vaccination certificate if required for your route, and speak to your doctor about malaria precautions before travel.",
+        "Camouflage-pattern clothing is prohibited in Tanzania, and plastic carrier bags are restricted."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Type G (UK three-pin) power adapter",
+        "Neutral-coloured safari clothing, a warm layer, a hat and sunscreen",
+        "Swimwear and modest clothing for Stone Town",
+        "Binoculars and insect repellent"
+      ],
+      "pickup": "Kilimanjaro International Airport",
+      "drop_point": "Zanzibar Airport",
+      "photo": "zanzibar-beach",
+      "gallery": ["stone-town", "serengeti-plains", "ngorongoro-crater", "tarangire-elephants"],
+      "price": 315000,
+      "original_price": 339000,
+      "departures": {"weekday": 5, "count": 4, "every_weeks": 4, "capacity": 16}
+    }
+  ]
+}

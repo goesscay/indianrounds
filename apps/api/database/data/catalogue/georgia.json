@@ -1,0 +1,566 @@
+{
+  "destination": "georgia",
+  "photos": [
+    {"slot": "tbilisi-old-town", "query": "Tbilisi old town Georgia", "caption": "Tbilisi old town"},
+    {"slot": "narikala-fortress", "query": "Narikala Fortress Tbilisi", "caption": "Narikala Fortress above Tbilisi"},
+    {"slot": "bridge-of-peace", "query": "Bridge of Peace Tbilisi Georgia", "caption": "Bridge of Peace, Tbilisi"},
+    {"slot": "mtskheta-jvari", "query": "Jvari Monastery Mtskheta Georgia", "caption": "Jvari Monastery, Mtskheta"},
+    {"slot": "gergeti-trinity-church", "query": "Gergeti Trinity Church Kazbegi Georgia", "caption": "Gergeti Trinity Church, Kazbegi"},
+    {"slot": "ananuri-fortress", "query": "Ananuri Fortress Zhinvali Reservoir Georgia", "caption": "Ananuri Fortress"},
+    {"slot": "gudauri-mountains", "query": "Gudauri Caucasus mountains Georgia", "caption": "Mountains above Gudauri"},
+    {"slot": "sighnaghi", "query": "Sighnaghi town Kakheti Georgia", "caption": "Sighnaghi, the City of Love"},
+    {"slot": "kakheti-vineyards", "query": "Kakheti vineyards Alazani Valley Georgia", "caption": "Vineyards of Kakheti"},
+    {"slot": "bodbe-monastery", "query": "Bodbe Monastery Sighnaghi Georgia", "caption": "Bodbe Monastery"},
+    {"slot": "batumi-boulevard", "query": "Batumi Boulevard Black Sea Georgia", "caption": "Batumi seafront"},
+    {"slot": "georgian-food", "query": "khachapuri khinkali Georgian food Tbilisi", "caption": "Georgian khachapuri and khinkali"}
+  ],
+  "hero": "tbilisi-old-town",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "georgia-classic-packages",
+      "name": "Classic Georgia Packages",
+      "description": "Our core four-night holidays covering Tbilisi, the mountains around Kazbegi and Gudauri, and the wine country of Kakheti.",
+      "photo": "gergeti-trinity-church",
+      "packages": ["classic-georgia", "simply-georgia"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "georgia-seasonal-specials",
+      "name": "Seasonal Specials",
+      "description": "Georgia in its best seasonal colours: the golden autumn vineyards of Kakheti and the snow of the Caucasus in winter.",
+      "photo": "kakheti-vineyards",
+      "packages": ["autumn-georgia", "winter-georgia"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "georgia-offers",
+      "name": "Budget Saver and Offers",
+      "description": "A city-focused Georgia holiday with a Buy 1 Get 1 Free offer, ideal for couples and friends travelling together.",
+      "photo": "bridge-of-peace",
+      "packages": ["georgia-buy-1-get-1-free"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "georgia-group-journeys",
+      "name": "Escorted Group Journeys",
+      "description": "Fixed-departure trips with a trip captain, covering more of Georgia at a relaxed pace, from the Caucasus peaks to the Black Sea coast.",
+      "photo": "mtskheta-jvari",
+      "packages": ["georgia-highlands-kazbegi-group-trip", "georgia-wine-country-batumi-group-trip"]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "georgia-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group of fellow Indian travellers on a scheduled Georgia departure, accompanied by a trip captain throughout.",
+      "photo": "sighnaghi",
+      "packages": ["georgia-highlands-kazbegi-group-trip", "georgia-wine-country-batumi-group-trip"]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "georgia-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Georgia for couples: candlelit old-town evenings in Tbilisi, mountain views and unhurried wine country afternoons.",
+      "photo": "narikala-fortress",
+      "packages": ["classic-georgia", "simply-georgia", "autumn-georgia", "winter-georgia"]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "classic-georgia",
+      "summary": "A four-night Georgia holiday taking in Tbilisi, Mtskheta, the Kazbegi mountains and the Kakheti wine region.",
+      "overview": "Classic Georgia brings together the best of the country in four nights, beginning with a guided tour of Tbilisi and a visit to the ancient capital of Mtskheta. A full day on the Georgian Military Highway follows, with Ananuri Fortress, Gudauri, Kazbegi and the Gergeti Trinity Church. The last full day heads east to the Kakheti wine region, Sighnaghi Old Town and Bodbe Monastery.",
+      "highlights": [
+        "Guided Tbilisi city tour and the Chronicles of Georgia monument",
+        "Mtskheta, one of the oldest towns in Georgia",
+        "Ananuri Fortress beside the Zhinvali Reservoir",
+        "Gudauri and the Georgia-Russia Friendship Monument",
+        "Kazbegi and the Gergeti Trinity Church",
+        "Kakheti wine region, Sighnaghi Old Town and Bodbe Monastery"
+      ],
+      "inclusions": [
+        "Hotel stay for 4 nights on twin sharing",
+        "Daily breakfast",
+        "Airport transfers as per itinerary",
+        "Guided Tbilisi city tour",
+        "Excursion to Mtskheta and the Chronicles of Georgia",
+        "Excursion to Ananuri Fortress, Gudauri, Kazbegi and Gergeti Trinity Church as per itinerary",
+        "Excursion to the Kakheti wine region, Sighnaghi Old Town and Bodbe Monastery",
+        "Transfers and sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Georgia visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and entry tickets not listed in the itinerary",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The drive to Kazbegi is long and winding in places; carry travel sickness tablets if you are prone to motion sickness.",
+        "Dress modestly at churches and monasteries; shoulders and knees should be covered, and women may need a headscarf."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C or F, two round pins)",
+        "Warm layers and a light jacket for the mountains",
+        "Comfortable walking shoes",
+        "Modest clothing for churches and monasteries"
+      ],
+      "pickup": "Tbilisi International Airport",
+      "drop_point": "Tbilisi International Airport",
+      "photo": "gergeti-trinity-church",
+      "gallery": ["mtskheta-jvari", "ananuri-fortress", "sighnaghi", "tbilisi-old-town"],
+      "price": {"from": 46500}
+    },
+    {
+      "slug": "simply-georgia",
+      "summary": "An easy-paced Georgia holiday exploring Tbilisi's old town, Kakheti wine country, Ananuri Fortress and Gudauri.",
+      "overview": "Simply Georgia is built around Tbilisi, where a full day of sightseeing takes in the old churches, the Sulphur Baths area and the cable car up to Narikala Fortress. An excursion to Kakheti brings Bodbe Monastery, Sighnaghi and a wine-tasting experience. A mountain day follows, with Ananuri Fortress and the scenery around Gudauri, before you return to Tbilisi and depart.",
+      "highlights": [
+        "Holy Trinity Cathedral, Metekhi Church, Sioni Cathedral and Anchiskhati Basilica",
+        "Sulphur Baths area and Sharden Street",
+        "Bridge of Peace and Rike Park",
+        "Cable car ride to Narikala Fortress",
+        "Bodbe Monastery and Sighnaghi in Kakheti",
+        "Wine-tasting experience in Kakheti",
+        "Ananuri Fortress and mountain views around Gudauri"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 4 nights",
+        "Daily breakfast",
+        "Airport transfers as per itinerary",
+        "Tbilisi sightseeing as per itinerary",
+        "Cable car ride to Narikala Fortress",
+        "Tbilisi, Bodbe, Sighnaghi and Kakheti excursion with wine-tasting experience",
+        "Excursion to Ananuri Fortress and Gudauri",
+        "Transfers and sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Georgia visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and entry tickets not listed in the itinerary",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Wine tasting is subject to the winery's schedule and is for guests of legal drinking age only.",
+        "Dress modestly at churches and monasteries; shoulders and knees should be covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C or F, two round pins)",
+        "Comfortable walking shoes for Tbilisi's hilly old town",
+        "Light jacket or warm layer",
+        "Modest clothing for churches and monasteries"
+      ],
+      "pickup": "Tbilisi International Airport",
+      "drop_point": "Tbilisi International Airport",
+      "photo": "narikala-fortress",
+      "gallery": ["tbilisi-old-town", "bridge-of-peace", "bodbe-monastery", "gudauri-mountains"],
+      "price": {"from": 43500}
+    },
+    {
+      "slug": "autumn-georgia",
+      "summary": "A four-night Georgia holiday for the autumn season, when the Caucasus foothills and Kakheti vineyards turn gold.",
+      "overview": "Autumn Georgia is a four-night holiday timed for the season when the countryside is at its most colourful. It is a pleasant time to explore Tbilisi's old town and to head out to the vineyards of Kakheti, where the grape harvest takes place. Your travel expert will share the day-by-day programme at the time of booking.",
+      "highlights": [
+        "Four nights in Georgia in the autumn season",
+        "Tbilisi, the capital, with its old town and hillside fortress",
+        "Autumn colours across the Georgian countryside",
+        "Kakheti, Georgia's wine country, in harvest season",
+        "Georgian cuisine, from khachapuri to khinkali"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 4 nights",
+        "Daily breakfast",
+        "Airport transfers",
+        "Sightseeing and transfers as per itinerary",
+        "Entry tickets and activities listed in the final itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Georgia visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary will be confirmed at booking and its order may change with weather, road, flight or operational conditions.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Autumn days are mild but evenings can be cool, especially in the mountains."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C or F, two round pins)",
+        "Light jacket or sweater for the evenings",
+        "Comfortable walking shoes"
+      ],
+      "pickup": "Tbilisi International Airport",
+      "drop_point": "Tbilisi International Airport",
+      "photo": "kakheti-vineyards",
+      "gallery": ["tbilisi-old-town", "sighnaghi", "georgian-food"]
+    },
+    {
+      "slug": "winter-georgia",
+      "summary": "A four-night Georgia holiday for the winter season, with snow in the Caucasus and cosy evenings in Tbilisi.",
+      "overview": "Winter Georgia is a four-night holiday for travellers who want to see the country in its snowy season. The Caucasus mountains are at their most dramatic under snow, and Gudauri is the country's best-known ski resort. Your travel expert will share the day-by-day programme at the time of booking.",
+      "highlights": [
+        "Four nights in Georgia in the winter season",
+        "Tbilisi, the capital, with its old town and hot sulphur-bath district",
+        "Snow-covered Caucasus mountain scenery",
+        "Gudauri, Georgia's best-known ski resort",
+        "Hearty Georgian cuisine, from khachapuri to khinkali"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 4 nights",
+        "Daily breakfast",
+        "Airport transfers",
+        "Sightseeing and transfers as per itinerary",
+        "Entry tickets and activities listed in the final itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Georgia visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as skiing, equipment hire and lift passes",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary will be confirmed at booking and its order may change with weather, road, flight or operational conditions.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Mountain roads can close or slow down in heavy snow, which may affect excursions to higher areas.",
+        "Winter temperatures in Tbilisi can fall below freezing; pack warm clothing."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C or F, two round pins)",
+        "Heavy jacket, gloves, woollen cap and thermals",
+        "Waterproof shoes with good grip"
+      ],
+      "pickup": "Tbilisi International Airport",
+      "drop_point": "Tbilisi International Airport",
+      "photo": "gudauri-mountains",
+      "gallery": ["tbilisi-old-town", "gergeti-trinity-church", "georgian-food"]
+    },
+    {
+      "slug": "georgia-buy-1-get-1-free",
+      "summary": "A relaxed four-night Georgia offer built around Tbilisi's landmarks and a day in the Kakheti wine region.",
+      "overview": "This Buy 1 Get 1 Free offer is based in Tbilisi for four nights. A full day of sightseeing covers the old town, the cable car to Narikala Fortress and Mother of Georgia, followed by a day in Kakheti with a traditional winery, Bodbe Monastery and Sighnaghi. A leisure day in Tbilisi gives you time for cafes and local markets before departure.",
+      "highlights": [
+        "Metekhi Church, Rike Park and the Bridge of Peace",
+        "Cable car to Narikala Fortress and the Mother of Georgia statue",
+        "Sulphur Bath area, Shardeni Street and Rustaveli Avenue",
+        "Chronicles of Georgia and Mtatsminda Park",
+        "Traditional winery visit and Bodbe Monastery",
+        "Sighnaghi, the City of Love, with views over the Alazani Valley",
+        "A free day in Tbilisi for cafes and markets"
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 4 nights",
+        "Daily breakfast",
+        "Airport transfers as per itinerary",
+        "Tbilisi city sightseeing as per itinerary",
+        "Cable car ride to Narikala Fortress",
+        "Kakheti excursion with a traditional winery visit, Bodbe Monastery and Sighnaghi",
+        "Transfers as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Georgia visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities, including the stop for Georgian bread-making",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "The Buy 1 Get 1 Free offer is subject to availability, travel dates and terms confirmed at booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Dress modestly at churches and monasteries; shoulders and knees should be covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C or F, two round pins)",
+        "Comfortable walking shoes",
+        "Light jacket or warm layer",
+        "Modest clothing for churches and monasteries"
+      ],
+      "pickup": "Tbilisi International Airport",
+      "drop_point": "Tbilisi International Airport",
+      "photo": "bridge-of-peace",
+      "gallery": ["narikala-fortress", "sighnaghi", "bodbe-monastery", "tbilisi-old-town"]
+    }
+  ],
+  "group_trips": [
+    {
+      "slug": "georgia-highlands-kazbegi-group-trip",
+      "title": "Georgia Highlands, Kazbegi and Kakheti Group Trip",
+      "nights": 6,
+      "summary": "A six-night escorted group trip combining Tbilisi, Mtskheta, the Kazbegi mountains and the Kakheti wine region.",
+      "overview": "This escorted journey takes you through the heart of Georgia in a small group, led by a trip captain from arrival to departure. You begin in Tbilisi and nearby Mtskheta, then climb the Georgian Military Highway to Kazbegi, where the Gergeti Trinity Church sits beneath the Caucasus peaks.\n\nBack in Tbilisi, a day in the Kakheti wine region brings Bodbe Monastery, the hilltop town of Sighnaghi and a winery visit. A free day in the capital leaves time for cafes, markets and last-minute shopping before the flight home.",
+      "highlights": [
+        "Guided Tbilisi tour with the cable car to Narikala Fortress",
+        "Mtskheta, with Jvari Monastery and Svetitskhoveli Cathedral",
+        "Georgian Military Highway with Ananuri Fortress and Gudauri",
+        "A night in Kazbegi (Stepantsminda) beneath the Caucasus peaks",
+        "Gergeti Trinity Church and the Georgia-Russia Friendship Monument",
+        "Bodbe Monastery, Sighnaghi and a Kakheti winery visit",
+        "A trip captain with the group throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Tbilisi",
+          "description": "Arrive at Tbilisi International Airport, where you are met and transferred to your hotel.\nCheck in and meet your trip captain and fellow travellers.\nSpend the evening at leisure or take a gentle first walk nearby.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 2,
+          "title": "Tbilisi City Tour | Mtskheta",
+          "description": "After breakfast, set out on a guided tour of Tbilisi, including the old town and the Sulphur Baths area.\nCross the Bridge of Peace, stroll through Rike Park and take the cable car up to Narikala Fortress.\nIn the afternoon, drive to nearby Mtskheta, one of the oldest towns in Georgia.\nVisit Jvari Monastery and Svetitskhoveli Cathedral, then return to Tbilisi.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 3,
+          "title": "Ananuri | Gudauri | Kazbegi",
+          "description": "After breakfast, drive north along the Georgian Military Highway.\nStop at Ananuri Fortress beside the Zhinvali Reservoir.\nContinue to Gudauri for mountain views and the Georgia-Russia Friendship Monument.\nDrive on to Kazbegi (Stepantsminda) and check in to your hotel.\nOvernight stay in Kazbegi."
+        },
+        {
+          "day": 4,
+          "title": "Gergeti Trinity Church | Return to Tbilisi",
+          "description": "After breakfast, travel up to the Gergeti Trinity Church, weather and road conditions permitting.\nTake in the views of the Caucasus peaks and the valley below.\nHead back south along the highway, with comfort stops on the way.\nArrive in Tbilisi in the evening and check in to your hotel.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 5,
+          "title": "Kakheti Wine Region | Sighnaghi",
+          "description": "After breakfast, drive east to the Kakheti wine region.\nVisit Bodbe Monastery and explore the hilltop town of Sighnaghi with its views over the Alazani Valley.\nVisit a winery for a tasting experience and learn how Georgian wine is made.\nReturn to Tbilisi in the evening.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 6,
+          "title": "Free Day in Tbilisi",
+          "description": "Enjoy a free day to explore Tbilisi at your own pace.\nWalk along Rustaveli Avenue, browse local markets and stop at a cafe for Georgian khachapuri.\nYour trip captain can suggest optional activities for the afternoon.\nGather in the evening for a farewell get-together.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Tbilisi",
+          "description": "After breakfast, check out of your hotel.\nTransfer to Tbilisi International Airport for your flight home.\nDepart Georgia with wonderful memories."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 6 nights, including 1 night in Kazbegi",
+        "Daily breakfast",
+        "Indian vegetarian and Jain meal options on request, subject to availability",
+        "A trip captain accompanying the group throughout",
+        "Airport and inter-city transfers by private vehicle with the group",
+        "Guided Tbilisi city tour with cable car ride to Narikala Fortress",
+        "Excursions to Mtskheta, Ananuri, Gudauri, Kazbegi and Kakheti as per itinerary",
+        "Winery visit with tasting experience in Kakheti",
+        "Entry tickets and activities listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Georgia visa fees and processing",
+        "Travel insurance",
+        "Lunches, dinners and other meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities on the free day",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; a trip captain accompanies the group.",
+        "Mountain roads to Kazbegi can be affected by snow, rain or landslides, particularly in winter and spring.",
+        "Dress modestly at churches and monasteries; shoulders and knees should be covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C or F, two round pins)",
+        "Warm layers and a windproof jacket for Kazbegi",
+        "Comfortable walking shoes",
+        "Modest clothing for churches and monasteries",
+        "Sunscreen and sunglasses"
+      ],
+      "pickup": "Tbilisi International Airport",
+      "drop_point": "Tbilisi International Airport",
+      "photo": "gergeti-trinity-church",
+      "gallery": ["ananuri-fortress", "mtskheta-jvari", "sighnaghi", "tbilisi-old-town"],
+      "price": 54900,
+      "original_price": 59900,
+      "departures": {"weekday": 5, "count": 6, "every_weeks": 2, "capacity": 20}
+    },
+    {
+      "slug": "georgia-wine-country-batumi-group-trip",
+      "title": "Georgia Wine Country and Batumi Black Sea Group Trip",
+      "nights": 7,
+      "summary": "A seven-night escorted group trip from Tbilisi and the Kakheti vineyards to the Black Sea resort of Batumi.",
+      "overview": "This group trip pairs Georgia's capital and wine country with its sunny Black Sea coast. You start in Tbilisi with its old town and nearby Mtskheta, then head east to the Kakheti vineyards, Bodbe Monastery and Sighnaghi.\n\nA scenic drive across western Georgia brings you to Batumi, where you have three nights to enjoy the seafront boulevard, the Alphabetic Tower, the botanical garden and the ancient fortress at Gonio. A trip captain travels with the group, and you return to Tbilisi by road before flying home.",
+      "highlights": [
+        "Guided Tbilisi tour and the old town on foot",
+        "Mtskheta, with Jvari Monastery and Svetitskhoveli Cathedral",
+        "Kakheti wine country, Bodbe Monastery and Sighnaghi",
+        "A scenic drive across western Georgia to the Black Sea",
+        "Batumi Boulevard, Piazza Square and the Alphabetic Tower",
+        "Batumi Botanical Garden and Gonio Fortress",
+        "A trip captain with the group throughout"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Tbilisi",
+          "description": "Arrive at Tbilisi International Airport, where you are met and transferred to your hotel.\nCheck in and meet your trip captain and fellow travellers.\nSpend the evening at leisure.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 2,
+          "title": "Tbilisi City Tour | Mtskheta",
+          "description": "After breakfast, set out on a guided tour of Tbilisi, including the old town and Metekhi Church.\nCross the Bridge of Peace, stroll through Rike Park and take the cable car to Narikala Fortress.\nIn the afternoon, drive to Mtskheta to visit Jvari Monastery and Svetitskhoveli Cathedral.\nReturn to Tbilisi.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 3,
+          "title": "Kakheti Wine Region | Sighnaghi",
+          "description": "After breakfast, drive east to the Kakheti wine region.\nVisit Bodbe Monastery and explore the hilltop town of Sighnaghi with views over the Alazani Valley.\nVisit a winery for a tasting experience.\nReturn to Tbilisi in the evening.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 4,
+          "title": "Tbilisi to Batumi",
+          "description": "After breakfast, check out and begin the scenic drive west across Georgia to the Black Sea coast.\nThe journey takes around six hours, with comfort and photo stops on the way.\nArrive in Batumi and check in to your hotel.\nTake an evening stroll along the seafront boulevard.\nOvernight stay in Batumi."
+        },
+        {
+          "day": 5,
+          "title": "Batumi City Tour",
+          "description": "After breakfast, enjoy a guided tour of Batumi.\nSee the Alphabetic Tower, Piazza Square and the old town streets.\nVisit the Batumi Botanical Garden overlooking the sea.\nThe rest of the day is free for the beach or optional activities.\nOvernight stay in Batumi."
+        },
+        {
+          "day": 6,
+          "title": "Gonio Fortress | Free Time in Batumi",
+          "description": "After breakfast, drive a short distance south to Gonio Fortress, a historic Roman-era fort.\nReturn to Batumi for free time by the sea, with shopping and cafes along the boulevard.\nYour trip captain can suggest optional activities for the afternoon.\nOvernight stay in Batumi."
+        },
+        {
+          "day": 7,
+          "title": "Batumi to Tbilisi",
+          "description": "After breakfast, check out and drive back east to Tbilisi.\nThe journey takes around six hours, with comfort stops on the way.\nCheck in to your hotel and gather for a farewell get-together.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 8,
+          "title": "Departure from Tbilisi",
+          "description": "After breakfast, check out of your hotel.\nTransfer to Tbilisi International Airport for your flight home.\nDepart Georgia with wonderful memories."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 7 nights: 4 in Tbilisi and 3 in Batumi",
+        "Daily breakfast",
+        "Indian vegetarian and Jain meal options on request, subject to availability",
+        "A trip captain accompanying the group throughout",
+        "Airport and inter-city transfers by private vehicle with the group",
+        "Guided Tbilisi city tour with cable car ride to Narikala Fortress",
+        "Excursions to Mtskheta, Kakheti, Batumi and Gonio as per itinerary",
+        "Winery visit with tasting experience in Kakheti",
+        "Entry tickets and activities listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Georgia visa fees and processing",
+        "Travel insurance",
+        "Lunches, dinners and other meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities on free days",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; a trip captain accompanies the group.",
+        "The drives between Tbilisi and Batumi are long, so carry travel sickness tablets if you are prone to motion sickness.",
+        "Batumi can be rainy at any time of year, and the sea is best for swimming in summer."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C or F, two round pins)",
+        "Light jacket and a compact umbrella",
+        "Comfortable walking shoes",
+        "Modest clothing for churches and monasteries",
+        "Swimwear and sunscreen for Batumi"
+      ],
+      "pickup": "Tbilisi International Airport",
+      "drop_point": "Tbilisi International Airport",
+      "photo": "batumi-boulevard",
+      "gallery": ["tbilisi-old-town", "kakheti-vineyards", "bodbe-monastery", "mtskheta-jvari"],
+      "price": 64900,
+      "original_price": 69900,
+      "departures": {"weekday": 6, "count": 5, "every_weeks": 3, "capacity": 18}
+    }
+  ]
+}

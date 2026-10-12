@@ -1,0 +1,560 @@
+{
+  "destination": "thailand",
+  "photos": [
+    {"slot": "grand-palace-bangkok", "query": "Grand Palace Bangkok Thailand", "caption": "The Grand Palace, Bangkok"},
+    {"slot": "golden-buddha-bangkok", "query": "Wat Traimit Golden Buddha Bangkok Thailand", "caption": "The Golden Buddha, Bangkok"},
+    {"slot": "coral-island-pattaya", "query": "Koh Larn Coral Island Pattaya Thailand", "caption": "Coral Island, off Pattaya"},
+    {"slot": "nong-nooch-pattaya", "query": "Nong Nooch Tropical Garden Pattaya Thailand", "caption": "Nong Nooch gardens, Pattaya"},
+    {"slot": "safari-world-bangkok", "query": "Safari World Bangkok Thailand", "caption": "Safari World, Bangkok"},
+    {"slot": "phuket-old-town", "query": "Phuket Old Town Sino-Portuguese shophouses Thailand", "caption": "Phuket Old Town"},
+    {"slot": "big-buddha-phuket", "query": "Big Buddha Phuket Thailand", "caption": "The Big Buddha, Phuket"},
+    {"slot": "phi-phi-islands", "query": "Phi Phi Islands Maya Bay Thailand", "caption": "The Phi Phi Islands"},
+    {"slot": "railay-beach-krabi", "query": "Railay Beach Krabi Thailand", "caption": "Railay Beach, Krabi"},
+    {"slot": "doi-suthep-chiang-mai", "query": "Wat Phra That Doi Suthep Chiang Mai Thailand", "caption": "Doi Suthep temple, Chiang Mai"},
+    {"slot": "elephant-sanctuary-chiang-mai", "query": "elephants sanctuary Chiang Mai Thailand", "caption": "An elephant sanctuary near Chiang Mai"},
+    {"slot": "thai-street-food", "query": "Thai street food market Bangkok Thailand", "caption": "Street food in Bangkok"}
+  ],
+  "hero": "phi-phi-islands",
+  "categories": [
+    {
+      "menu": "destinations",
+      "slug": "thailand-classic-packages",
+      "name": "Classic Packages",
+      "description": "Tried-and-tested Thailand itineraries covering Bangkok, Pattaya and the Andaman coast, with hotels, transfers and sightseeing arranged for you.",
+      "photo": "grand-palace-bangkok",
+      "packages": ["simply-thailand", "simply-thailand-fully-loaded", "simply-krabi-and-phuket", "thailand-bangkok-chiang-mai-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "thailand-beach-and-islands",
+      "name": "Beaches and Islands",
+      "description": "Phuket, Krabi and the Phi Phi Islands: boat days, island lagoons and plenty of time on the sand.",
+      "photo": "phi-phi-islands",
+      "packages": ["phuket-buy-1-get-1-free", "phuket-special-offer", "simply-krabi-and-phuket", "thailand-phuket-krabi-group-trip"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "thailand-family-holidays",
+      "name": "Family Holidays",
+      "description": "Easy-paced trips with shows, animal parks and island days that children and grandparents can enjoy together.",
+      "photo": "safari-world-bangkok",
+      "packages": ["simply-thailand", "simply-thailand-fully-loaded"]
+    },
+    {
+      "menu": "destinations",
+      "slug": "thailand-offers",
+      "name": "Special Offers",
+      "description": "Limited-period Phuket offers. Request a quote to confirm current terms and available dates.",
+      "photo": "big-buddha-phuket",
+      "packages": ["phuket-buy-1-get-1-free", "phuket-special-offer"]
+    },
+    {
+      "menu": "group-tours",
+      "slug": "thailand-fixed-departure-group-trips",
+      "name": "Fixed Departure Group Trips",
+      "description": "Join a small group on a fixed date with a trip captain, ready-made itinerary and Indian meal options on request.",
+      "photo": "railay-beach-krabi",
+      "packages": ["thailand-phuket-krabi-group-trip", "thailand-bangkok-chiang-mai-group-trip"]
+    },
+    {
+      "menu": "honeymoon",
+      "slug": "thailand-romantic-escapes",
+      "name": "Romantic Escapes",
+      "description": "Beach stays in Phuket and Krabi for couples who want sea views, unhurried days and time together.",
+      "photo": "railay-beach-krabi",
+      "packages": ["simply-krabi-and-phuket", "phuket-buy-1-get-1-free", "phuket-special-offer"]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "phuket-buy-1-get-1-free",
+      "summary": "Four nights in Phuket with a Phi Phi Island tour, a Phuket city tour and a free day to relax.",
+      "overview": "This four-night Phuket holiday combines island scenery with the island's old town and temples. A full day goes to the Phi Phi Islands, with views of the lagoons and cliffs, and another day takes you through Phuket Town and Wat Chalong. The last full day is yours for the beach, the resort or optional tours.",
+      "highlights": [
+        "Phi Phi Island tour with scenic island and lagoon views",
+        "Phuket Town and its Sino-Portuguese architecture",
+        "Visit to Wat Chalong",
+        "Full free day for beaches, resort or optional tours",
+        "Four nights in one hotel, with no packing and unpacking"
+      ],
+      "inclusions": [
+        "4 nights hotel accommodation in Phuket on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Phi Phi Island tour with lunch, as per itinerary",
+        "Phuket city tour covering Phuket Town and Wat Chalong",
+        "Transfers and sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional tours and activities",
+        "Local tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "The Buy 1 Get 1 Free offer terms and applicable travel dates are confirmed at the time of quotation.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Island tours depend on sea conditions and may be rescheduled or altered for safety.",
+        "Dress modestly when visiting temples such as Wat Chalong, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a light cover-up",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Phuket Airport",
+      "drop_point": "Phuket Airport",
+      "photo": "phi-phi-islands",
+      "gallery": ["phuket-old-town", "big-buddha-phuket", "railay-beach-krabi"]
+    },
+    {
+      "slug": "simply-thailand",
+      "summary": "Four nights across Pattaya and Bangkok, with Coral Island, Art in Paradise and Bangkok's famous temples.",
+      "overview": "Simply Thailand pairs the beach resort of Pattaya with the capital, Bangkok. You travel from Bangkok to Pattaya by private vehicle, spend a day on Coral Island by speedboat and visit the Art in Paradise 3D museum. Back in Bangkok you see the Golden Buddha and Marble Temple, then have a free day for shopping and local sights.",
+      "highlights": [
+        "Private vehicle transfer from Bangkok to Pattaya",
+        "Coral Island by joined speedboat, with lunch",
+        "Art in Paradise, Pattaya's interactive 3D illusion museum",
+        "Golden Buddha and Marble Temple in Bangkok",
+        "Free day in Bangkok for shopping and local attractions"
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Pattaya on twin sharing",
+        "2 nights hotel accommodation in Bangkok on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport transfers and Bangkok to Pattaya transfer by private vehicle",
+        "Coral Island trip by joined speedboat, with lunch",
+        "Visit to Art in Paradise, Pattaya, as per itinerary",
+        "Bangkok sightseeing covering the Golden Buddha and Marble Temple",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Water sports and other optional activities",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Coral Island trips depend on sea conditions; water sports are optional and paid locally.",
+        "Dress modestly at temples, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a change of clothes for the island",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Bangkok Airport",
+      "drop_point": "Bangkok Airport",
+      "photo": "coral-island-pattaya",
+      "gallery": ["golden-buddha-bangkok", "grand-palace-bangkok", "thai-street-food"],
+      "price": {"from": 29500}
+    },
+    {
+      "slug": "simply-thailand-fully-loaded",
+      "summary": "Five nights in Pattaya and Bangkok with the Alcazar Show, Coral Island, Nong Nooch Village and Safari World.",
+      "overview": "Simply Thailand Fully Loaded packs the best-known family attractions of Pattaya and Bangkok into five nights. In Pattaya you attend the Alcazar Show, take a speedboat to Coral Island, visit the Art in Paradise 3D museum and spend a day at Nong Nooch Village with its cultural and elephant shows. You then drive to Bangkok for a city tour and finish with a day at Safari World and Marine Park.",
+      "highlights": [
+        "Alcazar Show with professional performers and elaborate costumes",
+        "Coral Island by joined speedboat, with lunch",
+        "Art in Paradise, Pattaya's interactive 3D illusion museum",
+        "Nong Nooch Village with Thai cultural and elephant shows, and lunch",
+        "En-route Bangkok tour: Golden Buddha Temple, Marble Temple and Gems Gallery",
+        "Safari World and Marine Park with lunch and animal performances"
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Pattaya on twin sharing",
+        "2 nights hotel accommodation in Bangkok on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport transfers and transfers between cities as per itinerary",
+        "Alcazar Show in Pattaya, as per itinerary",
+        "Coral Island trip by joined speedboat, with lunch",
+        "Visit to Art in Paradise, Pattaya, as per itinerary",
+        "Nong Nooch Village with cultural and elephant shows, and lunch",
+        "Bangkok city tour covering the Golden Buddha Temple, Marble Temple and Gems Gallery",
+        "Safari World and Marine Park visit with lunch",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Water sports at Coral Island and other optional activities",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Water sports are not included in the Coral Island trip.",
+        "Show and park timings are set by the operators and the order of the days may be adjusted to suit them.",
+        "Dress modestly at temples, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Sunscreen, hat and sunglasses",
+        "Comfortable walking shoes for the parks",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Bangkok Airport",
+      "drop_point": "Bangkok Airport",
+      "photo": "nong-nooch-pattaya",
+      "gallery": ["safari-world-bangkok", "coral-island-pattaya", "golden-buddha-bangkok", "thai-street-food"],
+      "price": {"from": 38500}
+    },
+    {
+      "slug": "phuket-special-offer",
+      "summary": "A four-night Phuket beach holiday with hotel stay, daily breakfast and transfers, at a special offer rate.",
+      "overview": "This four-night Phuket holiday is built around a relaxed stay on Thailand's largest island, with hotel accommodation, breakfast and transfers arranged for you. Sightseeing and island tours can be added to suit your interests and travel dates. Speak to our travel experts to confirm the current offer and the final day-by-day plan.",
+      "highlights": [
+        "Four nights on Phuket, Thailand's largest island",
+        "Daily breakfast and airport transfers arranged",
+        "Beaches, resort time and cafes at your own pace",
+        "Island tours and activities can be added on request",
+        "Special offer rate; ask for a free quote"
+      ],
+      "inclusions": [
+        "4 nights hotel accommodation in Phuket on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Other transfers and sightseeing as per the confirmed itinerary",
+        "Entry tickets and activities as listed in the confirmed itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional tours and activities",
+        "Local tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Special offer terms, applicable dates, rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Phuket's rainy season runs roughly from May to October; sea conditions can affect boat trips."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a light cover-up"
+      ],
+      "pickup": "Phuket Airport",
+      "drop_point": "Phuket Airport",
+      "photo": "big-buddha-phuket",
+      "gallery": ["phi-phi-islands", "phuket-old-town"]
+    },
+    {
+      "slug": "simply-krabi-and-phuket",
+      "summary": "Five nights on Thailand's Andaman coast, combining the limestone scenery of Krabi with the beaches of Phuket.",
+      "overview": "Simply Krabi and Phuket brings together two of Thailand's best-loved beach destinations in five nights. Krabi is known for its limestone cliffs, clear water and island scenery, while Phuket offers a wider choice of beaches, restaurants and evening entertainment. Our travel experts will confirm the day-by-day plan, sightseeing and optional tours when you request a quote.",
+      "highlights": [
+        "Two beach destinations on the Andaman coast in one holiday",
+        "Krabi's limestone cliffs and island scenery",
+        "Phuket's beaches, old town and nightlife",
+        "Hotel stay, daily breakfast and transfers arranged",
+        "Island tours and activities can be added on request"
+      ],
+      "inclusions": [
+        "5 nights hotel accommodation in Krabi and Phuket on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Transfer between Krabi and Phuket",
+        "Other transfers and sightseeing as per the confirmed itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional tours and activities",
+        "Local tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The Andaman coast has a rainy season roughly from May to October; boat trips depend on sea conditions."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a light cover-up"
+      ],
+      "pickup": "Phuket or Krabi Airport, as per the confirmed itinerary",
+      "drop_point": "Phuket or Krabi Airport, as per the confirmed itinerary",
+      "photo": "railay-beach-krabi",
+      "gallery": ["phi-phi-islands", "big-buddha-phuket", "phuket-old-town"],
+      "price": {"from": 36500}
+    }
+  ],
+  "group_trips": [
+    {
+      "slug": "thailand-phuket-krabi-group-trip",
+      "title": "Phuket, Phi Phi and Krabi Group Trip",
+      "nights": 6,
+      "summary": "Seven days on the Andaman coast with Phuket's old town, a Phi Phi Islands boat day and island time around Krabi, travelling in a small group.",
+      "overview": "This group trip covers the best of Thailand's Andaman coast over six nights, three in Phuket and three in Krabi. You see Phuket Town, Wat Chalong and the Big Buddha, spend a day among the Phi Phi Islands by speedboat, then travel by road to Krabi.\n\nIn Krabi you explore the coast by longtail boat, relax on Railay Beach and visit Tiger Cave Temple. A trip captain travels with the group throughout, and Indian meal options are available on request.\n\nThe pace is easy, with free time on most days, which suits families, friends travelling together and senior parents.",
+      "highlights": [
+        "Phuket Town with its Sino-Portuguese architecture",
+        "Wat Chalong and the Big Buddha",
+        "Speedboat day to the Phi Phi Islands",
+        "Longtail boat trip around Krabi's islands and Railay Beach",
+        "Tiger Cave Temple, near Krabi Town",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Phuket | Evening at leisure",
+          "description": "Arrive at Phuket Airport and meet your trip captain.\nTransfer to your hotel and check in.\nRelax after your journey and enjoy the evening at leisure.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 2,
+          "title": "Phuket Town | Wat Chalong | Big Buddha",
+          "description": "After breakfast, walk through Phuket Town and its Sino-Portuguese shophouses.\nVisit Wat Chalong, one of the island's best-known temples.\nContinue to the Big Buddha for views over the island.\nEnjoy free time in the evening.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 3,
+          "title": "Phi Phi Islands by Speedboat",
+          "description": "After breakfast, transfer to the pier and board a speedboat to the Phi Phi Islands.\nSee the cliffs and lagoons, with swimming and snorkelling stops, subject to sea conditions.\nLunch is served during the tour.\nReturn to Phuket by late afternoon.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 4,
+          "title": "Phuket to Krabi | Ao Nang Beach",
+          "description": "After breakfast, check out and travel by road to Krabi.\nCheck in at your hotel in the Ao Nang area.\nSpend the afternoon on the beach or exploring Ao Nang at your own pace.\nOvernight stay in Krabi."
+        },
+        {
+          "day": 5,
+          "title": "Longtail Boat Island Trip | Railay Beach",
+          "description": "After breakfast, board a longtail boat from the Ao Nang coast.\nVisit nearby islands and the sandy shores of Railay Beach.\nSwim and relax on the beach, with lunch during the tour.\nReturn to the hotel in the afternoon.\nOvernight stay in Krabi."
+        },
+        {
+          "day": 6,
+          "title": "Tiger Cave Temple | Krabi Town",
+          "description": "After breakfast, visit Tiger Cave Temple, where the climb to the top is optional.\nContinue to Krabi Town for a short walk and shopping.\nReturn to the hotel and enjoy a free evening.\nOvernight stay in Krabi."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Krabi",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Krabi Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Phuket on twin sharing",
+        "3 nights hotel accommodation in Krabi on twin sharing",
+        "Daily breakfast at the hotel",
+        "Airport arrival and departure transfers",
+        "Road transfer from Phuket to Krabi",
+        "Phi Phi Islands speedboat tour with lunch",
+        "Krabi longtail boat island trip with lunch",
+        "Sightseeing in Phuket Town and Krabi as per itinerary",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and entry fees not listed",
+        "Local tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change.",
+        "A trip captain accompanies the group throughout.",
+        "Boat tours depend on sea conditions and may be rescheduled or altered for safety.",
+        "Dress modestly at temples, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a quick-dry towel",
+        "Non-slip sandals or water shoes",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Phuket Airport",
+      "drop_point": "Krabi Airport",
+      "photo": "phi-phi-islands",
+      "gallery": ["phuket-old-town", "big-buddha-phuket", "railay-beach-krabi"],
+      "price": 41500,
+      "original_price": 46500,
+      "departures": {"weekday": 5, "count": 5, "every_weeks": 2, "capacity": 24}
+    },
+    {
+      "slug": "thailand-bangkok-chiang-mai-group-trip",
+      "title": "Bangkok and Chiang Mai Temples and Elephants Group Trip",
+      "nights": 5,
+      "summary": "Six days pairing Bangkok's palaces and street food with the temples and hills of Chiang Mai, including an ethical elephant sanctuary visit.",
+      "overview": "This group trip pairs Thailand's capital with its northern cultural centre over five nights. In Bangkok you see the Grand Palace and Wat Pho and take a boat ride on the Chao Phraya river. You then fly to Chiang Mai to explore its walled Old City, visit Doi Suthep temple and spend a morning at an elephant sanctuary.\n\nThe flights between Bangkok and Chiang Mai are included in the price, so there are no long road journeys. A trip captain accompanies the group, and Indian meal options are available on request.\n\nChiang Mai is cooler and calmer than Bangkok, which makes this a good choice for travellers who want culture as well as city energy.",
+      "highlights": [
+        "Grand Palace and Wat Pho in Bangkok",
+        "Boat ride on the Chao Phraya river",
+        "Walled Old City of Chiang Mai, with Wat Chedi Luang and Wat Phra Singh",
+        "Doi Suthep temple, above Chiang Mai",
+        "Visit to an ethical elephant sanctuary, with no elephant riding",
+        "Flights between Bangkok and Chiang Mai included",
+        "Trip captain with the group and Indian meal options on request"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bangkok",
+          "description": "Arrive in Bangkok and meet your trip captain.\nTransfer to your hotel and check in.\nRelax after your journey and enjoy the evening at leisure.\nOvernight stay in Bangkok."
+        },
+        {
+          "day": 2,
+          "title": "Grand Palace | Wat Pho | Chao Phraya Boat Ride",
+          "description": "After breakfast, visit the Grand Palace, the former royal residence.\nContinue to Wat Pho, home of the huge reclining Buddha.\nTake a boat ride on the Chao Phraya river.\nEnjoy free time for shopping or street food in the evening.\nOvernight stay in Bangkok."
+        },
+        {
+          "day": 3,
+          "title": "Fly to Chiang Mai | Old City Temples",
+          "description": "After breakfast, transfer to the airport for your flight to Chiang Mai.\nTransfer to your hotel and check in.\nVisit Wat Chedi Luang and Wat Phra Singh in the walled Old City.\nSpend the evening at the Night Bazaar or at leisure.\nOvernight stay in Chiang Mai."
+        },
+        {
+          "day": 4,
+          "title": "Elephant Sanctuary | Doi Suthep Temple",
+          "description": "After breakfast, visit an ethical elephant sanctuary where elephants are not ridden.\nTake part in feeding and observe the herd in a natural setting.\nIn the afternoon, drive up to Doi Suthep temple for views over Chiang Mai.\nReturn to the hotel and enjoy a free evening.\nOvernight stay in Chiang Mai."
+        },
+        {
+          "day": 5,
+          "title": "Return to Bangkok | Free Evening",
+          "description": "After breakfast, check out and transfer to Chiang Mai Airport.\nFly back to Bangkok and transfer to your hotel.\nSpend the rest of the day shopping or at leisure.\nOvernight stay in Bangkok."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Bangkok",
+          "description": "After breakfast, check out of the hotel.\nTransfer to Bangkok Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Bangkok on twin sharing",
+        "2 nights hotel accommodation in Chiang Mai on twin sharing",
+        "Daily breakfast at the hotel",
+        "Economy flights between Bangkok and Chiang Mai and back",
+        "Airport arrival and departure transfers",
+        "Grand Palace and Wat Pho visit as per itinerary",
+        "Chao Phraya river boat ride",
+        "Chiang Mai Old City temples and Doi Suthep visit",
+        "Ethical elephant sanctuary visit",
+        "Services of a trip captain throughout the tour",
+        "Indian meal options on request, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and entry fees not listed",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Rates and availability are confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a group departure and runs on minimum numbers; we will inform you in advance if a departure needs to change.",
+        "A trip captain accompanies the group throughout.",
+        "Domestic flights carry baggage limits that are usually lower than international flights; details are shared at booking.",
+        "The Grand Palace and temples require covered shoulders and knees; guests who are not dressed appropriately may be refused entry.",
+        "Chiang Mai can be cool in the early morning and evening from November to February."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Modest clothing covering shoulders and knees",
+        "Comfortable walking shoes",
+        "Sunscreen, hat and sunglasses",
+        "Light jacket for Chiang Mai evenings"
+      ],
+      "pickup": "Bangkok Airport",
+      "drop_point": "Bangkok Airport",
+      "photo": "doi-suthep-chiang-mai",
+      "gallery": ["grand-palace-bangkok", "elephant-sanctuary-chiang-mai", "thai-street-food"],
+      "price": 44900,
+      "original_price": 49900,
+      "departures": {"weekday": 6, "count": 4, "every_weeks": 3, "capacity": 20}
+    }
+  ]
+}

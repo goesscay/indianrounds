@@ -11,7 +11,10 @@ export function TourCard({ tour }: { tour: Tour }) {
       href={`/tours/${tour.slug}`}
       className="group flex flex-col overflow-hidden rounded-card bg-white shadow-float transition hover:-translate-y-1"
     >
-      <CoverImage src={tour.image_url} alt={tour.title} seed={tour.slug} className="aspect-[4/3]" />
+      <div className="relative">
+        <CoverImage src={tour.image_url} alt={tour.title} seed={tour.slug} className="aspect-[4/3]" />
+        {hasFixedDepartures(tour) && <span className="absolute left-3 top-3 rounded-full bg-brand-red px-3 py-1 text-xs font-bold text-white shadow">Group Trip</span>}
+      </div>
       <div className="flex flex-1 flex-col gap-1 p-4">
         {tour.destination && <p className="text-xs font-semibold uppercase tracking-wide text-brand-red">{tour.destination.name}</p>}
         <h3 className="font-bold leading-snug">{tour.title}</h3>
@@ -25,7 +28,8 @@ export function TourCard({ tour }: { tour: Tour }) {
         <div className="mt-auto flex items-end justify-between pt-3">
           {tour.price !== null ? (
             <div>
-              {tour.original_price && <p className="text-xs text-muted line-through">{formatINR(tour.original_price)}</p>}
+              {hasFixedDepartures(tour) && tour.original_price && <p className="text-xs text-muted line-through">{formatINR(tour.original_price)}</p>}
+              {!hasFixedDepartures(tour) && <p className="text-xs text-muted">Starting from</p>}
               <p className="text-xl font-extrabold text-brand-red">{formatINR(tour.price)}</p>
               <p className="text-xs text-muted">per person</p>
             </div>
