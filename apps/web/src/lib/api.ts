@@ -1,5 +1,8 @@
 const API_URL = process.env.API_URL ?? "http://localhost:8000/api/v1";
 
+export type ProfileItem = { title: string; text?: string };
+export type DestinationFact = "capital" | "currency" | "languages" | "time_zone" | "calling_code" | "driving_side" | "climate" | "flight_time";
+
 export type Destination = {
   id: number;
   name: string;
@@ -16,6 +19,14 @@ export type Destination = {
     best_time?: string;
     places?: string;
     seasons?: Partial<Record<"on" | "mid" | "off", { months: string; places: string; activities: string }>>;
+    facts?: Partial<Record<DestinationFact, string>>;
+    reasons?: ProfileItem[];
+    attractions?: ProfileItem[];
+    experiences?: ProfileItem[];
+    food?: ProfileItem[];
+    tips?: ProfileItem[];
+    travel_info?: Partial<Record<"visa" | "health" | "money", string>>;
+    faqs?: { q: string; a: string }[];
   };
   tours?: Tour[];
 };

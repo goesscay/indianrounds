@@ -150,3 +150,7 @@ sudo install -d -o deploy -g deploy /srv/uploads/catalogue
 **After deleting content, clear the website's page cache.** The Next.js server keeps serving its last good copy of a page when the API now answers 404 (a refresh that fails does not replace the cached copy), so deleted destinations and tours stay visible, and survive a restart. Fix:
 `systemctl stop indianrounds-web && rm -rf /srv/indianrounds/apps/web/.next/cache/fetch-cache && systemctl start indianrounds-web`
 Adding or editing content needs no action; it appears within about a minute.
+
+### Destination page content (facts, attractions, tips, FAQs)
+Each destination page shows a written profile: overview, quick facts, reasons to go, top attractions, experiences, foods, essential tips, visa / health / money notes and FAQs. It is stored with the destination (Admin > Destinations > edit > "Page content") and anything left empty is hidden on the page. The starter text for the 12 countries ships in `apps/api/database/data/destination_profiles.json`.
+`php artisan catalogue:seed-destination-content --dry-run` previews; without `--dry-run` it fills only the parts that are still empty, so edits made in the admin are kept. `--force` replaces existing text. Seasons, places and photos are never touched. Visa and entry rules in the starter text are general: check them against the official sources before relying on them.

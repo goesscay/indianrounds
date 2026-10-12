@@ -39,6 +39,11 @@ class DestinationController extends Controller
             if (isset($incoming['seasons']) && is_array($incoming['seasons'])) {
                 $incoming['seasons'] = array_filter($incoming['seasons'], fn ($v) => $v !== null && $v !== []);
             }
+            foreach (['facts', 'travel_info'] as $group) {
+                if (isset($incoming[$group]) && is_array($incoming[$group])) {
+                    $incoming[$group] = array_filter($incoming[$group], fn ($v) => $v !== null && $v !== '');
+                }
+            }
             $data['seo_content'] = array_filter(
                 array_replace(is_array($destination->seo_content) ? $destination->seo_content : [], $incoming),
                 fn ($v) => $v !== null && $v !== [],
@@ -84,6 +89,28 @@ class DestinationController extends Controller
             'seo_content.seasons.*.months' => 'required_with:seo_content.seasons.*|string|max:60',
             'seo_content.seasons.*.places' => 'nullable|string|max:600',
             'seo_content.seasons.*.activities' => 'nullable|string|max:1200',
+            'seo_content.facts' => 'nullable|array',
+            'seo_content.facts.*' => 'nullable|string|max:200',
+            'seo_content.travel_info' => 'nullable|array',
+            'seo_content.travel_info.*' => 'nullable|string|max:1500',
+            'seo_content.reasons' => 'nullable|array|max:12',
+            'seo_content.attractions' => 'nullable|array|max:16',
+            'seo_content.experiences' => 'nullable|array|max:16',
+            'seo_content.food' => 'nullable|array|max:12',
+            'seo_content.tips' => 'nullable|array|max:12',
+            'seo_content.reasons.*.title' => 'required|string|max:120',
+            'seo_content.reasons.*.text' => 'nullable|string|max:700',
+            'seo_content.attractions.*.title' => 'required|string|max:120',
+            'seo_content.attractions.*.text' => 'nullable|string|max:700',
+            'seo_content.experiences.*.title' => 'required|string|max:120',
+            'seo_content.experiences.*.text' => 'nullable|string|max:700',
+            'seo_content.food.*.title' => 'required|string|max:120',
+            'seo_content.food.*.text' => 'nullable|string|max:700',
+            'seo_content.tips.*.title' => 'required|string|max:120',
+            'seo_content.tips.*.text' => 'nullable|string|max:700',
+            'seo_content.faqs' => 'nullable|array|max:15',
+            'seo_content.faqs.*.q' => 'required|string|max:250',
+            'seo_content.faqs.*.a' => 'required|string|max:1500',
             'featured' => 'sometimes|boolean',
             'sort' => 'sometimes|integer|min:0|max:65535',
         ]);

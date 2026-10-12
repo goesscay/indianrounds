@@ -7,7 +7,21 @@ import { formatINR } from "@/lib/format";
 import { useApi } from "@/lib/use-api";
 import { field, ghostBtn, Labeled, Modal, Pager, primaryBtn, Status, Table, Title, useList, type Meta } from "./ui";
 
-type Dest = { id: number; name: string; slug: string; region: string; tagline: string | null; starting_price: number | null; best_time: string | null; featured: boolean; sort: number; tours_count: number; image_url: string | null; seo_content: { overview?: string; places?: string; seasons?: Partial<Record<"on" | "mid" | "off", { months: string; places: string; activities: string }>> } | null };
+type Dest = { id: number; name: string; slug: string; region: string; tagline: string | null; starting_price: number | null; best_time: string | null; featured: boolean; sort: number; tours_count: number; image_url: string | null; seo_content: Profile | null };
+
+type Item = { title: string; text?: string };
+type Profile = { overview?: string; places?: string; seasons?: Partial<Record<"on" | "mid" | "off", { months: string; places: string; activities: string }>>; facts?: Partial<Record<FactKey, string>>; travel_info?: Partial<Record<"visa" | "health" | "money", string>>; reasons?: Item[]; attractions?: Item[]; experiences?: Item[]; food?: Item[]; tips?: Item[]; faqs?: { q: string; a: string }[] };
+
+const FACTS = [["capital", "Capital"], ["currency", "Currency"], ["languages", "Languages"], ["time_zone", "Time zone"], ["calling_code", "Calling code"], ["driving_side", "Driving side"], ["climate", "Climate"], ["flight_time", "Flight from India"]] as const;
+type FactKey = (typeof FACTS)[number][0];
+const LISTS = [["reasons", "Top reasons to choose this destination", "Why travellers pick it, one per line"], ["attractions", "Top attractions", "Places to see, one per line"], ["experiences", "Experiences and things to do", "Activities, one per line"], ["food", "Foods to try", "Dishes and drinks, one per line"], ["tips", "Essential travel tips", "Practical advice, one per line"]] as const;
+
+/** One item per line as "Title | description". */
+const NL = String.fromCharCode(10);
+const itemsToText = (items?: Item[]) => (items ?? []).map((i) => (i.text ? `${i.title} | ${i.text}` : i.title)).join(NL);
+const textToItems = (text: string): Item[] => text.split(NL).map((l) => l.trim()).filter(Boolean).map((l) => { const [title, ...rest] = l.split("|"); return { title: title.trim(), text: rest.join("|").trim() || undefined }; });
+const faqsToText = (faqs?: { q: string; a: string }[]) => (faqs ?? []).map((f) => `${f.q} | ${f.a}`).join(NL);
+const textToFaqs = (text: string) => textToItems(text).filter((i) => i.text).map((i) => ({ q: i.title, a: i.text! }));
 
 export function DestinationsView() {
   const { user } = useAuth();
@@ -54,7 +68,13 @@ function DestinationForm({ initial, canDelete, onClose, onSaved }: { initial: De
     const body = {
       name: f.name, region: f.region, tagline: f.tagline || null, starting_price: f.starting_price ? Number(f.starting_price) : null,
       best_time: f.best_time || null, image_url: f.image_url || null, featured: f.featured === "on", sort: Number(f.sort || 0),
-      seo_content: { overview: f.overview || undefined, places: f.places || null, seasons },
+      seo_content: {
+        overview: f.overview || undefined, places: f.places || null, seasons,
+        facts: Object.fromEntries(FACTS.map(([k]) => [k, f[`fact_${k}`]?.trim() || null])),
+        travel_info: Object.fromEntries((["visa", "health", "money"] as const).map((k) => [k, f[`info_${k}`]?.trim() || null])),
+        ...Object.fromEntries(LISTS.map(([k]) => [k, textToItems(f[`list_${k}`] ?? "")])),
+        faqs: textToFaqs(f.list_faqs ?? ""),
+      },
     };
     try {
       await apiFetch(initial ? `admin/destinations/${initial.id}` : "admin/destinations", { method: initial ? "PUT" : "POST", body });
@@ -106,6 +126,34 @@ function DestinationForm({ initial, canDelete, onClose, onSaved }: { initial: De
           ))}
           {errors["seo_content.seasons.on.months"] && <p className="text-xs text-brand-red">Enter the months for the on season.</p>}
         </fieldset>
+        <details className="rounded-lg border border-black/10 p-4">
+          <summary className="cursor-pointer text-sm font-bold">Page content: quick facts, attractions, tips and FAQs</summary>
+          <div className="mt-4 space-y-4">
+            <p className="text-xs text-muted">Shown on the destination page. Anything left empty is hidden. For the lists, write one item per line as <code>Title | short description</code>.</p>
+            <fieldset className="space-y-2">
+              <legend className="mb-1 text-sm font-bold">Quick facts</legend>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {FACTS.map(([k, label]) => (
+                  <Labeled key={k} label={label} id={`d-fact-${k}`}><input id={`d-fact-${k}`} name={`fact_${k}`} defaultValue={initial?.seo_content?.facts?.[k] ?? ""} className={field} /></Labeled>
+                ))}
+              </div>
+            </fieldset>
+            {LISTS.map(([k, label, hint]) => (
+              <Labeled key={k} label={`${label} (${hint})`} id={`d-list-${k}`} error={errors[`seo_content.${k}.0.title`]?.[0]}>
+                <textarea id={`d-list-${k}`} name={`list_${k}`} rows={5} defaultValue={itemsToText(initial?.seo_content?.[k])} className={field} />
+              </Labeled>
+            ))}
+            <fieldset className="space-y-2">
+              <legend className="mb-1 text-sm font-bold">Before you go</legend>
+              {([["visa", "Visa information"], ["health", "Health and safety tips"], ["money", "Currency and tipping"]] as const).map(([k, label]) => (
+                <Labeled key={k} label={label} id={`d-info-${k}`}><textarea id={`d-info-${k}`} name={`info_${k}`} rows={3} defaultValue={initial?.seo_content?.travel_info?.[k] ?? ""} className={field} /></Labeled>
+              ))}
+            </fieldset>
+            <Labeled label="Frequently asked questions (one per line: Question | Answer)" id="d-list-faqs" error={errors["seo_content.faqs.0.q"]?.[0]}>
+              <textarea id="d-list-faqs" name="list_faqs" rows={6} defaultValue={faqsToText(initial?.seo_content?.faqs)} className={field} />
+            </Labeled>
+          </div>
+        </details>
         <label className="flex items-center gap-2 text-sm font-semibold"><input type="checkbox" name="featured" defaultChecked={initial?.featured} className="accent-brand-red" /> Featured on homepage</label>
         {msg && <p role="alert" className="text-sm text-brand-red">{msg}</p>}
         <div className="flex gap-3">

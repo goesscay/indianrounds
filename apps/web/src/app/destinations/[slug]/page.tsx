@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDestination, getMenuCountry, getPosts } from "@/lib/api";
-import { formatINR } from "@/lib/format";
-import { OpenQuoteButton } from "@/components/LeadModal";
+import { DestinationAttractions, DestinationCta, DestinationExperiences, DestinationFaqs, DestinationHero, DestinationNav, DestinationOverview, DestinationTips, sectionsOf } from "@/components/DestinationProfile";
 import { SeasonGuide } from "@/components/SeasonGuide";
 import { CategoryCard } from "@/components/MenuViews";
 import { PostCard } from "@/components/PostCard";
@@ -45,67 +44,69 @@ export default async function DestinationPage({ params, searchParams }: Props) {
   if (sort === "price_desc") tours.sort(byPrice(-1));
   if (sort === "duration_asc") tours.sort((a, b) => a.duration_nights - b.duration_nights);
 
+  const sections = sectionsOf(d, tours.length > 0 || Boolean(menu?.data.length));
+
   return (
     <>
-      <section className="bg-gradient-to-r from-brand-red-dark to-brand-red text-white">
-        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-          <p className="text-xs uppercase tracking-[0.3em] text-white/80">{d.region === "india" ? "India" : "International"}</p>
-          <h1 className="mt-2 text-4xl font-extrabold sm:text-5xl">{d.name} Tour Packages</h1>
-          {d.tagline && <p className="mt-2 text-white/85">{d.tagline}</p>}
-          {d.starting_price && <p className="mt-4 text-lg">Starting from <strong>{formatINR(d.starting_price)}</strong> per person</p>}
-          <OpenQuoteButton options={{ destination: d.name, title: `Plan your ${d.name} trip` }} className="mt-6 rounded-full bg-white px-7 py-3 font-semibold text-brand-red hover:bg-white/90">
-            Get a Free Quote
-          </OpenQuoteButton>
-        </div>
-      </section>
+      <DestinationHero destination={d} packageCount={tours.length} />
+      <DestinationNav name={d.name} sections={sections} />
 
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <SeasonGuide destination={d} />
-        {menu && menu.data.length > 0 && (
-          <section className="mb-14">
-            <SectionHeading lead="Browse by" accent="Category" sub={`${menu.data.length} categor${menu.data.length === 1 ? "y" : "ies"} in ${d.name}`} />
+      <div className="mx-auto max-w-7xl space-y-16 px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <DestinationOverview destination={d} />
+
+        <div id="season" className="scroll-mt-32 lg:scroll-mt-[156px] [&>section]:mb-0">
+          <SeasonGuide destination={d} />
+        </div>
+
+        <section id="packages" className="scroll-mt-32 space-y-12 lg:scroll-mt-[156px]">
+          {menu && menu.data.length > 0 && (
+            <div>
+              <SectionHeading lead="Browse by" accent="Category" sub={`${menu.data.length} categor${menu.data.length === 1 ? "y" : "ies"} in ${d.name}`} />
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                {menu.data.map((c) => (
+                  <CategoryCard key={c.slug} href={`/destinations/${d.slug}/${c.slug}`} category={c} />
+                ))}
+              </div>
+            </div>
+          )}
+          <div>
+            <SectionHeading lead={`${d.name}`} accent="Tour Packages" sub={`${tours.length} package${tours.length === 1 ? "" : "s"} available`} />
+            <nav aria-label="Sort tours" className="mb-6 flex flex-wrap gap-2">
+              {sorts.map((s) => (
+                <Link
+                  key={s.key}
+                  href={`/destinations/${d.slug}?sort=${s.key}#packages`}
+                  scroll={false}
+                  className={`rounded-full border px-4 py-1.5 text-sm font-medium ${sort === s.key ? "border-brand-red bg-brand-red text-white" : "border-black/15 hover:border-brand-red"}`}
+                >
+                  {s.label}
+                </Link>
+              ))}
+            </nav>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {menu.data.map((c) => (
-                <CategoryCard key={c.slug} href={`/destinations/${d.slug}/${c.slug}`} category={c} />
+              {tours.map((t) => (
+                <TourCard key={t.slug} tour={t} />
               ))}
             </div>
-          </section>
-        )}
-        <SectionHeading lead={`${d.name}`} accent="Tours" sub={`${tours.length} tour${tours.length === 1 ? "" : "s"} available`} />
-        <nav aria-label="Sort tours" className="mb-6 flex flex-wrap gap-2">
-          {sorts.map((s) => (
-            <Link
-              key={s.key}
-              href={`/destinations/${d.slug}?sort=${s.key}`}
-              className={`rounded-full border px-4 py-1.5 text-sm font-medium ${sort === s.key ? "border-brand-red bg-brand-red text-white" : "border-black/15 hover:border-brand-red"}`}
-            >
-              {s.label}
-            </Link>
-          ))}
-        </nav>
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {tours.map((t) => (
-            <TourCard key={t.slug} tour={t} />
-          ))}
-        </div>
-        {tours.length === 0 && <p className="text-muted">No tours are listed for this destination yet. Request a custom quote and we will plan one for you.</p>}
+            {tours.length === 0 && <p className="text-muted">No tours are listed for this destination yet. Request a custom quote and we will plan one for you.</p>}
+          </div>
+        </section>
 
-        {d.seo_content?.overview && (
-          <section className="mt-14 max-w-3xl space-y-3">
-            <h2 className="text-2xl font-extrabold">About {d.name} tours</h2>
-            <p className="text-muted">{d.seo_content.overview}</p>
-            {d.best_time && <p className="text-muted"><strong className="text-ink">Best time to visit:</strong> {d.best_time}</p>}
-          </section>
-        )}
+        <DestinationAttractions destination={d} />
+        <DestinationExperiences destination={d} />
+        <DestinationTips destination={d} />
+        <DestinationFaqs destination={d} />
 
         {posts.data.length > 0 && (
-          <section className="mt-14">
+          <section>
             <SectionHeading lead={`${d.name}`} accent="Travel Guides" href={`/blog?destination=${d.slug}`} cta="More guides" />
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {posts.data.map((p) => <PostCard key={p.slug} post={p} />)}
             </div>
           </section>
         )}
+
+        <DestinationCta destination={d} />
       </div>
     </>
   );
