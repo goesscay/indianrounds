@@ -73,7 +73,8 @@
       "packages": [
         "value-singapore",
         "singapore-sentosa-gardens-group-trip",
-        "singapore-city-sentosa-weekend-escape"
+        "singapore-city-sentosa-weekend-escape",
+        "singapore-honeymoon-sentosa-gardens-by-the-bay"
       ]
     },
     {
@@ -143,7 +144,8 @@
       "packages": [
         "value-singapore",
         "value-malaysia-singapore",
-        "premium-thailand-malaysia-singapore"
+        "premium-thailand-malaysia-singapore",
+        "singapore-honeymoon-sentosa-gardens-by-the-bay"
       ]
     },
     {
@@ -796,6 +798,113 @@
         "every_weeks": 1,
         "capacity": 22
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "singapore-honeymoon-sentosa-gardens-by-the-bay",
+      "title": "Singapore Honeymoon: Sentosa, Gardens by the Bay and Marina Bay Sunsets",
+      "nights": 5,
+      "summary": "A private five-night Singapore honeymoon with a sunset river cruise, a candlelight dinner, a couples spa session, a day on Sentosa Island and an evening among the Supertrees, at an unhurried pace.",
+      "overview": "Singapore is an easy, safe and beautifully kept city for newlyweds, and this private trip lets you enjoy it slowly. Your days have one headline experience each, with late starts, free evenings and a private car or guide for every sightseeing outing, so there are no group coaches and no early alarms.\n\nYou begin with a flower welcome at your hotel and a sunset cruise along the Singapore River and Marina Bay. Then come the Supertrees of Gardens by the Bay after dark, a day on Sentosa Island reached by cable car, a couples spa session and a candlelight dinner, with free time for Chinatown, Orchard Road and the Marina Bay waterfront.\n\nEverything is arranged for two, and our travel experts will help you plan the finer details, from dietary preferences to the wedding-day surprise you would like the hotel to arrange.",
+      "highlights": [
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "Sunset cruise along the Singapore River and Marina Bay",
+        "Evening among the Supertrees at Gardens by the Bay",
+        "Cable car to Sentosa Island, with a beach afternoon for two",
+        "Couples spa session and a candlelight dinner",
+        "Private car and guide for sightseeing, with no group coaches",
+        "Free evenings for Marina Bay, Chinatown and Orchard Road"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Singapore | Welcome and Marina Bay Evening",
+          "description": "Arrive at Singapore Changi Airport, where your private driver meets you.\nTransfer to your hotel and check in, with a flower or cake welcome and bed decoration, subject to availability.\nRest and freshen up, with the afternoon at leisure.\nIn the evening, stroll along the Marina Bay waterfront at your own pace, with views of Marina Bay Sands.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 2,
+          "title": "Private City Tour | Merlion Park and a Sunset River Cruise",
+          "description": "After a late breakfast, begin a relaxed private city tour with a photo stop at Merlion Park.\nVisit the Buddha Tooth Relic Temple and walk through Chinatown at an easy pace.\nReturn to the hotel for a rest and a quiet lunch at leisure.\nIn the evening, enjoy a sunset cruise along the Singapore River and Marina Bay, subject to availability.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 3,
+          "title": "Gardens by the Bay | Flower Dome and the Supertree Grove",
+          "description": "The morning is free to sleep in and enjoy the hotel.\nIn the afternoon, your private car takes you to Gardens by the Bay to explore the Flower Dome and Cloud Forest.\nStay on for the Supertree Grove as the lights come on after dark, weather permitting.\nReturn to the hotel at your own pace.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 4,
+          "title": "Sentosa Island | Cable Car, Beaches and a Candlelight Dinner",
+          "description": "After a late breakfast, ride the cable car to Sentosa Island.\nSpend the day on the island's beaches and walkways, with optional activities if you wish.\nReturn to the hotel in the late afternoon to rest.\nIn the evening, enjoy a candlelight dinner, subject to availability.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 5,
+          "title": "Couples Spa and a Free Afternoon | Orchard Road",
+          "description": "Enjoy a slow morning, followed by a couples spa session, subject to availability.\nThe afternoon is free for shopping on Orchard Road, a return to a favourite spot or simply a quiet rest.\nIn the evening, have dinner at leisure at a restaurant of your choice, with our team happy to suggest options.\nOvernight stay in Singapore."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Singapore",
+          "description": "After breakfast, check out of the hotel at a relaxed pace.\nYour private driver transfers you to Singapore Changi Airport in time for your flight home."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 5 nights in Singapore, in a hotel suited to couples",
+        "Daily breakfast at the hotel",
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner, subject to availability",
+        "One couples spa session, subject to availability",
+        "Sunset cruise along the Singapore River and Marina Bay, subject to availability",
+        "Private airport arrival and departure transfers",
+        "Private car and guide for sightseeing as per itinerary",
+        "Entry to Gardens by the Bay domes as per itinerary",
+        "Sentosa cable car ride as per itinerary",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and attraction tickets on Sentosa",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at the time of booking so the hotel can arrange the welcome.",
+        "The honeymoon touches are subject to availability and hotel policy.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather or operational conditions, without reducing the experiences covered.",
+        "Rates are indicative and are confirmed at the time of booking.",
+        "The Supertree Grove lights and the evening cruise are subject to weather.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Singapore has strict local laws on littering and e-cigarettes; please follow them."
+      ],
+      "must_carry": [
+        "Passport and Singapore visa copy",
+        "Return tickets",
+        "Copy of travel insurance",
+        "Marriage certificate or wedding invitation",
+        "Forex or international card",
+        "Type G (UK-style three-pin) power adapter",
+        "Compact umbrella or light rain jacket",
+        "Swimwear, sunscreen and comfortable walking shoes",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Singapore Changi Airport",
+      "drop_point": "Singapore Changi Airport",
+      "photo": "sentosa-island",
+      "gallery": [
+        "marina-bay-sands",
+        "gardens-by-the-bay",
+        "merlion-park",
+        "chinatown-singapore"
+      ],
+      "price": 72000,
+      "original_price": 77800
     }
   ]
 }

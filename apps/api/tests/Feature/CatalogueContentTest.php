@@ -76,7 +76,7 @@ class CatalogueContentTest extends TestCase
         $errors = implode(' | ', (new CatalogueContent)->validate($data));
         $this->assertStringContainsString('Photo slot "nope" is used but not defined', $errors);
         $this->assertStringContainsString('needs itinerary days 1 to 3', $errors);
-        $this->assertStringContainsString('"ghost", which is not in packages or group_trips', $errors);
+        $this->assertStringContainsString('"ghost", which is not in packages, group_trips or honeymoon_trips', $errors);
         $this->assertStringContainsString('original_price', $errors);
     }
 
@@ -219,5 +219,44 @@ class CatalogueContentTest extends TestCase
                 $this->assertGreaterThan(20000, filesize($path), "{$path} looks too small");
             }
         }
+    }
+
+    /** @return array<string, mixed> */
+    private function contentWithHoneymoon(): array
+    {
+        $data = $this->content();
+        $data['honeymoon_trips'] = [$this->entry('thailand-honeymoon') + [
+            'title' => 'Thailand Honeymoon', 'nights' => 3, 'overview' => 'Romantic.', 'price' => 52000, 'original_price' => null,
+            'itinerary' => array_map(fn (int $d) => ['day' => $d, 'title' => "Day {$d}", 'description' => 'Candlelight dinner.'], [1, 2, 3, 4]),
+        ]];
+        $data['categories'][0]['packages'][] = 'thailand-honeymoon';
+        $data['categories'][2]['packages'][] = 'thailand-honeymoon';
+
+        return $data;
+    }
+
+    public function test_a_honeymoon_trip_is_a_priced_custom_package_without_departures(): void
+    {
+        $this->seedSite();
+        $content = new CatalogueContent;
+        $this->assertSame([], $content->validate($this->contentWithHoneymoon()));
+
+        $content->apply($this->contentWithHoneymoon(), false, false, false);
+
+        $trip = Tour::query()->where('slug', 'thailand-honeymoon')->firstOrFail();
+        $this->assertSame('custom', $trip->tour_type);
+        $this->assertSame(52000, $trip->base_price);
+        $this->assertSame(0, $trip->batches()->count());
+        $this->assertContains('couples', $trip->tags);
+        $this->assertContains('sample-pricing', $trip->tags);
+        $this->assertSame('published', $trip->status);
+    }
+
+    public function test_a_honeymoon_trip_must_be_in_the_honeymoon_menu(): void
+    {
+        $data = $this->contentWithHoneymoon();
+        $data['categories'][2]['packages'] = ['simply-thailand'];
+
+        $this->assertStringContainsString('Honeymoon trip "thailand-honeymoon" is not in a category of the honeymoon menu', implode(' | ', (new CatalogueContent)->validate($data)));
     }
 }

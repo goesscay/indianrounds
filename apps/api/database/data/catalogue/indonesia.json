@@ -85,7 +85,9 @@
       "photo": "uluwatu-temple",
       "packages": [
         "wonderful-bali-honeymoon-special",
-        "memorable-bali-honeymoon-special"
+        "memorable-bali-honeymoon-special",
+        "indonesia-bali-villa-honeymoon",
+        "indonesia-bali-nusa-penida-honeymoon"
       ]
     },
     {
@@ -130,7 +132,9 @@
       "photo": "uluwatu-temple",
       "packages": [
         "wonderful-bali-honeymoon-special",
-        "memorable-bali-honeymoon-special"
+        "memorable-bali-honeymoon-special",
+        "indonesia-bali-villa-honeymoon",
+        "indonesia-bali-nusa-penida-honeymoon"
       ]
     },
     {
@@ -803,6 +807,229 @@
         "every_weeks": 1,
         "capacity": 22
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "indonesia-bali-villa-honeymoon",
+      "title": "Bali Villa Honeymoon: Ubud, Rice Terraces and Seminyak Sunsets",
+      "nights": 6,
+      "summary": "A private six-night Bali honeymoon with three nights in an Ubud villa and three on the south coast, with a rice-terrace swing, a couples spa and a candlelight dinner.",
+      "overview": "This is Bali at a gentle pace, made for two. You begin in Ubud, where you stay in a private villa among the rice fields and the jungle. Your days are built around one experience at a time: the Tegalalang terraces and a swing over the valley, then the holy spring of Tirta Empul and the cool air of Kintamani with Mount Batur in view.\n\nOn day four you move to the south coast and a villa in Seminyak. There is a sea cliff at Uluwatu to visit at sunset, a leisurely day by the villa, and a final evening at Tanah Lot Temple before a candlelight dinner. Your car and guide are private throughout, and starts are late, so you never need to rush breakfast.\n\nEvery romantic touch, from the welcome flowers to the bed decoration on arrival, is arranged with the hotel and is subject to availability.",
+      "highlights": [
+        "Three nights in an Ubud villa and three nights in a Seminyak villa, subject to availability",
+        "Flower welcome and bed decoration on arrival",
+        "Tegalalang rice terraces with a swing over the valley",
+        "Tirta Empul holy spring temple and the Mount Batur viewpoint at Kintamani",
+        "A couples Balinese spa session in Ubud",
+        "Uluwatu Temple on its sea cliff at sunset, with a Kecak fire dance",
+        "Tanah Lot Temple at sunset and a candlelight dinner on your last evening",
+        "Private car and private guide for all sightseeing"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bali | Welcome to Ubud",
+          "description": "Arrive at Ngurah Rai International Airport, where you are met and driven in a private car to Ubud, around an hour and a half depending on traffic.\nCheck in to your villa, where a flower welcome and bed decoration are arranged, subject to availability.\nThe evening is free to rest, swim or stroll into Ubud town.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 2,
+          "title": "Tegalalang Rice Terraces | Jungle Swing",
+          "description": "After a late breakfast, your private guide takes you to the Tegalalang rice terraces for the views over the green slopes.\nEnjoy a swing over the valley, one of the best-known experiences near Ubud.\nReturn to the villa for a long, quiet afternoon.\nThe evening is free to try a restaurant in Ubud.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 3,
+          "title": "Tirta Empul | Kintamani | Couples Spa",
+          "description": "After breakfast, visit Tirta Empul, a Hindu temple built around a holy spring.\nDrive up to Kintamani for views of Mount Batur and Lake Batur, where the air is noticeably cooler.\nReturn to Ubud in the afternoon.\nIn the evening, enjoy a couples Balinese spa session.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 4,
+          "title": "Craft Villages | Transfer to Seminyak",
+          "description": "After a relaxed breakfast, check out and drive towards the south coast.\nOn the way, stop at Celuk for silver jewellery and Mas for Balinese woodcarving.\nCheck in to your villa in Seminyak.\nWatch the sunset from Seminyak Beach in the evening.\nOvernight stay in Seminyak."
+        },
+        {
+          "day": 5,
+          "title": "Uluwatu Temple | Kecak Dance at Sunset",
+          "description": "Enjoy a slow morning at the villa and a late breakfast.\nIn the afternoon, drive south to the Bukit peninsula and visit Uluwatu Temple, set on a cliff above the Indian Ocean.\nWatch a Kecak fire dance performance as the sun goes down.\nDrive back to Seminyak.\nOvernight stay in Seminyak."
+        },
+        {
+          "day": 6,
+          "title": "Leisure Day | Tanah Lot Sunset | Candlelight Dinner",
+          "description": "Spend the morning at your own pace by the villa pool or on the beach.\nIn the late afternoon, drive to Tanah Lot Temple, which stands on a rock in the sea, and watch the sunset.\nEnjoy a candlelight dinner in the evening.\nOvernight stay in Seminyak."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Bali",
+          "description": "Enjoy breakfast and check out of the villa.\nYour private car takes you to Ngurah Rai International Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "6 nights stay on twin sharing: 3 nights in a villa in Ubud and 3 nights in a villa in Seminyak, subject to availability",
+        "Daily breakfast",
+        "Flower welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner for two",
+        "One couples Balinese spa session",
+        "Swing experience over the valley near Tegalalang",
+        "Kecak fire dance performance ticket at Uluwatu",
+        "Private airport arrival and departure transfers",
+        "Private car and private guide for sightseeing as per itinerary",
+        "Entry tickets for the sights listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Lunches and dinners other than the candlelight dinner",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Bali tourism levy or local taxes payable where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Please share your marriage certificate or wedding date at the time of booking so the hotel can arrange the welcome",
+        "Honeymoon touches such as flowers, bed decoration and the villa category are subject to availability and hotel policy",
+        "Rates are indicative and are confirmed at the time of booking",
+        "The order of the itinerary may change with weather, road or operational conditions without reducing the sights covered",
+        "Cancellation and refund are as per our Terms & Conditions",
+        "Cover shoulders and knees at temples; a sarong may be required",
+        "Monkeys live around Uluwatu Temple; keep sunglasses, phones and bags secure"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Marriage certificate or wedding invitation copy",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Power adapter (Type C or F, 230V)",
+        "Swimwear, sunscreen and sunglasses",
+        "Modest clothing for temple visits",
+        "Comfortable walking shoes or sandals"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "tegalalang-rice-terraces",
+      "gallery": [
+        "bali-swing-ubud",
+        "tirta-empul-temple",
+        "seminyak-beach-sunset",
+        "tanah-lot-temple"
+      ],
+      "price": 71500,
+      "original_price": 77200
+    },
+    {
+      "slug": "indonesia-bali-nusa-penida-honeymoon",
+      "title": "Bali and Nusa Penida Honeymoon: Ubud, Clifftop Coves and Uluwatu",
+      "nights": 6,
+      "summary": "A private six-night honeymoon combining Ubud, two nights on the island of Nusa Penida and a sea-cliff finish at Uluwatu, with a jungle swing, a couples spa and a candlelight dinner.",
+      "overview": "This honeymoon brings together three very different sides of Bali. You start in Ubud among the rice terraces, with a swing over the valley and the holy spring of Tirta Empul. A private car then takes you to the harbour for the fast boat to Nusa Penida, where you spend two nights on a quieter island of dramatic cliffs and blue water.\n\nA private car and driver show you the west of the island, including Kelingking Beach, Angel's Billabong, Broken Beach and Crystal Bay, with the sunset as your reward. You then return to Bali for two nights on the Bukit peninsula, finishing with Uluwatu Temple at sunset and a candlelight dinner.\n\nStarts are late and evenings are free. All honeymoon touches are subject to availability and hotel policy.",
+      "highlights": [
+        "Two nights in Ubud, two on Nusa Penida and two at Uluwatu",
+        "Flower welcome and bed decoration on arrival in Ubud",
+        "Tegalalang rice terraces with a swing over the valley",
+        "Tirta Empul, a temple built around a holy spring",
+        "Fast boat to Nusa Penida and a private tour of the west coast",
+        "Kelingking Beach, Angel's Billabong, Broken Beach and Crystal Bay",
+        "A couples Balinese spa session in Ubud",
+        "Uluwatu Temple on its sea cliff at sunset, followed by a candlelight dinner"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bali | Welcome to Ubud",
+          "description": "Arrive at Ngurah Rai International Airport, where you are met and driven in a private car to Ubud, around an hour and a half depending on traffic.\nCheck in, where a flower welcome and bed decoration are arranged, subject to availability.\nThe evening is free to rest and stroll into Ubud town.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 2,
+          "title": "Tirta Empul | Tegalalang | Jungle Swing",
+          "description": "After a late breakfast, your private guide takes you to Tirta Empul, a Hindu temple built around a holy spring.\nContinue to the Tegalalang rice terraces for the view over the green slopes.\nEnjoy a swing over the valley before returning to Ubud.\nIn the evening, enjoy a couples Balinese spa session.\nOvernight stay in Ubud."
+        },
+        {
+          "day": 3,
+          "title": "Fast Boat to Nusa Penida",
+          "description": "After a relaxed breakfast, check out and drive to the harbour in a private car.\nTake the fast boat to Nusa Penida, a crossing of around 45 minutes to an hour depending on conditions.\nYou are met on the island and taken to your hotel.\nThe afternoon and evening are free to rest and enjoy the sea views.\nOvernight stay on Nusa Penida."
+        },
+        {
+          "day": 4,
+          "title": "Nusa Penida West Coast",
+          "description": "After a late breakfast, tour the west of the island with a private car and driver.\nVisit Kelingking Beach, Angel's Billabong, Broken Beach and Crystal Bay.\nTake your time at each viewpoint, as the paths involve steps and uneven ground.\nWatch the sunset before returning to your hotel.\nOvernight stay on Nusa Penida."
+        },
+        {
+          "day": 5,
+          "title": "Back to Bali | Uluwatu",
+          "description": "After a slow breakfast, check out and take the fast boat back to Bali.\nDrive south to the Bukit peninsula and check in at your hotel in Uluwatu.\nThe afternoon and evening are free to enjoy the clifftop setting.\nOvernight stay in Uluwatu."
+        },
+        {
+          "day": 6,
+          "title": "Uluwatu Temple | Kecak Dance | Candlelight Dinner",
+          "description": "Enjoy a free morning to relax or visit a beach on the peninsula.\nIn the late afternoon, visit Uluwatu Temple, set on a cliff above the Indian Ocean.\nWatch a Kecak fire dance performance as the sun goes down.\nEnjoy a candlelight dinner in the evening.\nOvernight stay in Uluwatu."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Bali",
+          "description": "Enjoy breakfast and check out of the hotel.\nYour private car takes you to Ngurah Rai International Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "6 nights stay on twin sharing: 2 nights in a villa or resort in Ubud, 2 nights on Nusa Penida and 2 nights in Uluwatu, subject to availability",
+        "Daily breakfast",
+        "Flower welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner for two",
+        "One couples Balinese spa session",
+        "Swing experience over the valley near Tegalalang",
+        "Fast boat tickets to Nusa Penida and back to Bali, on a shared boat",
+        "Private car and driver for the Nusa Penida west coast tour",
+        "Kecak fire dance performance ticket at Uluwatu",
+        "Private airport and inter-city transfers",
+        "Private car and guide for sightseeing on Bali as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Lunches and dinners other than the candlelight dinner",
+        "Personal expenses such as laundry, tips and porterage",
+        "Optional activities such as snorkelling or diving",
+        "Bali tourism levy or local taxes payable where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Please share your marriage certificate or wedding date at the time of booking so the hotel can arrange the welcome",
+        "Honeymoon touches such as flowers and bed decoration are subject to availability and hotel policy",
+        "Rates are indicative and are confirmed at the time of booking",
+        "The order of the itinerary may change with weather, sea or operational conditions without reducing the sights covered",
+        "Fast boat crossings depend on sea conditions and can be rescheduled or cancelled for safety",
+        "The Nusa Penida viewpoints involve steps and uneven paths, so wear sturdy footwear",
+        "Cover shoulders and knees at temples; a sarong may be required",
+        "Cancellation and refund are as per our Terms & Conditions"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Marriage certificate or wedding invitation copy",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card, and some cash for Nusa Penida",
+        "Power adapter (Type C or F, 230V)",
+        "Swimwear, sunscreen and sunglasses",
+        "Sturdy walking shoes or sandals with grip",
+        "Motion sickness tablets if you are prone to sea sickness"
+      ],
+      "pickup": "Ngurah Rai International Airport (DPS), Bali",
+      "drop_point": "Ngurah Rai International Airport (DPS), Bali",
+      "photo": "kelingking-beach-nusa-penida",
+      "gallery": [
+        "bali-swing-ubud",
+        "tirta-empul-temple",
+        "uluwatu-temple",
+        "tegalalang-rice-terraces"
+      ],
+      "price": 66500,
+      "original_price": 71800
     }
   ]
 }

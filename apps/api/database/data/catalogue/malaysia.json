@@ -84,7 +84,8 @@
       "photo": "langkawi-sky-bridge",
       "packages": [
         "memorable-malaysia-honeymoon-special",
-        "malaysia-langkawi-island-escape-group-trip"
+        "malaysia-langkawi-island-escape-group-trip",
+        "malaysia-langkawi-kuala-lumpur-honeymoon"
       ]
     },
     {
@@ -127,7 +128,8 @@
       "description": "A Langkawi sunset cruise, island hopping and a night-time Kuala Lumpur tour, planned for newlyweds and couples.",
       "photo": "pantai-cenang",
       "packages": [
-        "memorable-malaysia-honeymoon-special"
+        "memorable-malaysia-honeymoon-special",
+        "malaysia-langkawi-kuala-lumpur-honeymoon"
       ]
     },
     {
@@ -706,6 +708,117 @@
         "every_weeks": 1,
         "capacity": 22
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "malaysia-langkawi-kuala-lumpur-honeymoon",
+      "title": "Malaysia Honeymoon: Langkawi Beaches and Kuala Lumpur Lights",
+      "nights": 6,
+      "summary": "A private six-night honeymoon with four unhurried nights on Langkawi and two in Kuala Lumpur, with a candlelight dinner, a sunset cruise, a couples spa session and a cable car ride to the Sky Bridge.",
+      "overview": "Begin your married life on Langkawi, an island of quiet beaches, rainforest and limestone hills. Four nights here are paced for rest: a flower welcome on arrival, a private ride up the cable car to the Sky Bridge, a boat day to the Lake of the Pregnant Maiden, a couples spa session and a sunset cruise, with plenty of free time on the sand between.\n\nYou then fly to Kuala Lumpur for two nights of city lights. Watch the Petronas Twin Towers glow after dark, step inside Batu Caves and ride the cable car up to Genting Highlands, where the air is cool and the clouds drift past below you.\n\nEvery transfer and sightseeing day is by private car, with late starts and no rushed mornings. The Langkawi to Kuala Lumpur flight is not included, so you can pick the timing that suits you.",
+      "highlights": [
+        "Flower welcome and bed decoration on arrival, subject to availability",
+        "Cable car ride and the curved Sky Bridge high above Langkawi's rainforest",
+        "Candlelight dinner for two on the island",
+        "Island hopping to the Lake of the Pregnant Maiden on Pulau Dayang Bunting",
+        "Couples spa session and a sunset cruise on a free-paced day",
+        "Petronas Twin Towers and the Kuala Lumpur skyline lit up at night",
+        "Private day trip to Batu Caves and the cable car up to Genting Highlands"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Langkawi | Sunset at Pantai Cenang",
+          "description": "Arrive at Langkawi airport and meet your private driver for the transfer to your resort.\nCheck in to a sea-view or garden-view room, with a flower welcome or bed decoration subject to availability.\nRest and settle in, then stroll along Pantai Cenang as the sun goes down.\nDinner is at leisure, with plenty of beachfront places to choose from.\nOvernight stay in Langkawi."
+        },
+        {
+          "day": 2,
+          "title": "Cable Car and Sky Bridge | Candlelight Dinner",
+          "description": "After a relaxed breakfast, your private car takes you to the Oriental Village for the cable car.\nRide up Gunung Mat Cincang and walk the curved Sky Bridge for wide views over the rainforest and the Andaman Sea.\nReturn to the resort for a lazy afternoon by the pool or on the beach.\nThis evening, enjoy a candlelight dinner for two, subject to availability.\nOvernight stay in Langkawi."
+        },
+        {
+          "day": 3,
+          "title": "Island Hopping | Lake of the Pregnant Maiden",
+          "description": "Start late and head to the jetty for a half-day island hopping trip.\nVisit Pulau Dayang Bunting and its freshwater Lake of the Pregnant Maiden, where you can swim or take a quiet walk.\nStop at Beras Basah Island for a beach break and clear water.\nReturn to the hotel by afternoon, with the evening free for a sunset walk.\nOvernight stay in Langkawi."
+        },
+        {
+          "day": 4,
+          "title": "Spa Day at Leisure | Sunset Cruise",
+          "description": "Today has no fixed sightseeing, so sleep in and enjoy breakfast at your own pace.\nBook into a couples spa session at the resort, subject to availability.\nSpend the afternoon on the beach, by the pool or browsing Langkawi's duty-free shops.\nIn the evening, board a sunset cruise and watch the sky turn gold over the water.\nOvernight stay in Langkawi."
+        },
+        {
+          "day": 5,
+          "title": "Fly to Kuala Lumpur | Petronas Towers by Night",
+          "description": "After breakfast, your private driver takes you to Langkawi airport for your flight to Kuala Lumpur (flight not included).\nOn arrival, a private transfer takes you to your city hotel.\nRest in the afternoon, then go out for a short city tour as evening falls.\nSee the Petronas Twin Towers lit up and walk through KLCC Park for photographs.\nOvernight stay in Kuala Lumpur."
+        },
+        {
+          "day": 6,
+          "title": "Batu Caves and Genting Highlands",
+          "description": "Leave after a relaxed breakfast with your private car and driver.\nStop at Batu Caves to see the golden statue and climb the rainbow-coloured steps to the cave temple.\nContinue up to Genting Highlands and take the cable car through the clouds.\nWalk in the cool mountain air and explore the hill resort at your own pace.\nReturn to Kuala Lumpur in the evening.\nOvernight stay in Kuala Lumpur."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Kuala Lumpur",
+          "description": "Enjoy a last breakfast at the hotel and check out around 12 noon.\nYour private driver takes you to Kuala Lumpur airport for your onward flight home.\nYou leave with your honeymoon memories."
+        }
+      ],
+      "inclusions": [
+        "Hotel or resort stay on twin sharing for 4 nights in Langkawi and 2 nights in Kuala Lumpur, in rooms suited to couples with a sea-view room in Langkawi, subject to availability",
+        "Daily breakfast at the hotel",
+        "Flower welcome or bed decoration on arrival, subject to availability",
+        "One candlelight dinner for two in Langkawi, subject to availability",
+        "One couples spa session in Langkawi, subject to availability",
+        "Sunset cruise in Langkawi as per itinerary",
+        "Private airport and hotel transfers in Langkawi and Kuala Lumpur",
+        "Private car for sightseeing as per itinerary",
+        "Langkawi cable car and Sky Bridge ride and half-day island hopping tour as per itinerary",
+        "Genting Highlands cable car as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare and the Langkawi to Kuala Lumpur flight",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals other than daily breakfast and the candlelight dinner",
+        "Optional activities not listed in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not mentioned under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel",
+        "Please share your marriage certificate or wedding date at the time of booking so the hotel can arrange your welcome",
+        "Honeymoon touches such as the flower welcome, candlelight dinner and spa session are subject to availability and hotel policy",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon",
+        "Rates are indicative and are confirmed at booking",
+        "The order of sightseeing may change with weather or operational conditions, without reducing the sights covered",
+        "Island hopping and cruises depend on sea conditions and may be rescheduled or replaced by another activity",
+        "Cancellation and refund as per our Terms & Conditions"
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Marriage certificate or wedding invitation",
+        "Forex or international card",
+        "Type G (UK-style three-pin) power adapter",
+        "Swimwear, sunscreen and sunglasses",
+        "Light jacket for Genting Highlands",
+        "Modest clothing for Batu Caves"
+      ],
+      "pickup": "Langkawi International Airport",
+      "drop_point": "Kuala Lumpur International Airport",
+      "photo": "langkawi-sky-bridge",
+      "gallery": [
+        "pantai-cenang",
+        "dayang-bunting-lake",
+        "petronas-twin-towers",
+        "genting-highlands"
+      ],
+      "price": 58500,
+      "original_price": 63200
     }
   ]
 }

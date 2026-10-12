@@ -88,7 +88,9 @@
         "phuket-buy-1-get-1-free",
         "phuket-special-offer",
         "simply-krabi-and-phuket",
-        "thailand-phuket-krabi-group-trip"
+        "thailand-phuket-krabi-group-trip",
+        "thailand-phuket-krabi-honeymoon",
+        "thailand-bangkok-phuket-honeymoon"
       ]
     },
     {
@@ -133,7 +135,9 @@
       "packages": [
         "simply-krabi-and-phuket",
         "phuket-buy-1-get-1-free",
-        "phuket-special-offer"
+        "phuket-special-offer",
+        "thailand-phuket-krabi-honeymoon",
+        "thailand-bangkok-phuket-honeymoon"
       ]
     },
     {
@@ -779,6 +783,222 @@
         "every_weeks": 1,
         "capacity": 22
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "thailand-phuket-krabi-honeymoon",
+      "title": "Phuket and Krabi Honeymoon: Island Days, Longtail Boats and Candlelit Beaches",
+      "nights": 5,
+      "summary": "Five unhurried nights for two on Thailand's Andaman coast, with Phuket's old town, a Phi Phi Islands boat day, a private longtail trip to Railay Beach, a couples spa session and a candlelight dinner.",
+      "overview": "This private honeymoon pairs the two best-loved beach destinations on Thailand's Andaman coast: three nights in Phuket and two in Krabi. You travel by private car throughout, start most mornings late, and keep every afternoon and evening for each other.\n\nPhuket brings the Sino-Portuguese shophouses of its old town, the Big Buddha and a full boat day among the cliffs and lagoons of the Phi Phi Islands. Krabi is quieter, with limestone headlands, clear water and a private longtail boat trip to Railay Beach that ends with the light turning gold over the sea.\n\nExpect a flower welcome or bed decoration on arrival, a couples spa session and a candlelight dinner by the sea, all subject to availability. Tell us your wedding date at booking and we will pass it to the hotels.",
+      "highlights": [
+        "Private car transfers and sightseeing, with unhurried mornings",
+        "Phuket Old Town, Wat Chalong and the Big Buddha",
+        "Speedboat day among the Phi Phi Islands, with lunch",
+        "Private longtail boat trip to Railay Beach in Krabi",
+        "Couples spa session, subject to availability",
+        "Candlelight dinner by the sea",
+        "Flower or cake welcome and bed decoration on arrival"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Phuket | Welcome and Evening Together",
+          "description": "Arrive at Phuket Airport, where your private car is waiting.\nTransfer to your hotel, a sea-view room where available, and check in.\nA flower or cake welcome and bed decoration are arranged, subject to availability.\nThe rest of the day is yours to unwind, stroll on the beach or enjoy a quiet dinner.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 2,
+          "title": "Phuket Old Town | Wat Chalong | Big Buddha",
+          "description": "Enjoy a relaxed breakfast, with a late start at around 10 am.\nYour private car takes you to Phuket Old Town to wander its Sino-Portuguese shophouses and cafes.\nVisit Wat Chalong, one of the island's best-known temples, then continue to the Big Buddha for views over the island.\nReturn to the hotel in the afternoon and spend the evening at leisure.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 3,
+          "title": "Phi Phi Islands by Speedboat",
+          "description": "After breakfast, transfer to the pier and board a speedboat to the Phi Phi Islands.\nSee the cliffs and lagoons, with swimming and snorkelling stops, subject to sea conditions.\nLunch is served during the tour.\nReturn to Phuket by late afternoon, with a free evening to rest.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 4,
+          "title": "Phuket to Krabi | Couples Spa",
+          "description": "After a leisurely breakfast, check out and travel by private car to Krabi, roughly three hours by road.\nCheck in at your hotel in the Ao Nang area.\nIn the afternoon, enjoy a couples spa session, subject to availability.\nThe evening is free for a walk along Ao Nang beach.\nOvernight stay in Krabi."
+        },
+        {
+          "day": 5,
+          "title": "Private Longtail Boat to Railay Beach | Candlelight Dinner",
+          "description": "After breakfast, board a private longtail boat from the Ao Nang coast.\nVisit Railay Beach and nearby shores at an easy pace, with time to swim and relax.\nReturn to the hotel in the afternoon to rest.\nIn the evening, enjoy a candlelight dinner by the sea, subject to availability.\nOvernight stay in Krabi."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Krabi",
+          "description": "Enjoy a relaxed breakfast and a last walk on the beach.\nCheck out of the hotel.\nYour private car takes you to Krabi Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "3 nights hotel accommodation in Phuket on twin sharing, with a sea-view room where available",
+        "2 nights hotel accommodation in Krabi on twin sharing, with a sea-view room where available",
+        "Daily breakfast at the hotel",
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner by the sea, subject to availability",
+        "One couples spa session, subject to availability",
+        "Private longtail boat trip to Railay Beach",
+        "Phi Phi Islands speedboat tour with lunch",
+        "Private airport transfers and private car from Phuket to Krabi",
+        "Private-car sightseeing in Phuket as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional tours and activities",
+        "Local tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather or operational conditions, without reducing the sights covered.",
+        "Rates are indicative and confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The Andaman coast has a rainy season roughly from May to October; boat trips depend on sea conditions and may be rescheduled for safety.",
+        "Dress modestly at temples such as Wat Chalong, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a light cover-up",
+        "Modest clothing for temple visits"
+      ],
+      "pickup": "Phuket Airport",
+      "drop_point": "Krabi Airport",
+      "photo": "railay-beach-krabi",
+      "gallery": [
+        "phi-phi-islands",
+        "big-buddha-phuket",
+        "phuket-old-town"
+      ],
+      "price": 48500,
+      "original_price": 52400
+    },
+    {
+      "slug": "thailand-bangkok-phuket-honeymoon",
+      "title": "Bangkok and Phuket Honeymoon: Palaces, River Dinner Cruise and Island Beaches",
+      "nights": 6,
+      "summary": "Six relaxed nights for two, pairing Bangkok's Grand Palace and a Chao Phraya dinner cruise with four nights in Phuket, including a Phi Phi Islands boat day, a couples spa session and a candlelight dinner.",
+      "overview": "This private honeymoon begins in the capital and ends on the beach. Two nights in Bangkok give you the Grand Palace and Wat Pho with a private guide, followed by an evening dinner cruise on the Chao Phraya river, then you fly south to Phuket for four slow nights by the sea.\n\nIn Phuket you spend a day among the cliffs and lagoons of the Phi Phi Islands, explore the old town, the Big Buddha and Wat Chalong by private car, and keep a full day free for the beach, the pool and each other. Mornings start late and every day has just one main outing.\n\nYour stay includes a flower or cake welcome and bed decoration, a couples spa session and a candlelight dinner, all subject to availability. Please share your wedding date at booking so the hotels can arrange the welcome.",
+      "highlights": [
+        "Grand Palace and Wat Pho with a private guide",
+        "Evening dinner cruise on the Chao Phraya river",
+        "Four nights by the sea in Phuket, with a sea-view room where available",
+        "Speedboat day among the Phi Phi Islands, with lunch",
+        "Phuket Old Town, Wat Chalong and the Big Buddha by private car",
+        "Couples spa session and a candlelight dinner",
+        "Flower or cake welcome and bed decoration on arrival"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bangkok | Welcome",
+          "description": "Arrive in Bangkok, where your private car is waiting.\nTransfer to your hotel and check in.\nA flower or cake welcome and bed decoration are arranged, subject to availability.\nSpend the evening at leisure, with dinner at a restaurant of your choice.\nOvernight stay in Bangkok."
+        },
+        {
+          "day": 2,
+          "title": "Grand Palace | Wat Pho | Chao Phraya Dinner Cruise",
+          "description": "After a relaxed breakfast, meet your private guide at around 10 am.\nVisit the Grand Palace, the former royal residence, and Wat Pho, home of the huge reclining Buddha.\nReturn to the hotel to rest through the afternoon.\nIn the evening, enjoy a dinner cruise on the Chao Phraya river, subject to availability.\nOvernight stay in Bangkok."
+        },
+        {
+          "day": 3,
+          "title": "Fly to Phuket | Evening by the Sea",
+          "description": "After breakfast, check out and transfer privately to the airport for your flight to Phuket.\nOn arrival, your private car takes you to your beach hotel, where you check in.\nThe afternoon and evening are free for the beach and a quiet dinner.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 4,
+          "title": "Phi Phi Islands by Speedboat",
+          "description": "After breakfast, transfer to the pier and board a speedboat to the Phi Phi Islands.\nSee the cliffs and lagoons, with swimming and snorkelling stops, subject to sea conditions.\nLunch is served during the tour.\nReturn to Phuket by late afternoon, with a free evening.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 5,
+          "title": "Phuket Old Town | Big Buddha | Couples Spa",
+          "description": "Enjoy a leisurely breakfast, with a late start at around 10 am.\nYour private car takes you to Phuket Old Town, with its Sino-Portuguese shophouses, then to Wat Chalong and the Big Buddha.\nReturn to the hotel for a couples spa session, subject to availability.\nThe evening is free.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 6,
+          "title": "Free Day by the Sea | Candlelight Dinner",
+          "description": "Today has no fixed plans, so sleep in and spend the day on the beach or by the pool.\nOptional island or sunset activities can be added on request.\nIn the evening, enjoy a candlelight dinner by the sea, subject to availability.\nOvernight stay in Phuket."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Phuket",
+          "description": "Enjoy a relaxed breakfast and a last walk on the beach.\nCheck out of the hotel.\nYour private car takes you to Phuket Airport for your flight home."
+        }
+      ],
+      "inclusions": [
+        "2 nights hotel accommodation in Bangkok on twin sharing",
+        "4 nights hotel accommodation in Phuket on twin sharing, with a sea-view room where available",
+        "Daily breakfast at the hotel",
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner by the sea in Phuket, subject to availability",
+        "Chao Phraya river dinner cruise in Bangkok, subject to availability",
+        "One couples spa session in Phuket, subject to availability",
+        "Private guide for the Grand Palace and Wat Pho",
+        "Phi Phi Islands speedboat tour with lunch",
+        "Private airport and inter-city transfers and private-car sightseeing as per itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare, including the Bangkok to Phuket flight",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional tours and activities",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "The Bangkok to Phuket flight is not included; we can arrange it on request, and domestic baggage limits are usually lower than on international flights.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change due to weather or operational conditions, without reducing the sights covered.",
+        "Rates are indicative and confirmed at the time of booking.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The Grand Palace and temples require covered shoulders and knees; guests who are not dressed appropriately may be refused entry.",
+        "Phuket's rainy season runs roughly from May to October; boat trips depend on sea conditions."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Return flight tickets",
+        "Marriage certificate or wedding invitation, for the hotel welcome",
+        "Copy of travel insurance",
+        "Forex or an international card",
+        "Universal power adapter (Thailand uses 220V)",
+        "Modest clothing covering shoulders and knees",
+        "Sunscreen, hat and sunglasses",
+        "Swimwear and a light cover-up"
+      ],
+      "pickup": "Bangkok Airport",
+      "drop_point": "Phuket Airport",
+      "photo": "grand-palace-bangkok",
+      "gallery": [
+        "phi-phi-islands",
+        "golden-buddha-bangkok",
+        "big-buddha-phuket"
+      ],
+      "price": 57900,
+      "original_price": 62500
     }
   ]
 }

@@ -73,7 +73,8 @@
       "packages": [
         "simply-almaty",
         "kazakhstan-van-tours",
-        "kazakhstan-almaty-big-almaty-lake-weekend-escape"
+        "kazakhstan-almaty-big-almaty-lake-weekend-escape",
+        "kazakhstan-honeymoon"
       ]
     },
     {
@@ -128,7 +129,8 @@
       "packages": [
         "simply-almaty",
         "autumn-kazakhstan",
-        "winter-kazakhstan"
+        "winter-kazakhstan",
+        "kazakhstan-honeymoon"
       ]
     },
     {
@@ -713,6 +715,112 @@
         "every_weeks": 1,
         "capacity": 20
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "kazakhstan-honeymoon",
+      "title": "Kazakhstan Honeymoon: Mountain Lakes, Canyons and Cable Car Evenings",
+      "nights": 5,
+      "summary": "A private 5-night honeymoon in Almaty with Big Almaty Lake, a day at Charyn Canyon, Shymbulak and a Kok Tobe cable car evening, with a candlelight dinner and late starts.",
+      "overview": "Almaty sits at the foot of the Tian Shan mountains, so cool air, snow-capped peaks and lake views are never far from your hotel. This private trip for two keeps a gentle pace, with late starts, one headline experience a day and free evenings to spend together.\n\nYou meet Big Almaty Lake in the morning light, ride the cable car up Kok Tobe Hill as the city lights come on and go up to Shymbulak via Medeu for mountain views. A full day takes you to the Valley of Castles in Charyn Canyon, with a private car and guide throughout so you can stop where you like.\n\nWe will arrange a welcome at your hotel, a candlelight dinner and a couples spa session, all subject to availability. Share your wedding date at booking and we will pass it on to the hotel.",
+      "highlights": [
+        "Private car and guide for every sightseeing day, with unhurried starts",
+        "Big Almaty Lake among the peaks of the Trans-Ili Alatau",
+        "Sunset cable car ride up Kok Tobe Hill with views over the city lights",
+        "Day trip to the Valley of Castles in Charyn Canyon",
+        "Medeu and the Shymbulak cable car for mountain views",
+        "One candlelight dinner and a couples spa session, subject to availability",
+        "Flower or cake welcome and bed decoration on arrival, subject to availability"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Almaty | Welcome",
+          "description": "Arrive at Almaty airport, where your private driver meets you.\nTransfer to your hotel and check in, with a flower or cake welcome and bed decoration, subject to availability.\nThe rest of the day is free to rest and enjoy the mountain air.\nOvernight stay in Almaty."
+        },
+        {
+          "day": 2,
+          "title": "Almaty City Tour | Kok Tobe at Sunset",
+          "description": "After a leisurely breakfast, set out with your private guide and car at a relaxed hour.\nVisit Panfilov Park and Zenkov Cathedral, then browse the stalls of Green Bazaar for spices, dried fruits and local sweets.\nTake a break at the hotel in the afternoon.\nIn the evening, ride the cable car up Kok Tobe Hill for sunset views over Almaty and the mountains.\nOvernight stay in Almaty."
+        },
+        {
+          "day": 3,
+          "title": "Big Almaty Lake | Couples Spa",
+          "description": "After breakfast, drive up to Big Almaty Lake, set among the peaks of the Trans-Ili Alatau.\nSpend time by the water for photographs and a short walk, as conditions allow.\nReturn to Almaty for a free afternoon.\nEnjoy a couples spa session in the evening, subject to availability.\nOvernight stay in Almaty."
+        },
+        {
+          "day": 4,
+          "title": "Charyn Canyon | Valley of Castles",
+          "description": "After an early breakfast, set out in your private car on the scenic drive east of Almaty.\nWalk through the Valley of Castles in Charyn Canyon and stop for photographs at the viewpoints.\nHave a relaxed lunch break on the way, payable locally.\nReturn to Almaty by evening and rest at the hotel.\nOvernight stay in Almaty."
+        },
+        {
+          "day": 5,
+          "title": "Medeu | Shymbulak | Candlelight Dinner",
+          "description": "After a late breakfast, drive into the mountains to Medeu, the high-altitude skating rink.\nContinue to Shymbulak and ride the cable car up for panoramic views.\nSpend free time at the resort for a warm drink and photographs before returning to the city.\nEnjoy a candlelight dinner in the evening, subject to availability.\nOvernight stay in Almaty."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Almaty",
+          "description": "After breakfast, check out of the hotel.\nEnjoy some free time for last-minute shopping, depending on your flight.\nTransfer to Almaty airport by private car for your flight back to India."
+        }
+      ],
+      "inclusions": [
+        "Stay for 5 nights on twin sharing in a hotel suited to couples, with a mountain or city-view room subject to availability",
+        "Daily breakfast at the hotel",
+        "One candlelight dinner, subject to availability",
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "One couples spa session, subject to availability",
+        "Private airport arrival and departure transfers",
+        "Private car and guide for sightseeing as per the itinerary",
+        "Kok Tobe and Shymbulak cable car rides as per the itinerary",
+        "Day excursions to Big Almaty Lake and Charyn Canyon as per the itinerary",
+        "Assistance from our travel experts before and during your trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing, where applicable",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Optional activities and entry fees not listed in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at the time of booking so the hotel can arrange your welcome.",
+        "Honeymoon touches such as the welcome, decoration, spa session and candlelight dinner are subject to availability and hotel policy.",
+        "Rates are indicative and are confirmed at the time of booking.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "This is a private trip for the couple, with no fixed departure dates; send us your preferred dates and we will confirm availability.",
+        "The Charyn Canyon day involves a long drive and some walking on uneven ground.",
+        "Cable cars and mountain roads depend on the weather, and it is much colder at Shymbulak and Big Almaty Lake than in the city, so carry warm layers.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Passport and visa copies, where applicable",
+        "Marriage certificate or a copy of your wedding invitation",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or an international card",
+        "Power adapter for Type C or F sockets (230 V)",
+        "Warm jacket and layers for the mountains",
+        "Comfortable walking shoes with good grip",
+        "Sunglasses and sunscreen"
+      ],
+      "pickup": "Almaty International Airport",
+      "drop_point": "Almaty International Airport",
+      "photo": "big-almaty-lake",
+      "gallery": [
+        "charyn-canyon",
+        "kok-tobe",
+        "shymbulak-resort",
+        "medeu-rink"
+      ],
+      "price": 79000,
+      "original_price": 85000
     }
   ]
 }

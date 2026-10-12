@@ -1,16 +1,56 @@
 {
   "destination": "tanzania",
   "photos": [
-    {"slot": "serengeti-plains", "query": "Serengeti National Park Tanzania savannah", "caption": "The endless plains of the Serengeti"},
-    {"slot": "ngorongoro-crater", "query": "Ngorongoro Crater Tanzania wildlife", "caption": "Ngorongoro Crater"},
-    {"slot": "tarangire-elephants", "query": "Tarangire National Park elephants baobab Tanzania", "caption": "Elephants and baobabs in Tarangire"},
-    {"slot": "lake-manyara", "query": "Lake Manyara National Park Tanzania", "caption": "Lake Manyara National Park"},
-    {"slot": "zanzibar-beach", "query": "Nungwi beach Zanzibar Tanzania", "caption": "A white-sand beach in Zanzibar"},
-    {"slot": "stone-town", "query": "Stone Town Zanzibar old town", "caption": "Stone Town, Zanzibar"},
-    {"slot": "masai-mara", "query": "Masai Mara Kenya wildebeest safari", "caption": "Game viewing in the Masai Mara"},
-    {"slot": "amboseli-kilimanjaro", "query": "Amboseli National Park elephants Mount Kilimanjaro Kenya", "caption": "Amboseli with Mount Kilimanjaro behind"},
-    {"slot": "lake-naivasha", "query": "Lake Naivasha Kenya hippos", "caption": "Lake Naivasha"},
-    {"slot": "maasai-warriors", "query": "Maasai people Kenya Tanzania traditional", "caption": "Maasai community"}
+    {
+      "slot": "serengeti-plains",
+      "query": "Serengeti National Park Tanzania savannah",
+      "caption": "The endless plains of the Serengeti"
+    },
+    {
+      "slot": "ngorongoro-crater",
+      "query": "Ngorongoro Crater Tanzania wildlife",
+      "caption": "Ngorongoro Crater"
+    },
+    {
+      "slot": "tarangire-elephants",
+      "query": "Tarangire National Park elephants baobab Tanzania",
+      "caption": "Elephants and baobabs in Tarangire"
+    },
+    {
+      "slot": "lake-manyara",
+      "query": "Lake Manyara National Park Tanzania",
+      "caption": "Lake Manyara National Park"
+    },
+    {
+      "slot": "zanzibar-beach",
+      "query": "Nungwi beach Zanzibar Tanzania",
+      "caption": "A white-sand beach in Zanzibar"
+    },
+    {
+      "slot": "stone-town",
+      "query": "Stone Town Zanzibar old town",
+      "caption": "Stone Town, Zanzibar"
+    },
+    {
+      "slot": "masai-mara",
+      "query": "Masai Mara Kenya wildebeest safari",
+      "caption": "Game viewing in the Masai Mara"
+    },
+    {
+      "slot": "amboseli-kilimanjaro",
+      "query": "Amboseli National Park elephants Mount Kilimanjaro Kenya",
+      "caption": "Amboseli with Mount Kilimanjaro behind"
+    },
+    {
+      "slot": "lake-naivasha",
+      "query": "Lake Naivasha Kenya hippos",
+      "caption": "Lake Naivasha"
+    },
+    {
+      "slot": "maasai-warriors",
+      "query": "Maasai people Kenya Tanzania traditional",
+      "caption": "Maasai community"
+    }
   ],
   "hero": "serengeti-plains",
   "categories": [
@@ -20,7 +60,11 @@
       "name": "Tanzania Safari Classics",
       "description": "Game-drive journeys through Tanzania's northern parks, from Lake Manyara and Tarangire to the Serengeti and the Ngorongoro Crater.",
       "photo": "serengeti-plains",
-      "packages": ["untamed-tanzania", "tanzania-northern-circuit-safari-group-trip", "the-great-african-safari"]
+      "packages": [
+        "untamed-tanzania",
+        "tanzania-northern-circuit-safari-group-trip",
+        "the-great-african-safari"
+      ]
     },
     {
       "menu": "destinations",
@@ -28,7 +72,10 @@
       "name": "Kenya and Tanzania Combinations",
       "description": "Cross the border between two safari countries, taking in the Masai Mara, the Serengeti and the Ngorongoro Crater in one holiday.",
       "photo": "masai-mara",
-      "packages": ["the-great-african-safari", "delights-of-kenya-and-tanzania-summer"]
+      "packages": [
+        "the-great-african-safari",
+        "delights-of-kenya-and-tanzania-summer"
+      ]
     },
     {
       "menu": "destinations",
@@ -36,7 +83,10 @@
       "name": "Kenya Safari Escapes",
       "description": "Kenya-only safaris built around its famous reserves, with lodge stays and game drives for first-time safari travellers.",
       "photo": "amboseli-kilimanjaro",
-      "packages": ["elegant-escapes-in-kenya", "elegant-escapes-in-kenya-durga-puja-navratri-special"]
+      "packages": [
+        "elegant-escapes-in-kenya",
+        "elegant-escapes-in-kenya-durga-puja-navratri-special"
+      ]
     },
     {
       "menu": "destinations",
@@ -44,7 +94,10 @@
       "name": "Safari and Zanzibar Beach",
       "description": "Finish a Tanzanian safari with time on the Indian Ocean coast, combining game drives with Stone Town and Zanzibar's beaches.",
       "photo": "zanzibar-beach",
-      "packages": ["tanzania-safari-and-zanzibar-beach-group-trip"]
+      "packages": [
+        "tanzania-safari-and-zanzibar-beach-group-trip",
+        "tanzania-safari-zanzibar-honeymoon"
+      ]
     },
     {
       "menu": "destinations",
@@ -52,7 +105,10 @@
       "name": "Festival and Seasonal Specials",
       "description": "Safari holidays timed for the summer season and for the Durga Puja and Navratri festival period, when many families travel.",
       "photo": "maasai-warriors",
-      "packages": ["delights-of-kenya-and-tanzania-summer", "elegant-escapes-in-kenya-durga-puja-navratri-special"]
+      "packages": [
+        "delights-of-kenya-and-tanzania-summer",
+        "elegant-escapes-in-kenya-durga-puja-navratri-special"
+      ]
     },
     {
       "menu": "group-tours",
@@ -60,7 +116,10 @@
       "name": "Fixed Departure Group Trips",
       "description": "Scheduled Tanzania departures with a trip captain, fixed dates and a set price, so you can travel in good company without planning a thing.",
       "photo": "tarangire-elephants",
-      "packages": ["tanzania-northern-circuit-safari-group-trip", "tanzania-safari-and-zanzibar-beach-group-trip"]
+      "packages": [
+        "tanzania-northern-circuit-safari-group-trip",
+        "tanzania-safari-and-zanzibar-beach-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -68,7 +127,11 @@
       "name": "Romantic Escapes",
       "description": "Safari holidays for couples, with sunrise game drives, lodge evenings and the wide African landscape to share.",
       "photo": "amboseli-kilimanjaro",
-      "packages": ["untamed-tanzania", "elegant-escapes-in-kenya"]
+      "packages": [
+        "untamed-tanzania",
+        "elegant-escapes-in-kenya",
+        "tanzania-safari-zanzibar-honeymoon"
+      ]
     }
   ],
   "packages": [
@@ -121,8 +184,14 @@
       "pickup": "Arusha or Kilimanjaro International Airport",
       "drop_point": "Kilimanjaro International Airport",
       "photo": "serengeti-plains",
-      "gallery": ["lake-manyara", "ngorongoro-crater", "maasai-warriors"],
-      "price": {"from": 185000}
+      "gallery": [
+        "lake-manyara",
+        "ngorongoro-crater",
+        "maasai-warriors"
+      ],
+      "price": {
+        "from": 185000
+      }
     },
     {
       "slug": "the-great-african-safari",
@@ -176,8 +245,15 @@
       "pickup": "Jomo Kenyatta International Airport, Nairobi",
       "drop_point": "Kilimanjaro International Airport, Tanzania",
       "photo": "masai-mara",
-      "gallery": ["lake-naivasha", "serengeti-plains", "ngorongoro-crater", "maasai-warriors"],
-      "price": {"from": 280000}
+      "gallery": [
+        "lake-naivasha",
+        "serengeti-plains",
+        "ngorongoro-crater",
+        "maasai-warriors"
+      ],
+      "price": {
+        "from": 280000
+      }
     },
     {
       "slug": "delights-of-kenya-and-tanzania-summer",
@@ -230,7 +306,11 @@
       "pickup": "Jomo Kenyatta International Airport, Nairobi",
       "drop_point": "Jomo Kenyatta International Airport, Nairobi",
       "photo": "ngorongoro-crater",
-      "gallery": ["masai-mara", "serengeti-plains", "maasai-warriors"]
+      "gallery": [
+        "masai-mara",
+        "serengeti-plains",
+        "maasai-warriors"
+      ]
     },
     {
       "slug": "elegant-escapes-in-kenya-durga-puja-navratri-special",
@@ -282,7 +362,10 @@
       "pickup": "Jomo Kenyatta International Airport, Nairobi",
       "drop_point": "Jomo Kenyatta International Airport, Nairobi",
       "photo": "maasai-warriors",
-      "gallery": ["masai-mara", "amboseli-kilimanjaro"]
+      "gallery": [
+        "masai-mara",
+        "amboseli-kilimanjaro"
+      ]
     },
     {
       "slug": "elegant-escapes-in-kenya",
@@ -335,8 +418,14 @@
       "pickup": "Jomo Kenyatta International Airport, Nairobi",
       "drop_point": "Jomo Kenyatta International Airport, Nairobi",
       "photo": "amboseli-kilimanjaro",
-      "gallery": ["lake-naivasha", "masai-mara", "maasai-warriors"],
-      "price": {"from": 165000}
+      "gallery": [
+        "lake-naivasha",
+        "masai-mara",
+        "maasai-warriors"
+      ],
+      "price": {
+        "from": 165000
+      }
     }
   ],
   "group_trips": [
@@ -439,10 +528,19 @@
       "pickup": "Kilimanjaro International Airport",
       "drop_point": "Kilimanjaro International Airport",
       "photo": "tarangire-elephants",
-      "gallery": ["serengeti-plains", "ngorongoro-crater", "lake-manyara"],
+      "gallery": [
+        "serengeti-plains",
+        "ngorongoro-crater",
+        "lake-manyara"
+      ],
       "price": 210000,
       "original_price": 229000,
-      "departures": {"weekday": 6, "count": 5, "every_weeks": 4, "capacity": 16}
+      "departures": {
+        "weekday": 6,
+        "count": 5,
+        "every_weeks": 4,
+        "capacity": 16
+      }
     },
     {
       "slug": "tanzania-safari-and-zanzibar-beach-group-trip",
@@ -563,10 +661,149 @@
       "pickup": "Kilimanjaro International Airport",
       "drop_point": "Zanzibar Airport",
       "photo": "zanzibar-beach",
-      "gallery": ["stone-town", "serengeti-plains", "ngorongoro-crater", "tarangire-elephants"],
+      "gallery": [
+        "stone-town",
+        "serengeti-plains",
+        "ngorongoro-crater",
+        "tarangire-elephants"
+      ],
       "price": 315000,
       "original_price": 339000,
-      "departures": {"weekday": 5, "count": 4, "every_weeks": 4, "capacity": 16}
+      "departures": {
+        "weekday": 5,
+        "count": 4,
+        "every_weeks": 4,
+        "capacity": 16
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "tanzania-safari-zanzibar-honeymoon",
+      "title": "Tanzania Honeymoon: Serengeti Safari, Stone Town and Zanzibar Beach",
+      "nights": 9,
+      "summary": "A private nine-night honeymoon pairing a Serengeti and Ngorongoro Crater safari with three unhurried nights in Zanzibar, including a sunset dhow cruise.",
+      "overview": "Begin your married life with the wide skies of northern Tanzania. For six nights you travel by private safari vehicle with your own driver-guide, watching the Serengeti plains wake up at dawn, looking for lions and wildebeest, and descending into the Ngorongoro Crater, where so much wildlife shares one volcanic caldera. Days are paced for two: one headline drive, a long lodge lunch or a quiet afternoon, and evenings by the fire.\n\nThen you fly from Arusha to Zanzibar and swap the dust of the plains for the Indian Ocean. A private guide walks you through the lanes of Stone Town, a UNESCO World Heritage Site, and a spice tour shows you why the island is famous for its cloves and cinnamon.\n\nThe last evening belongs to the sea, with a sunset dhow cruise under a traditional sail. Honeymoon touches such as a welcome decoration and a candlelight dinner are arranged, subject to availability, so you can simply enjoy each other's company.",
+      "highlights": [
+        "Private safari vehicle and driver-guide for every game drive",
+        "A full day on the Serengeti plains, with lions, zebras, wildebeest and giraffes to look for",
+        "Half-day game drive inside the Ngorongoro Crater",
+        "Game drive in Lake Manyara National Park, known for its tree-climbing lions",
+        "Private guided walk through Stone Town, a UNESCO World Heritage Site, and a Zanzibar spice tour",
+        "Sunset dhow cruise on the Indian Ocean",
+        "Candlelight dinner and flower welcome, subject to availability",
+        "Three unhurried nights on a Zanzibar beach"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kilimanjaro | Private Transfer to Arusha",
+          "description": "Arrive at Kilimanjaro International Airport and complete visa and immigration formalities.\nMeet our representative and transfer privately to your hotel in Arusha.\nCheck in, where a welcome gesture is arranged subject to availability.\nSpend the evening at leisure after your journey.\nOvernight stay in Arusha."
+        },
+        {
+          "day": 2,
+          "title": "Arusha to Lake Manyara | Drive to Karatu",
+          "description": "After a relaxed breakfast, meet your driver-guide and set off in your private safari vehicle.\nEnjoy a game drive in Lake Manyara National Park, known for its tree-climbing lions and birdlife.\nContinue to your lodge in the Karatu highlands for a quiet evening.\nOvernight stay in Karatu."
+        },
+        {
+          "day": 3,
+          "title": "Karatu to the Serengeti",
+          "description": "After breakfast, drive through the Ngorongoro Conservation Area towards the Serengeti.\nWatch the landscape open onto the vast plains, with game viewing along the way.\nArrive at your lodge or camp in time to freshen up before dinner.\nOvernight stay in the Serengeti."
+        },
+        {
+          "day": 4,
+          "title": "A Full Day in the Serengeti",
+          "description": "Set out after breakfast for a day of game drives across the Serengeti plains, with a packed lunch in the park.\nLook for lions, zebras, wildebeest and giraffes with your private driver-guide.\nReturn to the lodge or camp for a candlelight dinner, subject to availability.\nOvernight stay in the Serengeti."
+        },
+        {
+          "day": 5,
+          "title": "Serengeti Morning Drive | Ngorongoro Highlands",
+          "description": "Enjoy a final, unhurried morning game drive in the Serengeti.\nAfter lunch, drive to the Ngorongoro highlands.\nCheck in to your lodge and watch the evening light from the crater rim or your room, as the setting allows.\nOvernight stay in the Ngorongoro area."
+        },
+        {
+          "day": 6,
+          "title": "Ngorongoro Crater | Return to Arusha",
+          "description": "Descend into the Ngorongoro Crater after breakfast for a half-day game drive.\nLook for lions, elephants, hippos, zebras and hyenas on the crater floor.\nAfter lunch, drive to Arusha and check in to your hotel.\nThe evening is free to rest and pack for the coast.\nOvernight stay in Arusha."
+        },
+        {
+          "day": 7,
+          "title": "Fly to Zanzibar | Beach Arrival",
+          "description": "After breakfast, transfer to the airport for your flight from Arusha to Zanzibar.\nOn arrival, a private transfer takes you to your beach hotel.\nCheck in, where a bed decoration or welcome is arranged subject to availability.\nSpend the afternoon and evening by the sea.\nOvernight stay in Zanzibar."
+        },
+        {
+          "day": 8,
+          "title": "Stone Town Walk | Spice Tour",
+          "description": "After a late breakfast, meet your private guide for a walk through Stone Town, a UNESCO World Heritage Site, with its narrow lanes and carved doors.\nContinue to a spice tour to see and smell the spices Zanzibar is known for.\nReturn to the hotel in the afternoon for a couples spa session, subject to availability.\nEnjoy a candlelight dinner in the evening.\nOvernight stay in Zanzibar."
+        },
+        {
+          "day": 9,
+          "title": "Free Day on the Beach | Sunset Dhow Cruise",
+          "description": "Spend the day as you please, swimming, relaxing or adding optional activities.\nIn the late afternoon, your private transfer takes you to board a traditional dhow.\nSail out on a sunset cruise as the sky changes colour over the Indian Ocean.\nReturn to your hotel for a relaxed evening.\nOvernight stay in Zanzibar."
+        },
+        {
+          "day": 10,
+          "title": "Departure from Zanzibar",
+          "description": "After breakfast, check out of the hotel.\nTransfer privately to Zanzibar airport for your flight home.\nDepart with memories of the plains and the sea."
+        }
+      ],
+      "inclusions": [
+        "Accommodation in a couples-friendly lodge, camp or hotel on twin sharing for 9 nights, with a sea-view room in Zanzibar subject to availability",
+        "Daily breakfast, plus lunch and dinner on safari days as per itinerary",
+        "One candlelight dinner in Zanzibar and one on safari, subject to availability",
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "Private airport and inter-park transfers in a private safari vehicle with a driver-guide",
+        "Economy flight from Arusha to Zanzibar, subject to airline baggage limits",
+        "Game drives in Lake Manyara, the Serengeti and the Ngorongoro Crater as per itinerary",
+        "Park and crater entry fees for the activities listed in the itinerary",
+        "Private guided Stone Town walk and spice tour as per itinerary",
+        "Sunset dhow cruise in Zanzibar",
+        "One couples spa session in Zanzibar, subject to availability",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare and any domestic flights not listed under inclusions",
+        "Tanzania visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and water sports in Zanzibar",
+        "Local taxes payable at hotels where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Rates are indicative and are confirmed at booking.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions, without reducing the sights covered.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "The Arusha to Zanzibar flight is on a smaller aircraft with a strict baggage allowance, so soft-sided bags are recommended.",
+        "Zanzibar is a predominantly Muslim destination; dress modestly in Stone Town and the villages, and keep swimwear for the beach.",
+        "Carry a yellow fever vaccination certificate if required for your route, and speak to your doctor about malaria precautions before travel.",
+        "Camouflage-pattern clothing is prohibited in Tanzania, and plastic carrier bags are restricted."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Marriage certificate or wedding invitation",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Type G (UK three-pin) power adapter",
+        "Neutral-coloured safari clothing, a warm layer for early mornings, a hat and sunscreen",
+        "Swimwear and modest clothing for Stone Town",
+        "Binoculars and insect repellent"
+      ],
+      "pickup": "Kilimanjaro International Airport",
+      "drop_point": "Zanzibar Airport",
+      "photo": "zanzibar-beach",
+      "gallery": [
+        "serengeti-plains",
+        "ngorongoro-crater",
+        "stone-town",
+        "lake-manyara"
+      ],
+      "price": 365000,
+      "original_price": 394000
     }
   ]
 }

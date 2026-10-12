@@ -73,7 +73,8 @@
       "packages": [
         "vietnam-buy-1-get-1-free",
         "vietnam-hanoi-halong-hoi-an-group-trip",
-        "vietnam-da-nang-hoi-an-weekend-escape"
+        "vietnam-da-nang-hoi-an-weekend-escape",
+        "vietnam-da-nang-hoi-an-phu-quoc-honeymoon"
       ]
     },
     {
@@ -143,7 +144,8 @@
       "packages": [
         "winter-phu-quoc-vin-resort-spa-5n",
         "phu-quoc-buy-1-get-1-free",
-        "wonders-of-phu-quoc-with-bangkok-winter"
+        "wonders-of-phu-quoc-with-bangkok-winter",
+        "vietnam-da-nang-hoi-an-phu-quoc-honeymoon"
       ]
     },
     {
@@ -805,6 +807,120 @@
         "every_weeks": 1,
         "capacity": 22
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "vietnam-da-nang-hoi-an-phu-quoc-honeymoon",
+      "title": "Vietnam Honeymoon: Hoi An Lanterns, Ba Na Hills and Phu Quoc Beaches",
+      "nights": 6,
+      "summary": "A private six-night honeymoon from lantern-lit Hoi An and the Golden Bridge at Ba Na Hills to three unhurried days of beach, spa and sunsets on Phu Quoc, with private transfers and a candlelight dinner.",
+      "overview": "Begin your married life in central Vietnam, where Hoi An's old merchant lanes glow with silk lanterns after dark. You have three nights here at an unhurried pace: a gentle walk through the Ancient Town with a private guide, a day among the clouds at Ba Na Hills and the Golden Bridge, and long, slow mornings in between.\n\nThen you fly south to Phu Quoc, Vietnam's island of white beaches and warm sea. Your three nights here are built around each other: a ride on the Hon Thom cable car over the water, a couples spa session, a candlelight dinner and an evening watching the sun go down over the Gulf of Thailand.\n\nEvery transfer and sightseeing day is private, so you set the pace. Honeymoon touches such as a welcome flower or cake arrangement are arranged with your hotels, subject to availability.",
+      "highlights": [
+        "Private evening walk through Hoi An Ancient Town as the lanterns come on",
+        "Ba Na Hills cable car and the Golden Bridge held up by giant stone hands",
+        "Marble Mountains and the Lady Buddha at Linh Ung Pagoda on the way to the airport",
+        "Hon Thom cable car ride over the sea, one of the longest of its kind",
+        "Couples spa session on Phu Quoc, subject to availability",
+        "One candlelight dinner, with a flower or cake welcome on arrival",
+        "Private car and private guide for all sightseeing and transfers",
+        "Free days on Phu Quoc's beaches with time for sunsets"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Da Nang | Drive to Hoi An",
+          "description": "Arrive at Da Nang International Airport, where your private driver meets you.\nDrive to Hoi An, about 45 minutes away, and check in to your couples-friendly hotel.\nA welcome flower or cake arrangement is made in your room, subject to availability.\nThe rest of the day is free to settle in; dinner is at leisure.\nOvernight stay in Hoi An."
+        },
+        {
+          "day": 2,
+          "title": "Hoi An Ancient Town | Lantern Evening",
+          "description": "Enjoy a late breakfast and a slow morning at the hotel.\nIn the afternoon, walk through Hoi An Ancient Town with a private guide, including the Japanese Covered Bridge and old merchants' houses.\nBrowse the riverside cafes, tailors and craft shops at your own pace.\nStay on as the lanterns light up in the evening; an optional lantern boat ride on the river can be arranged.\nOvernight stay in Hoi An."
+        },
+        {
+          "day": 3,
+          "title": "Ba Na Hills | Golden Bridge",
+          "description": "After a relaxed breakfast, drive with your private driver to Ba Na Hills.\nRide the cable car up the mountain and walk across the Golden Bridge, held up by two giant stone hands.\nExplore the French Village and the hilltop gardens; lunch is at leisure in the hill resort.\nReturn to Hoi An in the afternoon, with the evening free for a quiet dinner by the river.\nOvernight stay in Hoi An."
+        },
+        {
+          "day": 4,
+          "title": "Marble Mountains | Fly to Phu Quoc",
+          "description": "After breakfast, check out and drive to Da Nang with your private driver.\nVisit the Marble Mountains, limestone hills with caves, shrines and pagodas, and the Lady Buddha at Linh Ung Pagoda, if time and flight timings allow.\nTransfer to the airport for your flight to Phu Quoc, which may connect through another Vietnamese city.\nOn arrival, a private transfer takes you to your beach resort, where a welcome arrangement awaits, subject to availability.\nOvernight stay in Phu Quoc."
+        },
+        {
+          "day": 5,
+          "title": "Hon Thom Cable Car | Couples Spa",
+          "description": "Start late with breakfast at the resort.\nDrive south with your private driver to An Thoi and ride the Hon Thom cable car over the sea, weather permitting.\nReturn to the resort for a couples spa session, subject to availability.\nThe evening is free for a stroll on the beach.\nOvernight stay in Phu Quoc."
+        },
+        {
+          "day": 6,
+          "title": "Beach Day | Sunset and Candlelight Dinner",
+          "description": "Today is entirely yours, with the beach, the pool and the sea at your doorstep.\nOptional island activities or a private tour of local sights can be arranged on request.\nWatch the sun go down over the water in the late afternoon.\nEnjoy a candlelight dinner arranged for the two of you, subject to availability.\nOvernight stay in Phu Quoc."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Phu Quoc",
+          "description": "After a leisurely breakfast, check out and enjoy free time until your transfer.\nTransfer privately to Phu Quoc International Airport for your onward flight.\nLeave Vietnam with lantern-lit evenings and island sunsets to remember."
+        }
+      ],
+      "inclusions": [
+        "3 nights in a couples-friendly hotel in Hoi An and 3 nights in a beach resort on Phu Quoc, on twin sharing",
+        "Daily breakfast",
+        "Welcome flower or cake arrangement or bed decoration on arrival, subject to availability",
+        "One candlelight dinner on Phu Quoc, subject to availability",
+        "One couples spa session on Phu Quoc, subject to availability",
+        "Sunrise to sunset private car for all transfers and sightseeing as per the itinerary",
+        "Private guide for the Hoi An Ancient Town visit",
+        "Hon Thom cable car ride as the signature romantic experience, weather permitting",
+        "Ba Na Hills entry with the cable car ride",
+        "Hoi An Ancient Town entry ticket",
+        "Private airport transfers in Da Nang and Phu Quoc",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International airfare and the domestic flight from Da Nang to Phu Quoc",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities such as the lantern boat ride and water sports",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches such as the room decoration, spa session and candlelight dinner are subject to availability and hotel policy.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates are indicative and are confirmed at the time of booking; dates are agreed when you enquire.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Ba Na Hills can be misty or rainy, and the cable cars may pause in strong wind; the day may be re-ordered to suit conditions.",
+        "Dress modestly at temples and pagodas, with shoulders and knees covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Marriage certificate or wedding invitation",
+        "Return flight tickets",
+        "Copy of travel insurance",
+        "Forex or international card",
+        "Universal power adapter",
+        "Light layers or a rain jacket for Ba Na Hills",
+        "Swimwear, sunscreen and a hat",
+        "Comfortable walking shoes and beach sandals"
+      ],
+      "pickup": "Da Nang International Airport",
+      "drop_point": "Phu Quoc International Airport",
+      "photo": "hoi-an-ancient-town",
+      "gallery": [
+        "golden-bridge-ba-na-hills",
+        "hon-thom-cable-car",
+        "phu-quoc-beach",
+        "phu-quoc-sunset"
+      ],
+      "price": 72000,
+      "original_price": 78000
     }
   ]
 }

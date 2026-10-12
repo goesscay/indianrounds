@@ -73,7 +73,8 @@
       "packages": [
         "classic-georgia",
         "simply-georgia",
-        "georgia-tbilisi-kazbegi-weekend-escape"
+        "georgia-tbilisi-kazbegi-weekend-escape",
+        "georgia-honeymoon-tbilisi-kazbegi-kakheti"
       ]
     },
     {
@@ -129,7 +130,8 @@
         "classic-georgia",
         "simply-georgia",
         "autumn-georgia",
-        "winter-georgia"
+        "winter-georgia",
+        "georgia-honeymoon-tbilisi-kazbegi-kakheti"
       ]
     },
     {
@@ -782,6 +784,119 @@
         "every_weeks": 1,
         "capacity": 22
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "georgia-honeymoon-tbilisi-kazbegi-kakheti",
+      "title": "Georgia Honeymoon: Old Tbilisi, Kazbegi Peaks and Kakheti Wine Country",
+      "nights": 6,
+      "summary": "A private six-night honeymoon in Georgia: candlelit evenings in Tbilisi, two nights beneath the Caucasus peaks at Kazbegi and a vineyard stay in Sighnaghi, with private transfers throughout.",
+      "overview": "This private honeymoon is paced for two. You begin in Tbilisi, where wooden balconies, hillside churches and the cable car up to Narikala Fortress make a gentle introduction, and where you will have a candlelit dinner to mark the start of married life.\n\nThen the road climbs the Georgian Military Highway to Kazbegi, with a stop at Mtskheta on the way. Two nights beneath the Caucasus peaks give you time for a private 4x4 drive up to the Gergeti Trinity Church, long mountain walks if you wish, and slow evenings with a view. You return to Tbilisi for a relaxed day and a couples spa session.\n\nThe finale is Kakheti, Georgia's wine country. You stay a night in the hilltop town of Sighnaghi, known as the City of Love, with a private tasting among the vineyards of the Alazani Valley. Your car and guide are exclusively yours, and every day has one main experience, so there is no rushing.",
+      "highlights": [
+        "Welcome flowers or cake and bed decoration on arrival in Tbilisi",
+        "Private Tbilisi tour, with the cable car to Narikala Fortress",
+        "Candlelight dinner in Tbilisi",
+        "Mtskheta, Ananuri Fortress and the Gudauri viewpoints on the way to Kazbegi",
+        "Two nights in Kazbegi and a private 4x4 ride to the Gergeti Trinity Church",
+        "Couples spa session in Tbilisi",
+        "A night in Sighnaghi, the City of Love, above the Alazani Valley",
+        "Private winery visit and tasting in Kakheti"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Tbilisi | Welcome",
+          "description": "Arrive at Tbilisi International Airport, where you are met and driven to your hotel by private car.\nCheck in to a couples-friendly room, with a flower or cake welcome and bed decoration, subject to availability.\nThe rest of the day is yours to unwind, or to take a gentle walk through the nearby streets.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 2,
+          "title": "Tbilisi Old Town | Cable Car | Candlelight Dinner",
+          "description": "After a late breakfast, set out with your private guide and car through the old town and the Sulphur Baths district.\nCross the Bridge of Peace, stroll through Rike Park and take the cable car up to Narikala Fortress for views over the city.\nThe afternoon is free for cafes, wine bars and shopping at your own pace.\nIn the evening, enjoy a candlelight dinner for two.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 3,
+          "title": "Mtskheta | Ananuri | Gudauri | Kazbegi",
+          "description": "After breakfast, drive north by private car along the Georgian Military Highway.\nStop at Mtskheta, one of the oldest towns in Georgia, to see Jvari Monastery.\nContinue to Ananuri Fortress beside the Zhinvali Reservoir, then to the mountain viewpoints around Gudauri.\nArrive in Kazbegi (Stepantsminda) by late afternoon and check in to your mountain hotel.\nOvernight stay in Kazbegi."
+        },
+        {
+          "day": 4,
+          "title": "Gergeti Trinity Church | Free Mountain Day",
+          "description": "After breakfast, travel up to the Gergeti Trinity Church by private 4x4, weather and road conditions permitting.\nTake in the Caucasus peaks and the valley below at your own pace.\nThe afternoon is free for a short walk, a hot drink with a view or simply resting.\nEnjoy a quiet evening in the mountains.\nOvernight stay in Kazbegi."
+        },
+        {
+          "day": 5,
+          "title": "Back to Tbilisi | Couples Spa",
+          "description": "After a late breakfast, drive back south to Tbilisi with comfort and photo stops on the way.\nCheck in to your hotel and rest after the mountain drive.\nIn the afternoon, enjoy a couples spa session, subject to availability.\nThe evening is free for a dinner of your choice.\nOvernight stay in Tbilisi."
+        },
+        {
+          "day": 6,
+          "title": "Kakheti | Bodbe | Sighnaghi | Vineyard Tasting",
+          "description": "After breakfast, drive east to the Kakheti wine region by private car.\nVisit Bodbe Monastery and walk the lanes of the hilltop town of Sighnaghi, with views over the Alazani Valley.\nEnjoy a private winery visit and tasting among the vineyards.\nCheck in to your hotel in Sighnaghi and spend a slow evening together.\nOvernight stay in Sighnaghi."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Georgia",
+          "description": "After a relaxed breakfast, check out of your hotel.\nUse the free morning for a last walk through Sighnaghi.\nDrive by private car to Tbilisi International Airport in time for your flight, which takes around two hours.\nDepart Georgia with wonderful memories."
+        }
+      ],
+      "inclusions": [
+        "Hotel stay on twin sharing for 6 nights: 3 in Tbilisi, 2 in Kazbegi and 1 in Sighnaghi, in hotels suited to couples",
+        "Daily breakfast",
+        "Welcome flowers or cake and bed decoration on arrival, subject to availability",
+        "One candlelight dinner for two in Tbilisi",
+        "One couples spa session in Tbilisi, subject to availability",
+        "Private 4x4 ride to the Gergeti Trinity Church, weather and road conditions permitting",
+        "Private winery visit with tasting in Kakheti",
+        "Private airport and inter-city transfers by car",
+        "Private sightseeing with a guide in Tbilisi, as per itinerary",
+        "Cable car ride to Narikala Fortress",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Georgia visa fees and processing",
+        "Travel insurance",
+        "Lunches, dinners and other meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and entry tickets not listed in the itinerary",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share a marriage certificate or your wedding date at booking so the hotels can arrange the welcome.",
+        "Honeymoon touches such as the welcome, bed decoration, spa and dinner are subject to availability and hotel policy.",
+        "Rates are indicative and are confirmed at the time of booking.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "This is a private trip for the couple, with no fixed departure dates; please enquire for your preferred dates.",
+        "Mountain roads to Kazbegi can be affected by snow, rain or landslides, particularly in winter and spring, and evenings there are cold at any time of year.",
+        "Wine tasting is for guests of legal drinking age only. Dress modestly at churches and monasteries; shoulders and knees should be covered."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Marriage certificate or wedding invitation",
+        "Return tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C or F, two round pins)",
+        "Warm layers and a windproof jacket for Kazbegi",
+        "Comfortable walking shoes",
+        "Modest clothing for churches and monasteries"
+      ],
+      "pickup": "Tbilisi International Airport",
+      "drop_point": "Tbilisi International Airport",
+      "photo": "gergeti-trinity-church",
+      "gallery": [
+        "narikala-fortress",
+        "mtskheta-jvari",
+        "sighnaghi",
+        "kakheti-vineyards"
+      ],
+      "price": 78900,
+      "original_price": 85200
     }
   ]
 }

@@ -102,7 +102,18 @@ class CatalogueContent
             'group_trips.*.itinerary.*.day' => ['required', 'integer', 'min:1'],
             'group_trips.*.itinerary.*.title' => $text(100),
             'group_trips.*.itinerary.*.description' => $text(1200),
-        ], $content('packages.*'), $content('group_trips.*'));
+            'honeymoon_trips' => ['nullable', 'array', 'max:3'],
+            'honeymoon_trips.*.slug' => ['required', 'string', 'regex:/^[a-z0-9-]+$/'],
+            'honeymoon_trips.*.title' => $text(120),
+            'honeymoon_trips.*.nights' => ['required', 'integer', 'min:3', 'max:12'],
+            'honeymoon_trips.*.overview' => $text(1500),
+            'honeymoon_trips.*.price' => ['required', 'integer', 'min:5000', 'max:2000000'],
+            'honeymoon_trips.*.original_price' => ['nullable', 'integer', 'gt:honeymoon_trips.*.price'],
+            'honeymoon_trips.*.itinerary' => ['required', 'array', 'min:4', 'max:14'],
+            'honeymoon_trips.*.itinerary.*.day' => ['required', 'integer', 'min:1'],
+            'honeymoon_trips.*.itinerary.*.title' => $text(100),
+            'honeymoon_trips.*.itinerary.*.description' => $text(1200),
+        ], $content('packages.*'), $content('group_trips.*'), $content('honeymoon_trips.*'));
 
         $validator = Validator::make($data, $rules);
         $errors = $validator->errors()->all();
@@ -111,7 +122,7 @@ class CatalogueContent
         $slots = array_column(is_array($data['photos'] ?? null) ? $data['photos'] : [], 'slot');
         $known = array_flip(array_filter($slots, 'is_string'));
         $used = [(string) ($data['hero'] ?? '')];
-        foreach (['categories', 'packages', 'group_trips'] as $group) {
+        foreach (['categories', 'packages', 'group_trips', 'honeymoon_trips'] as $group) {
             foreach ((array) ($data[$group] ?? []) as $row) {
                 $used[] = (string) ($row['photo'] ?? '');
                 foreach ((array) ($row['gallery'] ?? []) as $g) {
@@ -129,7 +140,7 @@ class CatalogueContent
         }
 
         $slugs = [];
-        foreach (['packages', 'group_trips'] as $group) {
+        foreach (['packages', 'group_trips', 'honeymoon_trips'] as $group) {
             foreach ((array) ($data[$group] ?? []) as $row) {
                 $slug = (string) ($row['slug'] ?? '');
                 if (isset($slugs[$slug])) {
@@ -138,7 +149,7 @@ class CatalogueContent
                 $slugs[$slug] = $group;
             }
         }
-        foreach ((array) ($data['group_trips'] ?? []) as $g) {
+        foreach ([...(array) ($data['group_trips'] ?? []), ...(array) ($data['honeymoon_trips'] ?? [])] as $g) {
             $nights = (int) ($g['nights'] ?? 0);
             $days = array_column((array) ($g['itinerary'] ?? []), 'day');
             if ($days !== range(1, $nights + 1)) {
@@ -149,7 +160,7 @@ class CatalogueContent
         foreach ((array) ($data['categories'] ?? []) as $c) {
             foreach ((array) ($c['packages'] ?? []) as $p) {
                 if (! isset($slugs[$p])) {
-                    $errors[] = "Category \"{$c['slug']}\" lists \"{$p}\", which is not in packages or group_trips.";
+                    $errors[] = "Category \"{$c['slug']}\" lists \"{$p}\", which is not in packages, group_trips or honeymoon_trips.";
                 }
                 if (($c['menu'] ?? '') === 'destinations') {
                     $inMenus[$p] = true;
@@ -165,6 +176,13 @@ class CatalogueContent
             $inGroupMenu = collect((array) ($data['categories'] ?? []))->contains(fn ($c) => in_array($c['menu'] ?? '', ['group-tours', 'weekend-escapes'], true) && in_array($g['slug'] ?? '', (array) ($c['packages'] ?? []), true));
             if (! $inGroupMenu) {
                 $errors[] = "Group trip \"{$g['slug']}\" is not in a category of the group-tours or weekend-escapes menu.";
+            }
+        }
+
+        foreach ((array) ($data['honeymoon_trips'] ?? []) as $g) {
+            $inHoneymoon = collect((array) ($data['categories'] ?? []))->contains(fn ($c) => ($c['menu'] ?? '') === 'honeymoon' && in_array($g['slug'] ?? '', (array) ($c['packages'] ?? []), true));
+            if (! $inHoneymoon) {
+                $errors[] = "Honeymoon trip \"{$g['slug']}\" is not in a category of the honeymoon menu.";
             }
         }
 
@@ -247,6 +265,27 @@ class CatalogueContent
                 if (! $tour->batches()->exists()) {
                     $this->makeDepartures($tour, $row['departures'], (int) $row['nights']);
                 }
+                $tours[$row['slug']] = $tour;
+                $summary['tours']++;
+            }
+
+            foreach ($data['honeymoon_trips'] ?? [] as $row) {
+                $tour = Tour::query()->firstOrNew(['slug' => $row['slug']]);
+                if (! $tour->exists) {
+                    $summary['created']++;
+                    $tour->fill(['slug' => $row['slug'], 'code' => mb_substr('content-'.$row['slug'], 0, 60), 'status' => 'published', 'featured' => false]);
+                }
+                $tour->fill([
+                    'destination_id' => $destination->id, 'title' => $row['title'], 'tour_type' => 'custom',
+                    'haul_class' => $destination->region === 'india' ? 'short' : 'long', 'duration_nights' => $row['nights'],
+                    'summary' => $row['summary'], 'overview' => $row['overview'], 'highlights' => $row['highlights'], 'itinerary' => $row['itinerary'],
+                    'inclusions' => $row['inclusions'], 'exclusions' => $row['exclusions'], 'notes' => $row['notes'], 'must_carry' => $row['must_carry'],
+                    'pickup' => $row['pickup'] ?? null, 'drop_point' => $row['drop_point'] ?? null,
+                    'base_price' => $row['price'], 'original_price' => $row['original_price'] ?? null, 'show_price' => true,
+                    'tags' => $this->withTag($tour->tags, self::SAMPLE_TAG),
+                ]);
+                $this->applyImages($tour, $row, $photo, $gallery, true);
+                $tour->save();
                 $tours[$row['slug']] = $tour;
                 $summary['tours']++;
             }

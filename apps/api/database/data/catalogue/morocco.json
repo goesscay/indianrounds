@@ -1,18 +1,66 @@
 {
   "destination": "morocco",
   "photos": [
-    {"slot": "hassan-ii-mosque", "query": "Hassan II Mosque Casablanca Morocco", "caption": "Hassan II Mosque, Casablanca"},
-    {"slot": "hassan-tower-rabat", "query": "Hassan Tower Rabat Morocco", "caption": "Hassan Tower, Rabat"},
-    {"slot": "fez-medina", "query": "Fez medina Morocco old city", "caption": "The medina of Fez"},
-    {"slot": "chefchaouen-blue-city", "query": "Chefchaouen blue streets Morocco", "caption": "The blue lanes of Chefchaouen"},
-    {"slot": "merzouga-sahara", "query": "Merzouga Erg Chebbi Sahara dunes camels Morocco", "caption": "Erg Chebbi dunes, Merzouga"},
-    {"slot": "djemaa-el-fna", "query": "Jemaa el-Fnaa square Marrakech", "caption": "Djemaa el-Fna, Marrakech"},
-    {"slot": "majorelle-garden", "query": "Majorelle Garden Marrakech Morocco", "caption": "Majorelle Garden, Marrakech"},
-    {"slot": "essaouira-ramparts", "query": "Essaouira ramparts harbour Morocco", "caption": "The ramparts of Essaouira"},
-    {"slot": "volubilis-ruins", "query": "Volubilis Roman ruins Morocco", "caption": "Roman ruins of Volubilis"},
-    {"slot": "ait-benhaddou", "query": "Ait Benhaddou kasbah Ouarzazate Morocco", "caption": "Ait Benhaddou kasbah"},
-    {"slot": "tangier-medina", "query": "Tangier medina Morocco", "caption": "The medina of Tangier"},
-    {"slot": "ourika-valley", "query": "Ourika Valley Atlas Mountains Morocco", "caption": "Ourika Valley, High Atlas"}
+    {
+      "slot": "hassan-ii-mosque",
+      "query": "Hassan II Mosque Casablanca Morocco",
+      "caption": "Hassan II Mosque, Casablanca"
+    },
+    {
+      "slot": "hassan-tower-rabat",
+      "query": "Hassan Tower Rabat Morocco",
+      "caption": "Hassan Tower, Rabat"
+    },
+    {
+      "slot": "fez-medina",
+      "query": "Fez medina Morocco old city",
+      "caption": "The medina of Fez"
+    },
+    {
+      "slot": "chefchaouen-blue-city",
+      "query": "Chefchaouen blue streets Morocco",
+      "caption": "The blue lanes of Chefchaouen"
+    },
+    {
+      "slot": "merzouga-sahara",
+      "query": "Merzouga Erg Chebbi Sahara dunes camels Morocco",
+      "caption": "Erg Chebbi dunes, Merzouga"
+    },
+    {
+      "slot": "djemaa-el-fna",
+      "query": "Jemaa el-Fnaa square Marrakech",
+      "caption": "Djemaa el-Fna, Marrakech"
+    },
+    {
+      "slot": "majorelle-garden",
+      "query": "Majorelle Garden Marrakech Morocco",
+      "caption": "Majorelle Garden, Marrakech"
+    },
+    {
+      "slot": "essaouira-ramparts",
+      "query": "Essaouira ramparts harbour Morocco",
+      "caption": "The ramparts of Essaouira"
+    },
+    {
+      "slot": "volubilis-ruins",
+      "query": "Volubilis Roman ruins Morocco",
+      "caption": "Roman ruins of Volubilis"
+    },
+    {
+      "slot": "ait-benhaddou",
+      "query": "Ait Benhaddou kasbah Ouarzazate Morocco",
+      "caption": "Ait Benhaddou kasbah"
+    },
+    {
+      "slot": "tangier-medina",
+      "query": "Tangier medina Morocco",
+      "caption": "The medina of Tangier"
+    },
+    {
+      "slot": "ourika-valley",
+      "query": "Ourika Valley Atlas Mountains Morocco",
+      "caption": "Ourika Valley, High Atlas"
+    }
   ],
   "hero": "merzouga-sahara",
   "categories": [
@@ -22,7 +70,12 @@
       "name": "Classic Morocco Circuits",
       "description": "Week-long guided circuits that link Morocco's coast, imperial cities and Marrakech in one comfortable route, ideal for first-time visitors.",
       "photo": "djemaa-el-fna",
-      "packages": ["majestic-morocco", "marvellous-morocco", "grand-tour-of-morocco-summer", "grand-tour-of-morocco-winter"]
+      "packages": [
+        "majestic-morocco",
+        "marvellous-morocco",
+        "grand-tour-of-morocco-summer",
+        "grand-tour-of-morocco-winter"
+      ]
     },
     {
       "menu": "destinations",
@@ -30,7 +83,11 @@
       "name": "Imperial Cities and Blue Streets",
       "description": "Walk the medinas of Fez and Rabat, see Roman Volubilis and wander the blue-washed lanes of Chefchaouen on tours built around Morocco's heritage.",
       "photo": "fez-medina",
-      "packages": ["majestic-morocco", "grand-tour-of-morocco-winter", "morocco-imperial-cities-and-sahara-group-trip"]
+      "packages": [
+        "majestic-morocco",
+        "grand-tour-of-morocco-winter",
+        "morocco-imperial-cities-and-sahara-group-trip"
+      ]
     },
     {
       "menu": "destinations",
@@ -38,7 +95,11 @@
       "name": "Desert and Mountain Journeys",
       "description": "Camel rides over the Sahara dunes at Merzouga, the Atlas passes, Ait Benhaddou and the Agafay and Ourika landscapes near Marrakech.",
       "photo": "merzouga-sahara",
-      "packages": ["morocco-imperial-cities-and-sahara-group-trip", "grand-tour-of-morocco-winter"]
+      "packages": [
+        "morocco-imperial-cities-and-sahara-group-trip",
+        "grand-tour-of-morocco-winter",
+        "morocco-honeymoon-riad-desert-and-sea"
+      ]
     },
     {
       "menu": "destinations",
@@ -46,7 +107,9 @@
       "name": "Multi-Country Combos",
       "description": "Pair Morocco with Spain and Portugal on one longer itinerary, for travellers who want North Africa and southern Europe in a single holiday.",
       "photo": "majorelle-garden",
-      "packages": ["best-of-spain-portugal-and-morocco-summer"]
+      "packages": [
+        "best-of-spain-portugal-and-morocco-summer"
+      ]
     },
     {
       "menu": "destinations",
@@ -54,7 +117,11 @@
       "name": "Seasonal Specials",
       "description": "Packages timed for the summer and winter travel seasons, so you can pick the Morocco itinerary that suits the weather and your school or work calendar.",
       "photo": "hassan-ii-mosque",
-      "packages": ["best-of-spain-portugal-and-morocco-summer", "grand-tour-of-morocco-summer", "grand-tour-of-morocco-winter"]
+      "packages": [
+        "best-of-spain-portugal-and-morocco-summer",
+        "grand-tour-of-morocco-summer",
+        "grand-tour-of-morocco-winter"
+      ]
     },
     {
       "menu": "group-tours",
@@ -62,7 +129,9 @@
       "name": "Fixed Departure Group Trips",
       "description": "Join a small group on a scheduled Morocco departure with a trip captain, fixed dates and Indian meal options on request.",
       "photo": "merzouga-sahara",
-      "packages": ["morocco-imperial-cities-and-sahara-group-trip"]
+      "packages": [
+        "morocco-imperial-cities-and-sahara-group-trip"
+      ]
     },
     {
       "menu": "honeymoon",
@@ -70,7 +139,11 @@
       "name": "Romantic Escapes",
       "description": "Riads, rooftop sunsets and the Atlantic breeze of Essaouira make Morocco a memorable choice for couples and honeymooners.",
       "photo": "essaouira-ramparts",
-      "packages": ["majestic-morocco", "grand-tour-of-morocco-winter"]
+      "packages": [
+        "majestic-morocco",
+        "grand-tour-of-morocco-winter",
+        "morocco-honeymoon-riad-desert-and-sea"
+      ]
     }
   ],
   "packages": [
@@ -128,7 +201,11 @@
       "pickup": "Casablanca Mohammed V Airport",
       "drop_point": "Departure airport as per itinerary",
       "photo": "majorelle-garden",
-      "gallery": ["djemaa-el-fna", "hassan-ii-mosque", "ait-benhaddou"]
+      "gallery": [
+        "djemaa-el-fna",
+        "hassan-ii-mosque",
+        "ait-benhaddou"
+      ]
     },
     {
       "slug": "majestic-morocco",
@@ -187,8 +264,15 @@
       "pickup": "Casablanca Mohammed V Airport",
       "drop_point": "Casablanca Mohammed V Airport",
       "photo": "essaouira-ramparts",
-      "gallery": ["hassan-ii-mosque", "fez-medina", "volubilis-ruins", "djemaa-el-fna"],
-      "price": {"from": 118000}
+      "gallery": [
+        "hassan-ii-mosque",
+        "fez-medina",
+        "volubilis-ruins",
+        "djemaa-el-fna"
+      ],
+      "price": {
+        "from": 118000
+      }
     },
     {
       "slug": "marvellous-morocco",
@@ -241,7 +325,11 @@
       "pickup": "Arrival airport in Morocco",
       "drop_point": "Departure airport in Morocco",
       "photo": "fez-medina",
-      "gallery": ["chefchaouen-blue-city", "djemaa-el-fna", "hassan-tower-rabat"]
+      "gallery": [
+        "chefchaouen-blue-city",
+        "djemaa-el-fna",
+        "hassan-tower-rabat"
+      ]
     },
     {
       "slug": "grand-tour-of-morocco-summer",
@@ -294,7 +382,11 @@
       "pickup": "Arrival airport in Morocco",
       "drop_point": "Departure airport in Morocco",
       "photo": "djemaa-el-fna",
-      "gallery": ["hassan-ii-mosque", "majorelle-garden", "essaouira-ramparts"]
+      "gallery": [
+        "hassan-ii-mosque",
+        "majorelle-garden",
+        "essaouira-ramparts"
+      ]
     },
     {
       "slug": "grand-tour-of-morocco-winter",
@@ -355,8 +447,15 @@
       "pickup": "Casablanca Mohammed V Airport",
       "drop_point": "Casablanca Mohammed V Airport",
       "photo": "chefchaouen-blue-city",
-      "gallery": ["tangier-medina", "hassan-tower-rabat", "djemaa-el-fna", "ourika-valley"],
-      "price": {"from": 132000}
+      "gallery": [
+        "tangier-medina",
+        "hassan-tower-rabat",
+        "djemaa-el-fna",
+        "ourika-valley"
+      ],
+      "price": {
+        "from": 132000
+      }
     }
   ],
   "group_trips": [
@@ -473,10 +572,132 @@
       "pickup": "Casablanca Mohammed V Airport",
       "drop_point": "Marrakech Menara Airport",
       "photo": "merzouga-sahara",
-      "gallery": ["chefchaouen-blue-city", "fez-medina", "ait-benhaddou", "djemaa-el-fna", "hassan-ii-mosque"],
+      "gallery": [
+        "chefchaouen-blue-city",
+        "fez-medina",
+        "ait-benhaddou",
+        "djemaa-el-fna",
+        "hassan-ii-mosque"
+      ],
       "price": 149000,
       "original_price": 164000,
-      "departures": {"weekday": 6, "count": 5, "every_weeks": 2, "capacity": 20}
+      "departures": {
+        "weekday": 6,
+        "count": 5,
+        "every_weeks": 2,
+        "capacity": 20
+      }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "morocco-honeymoon-riad-desert-and-sea",
+      "title": "Morocco Honeymoon: Riad Nights, Desert Stars and Essaouira",
+      "nights": 6,
+      "summary": "A private six-night honeymoon with three nights in a Marrakech riad, a night under the stars in a desert camp in the Agafay foothills of the Atlas, and two unhurried nights by the Atlantic in Essaouira.",
+      "overview": "This is Morocco at a gentle pace, made for two. You begin in Marrakech with three nights in a traditional riad, a courtyard house of fountains and lantern light. There is a private guide for the Majorelle Garden, the palaces and the souks, but also long, empty hours for mint tea on the roof terrace and a couples spa session with a traditional hammam.\n\nOn the fourth day you leave the city for the Agafay Desert, a landscape of stony hills and open sky in the foothills of the Atlas, about an hour from Marrakech. A short camel ride at sunset, a candle-lit dinner and a night in a desert camp, with no city lights, give you the stars to yourselves.\n\nThe journey ends by the Atlantic in Essaouira, a breezy, whitewashed fortress town of ramparts, fishing boats and quiet lanes, where you have a full free day before returning to Marrakech for your flight home. All sightseeing and transfers are private, and our team can arrange a welcome for newly-weds at your stay, subject to availability.",
+      "highlights": [
+        "Three nights in a Marrakech riad, with a private guided tour of the city",
+        "Majorelle Garden, Bahia Palace and the souks without the rush of a group",
+        "Couples spa session with a traditional Moroccan hammam",
+        "Candlelight dinner on a riad roof terrace or courtyard",
+        "Sunset camel ride and a night under the stars in the Agafay Desert",
+        "Two nights in Essaouira, with its ramparts, harbour and Atlantic breeze",
+        "Private car and driver for every transfer",
+        "Flower and cake welcome on arrival, subject to availability"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Marrakech | Riad Welcome",
+          "description": "Arrive at Marrakech Menara Airport, where your private driver meets you.\nTransfer to your riad in the medina, where a welcome for the newly-weds awaits, subject to availability.\nSettle in with mint tea in the courtyard.\nThe evening is free; stroll to Djemaa el-Fna at your own pace if you wish.\nOvernight stay in Marrakech."
+        },
+        {
+          "day": 2,
+          "title": "Marrakech | Gardens, Palaces and Souks",
+          "description": "After a late breakfast, meet your private guide for a relaxed tour of Marrakech.\nVisit the Majorelle Garden and Bahia Palace, and see the Koutoubia Mosque from outside.\nWalk through the souks and the old medina lanes with time to browse.\nThe afternoon is free to rest or return to your favourite corner.\nOvernight stay in Marrakech."
+        },
+        {
+          "day": 3,
+          "title": "Spa and Candlelight Dinner",
+          "description": "Enjoy a slow morning at the riad.\nIn the afternoon, a couples spa session with a traditional hammam is arranged, subject to availability.\nThe rest of the day is yours to wander the medina or relax on the roof terrace.\nIn the evening, enjoy a candlelight dinner arranged for the two of you.\nOvernight stay in Marrakech."
+        },
+        {
+          "day": 4,
+          "title": "Agafay Desert | Night Under the Stars",
+          "description": "After breakfast, check out and drive with your private driver to the Agafay Desert, about an hour from Marrakech.\nCheck in at your desert camp and relax with mint tea.\nTake a short camel ride across the stony hills at sunset.\nDinner is served at the camp under the open sky, followed by time to stargaze.\nOvernight stay in the Agafay Desert camp."
+        },
+        {
+          "day": 5,
+          "title": "Drive to Essaouira | Sunset on the Ramparts",
+          "description": "Have breakfast at the camp and watch the morning light on the hills.\nDrive to Essaouira on the Atlantic coast, a journey of roughly three to four hours with stops.\nCheck in to your hotel and rest after the drive.\nIn the evening, walk along the ramparts and the Skala to watch the sun go down over the ocean.\nOvernight stay in Essaouira."
+        },
+        {
+          "day": 6,
+          "title": "Essaouira at Leisure",
+          "description": "A free day with no fixed plans, after a late breakfast.\nWalk through the whitewashed medina, visit the fishing harbour and stroll along the beach.\nOur team can suggest cafes, craft shops and quiet corners, with any extras arranged on request.\nEnjoy your last evening by the sea.\nOvernight stay in Essaouira."
+        },
+        {
+          "day": 7,
+          "title": "Return to Marrakech | Departure",
+          "description": "After breakfast, check out of the hotel.\nDrive back to Marrakech, which takes roughly three hours.\nTransfer to Marrakech Menara Airport for your flight home.\nDepart Morocco with memories of the riad, the desert and the sea."
+        }
+      ],
+      "inclusions": [
+        "Six nights on twin sharing: three in a Marrakech riad, one in a desert camp and two in a sea-facing hotel in Essaouira, subject to availability",
+        "Daily breakfast",
+        "One candlelight dinner in Marrakech",
+        "Dinner at the desert camp on the night in the Agafay Desert",
+        "Flower or cake welcome or room decoration on arrival, subject to availability",
+        "One couples spa session with a traditional hammam, subject to availability",
+        "Sunset camel ride in the Agafay Desert",
+        "Private airport and inter-city transfers by car with a driver",
+        "Private guided sightseeing in Marrakech as per itinerary",
+        "Entry tickets for the sightseeing listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the inclusions",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and excursions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the travel date.",
+        "Please share your marriage certificate or wedding date at the time of booking so that the hotels can arrange your welcome.",
+        "Honeymoon touches such as the welcome, decoration and spa are subject to availability and hotel policy.",
+        "Rates are indicative and are confirmed at the time of booking.",
+        "The order of the itinerary may change with weather or operational conditions, without reducing the sights covered.",
+        "Cancellation and refund are as per our Terms and Conditions.",
+        "Nights in the Agafay Desert can be cold, and the camp is comfortable but simple.",
+        "Book your departure flight after about 2 pm on the last day, as the drive from Essaouira takes roughly three hours.",
+        "Morocco is a conservative country, so dress modestly in the medinas and keep public displays of affection low-key."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Marriage certificate or wedding invitation",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter (Type C and E plugs, 220V)",
+        "Warm layers for the desert night and the Atlantic breeze",
+        "Comfortable walking shoes for medina lanes",
+        "Sunglasses and sunscreen"
+      ],
+      "pickup": "Marrakech Menara Airport",
+      "drop_point": "Marrakech Menara Airport",
+      "photo": "djemaa-el-fna",
+      "gallery": [
+        "majorelle-garden",
+        "essaouira-ramparts"
+      ],
+      "price": 152000,
+      "original_price": 164000
     }
   ]
 }

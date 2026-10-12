@@ -85,7 +85,9 @@
       "packages": [
         "exciting-dubai-with-abu-dhabi",
         "dubai-desert-skyline-and-abu-dhabi-group-trip",
-        "dubai-weekend-escape"
+        "dubai-weekend-escape",
+        "dubai-honeymoon",
+        "dubai-abu-dhabi-honeymoon-desert-night"
       ]
     },
     {
@@ -142,7 +144,9 @@
       "packages": [
         "wonders-of-dubai",
         "exciting-dubai-with-abu-dhabi",
-        "simply-dubai"
+        "simply-dubai",
+        "dubai-honeymoon",
+        "dubai-abu-dhabi-honeymoon-desert-night"
       ]
     },
     {
@@ -783,6 +787,219 @@
         "every_weeks": 1,
         "capacity": 22
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "dubai-honeymoon",
+      "title": "Dubai Honeymoon: Skyline Views, Dhow Dinner and Desert Sunset",
+      "nights": 5,
+      "summary": "A private five-night Dubai honeymoon with a flower welcome, a private city tour, the Burj Khalifa, a desert sunset, a couples spa session, a Marina dhow cruise and a candlelight dinner.",
+      "overview": "Dubai suits a honeymoon because it offers glamour and quiet in equal measure. This five-night private trip gives you a sea-view or city-view room, late starts and one special experience each day, with a private car and guide for every sightseeing outing.\n\nYou are welcomed with flowers or a cake on arrival, see the skyline from the Burj Khalifa observation deck, watch the sun go down over the dunes and spend an evening on a dhow gliding through Dubai Marina. A couples spa session and a candlelight dinner are set aside for the slow days, and old Dubai's creek and souks add a touch of history.\n\nThe pace is yours. Mornings are unhurried, evenings are free, and every honeymoon touch is arranged in advance so you simply turn up and enjoy it.",
+      "highlights": [
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "Private city tour with photo stops at Jumeirah Beach, Burj Al Arab and Palm Jumeirah",
+        "Burj Khalifa observation deck and the Dubai Mall fountain show",
+        "Private desert sunset drive with a camp dinner under the stars",
+        "Couples spa session and a free morning to rest",
+        "Marina dhow cruise with dinner on board",
+        "Candlelight dinner on the last evening"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Dubai | Welcome and Marina Stroll",
+          "description": "Arrive at Dubai airport, where you are met and taken by private car to your hotel.\nCheck in to a room chosen for couples, with a flower or cake welcome and bed decoration, subject to availability.\nRest after your journey and keep the afternoon free.\nIn the evening, take an easy stroll along the Marina promenade.\nOvernight stay in Dubai."
+        },
+        {
+          "day": 2,
+          "title": "Private City Tour | Burj Khalifa at Night",
+          "description": "After a late breakfast, set out on a private city tour with photo stops at Jumeirah Beach, Burj Al Arab and Palm Jumeirah.\nVisit Dubai Frame for views across old and new Dubai.\nReturn to the hotel to rest through the afternoon.\nIn the evening, go up the Burj Khalifa observation deck and watch the Dubai Mall fountain show.\nOvernight stay in Dubai."
+        },
+        {
+          "day": 3,
+          "title": "Leisure Morning | Private Desert Sunset",
+          "description": "Enjoy a slow morning at the hotel, by the pool or at the beach.\nIn the afternoon, drive by private vehicle into the desert for a dune drive and sunset views.\nSettle into a desert camp for Arabic coffee, a short camel ride where offered and a BBQ dinner.\nReturn to your hotel for an overnight stay in Dubai."
+        },
+        {
+          "day": 4,
+          "title": "Couples Spa | Marina Dhow Cruise",
+          "description": "Keep the morning free to sleep in.\nIn the afternoon, enjoy a couples spa session at a spa chosen for you, subject to availability.\nIn the evening, board a dhow for a cruise through Dubai Marina, with dinner on board.\nOvernight stay in Dubai."
+        },
+        {
+          "day": 5,
+          "title": "Old Dubai | Candlelight Dinner",
+          "description": "After breakfast, cross Dubai Creek by traditional abra with your private guide.\nWander through the Gold Souk and Spice Souk at an easy pace.\nSpend the afternoon at leisure for shopping or a last swim.\nIn the evening, enjoy a candlelight dinner arranged for the two of you.\nOvernight stay in Dubai."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Dubai",
+          "description": "Enjoy a relaxed breakfast and a free morning.\nCheck out around 12 noon.\nTransfer by private car to Dubai airport for your onward flight.\nDepart with memories of the Emirates."
+        }
+      ],
+      "inclusions": [
+        "5 nights in a hotel or resort suited to couples in Dubai on twin sharing, with a sea-view or city-view room subject to availability",
+        "Daily breakfast at the hotel",
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "One candlelight dinner as per the itinerary",
+        "One couples spa session, subject to availability",
+        "Marina dhow cruise with dinner on board",
+        "Private desert sunset drive with BBQ dinner at the camp",
+        "Burj Khalifa observation deck entry as per the itinerary",
+        "Private airport transfers and private sightseeing with a private car and guide as per the itinerary",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "UAE visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and entry tickets not listed in the itinerary",
+        "Tourism dirham fee payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at the time of booking so the hotel can arrange your welcome.",
+        "Honeymoon touches such as the welcome, decoration and spa session are subject to availability and hotel policy.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates are indicative and are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions.",
+        "Summer months in Dubai are very hot, so outdoor sightseeing is planned for mornings and evenings.",
+        "Dune driving may not suit guests with back or neck problems, or during pregnancy; please tell us in advance."
+      ],
+      "must_carry": [
+        "Passport and UAE visa copies",
+        "Return flight tickets",
+        "Marriage certificate or wedding invitation copy",
+        "Travel insurance copy",
+        "Forex or an international card",
+        "UK-type (Type G) power adapter",
+        "Sunscreen, sunglasses and a hat",
+        "A smart outfit for the candlelight dinner",
+        "Comfortable walking shoes"
+      ],
+      "pickup": "Dubai International Airport (DXB)",
+      "drop_point": "Dubai International Airport (DXB)",
+      "photo": "palm-jumeirah",
+      "gallery": [
+        "dubai-marina",
+        "desert-safari",
+        "burj-khalifa",
+        "dubai-creek-souk"
+      ],
+      "price": 58000,
+      "original_price": 62600
+    },
+    {
+      "slug": "dubai-abu-dhabi-honeymoon-desert-night",
+      "title": "Dubai and Abu Dhabi Honeymoon with a Night in the Desert",
+      "nights": 6,
+      "summary": "A private six-night honeymoon across Dubai and Abu Dhabi, with a night at a desert camp, a candlelight dinner under the stars, the Grand Mosque, the Louvre Abu Dhabi, a couples spa and a Marina dhow cruise.",
+      "overview": "This honeymoon pairs the two great cities of the UAE with something rarer: a full night in the desert. You begin in Dubai with a welcome of flowers or a cake, a private city tour and the Burj Khalifa, then drive out to a desert camp or resort for sunset, a candlelight dinner under the stars and a sunrise over the dunes.\n\nFrom there you travel by private car to Abu Dhabi for the Sheikh Zayed Grand Mosque, the Louvre Abu Dhabi and a walk along the Corniche, with a free afternoon and a couples spa session to slow things down.\n\nYou return to Dubai for a final evening on a dhow cruise through the Marina. Every transfer and outing is private, mornings start late and each day has just one highlight, so the holiday never feels rushed.",
+      "highlights": [
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "Private Dubai city tour and the Burj Khalifa observation deck",
+        "A night at a desert camp or resort with a candlelight dinner under the stars",
+        "Sunset dune drive and a quiet sunrise in the desert",
+        "Sheikh Zayed Grand Mosque and the Louvre Abu Dhabi with a private guide",
+        "Couples spa session in Abu Dhabi",
+        "Marina dhow cruise with dinner on board on the last evening"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Dubai | Welcome and Marina Stroll",
+          "description": "Arrive at Dubai airport, where you are met and taken by private car to your hotel.\nCheck in to a room chosen for couples, with a flower or cake welcome and bed decoration, subject to availability.\nRest after your journey and keep the afternoon free.\nIn the evening, take an easy walk along the Marina promenade.\nOvernight stay in Dubai."
+        },
+        {
+          "day": 2,
+          "title": "Private City Tour | Burj Khalifa",
+          "description": "After a late breakfast, set out on a private city tour with photo stops at Jumeirah Beach, Burj Al Arab and Palm Jumeirah.\nVisit Dubai Frame for views across old and new Dubai.\nRest at the hotel through the afternoon.\nIn the evening, go up the Burj Khalifa observation deck and watch the Dubai Mall fountain show.\nOvernight stay in Dubai."
+        },
+        {
+          "day": 3,
+          "title": "Dubai to the Desert | Candlelight Dinner under the Stars",
+          "description": "After a slow breakfast, check out and enjoy a free late morning.\nIn the afternoon, drive by private car to your desert camp or resort, subject to availability.\nWatch the sunset from the dunes, with a dune drive and a short camel ride where offered.\nEnjoy a candlelight dinner under the stars.\nOvernight stay in the desert."
+        },
+        {
+          "day": 4,
+          "title": "Desert Sunrise | Abu Dhabi and the Grand Mosque",
+          "description": "Wake to a quiet sunrise over the dunes and enjoy a leisurely breakfast.\nDrive by private car to Abu Dhabi.\nVisit the Sheikh Zayed Grand Mosque, one of the largest mosques in the world, with your private guide.\nCheck in to your hotel and walk along the Corniche in the evening.\nOvernight stay in Abu Dhabi."
+        },
+        {
+          "day": 5,
+          "title": "Louvre Abu Dhabi | Couples Spa",
+          "description": "After a late breakfast, visit the Louvre Abu Dhabi with your private guide.\nSpend the afternoon at leisure, with a couples spa session at a spa chosen for you, subject to availability.\nChoose a dinner spot in the evening, or ask us to suggest one.\nOvernight stay in Abu Dhabi."
+        },
+        {
+          "day": 6,
+          "title": "Return to Dubai | Marina Dhow Cruise",
+          "description": "After breakfast, check out and travel by private car back to Dubai.\nCheck in to your hotel and rest through the afternoon.\nIn the evening, board a dhow for a cruise through Dubai Marina, with dinner on board.\nOvernight stay in Dubai."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Dubai",
+          "description": "Enjoy a relaxed breakfast and a free morning.\nCheck out around 12 noon.\nTransfer by private car to Dubai airport for your onward flight.\nDepart with memories of the Emirates."
+        }
+      ],
+      "inclusions": [
+        "6 nights on twin sharing: 3 in Dubai, 2 in Abu Dhabi in hotels or resorts suited to couples, and 1 in a desert camp or resort, subject to availability",
+        "Daily breakfast",
+        "Flower or cake welcome and bed decoration on arrival, subject to availability",
+        "Candlelight dinner under the stars on the desert night",
+        "One couples spa session in Abu Dhabi, subject to availability",
+        "Marina dhow cruise with dinner on board",
+        "Burj Khalifa observation deck entry as per the itinerary",
+        "Sheikh Zayed Grand Mosque and Louvre Abu Dhabi visits with a private guide, as per the itinerary",
+        "Private airport and inter-city transfers and private sightseeing as per the itinerary",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "UAE visa fees and processing",
+        "Travel insurance",
+        "Meals not mentioned in the itinerary",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and entry tickets not listed in the itinerary",
+        "Tourism dirham fee payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at the time of booking so the hotels can arrange your welcome.",
+        "Honeymoon touches such as the welcome, decoration, spa session and desert stay are subject to availability and hotel policy.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The order of the itinerary may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "Rates are indicative and are confirmed at the time of booking; cancellation and refund are as per our Terms & Conditions.",
+        "Shoulders and knees must be covered at the Sheikh Zayed Grand Mosque, and women are asked to cover their hair.",
+        "Desert nights can be cool in winter and very hot in summer; please pack accordingly."
+      ],
+      "must_carry": [
+        "Passport and UAE visa copies",
+        "Return flight tickets",
+        "Marriage certificate or wedding invitation copy",
+        "Travel insurance copy",
+        "Forex or an international card",
+        "UK-type (Type G) power adapter",
+        "Modest clothing for the mosque, including a scarf for women",
+        "A light jacket for the desert evening",
+        "Sunscreen, sunglasses and a hat"
+      ],
+      "pickup": "Dubai International Airport (DXB)",
+      "drop_point": "Dubai International Airport (DXB)",
+      "photo": "desert-safari",
+      "gallery": [
+        "sheikh-zayed-mosque",
+        "louvre-abu-dhabi",
+        "burj-khalifa",
+        "dubai-marina"
+      ],
+      "price": 76000,
+      "original_price": 82100
     }
   ]
 }

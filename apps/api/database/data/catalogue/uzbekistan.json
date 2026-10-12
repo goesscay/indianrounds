@@ -86,7 +86,8 @@
       "photo": "kalyan-minaret-bukhara",
       "packages": [
         "scenic-uzbekistan",
-        "uzbekistan-silk-road-group-trip"
+        "uzbekistan-silk-road-group-trip",
+        "uzbekistan-silk-road-honeymoon"
       ]
     },
     {
@@ -142,7 +143,8 @@
       "packages": [
         "winter-uzbekistan",
         "uzbekistan-with-amirsoy-van-tours",
-        "scenic-uzbekistan"
+        "scenic-uzbekistan",
+        "uzbekistan-silk-road-honeymoon"
       ]
     },
     {
@@ -808,6 +810,115 @@
         "every_weeks": 1,
         "capacity": 22
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "uzbekistan-silk-road-honeymoon",
+      "title": "Uzbekistan Honeymoon: Registan Sunsets and Silk Road Romance",
+      "nights": 6,
+      "summary": "A private six-night honeymoon through Tashkent, Samarkand and Bukhara, with boutique stays, a sunset at the Registan, an old-town candlelight dinner and high-speed train journeys between the cities.",
+      "overview": "This honeymoon takes you through the Silk Road cities of Uzbekistan at an easy, private pace. You begin with a gentle evening in Tashkent, then ride the Afrosiyob high-speed train to Samarkand, where the turquoise domes and tilework of the Registan glow at sunset. Your own guide and car mean no group schedules and no early rush.\n\nFrom Samarkand you continue to Bukhara, a walkable old trading town of minarets, madrasahs and shaded courtyards. Days are built around one main experience, with long breaks for tea, shopping and time together. Your hotels are chosen for atmosphere, with traditional courtyards and decorated rooms where available, and a candlelight dinner is arranged in the old town.\n\nA flower or cake welcome is arranged on arrival, and a couples spa session is planned in Bukhara, all subject to availability. The journey closes with a last night in Tashkent before your flight home.",
+      "highlights": [
+        "Sunset visit to Registan Square in Samarkand, with time for photographs",
+        "Afrosiyob high-speed train rides between Tashkent, Samarkand and Bukhara",
+        "Gur-e-Amir Mausoleum, Shah-i-Zinda and Bibi-Khanym Mosque with a private guide",
+        "Slow walks through Bukhara's old town, Kalyan Minaret and Lyab-i-Hauz pond",
+        "One candlelight dinner in the old town of Bukhara",
+        "Couples spa session in Bukhara, subject to availability",
+        "Boutique hotel stays and a welcome flower or cake arrangement on arrival"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Tashkent | Welcome Evening",
+          "description": "Arrive at Tashkent International Airport, where our representative meets you for a private transfer to your hotel.\nCheck in to a couples-friendly hotel, with a flower or cake welcome arranged subject to availability.\nThe rest of the day is free to rest and enjoy a quiet dinner of your choice.\nOvernight stay in Tashkent."
+        },
+        {
+          "day": 2,
+          "title": "Tashkent Old Quarter | Train to Samarkand",
+          "description": "After a late breakfast, tour the Hazrati Imam Complex and the old quarter with a private guide.\nTransfer to the station and board the Afrosiyob high-speed train to Samarkand.\nA private car takes you to your hotel, and the evening is free for a stroll.\nOvernight stay in Samarkand."
+        },
+        {
+          "day": 3,
+          "title": "Samarkand | Gur-e-Amir and Sunset at the Registan",
+          "description": "After breakfast, visit the Gur-e-Amir Mausoleum and the Bibi-Khanym Mosque with your private guide.\nStop at Siab Bazaar for dried fruit, bread and souvenirs.\nTake the afternoon at leisure to rest at your hotel.\nIn the late afternoon, visit Registan Square and watch the light change on its three madrasahs at sunset.\nOvernight stay in Samarkand."
+        },
+        {
+          "day": 4,
+          "title": "Shah-i-Zinda | Train to Bukhara",
+          "description": "After a late breakfast, walk through the Shah-i-Zinda necropolis and its tiled lanes.\nVisit the Ulugh Beg Observatory before heading to the station.\nBoard the Afrosiyob train to Bukhara and transfer privately to your hotel.\nFree evening to wander the old town.\nOvernight stay in Bukhara."
+        },
+        {
+          "day": 5,
+          "title": "Bukhara Old Town | Candlelight Dinner",
+          "description": "After breakfast, explore the Kalyan Minaret, the Ark Fortress and the old trading domes with a private guide.\nPause for tea beside the Lyab-i-Hauz pond.\nEnjoy a couples spa session in the afternoon, subject to availability.\nIn the evening, enjoy a candlelight dinner in the old town.\nOvernight stay in Bukhara."
+        },
+        {
+          "day": 6,
+          "title": "Bukhara Morning | Train to Tashkent",
+          "description": "Spend a slow morning at the hotel or shopping for crafts and textiles in the old town.\nTransfer to the station for the high-speed train back to Tashkent.\nCheck in at your hotel and enjoy a free evening for a farewell dinner.\nOvernight stay in Tashkent."
+        },
+        {
+          "day": 7,
+          "title": "Departure from Tashkent",
+          "description": "After breakfast, complete check-out formalities.\nA private transfer takes you to Tashkent International Airport for your flight home.\nDepart Uzbekistan with warm memories."
+        }
+      ],
+      "inclusions": [
+        "Stay on twin sharing for 6 nights in couples-friendly hotels, with a boutique or courtyard-style stay in Samarkand and Bukhara where available",
+        "Daily breakfast",
+        "One candlelight dinner in the old town of Bukhara, subject to availability",
+        "Flower or cake welcome or room decoration on arrival, subject to availability",
+        "One couples spa session in Bukhara, subject to availability",
+        "Private airport arrival and departure transfers",
+        "Afrosiyob high-speed train tickets for Tashkent to Samarkand, Samarkand to Bukhara and Bukhara to Tashkent",
+        "Private car and private guide for sightseeing as per the itinerary",
+        "Sunset visit to Registan Square as per the itinerary",
+        "Entry tickets to the monuments listed in the itinerary",
+        "Assistance from our travel experts"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than breakfast and the candlelight dinner",
+        "Personal expenses, laundry, tips and porterage",
+        "Camera permits and optional activities",
+        "Local city or tourism taxes payable at the hotel, where applicable",
+        "Anything not listed under inclusions",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at booking so the hotel can arrange the welcome.",
+        "Honeymoon touches are subject to availability and hotel policy.",
+        "Rates are indicative and confirmed at the time of booking.",
+        "The itinerary order may change with weather, train schedules or operational conditions without reducing the sights covered.",
+        "Cancellation and refund are as per our Terms & Conditions.",
+        "Dress modestly at mosques and mausoleums; shoulders and knees should be covered.",
+        "This is a private couple-only trip. Dates are arranged on enquiry and there are no fixed departures."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Marriage certificate or wedding invitation copy",
+        "Return flight tickets",
+        "Travel insurance copy",
+        "Forex or international debit/credit card",
+        "Power adapter (Type C or F, 220 V)",
+        "Comfortable walking shoes and modest clothing"
+      ],
+      "pickup": "Tashkent International Airport",
+      "drop_point": "Tashkent International Airport",
+      "photo": "registan-square",
+      "gallery": [
+        "kalyan-minaret-bukhara",
+        "gur-e-amir",
+        "shah-i-zinda",
+        "hazrati-imam-tashkent"
+      ],
+      "price": 94000,
+      "original_price": 101500
     }
   ]
 }

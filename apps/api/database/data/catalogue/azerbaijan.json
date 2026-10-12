@@ -74,7 +74,8 @@
         "classic-azerbaijan",
         "azerbaijan-buy-1-get-1-free",
         "azerbaijan-baku-gabala-sheki-group-trip",
-        "azerbaijan-baku-gobustan-weekend-escape"
+        "azerbaijan-baku-gobustan-weekend-escape",
+        "azerbaijan-baku-gabala-honeymoon"
       ]
     },
     {
@@ -131,7 +132,8 @@
       "packages": [
         "classic-azerbaijan",
         "autumn-azerbaijan-georgia",
-        "best-of-azerbaijan-with-georgia-winter"
+        "best-of-azerbaijan-with-georgia-winter",
+        "azerbaijan-baku-gabala-honeymoon"
       ]
     },
     {
@@ -780,6 +782,111 @@
         "every_weeks": 1,
         "capacity": 22
       }
+    }
+  ],
+  "honeymoon_trips": [
+    {
+      "slug": "azerbaijan-baku-gabala-honeymoon",
+      "title": "Azerbaijan Honeymoon: Baku Lights and Gabala Mountain Stay",
+      "nights": 5,
+      "summary": "A private five-night couple trip pairing the Caspian city of Baku with two unhurried nights in the Caucasus mountains at Gabala, with a cable car ride and a candlelight dinner.",
+      "overview": "Begin your married life in Baku, where the Flame Towers glow over the Caspian and the old walled city has lanes made for slow wandering. Two nights here are kept deliberately relaxed, with late starts, a private guide for the Old City and the Heydar Aliyev Center, and a free evening to stroll Baku Boulevard hand in hand.\n\nThen you swap city for mountain air. A private car takes you to Gabala, in the foothills of the Greater Caucasus, for two nights of forest, lake and waterfall scenery. You see Nohur Lake, ride the cable car into the mountains, visit the Yeddi Gozel Waterfalls and share a candlelight dinner, with a couples spa session if the hotel offers it.\n\nYou return to Baku for a final evening at the fire sites of Absheron before you fly home. Every transfer and sightseeing day is private, so you set the pace.",
+      "highlights": [
+        "Private guide for the walled Old City and a photo stop at the Heydar Aliyev Center",
+        "Evening walk on Baku Boulevard with the Flame Towers glowing across the bay",
+        "Two unhurried nights in the Caucasus mountains at Gabala",
+        "Nohur Lake and the Yeddi Gozel Waterfalls, at your own pace",
+        "A mountain cable car ride at Tufandag, subject to weather and availability",
+        "A candlelight dinner for two and a flower welcome on arrival",
+        "Ateshgah Fire Temple and Yanardag at dusk before departure",
+        "Private car and driver for every transfer and sightseeing day"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Baku | Evening on the Boulevard",
+          "description": "Arrive at Baku airport, where your private driver meets you for the transfer to the hotel.\nCheck in to a room decorated for newlyweds, subject to availability.\nRest as long as you like, then take a relaxed evening walk along Baku Boulevard on the Caspian shore.\nOvernight stay in Baku."
+        },
+        {
+          "day": 2,
+          "title": "Old City and Modern Baku",
+          "description": "Enjoy a late breakfast and a slow start to the day.\nMeet your private guide for a walk through the walled Old City, Icheri Sheher, with its narrow lanes and the Maiden Tower area.\nDrive past the Flame Towers and make a photo stop at the Heydar Aliyev Center.\nThe evening is free for dinner and a stroll on Nizami Street.\nOvernight stay in Baku."
+        },
+        {
+          "day": 3,
+          "title": "Baku to Gabala | Nohur Lake",
+          "description": "After a leisurely breakfast, check out and set off with your private driver towards Gabala, with comfort stops along the way.\nThe drive climbs into the Caucasus foothills and the air turns cooler and greener.\nCheck in to your mountain hotel, then visit Nohur Lake for a quiet walk by the water.\nOvernight stay in Gabala."
+        },
+        {
+          "day": 4,
+          "title": "Gabala Cable Car and Waterfalls | Candlelight Dinner",
+          "description": "After breakfast, ride the cable car at Tufandag for mountain views, subject to weather and availability.\nVisit the Yeddi Gozel Waterfalls, set among the forest.\nSpend the afternoon at leisure, with a couples spa session at the hotel if available.\nEnjoy a candlelight dinner for two in the evening.\nOvernight stay in Gabala."
+        },
+        {
+          "day": 5,
+          "title": "Gabala to Baku | Fire Sites at Dusk",
+          "description": "After breakfast, check out and take the scenic drive back to Baku with your private driver.\nCheck in to the hotel and rest.\nIn the late afternoon visit the Ateshgah Fire Temple and Yanardag, the burning hillside, which looks best as the light fades.\nOvernight stay in Baku."
+        },
+        {
+          "day": 6,
+          "title": "Departure from Baku",
+          "description": "After a relaxed breakfast, check out from the hotel.\nYour private driver takes you to Baku airport for your onward flight."
+        }
+      ],
+      "inclusions": [
+        "Five nights' stay on twin sharing: two nights in Baku, two in Gabala and one in Baku, in hotels suited to couples",
+        "Welcome with flowers or a cake and a bed decoration on arrival, subject to availability",
+        "Daily breakfast at the hotels",
+        "One candlelight dinner for two in Gabala, subject to availability",
+        "One couples spa session where the hotel offers it, subject to availability",
+        "Mountain cable car ride at Gabala, subject to weather and availability",
+        "Private airport and inter-city transfers by car with driver",
+        "Private sightseeing in Baku and Gabala as per the itinerary, with a guide for the Old City",
+        "Entry tickets for the sights listed in the itinerary, where applicable",
+        "Assistance from our travel experts before and during the trip"
+      ],
+      "exclusions": [
+        "International and domestic airfare",
+        "Visa fees and processing",
+        "Travel insurance",
+        "Meals other than daily breakfast and the candlelight dinner",
+        "Personal expenses, laundry, tips and porterage",
+        "Optional activities and anything not listed under inclusions",
+        "Local city or tourism taxes payable at the hotel where applicable",
+        "GST and TCS as applicable"
+      ],
+      "notes": [
+        "Passport must be valid for at least 6 months from the date of travel.",
+        "Please share your marriage certificate or wedding date at booking so the hotel can arrange the welcome.",
+        "Honeymoon touches such as the decoration, dinner and spa are subject to availability and hotel policy.",
+        "Rates are indicative and are confirmed at booking.",
+        "Standard hotel check-in is around 2 pm and check-out around 12 noon.",
+        "The itinerary order may change with weather, road, flight or operational conditions without reducing the sights covered.",
+        "This is a private trip for the couple, with no fixed departure dates; please enquire for your preferred dates.",
+        "Gabala is in the mountains and evenings can be cool, so carry a light jacket.",
+        "Cancellation and refund are as per our Terms & Conditions."
+      ],
+      "must_carry": [
+        "Passport and visa copies",
+        "Marriage certificate or wedding invitation",
+        "Return air tickets",
+        "Travel insurance copy",
+        "Forex or international card",
+        "Power adapter for European two-pin sockets (Type C/F)",
+        "A light jacket or windcheater for Baku and the mountains",
+        "Comfortable walking shoes"
+      ],
+      "pickup": "Baku Heydar Aliyev International Airport",
+      "drop_point": "Baku Heydar Aliyev International Airport",
+      "photo": "nohur-lake-gabala",
+      "gallery": [
+        "baku-boulevard",
+        "flame-towers-baku",
+        "baku-old-city",
+        "ateshgah-fire-temple"
+      ],
+      "price": 64500,
+      "original_price": 69700
     }
   ]
 }
