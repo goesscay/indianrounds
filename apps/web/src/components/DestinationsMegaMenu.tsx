@@ -7,7 +7,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import type { Destination } from "@/lib/api";
 import { CoverImage } from "./CoverImage";
 
-export function DestinationsMegaMenu({ destinations }: { destinations: Destination[] }) {
+export function DestinationsMegaMenu({ label, href, allLabel, destinations }: { label: string; href: string; allLabel: string; destinations: Destination[] }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const [lastPathname, setLastPathname] = useState(pathname);
@@ -20,7 +20,7 @@ export function DestinationsMegaMenu({ destinations }: { destinations: Destinati
     setOpen(false);
   }
 
-  // Every destination, in the order set in the admin (the API already sorts by it).
+  // Every destination of this region, in the order set in the admin (the API already sorts by it).
   const items = destinations;
 
   function closeOnBlur(e: FocusEvent<HTMLDivElement>) {
@@ -28,11 +28,11 @@ export function DestinationsMegaMenu({ destinations }: { destinations: Destinati
   }
 
   return (
-    <div className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} onFocus={() => setOpen(true)} onBlur={closeOnBlur}>
-      <Link href="/destinations" aria-haspopup="true" aria-expanded={open} onClick={() => setOpen(false)} className="flex items-center gap-1 text-sm font-semibold text-white/90 transition hover:text-white">
-        Destinations <ChevronDown size={14} />
+    <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} onFocus={() => setOpen(true)} onBlur={closeOnBlur}>
+      <Link href={href} aria-haspopup="true" aria-expanded={open} onClick={() => setOpen(false)} className="flex items-center gap-1 text-sm font-semibold text-white/90 transition hover:text-white">
+        {label} <ChevronDown size={14} />
       </Link>
-      <div className={`absolute left-0 top-full z-50 w-[52rem] max-w-[calc(100vw-2rem)] rounded-2xl border border-black/5 bg-white p-5 shadow-float transition ${open ? "visible opacity-100" : "invisible opacity-0"}`}>
+      <div className={`absolute left-1/2 top-full z-50 -mt-3 w-[52rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 rounded-2xl border border-black/5 bg-white p-5 shadow-float transition ${open ? "visible opacity-100" : "invisible opacity-0"}`}>
         <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-5">
           {items.map((d) => (
             <li key={d.slug}>
@@ -43,8 +43,8 @@ export function DestinationsMegaMenu({ destinations }: { destinations: Destinati
             </li>
           ))}
         </ul>
-        <Link href="/destinations" onClick={() => setOpen(false)} className="mt-4 flex items-center justify-center gap-2 rounded-full border border-brand-red py-2.5 text-sm font-semibold text-brand-red transition hover:bg-brand-red hover:text-white">
-          View All Destinations <ArrowRight size={16} />
+        <Link href={href} onClick={() => setOpen(false)} className="mt-4 flex items-center justify-center gap-2 rounded-full border border-brand-red py-2.5 text-sm font-semibold text-brand-red transition hover:bg-brand-red hover:text-white">
+          {allLabel} <ArrowRight size={16} />
         </Link>
       </div>
     </div>

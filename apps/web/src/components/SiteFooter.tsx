@@ -6,7 +6,8 @@ import type { Destination } from "@/lib/api";
 
 const quickLinks = [
   { href: "/", label: "Home" },
-  { href: "/destinations", label: "Destinations" },
+  { href: "/explore-the-world", label: "Explore the World" },
+  { href: "/explore-india", label: "Explore India" },
   { href: "/tours", label: "Tours" },
   { href: "/offers", label: "Special Offers" },
   { href: "/blog", label: "Travel Stories" },

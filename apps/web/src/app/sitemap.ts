@@ -34,7 +34,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ).flat();
 
   const entries = [
-    ...["", "/destinations", "/tours", "/about", "/contact", "/terms", "/privacy", "/disclaimer", "/customer-support", "/blog", "/corporate", "/custom-trips", "/careers", "/offers"].map((p) => ({
+    ...["", "/destinations", "/explore-the-world", "/explore-india", "/tours", "/about", "/contact", "/terms", "/privacy", "/disclaimer", "/customer-support", "/blog", "/corporate", "/custom-trips", "/careers", "/offers"].map((p) => ({
       url: url(p),
       lastModified: now,
     })),

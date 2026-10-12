@@ -16,6 +16,12 @@ export const site = {
   ],
 } as const;
 
+/** Where each region lives: the two top-level places to browse destinations. */
+export const regionLinks = {
+  international: { href: "/explore-the-world", label: "Explore the World" },
+  india: { href: "/explore-india", label: "Explore India" },
+} as const;
+
 /** Top bar (white): compact utility links. The logo itself is the "Home" link. */
 export const topNavLinks = [
   { href: "/bookings", label: "My Bookings" },
@@ -27,7 +33,8 @@ export const topNavLinks = [
 
 /** Second bar (brand red): the main catalogue/category navigation. */
 export const categoryNavLinks = [
-  { href: "/destinations", label: "Destinations" },
+  { href: "/explore-the-world", label: "Explore the World" },
+  { href: "/explore-india", label: "Explore India" },
   { href: "/group-tours", label: "Group Tours" },
   { href: "/weekend-escapes", label: "Weekend Escapes" },
   { href: "/honeymoon", label: "Honeymoon" },

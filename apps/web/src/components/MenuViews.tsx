@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { ChevronRight } from "lucide-react";
 import type { CategorySummary, Destination, MenuCountry, MenuSlug, Tour } from "@/lib/api";
 import { formatINR } from "@/lib/format";
+import { regionLinks } from "@/lib/site";
 import { CoverImage } from "./CoverImage";
 import { DestinationCard } from "./DestinationCard";
 import { OpenQuoteButton } from "./LeadModal";
@@ -12,6 +13,8 @@ import { TourCard } from "./TourCard";
 const menuTitles: Record<MenuSlug, string> = { destinations: "Destinations", "group-tours": "Group Tours", "weekend-escapes": "Weekend Escapes", honeymoon: "Honeymoon" };
 
 export type Crumb = { label: string; href?: string };
+
+const regionLink = (region: string): Crumb => (region === "india" ? regionLinks.india : regionLinks.international);
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
@@ -80,7 +83,7 @@ export function MenuCountryView({ menu, destination, categories }: { menu: MenuS
   return (
     <>
       <Hero
-        crumbs={menu === "destinations" ? [{ label: "Destinations", href: "/destinations" }, { label: destination.name }] : [{ label: title, href: `/${menu}` }, { label: destination.name }]}
+        crumbs={menu === "destinations" ? [regionLink(destination.region), { label: destination.name }] : [{ label: title, href: `/${menu}` }, { label: destination.name }]}
         title={`${destination.name} ${menu === "destinations" ? "Tour Packages" : title}`}
         sub={destination.tagline}
       >
@@ -116,7 +119,7 @@ export function MenuCategoryView({ menu, destination, category, tours }: { menu:
     <>
       <Hero
         crumbs={[
-          menu === "destinations" ? { label: "Destinations", href: "/destinations" } : { label: title, href: `/${menu}` },
+          menu === "destinations" ? regionLink(destination.region) : { label: title, href: `/${menu}` },
           { label: destination.name, href: country },
           { label: category.name },
         ]}

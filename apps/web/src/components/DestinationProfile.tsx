@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Banknote, CalendarDays, Car, CheckCircle2, ChevronDown, Clock, CloudSun, Compass, Heart, Landmark, Languages, MapPin, MessageCircle, Phone, Plane, ShieldCheck, Sparkles, Utensils, Wallet, Stethoscope, IdCard } from "lucide-react";
 import type { Destination, DestinationFact, ProfileItem } from "@/lib/api";
-import { site } from "@/lib/site";
+import { regionLinks, site } from "@/lib/site";
 import { formatINR } from "@/lib/format";
 import { Breadcrumbs } from "./MenuViews";
 import { CoverImage } from "./CoverImage";
@@ -66,7 +66,7 @@ export function DestinationHero({ destination: d, packageCount }: { destination:
       </div>
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/85 via-black/50 to-black/30" aria-hidden />
       <div className="mx-auto flex min-h-[22rem] max-w-7xl flex-col justify-end px-4 pb-10 pt-12 sm:min-h-[26rem] sm:px-6 lg:min-h-[30rem] lg:px-8 lg:pb-14">
-        <Breadcrumbs items={[{ label: "Destinations", href: "/destinations" }, { label: d.name }]} />
+        <Breadcrumbs items={[d.region === "india" ? regionLinks.india : regionLinks.international, { label: d.name }]} />
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/80">{d.region === "india" ? "India" : "International"}</p>
         <h1 className="mt-2 text-4xl font-extrabold leading-tight sm:text-6xl">{d.name} Tour Packages</h1>
         {d.tagline && <p className="mt-3 max-w-2xl text-base text-white/90 sm:text-lg">{d.tagline}</p>}

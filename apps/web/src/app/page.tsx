@@ -167,7 +167,7 @@ export default async function Home() {
 
       {/* INDIA (appears as soon as India destinations are added in the admin) */}
       {india.length > 0 && (
-        <RailSection kicker="Closer to home" lead="India" accent="Trips" blurb="Mountains, backwaters, deserts and coastlines, planned the way you like to travel." href="/destinations" cta="Explore India" label="India destinations" tone="sand">
+        <RailSection kicker="Closer to home" lead="India" accent="Trips" blurb="Mountains, backwaters, deserts and coastlines, planned the way you like to travel." href="/explore-india" cta="Explore India" label="India destinations" tone="sand">
           {india.map((d) => (
             <PlaceCard key={d.slug} href={`/destinations/${d.slug}`} place={d} />
           ))}
@@ -176,7 +176,7 @@ export default async function Home() {
 
       {/* INTERNATIONAL */}
       {abroad.length > 0 && (
-        <RailSection kicker="Around the world" lead="International" accent="Trips" blurb="From skylines and deserts to islands, Silk Road cities and safaris. Pick a country and see every package." href="/destinations" cta="All destinations" label="International destinations">
+        <RailSection kicker="Around the world" lead="International" accent="Trips" blurb="From skylines and deserts to islands, Silk Road cities and safaris. Pick a country and see every package." href="/explore-the-world" cta="Explore the World" label="International destinations">
           {abroad.map((d) => (
             <PlaceCard key={d.slug} href={`/destinations/${d.slug}`} place={d} />
           ))}
