@@ -28,9 +28,9 @@ export function LegalLayout({ title, accent, intro, path, highlights, sections, 
     <>
       <header className="bg-gradient-to-br from-ink to-slate-800 text-white">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-          <Breadcrumbs items={[{ label: `${title} ${accent}` }]} />
+          <Breadcrumbs items={[{ label: [title, accent].filter(Boolean).join(" ") }]} />
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-amber-300">Legal</p>
-          <h1 className="mt-2 text-4xl font-extrabold sm:text-5xl">{title} <span className="text-amber-300">{accent}</span></h1>
+          <h1 className="mt-2 text-4xl font-extrabold sm:text-5xl">{title ? `${title} ` : ""}<span className="text-amber-300">{accent}</span></h1>
           <p className="mt-3 max-w-2xl text-white/85 sm:text-lg">{intro}</p>
         </div>
       </header>
