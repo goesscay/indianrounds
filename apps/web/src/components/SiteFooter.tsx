@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { site } from "@/lib/site";
 import type { Destination } from "@/lib/api";
+import { socialIcons } from "./SocialIcons";
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -23,14 +24,17 @@ export function SiteFooter({ destinations }: { destinations: Destination[] }) {
         <div className="space-y-4">
           <Image src="/brand/logo-footer.png" alt="Indian Rounds" width={200} height={41} className="h-10 w-auto" />
           <p className="max-w-xs text-sm text-white/70">Your trusted travel partner for unforgettable journeys. Explore India and the world with Indian Rounds.</p>
-          <ul className="flex gap-3">
-            {site.socials.map((s) => (
-              <li key={s.label}>
-                <a href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="grid size-9 place-items-center rounded-full border border-white/30 text-xs font-bold hover:bg-brand-red">
-                  {s.label[0]}
-                </a>
-              </li>
-            ))}
+          <ul className="flex gap-3" aria-label="Follow Indian Rounds">
+            {site.socials.map((s) => {
+              const Icon = socialIcons[s.label];
+              return (
+                <li key={s.label}>
+                  <a href={s.href} target="_blank" rel="noopener noreferrer" aria-label={`Indian Rounds on ${s.label}`} title={s.label} className="grid size-10 place-items-center rounded-full border border-white/30 text-lg transition hover:border-brand-red hover:bg-brand-red hover:text-white">
+                    <Icon />
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
 

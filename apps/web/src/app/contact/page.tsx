@@ -4,6 +4,7 @@ import { ArrowRight, Briefcase, CalendarCheck, Clock, Compass, Headset, Mail, Ma
 import { site } from "@/lib/site";
 import { CoverImage } from "@/components/CoverImage";
 import { LeadForm } from "@/components/LeadForm";
+import { socialIcons } from "@/components/SocialIcons";
 import { Breadcrumbs } from "@/components/MenuViews";
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default function ContactPage() {
       url: site.url,
       telephone: site.phone,
       email: site.email,
+      sameAs: site.socials.map((s) => s.href),
       address: { "@type": "PostalAddress", streetAddress: "13/8 EKR Avenue, Yathavar Street, Kovur, Irandam Kattalai", addressLocality: "Chennai", addressRegion: "Tamil Nadu", postalCode: "600128", addressCountry: "IN" },
     },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
@@ -101,6 +103,23 @@ export default function ContactPage() {
               </address>
               <p className="mt-4 flex gap-3 text-sm text-white/90"><Clock size={20} className="mt-0.5 shrink-0 text-amber-300" aria-hidden /> <span>{site.hours}</span></p>
               <a href={maps} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-ink hover:bg-white/90">Get directions <ArrowRight size={16} aria-hidden /></a>
+            </section>
+
+            <section aria-labelledby="follow-h" className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
+              <h2 id="follow-h" className="text-xl font-extrabold">Follow us</h2>
+              <p className="mt-1 text-sm text-muted">Travel inspiration and trip updates from Indian Rounds.</p>
+              <ul className="mt-4 flex flex-wrap gap-3">
+                {site.socials.map((s) => {
+                  const Icon = socialIcons[s.label];
+                  return (
+                    <li key={s.label}>
+                      <a href={s.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-black/15 px-4 py-2 text-sm font-semibold transition hover:border-brand-red hover:bg-brand-red hover:text-white">
+                        <Icon className="text-lg" /> {s.label}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
             </section>
 
             <section aria-labelledby="topics-h" className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">

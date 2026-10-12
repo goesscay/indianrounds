@@ -9,10 +9,9 @@ export const site = {
   address: "13/8 EKR Avenue, Yathavar Street, Kovur, Irandam Kattalai, Chennai, Tamil Nadu 600128",
   hours: "Mon - Sat: 9:00 AM - 7:00 PM",
   socials: [
-    { label: "Facebook", href: "https://facebook.com" },
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "YouTube", href: "https://youtube.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
+    { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61550517210754" },
+    { label: "Instagram", href: "https://www.instagram.com/indianrounds.in/" },
+    { label: "YouTube", href: "https://www.youtube.com/@indianrounds" },
   ],
 } as const;
 
