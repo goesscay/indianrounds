@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
+use Illuminate\Validation\Rules\Password as PasswordRule;
 use Illuminate\Validation\ValidationException;
 
 class UserController extends Controller
@@ -67,7 +68,9 @@ class UserController extends Controller
 
         $data = $request->validate([
             'name' => 'sometimes|required|string|max:120',
+            'email' => ['sometimes', 'required', 'email:rfc', 'max:255', Rule::unique('users', 'email')->ignore($user->id)],
             'phone' => 'sometimes|nullable|string|regex:/^\d{10,15}$/',
+            'password' => ['sometimes', 'nullable', 'string', PasswordRule::min(10)->letters()->numbers()],
             'is_active' => 'sometimes|boolean',
             'department' => ['sometimes', Rule::in(array_keys(config('rbac.departments')))],
             'tier' => ['sometimes', Rule::in(['admin', 'staff'])],
@@ -75,6 +78,10 @@ class UserController extends Controller
 
         if (isset($data['is_active']) && ! $data['is_active'] && $user->id === $actor->id) {
             throw ValidationException::withMessages(['is_active' => 'You cannot deactivate your own account.']);
+        }
+
+        if ($user->hasRole('super_admin') && (isset($data['email']) || ! empty($data['password']))) {
+            throw ValidationException::withMessages(['email' => 'Super Admin accounts are managed from the command line.']);
         }
 
         $moving = isset($data['department']) || isset($data['tier']);
@@ -87,12 +94,14 @@ class UserController extends Controller
             }
         }
 
-        $before = $user->only(['name', 'phone', 'is_active', 'department', 'staff_tier']);
+        $before = $user->only(['name', 'email', 'phone', 'is_active', 'department', 'staff_tier']);
         $dept = $data['department'] ?? $user->department;
         $tier = $data['tier'] ?? $user->staff_tier;
 
         $user->update(array_filter([
             'name' => $data['name'] ?? null,
+            'email' => $data['email'] ?? null,
+            'password' => $data['password'] ?? null,
             'department' => $moving ? $dept : null,
             'staff_tier' => $moving ? $tier : null,
         ], fn ($v) => $v !== null) + array_intersect_key($data, array_flip(['phone', 'is_active'])));
@@ -100,11 +109,11 @@ class UserController extends Controller
         if ($moving) {
             $user->syncRoles(["{$dept}.{$tier}"]);
         }
-        if (isset($data['is_active']) && ! $data['is_active']) {
+        if (isset($data['is_active']) && ! $data['is_active'] || ! empty($data['password'])) {
             $user->tokens()->delete();
         }
 
-        AuditLog::record('user.updated', $user, $before, $user->only(['name', 'phone', 'is_active', 'department', 'staff_tier']));
+        AuditLog::record('user.updated', $user, $before, $user->only(['name', 'email', 'phone', 'is_active', 'department', 'staff_tier']));
 
         return response()->json(['data' => $this->present($user->fresh() ?? $user)]);
     }

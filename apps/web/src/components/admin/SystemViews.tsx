@@ -141,6 +141,7 @@ export function TeamView() {
   const [info, setInfo] = useState<string | null>(null);
   const [err, setErr] = useState<Record<string, string[]>>({});
   const [busy, setBusy] = useState(false);
+  const [editing, setEditing] = useState<Member | null>(null);
   const isSuper = !user?.staff?.department;
 
   async function create(e: FormEvent<HTMLFormElement>) {
@@ -152,6 +153,29 @@ export function TeamView() {
       const res = await apiFetch<{ message: string }>("admin/users", { body: { name: f.name, email: f.email, phone: f.phone || undefined, department: isSuper ? f.department : user?.staff?.department, tier: isSuper ? f.tier : "staff" } });
       setInfo(res.message);
       setOpen(false);
+      list.reload();
+    } catch (e2) {
+      if (e2 instanceof ApiError) setErr(e2.errors);
+    }
+    setBusy(false);
+  }
+
+  async function save(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (!editing) return;
+    setBusy(true);
+    setErr({});
+    const f = Object.fromEntries(new FormData(e.currentTarget).entries()) as Record<string, string>;
+    const body: Record<string, unknown> = { name: f.name, email: f.email, phone: f.phone || null };
+    if (f.password) body.password = f.password;
+    if (isSuper) {
+      body.department = f.department;
+      body.tier = f.tier;
+    }
+    try {
+      await apiFetch(`admin/users/${editing.id}`, { method: "PUT", body });
+      setInfo(f.password ? "Details saved. The password was changed and their sessions were signed out." : "Details saved.");
+      setEditing(null);
       list.reload();
     } catch (e2) {
       if (e2 instanceof ApiError) setErr(e2.errors);
@@ -180,10 +204,28 @@ export function TeamView() {
           { header: "Department", render: (r) => r.department_label ?? "All" },
           { header: "Tier", render: (r) => <Badge tone={r.tier === "staff" ? "gray" : "blue"}>{r.tier.replace("_", " ")}</Badge> },
           { header: "Status", render: (r) => (r.is_active ? <Status value="active" /> : <Badge tone="red">disabled</Badge>) },
-          { header: "", render: (r) => r.tier !== "super_admin" && r.id !== user?.id && (isSuper || r.tier === "staff") ? <button onClick={() => toggle(r)} className="text-brand-red">{r.is_active ? "Deactivate" : "Reactivate"}</button> : null },
+          { header: "", render: (r) => r.tier !== "super_admin" && r.id !== user?.id && (isSuper || r.tier === "staff") ? <span className="flex gap-4"><button onClick={() => { setErr({}); setEditing(r); }} className="font-semibold text-ink hover:text-brand-red">Edit</button><button onClick={() => toggle(r)} className="text-brand-red">{r.is_active ? "Deactivate" : "Reactivate"}</button></span> : null },
         ]}
       />
       <Pager meta={list.meta} page={list.page} onPage={list.setPage} />
+      {editing && (
+        <Modal title={`Edit ${editing.name}`} onClose={() => setEditing(null)}>
+          <form onSubmit={save} className="space-y-4">
+            <Labeled label="Full name *" id="e-name" error={err.name?.[0]}><input id="e-name" name="name" required defaultValue={editing.name} className={field} /></Labeled>
+            <Labeled label="Work email *" id="e-email" error={err.email?.[0]}><input id="e-email" name="email" type="email" required defaultValue={editing.email} className={field} /></Labeled>
+            <Labeled label="Mobile" id="e-phone" error={err.phone?.[0]}><input id="e-phone" name="phone" inputMode="numeric" defaultValue={editing.phone ?? ""} className={field} /></Labeled>
+            {isSuper && (
+              <div className="grid grid-cols-2 gap-4">
+                <Labeled label="Department *" id="e-dept" error={err.department?.[0]}><select id="e-dept" name="department" required defaultValue={editing.department ?? ""} className={field}>{(depts.data?.data.departments ?? []).map((d) => <option key={d.key} value={d.key}>{d.label}</option>)}</select></Labeled>
+                <Labeled label="Tier *" id="e-tier" error={err.tier?.[0]}><select id="e-tier" name="tier" defaultValue={editing.tier} className={field}><option value="staff">Staff</option><option value="admin">Admin</option></select></Labeled>
+              </div>
+            )}
+            <Labeled label="New password (leave blank to keep the current one)" id="e-pass" error={err.password?.[0]}><input id="e-pass" name="password" type="password" autoComplete="new-password" minLength={10} className={field} /></Labeled>
+            <p className="text-xs text-muted">At least 10 characters with letters and numbers. Changing it signs them out everywhere.</p>
+            <button disabled={busy} className={primaryBtn}>Save changes</button>
+          </form>
+        </Modal>
+      )}
       {open && (
         <Modal title="Add a team member" onClose={() => setOpen(false)}>
           <form onSubmit={create} className="space-y-4">

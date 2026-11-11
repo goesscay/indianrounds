@@ -13,6 +13,7 @@ use Database\Seeders\CatalogueSeeder;
 use Database\Seeders\RbacSeeder;
 use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Notification;
 use Laravel\Sanctum\Sanctum;
 use LogicException;
@@ -281,6 +282,27 @@ class AdminRbacTest extends TestCase
         $this->putJson("/api/v1/admin/users/{$mine->id}", ['department' => 'finance', 'tier' => 'admin'])->assertOk();
         $this->assertTrue($mine->fresh()->hasRole('finance.admin'));
         $this->assertFalse($mine->fresh()->hasRole('sales.staff'));
+    }
+
+    public function test_staff_details_email_and_password_can_be_edited(): void
+    {
+        $mine = User::factory()->create(['department' => 'sales', 'staff_tier' => 'staff']);
+        $mine->assignRole('sales.staff');
+        $mine->createToken('t', ['staff']);
+
+        $this->staff('sales', 'admin');
+        $this->putJson("/api/v1/admin/users/{$mine->id}", ['name' => 'Renamed', 'email' => 'renamed@example.com', 'phone' => '9876543210'])->assertOk();
+        $this->assertSame('renamed@example.com', $mine->fresh()->email);
+        $this->assertSame(1, $mine->tokens()->count());
+
+        $this->putJson("/api/v1/admin/users/{$mine->id}", ['password' => 'short'])->assertUnprocessable()->assertJsonValidationErrors(['password']);
+        $this->putJson("/api/v1/admin/users/{$mine->id}", ['password' => 'NewPassw0rd123'])->assertOk();
+        $this->assertTrue(Hash::check('NewPassw0rd123', $mine->fresh()->password));
+        $this->assertSame(0, $mine->tokens()->count());
+        $this->assertStringNotContainsString('NewPassw0rd123', json_encode(AuditLog::query()->get()->toArray()));
+
+        $taken = User::factory()->create();
+        $this->putJson("/api/v1/admin/users/{$mine->id}", ['email' => $taken->email])->assertUnprocessable()->assertJsonValidationErrors(['email']);
     }
 
     public function test_super_admin_cannot_deactivate_self(): void
