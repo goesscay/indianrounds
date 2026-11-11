@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Post;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -21,7 +22,7 @@ class PostController extends Controller
             'per_page' => 'nullable|integer|min:1|max:24',
         ]);
 
-        $q = Post::query()->live()->with('destination:id,name,slug')->orderByDesc('published_at');
+        $q = Post::query()->live()->with('destination:id,name,slug');
         if (! empty($data['destination'])) {
             $q->whereHas('destination', fn ($d) => $d->where('slug', $data['destination']));
         }
@@ -32,9 +33,9 @@ class PostController extends Controller
             $q->where('is_featured', true);
         }
         if (! empty($data['q'])) {
-            $term = '%'.str_replace(['%', '_'], ['\\%', '\\_'], $data['q']).'%';
-            $q->where(fn ($w) => $w->where('title', 'like', $term)->orWhere('excerpt', 'like', $term));
+            $this->search($q, (string) $data['q']);
         }
+        $q->orderByDesc('published_at');
 
         $page = $q->paginate($data['per_page'] ?? 12)->withQueryString();
 
@@ -42,6 +43,38 @@ class PostController extends Controller
             'data' => $page->getCollection()->map(fn (Post $p) => $this->card($p))->values(),
             'meta' => ['current_page' => $page->currentPage(), 'last_page' => $page->lastPage(), 'total' => $page->total()] + $this->facets(),
         ]);
+    }
+
+    /**
+     * Every word typed must appear somewhere in the article: its title, intro, text, search description or
+     * destination (name, or region: "India" finds every Indian destination). Articles whose title or destination
+     * match come first.
+     *
+     * @param  Builder<Post>  $q
+     */
+    private function search(Builder $q, string $text): void
+    {
+        $words = collect(preg_split('/\s+/u', trim(str_replace(['%', '_', '\\'], ' ', $text))) ?: [])
+            ->filter(fn ($w) => $w !== '')->map(fn ($w) => mb_substr($w, 0, 40))->unique()->take(6)->values();
+
+        foreach ($words as $word) {
+            $like = '%'.$word.'%';
+            $region = mb_strtolower($word);
+            $q->where(fn ($w) => $w->where('title', 'like', $like)
+                ->orWhere('excerpt', 'like', $like)
+                ->orWhere('meta_description', 'like', $like)
+                ->orWhere('body', 'like', $like)
+                ->orWhereHas('destination', fn ($d) => $d->where('name', 'like', $like)->orWhere('region', $region)));
+        }
+
+        // Best matches first: title, then destination, then intro or search description, then text only.
+        $score = $words->map(fn () => '(case when title like ? then 4 else 0 end'
+            .' + case when exists (select 1 from destinations d where d.id = posts.destination_id and (d.name like ? or d.region = ?)) then 3 else 0 end'
+            .' + case when excerpt like ? or meta_description like ? then 2 else 0 end)')->implode(' + ');
+        $bindings = $words->flatMap(fn ($w) => ['%'.$w.'%', '%'.$w.'%', mb_strtolower($w), '%'.$w.'%', '%'.$w.'%'])->all();
+        if ($score !== '') {
+            $q->orderByRaw("({$score}) desc", $bindings);
+        }
     }
 
     /**
