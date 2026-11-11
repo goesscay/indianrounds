@@ -1,10 +1,12 @@
 "use client";
 
-import { useRef, useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import { ApiError, apiFetch, uploadPostImage } from "@/lib/client-api";
 import { defaultPostLayout, postTypes, type PostLayout } from "@/lib/api";
 import { can, useAuth } from "@/lib/auth";
 import { useApi } from "@/lib/use-api";
+import { factsToRows, parseBody, rowsToFacts, serializeBody } from "@/lib/post-body";
+import { BodyEditor, FactsEditor } from "./PostBodyEditor";
 import { field, ghostBtn, Labeled, Modal, Pager, primaryBtn, Status, Table, Title, useList } from "./ui";
 
 // ---------- Blog posts ----------
@@ -85,9 +87,9 @@ function PostForm({ initial, destinations, canPublish, canDelete, authorName, on
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
   const [cover, setCover] = useState(initial?.cover_image_url ?? "");
-  const [uploading, setUploading] = useState<"cover" | "body" | null>(null);
-  const bodyRef = useRef<HTMLTextAreaElement>(null);
-  const captionRef = useRef<HTMLInputElement>(null);
+  const [uploading, setUploading] = useState<"cover" | null>(null);
+  const [blocks, setBlocks] = useState(() => parseBody(initial?.body ?? ""));
+  const [facts, setFacts] = useState(() => factsToRows(initial?.key_facts));
   const layout = { ...defaultPostLayout, ...(initial?.layout ?? {}) };
 
   async function pickCover(file: File | undefined) {
@@ -102,31 +104,17 @@ function PostForm({ initial, destinations, canPublish, canDelete, authorName, on
     setUploading(null);
   }
 
-  async function insertPhoto(file: File | undefined) {
-    const box = bodyRef.current;
-    if (!file || !box) return;
-    setUploading("body");
-    setMsg(null);
-    try {
-      const url = await uploadPostImage(file);
-      const caption = (captionRef.current?.value ?? "").replace(/[\[\]\n]/g, " ").trim();
-      const at = box.selectionStart ?? box.value.length;
-      const snippet = `\n\n![${caption}](${url})\n\n`;
-      box.value = box.value.slice(0, at) + snippet + box.value.slice(at);
-      box.focus();
-      box.setSelectionRange(at + snippet.length, at + snippet.length);
-      if (captionRef.current) captionRef.current.value = "";
-    } catch (err) {
-      setMsg(err instanceof ApiError ? err.message : "Upload failed.");
-    }
-    setUploading(null);
-  }
-
   async function save(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setBusy(true);
     setErrors({});
     setMsg(null);
+    const text = serializeBody(blocks);
+    if (!text) {
+      setErrors({ body: ["Add some content: at least one heading, text or photo."] });
+      setBusy(false);
+      return;
+    }
     const form = new FormData(e.currentTarget);
     const f = Object.fromEntries(form.entries()) as Record<string, string>;
     const picked = {
@@ -136,14 +124,11 @@ function PostForm({ initial, destinations, canPublish, canDelete, authorName, on
     };
     const body = {
       layout: picked,
-      title: f.title, body: f.body, excerpt: f.excerpt || null, content_type: f.content_type,
+      title: f.title, body: text, excerpt: f.excerpt || null, content_type: f.content_type,
       destination_id: f.destination_id ? Number(f.destination_id) : null, author_name: f.author_name || authorName,
       cover_image_url: cover || null, meta_description: f.meta_description || null,
       is_featured: f.is_featured === "on",
-      key_facts: f.key_facts.split("\n").map((l) => l.trim()).filter(Boolean).map((l) => {
-        const [label, ...rest] = l.split(":");
-        return { label: label.trim(), value: rest.join(":").trim() };
-      }),
+      key_facts: rowsToFacts(facts),
       ...(f.slug ? { slug: f.slug } : {}),
       ...(canPublish ? { status: f.status } : {}),
     };
@@ -192,22 +177,18 @@ function PostForm({ initial, destinations, canPublish, canDelete, authorName, on
         <p className="mt-1 text-xs text-muted">JPG, PNG or WebP, up to 5 MB. A wide photo (3:2 or 16:9) works best.</p>
       </Labeled>
       <Labeled label="Excerpt (shown on cards)" id="p-ex" error={errors.excerpt?.[0]}><textarea id="p-ex" name="excerpt" rows={2} defaultValue={initial?.excerpt ?? ""} className={field} /></Labeled>
-      <Labeled label="Body *" id="p-body" error={errors.body?.[0]}>
-        <div className="mb-2 flex flex-wrap items-center gap-2 rounded-lg bg-surface-alt p-2 text-sm">
-          <input ref={captionRef} aria-label="Photo caption" placeholder="Photo caption (optional)" className={`${field} max-w-xs`} />
-          <label className="cursor-pointer rounded-full bg-white px-4 py-2 font-semibold shadow-sm hover:text-brand-red">
-            {uploading === "body" ? "Uploading…" : "Insert photo"}
-            <input type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" disabled={uploading !== null} onChange={(e) => { void insertPhoto(e.target.files?.[0]); e.target.value = ""; }} />
-          </label>
-          <span className="text-xs text-muted">Click in the text where the photo should go, then insert.</span>
-        </div>
-        <textarea id="p-body" ref={bodyRef} name="body" required rows={14} defaultValue={initial?.body} className={`${field} font-mono`} />
-        <p className="mt-1 text-xs text-muted">Formatting: ## Heading, ### Subheading, - bullets, 1. numbered, **bold**, *italic*, [text](https://link), a tip box as &gt; **Tip:** text, and and photos with the Insert photo button above. Raw HTML is not rendered.</p>
-      </Labeled>
-      <Labeled label="Quick facts (one per line, Label: value)" id="p-facts" error={errors.key_facts?.[0]}>
-        <textarea id="p-facts" name="key_facts" rows={4} defaultValue={(initial?.key_facts ?? []).map((k) => `${k.label}: ${k.value}`).join("\n")} placeholder={"Best time: October to March\nIdeal stay: 5 nights"} className={field} />
-        <p className="mt-1 text-xs text-muted">Shown in a box beside the article. Up to 8 lines.</p>
-      </Labeled>
+      <fieldset className="space-y-2">
+        <legend className="text-sm font-medium">Article content *</legend>
+        <p className="text-xs text-muted">Build the article from fields: add a section heading, then its text and photos, in the order they should appear. No formatting code needed. Use the arrows to reorder.</p>
+        <BodyEditor blocks={blocks} onChange={setBlocks} onError={setMsg} />
+        {errors.body?.[0] && <p role="alert" className="text-xs text-brand-red">{errors.body[0]}</p>}
+      </fieldset>
+      <fieldset className="space-y-2">
+        <legend className="text-sm font-medium">Quick facts</legend>
+        <p className="text-xs text-muted">Shown in a box beside the article, for example Best time: October to March. Up to 8 facts.</p>
+        <FactsEditor rows={facts} onChange={setFacts} />
+        {errors.key_facts?.[0] && <p role="alert" className="text-xs text-brand-red">{errors.key_facts[0]}</p>}
+      </fieldset>
       <label className="flex items-center gap-2 text-sm font-medium"><input type="checkbox" name="is_featured" defaultChecked={initial?.is_featured ?? false} className="size-4 accent-brand-red" /> Feature this article at the top of the blog page</label>
       <fieldset className="space-y-4 rounded-card border border-black/10 p-4">
         <legend className="px-2 text-sm font-bold">Page layout</legend>
