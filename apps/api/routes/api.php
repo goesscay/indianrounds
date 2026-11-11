@@ -36,6 +36,7 @@ Route::prefix('v1')->group(function () {
         Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
         Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
         Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
+        Route::get('/media/blog/{file}', [PostController::class, 'image'])->where('file', '[a-z0-9]+\.(jpg|jpeg|png|webp)')->name('posts.image');
         Route::get('/menus/{menu}', [MenuController::class, 'countries'])->name('menus.countries');
         Route::get('/menus/{menu}/{country}', [MenuController::class, 'country'])->name('menus.country');
         Route::get('/menus/{menu}/{country}/{category}', [MenuController::class, 'category'])->name('menus.category');
@@ -133,6 +134,7 @@ Route::prefix('v1')->group(function () {
         Route::post('/grievances/{grievance}/resolve', [Admin\GrievanceController::class, 'resolve'])->middleware('permission:grievances.handle|grievances.escalate');
         Route::get('/posts', [Admin\PostController::class, 'index'])->middleware('permission:posts.view');
         Route::get('/posts/{post}', [Admin\PostController::class, 'show'])->middleware('permission:posts.view');
+        Route::post('/posts/upload-image', [Admin\PostController::class, 'uploadImage'])->middleware('permission:posts.manage');
         Route::post('/posts', [Admin\PostController::class, 'store'])->middleware('permission:posts.manage');
         Route::put('/posts/{post}', [Admin\PostController::class, 'update'])->middleware('permission:posts.manage');
         Route::delete('/posts/{post}', [Admin\PostController::class, 'destroy'])->middleware('permission:posts.delete');

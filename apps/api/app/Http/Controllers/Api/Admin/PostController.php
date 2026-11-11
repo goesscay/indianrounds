@@ -8,6 +8,7 @@ use App\Models\AuditLog;
 use App\Models\Post;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
@@ -35,7 +36,19 @@ class PostController extends Controller
 
     public function show(Post $post): JsonResponse
     {
-        return response()->json(['data' => $post]);
+        return response()->json(['data' => $post->toArray() + ['layout' => $post->resolvedLayout()]]);
+    }
+
+    /** Uploads a photo for a post (cover or inside the text) and returns the address to use. */
+    public function uploadImage(Request $request): JsonResponse
+    {
+        $request->validate(['image' => 'required|file|image|mimes:jpg,jpeg,png,webp|max:5120']);
+        $file = $request->file('image');
+        $name = Str::lower(Str::random(24)).'.'.($file->guessExtension() ?: 'jpg');
+        Storage::disk('public')->putFileAs('blog', $file, $name);
+        AuditLog::record('post.image_uploaded', null, null, ['file' => $name]);
+
+        return response()->json(['data' => ['url' => url("/api/v1/media/blog/{$name}")]], 201);
     }
 
     public function store(Request $request): JsonResponse
@@ -114,8 +127,27 @@ class PostController extends Controller
             'key_facts' => 'nullable|array|max:8',
             'key_facts.*.label' => 'required|string|max:40',
             'key_facts.*.value' => 'required|string|max:160',
+            'layout' => 'nullable|array',
+            ...$this->layoutRules(),
             'meta_description' => 'nullable|string|max:300',
             'status' => 'sometimes|in:draft,published',
         ]);
+    }
+
+    /** @return array<string, mixed> */
+    private function layoutRules(): array
+    {
+        $rules = [];
+        foreach (Post::LAYOUT_CHOICES as $key => [$allowed]) {
+            $rules["layout.{$key}"] = ['sometimes', Rule::in($allowed)];
+        }
+        foreach (array_keys(Post::LAYOUT_TOGGLES) as $key) {
+            $rules["layout.{$key}"] = 'sometimes|boolean';
+        }
+        foreach (Post::LAYOUT_TEXTS as $key => $max) {
+            $rules["layout.{$key}"] = "sometimes|nullable|string|max:{$max}";
+        }
+
+        return $rules;
     }
 }

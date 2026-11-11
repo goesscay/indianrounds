@@ -9,6 +9,19 @@ import { CoverImage } from "./CoverImage";
  */
 
 const inline = /(\*\*[^*]+\*\*|\*[^*\s][^*]*\*|\[[^\]]+\]\([^)\s]+\))/g;
+const apiOrigin = (() => {
+  try {
+    return new URL(process.env.NEXT_PUBLIC_API_URL ?? "").origin;
+  } catch {
+    return null;
+  }
+})();
+
+/** Photos on this site, https photos, and photos uploaded through the admin (served by the API). */
+function safeImage(src: string): boolean {
+  return /^(\/photos\/|https:\/\/)/.test(src) || (apiOrigin !== null && src.startsWith(`${apiOrigin}/api/v1/media/blog/`));
+}
+
 const imageLine = /^!\[([^\]]*)\]\((\S+)\)$/;
 
 function safeHref(href: string): string | null {
@@ -60,7 +73,7 @@ export function Markdown({ source }: { source: string }) {
     const lines = block.split("\n");
 
     const img = lines.length === 1 ? imageLine.exec(block) : null;
-    if (img && /^(\/photos\/|https:\/\/)/.test(img[2])) {
+    if (img && safeImage(img[2])) {
       out.push(
         <figure key={key} className="my-6">
           <CoverImage src={img[2]} alt={img[1]} seed={img[1] || key} className="aspect-[16/9] rounded-card" sizes="(min-width: 1024px) 720px, 100vw" />

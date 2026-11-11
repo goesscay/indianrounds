@@ -31,7 +31,10 @@ async function handle(req: NextRequest, ctx: { params: Promise<{ path: string[] 
 
   const headers: Record<string, string> = { Accept: "application/json" };
   if (token) headers.Authorization = `Bearer ${token}`;
-  if (hasBody) headers["Content-Type"] = "application/json";
+  // Only the blog photo upload may send a file; everything else is JSON.
+  const contentType = req.headers.get("content-type") ?? "";
+  const multipart = target === "admin/posts/upload-image" && contentType.startsWith("multipart/form-data");
+  if (hasBody) headers["Content-Type"] = multipart ? contentType : "application/json";
   // Pass the visitor's address on: the API's login and form throttles are per client, and would
   // otherwise count every visitor as this one server. The API trusts this header only from TRUSTED_PROXIES.
   const forwarded = req.headers.get("x-forwarded-for") ?? req.headers.get("x-real-ip");
@@ -42,7 +45,7 @@ async function handle(req: NextRequest, ctx: { params: Promise<{ path: string[] 
     upstream = await fetch(`${API_URL}/${target}${req.nextUrl.search}`, {
       method: req.method,
       headers,
-      body: hasBody ? await req.text() : undefined,
+      body: hasBody ? (multipart ? await req.arrayBuffer() : await req.text()) : undefined,
       cache: "no-store",
     });
   } catch {
