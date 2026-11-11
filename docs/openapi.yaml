@@ -1554,6 +1554,34 @@ paths:
           $ref: '#/components/responses/Forbidden'
         '422':
           $ref: '#/components/responses/ValidationError'
+  /admin/tours/upload-image:
+    post:
+      summary: 'Tour: Upload Image'
+      tags:
+        - 'Admin: tours'
+      operationId: postAdminToursUploadImage
+      security:
+        -
+          bearer: {  }
+      x-staff-only: true
+      x-permission:
+        - tours.manage
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+        '201':
+          description: 'Created (where a resource is created)'
+        '401':
+          $ref: '#/components/responses/Unauthenticated'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '422':
+          $ref: '#/components/responses/ValidationError'
   '/admin/tours/{tour}':
     get:
       summary: 'Tour: Show'
@@ -2605,6 +2633,22 @@ paths:
       tags:
         - Media
       operationId: getMediaBlogFile
+      parameters:
+        -
+          name: file
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  '/media/tours/{file}':
+    get:
+      summary: 'Media: Tour'
+      tags:
+        - Media
+      operationId: getMediaToursFile
       parameters:
         -
           name: file

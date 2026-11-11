@@ -10,6 +10,7 @@ import { sameOrigin } from "@/lib/same-origin";
 const API_URL = process.env.API_URL ?? "http://localhost:8000/api/v1";
 const COOKIE = "ir_token";
 const ALLOWED = ["auth/", "me", "bookings", "grievances", "tours/", "meta/", "leads/", "admin/", "collections"];
+const UPLOADS = new Set(["admin/posts/upload-image", "admin/tours/upload-image"]);
 const TOKEN_ENDPOINTS = new Set(["auth/login", "auth/register", "auth/google/exchange"]);
 
 async function handle(req: NextRequest, ctx: { params: Promise<{ path: string[] }> }) {
@@ -31,9 +32,9 @@ async function handle(req: NextRequest, ctx: { params: Promise<{ path: string[] 
 
   const headers: Record<string, string> = { Accept: "application/json" };
   if (token) headers.Authorization = `Bearer ${token}`;
-  // Only the blog photo upload may send a file; everything else is JSON.
+  // Only the photo uploads may send a file; everything else is JSON.
   const contentType = req.headers.get("content-type") ?? "";
-  const multipart = target === "admin/posts/upload-image" && contentType.startsWith("multipart/form-data");
+  const multipart = UPLOADS.has(target) && contentType.startsWith("multipart/form-data");
   if (hasBody) headers["Content-Type"] = multipart ? contentType : "application/json";
   // Pass the visitor's address on: the API's login and form throttles are per client, and would
   // otherwise count every visitor as this one server. The API trusts this header only from TRUSTED_PROXIES.

@@ -28,15 +28,20 @@ export async function apiFetch<T = unknown>(path: string, init: { method?: strin
   return json as T;
 }
 
-/** Uploads a photo for a blog post and returns the address to use for it. */
-export async function uploadPostImage(file: File): Promise<string> {
+async function uploadImage(path: string, file: File): Promise<string> {
   const body = new FormData();
   body.append("image", file);
-  const res = await fetch("/api/backend/admin/posts/upload-image", { method: "POST", body, headers: { Accept: "application/json" }, cache: "no-store" });
+  const res = await fetch(`/api/backend/${path}`, { method: "POST", body, headers: { Accept: "application/json" }, cache: "no-store" });
   const json = await res.json().catch(() => ({}));
   if (!res.ok) throw new ApiError(res.status, json.errors?.image?.[0] ?? json.message ?? "Upload failed.", json.errors ?? {});
   return json.data.url as string;
 }
+
+/** Uploads a photo for a blog post and returns the address to use for it. */
+export const uploadPostImage = (file: File) => uploadImage("admin/posts/upload-image", file);
+
+/** Uploads a photo for a tour package and returns the address to use for it. */
+export const uploadTourImage = (file: File) => uploadImage("admin/tours/upload-image", file);
 
 /** Only allow same-site relative redirects after login. */
 export function safeNext(next: string | null | undefined, fallback = "/bookings"): string {
