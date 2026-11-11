@@ -32,7 +32,7 @@ export function AuthMenu() {
         <UserIcon size={17} />
       </button>
       {open && (
-        <div className="absolute right-0 mt-2 w-52 overflow-hidden rounded-card border border-black/10 bg-white text-left shadow-float">
+        <div className="absolute right-0 z-50 mt-2 w-52 overflow-hidden rounded-card border border-black/10 bg-white text-left shadow-float">
           {user ? (
             <>
               <p className="truncate border-b border-black/5 px-4 py-3 text-sm font-semibold">{user.name}</p>
