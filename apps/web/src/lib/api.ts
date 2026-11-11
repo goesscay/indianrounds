@@ -247,6 +247,33 @@ export const postTypes = [
   { key: "general", label: "General" },
 ] as const;
 
+/** How an article page is laid out; chosen per article in the admin. */
+export type PostLayout = {
+  hero_style: "overlay" | "banner" | "minimal";
+  hero_height: "compact" | "standard" | "tall";
+  sidebar: "right" | "left" | "none";
+  content_width: "narrow" | "standard" | "wide";
+  show_breadcrumbs: boolean;
+  show_author_date: boolean;
+  show_excerpt: boolean;
+  show_quick_facts: boolean;
+  show_toc: boolean;
+  show_plan_card: boolean;
+  show_share: boolean;
+  show_disclaimer: boolean;
+  show_trips: boolean;
+  show_related: boolean;
+  cta_title: string;
+  cta_text: string;
+};
+
+export const defaultPostLayout: PostLayout = {
+  hero_style: "overlay", hero_height: "standard", sidebar: "right", content_width: "standard",
+  show_breadcrumbs: true, show_author_date: true, show_excerpt: true, show_quick_facts: true, show_toc: true,
+  show_plan_card: true, show_share: true, show_disclaimer: true, show_trips: true, show_related: true,
+  cta_title: "", cta_text: "",
+};
+
 export type Post = {
   id: number;
   title: string;
@@ -262,6 +289,7 @@ export type Post = {
   body?: string;
   meta_description?: string | null;
   key_facts?: { label: string; value: string }[];
+  layout?: PostLayout;
   related?: Post[];
 };
 

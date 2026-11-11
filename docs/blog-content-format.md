@@ -39,3 +39,9 @@ Plain Markdown, 650 to 1,000 words. Supported: `##` and `###` headings, bullet l
 Do not use a top-level `#` heading (the title is shown separately), images, tables or HTML.
 
 Internal links that exist: `/destinations/<slug>`, `/group-tours`, `/weekend-escapes`, `/honeymoon`, `/honeymoon/<slug>`, `/custom-trips`, `/explore-india`, `/explore-the-world`, `/offers`, and `/blog/<slug>` for other articles.
+
+## Page layout and photos (admin)
+
+In Admin > Blog posts the page is arranged from the **Page layout** panel, so writers never edit HTML: header style (photo overlay, banner, or none), header height, side column (right, left, none), page width, and on/off switches for breadcrumbs, author and date, intro, quick facts, table of contents, plan card, share buttons, travel-rules note, trips and related articles. The plan card heading and text can be reworded. Articles without saved settings use the defaults, which match the original layout.
+
+Photos are uploaded with **Upload photo** (cover) and **Insert photo** (inside the text, placed at the cursor). JPG, PNG or WebP, up to 5 MB. Uploads are stored on the API server (`storage/app/public/blog`) and served from `/api/v1/media/blog/<file>`.

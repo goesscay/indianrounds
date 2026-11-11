@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
-import { ApiError, apiFetch } from "@/lib/client-api";
-import { postTypes } from "@/lib/api";
+import { useRef, useState, type FormEvent } from "react";
+import { ApiError, apiFetch, uploadPostImage } from "@/lib/client-api";
+import { defaultPostLayout, postTypes, type PostLayout } from "@/lib/api";
 import { can, useAuth } from "@/lib/auth";
 import { useApi } from "@/lib/use-api";
 import { field, ghostBtn, Labeled, Modal, Pager, primaryBtn, Status, Table, Title, useList } from "./ui";
@@ -10,7 +10,7 @@ import { field, ghostBtn, Labeled, Modal, Pager, primaryBtn, Status, Table, Titl
 // ---------- Blog posts ----------
 
 type PostRow = { id: number; title: string; slug: string; status: string; content_type: string; destination: string | null; author_name: string; read_minutes: number; published_at: string | null };
-type PostFull = { id: number; title: string; slug: string; excerpt: string | null; body: string; content_type: string; destination_id: number | null; author_name: string; cover_image_url: string | null; meta_description: string | null; status: string; is_featured: boolean; key_facts: { label: string; value: string }[] | null };
+type PostFull = { id: number; title: string; slug: string; excerpt: string | null; body: string; content_type: string; destination_id: number | null; author_name: string; cover_image_url: string | null; meta_description: string | null; status: string; is_featured: boolean; key_facts: { label: string; value: string }[] | null; layout?: PostLayout };
 
 export function PostsView() {
   const { user } = useAuth();
@@ -67,21 +67,78 @@ function PostEditor({ id, onClose, onSaved }: { id: number | "new"; onClose: () 
   );
 }
 
+const toggles: [keyof PostLayout, string][] = [
+  ["show_breadcrumbs", "Breadcrumbs"],
+  ["show_author_date", "Author, date and read time"],
+  ["show_excerpt", "Intro (excerpt) above the text"],
+  ["show_quick_facts", "Quick facts box"],
+  ["show_toc", "Table of contents"],
+  ["show_plan_card", "Plan your trip card"],
+  ["show_share", "Share buttons"],
+  ["show_disclaimer", "Travel-rules note"],
+  ["show_trips", "Trips to this destination"],
+  ["show_related", "Keep reading (related articles)"],
+];
+
 function PostForm({ initial, destinations, canPublish, canDelete, authorName, onSaved }: { initial: PostFull | null; destinations: { id: number; name: string }[]; canPublish: boolean; canDelete: boolean; authorName: string; onSaved: () => void }) {
   const [errors, setErrors] = useState<Record<string, string[]>>({});
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
+  const [cover, setCover] = useState(initial?.cover_image_url ?? "");
+  const [uploading, setUploading] = useState<"cover" | "body" | null>(null);
+  const bodyRef = useRef<HTMLTextAreaElement>(null);
+  const captionRef = useRef<HTMLInputElement>(null);
+  const layout = { ...defaultPostLayout, ...(initial?.layout ?? {}) };
+
+  async function pickCover(file: File | undefined) {
+    if (!file) return;
+    setUploading("cover");
+    setMsg(null);
+    try {
+      setCover(await uploadPostImage(file));
+    } catch (err) {
+      setMsg(err instanceof ApiError ? err.message : "Upload failed.");
+    }
+    setUploading(null);
+  }
+
+  async function insertPhoto(file: File | undefined) {
+    const box = bodyRef.current;
+    if (!file || !box) return;
+    setUploading("body");
+    setMsg(null);
+    try {
+      const url = await uploadPostImage(file);
+      const caption = (captionRef.current?.value ?? "").replace(/[\[\]\n]/g, " ").trim();
+      const at = box.selectionStart ?? box.value.length;
+      const snippet = `\n\n![${caption}](${url})\n\n`;
+      box.value = box.value.slice(0, at) + snippet + box.value.slice(at);
+      box.focus();
+      box.setSelectionRange(at + snippet.length, at + snippet.length);
+      if (captionRef.current) captionRef.current.value = "";
+    } catch (err) {
+      setMsg(err instanceof ApiError ? err.message : "Upload failed.");
+    }
+    setUploading(null);
+  }
 
   async function save(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setBusy(true);
     setErrors({});
     setMsg(null);
-    const f = Object.fromEntries(new FormData(e.currentTarget).entries()) as Record<string, string>;
+    const form = new FormData(e.currentTarget);
+    const f = Object.fromEntries(form.entries()) as Record<string, string>;
+    const picked = {
+      hero_style: f.hero_style, hero_height: f.hero_height, sidebar: f.sidebar, content_width: f.content_width,
+      cta_title: f.cta_title || null, cta_text: f.cta_text || null,
+      ...Object.fromEntries(toggles.map(([key]) => [key, form.get(key) === "on"])),
+    };
     const body = {
+      layout: picked,
       title: f.title, body: f.body, excerpt: f.excerpt || null, content_type: f.content_type,
       destination_id: f.destination_id ? Number(f.destination_id) : null, author_name: f.author_name || authorName,
-      cover_image_url: f.cover_image_url || null, meta_description: f.meta_description || null,
+      cover_image_url: cover || null, meta_description: f.meta_description || null,
       is_featured: f.is_featured === "on",
       key_facts: f.key_facts.split("\n").map((l) => l.trim()).filter(Boolean).map((l) => {
         const [label, ...rest] = l.split(":");
@@ -121,17 +178,59 @@ function PostForm({ initial, destinations, canPublish, canDelete, authorName, on
         <Labeled label="Author" id="p-author"><input id="p-author" name="author_name" defaultValue={initial?.author_name ?? authorName} className={field} /></Labeled>
         <Labeled label="URL slug (optional)" id="p-slug" error={errors.slug?.[0]}><input id="p-slug" name="slug" defaultValue={initial?.slug} placeholder="auto from title" className={field} /></Labeled>
       </div>
-      <Labeled label="Cover image (URL, or a site photo such as /photos/places/kerala/alleppey-houseboat.jpg)" id="p-cover" error={errors.cover_image_url?.[0]}><input id="p-cover" name="cover_image_url" defaultValue={initial?.cover_image_url ?? ""} className={field} /></Labeled>
+      <Labeled label="Cover image" id="p-cover" error={errors.cover_image_url?.[0]}>
+        <div className="flex flex-wrap items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {cover && <img src={cover} alt="" className="h-16 w-28 rounded-lg border border-black/10 object-cover" />}
+          <label className="cursor-pointer rounded-full border border-black/15 px-4 py-2 text-sm font-semibold hover:border-brand-red hover:text-brand-red">
+            {uploading === "cover" ? "Uploading…" : cover ? "Replace photo" : "Upload photo"}
+            <input type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" disabled={uploading !== null} onChange={(e) => { void pickCover(e.target.files?.[0]); e.target.value = ""; }} />
+          </label>
+          {cover && <button type="button" onClick={() => setCover("")} className="text-sm text-brand-red">Remove</button>}
+        </div>
+        <input id="p-cover" value={cover} onChange={(e) => setCover(e.target.value)} placeholder="…or paste an image link, or a site photo such as /photos/places/kerala/alleppey-houseboat.jpg" className={`${field} mt-2`} />
+        <p className="mt-1 text-xs text-muted">JPG, PNG or WebP, up to 5 MB. A wide photo (3:2 or 16:9) works best.</p>
+      </Labeled>
       <Labeled label="Excerpt (shown on cards)" id="p-ex" error={errors.excerpt?.[0]}><textarea id="p-ex" name="excerpt" rows={2} defaultValue={initial?.excerpt ?? ""} className={field} /></Labeled>
       <Labeled label="Body *" id="p-body" error={errors.body?.[0]}>
-        <textarea id="p-body" name="body" required rows={14} defaultValue={initial?.body} className={`${field} font-mono`} />
-        <p className="mt-1 text-xs text-muted">Formatting: ## Heading, ### Subheading, - bullets, 1. numbered, **bold**, *italic*, [text](https://link), a tip box as &gt; **Tip:** text, and a photo on its own line as ![Caption](/photos/places/kerala/munnar-tea-plantations.jpg). Raw HTML is not rendered.</p>
+        <div className="mb-2 flex flex-wrap items-center gap-2 rounded-lg bg-surface-alt p-2 text-sm">
+          <input ref={captionRef} aria-label="Photo caption" placeholder="Photo caption (optional)" className={`${field} max-w-xs`} />
+          <label className="cursor-pointer rounded-full bg-white px-4 py-2 font-semibold shadow-sm hover:text-brand-red">
+            {uploading === "body" ? "Uploading…" : "Insert photo"}
+            <input type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" disabled={uploading !== null} onChange={(e) => { void insertPhoto(e.target.files?.[0]); e.target.value = ""; }} />
+          </label>
+          <span className="text-xs text-muted">Click in the text where the photo should go, then insert.</span>
+        </div>
+        <textarea id="p-body" ref={bodyRef} name="body" required rows={14} defaultValue={initial?.body} className={`${field} font-mono`} />
+        <p className="mt-1 text-xs text-muted">Formatting: ## Heading, ### Subheading, - bullets, 1. numbered, **bold**, *italic*, [text](https://link), a tip box as &gt; **Tip:** text, and and photos with the Insert photo button above. Raw HTML is not rendered.</p>
       </Labeled>
       <Labeled label="Quick facts (one per line, Label: value)" id="p-facts" error={errors.key_facts?.[0]}>
         <textarea id="p-facts" name="key_facts" rows={4} defaultValue={(initial?.key_facts ?? []).map((k) => `${k.label}: ${k.value}`).join("\n")} placeholder={"Best time: October to March\nIdeal stay: 5 nights"} className={field} />
         <p className="mt-1 text-xs text-muted">Shown in a box beside the article. Up to 8 lines.</p>
       </Labeled>
       <label className="flex items-center gap-2 text-sm font-medium"><input type="checkbox" name="is_featured" defaultChecked={initial?.is_featured ?? false} className="size-4 accent-brand-red" /> Feature this article at the top of the blog page</label>
+      <fieldset className="space-y-4 rounded-card border border-black/10 p-4">
+        <legend className="px-2 text-sm font-bold">Page layout</legend>
+        <p className="text-xs text-muted">Choose how this article page looks. You only write the content; the page is arranged for you.</p>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Labeled label="Header style" id="l-hero"><select id="l-hero" name="hero_style" defaultValue={layout.hero_style} className={field}><option value="overlay">Title over a full-width photo</option><option value="banner">Photo banner, title below</option><option value="minimal">No photo in the header</option></select></Labeled>
+          <Labeled label="Header height" id="l-height"><select id="l-height" name="hero_height" defaultValue={layout.hero_height} className={field}><option value="compact">Compact</option><option value="standard">Standard</option><option value="tall">Tall</option></select></Labeled>
+          <Labeled label="Side column (quick facts, contents, plan card)" id="l-side"><select id="l-side" name="sidebar" defaultValue={layout.sidebar} className={field}><option value="right">On the right</option><option value="left">On the left</option><option value="none">None, single column</option></select></Labeled>
+          <Labeled label="Page width" id="l-width"><select id="l-width" name="content_width" defaultValue={layout.content_width} className={field}><option value="narrow">Narrow</option><option value="standard">Standard</option><option value="wide">Wide</option></select></Labeled>
+        </div>
+        <div>
+          <p className="mb-2 text-sm font-medium">Show on the page</p>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {toggles.map(([key, label]) => (
+              <label key={key} className="flex items-center gap-2 text-sm"><input type="checkbox" name={key} defaultChecked={Boolean(layout[key])} className="size-4 accent-brand-red" /> {label}</label>
+            ))}
+          </div>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Labeled label="Plan card heading (optional)" id="l-cta-t" error={errors["layout.cta_title"]?.[0]}><input id="l-cta-t" name="cta_title" maxLength={100} defaultValue={layout.cta_title} placeholder="Plan Kerala with us" className={field} /></Labeled>
+          <Labeled label="Plan card text (optional)" id="l-cta-x" error={errors["layout.cta_text"]?.[0]}><input id="l-cta-x" name="cta_text" maxLength={200} defaultValue={layout.cta_text} placeholder="Tell us your dates and budget…" className={field} /></Labeled>
+        </div>
+      </fieldset>
       <Labeled label="Meta description (search results)" id="p-meta" error={errors.meta_description?.[0]}><input id="p-meta" name="meta_description" defaultValue={initial?.meta_description ?? ""} className={field} /></Labeled>
       {canPublish ? (
         <Labeled label="Status" id="p-status" error={errors.status?.[0]}><select id="p-status" name="status" defaultValue={initial?.status ?? "draft"} className={field}><option value="draft">draft</option><option value="published">published</option></select></Labeled>

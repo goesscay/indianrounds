@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class PostController extends Controller
 {
@@ -76,6 +78,7 @@ class PostController extends Controller
             'body' => $post->body,
             'meta_description' => $post->meta_description,
             'key_facts' => $post->key_facts ?? [],
+            'layout' => $post->resolvedLayout(),
             'related' => $related->map(fn (Post $p) => $this->card($p))->values(),
         ]]);
     }
@@ -96,5 +99,13 @@ class PostController extends Controller
             'is_featured' => $p->is_featured,
             'published_at' => $p->published_at?->toIso8601String(),
         ];
+    }
+
+    /** Serves an uploaded blog photo. */
+    public function image(string $file): StreamedResponse
+    {
+        abort_unless(Storage::disk('public')->exists("blog/{$file}"), 404);
+
+        return Storage::disk('public')->response("blog/{$file}", null, ['Cache-Control' => 'public, max-age=31536000, immutable', 'X-Content-Type-Options' => 'nosniff']);
     }
 }
