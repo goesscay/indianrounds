@@ -13,6 +13,7 @@ use App\Http\Controllers\Api\GrievanceController;
 use App\Http\Controllers\Api\HealthController;
 use App\Http\Controllers\Api\LeadController;
 use App\Http\Controllers\Api\MaintenanceController;
+use App\Http\Controllers\Api\MediaController;
 use App\Http\Controllers\Api\MenuController;
 use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\PostController;
@@ -36,6 +37,7 @@ Route::prefix('v1')->group(function () {
         Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
         Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
         Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
+        Route::get('/media/tours/{file}', [MediaController::class, 'tour'])->where('file', '[a-z0-9]+\.(jpg|jpeg|png|webp)')->name('tours.image');
         Route::get('/media/blog/{file}', [PostController::class, 'image'])->where('file', '[a-z0-9]+\.(jpg|jpeg|png|webp)')->name('posts.image');
         Route::get('/menus/{menu}', [MenuController::class, 'countries'])->name('menus.countries');
         Route::get('/menus/{menu}/{country}', [MenuController::class, 'country'])->name('menus.country');
@@ -102,6 +104,7 @@ Route::prefix('v1')->group(function () {
         Route::delete('/destinations/{destination}', [Admin\DestinationController::class, 'destroy'])->middleware('permission:destinations.delete');
         Route::get('/tours', [Admin\TourController::class, 'index'])->middleware('permission:tours.view');
         Route::get('/tours/{tour}', [Admin\TourController::class, 'show'])->middleware('permission:tours.view');
+        Route::post('/tours/upload-image', [Admin\TourController::class, 'uploadImage'])->middleware('permission:tours.manage');
         Route::post('/tours', [Admin\TourController::class, 'store'])->middleware('permission:tours.manage');
         Route::put('/tours/{tour}', [Admin\TourController::class, 'update'])->middleware('permission:tours.manage');
         Route::delete('/tours/{tour}', [Admin\TourController::class, 'destroy'])->middleware('permission:tours.delete');

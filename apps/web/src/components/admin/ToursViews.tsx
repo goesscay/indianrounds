@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import { ApiError, apiFetch } from "@/lib/client-api";
+import { ApiError, apiFetch, uploadTourImage } from "@/lib/client-api";
 import { can, useAuth } from "@/lib/auth";
 import { formatDate, formatINR } from "@/lib/format";
 import { useApi } from "@/lib/use-api";
+import { ImageUploadField } from "./ImageUploadField";
 import { Badge, field, ghostBtn, Labeled, Pager, primaryBtn, Status, Table, Title, useList } from "./ui";
 
 type TourRow = { id: number; slug: string; title: string; status: string; featured: boolean; destination: string; duration_nights: number; price: number | null; show_price: boolean; haul_class: string; batches_count: number };
@@ -146,7 +147,10 @@ function TourForm({ initial, destinations, onSaved }: { initial: TourFull | null
         <Labeled label="Haul class (drives payment & cancellation rules)" id="t-haul"><select id="t-haul" name="haul_class" defaultValue={initial?.haul_class ?? "short"} className={field}><option value="short">Short-haul</option><option value="long">Long-haul</option></select></Labeled>
         <Labeled label="Starting price (₹ per person), optional" id="t-price" error={e1("base_price")}><input id="t-price" name="base_price" type="number" min={1} defaultValue={initial?.base_price ?? ""} className={field} /></Labeled>
         <Labeled label="Original price (₹, strike-through)" id="t-orig"><input id="t-orig" name="original_price" type="number" min={0} defaultValue={initial?.original_price ?? ""} className={field} /></Labeled>
-        <Labeled label="Image URL" id="t-img" error={e1("image_url")}><input id="t-img" name="image_url" placeholder="https://… or /uploads/…" defaultValue={initial?.image_url ?? ""} className={field} /></Labeled>
+        <div className="sm:col-span-2">
+          <ImageUploadField id="t-img" name="image_url" label="Package photo" initial={initial?.image_url} upload={uploadTourImage} hint="Shown on the package page and cards. A wide photo (3:2 or 16:9) works best. JPG, PNG or WebP, up to 5 MB." />
+          {e1("image_url") && <p role="alert" className="mt-1 text-xs text-brand-red">{e1("image_url")}</p>}
+        </div>
         <Labeled label="Pickup" id="t-pick"><input id="t-pick" name="pickup" defaultValue={initial?.pickup ?? ""} className={field} /></Labeled>
         <Labeled label="Drop" id="t-drop"><input id="t-drop" name="drop_point" defaultValue={initial?.drop_point ?? ""} className={field} /></Labeled>
       </div>

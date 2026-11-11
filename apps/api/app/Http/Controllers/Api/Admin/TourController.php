@@ -11,6 +11,7 @@ use App\Models\Tour;
 use App\Models\TourVariant;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
@@ -42,6 +43,21 @@ class TourController extends Controller
         $tour->load(['variants', 'batches' => fn ($b) => $b->orderBy('starts_on')]);
 
         return response()->json(['data' => array_merge($tour->toArray(), ['batches' => $tour->batches->map(fn (Batch $b) => $this->batch($b))->all()])]);
+    }
+
+    /** Uploads a package photo (up to 5 MB) and returns the address to store on the package. */
+    public function uploadImage(Request $request): JsonResponse
+    {
+        $request->validate(
+            ['image' => 'required|file|image|mimes:jpg,jpeg,png,webp|max:5120'],
+            ['image.max' => 'The photo must be 5 MB or smaller.', 'image.image' => 'Choose a JPG, PNG or WebP photo.', 'image.mimes' => 'Choose a JPG, PNG or WebP photo.', 'image.uploaded' => 'The photo could not be uploaded. Keep it under 5 MB.']
+        );
+        $file = $request->file('image');
+        $name = Str::lower(Str::random(24)).'.'.($file->guessExtension() ?: 'jpg');
+        Storage::disk('public')->putFileAs('tours', $file, $name);
+        AuditLog::record('tour.image_uploaded', null, null, ['file' => $name]);
+
+        return response()->json(['data' => ['url' => url("/api/v1/media/tours/{$name}")]], 201);
     }
 
     public function store(Request $request): JsonResponse
